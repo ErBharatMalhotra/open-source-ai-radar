@@ -107,6 +107,41 @@ query($query: String!, $after: String) {
 }
 """
 
+SEARCH_QUERY_LIGHT = """
+query($query: String!, $after: String) {
+  search(query: $query, type: REPOSITORY, first: 25, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    repositoryCount
+    nodes {
+      ... on Repository {
+        nameWithOwner
+        url
+        description
+        homepageUrl
+        primaryLanguage { name }
+        licenseInfo { spdxId }
+        createdAt
+        pushedAt
+        isArchived
+        isFork
+        stargazerCount
+        forkCount
+        issues(states: OPEN) { totalCount }
+        watchers { totalCount }
+      }
+    }
+  }
+  rateLimit {
+    remaining
+    resetAt
+    cost
+  }
+}
+"""
+
 
 @dataclass
 class RateLimitState:
@@ -402,38 +437,57 @@ class GitHubClient:
     async def _search_repos_graphql(
         self, query: str, max_results: int
     ) -> list[dict[str, Any]]:
-        """Search via GraphQL (authenticated)."""
+        """Search via GraphQL (authenticated) with lightweight query and retry."""
         all_repos: list[dict[str, Any]] = []
         after_cursor: str | None = None
         remaining = min(max_results, 1000)
+        max_retries = 3
 
         while remaining > 0:
-            try:
-                result = await self._graphql_request(
-                    SEARCH_QUERY,
-                    {"query": query, "after": after_cursor},
-                )
+            retries = 0
+            result = None
 
-                search_data = result.get("search", {})
-                repos = search_data.get("nodes", [])
-                page_info = search_data.get("pageInfo", {})
-
-                for repo_data in repos:
-                    if repo_data and "nameWithOwner" in repo_data:
-                        parsed = self._parse_repo(repo_data)
-                        if parsed:
-                            all_repos.append(parsed)
-
-                remaining -= len(repos)
-
-                if not page_info.get("hasNextPage") or remaining <= 0:
+            while retries < max_retries:
+                try:
+                    result = await self._graphql_request(
+                        SEARCH_QUERY_LIGHT,
+                        {"query": query, "after": after_cursor},
+                    )
                     break
+                except Exception as e:
+                    err_str = str(e)
+                    if "RESOURCE_LIMITS_EXCEEDED" in err_str or "502" in err_str or "504" in err_str:
+                        retries += 1
+                        wait = min(5 * (2 ** (retries - 1)), 30)
+                        logger.warning(
+                            f"GraphQL rate limit/timeout for '{query}' "
+                            f"(attempt {retries}/{max_retries}), waiting {wait}s..."
+                        )
+                        await asyncio.sleep(wait)
+                    else:
+                        logger.error(f"GraphQL search failed for '{query}': {e}")
+                        return all_repos
 
-                after_cursor = page_info.get("endCursor")
-
-            except Exception as e:
-                logger.error(f"GraphQL search failed for '{query}': {e}")
+            if result is None:
+                logger.error(f"GraphQL search exhausted retries for '{query}'")
                 break
+
+            search_data = result.get("search", {})
+            repos = search_data.get("nodes", [])
+            page_info = search_data.get("pageInfo", {})
+
+            for repo_data in repos:
+                if repo_data and "nameWithOwner" in repo_data:
+                    parsed = self._parse_repo(repo_data)
+                    if parsed:
+                        all_repos.append(parsed)
+
+            remaining -= len(repos)
+
+            if not page_info.get("hasNextPage") or remaining <= 0:
+                break
+
+            after_cursor = page_info.get("endCursor")
 
         return all_repos
 

@@ -3,7 +3,7 @@ name: Discover Repos
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Every 6 hours
+    - cron: "0 2 * * *"  # Daily at 2:00 UTC (avoids overlap with Daily Update at 6:00 UTC)
   workflow_dispatch:  # Manual trigger
 
 jobs:

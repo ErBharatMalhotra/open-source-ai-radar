@@ -2,10 +2,29 @@
 interface Props {
   title: string;
   description?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  jsonLd?: object;
 }
 
-const { title, description = "Discover what is becoming important before everyone else does." } = Astro.props;
+const {
+  title,
+  description = "Discover what is becoming important before everyone else does. Track 5,000+ AI open-source projects with velocity scoring, anomaly detection, and breakout predictions.",
+  canonical,
+  ogImage = "/open-source-ai-radar/og-default.png",
+  ogType = "website",
+  jsonLd,
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL;
+const siteUrl = "https://erbharatmalhotra.github.io";
+const fullUrl = canonical
+  ? `${siteUrl}${canonical}`
+  : `${siteUrl}${base}`;
+const fullOgImage = ogImage.startsWith("http")
+  ? ogImage
+  : `${siteUrl}${ogImage}`;
 ---
 
 <!doctype html>
@@ -13,9 +32,31 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+
+    <!-- Primary SEO -->
     <title>{title} | Open Source AI Radar</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={fullUrl} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={`${title} | Open Source AI Radar`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={fullUrl} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:site_name" content="Open Source AI Radar" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | Open Source AI Radar`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImage} />
+
+    <!-- Structured Data -->
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
   </head>
   <body>
     <nav>
@@ -28,6 +69,7 @@ const base = import.meta.env.BASE_URL;
           <a href={`${base}trends`}>Trends</a>
           <a href={`${base}trending`}>Trending</a>
           <a href={`${base}top`}>Top Projects</a>
+          <a href={`${base}categories`}>Categories</a>
           <a href={`${base}languages`}>Languages</a>
         </div>
       </div>
@@ -98,7 +140,6 @@ const base = import.meta.env.BASE_URL;
     font-weight: 700;
     font-size: 1.1rem;
   }
-
   .logo-icon { font-size: 1.3rem; }
 
   .nav-links { display: flex; gap: 1.5rem; }
@@ -173,20 +214,14 @@ const base = import.meta.env.BASE_URL;
     justify-content: space-between;
     margin: 2.5rem 0 1rem;
   }
-  .section-header h2 {
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
+  .section-header h2 { font-size: 1.3rem; font-weight: 700; }
   .section-header a {
     color: var(--accent-light);
     text-decoration: none;
     font-size: 0.9rem;
   }
 
-  .repo-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+  .repo-table { width: 100%; border-collapse: collapse; }
   .repo-table th {
     text-align: left;
     padding: 0.75rem 1rem;
@@ -230,10 +265,7 @@ const base = import.meta.env.BASE_URL;
     font-size: 0.78rem;
     color: var(--text-dim);
   }
-  .num {
-    font-variant-numeric: tabular-nums;
-    text-align: right;
-  }
+  .num { font-variant-numeric: tabular-nums; text-align: right; }
   .score-badge {
     display: inline-block;
     padding: 0.2rem 0.6rem;
@@ -255,11 +287,7 @@ const base = import.meta.env.BASE_URL;
     vertical-align: middle;
     margin-left: 0.5rem;
   }
-  .axis-fill {
-    height: 100%;
-    border-radius: 2px;
-    background: var(--accent);
-  }
+  .axis-fill { height: 100%; border-radius: 2px; background: var(--accent); }
 
   @media (max-width: 768px) {
     .hero h1 { font-size: 1.8rem; }

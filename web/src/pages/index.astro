@@ -50,7 +50,23 @@ function repoUrl(fullName: string): string {
 }
 ---
 
-<Layout title="Home">
+<Layout
+    title="Home"
+    description="Track 5,000+ AI open-source projects. Velocity scoring, anomaly detection, breakout predictions, category intelligence. Discover what is becoming important before everyone else does."
+    canonical="/open-source-ai-radar/"
+    jsonLd={{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Open Source AI Radar",
+      "url": "https://erbharatmalhotra.github.io/open-source-ai-radar/",
+      "description": "Discover what is becoming important before everyone else does.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://erbharatmalhotra.github.io/open-source-ai-radar/top?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }}
+  >
   <div class="hero">
     <h1>📡 Open Source <span>AI Radar</span></h1>
     <p>Discover what is becoming important before everyone else does.</p>

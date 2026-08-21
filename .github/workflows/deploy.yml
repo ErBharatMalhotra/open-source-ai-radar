@@ -9,6 +9,7 @@ on:
       - "src/**"
       - "config/**"
       - "scripts/**"
+      - "data/exports/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -55,14 +56,8 @@ jobs:
           if [ -f data/radar.db ]; then
             uv run python scripts/export.py
           else
-            echo "No database found — creating empty exports for static site"
-            mkdir -p data/exports
-            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/top.json
-            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/trending.json
-            echo '{"generated_at":"","repos":[]}' > data/exports/trends.json
-            echo '{"generated_at":"","total_repos":0,"total_stars":0,"top_languages":{}}' > data/exports/stats.json
-            echo '{}' > data/exports/categories.json
-            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/repositories.json
+            echo "No database found — using existing committed exports"
+            ls -la data/exports/ 2>/dev/null || echo "No exports directory found"
           fi
 
       - name: Build website

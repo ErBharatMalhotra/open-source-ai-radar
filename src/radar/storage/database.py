@@ -473,7 +473,10 @@ class Database:
         """Get top N repos by score."""
         with self._conn() as conn:
             rows = conn.execute(
-                f"""SELECT s.*, r.description, r.language, r.url, r.topics, r.stars, r.forks,
+                f"""SELECT s.*,
+                       r.full_name, r.description, r.language, r.url, r.topics,
+                       r.stars, r.forks, r.open_issues, r.owner_login, r.owner_avatar,
+                       r.created_at, r.pushed_at,
                        a.category, a.sub_category, a.maturity, a.quality, a.potential
                 FROM scores s
                 JOIN repositories r ON s.repo_full_name = r.full_name

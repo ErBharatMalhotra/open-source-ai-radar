@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const dataPath = join(process.cwd(), '..', 'data', 'exports', 'stats.json');
+const topPath = join(process.cwd(), '..', 'data', 'exports', 'top.json');
+
+let stats = { total_repos: 0, total_stars: 0, top_languages: {} };
+let topRepos: any[] = [];
+
+try {
+  stats = JSON.parse(readFileSync(dataPath, 'utf-8'));
+  const topData = JSON.parse(readFileSync(topPath, 'utf-8'));
+  topRepos = topData.repos?.slice(0, 50) || [];
+} catch (e) {
+  console.error('Could not load data files. Run: uv run python scripts/export.py');
+}
+
+function formatStars(n: number): string {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return n.toString();
+}
+
+function scoreClass(s: number): string {
+  if (s >= 75) return 'score-high';
+  if (s >= 50) return 'score-mid';
+  return 'score-low';
+}
+---
+
+<Layout title="Home">
+  <div class="hero">
+    <h1>📡 Open Source <span>AI Radar</span></h1>
+    <p>Discover what is becoming important before everyone else does.</p>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-value">{stats.total_repos?.toLocaleString() || '0'}</div>
+      <div class="stat-label">Projects Tracked</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">{formatStars(stats.total_stars || 0)}</div>
+      <div class="stat-label">Total Stars</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">{Object.keys(stats.top_languages || {}).length}</div>
+      <div class="stat-label">Languages</div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h2>🏆 Top Projects by Radar Score</h2>
+    <a href="/top">View all →</a>
+  </div>
+
+  <table class="repo-table">
+    <thead>
+      <tr>
+        <th class="rank">#</th>
+        <th>Project</th>
+        <th class="hide-mobile">Lang</th>
+        <th class="num">Stars</th>
+        <th class="num">Score</th>
+        <th class="hide-mobile">Impact</th>
+        <th class="hide-mobile">Velocity</th>
+        <th class="hide-mobile">Health</th>
+      </tr>
+    </thead>
+    <tbody>
+      {topRepos.map((repo: any, i: number) => (
+        <tr>
+          <td class="rank">{i + 1}</td>
+          <td>
+            <a class="repo-name" href={`https://github.com/${repo.full_name}`} target="_blank" rel="noopener">
+              {repo.full_name}
+            </a>
+            {repo.description && <div class="repo-desc">{repo.description}</div>}
+          </td>
+          <td class="hide-mobile">
+            {repo.language && <span class="repo-lang">{repo.language}</span>}
+          </td>
+          <td class="num">{formatStars(repo.stars || 0)}</td>
+          <td class="num">
+            <span class={`score-badge ${scoreClass(repo.radar_score)}`}>
+              {repo.radar_score?.toFixed(1)}
+            </span>
+          </td>
+          <td class="hide-mobile num">
+            {repo.impact?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.impact}%`}></div></div>
+          </td>
+          <td class="hide-mobile num">
+            {repo.velocity?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.velocity}%`}></div></div>
+          </td>
+          <td class="hide-mobile num">
+            {repo.health?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.health}%`}></div></div>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <div class="section-header">
+    <h2>🚀 Fastest Growing</h2>
+    <a href="/trending">View all →</a>
+  </div>
+
+  <div style="text-align:center; padding:2rem; color:var(--text-dim)">
+    <a href="/trending" style="color:var(--accent-light); text-decoration:none;">
+      Explore trending projects →
+    </a>
+  </div>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const trendPath = join(process.cwd(), '..', 'data', 'exports', 'trending.json');
+let repos: any[] = [];
+
+try {
+  const data = JSON.parse(readFileSync(trendPath, 'utf-8'));
+  repos = data.repos || [];
+} catch (e) {
+  console.error('Could not load trending data');
+}
+
+function formatStars(n: number): string {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return n.toString();
+}
+
+function scoreClass(s: number): string {
+  if (s >= 75) return 'score-high';
+  if (s >= 50) return 'score-mid';
+  return 'score-low';
+}
+---
+
+<Layout title="Trending" description="Fastest growing open-source AI projects">
+  <div class="hero">
+    <h1>🚀 <span>Trending</span> Projects</h1>
+    <p>Open-source AI projects with the highest velocity — the ones growing fastest right now.</p>
+  </div>
+
+  <table class="repo-table">
+    <thead>
+      <tr>
+        <th class="rank">#</th>
+        <th>Project</th>
+        <th class="hide-mobile">Lang</th>
+        <th class="num">Stars</th>
+        <th class="num">Velocity</th>
+        <th class="num">Score</th>
+        <th class="hide-mobile">Impact</th>
+        <th class="hide-mobile">Health</th>
+      </tr>
+    </thead>
+    <tbody>
+      {repos.map((repo: any, i: number) => (
+        <tr>
+          <td class="rank">{i + 1}</td>
+          <td>
+            <a class="repo-name" href={`https://github.com/${repo.full_name}`} target="_blank" rel="noopener">
+              {repo.full_name}
+            </a>
+            {repo.description && <div class="repo-desc">{repo.description}</div>}
+          </td>
+          <td class="hide-mobile">
+            {repo.language && <span class="repo-lang">{repo.language}</span>}
+          </td>
+          <td class="num">{formatStars(repo.stars || 0)}</td>
+          <td class="num">
+            <span class={`score-badge ${scoreClass(repo.velocity)}`}>
+              {repo.velocity?.toFixed(1)}
+            </span>
+          </td>
+          <td class="num">{repo.radar_score?.toFixed(1)}</td>
+          <td class="hide-mobile num">{repo.impact?.toFixed(0)}</td>
+          <td class="hide-mobile num">{repo.health?.toFixed(0)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Layout>

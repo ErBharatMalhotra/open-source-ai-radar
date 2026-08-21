@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const catPath = join(process.cwd(), '..', 'data', 'exports', 'categories.json');
+let languages: Record<string, number> = {};
+
+try {
+  languages = JSON.parse(readFileSync(catPath, 'utf-8'));
+} catch (e) {
+  console.error('Could not load categories data');
+}
+
+const total = Object.values(languages).reduce((a, b) => a + b, 0);
+const topLangs = Object.entries(languages).slice(0, 30);
+const maxCount = topLangs[0]?.[1] || 1;
+---
+
+<Layout title="Languages" description="Programming language distribution across tracked AI projects">
+  <div class="hero">
+    <h1>💻 <span>Languages</span></h1>
+    <p>Programming language distribution across {total.toLocaleString()} tracked open-source AI projects.</p>
+  </div>
+
+  <div class="lang-grid">
+    {topLangs.map(([lang, count], i) => (
+      <div class="lang-card">
+        <div class="lang-header">
+          <span class="lang-name">{lang}</span>
+          <span class="lang-count">{count.toLocaleString()}</span>
+        </div>
+        <div class="lang-bar-bg">
+          <div class="lang-bar-fill" style={`width: ${(count / maxCount * 100).toFixed(1)}%`}></div>
+        </div>
+        <div class="lang-pct">{((count / total) * 100).toFixed(1)}%</div>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .lang-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+  }
+  .lang-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .lang-name {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .lang-count {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+  .lang-bar-bg {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.35rem;
+  }
+  .lang-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    border-radius: 3px;
+    transition: width 0.3s;
+  }
+  .lang-pct {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+  }
+</style>

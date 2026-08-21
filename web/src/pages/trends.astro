@@ -1,0 +1,186 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const trendPath = join(process.cwd(), '..', 'data', 'exports', 'trends.json');
+let trends: any = {};
+
+try {
+  trends = JSON.parse(readFileSync(trendPath, 'utf-8'));
+} catch (e) {
+  console.error('Could not load trends data');
+}
+
+function formatStars(n: number): string {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return n.toString();
+}
+---
+
+<Layout title="Trends" description="Rising stars, hidden gems, and momentum shifts in open-source AI">
+  <div class="hero">
+    <h1>📡 <span>Trends</span></h1>
+    <p>What's rising, what's fading, and what's about to blow up in open-source AI.</p>
+  </div>
+
+  <div class="trend-grid">
+    <!-- Rising Stars -->
+    <section class="trend-section">
+      <h2>🔥 Rising Stars</h2>
+      <p class="trend-desc">High velocity — growing fast right now</p>
+      <div class="trend-list">
+        {(trends.top_rising || []).map((repo: any, i: number) => (
+          <a class="trend-item" href={`https://github/${repo.repo_full_name}`} target="_blank">
+            <span class="trend-rank">{i + 1}</span>
+            <div class="trend-info">
+              <span class="trend-name">{repo.repo_full_name}</span>
+              <span class="trend-meta">{repo.category || 'Uncategorized'} · {formatStars(repo.stars || 0)} ⭐</span>
+            </div>
+            <span class="trend-badge velocity">{repo.velocity?.toFixed(0)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Hidden Gems -->
+    <section class="trend-section">
+      <h2>💎 Hidden Gems</h2>
+      <p class="trend-desc">Low stars but high velocity + health — about to blow up</p>
+      <div class="trend-list">
+        {(trends.top_gems || []).map((repo: any, i: number) => (
+          <a class="trend-item" href={`https://github.com/${repo.repo_full_name}`} target="_blank">
+            <span class="trend-rank">{i + 1}</span>
+            <div class="trend-info">
+              <span class="trend-name">{repo.repo_full_name}</span>
+              <span class="trend-meta">{repo.category || 'Uncategorized'} · {formatStars(repo.stars || 0)} ⭐</span>
+            </div>
+            <span class="trend-badge gem">{repo.velocity?.toFixed(0)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <!-- Category Momentum -->
+  <section class="trend-section full-width">
+    <h2>📊 Category Momentum</h2>
+    <p class="trend-desc">Distribution of tracked repos across AI categories</p>
+    <div class="cat-grid">
+      {(trends.categories || []).filter((c: any) => c.category !== 'Uncategorized').map((cat: any) => (
+        <div class="cat-card">
+          <div class="cat-name">{cat.category}</div>
+          <div class="cat-count">{cat.count.toLocaleString()}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .trend-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 768px) {
+    .trend-grid { grid-template-columns: 1fr; }
+  }
+  .trend-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .trend-section.full-width {
+    margin-top: 1rem;
+  }
+  .trend-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  .trend-desc {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  .trend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .trend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.15s;
+  }
+  .trend-item:hover { background: var(--bg-hover); }
+  .trend-rank {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    width: 1.5rem;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .trend-info { flex: 1; min-width: 0; }
+  .trend-name {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .trend-meta {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+  .trend-badge {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .trend-badge.velocity {
+    background: rgba(108, 92, 231, 0.15);
+    color: var(--accent-light);
+  }
+  .trend-badge.gem {
+    background: rgba(0, 210, 160, 0.15);
+    color: var(--green);
+  }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .cat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cat-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .cat-count {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    font-variant-numeric: tabular-nums;
+  }
+</style>

@@ -11,8 +11,7 @@ from __future__ import annotations
 import logging
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
-from typing import Any
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -180,7 +179,8 @@ class DiscoveryTelemetry:
             total_retries=total_retries,
             repos_returned=repos_returned,
             repos_unique=unique_repos,
-            duplicates_removed=repos_returned - unique_repos if repos_returned > unique_repos else 0,
+            duplicates_removed=(repos_returned - unique_repos
+            if repos_returned > unique_repos else 0),
             total_duration=total_duration,
             avg_query_duration=avg_duration,
             slowest_query_duration=slowest_q.duration if slowest_q else 0.0,

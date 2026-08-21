@@ -11,7 +11,7 @@ Results stored in the database for scoring and display.
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Any
 
 from radar.analysis.ai_provider import AIProvider, get_provider
@@ -146,7 +146,7 @@ class AnalysisEngine:
         """Batch save analyses in a single transaction."""
         if not analyses:
             return
-        timestamp = datetime.now(tz=timezone.utc).isoformat()
+        timestamp = datetime.now(tz=UTC).isoformat()
         with self.db._conn() as conn:
             conn.executemany(
                 """INSERT OR REPLACE INTO ai_analysis

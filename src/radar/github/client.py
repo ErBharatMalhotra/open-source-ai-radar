@@ -458,7 +458,8 @@ class GitHubClient:
                     break
                 except Exception as e:
                     err_str = str(e)
-                    if "RESOURCE_LIMITS_EXCEEDED" in err_str or "502" in err_str or "504" in err_str:
+                    if ("RESOURCE_LIMITS_EXCEEDED" in err_str
+                        or "502" in err_str or "504" in err_str):
                         retries += 1
                         self.last_query_retries += 1
                         wait = min(5 * (2 ** (retries - 1)), 30)

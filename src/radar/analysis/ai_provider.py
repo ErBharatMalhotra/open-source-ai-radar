@@ -12,7 +12,6 @@ Configure via AI_PROVIDER environment variable.
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 from abc import ABC, abstractmethod

@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import time
 from unittest.mock import patch
 
 from radar.discovery.telemetry import DiscoveryTelemetry, QueryMetric, RunSummary

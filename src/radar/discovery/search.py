@@ -8,14 +8,15 @@ Uses layered discovery:
 
 from __future__ import annotations
 
+import asyncio
 import logging
 from pathlib import Path
 from typing import Any
 
 import yaml
 
-from radar.github.client import GitHubClient
 from radar.discovery.telemetry import DiscoveryTelemetry
+from radar.github.client import GitHubClient
 
 logger = logging.getLogger(__name__)
 
@@ -182,13 +183,16 @@ class DiscoveryEngine:
         Returns:
             Deduplicated, quality-filtered list of repos
         """
+        telemetry = DiscoveryTelemetry()
         all_repos: list[dict[str, Any]] = []
 
         async with GitHubClient() as client:
             if custom_query:
                 # Custom query mode
                 logger.info(f"Running custom query: {custom_query}")
+                telemetry.query_started(custom_query, "custom", "custom")
                 repos = await client.search_repos(custom_query, max_results=max_per_query)
+                telemetry.query_finished(repos_returned=len(repos))
                 for r in repos:
                     r["_discovery_source"] = f"custom:{custom_query}"
                 all_repos.extend(repos)
@@ -241,5 +245,9 @@ class DiscoveryEngine:
 
         # Sort by stars descending
         quality.sort(key=lambda r: r.get("stars", 0), reverse=True)
+
+        # Finalize and log telemetry summary
+        summary = telemetry.finalize(unique_repos=len(quality))
+        telemetry.log_summary(summary)
 
         return quality

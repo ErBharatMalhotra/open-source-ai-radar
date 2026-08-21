@@ -15,6 +15,7 @@ from typing import Any
 import yaml
 
 from radar.github.client import GitHubClient
+from radar.discovery.telemetry import DiscoveryTelemetry
 
 logger = logging.getLogger(__name__)
 

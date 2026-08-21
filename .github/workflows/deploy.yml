@@ -29,6 +29,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Restore database cache
+        uses: actions/cache/restore@v4
+        with:
+          path: data/radar.db
+          key: radar-db-latest
+          restore-keys: radar-db-
+          fail-on-cache-miss: false
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

@@ -1,0 +1,276 @@
+"""AI analysis provider abstraction.
+
+Supports multiple backends:
+  - github: GitHub Models (free tier)
+  - openai: OpenAI API
+  - gemini: Google Gemini
+  - local: Local model (Ollama, etc.)
+  - none: Disabled (rule-based only)
+
+Configure via AI_PROVIDER environment variable.
+"""
+
+from __future__ import annotations
+
+import json
+import logging
+import os
+from abc import ABC, abstractmethod
+from typing import Any
+
+logger = logging.getLogger(__name__)
+
+
+class AIProvider(ABC):
+    """Abstract base class for AI analysis providers."""
+
+    @abstractmethod
+    def analyze_repo(
+        self,
+        full_name: str,
+        description: str,
+        topics: list[str],
+        language: str | None,
+        readme_preview: str = "",
+    ) -> dict[str, Any]:
+        """Analyze a repository and return structured analysis.
+
+        Returns:
+            {
+                "summary": str,
+                "tech_stack": list[str],
+                "use_cases": list[str],
+                "maturity": str,  # Emerging | Growing | Mature | Declining
+                "quality": float,  # 0-100
+                "potential": float,  # 0-100
+            }
+        """
+        ...
+
+
+class NoOpProvider(AIProvider):
+    """No-op provider when AI analysis is disabled."""
+
+    def analyze_repo(self, **kwargs: Any) -> dict[str, Any]:
+        return {
+            "summary": "",
+            "tech_stack": [],
+            "use_cases": [],
+            "maturity": "Unknown",
+            "quality": 0.0,
+            "potential": 0.0,
+        }
+
+
+class RuleBasedProvider(AIProvider):
+    """Rule-based analysis that doesn't require API calls.
+
+    Uses heuristics from description, topics, and language
+    to estimate quality and maturity.
+    """
+
+    MATURITY_KEYWORDS = {
+        "Emerging": ["new", "experimental", "alpha", "beta", "prototype", "wip", "draft"],
+        "Growing": ["growing", "active", " developing", "improving"],
+        "Mature": ["stable", "production", "enterprise", "battle-tested", "established"],
+        "Declining": ["deprecated", "archived", "unmaintained", "legacy", "sunset"],
+    }
+
+    QUALITY_SIGNALS = {
+        "positive": [
+            "documentation", "tests", "ci/cd", "contributing",
+            "license", "changelog", "release", "package",
+            "pip install", "npm install", "docker",
+        ],
+        "negative": [
+            "hack", "proof of concept", "poc only", "not maintained",
+            "broken", "abandoned",
+        ],
+    }
+
+    def analyze_repo(
+        self,
+        full_name: str,
+        description: str,
+        topics: list[str],
+        language: str | None,
+        readme_preview: str = "",
+    ) -> dict[str, Any]:
+        text = f"{description} {' '.join(topics)} {readme_preview}".lower()
+
+        # Maturity estimation
+        maturity = self._estimate_maturity(text)
+
+        # Quality estimation
+        quality = self._estimate_quality(text, language, topics)
+
+        # Potential estimation
+        potential = self._estimate_potential(text, topics, language)
+
+        # Tech stack extraction
+        tech_stack = self._extract_tech_stack(text, language, topics)
+
+        # Use case extraction
+        use_cases = self._extract_use_cases(text, topics)
+
+        return {
+            "summary": description[:300] if description else "",
+            "tech_stack": tech_stack,
+            "use_cases": use_cases,
+            "maturity": maturity,
+            "quality": round(quality, 1),
+            "potential": round(potential, 1),
+        }
+
+    def _estimate_maturity(self, text: str) -> str:
+        scores = {"Emerging": 0, "Growing": 0, "Mature": 0, "Declining": 0}
+        for stage, keywords in self.MATURITY_KEYWORDS.items():
+            for kw in keywords:
+                if kw in text:
+                    scores[stage] += 1
+
+        best = max(scores, key=lambda k: scores[k])
+        if scores[best] == 0:
+            return "Growing"  # Default assumption
+        return best
+
+    def _estimate_quality(
+        self, text: str, language: str | None, topics: list[str]
+    ) -> float:
+        score = 50.0  # Base
+
+        for signal in self.QUALITY_SIGNALS["positive"]:
+            if signal in text:
+                score += 5.0
+
+        for signal in self.QUALITY_SIGNALS["negative"]:
+            if signal in text:
+                score -= 10.0
+
+        # Language bonus for well-maintained ecosystems
+        well_maintained = {"python", "typescript", "rust", "go", "java"}
+        if language and language.lower() in well_maintained:
+            score += 3.0
+
+        # Topic bonus for relevant AI topics
+        ai_topics = {"ai", "llm", "machine-learning", "deep-learning", "nlp"}
+        if set(t.lower() for t in topics) & ai_topics:
+            score += 2.0
+
+        return max(0.0, min(100.0, score))
+
+    def _estimate_potential(
+        self, text: str, topics: list[str], language: str | None
+    ) -> float:
+        score = 50.0
+
+        # High-growth signals
+        growth_signals = [
+            "trending", "popular", "fastest", "rising",
+            "breakthrough", "novel", "innovative", "first",
+        ]
+        for signal in growth_signals:
+            if signal in text:
+                score += 8.0
+
+        # AI hype areas
+        hot_topics = {
+            "agent", "mcp", "rag", "coding", "local",
+            "fine-tuning", "multimodal", "safety",
+        }
+        repo_topics = set(t.lower() for t in topics)
+        if repo_topics & hot_topics:
+            score += 5.0
+
+        # New + promising
+        if "2024" in text or "2025" in text or "2026" in text:
+            score += 3.0
+
+        return max(0.0, min(100.0, score))
+
+    def _extract_tech_stack(
+        self, text: str, language: str | None, topics: list[str]
+    ) -> list[str]:
+        techs = set()
+
+        if language:
+            techs.add(language)
+
+        # Common AI/ML frameworks
+        framework_hints = {
+            "pytorch": "PyTorch", "torch": "PyTorch",
+            "tensorflow": "TensorFlow", "tf": "TensorFlow",
+            "transformers": "Transformers", "huggingface": "HuggingFace",
+            "langchain": "LangChain", "llamaindex": "LlamaIndex",
+            "openai": "OpenAI API", "anthropic": "Anthropic API",
+            "ollama": "Ollama", "llama.cpp": "llama.cpp",
+            "vllm": "vLLM", "triton": "Triton",
+            "react": "React", "nextjs": "Next.js", "next": "Next.js",
+            "fastapi": "FastAPI", "flask": "Flask",
+            "docker": "Docker", "kubernetes": "Kubernetes",
+            "sqlite": "SQLite", "postgresql": "PostgreSQL",
+            "redis": "Redis", "qdrant": "Qdrant",
+            "chroma": "ChromaDB", "pinecone": "Pinecone",
+        }
+
+        for hint, tech in framework_hints.items():
+            if hint in text or hint in [t.lower() for t in topics]:
+                techs.add(tech)
+
+        return sorted(techs)[:10]
+
+    def _extract_use_cases(self, text: str, topics: list[str]) -> list[str]:
+        use_cases = []
+        topic_set = set(t.lower() for t in topics)
+
+        use_case_map = {
+            "code generation": ["code", "coding", "programming", "generate"],
+            "chatbot": ["chat", "conversation", "dialogue"],
+            "document qa": ["document", "qa", "question answering"],
+            "image generation": ["image", "diffusion", "generate"],
+            "text generation": ["text", "generate", "completion"],
+            "data processing": ["data", "etl", "pipeline"],
+            "monitoring": ["monitor", "observ", "log"],
+            "deployment": ["deploy", "serve", "production"],
+            "research": ["research", "paper", "arxiv"],
+            "education": ["tutorial", "learn", "course", "education"],
+        }
+
+        for use_case, hints in use_case_map.items():
+            for hint in hints:
+                if hint in text or hint in topic_set:
+                    use_cases.append(use_case)
+                    break
+
+        return use_cases[:5]
+
+
+def get_provider(name: str | None = None) -> AIProvider:
+    """Get AI provider by name.
+
+    Args:
+        name: Provider name. If None, reads from AI_PROVIDER env var.
+              Falls back to "rule" (rule-based, no API calls).
+
+    Returns:
+        Configured AIProvider instance.
+    """
+    provider_name = name or os.environ.get("AI_PROVIDER", "rule")
+
+    providers = {
+        "none": NoOpProvider,
+        "rule": RuleBasedProvider,
+        # Future providers:
+        # "github": GitHubModelsProvider,
+        # "openai": OpenAIProvider,
+        # "gemini": GeminiProvider,
+        # "local": LocalProvider,
+    }
+
+    cls = providers.get(provider_name)
+    if cls is None:
+        logger.warning(f"Unknown AI provider '{provider_name}', falling back to rule-based")
+        cls = RuleBasedProvider
+
+    logger.info(f"Using AI provider: {provider_name}")
+    return cls()

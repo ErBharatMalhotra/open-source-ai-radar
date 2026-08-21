@@ -1,0 +1,49 @@
+# Open Source AI Radar — Scoring Weights
+# Radar Score = Impact * impact_weight + Velocity * velocity_weight + Health * health_weight
+
+weights:
+  impact: 0.40
+  velocity: 0.35
+  health: 0.25
+
+# Impact scoring (0-100)
+impact:
+  # Log-scaled signals (percentile rank within all repos)
+  stars_weight: 0.50
+  forks_weight: 0.25
+  contributors_weight: 0.15
+  watchers_weight: 0.10
+
+# Velocity scoring (0-100)
+velocity:
+  star_growth_30d_weight: 0.35
+  star_growth_7d_weight: 0.25
+  fork_growth_30d_weight: 0.15
+  commit_frequency_weight: 0.15
+  acceleration_weight: 0.10  # rate_7d vs rate_30d
+
+# Health scoring (0-100)
+health:
+  freshness_weight: 0.30       # days since last push (exponential decay)
+  release_cadence_weight: 0.25 # regular releases = maintained
+  issue_activity_weight: 0.15  # issues being addressed
+  contributor_diversity_weight: 0.15  # bus factor
+  pr_activity_weight: 0.15     # PRs being merged
+
+# Freshness decay parameter
+freshness:
+  lambda: 0.01  # exponential decay rate (higher = faster decay)
+  # After 30 days: freshness ~ 0.74
+  # After 90 days: freshness ~ 0.41
+  # After 180 days: freshness ~ 0.16
+
+# Category normalization
+normalization:
+  use_category_percentiles: true
+  min_repos_for_category_percentile: 10
+
+# Minimum thresholds for scoring
+minimums:
+  # Repos below these won't appear in rankings
+  min_stars: 5
+  min_days_since_discovery: 0

@@ -206,6 +206,7 @@ class GitHubClient:
         self.retry_base_delay = retry_base_delay
         self.rate_limit = RateLimitState()
         self._client: httpx.AsyncClient | None = None
+        self.last_query_retries: int = 0
 
     async def __aenter__(self) -> GitHubClient:
         headers = {
@@ -442,6 +443,7 @@ class GitHubClient:
         after_cursor: str | None = None
         remaining = min(max_results, 1000)
         max_retries = 3
+        self.last_query_retries = 0
 
         while remaining > 0:
             retries = 0
@@ -458,6 +460,7 @@ class GitHubClient:
                     err_str = str(e)
                     if "RESOURCE_LIMITS_EXCEEDED" in err_str or "502" in err_str or "504" in err_str:
                         retries += 1
+                        self.last_query_retries += 1
                         wait = min(5 * (2 ** (retries - 1)), 30)
                         logger.warning(
                             f"GraphQL rate limit/timeout for '{query}' "

@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const topPath = join(process.cwd(), '..', 'data', 'exports', 'top.json');
+let repos: any[] = [];
+let total = 0;
+
+try {
+  const data = JSON.parse(readFileSync(topPath, 'utf-8'));
+  repos = data.repos || [];
+  total = data.total || 0;
+} catch (e) {
+  console.error('Could not load top data');
+}
+
+function formatStars(n: number): string {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return n.toString();
+}
+
+function scoreClass(s: number): string {
+  if (s >= 75) return 'score-high';
+  if (s >= 50) return 'score-mid';
+  return 'score-low';
+}
+---
+
+<Layout title="Top Projects" description="Top open-source AI projects ranked by Radar Score">
+  <div class="hero">
+    <h1>🏆 <span>Top</span> Projects</h1>
+    <p>The most impactful open-source AI projects, ranked by Radar Score across Impact, Velocity, and Health.</p>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-value">{total.toLocaleString()}</div>
+      <div class="stat-label">Total Tracked</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">{repos.length}</div>
+      <div class="stat-label">Top Ranked</div>
+    </div>
+  </div>
+
+  <table class="repo-table">
+    <thead>
+      <tr>
+        <th class="rank">#</th>
+        <th>Project</th>
+        <th class="hide-mobile">Lang</th>
+        <th class="num">Stars</th>
+        <th class="num">Score</th>
+        <th class="hide-mobile">Impact</th>
+        <th class="hide-mobile">Velocity</th>
+        <th class="hide-mobile">Health</th>
+        <th class="hide-mobile">%ile</th>
+      </tr>
+    </thead>
+    <tbody>
+      {repos.map((repo: any, i: number) => (
+        <tr>
+          <td class="rank">{i + 1}</td>
+          <td>
+            <a class="repo-name" href={`https://github.com/${repo.full_name}`} target="_blank" rel="noopener">
+              {repo.full_name}
+            </a>
+            {repo.description && <div class="repo-desc">{repo.description}</div>}
+          </td>
+          <td class="hide-mobile">
+            {repo.language && <span class="repo-lang">{repo.language}</span>}
+          </td>
+          <td class="num">{formatStars(repo.stars || 0)}</td>
+          <td class="num">
+            <span class={`score-badge ${scoreClass(repo.radar_score)}`}>
+              {repo.radar_score?.toFixed(1)}
+            </span>
+          </td>
+          <td class="hide-mobile num">
+            {repo.impact?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.impact}%`}></div></div>
+          </td>
+          <td class="hide-mobile num">
+            {repo.velocity?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.velocity}%`}></div></div>
+          </td>
+          <td class="hide-mobile num">
+            {repo.health?.toFixed(0)}
+            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.health}%`}></div></div>
+          </td>
+          <td class="hide-mobile num" style="color:var(--text-dim)">
+            {repo.global_percentile?.toFixed(0)}th
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Layout>

@@ -1,0 +1,73 @@
+# Discover new open-source AI repositories every 6 hours
+name: Discover Repos
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Restore database cache
+        uses: actions/cache@v4
+        with:
+          path: data/radar.db
+          key: radar-db-${{ github.run_id }}
+          restore-keys: radar-db-
+
+      - name: Run discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          uv run radar discover --limit 100 --category ai-agents
+          uv run radar discover --limit 100 --category llm-frameworks
+          uv run radar discover --limit 100 --category ai-coding
+          uv run radar discover --limit 100 --category mcp
+          uv run radar discover --limit 100 --category rag
+          uv run radar discover --limit 100 --category local-ai
+          uv run radar discover --limit 100 --category generative-ai
+          uv run radar discover --limit 100 --category multimodal
+          uv run radar discover --limit 100 --category ai-infrastructure
+          uv run radar discover --limit 100 --category evaluation
+          uv run radar discover --limit 100 --category ai-safety
+
+      - name: Import to SQLite
+        run: uv run radar import-json
+
+      - name: Score all repos
+        run: uv run radar score
+
+      - name: Export JSON
+        run: uv run python scripts/export.py
+
+      - name: Save database
+        uses: actions/cache/save@v4
+        with:
+          path: data/radar.db
+          key: radar-db-${{ github.run_id }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/exports/ -f
+          git diff --staged --quiet || git commit -m "chore: update discovery data [skip ci]"
+          git push || echo "Push failed (maybe no changes)"

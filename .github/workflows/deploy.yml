@@ -5,8 +5,10 @@ on:
   push:
     branches: [main]
     paths:
-      - "data/exports/**"
       - "web/**"
+      - "src/**"
+      - "config/**"
+      - "scripts/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -26,6 +28,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -33,19 +43,27 @@ jobs:
           cache: "npm"
           cache-dependency-path: web/package-lock.json
 
-      - name: Restore database
-        uses: actions/cache/restore@v4
-        with:
-          path: data/radar.db
-          key: radar-db-${{ github.run_id }}
-          restore-keys: radar-db-
+      - name: Install Python dependencies
+        run: uv sync
 
       - name: Install web dependencies
         working-directory: web
         run: npm ci
 
-      - name: Export data
-        run: uv run python scripts/export.py
+      - name: Export data (if available)
+        run: |
+          if [ -f data/radar.db ]; then
+            uv run python scripts/export.py
+          else
+            echo "No database found — creating empty exports for static site"
+            mkdir -p data/exports
+            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/top.json
+            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/trending.json
+            echo '{"generated_at":"","repos":[]}' > data/exports/trends.json
+            echo '{"generated_at":"","total_repos":0,"total_stars":0,"top_languages":{}}' > data/exports/stats.json
+            echo '{}' > data/exports/categories.json
+            echo '{"generated_at":"","total":0,"repos":[]}' > data/exports/repositories.json
+          fi
 
       - name: Build website
         working-directory: web

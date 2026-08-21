@@ -15,7 +15,7 @@ from __future__ import annotations
 import logging
 import os
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, ClassVar
 
 logger = logging.getLogger(__name__)
 
@@ -68,14 +68,14 @@ class RuleBasedProvider(AIProvider):
     to estimate quality and maturity.
     """
 
-    MATURITY_KEYWORDS = {
+    MATURITY_KEYWORDS: ClassVar[dict[str, list[str]]] = {
         "Emerging": ["new", "experimental", "alpha", "beta", "prototype", "wip", "draft"],
         "Growing": ["growing", "active", " developing", "improving"],
         "Mature": ["stable", "production", "enterprise", "battle-tested", "established"],
         "Declining": ["deprecated", "archived", "unmaintained", "legacy", "sunset"],
     }
 
-    QUALITY_SIGNALS = {
+    QUALITY_SIGNALS: ClassVar[dict[str, list[str]]] = {
         "positive": [
             "documentation", "tests", "ci/cd", "contributing",
             "license", "changelog", "release", "package",

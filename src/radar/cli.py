@@ -39,6 +39,39 @@ def main(verbose: bool) -> None:
 
 
 @main.command()
+def smart_queries() -> None:
+    """Show smart discovery queries generated from existing data."""
+    from radar.discovery.smart_discovery import SmartDiscoveryEngine
+    from radar.storage.database import Database
+
+    db = Database()
+    engine = SmartDiscoveryEngine(db)
+
+    click.echo("\n  🧠 Smart Discovery Queries")
+    click.echo(f"  {'─' * 60}")
+
+    queries = engine.generate_smart_queries()
+
+    if not queries:
+        click.echo("  No smart queries generated yet.")
+        click.echo("  Need more data for pattern detection.")
+        return
+
+    for i, q in enumerate(queries, 1):
+        click.echo(f"  {i:>2}. [{q['source']}] {q['label']}")
+        click.echo(f"      Query: {q['query']}")
+
+    click.echo(f"\n  Total: {len(queries)} smart queries")
+
+    # Show stats
+    stats = engine.get_smart_stats()
+    click.echo(f"  Trending terms: {len(stats['trending_terms'])}")
+    click.echo(f"  Emerging keywords: {len(stats['emerging_keywords'])}")
+    click.echo(f"  Category gaps: {stats['category_gaps']}")
+    click.echo()
+
+
+@main.command()
 @click.option("--category", "-c", help="Discover repos for a specific category")
 @click.option("--query", "-q", help="Custom search query")
 @click.option("--limit", "-n", default=100, help="Max repos per query")
@@ -174,6 +207,58 @@ async def _rate_limit() -> None:
 
 
 @main.command()
+def health() -> None:
+    """Run pipeline health checks."""
+    from radar.monitoring.pipeline_monitor import PipelineMonitor
+    from radar.storage.database import Database
+
+    db = Database()
+    monitor = PipelineMonitor(db)
+
+    report = monitor.get_health_report()
+
+    status_icons = {
+        "healthy": "✅",
+        "warning": "⚠️",
+        "critical": "🚨",
+        "unknown": "❓",
+    }
+
+    click.echo("\n  🏥 Pipeline Health Report")
+    click.echo(f"  {'─' * 50}")
+    icon = status_icons.get(report['overall_status'], '?')
+    status = report['overall_status'].upper()
+    click.echo(f"  Overall Status: {icon} {status}")
+    click.echo()
+
+    for check in report["checks"]:
+        icon = status_icons.get(check["status"], "?")
+        click.echo(f"  {icon} {check['name']}")
+
+        for key, value in check.items():
+            if key not in ("name", "status", "issues"):
+                if isinstance(value, dict):
+                    for k, v in value.items():
+                        msg = f"      {k}: {v:,}" if isinstance(v, int) else f"      {k}: {v}"
+                        click.echo(msg)
+                elif isinstance(value, (int, float)):
+                    if isinstance(value, int):
+                        msg = f"      {key}: {value:,}"
+                    else:
+                        msg = f"      {key}: {value}"
+                    click.echo(msg)
+                elif isinstance(value, str) and value:
+                    click.echo(f"      {key}: {value}")
+
+        for issue in check.get("issues", []):
+            click.echo(f"      ❌ {issue}")
+
+        click.echo()
+
+    click.echo()
+
+
+@main.command()
 def status() -> None:
     """Show project status and database stats."""
     click.echo(f"\n  Open Source AI Radar v{__version__}")
@@ -255,7 +340,9 @@ def score() -> None:
     top = engine.get_rankings(10)
     if top:
         click.echo("\n  Top 10 by Radar Score:")
-        click.echo(f"  {'#':>3}  {'Score':>6}  {'Impact':>6}  {'Vel':>6}  {'Health':>6}  {'Repo':<40}")
+        hdr = f"  {'#':>3}  {'Score':>6}  {'Impact':>6}  {'Vel':>6}"
+        hdr += f"  {'Health':>6}  {'Repo':<40}"
+        click.echo(hdr)
         click.echo(f"  {'─' * 80}")
         for i, r in enumerate(top, 1):
             click.echo(
@@ -357,6 +444,218 @@ def trends() -> None:
 
 
 @main.command()
+def category_momentum() -> None:
+    """Compute and display category momentum scores."""
+    from radar.analysis.category_tracker import CategoryTracker
+    from radar.storage.database import Database
+
+    db = Database()
+    tracker = CategoryTracker(db)
+
+    click.echo("\n  Computing category momentum...")
+    momentums = tracker.compute_momentum()
+
+    if not momentums:
+        click.echo("  No categorized repos found. Run: radar classify")
+        return
+
+    click.echo("\n  Category Intelligence")
+    click.echo(f"  {'─' * 75}")
+    hdr = f"  {'#':>3}  {'Category':<25} {'Tracked':>8} {'New':>5}"
+    hdr += f"  {'Vel':>6}  {'Health':>6}  {'Trend':<10}"
+    click.echo(hdr)
+    click.echo(f"  {'─' * 75}")
+
+    for i, m in enumerate(momentums, 1):
+        trend_icon = {
+            "rising": "🔥",
+            "stable": "➡️ ",
+            "declining": "📉",
+            "new": "🆕",
+        }.get(m["trend"], "  ")
+
+        click.echo(
+            f"  {i:>3}  {m['category']:<25} {m['total_tracked']:>8} "
+            f"{m['new_this_period']:>5} {m['avg_velocity']:>6.1f} "
+            f"{m['avg_health']:>6.1f} {trend_icon} {m['trend']}"
+        )
+
+    click.echo(f"\n  Total: {len(momentums)} categories")
+    click.echo()
+
+
+@main.command()
+@click.option(
+    "--type", "anomaly_type",
+    help="Filter by anomaly type: star_spikes, fork_spikes, "
+         "score_jumps, velocity_anomalies, health_drops",
+)
+@click.option("--limit", "-n", default=10, help="Max anomalies to show")
+def anomalies(anomaly_type: str | None, limit: int) -> None:
+    """Detect anomalies — sudden spikes, score jumps, health drops."""
+    from radar.analysis.anomaly_detector import AnomalyDetector
+    from radar.storage.database import Database
+
+    db = Database()
+    detector = AnomalyDetector(db)
+
+    if anomaly_type:
+        # Single type
+        method = getattr(detector, f"detect_{anomaly_type}", None)
+        if not method:
+            click.echo(f"  Unknown anomaly type: {anomaly_type}")
+            types = ("star_spikes, fork_spikes, score_jumps,"
+                     " velocity_anomalies, health_drops")
+            click.echo(f"  Types: {types}")
+            return
+        results = {anomaly_type: method()}
+    else:
+        results = detector.detect_all()
+
+    click.echo("\n  🚨 Anomaly Detection")
+    click.echo(f"  {'─' * 70}")
+
+    type_labels = {
+        "star_spikes": "⭐ Star Spikes",
+        "fork_spikes": "🍴 Fork Spikes",
+        "score_jumps": "📊 Score Jumps",
+        "velocity_anomalies": "🚀 Velocity Anomalies",
+        "health_drops": "🏥 Health Drops",
+    }
+
+    total = 0
+    for atype, items in results.items():
+        if not items:
+            continue
+
+        label = type_labels.get(atype, atype)
+        click.echo(f"\n  {label} ({len(items)} detected)")
+        click.echo(f"  {'-' * 60}")
+
+        for i, a in enumerate(items[:limit], 1):
+            dev = a.get("deviation", a.get("change", 0))
+            click.echo(
+                f"  {i:>3}. {a['repo_full_name'][:35]:<35} "
+                f"Stars:{a.get('stars', 0):>7,}  "
+                f"Dev:{dev:>6.1f}x"
+            )
+            if a.get("cause"):
+                click.echo(f"      Cause: {a['cause']}")
+            total += 1
+
+    click.echo(f"\n  Total: {total} anomalies detected")
+    click.echo()
+
+
+@main.command()
+@click.option("--limit", "-n", default=25, help="Max breakout candidates to show")
+def breakouts(limit: int) -> None:
+    """Detect breakout candidates — repos about to blow up."""
+    from radar.analysis.breakout_detector import BreakoutDetector
+    from radar.storage.database import Database
+
+    db = Database()
+    detector = BreakoutDetector(db)
+
+    click.echo("\n  🔥 Detecting breakout candidates...")
+    candidates = detector.detect_breakouts(limit)
+
+    if not candidates:
+        click.echo("  No breakout candidates found yet.")
+        click.echo("  Need more snapshot data for detection.")
+        return
+
+    click.echo(f"\n  Breakout Candidates ({len(candidates)} detected)")
+    click.echo(f"  {'─' * 85}")
+    hdr = f"  {'#':>3}  {'Score':>6}  {'Vel':>5}  {'Accel':>6}"
+    hdr += f"  {'Health':>6}  {'Stars':>7}  {'Repo':<35}"
+    click.echo(hdr)
+    click.echo(f"  {'─' * 85}")
+
+    for i, c in enumerate(candidates[:limit], 1):
+        click.echo(
+            f"  {i:>3}  {c['breakout_score']:>6.1f}  "
+            f"{c['velocity']:>5.0f}  {c['star_growth_acceleration']:>5.2f}x  "
+            f"{c['health']:>6.0f}  {c['stars']:>7,}  {c['repo_full_name'][:35]}"
+        )
+        if c.get('stars_7d', 0) > 0:
+            click.echo(
+                f"      7d: +{c['stars_7d']} ⭐  "
+                f"Rate: {c['star_growth_rate_7d']:.1f}/day  "
+                f"Cat: {c.get('category', 'N/A')}"
+            )
+
+    click.echo(f"\n  Total: {len(candidates)} breakout candidates")
+    click.echo()
+
+
+@main.command()
+@click.option("--limit", "-n", default=25, help="Max repos to analyze")
+def why_trending(limit: int) -> None:
+    """Analyze why top trending repos are gaining attention."""
+    from radar.analysis.why_trending import WhyTrendingAnalyzer
+    from radar.storage.database import Database
+
+    db = Database()
+    analyzer = WhyTrendingAnalyzer(db)
+
+    click.echo("\n  💡 Analyzing why repos are trending...")
+    results = analyzer.analyze_all_trending(limit)
+
+    if not results:
+        click.echo("  No trending repos found. Run: radar score")
+        return
+
+    click.echo("\n  Why is it trending?")
+    click.echo(f"  {'─' * 75}")
+
+    for i, r in enumerate(results[:15], 1):
+        click.echo(f"\n  {i}. {r['repo_full_name']}")
+        click.echo(f"     {r['explanation']}")
+        click.echo(f"     Confidence: {r['confidence']:.0%}")
+
+    click.echo(f"\n  Analyzed {len(results)} repos")
+    click.echo()
+
+
+@main.command()
+def category_compare() -> None:
+    """Compare categories across key metrics."""
+    from radar.analysis.category_tracker import CategoryTracker
+    from radar.storage.database import Database
+
+    db = Database()
+    tracker = CategoryTracker(db)
+    comparison = tracker.get_category_comparison()
+
+    if not comparison:
+        click.echo("  No category data. Run: radar category-momentum")
+        return
+
+    click.echo("\n  Category Comparison")
+    click.echo(f"  {'─' * 90}")
+    hdr = f"  {'Category':<25} {'Tracked':>8} {'New':>5} {'Avg ⭐':>8}"
+    hdr += f"  {'Vel':>6}  {'Health':>6}  {'Momentum':>9}  {'Trend':<10}"
+    click.echo(hdr)
+    click.echo(f"  {'─' * 90}")
+
+    for c in comparison:
+        trend_icon = {
+            "rising": "🔥",
+            "stable": "➡️ ",
+            "declining": "📉",
+            "new": "🆕",
+        }.get(c["trend"], "  ")
+
+        click.echo(
+            f"  {c['category']:<25} {c['tracked']:>8} {c['new']:>5} "
+            f"{c['avg_stars']:>8,.0f} {c['velocity']:>6.1f} "
+            f"{c['health']:>6.1f} {c['momentum']:>9.1f} {trend_icon} {c['trend']}"
+        )
+    click.echo()
+
+
+@main.command()
 def categories() -> None:
     """Show category distribution and momentum."""
     from radar.scoring.trends import TrendEngine
@@ -404,6 +703,135 @@ def gems() -> None:
 
 
 @main.command()
+@click.option("--full", is_flag=True, help="Force full processing (ignore change detection)")
+@click.option("--limit", "-n", default=None, type=int, help="Max repos to process")
+def process(full: bool, limit: int | None) -> None:
+    """Incremental pipeline: detect changes, snapshot, score, export.
+
+    This is the main entry point for daily operations.
+    It only processes repos that have changed since last run.
+    """
+    asyncio.run(_process(full, limit))
+
+
+async def _process(full: bool, limit: int | None) -> None:
+    from radar.github.client import GitHubClient
+    from radar.processing.change_detector import ChangeDetector
+    from radar.scoring.engine import ScoringEngine
+    from radar.scoring.snapshots import SnapshotEngine
+    from radar.storage.database import Database
+
+    db = Database()
+    detector = ChangeDetector(db)
+
+    # Step 1: Get all repos
+    all_repos = db.get_all_repos()
+    if not all_repos:
+        click.echo("  No repos found. Run: radar discover")
+        return
+
+    click.echo("\n  🛰️  Incremental Pipeline")
+    click.echo(f"  {'─' * 40}")
+    click.echo(f"  Total repos: {len(all_repos):,}")
+
+    # Step 2: Determine what needs processing
+    if full:
+        click.echo("  Mode: FULL (ignoring change detection)")
+        repos_to_process = all_repos[:limit] if limit else all_repos
+        changed_names = [r["full_name"] for r in repos_to_process]
+    else:
+        # Compute signatures from DB data (stars, forks, etc.)
+        # We use the DB's current values — these were updated by last discovery/snapshot
+        click.echo("  Mode: INCREMENTAL (change detection)")
+        repos_to_process = detector.find_changed(all_repos)
+
+        if limit:
+            repos_to_process = repos_to_process[:limit]
+
+        changed_names = [r["full_name"] for r in repos_to_process]
+
+        if not repos_to_process:
+            click.echo("  ✅ All repos up to date — nothing to process")
+            stats = detector.get_stats()
+            click.echo(f"  Last run: {stats.get('last_run', 'never')}")
+            return
+
+    click.echo(f"  Repos to process: {len(repos_to_process):,}")
+    click.echo()
+
+    # Step 3: Snapshot changed repos
+    click.echo("  📸 Snapshotting...")
+    snap_engine = SnapshotEngine(db)
+
+    async with GitHubClient() as client:
+        if full:
+            success = await snap_engine.snapshot_all(
+                client, max_repos=limit, delay_between=0.5
+            )
+            click.echo(f"  Snapshot: {success}/{len(repos_to_process)} success")
+        else:
+            success, failed = await snap_engine.snapshot_incremental(
+                client, repos_to_process, delay_between=0.5
+            )
+            click.echo(f"  Snapshot: {success} success, {failed} failed")
+
+    # Step 4: Score
+    click.echo("\n  📊 Scoring...")
+    score_engine = ScoringEngine(db)
+
+    if full:
+        count = score_engine.compute_all_scores()
+    else:
+        count = score_engine.compute_incremental_scores(changed_names)
+
+    click.echo(f"  Scored: {count} repos")
+
+    # Step 5: Mark as processed
+    click.echo("\n  ✅ Updating signatures...")
+    detector.mark_processed(repos_to_process)
+
+    # Step 6: Show stats
+    click.echo("\n  📈 Pipeline Stats")
+    click.echo(f"  {'─' * 40}")
+    stats = detector.get_stats()
+    click.echo(f"  Total repos:     {stats['total_repos']:,}")
+    click.echo(f"  Processed:       {stats['processed']:,}")
+    click.echo(f"  Unprocessed:     {stats['unprocessed']:,}")
+    click.echo(f"  Last run:        {stats.get('last_run', 'never')}")
+
+    # Show top 5
+    top = score_engine.get_rankings(5)
+    if top:
+        click.echo("\n  Top 5 by Radar Score:")
+        for i, r in enumerate(top, 1):
+            click.echo(
+                f"  {i}. {r['repo_full_name'][:38]:<38} "
+                f"Score: {r['radar_score']:>5.1f}  "
+                f"Stars: {r.get('stars', 0):>7,}"
+            )
+    click.echo()
+
+
+@main.command()
+def process_stats() -> None:
+    """Show incremental processing statistics."""
+    from radar.processing.change_detector import ChangeDetector
+    from radar.storage.database import Database
+
+    db = Database()
+    detector = ChangeDetector(db)
+    stats = detector.get_stats()
+
+    click.echo("\n  📊 Processing Stats")
+    click.echo(f"  {'─' * 40}")
+    click.echo(f"  Total repos:     {stats['total_repos']:,}")
+    click.echo(f"  Processed:       {stats['processed']:,}")
+    click.echo(f"  Unprocessed:     {stats['unprocessed']:,}")
+    click.echo(f"  Last run:        {stats.get('last_run', 'never')}")
+    click.echo()
+
+
+@main.command()
 @click.option("--week", "-w", help="Week label (e.g., 2026-W34)")
 def report(week: str | None) -> None:
     """Generate weekly intelligence report."""
@@ -426,6 +854,42 @@ def feed() -> None:
     gen = RSSGenerator(db)
     filepath = gen.generate_trending_feed()
     click.echo(f"  RSS feed generated: {filepath}")
+
+
+@main.command()
+def api() -> None:
+    """Generate public API files (JSON, CSV, RSS)."""
+    from radar.api.endpoints import PublicAPI
+    from radar.storage.database import Database
+
+    db = Database()
+    api = PublicAPI(db)
+
+    click.echo("\n  📡 Generating Public API...")
+    counts = api.generate_all()
+
+    click.echo("\n  API Endpoints Generated:")
+    click.echo(f"  {'─' * 40}")
+    for endpoint, count in counts.items():
+        click.echo(f"    /api/{endpoint}: {count} items")
+    click.echo()
+
+
+@main.command()
+def badges() -> None:
+    """Generate dynamic SVG badges for top repos."""
+    from radar.api.badges import BadgeGenerator
+    from radar.storage.database import Database
+
+    db = Database()
+    generator = BadgeGenerator(db)
+
+    click.echo("\n  🏷️  Generating Developer Badges...")
+    count = generator.generate_all_badges()
+
+    click.echo(f"  Generated {count} badges for top 100 repos")
+    click.echo("  Badges available at: /api/badges/{owner}__{repo}/score.svg")
+    click.echo()
 
 
 @main.command()
@@ -460,7 +924,9 @@ def top() -> None:
 
     click.echo("\n  Top 25 Repositories by Radar Score")
     click.echo(f"  {'─' * 75}")
-    click.echo(f"  {'#':>3}  {'Score':>6}  {'Stars':>8}  {'Impact':>6}  {'Vel':>6}  {'Health':>6}  {'Repo':<35}")
+    hdr = f"  {'#':>3}  {'Score':>6}  {'Stars':>8}  {'Impact':>6}"
+    hdr += f"  {'Vel':>6}  {'Health':>6}  {'Repo':<35}"
+    click.echo(hdr)
     click.echo(f"  {'─' * 75}")
     for i, r in enumerate(top, 1):
         click.echo(

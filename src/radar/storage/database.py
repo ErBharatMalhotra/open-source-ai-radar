@@ -38,7 +38,10 @@ CREATE TABLE IF NOT EXISTS repositories (
     forks INTEGER DEFAULT 0,
     open_issues INTEGER DEFAULT 0,
     watchers INTEGER DEFAULT 0,
-    default_branch TEXT DEFAULT 'main'
+    default_branch TEXT DEFAULT 'main',
+    -- Incremental processing
+    processing_signature TEXT DEFAULT '',
+    last_processed_at TEXT
 );
 
 CREATE TABLE IF NOT EXISTS snapshots (
@@ -109,6 +112,7 @@ CREATE TABLE IF NOT EXISTS ai_analysis (
     category TEXT DEFAULT '',
     sub_category TEXT DEFAULT '',
     summary TEXT DEFAULT '',
+    why_trending TEXT DEFAULT '',
     tech_stack TEXT DEFAULT '[]',
     use_cases TEXT DEFAULT '[]',
     maturity TEXT DEFAULT 'Unknown',
@@ -121,6 +125,25 @@ CREATE TABLE IF NOT EXISTS ai_analysis (
 
 CREATE INDEX IF NOT EXISTS idx_analysis_repo ON ai_analysis(repo_full_name);
 CREATE INDEX IF NOT EXISTS idx_analysis_category ON ai_analysis(category);
+
+CREATE TABLE IF NOT EXISTS category_momentum (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    total_tracked INTEGER DEFAULT 0,
+    new_this_period INTEGER DEFAULT 0,
+    avg_stars REAL DEFAULT 0.0,
+    avg_growth_rate REAL DEFAULT 0.0,
+    avg_velocity REAL DEFAULT 0.0,
+    avg_health REAL DEFAULT 0.0,
+    total_stars INTEGER DEFAULT 0,
+    top_project TEXT DEFAULT '',
+    trend TEXT DEFAULT 'stable',
+    UNIQUE(category, timestamp)
+);
+
+CREATE INDEX IF NOT EXISTS idx_momentum_category ON category_momentum(category);
+CREATE INDEX IF NOT EXISTS idx_momentum_time ON category_momentum(timestamp);
 """
 
 
@@ -136,7 +159,75 @@ class Database:
         """Create tables if they don't exist."""
         with self._conn() as conn:
             conn.executescript(SCHEMA)
+            self._migrate(conn)
             logger.info(f"Database initialized: {self.db_path}")
+
+    @staticmethod
+    def _migrate(conn: sqlite3.Connection) -> None:
+        """Add new columns/tables to existing databases."""
+        repo_cols = {
+            row[1]
+            for row in conn.execute(
+                "PRAGMA table_info(repositories)"
+            ).fetchall()
+        }
+        repo_migrations = [
+            ("processing_signature", "TEXT DEFAULT ''"),
+            ("last_processed_at", "TEXT"),
+        ]
+        for col, typedef in repo_migrations:
+            if col not in repo_cols:
+                conn.execute(
+                    f"ALTER TABLE repositories ADD COLUMN "
+                    f"{col} {typedef}"
+                )
+
+        ai_cols = {
+            row[1]
+            for row in conn.execute(
+                "PRAGMA table_info(ai_analysis)"
+            ).fetchall()
+        }
+        if "why_trending" not in ai_cols:
+            conn.execute(
+                "ALTER TABLE ai_analysis ADD COLUMN "
+                "why_trending TEXT DEFAULT ''"
+            )
+
+        tables = {
+            row[0]
+            for row in conn.execute(
+                "SELECT name FROM sqlite_master "
+                "WHERE type='table'"
+            ).fetchall()
+        }
+        if "category_momentum" not in tables:
+            conn.execute("""CREATE TABLE IF NOT EXISTS
+                category_momentum (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    category TEXT NOT NULL,
+                    timestamp TEXT NOT NULL,
+                    total_tracked INTEGER DEFAULT 0,
+                    new_this_period INTEGER DEFAULT 0,
+                    avg_stars REAL DEFAULT 0.0,
+                    avg_growth_rate REAL DEFAULT 0.0,
+                    avg_velocity REAL DEFAULT 0.0,
+                    avg_health REAL DEFAULT 0.0,
+                    total_stars INTEGER DEFAULT 0,
+                    top_project TEXT DEFAULT '',
+                    trend TEXT DEFAULT 'stable',
+                    UNIQUE(category, timestamp)
+                )""")
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS "
+                "idx_momentum_category ON "
+                "category_momentum(category)"
+            )
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS "
+                "idx_momentum_time ON "
+                "category_momentum(timestamp)"
+            )
 
     @contextmanager
     def _conn(self) -> Generator[sqlite3.Connection, None, None]:
@@ -350,6 +441,72 @@ class Database:
         """Get total repository count."""
         with self._conn() as conn:
             return conn.execute("SELECT COUNT(*) FROM repositories").fetchone()[0]
+
+    # --- Processing Signature ---
+
+    def update_processing_signature(
+        self, full_name: str, signature: str
+    ) -> None:
+        """Update the processing signature and last_processed_at for a repo."""
+        now = datetime.now(tz=UTC).isoformat()
+        with self._conn() as conn:
+            conn.execute(
+                """UPDATE repositories
+                SET processing_signature = ?, last_processed_at = ?
+                WHERE full_name = ?""",
+                (signature, now, full_name),
+            )
+
+    def update_processing_signatures_batch(
+        self, updates: list[tuple[str, str]]
+    ) -> None:
+        """Batch update processing signatures. Each entry is (full_name, signature)."""
+        if not updates:
+            return
+        now = datetime.now(tz=UTC).isoformat()
+        with self._conn() as conn:
+            conn.executemany(
+                """UPDATE repositories
+                SET processing_signature = ?, last_processed_at = ?
+                WHERE full_name = ?""",
+                [(sig, now, fn) for fn, sig in updates],
+            )
+
+    def get_repos_needing_processing(
+        self, signatures: dict[str, str]
+    ) -> list[str]:
+        """Return full_names of repos whose signature differs from stored.
+
+        Args:
+            signatures: dict of {full_name: new_signature}
+
+        Returns:
+            List of full_names that need processing.
+        """
+        if not signatures:
+            return []
+
+        with self._conn() as conn:
+            rows = conn.execute(
+                "SELECT full_name, processing_signature FROM repositories"
+            ).fetchall()
+
+            stored = {r["full_name"]: r["processing_signature"] for r in rows}
+
+            changed = []
+            for fn, sig in signatures.items():
+                if stored.get(fn, "") != sig:
+                    changed.append(fn)
+
+            return changed
+
+    def get_unprocessed_repos(self) -> list[dict[str, Any]]:
+        """Return repos that have never been processed (no signature yet)."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                "SELECT * FROM repositories WHERE processing_signature = ''"
+            ).fetchall()
+            return [dict(r) for r in rows]
 
     # --- Snapshots ---
 
@@ -586,6 +743,103 @@ class Database:
                         analysis.get("matched_by", "none"),
                     ),
                 )
+
+    # --- Why Trending ---
+
+    def save_why_trending(self, full_name: str, why_trending: str) -> None:
+        """Save why_trending explanation for a repo."""
+        with self._conn() as conn:
+            conn.execute(
+                """UPDATE ai_analysis SET why_trending = ?
+                WHERE repo_full_name = ?""",
+                (why_trending, full_name),
+            )
+
+    def save_why_trending_batch(self, explanations: dict[str, str]) -> None:
+        """Batch save why_trending explanations."""
+        if not explanations:
+            return
+        with self._conn() as conn:
+            for fn, why in explanations.items():
+                conn.execute(
+                    """UPDATE ai_analysis SET why_trending = ?
+                    WHERE repo_full_name = ?""",
+                    (why, fn),
+                )
+
+    def get_why_trending(self, full_name: str) -> str:
+        """Get why_trending explanation for a repo."""
+        with self._conn() as conn:
+            row = conn.execute(
+                """SELECT why_trending FROM ai_analysis
+                WHERE repo_full_name = ?
+                ORDER BY timestamp DESC LIMIT 1""",
+                (full_name,),
+            ).fetchone()
+            return row["why_trending"] if row else ""
+
+    # --- Category Momentum ---
+
+    def save_category_momentum(self, momentum: dict[str, Any]) -> None:
+        """Save category momentum snapshot."""
+        timestamp = momentum.get("timestamp", datetime.now(tz=UTC).isoformat())
+        with self._conn() as conn:
+            conn.execute(
+                """INSERT OR REPLACE INTO category_momentum
+                    (category, timestamp, total_tracked, new_this_period,
+                     avg_stars, avg_growth_rate, avg_velocity, avg_health,
+                     total_stars, top_project, trend)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    momentum["category"],
+                    timestamp,
+                    momentum.get("total_tracked", 0),
+                    momentum.get("new_this_period", 0),
+                    momentum.get("avg_stars", 0.0),
+                    momentum.get("avg_growth_rate", 0.0),
+                    momentum.get("avg_velocity", 0.0),
+                    momentum.get("avg_health", 0.0),
+                    momentum.get("total_stars", 0),
+                    momentum.get("top_project", ""),
+                    momentum.get("trend", "stable"),
+                ),
+            )
+
+    def save_category_momentum_batch(self, momentums: list[dict[str, Any]]) -> None:
+        """Batch save category momentum snapshots."""
+        if not momentums:
+            return
+        for m in momentums:
+            self.save_category_momentum(m)
+
+    def get_category_momentum_history(
+        self, category: str, limit: int = 30
+    ) -> list[dict[str, Any]]:
+        """Get historical momentum for a category."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                """SELECT * FROM category_momentum
+                WHERE category = ?
+                ORDER BY timestamp DESC
+                LIMIT ?""",
+                (category, limit),
+            ).fetchall()
+            return [dict(r) for r in rows]
+
+    def get_latest_category_momentum(self) -> list[dict[str, Any]]:
+        """Get the latest momentum snapshot for each category."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                """SELECT cm.* FROM category_momentum cm
+                INNER JOIN (
+                    SELECT category, MAX(timestamp) as max_ts
+                    FROM category_momentum
+                    GROUP BY category
+                ) latest ON cm.category = latest.category
+                    AND cm.timestamp = latest.max_ts
+                ORDER BY cm.avg_velocity DESC"""
+            ).fetchall()
+            return [dict(r) for r in rows]
 
     # --- Stats ---
 

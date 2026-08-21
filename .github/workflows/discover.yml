@@ -3,8 +3,8 @@ name: Discover Repos
 
 on:
   schedule:
-    - cron: "0 2 * * *"  # Daily at 2:00 UTC (avoids overlap with Daily Update at 6:00 UTC)
-  workflow_dispatch:  # Manual trigger
+    - cron: "0 2 * * *"  # Daily at 2:00 UTC
+  workflow_dispatch:
 
 jobs:
   discover:
@@ -34,13 +34,18 @@ jobs:
         run: uv sync
 
       - name: Restore database cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: data/radar.db
-          key: radar-db-${{ github.run_id }}
+          key: radar-db-latest
           restore-keys: radar-db-
 
-      - name: Run discovery (top 6 most active categories)
+      - name: Show smart discovery queries
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run radar smart-queries || echo "No smart queries yet"
+
+      - name: Run category discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -54,8 +59,22 @@ jobs:
       - name: Import to SQLite
         run: uv run radar import-json
 
-      - name: Score all repos
-        run: uv run radar score
+      - name: Classify repos
+        run: uv run radar classify
+
+      - name: Incremental pipeline (detect changes, snapshot, score)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run radar process
+
+      - name: Run anomaly detection
+        run: uv run radar anomalies || echo "No anomalies detected"
+
+      - name: Analyze why trending
+        run: uv run radar why-trending --limit 25 || echo "No trending data yet"
+
+      - name: Detect breakouts
+        run: uv run radar breakouts --limit 25 || echo "No breakout data yet"
 
       - name: Export JSON
         run: uv run python scripts/export.py
@@ -64,7 +83,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: data/radar.db
-          key: radar-db-${{ github.run_id }}
+          key: radar-db-latest
 
       - name: Commit updated data
         run: |

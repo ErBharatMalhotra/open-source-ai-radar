@@ -1,0 +1,238 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+const base = import.meta.env.BASE_URL;
+
+let breakouts: any = { candidates: [], total_candidates: 0 };
+
+try {
+  const breakoutsPath = join(process.cwd(), '..', 'data', 'exports', 'breakouts.json');
+  breakouts = JSON.parse(readFileSync(breakoutsPath, 'utf-8'));
+} catch (e) {
+  // No breakout data yet
+}
+
+function formatStars(n: number): string {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return n.toString();
+}
+
+function scoreColor(score: number): string {
+  if (score >= 75) return 'var(--green)';
+  if (score >= 50) return 'var(--accent-light)';
+  return 'var(--orange)';
+}
+
+function repoUrl(fullName: string): string {
+  const [owner, repo] = fullName.split('/');
+  return `${base}project/${owner}/${repo}`;
+}
+---
+
+<Layout title="Breakout Candidates" description="Repos about to become breakout projects — ranked by breakout score">
+  <div class="hero">
+    <h1>🔥 <span>Breakout</span> Candidates</h1>
+    <p>Repos showing all the signals of becoming the next big thing. Ranked by breakout score.</p>
+  </div>
+
+  {breakouts.candidates && breakouts.candidates.length > 0 ? (
+    <div class="breakout-grid">
+      {breakouts.candidates.map((repo: any, i: number) => (
+        <div class="breakout-card">
+          <div class="breakout-rank">#{i + 1}</div>
+          <div class="breakout-content">
+            <a class="breakout-name" href={repoUrl(repo.repo_full_name)}>
+              {repo.repo_full_name}
+            </a>
+            {repo.category && <span class="breakout-category">{repo.category}</span>}
+            {repo.language && <span class="breakout-lang">{repo.language}</span>}
+
+            <div class="breakout-score-bar">
+              <div class="score-label">Breakout Score</div>
+              <div class="score-track">
+                <div class="score-fill" style={`width: ${repo.breakout_score}%; background: ${scoreColor(repo.breakout_score)}`}></div>
+              </div>
+              <div class="score-value" style={`color: ${scoreColor(repo.breakout_score)}`}>{repo.breakout_score}</div>
+            </div>
+
+            <div class="breakout-stats">
+              <div class="stat">
+                <span class="stat-value">{repo.velocity}</span>
+                <span class="stat-label">Velocity</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">{repo.star_growth_acceleration}x</span>
+                <span class="stat-label">Acceleration</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">{repo.health}</span>
+                <span class="stat-label">Health</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">⭐ {formatStars(repo.stars)}</span>
+                <span class="stat-label">Stars</span>
+              </div>
+            </div>
+
+            {repo.stars_7d > 0 && (
+              <div class="breakout-growth">
+                +{repo.stars_7d} ⭐ this week ({repo.star_growth_rate_7d}/day)
+              </div>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div class="no-data">
+      <p>Breakout detection requires snapshot history data.</p>
+      <p>Check back after a few daily updates have run.</p>
+    </div>
+  )}
+</Layout>
+
+<style>
+  .breakout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .breakout-card {
+    display: flex;
+    gap: 1.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .breakout-rank {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-light);
+    min-width: 3rem;
+    text-align: center;
+  }
+
+  .breakout-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .breakout-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+
+  .breakout-name:hover {
+    text-decoration: underline;
+  }
+
+  .breakout-category, .breakout-lang {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .breakout-category {
+    background: rgba(0, 210, 160, 0.15);
+    color: var(--green);
+  }
+
+  .breakout-lang {
+    background: var(--bg-hover);
+    color: var(--text-dim);
+  }
+
+  .breakout-score-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .score-label {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    min-width: 90px;
+  }
+
+  .score-track {
+    flex: 1;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .score-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+  }
+
+  .score-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  .breakout-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 0.75rem 0;
+  }
+
+  .breakout-stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breakout-stats .stat-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .breakout-stats .stat-label {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  .breakout-growth {
+    font-size: 0.85rem;
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  .no-data {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 768px) {
+    .breakout-rank {
+      font-size: 1.2rem;
+      min-width: 2.5rem;
+    }
+
+    .breakout-stats {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+</style>

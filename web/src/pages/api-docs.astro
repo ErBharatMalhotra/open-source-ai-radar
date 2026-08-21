@@ -1,0 +1,264 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+const apiBase = `${base}api`;
+---
+
+<Layout title="API" description="Public API for Open Source AI Radar data">
+  <div class="hero">
+    <h1>📡 <span>Public API</span></h1>
+    <p>Access Open Source AI Radar data programmatically via JSON, CSV, and RSS.</p>
+  </div>
+
+  <div class="api-section">
+    <h2>🔗 Endpoints</h2>
+
+    <div class="endpoint-grid">
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/repos.json</div>
+        <div class="endpoint-desc">All tracked repositories</div>
+        <a href={`${apiBase}/repos.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/repos.csv</div>
+        <div class="endpoint-desc">All repositories as CSV</div>
+        <a href={`${apiBase}/repos.csv`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/top.json</div>
+        <div class="endpoint-desc">Top repos by Radar Score</div>
+        <a href={`${apiBase}/top.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/trending.json</div>
+        <div class="endpoint-desc">Trending repos by velocity</div>
+        <a href={`${apiBase}/trending.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/gems.json</div>
+        <div class="endpoint-desc">Hidden gems — low stars, high potential</div>
+        <a href={`${apiBase}/gems.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/breakouts.json</div>
+        <div class="endpoint-desc">Breakout candidates</div>
+        <a href={`${apiBase}/breakouts.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/anomalies.json</div>
+        <div class="endpoint-desc">Detected anomalies</div>
+        <a href={`${apiBase}/anomalies.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/categories.json</div>
+        <div class="endpoint-desc">Category intelligence</div>
+        <a href={`${apiBase}/categories.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/stats.json</div>
+        <div class="endpoint-desc">Summary statistics</div>
+        <a href={`${apiBase}/stats.json`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+
+      <div class="endpoint-card">
+        <div class="endpoint-method">GET</div>
+        <div class="endpoint-path">/api/feed.xml</div>
+        <div class="endpoint-desc">RSS feed of trending repos</div>
+        <a href={`${apiBase}/feed.xml`} class="endpoint-link" target="_blank">Try it →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="api-section">
+    <h2>📝 Example Usage</h2>
+
+    <div class="code-block">
+      <h3>Python</h3>
+      <pre><code>import requests
+
+# Get top repos
+url = "https://erbharatmalhotra.github.io/open-source-ai-radar/api/top.json"
+response = requests.get(url)
+data = response.json()
+
+for repo in data["repos"][:10]:
+    name = repo["full_name"]
+    score = repo["radar_score"]
+    print(name, "— Score:", score)</code></pre>
+    </div>
+
+    <div class="code-block">
+      <h3>cURL</h3>
+      <pre><code># Get stats
+curl https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json
+
+# Get CSV
+curl https://erbharatmalhotra.github.io/open-source-ai-radar/api/repos.csv
+
+# Get RSS feed
+curl https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml</code></pre>
+    </div>
+  </div>
+
+  <div class="api-section">
+    <h2>🏷️ Developer Badges</h2>
+    <p>Add Radar badges to your repository README:</p>
+
+    <div class="badge-grid">
+      <div class="badge-example">
+        <div class="badge-label">Radar Score</div>
+        <pre><code>![Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/YOUR-OWNER__YOUR-REPO/score.svg)</code></pre>
+      </div>
+
+      <div class="badge-example">
+        <div class="badge-label">Velocity</div>
+        <pre><code>![Velocity](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/YOUR-OWNER__YOUR-REPO/velocity.svg)</code></pre>
+      </div>
+
+      <div class="badge-example">
+        <div class="badge-label">Stars</div>
+        <pre><code>![Stars](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/YOUR-OWNER__YOUR-REPO/stars.svg)</code></pre>
+      </div>
+    </div>
+
+    <p class="badge-note">Badges are available for the top 100 repositories by Radar Score.</p>
+  </div>
+
+  <div class="api-section">
+    <h2>⚡ Rate Limits</h2>
+    <p>This is a static API — no rate limits. Data is updated daily via GitHub Actions.</p>
+  </div>
+</Layout>
+
+<style>
+  .api-section {
+    margin-bottom: 3rem;
+  }
+
+  .api-section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  .endpoint-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .endpoint-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+  }
+
+  .endpoint-method {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    background: rgba(0, 210, 160, 0.15);
+    color: var(--green);
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+
+  .endpoint-path {
+    display: inline;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--accent-light);
+  }
+
+  .endpoint-desc {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+
+  .endpoint-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+
+  .endpoint-link:hover {
+    text-decoration: underline;
+  }
+
+  .code-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .code-block h3 {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+  }
+
+  pre {
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  code {
+    color: var(--text);
+  }
+
+  .badge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .badge-example {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
+
+  .badge-label {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .badge-note {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+</style>

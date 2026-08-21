@@ -87,8 +87,6 @@ class RuleClassifier:
         repo_topics = set(t.lower() for t in repo.get("topics", []))
         description = (repo.get("description", "") or "").lower()
         name = (repo.get("full_name", "") or "").lower()
-        language = (repo.get("language", "") or "").lower()
-
         best_match = {
             "category": "Uncategorized",
             "category_slug": "uncategorized",

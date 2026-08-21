@@ -272,5 +272,89 @@ class ScoringEngine:
 
             logger.info(f"Computed percentiles for {len(scores)} repos")
 
+    def compute_incremental_scores(
+        self,
+        repo_names: list[str],
+        timestamp: str | None = None,
+    ) -> int:
+        """Score only specific repos (incremental mode).
+
+        Still needs the full dataset for percentile computation,
+        but only recalculates scores for the given repos.
+
+        Args:
+            repo_names: List of full_names to rescore
+            timestamp: Optional timestamp
+
+        Returns:
+            Number of repos scored
+        """
+        if not repo_names:
+            return 0
+
+        ts = timestamp or datetime.now(tz=UTC).isoformat()
+
+        # Get ALL repos for percentile computation
+        all_repos = self.db.get_all_repos()
+        if not all_repos:
+            logger.warning("No repos to score")
+            return 0
+
+        # Pre-compute percentile arrays (same as full score)
+        all_stars_log = sorted(_log_scale(float(r.get("stars", 0))) for r in all_repos)
+        all_forks_log = sorted(_log_scale(float(r.get("forks", 0))) for r in all_repos)
+        all_watchers = sorted(float(r.get("watchers", 0)) for r in all_repos)
+        all_issues = sorted(float(r.get("open_issues", 0)) for r in all_repos)
+
+        freshness_map: dict[str, float] = {}
+        for r in all_repos:
+            days = _days_since(r.get("pushed_at"))
+            freshness_map[r["full_name"]] = math.exp(-FRESHNESS_LAMBDA * days)
+
+        # Build lookup for repos to score
+        repo_lookup = {r["full_name"]: r for r in all_repos}
+
+        score_batch: list[dict[str, Any]] = []
+        for fn in repo_names:
+            repo = repo_lookup.get(fn)
+            if not repo:
+                continue
+
+            stars = float(repo.get("stars", 0))
+            forks = float(repo.get("forks", 0))
+            watchers = float(repo.get("watchers", 0))
+
+            impact = self._impact(
+                stars, forks, watchers,
+                all_stars_log, all_forks_log, all_watchers
+            )
+            velocity = self._velocity(repo, all_issues)
+            health = self._health(repo, freshness_map.get(fn, 0.5))
+
+            radar = (
+                impact * self.weights["impact"]
+                + velocity * self.weights["velocity"]
+                + health * self.weights["health"]
+            )
+
+            score_batch.append({
+                "repo_full_name": fn,
+                "timestamp": ts,
+                "impact": round(impact, 2),
+                "velocity": round(velocity, 2),
+                "health": round(health, 2),
+                "radar_score": round(radar, 2),
+                "global_percentile": 0.0,
+                "category_percentile": 0.0,
+            })
+
+        self.db.save_scores_batch(score_batch)
+
+        # Recompute percentiles for all repos (needed for accurate rankings)
+        self._compute_percentiles(ts)
+
+        logger.info(f"Incrementally scored {len(score_batch)} repos in {ts}")
+        return len(score_batch)
+
     def get_rankings(self, n: int = 50, sort_by: str = "radar_score") -> list[dict[str, Any]]:
         return self.db.get_top_repos(n, sort_by)

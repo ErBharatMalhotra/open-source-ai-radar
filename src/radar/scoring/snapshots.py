@@ -125,6 +125,7 @@ class SnapshotEngine:
     Supports:
     - Single repo snapshot
     - Batch snapshot of all tracked repos
+    - Incremental snapshot (only changed repos)
     - Growth calculation from historical data
     """
 
@@ -234,6 +235,62 @@ class SnapshotEngine:
             f"Batch snapshot complete: {success}/{total} success, {failed} failed"
         )
         return success
+
+    async def snapshot_incremental(
+        self,
+        client: GitHubClient,
+        changed_repos: list[dict[str, Any]],
+        delay_between: float = 0.5,
+    ) -> tuple[int, int]:
+        """Snapshot only repos that have changed.
+
+        This is the core of incremental processing — instead of fetching
+        all 5,000+ repos, we only fetch the ~800 that changed.
+
+        Args:
+            client: GitHub API client
+            changed_repos: List of repo dicts that need updating
+            delay_between: Seconds between API calls
+
+        Returns:
+            Tuple of (success_count, failed_count)
+        """
+        if not changed_repos:
+            logger.info("No changed repos to snapshot")
+            return 0, 0
+
+        total = len(changed_repos)
+        success = 0
+        failed = 0
+
+        logger.info(f"Starting incremental snapshot of {total} changed repos...")
+
+        for i, repo in enumerate(changed_repos, 1):
+            full_name = repo["full_name"]
+
+            try:
+                snapshot = await self.snapshot_repo(client, full_name)
+                if snapshot:
+                    success += 1
+                    if success % 25 == 0:
+                        logger.info(
+                            f"Progress: {i}/{total} "
+                            f"({success} success, {failed} failed)"
+                        )
+                else:
+                    failed += 1
+
+                if delay_between > 0:
+                    await asyncio.sleep(delay_between)
+
+            except Exception as e:
+                logger.error(f"Failed to snapshot {full_name}: {e}")
+                failed += 1
+
+        logger.info(
+            f"Incremental snapshot complete: {success}/{total} success, {failed} failed"
+        )
+        return success, failed
 
     def get_snapshot_summary(self, full_name: str) -> dict[str, Any]:
         """Get a summary of a repo's snapshot history."""

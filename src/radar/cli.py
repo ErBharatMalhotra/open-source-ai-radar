@@ -936,7 +936,18 @@ def top() -> None:
             f"{r['health']:>6.1f}  {r['repo_full_name']:<35}"
         )
     click.echo()
+@main.command()
+def social_drafts(week: str | None = None) -> None:
+    """Generate social media drafts (Twitter, LinkedIn, HN)."""
+    from radar.reports.social import SocialDraftGenerator
+    from radar.storage.database import Database
 
+    db = Database()
+    gen = SocialDraftGenerator(db)
+    paths = gen.generate_all(week_label=week)
+    click.echo(f"  Generated {len(paths)} social media drafts:")
+    for platform, path in paths.items():
+        click.echo(f"    {platform}: {path}")
 
 if __name__ == "__main__":
     main()

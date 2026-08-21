@@ -39,6 +39,9 @@ jobs:
       - name: Generate weekly report
         run: uv run radar report
 
+      - name: Generate social drafts
+        run: uv run radar social-drafts
+
       - name: Generate RSS feed
         run: uv run radar feed
 

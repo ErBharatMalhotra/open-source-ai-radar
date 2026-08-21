@@ -23,6 +23,13 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v4
 
+      - name: Cache uv dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/uv
+          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          restore-keys: uv-${{ runner.os }}-
+
       - name: Install dependencies
         run: uv sync
 
@@ -33,7 +40,7 @@ jobs:
           key: radar-db-${{ github.run_id }}
           restore-keys: radar-db-
 
-      - name: Run discovery
+      - name: Run discovery (top 6 most active categories)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -43,11 +50,6 @@ jobs:
           uv run radar discover --limit 100 --category mcp
           uv run radar discover --limit 100 --category rag
           uv run radar discover --limit 100 --category local-ai
-          uv run radar discover --limit 100 --category generative-ai
-          uv run radar discover --limit 100 --category multimodal
-          uv run radar discover --limit 100 --category ai-infrastructure
-          uv run radar discover --limit 100 --category evaluation
-          uv run radar discover --limit 100 --category ai-safety
 
       - name: Import to SQLite
         run: uv run radar import-json

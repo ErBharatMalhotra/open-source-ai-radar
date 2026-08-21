@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
+const base = import.meta.env.BASE_URL;
 const dataPath = join(process.cwd(), '..', 'data', 'exports', 'stats.json');
 const topPath = join(process.cwd(), '..', 'data', 'exports', 'top.json');
 
@@ -53,7 +54,7 @@ function scoreClass(s: number): string {
 
   <div class="section-header">
     <h2>🏆 Top Projects by Radar Score</h2>
-    <a href="/top">View all →</a>
+    <a href={`${base}top`}>View all →</a>
   </div>
 
   <table class="repo-table">
@@ -107,11 +108,11 @@ function scoreClass(s: number): string {
 
   <div class="section-header">
     <h2>🚀 Fastest Growing</h2>
-    <a href="/trending">View all →</a>
+    <a href={`${base}trending`}>View all →</a>
   </div>
 
   <div style="text-align:center; padding:2rem; color:var(--text-dim)">
-    <a href="/trending" style="color:var(--accent-light); text-decoration:none;">
+    <a href={`${base}trending`} style="color:var(--accent-light); text-decoration:none;">
       Explore trending projects →
     </a>
   </div>

@@ -32,7 +32,7 @@ function formatStars(n: number): string {
       <p class="trend-desc">High velocity — growing fast right now</p>
       <div class="trend-list">
         {(trends.top_rising || []).map((repo: any, i: number) => (
-          <a class="trend-item" href={`https://github/${repo.repo_full_name}`} target="_blank">
+          <a class="trend-item" href={`https://github.com/${repo.repo_full_name}`} target="_blank">
             <span class="trend-rank">{i + 1}</span>
             <div class="trend-info">
               <span class="trend-name">{repo.repo_full_name}</span>

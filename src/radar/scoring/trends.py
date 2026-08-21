@@ -13,7 +13,7 @@ Detects:
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Any
 
 from radar.storage.database import Database
@@ -205,7 +205,7 @@ class TrendEngine:
         all_trends = self.detect_all()
 
         return {
-            "generated_at": datetime.now(tz=timezone.utc).isoformat(),
+            "generated_at": datetime.now(tz=UTC).isoformat(),
             "rising_stars_count": len(all_trends["rising_stars"]),
             "hidden_gems_count": len(all_trends["hidden_gems"]),
             "losing_momentum_count": len(all_trends["losing_momentum"]),

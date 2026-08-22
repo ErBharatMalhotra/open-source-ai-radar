@@ -108,8 +108,11 @@ function repoUrl(r: any): string {
                 <tr class="repo-row" data-search={`${name} ${r.description || ''} ${r.language || ''} ${r.category || ''}`.toLowerCase()} data-momentum={state}>
                   <td style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">{i + 1}</td>
                   <td>
-                    <a href={repoUrl(r)} style="font-weight:600; color:var(--text); text-decoration:none;">
-                      {name}
+                    <a href={repoUrl(r)} style="display:flex; align-items:center; gap:var(--sp-3); font-weight:600; color:var(--text); text-decoration:none;">
+                      {r.owner_avatar
+                        ? <img src={r.owner_avatar} alt="" width="24" height="24" style="width:24px; height:24px; border-radius:50%; object-fit:cover; flex-shrink:0;" loading="lazy" data-owner={name} referrerpolicy="no-referrer" />
+                        : <span class="avatar-fallback" style="width:24px; height:24px; font-size:10px;">{(name.split('/')[0] || '?').replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase() || '?'}</span>}
+                      <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{name}</span>
                     </a>
                     {r.description && <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; max-width:400px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{r.description}</div>}
                   </td>

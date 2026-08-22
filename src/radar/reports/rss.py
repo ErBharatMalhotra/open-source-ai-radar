@@ -6,9 +6,8 @@ and weekly report summaries.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
 
 from radar.storage.database import Database
 
@@ -35,7 +34,7 @@ class RSSGenerator:
 
         engine = TrendEngine(self.db)
         trends = engine.detect_all()
-        now = datetime.now(tz=timezone.utc)
+        now = datetime.now(tz=UTC)
 
         items: list[str] = []
 

@@ -33,7 +33,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: data/radar.db
-          key: radar-db-${{ github.run_id }}
+          key: radar-db-latest
           restore-keys: radar-db-
 
       - name: Generate weekly report

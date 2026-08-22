@@ -1,9 +1,10 @@
-# Discover new open-source AI repositories every 6 hours
+# Discover new open-source AI repositories twice daily
 name: Discover Repos
 
 on:
   schedule:
-    - cron: "0 2 * * *"  # Daily at 2:00 UTC
+    - cron: "0 2 * * *"   # Morning run at 2:00 UTC
+    - cron: "0 14 * * *"  # Evening run at 14:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -65,7 +66,7 @@ jobs:
       - name: Incremental pipeline (detect changes, snapshot, score)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar process
+        run: uv run radar process --limit 2000
 
       - name: Run anomaly detection
         run: uv run radar anomalies || echo "No anomalies detected"

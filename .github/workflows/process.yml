@@ -40,7 +40,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: data/radar.db
-          key: radar-db-latest
+          key: radar-db-${{ github.run_id }}
           restore-keys: radar-db-
 
       - name: Show scheduler status
@@ -70,12 +70,14 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: data/radar.db
-          key: radar-db-latest
+          # Unique key per run: cache entries are immutable, so a fixed key
+          # would silently skip every save after the first one.
+          key: radar-db-${{ github.run_id }}
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/exports/ -f
-          git diff --staged --quiet || git commit -m "chore: process update [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: process update"
           git push || echo "Push failed (maybe no changes)"

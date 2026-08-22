@@ -29,6 +29,10 @@ function repoUrl(name: string): string {
   const [owner, repo] = name.split('/');
   return `${base}project/${owner}/${repo}`;
 }
+function ownerInitials(fullName: string): string {
+  const owner = fullName.split('/')[0] || '?';
+  return owner.replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase() || '?';
+}
 ---
 
 <Layout title="Trending" description="AI open-source projects gaining momentum right now.">
@@ -44,7 +48,12 @@ function repoUrl(name: string): string {
       return (
         <a href={repoUrl(name)} class="card card-link" style="padding:var(--sp-5); text-decoration:none; color:inherit;">
           <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-2);">
-            <span style="font-weight:600; font-size:var(--text-sm);">{name.split('/')[1]}</span>
+            <span style="display:flex; align-items:center; gap:var(--sp-3); min-width:0;">
+              {r.owner_avatar
+                ? <img src={r.owner_avatar} alt="" width="28" height="28" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;" loading="lazy" data-owner={name} referrerpolicy="no-referrer" />
+                : <span class="avatar-fallback" style="width:28px; height:28px; font-size:11px;">{ownerInitials(name)}</span>}
+              <span style="font-weight:600; font-size:var(--text-sm); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{name.split('/')[1]}</span>
+            </span>
             <span class={`momentum momentum-${state}`}>{momentumLabel(state)}</span>
           </div>
           <div style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--sp-3);">

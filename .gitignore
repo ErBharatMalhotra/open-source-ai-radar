@@ -33,12 +33,10 @@ data/radar.db-shm
 data/snapshots/
 
 # Export files NOT needed by website build
-data/exports/health.json
+# (breakouts.json, category-intelligence.json, health.json and history/
+#  ARE needed — pages import them at build time, so they are committed)
 data/exports/anomalies.json
-data/exports/breakouts.json
-data/exports/category-intelligence.json
 data/exports/category-history/
-data/exports/history/
 !data/.gitkeep
 
 # OS

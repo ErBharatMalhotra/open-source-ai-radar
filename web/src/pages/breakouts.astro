@@ -7,6 +7,20 @@ const base = import.meta.env.BASE_URL;
 let breakouts: any = { candidates: [] };
 try { breakouts = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'breakouts.json'), 'utf-8')); } catch {}
 
+const avatarByRepo = (() => {
+  try {
+    const idx = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8'));
+    const map: Record<string, string> = {};
+    for (const p of idx.projects || []) if (p.full_name && p.owner_avatar) map[p.full_name] = p.owner_avatar;
+    return map;
+  } catch { return {} as Record<string, string>; }
+})();
+
+function ownerInitials(fullName: string): string {
+  const owner = fullName.split('/')[0] || '?';
+  return owner.replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase() || '?';
+}
+
 function fmt(n: number): string {
   if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
   if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
@@ -34,6 +48,9 @@ function repoUrl(name: string): string {
       <a href={repoUrl(r.repo_full_name)} class="card card-link" style="padding:var(--sp-6); text-decoration:none; color:inherit;">
         <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-3);">
           <span style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">#{i + 1}</span>
+          {avatarByRepo[r.repo_full_name]
+            ? <img src={avatarByRepo[r.repo_full_name]} alt="" width="28" height="28" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;" loading="lazy" data-owner={r.repo_full_name} referrerpolicy="no-referrer" />
+            : <span class="avatar-fallback" style="width:28px; height:28px; font-size:11px;">{ownerInitials(r.repo_full_name)}</span>}
           <span style="font-weight:700; font-size:var(--text-base);">{r.repo_full_name}</span>
         </div>
         <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-4);">

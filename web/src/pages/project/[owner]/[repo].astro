@@ -1,7 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { readFileSync, readdirSync } from 'fs';
-import { join } from 'path';
 
 export function getStaticPaths() {
   const projectsDir = join(process.cwd(), '..', 'data', 'exports', 'projects');
@@ -16,35 +15,28 @@ export function getStaticPaths() {
     return [];
   }
 }
+import { join } from 'path';
 
 const { owner, repo } = Astro.params;
-const fullName = `${owner}/${repo}`;
 const base = import.meta.env.BASE_URL;
+
+const projectKey = `${owner}__${repo}`;
+const projectPath = join(process.cwd(), '..', 'data', 'exports', 'projects', `${projectKey}.json`);
+const historyPath = join(process.cwd(), '..', 'data', 'exports', 'history', `${projectKey}.json`);
 
 let project: any = null;
 let history: any = null;
 
-try {
-  const projectPath = join(process.cwd(), '..', 'data', 'exports', 'projects', `${owner}__${repo}.json`);
-  project = JSON.parse(readFileSync(projectPath, 'utf-8'));
-} catch (e) {
-  // Project not found
-}
-
-try {
-  const historyPath = join(process.cwd(), '..', 'data', 'exports', 'history', `${owner}__${repo}.json`);
-  history = JSON.parse(readFileSync(historyPath, 'utf-8'));
-} catch (e) {
-  // No history available
-}
+try { project = JSON.parse(readFileSync(projectPath, 'utf-8')); } catch {}
+try { history = JSON.parse(readFileSync(historyPath, 'utf-8')); } catch {}
 
 if (!project) {
   return Astro.redirect(`${base}`);
 }
 
-function formatStars(n: number): string {
-  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+function fmt(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
   return n.toString();
 }
 
@@ -54,629 +46,118 @@ function scoreClass(s: number): string {
   return 'score-low';
 }
 
-function formatGrowth(n: number): string {
-  if (n > 0) return `+${formatStars(n)}`;
-  if (n < 0) return formatStars(n);
-  return '0';
+function momentumState(v: number, a: number): string {
+  if (a >= 2.0 && v >= 60) return 'breakout';
+  if (a >= 1.5 && v >= 50) return 'accelerating';
+  if (v >= 40) return 'rising';
+  if (v >= 20) return 'stable';
+  return 'declining';
 }
 
-function daysSince(isoStr: string | null): number {
-  if (!isoStr) return 999;
-  try {
-    const d = new Date(isoStr);
-    return Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
-  } catch {
-    return 999;
-  }
+function momentumLabel(s: string): string {
+  return ({ breakout: 'Breakout', accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' } as any)[s] || '\u2014';
 }
+
+const state = momentumState(project.velocity || 0, project.star_growth_acceleration || 1);
 ---
 
-<Layout title={project.full_name} description={project.description || `Radar score and metrics for ${project.full_name}`}>
-  <div class="project-header">
-    <div class="project-title">
-      {project.owner_avatar && (
-        <img src={project.owner_avatar} alt={owner} class="owner-avatar" />
-      )}
-      <div>
-        <h1>
-          <a href={project.url} target="_blank" rel="noopener" class="repo-link">
-            {project.full_name}
-          </a>
-        </h1>
-        {project.description && <p class="project-desc">{project.description}</p>}
-      </div>
-    </div>
-    <div class="project-meta">
-      {project.language && <span class="lang-badge">{project.language}</span>}
-      {project.license && <span class="license-badge">{project.license}</span>}
-      {project.category && <span class="category-badge">{project.category}</span>}
+<Layout title={`${owner}/${repo}`} description={project.description || `Project details for ${owner}/${repo}`}>
+  <nav style="margin-bottom:var(--sp-6); font-size:var(--text-sm);">
+    <a href={`${base}top`} style="color:var(--accent);">Rankings</a>
+    <span style="color:var(--text-muted); margin:0 var(--sp-2);">/</span>
+    <span style="color:var(--text-secondary);">{owner}/{repo}</span>
+  </nav>
+
+  <div style="display:flex; align-items:center; gap:var(--sp-4); margin-bottom:var(--sp-8);">
+    {project.owner_avatar && <img src={project.owner_avatar} alt="" style="width:48px;height:48px;border-radius:var(--radius);border:1px solid var(--border);" loading="lazy" />}
+    <div>
+      <h1 style="font-size:var(--text-3xl); font-weight:700; letter-spacing:var(--tracking-tight);">{owner}/{repo}</h1>
+      {project.description && <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--sp-1);">{project.description}</p>}
     </div>
   </div>
 
-  <!-- Radar Score Hero -->
-  <div class="score-hero">
-    <div class="score-main">
-      <div class="score-value {scoreClass(project.radar_score)}">
-        {project.radar_score?.toFixed(1) || '0.0'}
-      </div>
-      <div class="score-label">Radar Score</div>
-      {project.global_percentile > 0 && (
-        <div class="percentile">Top {Math.round(100 - project.global_percentile)}%</div>
-      )}
+  <div class="stat-grid" style="margin-bottom:var(--sp-8);">
+    <div class="stat-card">
+      <div class="stat-value">{fmt(project.stars || 0)}</div>
+      <div class="stat-label">Stars</div>
     </div>
-    <div class="axis-scores">
-      <div class="axis">
-        <div class="axis-value">{project.impact?.toFixed(0) || '0'}</div>
-        <div class="axis-label">Impact</div>
-        <div class="axis-bar"><div class="axis-fill" style={`width:${project.impact || 0}%`}></div></div>
-      </div>
-      <div class="axis">
-        <div class="axis-value">{project.velocity?.toFixed(0) || '0'}</div>
-        <div class="axis-label">Velocity</div>
-        <div class="axis-bar"><div class="axis-fill" style={`width:${project.velocity || 0}%`}></div></div>
-      </div>
-      <div class="axis">
-        <div class="axis-value">{project.health?.toFixed(0) || '0'}</div>
-        <div class="axis-label">Health</div>
-        <div class="axis-bar"><div class="axis-fill" style={`width:${project.health || 0}%`}></div></div>
-      </div>
+    <div class="stat-card">
+      <div class="stat-value">{fmt(project.forks || 0)}</div>
+      <div class="stat-label">Forks</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value"><span class={`score-pill ${scoreClass(project.radar_score)}`} style="font-size:var(--text-xl);">{project.radar_score?.toFixed(1)}</span></div>
+      <div class="stat-label">Radar Score</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value"><span class={`momentum momentum-${state}`}>{momentumLabel(state)}</span></div>
+      <div class="stat-label">Momentum</div>
     </div>
   </div>
 
-  <!-- Why Trending -->
-  {project.why_trending ? (
-    <div class="section">
-      <h2>💡 Why is this trending?</h2>
-      <div class="why-trending-card">
-        <p>{project.why_trending}</p>
+  <div class="grid-2" style="margin-bottom:var(--sp-8);">
+    <div class="card" style="padding:var(--sp-6);">
+      <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Scoring Breakdown</h2>
+      <div style="display:grid; gap:var(--sp-4);">
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:var(--sp-1);">
+            <span style="font-size:var(--text-sm); font-weight:500;">Impact</span>
+            <span style="font-family:var(--font-mono); font-size:var(--text-sm); color:var(--text-secondary);">{project.impact?.toFixed(1)}</span>
+          </div>
+          <div class="bar"><div class="bar-fill" style={`width:${project.impact || 0}%; background:var(--accent);`}></div></div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:var(--sp-1);">
+            <span style="font-size:var(--text-sm); font-weight:500;">Velocity</span>
+            <span style="font-family:var(--font-mono); font-size:var(--text-sm); color:var(--text-secondary);">{project.velocity?.toFixed(1)}</span>
+          </div>
+          <div class="bar"><div class="bar-fill" style={`width:${project.velocity || 0}%; background:var(--green);`}></div></div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:var(--sp-1);">
+            <span style="font-size:var(--text-sm); font-weight:500;">Health</span>
+            <span style="font-family:var(--font-mono); font-size:var(--text-sm); color:var(--text-secondary);">{project.health?.toFixed(1)}</span>
+          </div>
+          <div class="bar"><div class="bar-fill" style={`width:${project.health || 0}%; background:var(--accent);`}></div></div>
+        </div>
       </div>
     </div>
-  ) : null}
 
-  <!-- Key Metrics -->
-  <div class="metrics-grid">
-    <div class="metric-card">
-      <div class="metric-icon">⭐</div>
-      <div class="metric-value">{formatStars(project.stars || 0)}</div>
-      <div class="metric-label">Stars</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-icon">🍴</div>
-      <div class="metric-value">{formatStars(project.forks || 0)}</div>
-      <div class="metric-label">Forks</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-icon">📋</div>
-      <div class="metric-value">{project.open_issues || 0}</div>
-      <div class="metric-label">Open Issues</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-icon">👥</div>
-      <div class="metric-value">{project.watchers || 0}</div>
-      <div class="metric-label">Watchers</div>
-    </div>
-  </div>
-
-  <!-- Growth Section -->
-  {(project.stars_7d || project.stars_30d || project.stars_90d) ? (
-    <div class="section">
-      <h2>📈 Growth</h2>
-      <div class="growth-grid">
-        <div class="growth-card">
-          <div class="growth-period">7 Days</div>
-          <div class={`growth-value ${(project.stars_7d || 0) > 0 ? 'positive' : (project.stars_7d || 0) < 0 ? 'negative' : ''}`}>
-            {formatGrowth(project.stars_7d || 0)} ⭐
-          </div>
-          <div class="growth-rate">{(project.star_growth_rate_7d || 0).toFixed(1)}/day</div>
+    <div class="card" style="padding:var(--sp-6);">
+      <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Growth Metrics</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4);">
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">7-Day Stars</div>
+          <div style="font-size:var(--text-lg); font-weight:700; color:var(--green);">+{fmt(project.stars_7d || 0)}</div>
         </div>
-        <div class="growth-card">
-          <div class="growth-period">30 Days</div>
-          <div class={`growth-value ${(project.stars_30d || 0) > 0 ? 'positive' : (project.stars_30d || 0) < 0 ? 'negative' : ''}`}>
-            {formatGrowth(project.stars_30d || 0)} ⭐
-          </div>
-          <div class="growth-rate">{(project.star_growth_rate_30d || 0).toFixed(1)}/day</div>
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">30-Day Stars</div>
+          <div style="font-size:var(--text-lg); font-weight:700; color:var(--green);">+{fmt(project.stars_30d || 0)}</div>
         </div>
-        <div class="growth-card">
-          <div class="growth-period">90 Days</div>
-          <div class={`growth-value ${(project.stars_90d || 0) > 0 ? 'positive' : (project.stars_90d || 0) < 0 ? 'negative' : ''}`}>
-            {formatGrowth(project.stars_90d || 0)} ⭐
-          </div>
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Acceleration</div>
+          <div style="font-size:var(--text-lg); font-weight:700;">{project.star_growth_acceleration?.toFixed(2)}x</div>
         </div>
-        <div class="growth-card">
-          <div class="growth-period">Acceleration</div>
-          <div class="growth-value">
-            {(project.star_growth_acceleration || 1).toFixed(2)}x
-          </div>
-          <div class="growth-rate">7d vs 30d rate</div>
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Language</div>
+          <div style="font-size:var(--text-lg); font-weight:700;">{project.language || '\u2014'}</div>
         </div>
-      </div>
-    </div>
-  ) : null}
-
-  <!-- Health Indicators -->
-  <div class="section">
-    <h2>🏥 Health</h2>
-    <div class="health-grid">
-      <div class="health-item">
-        <span class="health-label">Last Push</span>
-        <span class="health-value">{daysSince(project.pushed_at)} days ago</span>
-      </div>
-      <div class="health-item">
-        <span class="health-label">Freshness</span>
-        <span class="health-value">{((project.freshness_score || 0) * 100).toFixed(0)}%</span>
-      </div>
-      <div class="health-item">
-        <span class="health-label">Snapshots</span>
-        <span class="health-value">{project.snapshot_count || 0}</span>
-      </div>
-      <div class="health-item">
-        <span class="health-label">Created</span>
-        <span class="health-value">{daysSince(project.created_at)} days ago</span>
       </div>
     </div>
   </div>
 
-  <!-- Historical Chart -->
-  {history && history.snapshots && history.snapshots.length > 1 ? (
-    <div class="section">
-      <h2>📊 History</h2>
-      <div class="chart-container">
-        <canvas id="historyChart"></canvas>
+  {project.why_trending && (
+    <section class="section">
+      <div class="card" style="padding:var(--sp-6);">
+        <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Why is this trending?</h2>
+        <p style="color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm);">{project.why_trending}</p>
       </div>
-    </div>
-  ) : (
-    <div class="section">
-      <h2>📊 History</h2>
-      <div class="no-data">
-        <p>Historical data will appear after the next daily snapshot.</p>
-      </div>
-    </div>
+    </section>
   )}
 
-  <!-- Tags -->
-  {project.topics && project.topics.length > 0 ? (
-    <div class="section">
-      <h2>🏷️ Tags</h2>
-      <div class="tags">
-        {project.topics.map((tag: string) => (
-          <span class="tag">{tag}</span>
-        ))}
-      </div>
-    </div>
-  ) : null}
-
-  <!-- External Link -->
-  <div class="section">
-    <a href={project.url} target="_blank" rel="noopener" class="github-link">
-      View on GitHub →
+  <div style="margin-top:var(--sp-8); text-align:center;">
+    <a href={`https://github.com/${owner}/${repo}`} target="_blank" rel="noopener" class="badge" style="padding:var(--sp-3) var(--sp-6); font-size:var(--text-sm); color:var(--accent); border:1px solid var(--accent); text-decoration:none; border-radius:var(--radius-full);">
+      View on GitHub
     </a>
   </div>
 </Layout>
-
-<script define:vars={{ historyData: history }}>
-  if (historyData && historyData.snapshots && historyData.snapshots.length > 1) {
-    const canvas = document.getElementById('historyChart');
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      const snapshots = historyData.snapshots;
-      const labels = snapshots.map(s => {
-        const d = new Date(s.timestamp);
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      });
-      const starsData = snapshots.map(s => s.stars);
-
-      // Simple chart drawing
-      const width = canvas.width = canvas.parentElement.offsetWidth;
-      const height = canvas.height = 200;
-      const padding = { top: 20, right: 20, bottom: 40, left: 60 };
-
-      const chartWidth = width - padding.left - padding.right;
-      const chartHeight = height - padding.top - padding.bottom;
-
-      const maxStars = Math.max(...starsData);
-      const minStars = Math.min(...starsData);
-      const range = maxStars - minStars || 1;
-
-      // Clear
-      ctx.clearRect(0, 0, width, height);
-
-      // Grid lines
-      ctx.strokeStyle = '#1e1e2e';
-      ctx.lineWidth = 1;
-      for (let i = 0; i <= 4; i++) {
-        const y = padding.top + (chartHeight / 4) * i;
-        ctx.beginPath();
-        ctx.moveTo(padding.left, y);
-        ctx.lineTo(width - padding.right, y);
-        ctx.stroke();
-
-        // Y-axis labels
-        const value = maxStars - (range / 4) * i;
-        ctx.fillStyle = '#8888a0';
-        ctx.font = '11px system-ui';
-        ctx.textAlign = 'right';
-        ctx.fillText(value.toLocaleString(), padding.left - 8, y + 4);
-      }
-
-      // Draw line
-      ctx.beginPath();
-      ctx.strokeStyle = '#6c5ce7';
-      ctx.lineWidth = 2;
-      ctx.lineJoin = 'round';
-
-      for (let i = 0; i < starsData.length; i++) {
-        const x = padding.left + (chartWidth / (starsData.length - 1)) * i;
-        const y = padding.top + chartHeight - ((starsData[i] - minStars) / range) * chartHeight;
-
-        if (i === 0) ctx.moveTo(x, y);
-        else ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-
-      // Draw dots
-      ctx.fillStyle = '#a29bfe';
-      for (let i = 0; i < starsData.length; i++) {
-        const x = padding.left + (chartWidth / (starsData.length - 1)) * i;
-        const y = padding.top + chartHeight - ((starsData[i] - minStars) / range) * chartHeight;
-
-        ctx.beginPath();
-        ctx.arc(x, y, 3, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      // X-axis labels (show first, middle, last)
-      ctx.fillStyle = '#8888a0';
-      ctx.font = '11px system-ui';
-      ctx.textAlign = 'center';
-
-      if (labels.length > 0) {
-        ctx.fillText(labels[0], padding.left, height - 10);
-        if (labels.length > 2) {
-          ctx.fillText(labels[Math.floor(labels.length / 2)], width / 2, height - 10);
-        }
-        ctx.fillText(labels[labels.length - 1], width - padding.right, height - 10);
-      }
-    }
-  }
-</script>
-
-<style>
-  .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .project-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .owner-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  .repo-link {
-    color: var(--text);
-    text-decoration: none;
-  }
-  .repo-link:hover {
-    color: var(--accent-light);
-  }
-
-  .project-desc {
-    color: var(--text-dim);
-    margin-top: 0.25rem;
-    max-width: 500px;
-  }
-
-  .project-meta {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .lang-badge, .license-badge, .category-badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  .lang-badge {
-    background: var(--bg-hover);
-    color: var(--text);
-  }
-
-  .license-badge {
-    background: rgba(108, 92, 231, 0.15);
-    color: var(--accent-light);
-  }
-
-  .category-badge {
-    background: rgba(0, 210, 160, 0.15);
-    color: var(--green);
-  }
-
-  .score-hero {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem;
-    background: var(--bg-card);
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    margin-bottom: 2rem;
-  }
-
-  .score-main {
-    text-align: center;
-    min-width: 120px;
-  }
-
-  .score-value {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .score-label {
-    color: var(--text-dim);
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .percentile {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
-  }
-
-  .axis-scores {
-    display: flex;
-    gap: 2.5rem;
-    flex: 1;
-  }
-
-  .axis {
-    flex: 1;
-    text-align: center;
-  }
-
-  .axis-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-light);
-  }
-
-  .axis-label {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
-
-  .axis-bar {
-    height: 6px;
-    background: var(--border);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-
-  .axis-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light));
-    border-radius: 3px;
-    transition: width 0.3s;
-  }
-
-  .metrics-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .metric-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    text-align: center;
-  }
-
-  .metric-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .metric-value {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--accent-light);
-  }
-
-  .metric-label {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-top: 0.25rem;
-  }
-
-  .section {
-    margin-bottom: 2rem;
-  }
-
-  .section h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .growth-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-
-  .growth-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .growth-period {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
-
-  .growth-value {
-    font-size: 1.1rem;
-    font-weight: 700;
-  }
-
-  .growth-value.positive { color: var(--green); }
-  .growth-value.negative { color: var(--red); }
-
-  .growth-rate {
-    color: var(--text-dim);
-    font-size: 0.7rem;
-    margin-top: 0.25rem;
-  }
-
-  .health-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-
-  .health-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-  }
-
-  .health-label {
-    color: var(--text-dim);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-  }
-
-  .health-value {
-    font-weight: 600;
-    margin-top: 0.25rem;
-  }
-
-  .chart-container {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-  }
-
-  canvas {
-    width: 100%;
-    height: 200px;
-  }
-
-  .no-data {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-dim);
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .tag {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: var(--bg-hover);
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-
-  .why-trending-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent);
-    border-radius: var(--radius);
-    padding: 1.25rem 1.5rem;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: var(--text);
-  }
-
-  .github-link {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--accent);
-    color: white;
-    text-decoration: none;
-    border-radius: var(--radius);
-    font-weight: 600;
-    transition: opacity 0.2s;
-  }
-
-  .github-link:hover {
-    opacity: 0.9;
-  }
-
-  @media (max-width: 768px) {
-    .score-hero {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .axis-scores {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .metrics-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .growth-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .health-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-</style>

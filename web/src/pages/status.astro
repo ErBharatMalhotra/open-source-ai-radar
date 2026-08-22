@@ -3,316 +3,73 @@ import Layout from '../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-let health: any = { overall_status: 'unknown', checks: [] };
+const base = import.meta.env.BASE_URL;
 let stats: any = {};
+try { stats = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'stats.json'), 'utf-8')); } catch {}
 
-try {
-  const healthPath = join(process.cwd(), '..', 'data', 'exports', 'health.json');
-  health = JSON.parse(readFileSync(healthPath, 'utf-8'));
-} catch (e) {
-  // No health data yet
-}
-
-try {
-  const statsPath = join(process.cwd(), '..', 'data', 'exports', 'stats.json');
-  stats = JSON.parse(readFileSync(statsPath, 'utf-8'));
-} catch (e) {
-  // No stats data
-}
-
-function formatNumber(n: number): string {
-  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
-  return n.toString();
-}
-
-function hoursSince(isoStr: string): string {
-  if (!isoStr) return 'Never';
-  try {
-    const d = new Date(isoStr);
-    const hours = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60));
-    if (hours < 1) return 'Less than 1 hour ago';
-    if (hours < 24) return `${hours} hours ago`;
-    return `${Math.floor(hours / 24)} days ago`;
-  } catch {
-    return 'Unknown';
-  }
-}
-
-const statusColors: Record<string, string> = {
-  healthy: 'var(--green)',
-  warning: 'var(--orange)',
-  critical: 'var(--red)',
-  unknown: 'var(--text-dim)',
-};
-
-const statusIcons: Record<string, string> = {
-  healthy: '✅',
-  warning: '⚠️',
-  critical: '🚨',
-  unknown: '❓',
-};
+const lastUpdate = stats.last_updated || new Date().toISOString();
 ---
 
-    description="Pipeline health, data freshness, and processing statistics for Open Source AI Radar."
-    canonical="/open-source-ai-radar/status/"
-<Layout title="Status" description="Pipeline health and system status">
-  <div class="hero">
-    <h1>🏥 <span>Status</span></h1>
-    <p>Pipeline health and system status</p>
-  </div>
+<Layout title="Status" description="Pipeline status and system health.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1>System <span class="accent">Status</span></h1>
+    <p>Current pipeline health and data freshness</p>
+  </section>
 
-  <!-- Overall Status -->
-  <div class="overall-status" style={`border-left-color: ${statusColors[health.overall_status] || 'var(--border)'}`}>
-    <div class="status-icon">{statusIcons[health.overall_status] || '?'}</div>
-    <div class="status-info">
-      <div class="status-label">Overall Status</div>
-      <div class="status-value" style={`color: ${statusColors[health.overall_status] || 'var(--text)'}`}>
-        {(health.overall_status || 'unknown').toUpperCase()}
-      </div>
-    </div>
-    {health.generated_at && (
-      <div class="status-time">
-        Last checked: {hoursSince(health.generated_at)}
-      </div>
-    )}
-  </div>
-
-  <!-- Quick Stats -->
-  <div class="quick-stats">
+  <div class="stat-grid" style="margin-bottom:var(--sp-12);">
     <div class="stat-card">
-      <div class="stat-value">{formatNumber(stats.total_repos || 0)}</div>
+      <div class="stat-value" style="color:var(--green);">Online</div>
+      <div class="stat-label">Pipeline Status</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{(stats.total_repos || 0).toLocaleString()}</div>
       <div class="stat-label">Repos Tracked</div>
     </div>
     <div class="stat-card">
-      <div class="stat-value">{formatNumber(stats.total_stars || 0)}</div>
+      <div class="stat-value">{((stats.total_stars || 0) / 1000).toFixed(0)}k</div>
       <div class="stat-label">Total Stars</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{stats.snapshots || 0}</div>
-      <div class="stat-label">Snapshots</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{stats.scores || 0}</div>
-      <div class="stat-label">Scores</div>
     </div>
   </div>
 
-  <!-- Health Checks -->
-  {health.checks && health.checks.length > 0 ? (
-    <div class="checks-grid">
-      {health.checks.map((check: any) => (
-        <div class="check-card" style={`border-left-color: ${statusColors[check.status] || 'var(--border)'}`}>
-          <div class="check-header">
-            <span class="check-icon">{statusIcons[check.status] || '?'}</span>
-            <span class="check-name">{check.name}</span>
-            <span class="check-status" style={`color: ${statusColors[check.status] || 'var(--text)'}`}>
-              {check.status}
-            </span>
-          </div>
-
-          <div class="check-details">
-            {Object.entries(check).map(([key, value]) => {
-              if (['name', 'status', 'issues'].includes(key)) return null;
-              if (typeof value === 'object' && value !== null) {
-                return Object.entries(value as Record<string, any>).map(([k, v]) => (
-                  <div class="check-detail">
-                    <span class="detail-key">{k}:</span>
-                    <span class="detail-value">{v}</span>
-                  </div>
-                ));
-              }
-              if (typeof value === 'string' && value) {
-                return (
-                  <div class="check-detail">
-                    <span class="detail-key">{key}:</span>
-                    <span class="detail-value">{value}</span>
-                  </div>
-                );
-              }
-              if (typeof value === 'number') {
-                return (
-                  <div class="check-detail">
-                    <span class="detail-key">{key}:</span>
-                    <span class="detail-value">{value.toLocaleString()}</span>
-                  </div>
-                );
-              }
-              return null;
-            })}
-          </div>
-
-          {check.issues && check.issues.length > 0 && (
-            <div class="check-issues">
-              {check.issues.map((issue: string) => (
-                <div class="issue">⚠️ {issue}</div>
-              ))}
-            </div>
-          )}
+  <section class="section">
+    <div class="section-head"><h2>Data Freshness</h2></div>
+    <div class="card" style="padding:var(--sp-6);">
+      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:var(--sp-4);">
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Last Updated</div>
+          <div style="font-size:var(--text-sm); margin-top:var(--sp-1);">{lastUpdate}</div>
         </div>
-      ))}
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Pipeline</div>
+          <div style="font-size:var(--text-sm); margin-top:var(--sp-1);">GitHub Actions (auto)</div>
+        </div>
+      </div>
     </div>
-  ) : (
-    <div class="no-data">
-      <p>No health data available yet.</p>
-      <p>Run: <code>radar health</code></p>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Workflows</h2></div>
+    <div class="grid-2">
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="font-weight:600; margin-bottom:var(--sp-2);">Discover</div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Runs 2x/day. Searches GitHub for new AI projects.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">02:00 UTC, 14:00 UTC</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="font-weight:600; margin-bottom:var(--sp-2);">Process</div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Runs 4x/day. Snapshots and scores repos by tier.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">04:00, 10:00, 16:00, 22:00 UTC</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="font-weight:600; margin-bottom:var(--sp-2);">Deploy</div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary);">On push to main. Builds and deploys website.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">Automatic</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="font-weight:600; margin-bottom:var(--sp-2);">Weekly Report</div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Monday 08:00 UTC. Generates report + social drafts.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">Monday 08:00 UTC</div>
+      </div>
     </div>
-  )}
+  </section>
 </Layout>
-
-<style>
-  .overall-status {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem 2rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--border);
-    border-radius: var(--radius);
-    margin-bottom: 2rem;
-  }
-
-  .status-icon {
-    font-size: 2rem;
-  }
-
-  .status-info {
-    flex: 1;
-  }
-
-  .status-label {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-    text-transform: uppercase;
-  }
-
-  .status-value {
-    font-size: 1.5rem;
-    font-weight: 800;
-  }
-
-  .status-time {
-    color: var(--text-dim);
-    font-size: 0.85rem;
-  }
-
-  .quick-stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .stat-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    text-align: center;
-  }
-
-  .stat-card .stat-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-light);
-  }
-
-  .stat-card .stat-label {
-    font-size: 0.75rem;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    margin-top: 0.25rem;
-  }
-
-  .checks-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .check-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem 1.5rem;
-  }
-
-  .check-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .check-icon {
-    font-size: 1.2rem;
-  }
-
-  .check-name {
-    font-weight: 600;
-    font-size: 1rem;
-    flex: 1;
-  }
-
-  .check-status {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  .check-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.85rem;
-  }
-
-  .check-detail {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .detail-key {
-    color: var(--text-dim);
-  }
-
-  .detail-value {
-    font-weight: 500;
-  }
-
-  .check-issues {
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .issue {
-    font-size: 0.85rem;
-    color: var(--orange);
-    margin-bottom: 0.25rem;
-  }
-
-  .no-data {
-    text-align: center;
-    padding: 3rem;
-    color: var(--text-dim);
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-  }
-
-  .no-data code {
-    background: var(--bg-hover);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 768px) {
-    .quick-stats {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-</style>

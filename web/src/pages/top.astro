@@ -3,100 +3,125 @@ import Layout from '../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-const topPath = join(process.cwd(), '..', 'data', 'exports', 'top.json');
+const base = import.meta.env.BASE_URL;
 let repos: any[] = [];
-let total = 0;
-
 try {
-  const data = JSON.parse(readFileSync(topPath, 'utf-8'));
+  const data = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'top.json'), 'utf-8'));
   repos = data.repos || [];
-  total = data.total || 0;
-} catch (e) {
-  console.error('Could not load top data');
-}
+} catch {}
 
-function formatStars(n: number): string {
-  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+function fmt(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
   return n.toString();
 }
-
 function scoreClass(s: number): string {
   if (s >= 75) return 'score-high';
   if (s >= 50) return 'score-mid';
   return 'score-low';
 }
+function momentumState(v: number, a: number): string {
+  if (a >= 2.0 && v >= 60) return 'breakout';
+  if (a >= 1.5 && v >= 50) return 'accelerating';
+  if (v >= 40) return 'rising';
+  if (v >= 20) return 'stable';
+  return 'declining';
+}
+function momentumLabel(s: string): string {
+  return ({ breakout: 'Breakout', accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' } as any)[s] || '—';
+}
+function repoUrl(name: string): string {
+  const [owner, repo] = name.split('/');
+  return `${base}project/${owner}/${repo}`;
+}
 ---
 
-    description="Top AI open-source projects ranked by Radar Score. Impact, velocity, and health metrics for 5,000+ repositories."
-    canonical="/open-source-ai-radar/top/"
-<Layout title="Top Projects" description="Top open-source AI projects ranked by Radar Score">
-  <div class="hero">
-    <h1>🏆 <span>Top</span> Projects</h1>
-    <p>The most impactful open-source AI projects, ranked by Radar Score across Impact, Velocity, and Health.</p>
-  </div>
+<Layout title="Rankings" description="Full rankings of AI open-source projects by momentum score.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1>Project <span class="accent">Rankings</span></h1>
+    <p>All {repos.length} tracked projects ranked by radar score</p>
+  </section>
 
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-value">{total.toLocaleString()}</div>
-      <div class="stat-label">Total Tracked</div>
+  <div class="section">
+    <div class="search-box" id="searchBox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" placeholder="Search projects..." aria-label="Search projects" />
     </div>
-    <div class="stat">
-      <div class="stat-value">{repos.length}</div>
-      <div class="stat-label">Top Ranked</div>
+
+    <div class="filters" id="filters">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="breakout">Breakout</button>
+      <button class="filter-pill" data-filter="accelerating">Accelerating</button>
+      <button class="filter-pill" data-filter="rising">Rising</button>
+      <button class="filter-pill" data-filter="stable">Stable</button>
+    </div>
+
+    <div style="margin-top:var(--sp-6);">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Project</th>
+              <th>Language</th>
+              <th class="num">Stars</th>
+              <th class="num">Score</th>
+              <th class="num">Velocity</th>
+              <th>Momentum</th>
+            </tr>
+          </thead>
+          <tbody id="repoTable">
+            {repos.map((r: any, i: number) => {
+              const state = momentumState(r.velocity || 0, r.star_growth_acceleration || 1);
+              return (
+                <tr class="repo-row" data-search={`${r.full_name} ${r.description || ''} ${r.language || ''}`.toLowerCase()} data-momentum={state}>
+                  <td style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">{i + 1}</td>
+                  <td>
+                    <a href={repoUrl(r.full_name)} style="font-weight:600; color:var(--text); text-decoration:none;">
+                      {r.full_name}
+                    </a>
+                    {r.description && <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px; max-width:400px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{r.description}</div>}
+                  </td>
+                  <td>{r.language && <span class="badge">{r.language}</span>}</td>
+                  <td class="num">{fmt(r.stars || 0)}</td>
+                  <td class="num"><span class={`score-pill ${scoreClass(r.radar_score)}`}>{r.radar_score?.toFixed(1)}</span></td>
+                  <td class="num">{r.velocity?.toFixed(0)}</td>
+                  <td><span class={`momentum momentum-${state}`}>{momentumLabel(state)}</span></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-
-  <table class="repo-table">
-    <thead>
-      <tr>
-        <th class="rank">#</th>
-        <th>Project</th>
-        <th class="hide-mobile">Lang</th>
-        <th class="num">Stars</th>
-        <th class="num">Score</th>
-        <th class="hide-mobile">Impact</th>
-        <th class="hide-mobile">Velocity</th>
-        <th class="hide-mobile">Health</th>
-        <th class="hide-mobile">%ile</th>
-      </tr>
-    </thead>
-    <tbody>
-      {repos.map((repo: any, i: number) => (
-        <tr>
-          <td class="rank">{i + 1}</td>
-          <td>
-            <a class="repo-name" href={`https://github.com/${repo.full_name}`} target="_blank" rel="noopener">
-              {repo.full_name}
-            </a>
-            {repo.description && <div class="repo-desc">{repo.description}</div>}
-          </td>
-          <td class="hide-mobile">
-            {repo.language && <span class="repo-lang">{repo.language}</span>}
-          </td>
-          <td class="num">{formatStars(repo.stars || 0)}</td>
-          <td class="num">
-            <span class={`score-badge ${scoreClass(repo.radar_score)}`}>
-              {repo.radar_score?.toFixed(1)}
-            </span>
-          </td>
-          <td class="hide-mobile num">
-            {repo.impact?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.impact}%`}></div></div>
-          </td>
-          <td class="hide-mobile num">
-            {repo.velocity?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.velocity}%`}></div></div>
-          </td>
-          <td class="hide-mobile num">
-            {repo.health?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.health}%`}></div></div>
-          </td>
-          <td class="hide-mobile num" style="color:var(--text-dim)">
-            {repo.global_percentile?.toFixed(0)}th
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
 </Layout>
+
+<script>
+  const input = document.getElementById('searchInput') as HTMLInputElement;
+  const rows = document.querySelectorAll('.repo-row');
+  const pills = document.querySelectorAll('.filter-pill');
+  let activeFilter = 'all';
+
+  function applyFilter() {
+    const q = (input?.value || '').toLowerCase().trim();
+    rows.forEach(row => {
+      const r = row as HTMLElement;
+      const text = r.dataset.search || '';
+      const momentum = r.dataset.momentum || '';
+      const matchText = !q || text.includes(q);
+      const matchFilter = activeFilter === 'all' || momentum === activeFilter;
+      r.style.display = (matchText && matchFilter) ? '' : 'none';
+    });
+  }
+
+  input?.addEventListener('input', applyFilter);
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeFilter = (pill as HTMLElement).dataset.filter || 'all';
+      applyFilter();
+    });
+  });
+</script>

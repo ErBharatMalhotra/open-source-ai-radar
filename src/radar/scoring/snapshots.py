@@ -55,7 +55,7 @@ def calculate_growth_metrics(
     result["stars_90d"] = 0
     result["star_growth_rate_7d"] = 0.0
     result["star_growth_rate_30d"] = 0.0
-    result["star_growth_acceleration"] = 0.0
+    result["star_growth_acceleration"] = 1.0  # Default: stable (no change)
     result["forks_7d"] = 0
     result["forks_30d"] = 0
     result["contributors_7d"] = 0

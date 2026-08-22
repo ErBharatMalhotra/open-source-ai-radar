@@ -5,6 +5,7 @@ import { join } from 'path';
 
 const base = import.meta.env.BASE_URL;
 let repos: any[] = [];
+let repoHistory: Record<string, number[]> = {"affaan-m/ECC": [241862], "anomalyco/opencode": [200055], "awesome-selfhosted/awesome-selfhosted": [314209], "firecrawl/firecrawl": [170649], "f/prompts.chat": [167718], "microsoft/markitdown": [175318], "n8n-io/n8n": [201565], "NousResearch/hermes-agent": [234062], "ollama/ollama": [179138], "Significant-Gravitas/AutoGPT": [186737]};
 try {
   const data = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8'));
   repos = (data.projects || []).sort((a: any, b: any) => (b.radar_score || 0) - (a.radar_score || 0));
@@ -38,6 +39,23 @@ function momentumIcon(s: string): string {
   };
   return icons[s] || '';
 }
+
+function sparkline(stars: number[]): string {
+  if (!stars || stars.length < 2) return '';
+  const w = 60, h = 20, pad = 2;
+  const min = Math.min(...stars), max = Math.max(...stars);
+  const range = max - min || 1;
+  const step = (w - pad * 2) / (stars.length - 1);
+  const pts = stars.map((v, i) => {
+    const x = pad + i * step;
+    const y = h - pad - ((v - min) / range) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+  const rising = stars[stars.length - 1] >= stars[0];
+  const color = rising ? 'var(--green)' : 'var(--red)';
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="${pts.join(' ')}" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
 function repoUrl(r: any): string {
   const name = r.full_name || r.repo_full_name || '';
   const [owner, repo] = name.split('/');
@@ -77,6 +95,7 @@ function repoUrl(r: any): string {
               <th>Language</th>
               <th class="num">Stars</th>
               <th class="num">Score</th>
+              <th>Trend</th>
               <th class="num">Velocity</th>
               <th>Momentum</th>
             </tr>
@@ -97,6 +116,7 @@ function repoUrl(r: any): string {
                   <td>{r.language && <span class="badge">{r.language}</span>}</td>
                   <td class="num">{fmt(r.stars || 0)}</td>
                   <td class="num"><span class={`score-pill ${scoreClass(r.radar_score)}`}>{r.radar_score?.toFixed(1)}</span></td>
+                  <td><Fragment set:html={sparkline(repoHistory[name] || [])} /></td>
                   <td class="num">{r.velocity?.toFixed(0)}</td>
                   <td><span class={`momentum momentum-${state}`}><Fragment set:html={momentumIcon(state)} />{momentumLabel(state)}</span></td>
                 </tr>

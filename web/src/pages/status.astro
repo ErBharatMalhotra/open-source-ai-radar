@@ -4,8 +4,12 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const base = import.meta.env.BASE_URL;
+
 let stats: any = {};
+let health: any = { checks: [] };
+
 try { stats = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'stats.json'), 'utf-8')); } catch {}
+try { health = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'health.json'), 'utf-8')); } catch {}
 
 function fmt(n: number): string {
   if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
@@ -13,68 +17,218 @@ function fmt(n: number): string {
   return n.toString();
 }
 
-const lastUpdate = stats.last_updated || new Date().toISOString();
+function timeAgo(iso: string): string {
+  if (!iso) return 'Never';
+  const diff = Date.now() - new Date(iso).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 1) return 'Just now';
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  const days = Math.floor(hrs / 24);
+  return `${days}d ago`;
+}
+
+function statusColor(s: string): string {
+  if (s === 'healthy') return 'var(--green)';
+  if (s === 'warning') return 'var(--yellow, #f59e0b)';
+  if (s === 'critical') return 'var(--red)';
+  return 'var(--text-muted)';
+}
+
+function statusIcon(s: string): string {
+  if (s === 'healthy') return '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l3 3 7-7"/></svg>';
+  if (s === 'warning') return '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2l6 12H2z"/><line x1="8" y1="7" x2="8" y2="10"/><circle cx="8" cy="12" r="0.5" fill="currentColor"/></svg>';
+  if (s === 'critical') return '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="6"/><line x1="8" y1="5" x2="8" y2="8"/><circle cx="8" cy="10.5" r="0.5" fill="currentColor"/></svg>';
+  return '';
+}
+
+const checks = health.checks || [];
+const overallStatus = health.overall_status || 'unknown';
+
+// Find specific check data
+const freshnessCheck = checks.find((c: any) => c.name === 'Data Freshness');
+const snapshotCheck = checks.find((c: any) => c.name === 'Snapshot Coverage');
+const scoringCheck = checks.find((c: any) => c.name === 'Scoring Coverage');
+const categoryCheck = checks.find((c: any) => c.name === 'Category Coverage');
+const dbCheck = checks.find((c: any) => c.name === 'Database Health');
+const processCheck = checks.find((c: any) => c.name === 'Processing Stats');
+
+const tableSizes = dbCheck?.table_sizes || {};
 ---
 
-<Layout title="Status" description="Pipeline status and system health.">
+<Layout title="Status" description="Pipeline status, health checks, and data freshness.">
   <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
     <h1>System <span class="accent">Status</span></h1>
-    <p>Current pipeline health and data freshness</p>
+    <p>Pipeline health, data freshness, and workflow schedule</p>
   </section>
 
+  <!-- Overall status banner -->
+  <div class="card" style={`padding:var(--sp-5); margin-bottom:var(--sp-8); border-left:3px solid ${statusColor(overallStatus)};`}>
+    <div style="display:flex; align-items:center; gap:var(--sp-3);">
+      <Fragment set:html={statusIcon(overallStatus)} />
+      <span style="font-weight:600; text-transform:capitalize; color:${statusColor(overallStatus)};">{overallStatus}</span>
+      <span style="color:var(--text-muted); font-size:var(--text-sm);">— {checks.filter((c: any) => c.status === 'healthy').length}/{checks.length} checks passing</span>
+    </div>
+  </div>
+
+  <!-- Key metrics -->
   <div class="stat-grid" style="margin-bottom:var(--sp-12);">
     <div class="stat-card">
-      <div class="stat-value" style="color:var(--green);">Online</div>
-      <div class="stat-label">Pipeline Status</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{(stats.total_repos || 0).toLocaleString()}</div>
-      <div class="stat-label">Repos Tracked</div>
+      <div class="stat-value">{fmt(stats.total_repos || 0)}</div>
+      <div class="stat-label">Projects Tracked</div>
     </div>
     <div class="stat-card">
       <div class="stat-value">{fmt(stats.total_stars || 0)}</div>
       <div class="stat-label">Total Stars</div>
     </div>
+    <div class="stat-card">
+      <div class="stat-value">{Object.keys(stats.top_languages || {}).length}</div>
+      <div class="stat-label">Languages</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">{timeAgo(freshnessCheck?.last_snapshot)}</div>
+      <div class="stat-label">Last Snapshot</div>
+    </div>
   </div>
 
+  <!-- Health checks -->
   <section class="section">
-    <div class="section-head"><h2>Data Freshness</h2></div>
-    <div class="card" style="padding:var(--sp-6);">
-      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:var(--sp-4);">
-        <div>
-          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Last Updated</div>
-          <div style="font-size:var(--text-sm); margin-top:var(--sp-1);">{lastUpdate}</div>
+    <div class="section-head"><h2>Health Checks</h2></div>
+    <div style="display:flex; flex-direction:column; gap:var(--sp-3);">
+      {checks.map((check: any) => (
+        <div class="card" style={`padding:var(--sp-4); border-left:3px solid ${statusColor(check.status)};`}>
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:var(--sp-2);">
+            <div style="display:flex; align-items:center; gap:var(--sp-2);">
+              <Fragment set:html={statusIcon(check.status)} />
+              <span style="font-weight:600; font-size:var(--text-sm);">{check.name}</span>
+            </div>
+            <span style={`font-size:var(--text-xs); text-transform:uppercase; color:${statusColor(check.status)}; font-weight:500;`}>{check.status}</span>
+          </div>
+          {check.issues && check.issues.length > 0 && (
+            <div style="margin-top:var(--sp-2); font-size:var(--text-xs); color:var(--text-muted);">
+              {check.issues.map((issue: string) => (
+                <div style="margin-top:2px;">• {issue}</div>
+              ))}
+            </div>
+          )}
+          {check.name === 'Data Freshness' && (
+            <div style="display:flex; gap:var(--sp-6); margin-top:var(--sp-3); font-size:var(--text-xs); color:var(--text-secondary);">
+              <span>Last snapshot: {timeAgo(check.last_snapshot)}</span>
+              <span>Last score: {timeAgo(check.last_score)}</span>
+              <span>Last discovery: {timeAgo(check.last_discovery)}</span>
+            </div>
+          )}
+          {check.name === 'Snapshot Coverage' && (
+            <div style="margin-top:var(--sp-3);">
+              <div style="display:flex; justify-content:space-between; font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-1);">
+                <span>{check.snapshotted?.toLocaleString()} / {check.total_repos?.toLocaleString()} repos snapshotted</span>
+                <span>{check.coverage_pct?.toFixed(1)}%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style={`width:${Math.min(100, check.coverage_pct || 0)}%; background:${statusColor(check.status)};`}></div></div>
+            </div>
+          )}
+          {check.name === 'Scoring Coverage' && (
+            <div style="margin-top:var(--sp-3);">
+              <div style="display:flex; justify-content:space-between; font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-1);">
+                <span>{check.scored?.toLocaleString()} / {check.total_repos?.toLocaleString()} repos scored</span>
+                <span>{check.coverage_pct?.toFixed(1)}%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style={`width:${Math.min(100, check.coverage_pct || 0)}%; background:${statusColor(check.status)};`}></div></div>
+            </div>
+          )}
+          {check.name === 'Processing Stats' && (
+            <div style="display:flex; gap:var(--sp-6); margin-top:var(--sp-3); font-size:var(--text-xs); color:var(--text-secondary);">
+              <span>Processed: {check.processed?.toLocaleString()} / {check.total_repos?.toLocaleString()}</span>
+              <span>Last run: {timeAgo(check.last_run)}</span>
+            </div>
+          )}
         </div>
-        <div>
-          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; letter-spacing:var(--tracking-wide);">Pipeline</div>
-          <div style="font-size:var(--text-sm); margin-top:var(--sp-1);">GitHub Actions (auto)</div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Database tables -->
+  {Object.keys(tableSizes).length > 0 && (
+    <section class="section">
+      <div class="section-head"><h2>Database</h2></div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:var(--sp-4);">
+          {Object.entries(tableSizes).map(([table, count]: [string, any]) => (
+            <div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; letter-spacing:var(--tracking-wide);">{table}</div>
+              <div style="font-size:var(--text-lg); font-weight:700; font-family:var(--font-mono); margin-top:var(--sp-1);">{(count as number).toLocaleString()}</div>
+              <div style="font-size:var(--text-xs); color:var(--text-secondary);">rows</div>
+            </div>
+          ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Workflow schedule -->
+  <section class="section">
+    <div class="section-head"><h2>Workflow Schedule</h2></div>
+    <div class="grid-2">
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="display:flex; align-items:center; gap:var(--sp-2); margin-bottom:var(--sp-3);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--green)" stroke-width="2"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l2.5 1.5"/></svg>
+          <span style="font-weight:600;">Discover</span>
+        </div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-2);">Searches GitHub for new AI projects across 11 categories.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted);">2x daily — 02:00, 14:00 UTC</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-1);">~120 GraphQL calls per run</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="display:flex; align-items:center; gap:var(--sp-2); margin-bottom:var(--sp-3);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M5 8h6M8 5v6"/></svg>
+          <span style="font-weight:600;">Process</span>
+        </div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-2);">Snapshots and scores repos by tier (T1 daily → T4 monthly).</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted);">4x daily — 04:00, 10:00, 16:00, 22:00 UTC</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-1);">~350 GraphQL calls per run</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="display:flex; align-items:center; gap:var(--sp-2); margin-bottom:var(--sp-3);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--text-secondary)" stroke-width="2"><path d="M2 12V4h4l2 2h6v6z"/></svg>
+          <span style="font-weight:600;">Deploy</span>
+        </div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-2);">Builds Astro site and deploys to GitHub Pages.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted);">On push to main — automatic</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-1);">No API calls (build only)</div>
+      </div>
+      <div class="card" style="padding:var(--sp-5);">
+        <div style="display:flex; align-items:center; gap:var(--sp-2); margin-bottom:var(--sp-3);">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--text-secondary)" stroke-width="2"><path d="M4 2v12M12 2v12M2 4h12M2 12h12"/></svg>
+          <span style="font-weight:600;">Weekly Report</span>
+        </div>
+        <div style="font-size:var(--text-xs); color:var(--text-secondary); margin-bottom:var(--sp-2);">Generates intelligence report, social drafts, and RSS feed.</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted);">Monday 08:00 UTC</div>
+        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-1);">~50 GraphQL calls</div>
       </div>
     </div>
   </section>
 
+  <!-- Rate limit info -->
   <section class="section">
-    <div class="section-head"><h2>Workflows</h2></div>
-    <div class="grid-2">
-      <div class="card" style="padding:var(--sp-5);">
-        <div style="font-weight:600; margin-bottom:var(--sp-2);">Discover</div>
-        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Runs 2x/day. Searches GitHub for new AI projects.</div>
-        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">02:00 UTC, 14:00 UTC</div>
-      </div>
-      <div class="card" style="padding:var(--sp-5);">
-        <div style="font-weight:600; margin-bottom:var(--sp-2);">Process</div>
-        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Runs 4x/day. Snapshots and scores repos by tier.</div>
-        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">04:00, 10:00, 16:00, 22:00 UTC</div>
-      </div>
-      <div class="card" style="padding:var(--sp-5);">
-        <div style="font-weight:600; margin-bottom:var(--sp-2);">Deploy</div>
-        <div style="font-size:var(--text-xs); color:var(--text-secondary);">On push to main. Builds and deploys website.</div>
-        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">Automatic</div>
-      </div>
-      <div class="card" style="padding:var(--sp-5);">
-        <div style="font-weight:600; margin-bottom:var(--sp-2);">Weekly Report</div>
-        <div style="font-size:var(--text-xs); color:var(--text-secondary);">Monday 08:00 UTC. Generates report + social drafts.</div>
-        <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-2);">Monday 08:00 UTC</div>
+    <div class="section-head"><h2>Rate Limits</h2></div>
+    <div class="card" style="padding:var(--sp-5);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:var(--sp-4);">
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Budget per hour</div>
+          <div style="font-size:var(--text-lg); font-weight:700; font-family:var(--font-mono); margin-top:var(--sp-1);">1,000 pts</div>
+          <div style="font-size:var(--text-xs); color:var(--text-secondary);">GITHUB_TOKEN</div>
+        </div>
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Safety threshold</div>
+          <div style="font-size:var(--text-lg); font-weight:700; font-family:var(--font-mono); margin-top:var(--sp-1);">80%</div>
+          <div style="font-size:var(--text-xs); color:var(--text-secondary);">800 pts max per run</div>
+        </div>
+        <div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Daily usage</div>
+          <div style="font-size:var(--text-lg); font-weight:700; font-family:var(--font-mono); margin-top:var(--sp-1);">~1,400 pts</div>
+          <div style="font-size:var(--text-xs); color:var(--text-secondary);">Across all workflows</div>
+        </div>
       </div>
     </div>
   </section>

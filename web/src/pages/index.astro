@@ -59,6 +59,11 @@ function repoUrl(name: string): string {
   const [owner, repo] = name.split('/');
   return `${base}project/${owner}/${repo}`;
 }
+
+function ownerInitials(fullName: string): string {
+  const owner = fullName.split('/')[0] || '?';
+  return owner.replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase() || '?';
+}
 ---
 
 <Layout title="Home" description="Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for 5,000+ projects." canonical="/open-source-ai-radar/"
@@ -151,7 +156,9 @@ function repoUrl(name: string): string {
         return (
           <a href={repoUrl(r.full_name)} class="project-row">
             <span class="project-rank">{i + 1}</span>
-            {r.owner_avatar && <img src={r.owner_avatar} alt="" class="project-avatar" loading="lazy" data-owner={r.full_name} crossorigin="anonymous" referrerpolicy="no-referrer" />}
+            {r.owner_avatar
+              ? <img src={r.owner_avatar} alt="" class="project-avatar" width="32" height="32" loading="lazy" data-owner={r.full_name} referrerpolicy="no-referrer" />
+              : <div class="avatar-slot avatar-fallback">{ownerInitials(r.full_name)}</div>}
             <div class="project-info">
               <div class="project-name">{r.full_name}</div>
               {r.description && <div class="project-desc">{r.description}</div>}

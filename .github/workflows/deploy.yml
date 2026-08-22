@@ -29,22 +29,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Restore database cache
-        uses: actions/cache/restore@v4
-        with:
-          path: data/radar.db
-          key: radar-db-latest
-          restore-keys: radar-db-
-          fail-on-cache-miss: false
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-
-      - name: Install uv
-        uses: astral-sh/setup-uv@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -52,28 +36,13 @@ jobs:
           cache: "npm"
           cache-dependency-path: web/package-lock.json
 
-      - name: Cache uv dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/uv
-          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
-          restore-keys: uv-${{ runner.os }}-
-
-      - name: Install Python dependencies
-        run: uv sync
-
       - name: Install web dependencies
         working-directory: web
         run: npm ci
 
-      - name: Export data (if available)
-        run: |
-          if [ -f data/radar.db ]; then
-            uv run python scripts/export.py
-          else
-            echo "No database found — using existing committed exports"
-            ls -la data/exports/ 2>/dev/null || echo "No exports directory found"
-          fi
+      # Build from committed data/exports (process.yml refreshes them daily).
+      # Do NOT regenerate exports here: a stale radar.db cache would overwrite
+      # good committed export JSONs (this broke avatars/names before).
 
       - name: Build website
         working-directory: web

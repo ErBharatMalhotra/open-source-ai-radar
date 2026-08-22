@@ -176,7 +176,7 @@ def export_project_pages(db: Database, out: Path) -> None:
             "created_at": repo.get("created_at"),
             "pushed_at": repo.get("pushed_at"),
             "owner_login": repo.get("owner_login", ""),
-            "owner_avatar": repo.get("owner_avatar", ""),
+            "owner_avatar": _avatar_url(repo),
         }
 
         # Add score data
@@ -259,7 +259,7 @@ def export_project_index(db: Database, out: Path) -> None:
             "description": repo.get("description", "")[:200],
             "language": repo.get("language"),
             "stars": repo.get("stars", 0),
-            "owner_avatar": repo.get("owner_avatar", ""),
+            "owner_avatar": _avatar_url(repo),
         }
 
         if fn in score_map:
@@ -437,6 +437,24 @@ def export_history(db: Database, out: Path) -> None:
     print(f"Exported history for {len(top_repos)} top repos")
 
 
+def _avatar_url(r: dict) -> str:
+    """Return avatar URL, synthesizing one from owner_login when missing.
+
+    GitHub redirects https://github.com/{owner}.png to the current avatar,
+    so this stays valid even if the stored numeric URL is stale or empty.
+    """
+    avatar = r.get("owner_avatar") or ""
+    if avatar:
+        return avatar
+    login = r.get("owner_login") or ""
+    if login:
+        return f"https://github.com/{login}.png"
+    full_name = r.get("full_name") or ""
+    if "/" in full_name:
+        return f"https://github.com/{full_name.split('/')[0]}.png"
+    return ""
+
+
 def _clean_repo(r: dict) -> dict:
     """Clean a repo dict for JSON export."""
     return {
@@ -456,7 +474,7 @@ def _clean_repo(r: dict) -> dict:
         "created_at": r.get("created_at"),
         "pushed_at": r.get("pushed_at"),
         "owner_login": r.get("owner_login", ""),
-        "owner_avatar": r.get("owner_avatar", ""),
+        "owner_avatar": _avatar_url(r),
     }
 
 

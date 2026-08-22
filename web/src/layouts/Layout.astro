@@ -124,22 +124,31 @@ const navItems = [
     </script>
   
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      (function() {
+        function replaceWithFallback(img) {
+          if (!img.parentNode) return;
+          var name = img.getAttribute('data-owner') || '?';
+          var initials = name.split('/')[0].replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase() || '?';
+          var fallback = document.createElement('div');
+          fallback.className = 'avatar-fallback';
+          fallback.textContent = initials;
+          fallback.style.width = img.getAttribute('width') || '32px';
+          fallback.style.height = img.getAttribute('height') || '32px';
+          img.parentNode.replaceChild(fallback, img);
+        }
+        document.addEventListener('error', function(e) {
+          var t = e.target;
+          if (t && t.tagName === 'IMG' && t.hasAttribute('data-owner')) {
+            replaceWithFallback(t);
+          }
+        }, true);
         document.querySelectorAll('img[data-owner]').forEach(function(img) {
           img.referrerPolicy = 'no-referrer';
-          img.onerror = function() {
-            var name = img.getAttribute('data-owner') || '?';
-            var initials = name.split('/').pop().substring(0, 2).toUpperCase();
-            var fallback = document.createElement('div');
-            fallback.className = 'avatar-fallback';
-            fallback.textContent = initials;
-            fallback.style.width = img.style.width || '32px';
-            fallback.style.height = img.style.height || '32px';
-            fallback.style.borderRadius = '50%';
-            img.parentNode.replaceChild(fallback, img);
-          };
+          if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) {
+            replaceWithFallback(img);
+          }
         });
-      });
+      })();
     </script>
   </body>
 </html>

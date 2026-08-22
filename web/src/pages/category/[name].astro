@@ -26,10 +26,21 @@ const { category } = Astro.props;
 // Filter projects by category
 const projects = (index.projects || [])
   .filter((p: any) => p.category === category)
-  .sort((a: any, b: any) => (b.radar_score || 0) - (a.radar_score || 0));
+  .sort((a: any, b: any) => {
+      const sa = a.radar_score || 0;
+      const sb = b.radar_score || 0;
+      if (sa !== sb) return sb - sa;
+      return (b.stars || 0) - (a.stars || 0);
+    });
 
 // Find category metadata
 const catMeta = (intelligence.categories || []).find((c: any) => c.category === category);
+
+function fmtStars(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
+  return n.toString();
+}
 
 function repoUrl(name: string): string {
   const [owner, repo] = name.split('/');
@@ -40,7 +51,8 @@ function momentumBadge(score: number): { label: string; cls: string } {
   if (score >= 80) return { label: 'Breakout', cls: 'badge-accent' };
   if (score >= 65) return { label: 'Accelerating', cls: 'badge-success' };
   if (score >= 45) return { label: 'Rising', cls: 'badge-info' };
-  return { label: 'Stable', cls: 'badge-muted' };
+  if (score > 0) return { label: 'Stable', cls: 'badge-muted' };
+  return { label: '—', cls: 'badge-muted' };
 }
 ---
 
@@ -82,15 +94,15 @@ function momentumBadge(score: number): { label: string; cls: string } {
         <a href={repoUrl(p.full_name)} class="project-row" style="text-decoration:none; color:inherit;">
           <div style="display:flex; align-items:center; gap:var(--sp-4);">
             <span style="font-size:var(--text-sm); color:var(--text-muted); min-width:32px; text-align:right;">#{i + 1}</span>
-            <img src={p.owner_avatar || ''} alt="" style="width:28px; height:28px; border-radius:50%;" loading="lazy" />
+            <img src={p.owner_avatar || ''} alt="" style="width:28px; height:28px; border-radius:50%;" loading="lazy" data-owner={p.full_name} crossorigin="anonymous" />
             <div style="flex:1; min-width:0;">
               <div style="font-weight:600; font-size:var(--text-sm); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{p.full_name}</div>
               <div style="font-size:var(--text-xs); color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:400px;">{p.description || ''}</div>
             </div>
             <div style="display:flex; gap:var(--sp-4); align-items:center; flex-shrink:0;">
               {p.language && <span class="badge badge-sm badge-muted">{p.language}</span>}
-              <span style="font-size:var(--text-sm); font-weight:600; min-width:60px; text-align:right;">{(p.stars || 0).toLocaleString()} ★</span>
-              <span style="font-size:var(--text-sm); font-weight:700; min-width:40px; text-align:right;">{(p.radar_score || 0).toFixed(0)}</span>
+              <span style="font-size:var(--text-sm); font-weight:600; min-width:60px; text-align:right;">{fmtStars(p.stars)} ★</span>
+              <span style="font-size:var(--text-sm); font-weight:700; min-width:40px; text-align:right;">{p.radar_score ? p.radar_score.toFixed(0) : "—"}</span>
               <span class={`badge badge-sm ${mb.cls}`}>{mb.label}</span>
             </div>
           </div>

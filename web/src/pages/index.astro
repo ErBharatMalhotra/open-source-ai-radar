@@ -151,7 +151,7 @@ function repoUrl(name: string): string {
         return (
           <a href={repoUrl(r.full_name)} class="project-row">
             <span class="project-rank">{i + 1}</span>
-            {r.owner_avatar && <img src={r.owner_avatar} alt="" class="project-avatar" loading="lazy" data-owner={r.full_name} crossorigin="anonymous" />}
+            {r.owner_avatar && <img src={r.owner_avatar} alt="" class="project-avatar" loading="lazy" data-owner={r.full_name} crossorigin="anonymous" referrerpolicy="no-referrer" />}
             <div class="project-info">
               <div class="project-name">{r.full_name}</div>
               {r.description && <div class="project-desc">{r.description}</div>}

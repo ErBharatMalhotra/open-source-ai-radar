@@ -112,7 +112,7 @@ function momentumBadge(score: number): { label: string; cls: string } {
         <a href={repoUrl(p.full_name)} class="project-row" style="text-decoration:none; color:inherit;">
           <div style="display:flex; align-items:center; gap:var(--sp-4);">
             <span style="font-size:var(--text-sm); color:var(--text-muted); min-width:32px; text-align:right;">#{i + 1}</span>
-            <img src={p.owner_avatar || ''} alt="" style="width:28px; height:28px; border-radius:50%;" loading="lazy" data-owner={p.full_name} crossorigin="anonymous" />
+            <img src={p.owner_avatar || ''} alt="" style="width:28px; height:28px; border-radius:50%;" loading="lazy" data-owner={p.full_name} crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div style="flex:1; min-width:0;">
               <div style="font-weight:600; font-size:var(--text-sm); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{p.full_name}</div>
               <div style="font-size:var(--text-xs); color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:400px;">{p.description || ''}</div>

@@ -1,15 +1,16 @@
-# Daily snapshot + score + export
+# Snapshot + score + export — runs twice daily after discover
 name: Daily Update
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Daily at 6:00 UTC
+    - cron: "0 6 * * *"   # Morning after discover (2 UTC + 4h buffer)
+    - cron: "0 18 * * *"  # Evening after discover (14 UTC + 4h buffer)
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -43,7 +44,7 @@ jobs:
       - name: Incremental pipeline (detect changes, snapshot, score)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar process
+        run: uv run radar process --limit 3000
 
       - name: Export JSON
         run: uv run python scripts/export.py

@@ -15,9 +15,8 @@ GitHub Releases or committed to the repo.
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
 
 from radar.scoring.trends import TrendEngine
 from radar.storage.database import Database
@@ -63,7 +62,7 @@ class WeeklyReportGenerator:
         Returns:
             Path to the generated report file.
         """
-        now = datetime.now(tz=timezone.utc)
+        now = datetime.now(tz=UTC)
         if week_label is None:
             week_label = now.strftime("%Y-W%W")
 
@@ -78,7 +77,11 @@ class WeeklyReportGenerator:
         lines.append(f"# Open Source AI Radar — Week {now.strftime('%W')} ({now.strftime('%Y')})")
         lines.append("")
         lines.append(f"> *Generated on {now.strftime('%Y-%m-%d %H:%M UTC')}*")
-        lines.append(f"> *Tracking {stats['repos']:,} repositories with {_format_stars(stats['total_stars'])} total stars*")
+        stars_msg = (
+            f"{stats['repos']:,} repositories with "
+            f"{_format_stars(stats['total_stars'])} total stars"
+        )
+        lines.append(f"> *Tracking {stars_msg}*")
         lines.append("")
 
         # ── Biggest Risers ──
@@ -159,9 +162,7 @@ class WeeklyReportGenerator:
             if cat["category"] == "Uncategorized":
                 continue
             pct = (cat["count"] / total * 100) if total > 0 else 0
-            lines.append(
-                f"| {cat['category']} | {cat['count']:,} | {pct:.1f}% |"
-            )
+            lines.append(f"| {cat['category']} | {cat['count']:,} | {pct:.1f}% |")
         lines.append("")
 
         # ── Top Established ──
@@ -180,9 +181,19 @@ class WeeklyReportGenerator:
         # ── Footer ──
         lines.append("---")
         lines.append("")
-        lines.append("*Open Source AI Radar — Discover what is becoming important before everyone else does.*")
+        tagline = (
+            "*Open Source AI Radar — "
+            "Discover what is becoming important "
+            "before everyone else does.*"
+        )
+        lines.append(tagline)
         lines.append("")
-        lines.append(f"*Data: {stats['repos']:,} repos | {_format_stars(stats['total_stars'])} stars | {stats['scores']:,} scores*")
+        data_line = (
+            f"*Data: {stats['repos']:,} repos | "
+            f"{_format_stars(stats['total_stars'])} stars | "
+            f"{stats['scores']:,} scores*"
+        )
+        lines.append(data_line)
 
         # Write report
         report_content = "\n".join(lines)

@@ -133,7 +133,7 @@ function repoUrl(name: string): string {
           <div class="card" style="padding:var(--sp-5);">
             <div style="font-weight:600; font-size:var(--text-sm); margin-bottom:var(--sp-1);">{cat.category}</div>
             <div style="font-size:var(--text-xs); color:var(--text-secondary);">{cat.tracked} projects</div>
-            {cat.trend && <div style="font-size:var(--text-xs); color:var(--green); margin-top:var(--sp-2);">{cat.trend}</div>}
+            {cat.trend && <div style={`font-size:var(--text-xs); color:${cat.trend === 'stable' ? 'var(--text-secondary)' : cat.trend === 'declining' ? 'var(--red)' : 'var(--green)'}; margin-top:var(--sp-2);`}>{cat.trend}</div>}
           </div>
         ))}
       </div>

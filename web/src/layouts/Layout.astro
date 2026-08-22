@@ -126,6 +126,7 @@ const navItems = [
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('img[data-owner]').forEach(function(img) {
+          img.referrerPolicy = 'no-referrer';
           img.onerror = function() {
             var name = img.getAttribute('data-owner') || '?';
             var initials = name.split('/').pop().substring(0, 2).toUpperCase();

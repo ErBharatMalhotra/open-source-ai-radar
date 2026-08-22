@@ -10,6 +10,7 @@ Each repo gets a primary category + sub-category + confidence score.
 
 from __future__ import annotations
 
+import json
 import logging
 import re
 from pathlib import Path
@@ -28,6 +29,23 @@ def _load_categories(path: Path | None = None) -> dict[str, Any]:
         return {}
     with open(p) as f:
         return yaml.safe_load(f)
+
+
+def _parse_topics(value: Any) -> list[str]:
+    """Normalize topics from DB rows.
+
+    The repositories.topics column is stored as a JSON string, but callers
+    may also pass a real list. Iterating a raw string yields characters,
+    which silently broke topic matching.
+    """
+    if isinstance(value, str):
+        try:
+            value = json.loads(value or "[]")
+        except (ValueError, TypeError):
+            return []
+    if not isinstance(value, list):
+        return []
+    return [str(t).lower() for t in value]
 
 
 class RuleClassifier:
@@ -84,7 +102,7 @@ class RuleClassifier:
                 "matched_by": str,    # "topic" | "keyword" | "language" | "none"
             }
         """
-        repo_topics = set(t.lower() for t in repo.get("topics", []))
+        repo_topics = set(_parse_topics(repo.get("topics")))
         description = (repo.get("description", "") or "").lower()
         name = (repo.get("full_name", "") or "").lower()
         best_match = {
@@ -142,7 +160,7 @@ class RuleClassifier:
     def _detect_sub_category(self, repo: dict[str, Any], rule: dict) -> str:
         """Detect sub-category within a matched category."""
         desc = (repo.get("description", "") or "").lower()
-        topics = set(t.lower() for t in repo.get("topics", []))
+        topics = _parse_topics(repo.get("topics"))
         name = (repo.get("full_name", "") or "").lower()
         text = f"{desc} {name} {' '.join(topics)}"
 

@@ -195,6 +195,29 @@ class Database:
                 "why_trending TEXT DEFAULT ''"
             )
 
+        # Dedupe ai_analysis (INSERT OR REPLACE was silently inserting
+        # duplicates because repo_full_name had no UNIQUE constraint),
+        # then enforce uniqueness so upserts behave correctly.
+        # Keep the newest row per repo (highest id = most recent write).
+        analysis_indexes = {
+            row[1]
+            for row in conn.execute(
+                "PRAGMA index_list(ai_analysis)"
+            ).fetchall()
+        }
+        if "idx_analysis_repo_unique" not in analysis_indexes:
+            conn.execute("""
+                DELETE FROM ai_analysis
+                WHERE id NOT IN (
+                    SELECT MAX(id) FROM ai_analysis
+                    GROUP BY repo_full_name
+                )
+            """)
+            conn.execute(
+                "CREATE UNIQUE INDEX IF NOT EXISTS "
+                "idx_analysis_repo_unique ON ai_analysis(repo_full_name)"
+            )
+
         tables = {
             row[0]
             for row in conn.execute(

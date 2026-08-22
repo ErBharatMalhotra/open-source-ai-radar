@@ -786,9 +786,14 @@ async def _process(full: bool, limit: int | None) -> None:
 
     click.echo(f"  Scored: {count} repos")
 
+    # Step 4.5: Classify uncategorized repos (rules only, skips already-analyzed)
+    click.echo("\n  🏷️  Classifying...")
+    from radar.analysis.engine import AnalysisEngine
 
+    classify_stats = AnalysisEngine(db).analyze_all(max_ai_repos=0)
+    click.echo(f"  Classified: {classify_stats['classified']} new repos")
 
-    # Step 4.5: Why Trending analysis
+    # Step 4.6: Why Trending analysis
     click.echo("\n  Why Trending analysis...")
     from radar.analysis.why_trending import WhyTrendingAnalyzer
     wt_analyzer = WhyTrendingAnalyzer(db)

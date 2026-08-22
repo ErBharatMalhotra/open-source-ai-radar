@@ -68,6 +68,19 @@ class AnalysisEngine:
                 stats["skipped"] += 1
                 continue
 
+            # topics is stored as a JSON string in the DB — parse it so the
+            # rule classifier can match topics (iterating a raw string yields
+            # characters, which silently broke topic matching for ~72% repos)
+            repo = dict(repo)
+            raw_topics = repo.get("topics")
+            if isinstance(raw_topics, str):
+                try:
+                    import json as _json
+
+                    repo["topics"] = _json.loads(raw_topics or "[]")
+                except (ValueError, TypeError):
+                    repo["topics"] = []
+
             # Rule-based classification
             classification = self.classifier.classify(repo)
 

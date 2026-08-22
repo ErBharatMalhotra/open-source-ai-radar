@@ -28,8 +28,8 @@
   "velocity": 75.81,
   "health": 65.0,
   "global_percentile": 74.81,
-  "category": "Uncategorized",
-  "sub_category": "",
+  "category": "LLM Frameworks",
+  "sub_category": "inference engine",
   "summary": "Qwen3.8-27B on a single RTX 3090 with vLLM: ~1,000 tok/s at 64 concurrent (int8 tensor-core GEMMs, fp16 DeltaNet state), ~114 tok/s single-user at default sampling / ~124 greedy (MTP drafts, own-output draft vocab, calibrated int4 lm_head, split-KV verify attention), 150k-262k context; patches, requ",
   "maturity": "Unknown",
   "snapshot_count": 0

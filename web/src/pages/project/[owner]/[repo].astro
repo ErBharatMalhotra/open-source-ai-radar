@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { readFileSync, readdirSync } from 'fs';
+import { topProjectSet } from '../../../utils/og';
 
 export function getStaticPaths() {
   const projectsDir = join(process.cwd(), '..', 'data', 'exports', 'projects');
@@ -59,9 +60,26 @@ function momentumLabel(s: string): string {
 }
 
 const state = momentumState(project.velocity || 0, project.star_growth_acceleration || 1);
+const socialImage = topProjectSet().has(`${owner}/${repo}`)
+  ? `${base}project/${owner}/${repo}/og.png`
+  : `${base}og.png`;
+
+function percentileLabel(p: any): string {
+  const v = Number(p);
+  if (!Number.isFinite(v) || v <= 0) return '';
+  return `Top ${(100 - v).toFixed(0)}% globally`;
+}
+
+function velocityStory(v: number): string {
+  if (v >= 70) return 'Exceptional momentum — gaining stars far faster than almost everything else tracked.';
+  if (v >= 50) return 'Strong momentum — adoption is accelerating week over week.';
+  if (v >= 35) return 'Steady growth — consistently collecting stars and contributors.';
+  if (v >= 15) return 'Modest but positive momentum.';
+  return 'Momentum is cooling relative to the rest of the index.';
+}
 ---
 
-<Layout title={`${owner}/${repo}`} description={project.description || `Project details for ${owner}/${repo}`}>
+<Layout title={`${owner}/${repo}`} description={project.description || `Project details for ${owner}/${repo}`} ogImage={socialImage}>
   <nav style="margin-bottom:var(--sp-6); font-size:var(--text-sm);">
     <a href={`${base}top`} style="color:var(--accent);">Rankings</a>
     <span style="color:var(--text-muted); margin:0 var(--sp-2);">/</span>
@@ -146,14 +164,25 @@ const state = momentumState(project.velocity || 0, project.star_growth_accelerat
     </div>
   </div>
 
-  {project.why_trending && (
-    <section class="section">
-      <div class="card" style="padding:var(--sp-6);">
-        <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Why is this trending?</h2>
-        <p style="color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm);">{project.why_trending}</p>
+  <section class="section">
+    <div class="card" style="padding:var(--sp-6);">
+      <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Why it ranks</h2>
+      <p style="color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm); margin-bottom:var(--sp-4);">{velocityStory(project.velocity || 0)}</p>
+      <div style="display:flex; gap:var(--sp-2); flex-wrap:wrap;">
+        {project.category && project.category !== 'Uncategorized' && (
+          <a href={`${base}category/${project.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} class="badge" style="color:var(--accent); text-decoration:none;">{project.sub_category ? `${project.category} · ${project.sub_category}` : project.category}</a>
+        )}
+        {percentileLabel(project.global_percentile) && <span class="badge">{percentileLabel(project.global_percentile)}</span>}
+        {project.maturity && project.maturity !== 'Unknown' && <span class="badge">Maturity: {project.maturity}</span>}
+        {Number(project.days_since_last_push) > 0 && <span class="badge">Last push {Math.round(Number(project.days_since_last_push))}d ago</span>}
+        {Number(project.stars_7d) > 0 && <span class="badge" style="color:var(--green);">+{fmt(Number(project.stars_7d))} stars / 7d</span>}
+        {Number(project.stars_30d) > 0 && <span class="badge" style="color:var(--green);">+{fmt(Number(project.stars_30d))} stars / 30d</span>}
       </div>
-    </section>
-  )}
+      {project.why_trending && (
+        <p style="margin-top:var(--sp-4); padding-top:var(--sp-4); border-top:1px solid var(--border-subtle); color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm);"><strong style="color:var(--text);">Trend signal:</strong> {project.why_trending}</p>
+      )}
+    </div>
+  </section>
 
   <div style="margin-top:var(--sp-8); text-align:center;">
     <a href={`https://github.com/${owner}/${repo}`} target="_blank" rel="noopener" class="badge" style="padding:var(--sp-3) var(--sp-6); font-size:var(--text-sm); color:var(--accent); border:1px solid var(--accent); text-decoration:none; border-radius:var(--radius-full);">

@@ -10,7 +10,7 @@ on:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -63,10 +63,16 @@ jobs:
       - name: Classify repos
         run: uv run radar classify
 
+      - name: Save DB early (preserve discovery progress)
+        uses: actions/cache/save@v4
+        with:
+          path: data/radar.db
+          key: radar-db-latest
+
       - name: Incremental pipeline (detect changes, snapshot, score)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar process --limit 2000
+        run: uv run radar process --limit 1000
 
       - name: Run anomaly detection
         run: uv run radar anomalies || echo "No anomalies detected"

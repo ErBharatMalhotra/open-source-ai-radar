@@ -7,6 +7,7 @@ const base = import.meta.env.BASE_URL;
 
 // Load data
 let index: any = { projects: [] };
+let repoHistory: Record<string, number[]> = {"affaan-m/ECC": [241862], "anomalyco/opencode": [200055], "awesome-selfhosted/awesome-selfhosted": [314209], "firecrawl/firecrawl": [170649], "f/prompts.chat": [167718], "microsoft/markitdown": [175318], "n8n-io/n8n": [201565], "NousResearch/hermes-agent": [234062], "ollama/ollama": [179138], "Significant-Gravitas/AutoGPT": [186737]};
 try { index = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8')); } catch {}
 
 let intelligence: any = { categories: [] };
@@ -40,6 +41,23 @@ function fmtStars(n: number): string {
   if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
   if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
   return n.toString();
+}
+
+
+function sparkline(stars: number[]): string {
+  if (!stars || stars.length < 2) return '';
+  const w = 60, h = 20, pad = 2;
+  const min = Math.min(...stars), max = Math.max(...stars);
+  const range = max - min || 1;
+  const step = (w - pad * 2) / (stars.length - 1);
+  const pts = stars.map((v, i) => {
+    const x = pad + i * step;
+    const y = h - pad - ((v - min) / range) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+  const rising = stars[stars.length - 1] >= stars[0];
+  const color = rising ? 'var(--green)' : 'var(--red)';
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="${pts.join(' ')}" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 }
 
 function repoUrl(name: string): string {
@@ -103,6 +121,7 @@ function momentumBadge(score: number): { label: string; cls: string } {
               {p.language && <span class="badge badge-sm badge-muted">{p.language}</span>}
               <span style="font-size:var(--text-sm); font-weight:600; min-width:60px; text-align:right;">{fmtStars(p.stars)} ★</span>
               <span style="font-size:var(--text-sm); font-weight:700; min-width:40px; text-align:right;">{p.radar_score ? p.radar_score.toFixed(0) : "—"}</span>
+              <Fragment set:html={sparkline(repoHistory[p.full_name] || [])} />
               <span class={`badge badge-sm ${mb.cls}`}>{mb.label}</span>
             </div>
           </div>

@@ -43,8 +43,9 @@ function repoUrl(name: string): string {
     <p>Projects showing early signs of explosive growth</p>
   </section>
 
-  <div class="grid-auto">
-    {(breakouts.candidates || []).map((r: any, i: number) => (
+  {breakouts.candidates && breakouts.candidates.length > 0 ? (
+    <div class="grid-auto">
+      {(breakouts.candidates || []).map((r: any, i: number) => (
       <a href={repoUrl(r.repo_full_name)} class="card card-link" style="padding:var(--sp-6); text-decoration:none; color:inherit;">
         <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-3);">
           <span style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">#{i + 1}</span>
@@ -73,5 +74,12 @@ function repoUrl(name: string): string {
         </div>
       </a>
     ))}
-  </div>
+    </div>
+  ) : (
+    <div class="card" style="padding:var(--sp-8); text-align:center; color:var(--text-muted);">
+      <div style="font-size:var(--text-2xl); font-weight:700; margin-bottom:var(--sp-3); color:var(--text);">No breakouts detected yet</div>
+      <p style="max-width:480px; margin:0 auto var(--sp-4);">Breakout detection compares each project's star velocity against its own history. The pipeline needs a few days of snapshots to build that baseline.</p>
+      <p style="margin:0; font-size:var(--text-xs);">Snapshots are collected automatically every 6 hours — check back soon.</p>
+    </div>
+  )}
 </Layout>

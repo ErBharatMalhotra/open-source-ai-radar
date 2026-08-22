@@ -786,6 +786,20 @@ async def _process(full: bool, limit: int | None) -> None:
 
     click.echo(f"  Scored: {count} repos")
 
+
+
+    # Step 4.5: Why Trending analysis
+    click.echo("\n  Why Trending analysis...")
+    from radar.analysis.why_trending import WhyTrendingAnalyzer
+    wt_analyzer = WhyTrendingAnalyzer(db)
+    wt_results = wt_analyzer.analyze_all_trending(limit=50)
+    if wt_results:
+        explanations = {r["repo_full_name"]: r["explanation"] for r in wt_results}
+        db.save_why_trending_batch(explanations)
+        click.echo(f"  Analyzed: {len(explanations)} repos")
+    else:
+        click.echo("  No trending repos to analyze yet")
+
     # Step 5: Mark as processed
     click.echo("\n  ✅ Updating signatures...")
     detector.mark_processed(repos_to_process)

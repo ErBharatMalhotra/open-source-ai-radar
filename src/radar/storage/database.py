@@ -139,6 +139,7 @@ CREATE TABLE IF NOT EXISTS category_momentum (
     total_stars INTEGER DEFAULT 0,
     top_project TEXT DEFAULT '',
     trend TEXT DEFAULT 'stable',
+    momentum_score REAL DEFAULT 0.0,
     UNIQUE(category, timestamp)
 );
 

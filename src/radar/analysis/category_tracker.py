@@ -48,17 +48,28 @@ class CategoryTracker:
                 logger.warning("No categorized repos found")
                 return []
 
-            # Get latest scores
+            # Get latest scores — use the most recent timestamp with enough repos
+            # (avoids using a tiny test batch as the "latest")
             score_rows = conn.execute(
                 """SELECT repo_full_name, velocity, health, radar_score
-                FROM scores WHERE timestamp = (SELECT MAX(timestamp) FROM scores)"""
+                FROM scores WHERE timestamp = (
+                    SELECT timestamp FROM scores
+                    GROUP BY timestamp
+                    HAVING COUNT(*) > 100
+                    ORDER BY timestamp DESC LIMIT 1
+                )"""
             ).fetchall()
             score_map = {r["repo_full_name"]: dict(r) for r in score_rows}
 
-            # Get growth metrics
+            # Get growth metrics — use latest timestamp with sufficient data
             growth_rows = conn.execute(
                 """SELECT repo_full_name, stars_7d, stars_30d, star_growth_rate_7d
-                FROM growth_metrics WHERE timestamp = (SELECT MAX(timestamp) FROM growth_metrics)"""
+                FROM growth_metrics WHERE timestamp = (
+                    SELECT timestamp FROM growth_metrics
+                    GROUP BY timestamp
+                    HAVING COUNT(*) > 100
+                    ORDER BY timestamp DESC LIMIT 1
+                )"""
             ).fetchall()
             growth_map = {r["repo_full_name"]: dict(r) for r in growth_rows}
 
@@ -198,13 +209,18 @@ class CategoryTracker:
         return momentum
 
     def _determine_trend(self, category: str, current_score: float) -> str:
-        """Determine trend by comparing to previous momentum."""
+        """Determine trend by comparing current momentum_score to previous."""
         history = self.db.get_category_momentum_history(category, limit=2)
 
         if len(history) < 2:
             return "new"
 
-        prev_score = history[1].get("avg_velocity", 0)
+        # Compare momentum_score to previous momentum_score (not avg_velocity)
+        prev_score = history[1].get("momentum_score", 0)
+        if prev_score == 0:
+            # First real comparison — use avg_velocity as fallback
+            prev_score = history[1].get("avg_velocity", 0)
+
         diff = current_score - prev_score
 
         if diff > 10:

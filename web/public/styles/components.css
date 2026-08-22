@@ -210,17 +210,7 @@ tr:hover td { background: var(--bg-hover); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ── Project Row ── */
-.project-row {
-  display: grid;
-  grid-template-columns: 40px 44px 1fr auto auto auto auto;
-  align-items: center; gap: var(--sp-4);
-  padding: var(--sp-3) var(--sp-4);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: background var(--transition-fast);
-  text-decoration: none; color: inherit;
-}
-.project-row:hover { background
+/* (removed broken duplicate) */
 
 /* ── Hero ── */
 .hero-editorial {
@@ -265,7 +255,7 @@ tr:hover td { background: var(--bg-hover); }
   height: 32px;
   border-radius: var(--radius-sm);
 }
-.project-info { min-width: 0; }
+.project-info { min-width: 0; overflow: hidden; }
 .project-name {
   font-weight: 600;
   font-size: var(--text-sm);
@@ -293,7 +283,7 @@ tr:hover td { background: var(--bg-hover); }
   .hero-editorial { padding: var(--sp-8) 0 var(--sp-6); }
   .hero-editorial h1 { font-size: var(--text-3xl); }
   .project-row {
-    grid-template-columns: 28px 1fr auto auto;
+    grid-template-columns: 28px 1fr auto auto auto;
   }
   .project-avatar { display: none; }
   .project-desc { display: none; }

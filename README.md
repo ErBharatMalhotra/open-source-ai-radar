@@ -6,7 +6,9 @@ Open Source AI Radar is a **continuously updated intelligence platform** that di
 
 Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (Impact, Velocity, Health) to find projects that are *becoming* important — not just ones that already are.
 
-**[Live Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/)** | **[API](https://erbharatmalhotra.github.io/open-source-ai-radar/api/repos.json)** | **[RSS](https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml)** | **[Weekly Reports](https://github.com/ErBharatMalhotra/open-source-ai-radar/releases)**
+**[Live Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/)** | **[API Docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/)** | **[RSS](https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml)**
+
+**Tracking 5,200+ repos · 96% auto-classified into 12 AI categories · Updated 6x daily**
 
 ---
 
@@ -26,6 +28,20 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 - **RSS Feed** — Subscribe to trending discoveries
 - **API Endpoints** — JSON API for programmatic access
 - **Badges** — Dynamic SVG badges for project READMEs
+
+## Show Your Project's Score
+
+If your repo is tracked, grab a live badge for your README:
+
+```markdown
+![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/data/exports/api/badges/OWNER__REPO/score.svg)
+```
+
+![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/data/exports/api/badges/BerriAI__litellm/score.svg)
+
+More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
+
+---
 
 ## Quick Start
 

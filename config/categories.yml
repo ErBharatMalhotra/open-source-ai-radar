@@ -1,24 +1,252 @@
 # Open Source AI Radar — Category Configuration
-# Each category defines topics and keywords for GitHub discovery
+#
+# Order matters: categories are matched specific → generic, and the best
+# score wins with first-match tie-breaking. Keep narrow domains (MCP, RAG,
+# AI Coding) above broad ones (AI Agents, LLM Frameworks).
+#
+# Each category defines topics (GitHub topic tags) and keywords (matched as
+# word-boundary patterns against description + repo name + topics).
 
 categories:
+  mcp:
+    name: "MCP"
+    description: "Model Context Protocol, MCP servers and tools"
+    topics:
+      - "mcp"
+      - "model-context-protocol"
+      - "mcp-server"
+      - "mcp-client"
+      - "mcp-tools"
+      - "mcp-tool"
+    keywords:
+      - "MCP"
+      - "Model Context Protocol"
+      - "MCP server"
+      - "MCP client"
+    sub_categories:
+      - "Server"
+      - "Client"
+      - "Tool"
+      - "Integration"
+
+  rag:
+    name: "RAG"
+    description: "Retrieval-Augmented Generation, vector databases, embeddings"
+    topics:
+      - "rag"
+      - "retrieval-augmented-generation"
+      - "vector-database"
+      - "vector-db"
+      - "embedding"
+      - "embeddings"
+      - "semantic-search"
+    keywords:
+      - "RAG"
+      - "retrieval augmented"
+      - "vector database"
+      - "embeddings"
+      - "semantic search"
+      - "knowledge base"
+    sub_categories:
+      - "Vector Database"
+      - "RAG Framework"
+      - "Embeddings"
+      - "Knowledge Management"
+
+  ai-coding:
+    name: "AI Coding Tools"
+    description: "Coding agents, code assistants, code generation"
+    topics:
+      - "coding-agent"
+      - "coding-agents"
+      - "code-generation"
+      - "ai-code"
+      - "copilot"
+      - "code-assistant"
+      - "claude-code"
+      - "codex"
+      - "openclaw"
+    keywords:
+      - "coding agent"
+      - "AI code assistant"
+      - "code assistant"
+      - "claude code"
+      - "code generation"
+      - "CLI coding tool"
+      - "AI pair programming"
+      - "code completion"
+      - "coding"
+    sub_categories:
+      - "CLI Tool"
+      - "IDE Extension"
+      - "Code Completion"
+      - "Code Review"
+
+  ai-safety:
+    name: "AI Safety & Alignment"
+    description: "Guardrails, content filtering, bias detection, alignment"
+    topics:
+      - "ai-safety"
+      - "alignment"
+      - "guardrails"
+      - "content-filtering"
+      - "bias-detection"
+      - "red-teaming"
+      - "llm-security"
+      - "jailbreak"
+    keywords:
+      - "AI safety"
+      - "guardrails"
+      - "alignment research"
+      - "red teaming"
+      - "jailbreak"
+      - "responsible AI"
+      - "prompt injection"
+    sub_categories:
+      - "Guardrails"
+      - "Content Filtering"
+      - "Bias Detection"
+      - "Alignment Research"
+
+  evaluation:
+    name: "Evaluation & Benchmarks"
+    description: "LLM benchmarks, model comparison, testing frameworks"
+    topics:
+      - "benchmark"
+      - "benchmarks"
+      - "evaluation"
+      - "evals"
+      - "llm-eval"
+      - "model-comparison"
+      - "leaderboard"
+    keywords:
+      - "benchmark"
+      - "leaderboard"
+      - "LLM benchmark"
+      - "model evaluation"
+      - "evaluation framework"
+      - "evals"
+    sub_categories:
+      - "Benchmark"
+      - "Evaluation Framework"
+      - "Comparison Tool"
+
+  generative-ai:
+    name: "Generative AI"
+    description: "Image, video, audio generation and multimodal"
+    topics:
+      - "generative-ai"
+      - "image-generation"
+      - "video-generation"
+      - "audio-generation"
+      - "stable-diffusion"
+      - "text-to-image"
+      - "text-to-video"
+      - "text-to-speech"
+      - "music-generation"
+    keywords:
+      - "diffusion"
+      - "image generation"
+      - "video generation"
+      - "text to image"
+      - "text to video"
+      - "generative model"
+      - "AI art"
+    sub_categories:
+      - "Image"
+      - "Video"
+      - "Audio"
+      - "3D"
+
+  multimodal:
+    name: "Multimodal AI"
+    description: "Vision-language models, multimodal frameworks, computer vision"
+    topics:
+      - "multimodal"
+      - "vision-language"
+      - "vision-language-model"
+      - "vlm"
+      - "clip"
+      - "computer-vision"
+    keywords:
+      - "multimodal"
+      - "vision language model"
+      - "VLM"
+      - "computer vision"
+      - "cross-modal"
+    sub_categories:
+      - "Vision-Language"
+      - "Audio-Language"
+      - "Omni-modal"
+
+  local-ai:
+    name: "Local AI"
+    description: "Local LLMs, on-device AI, privacy-focused AI"
+    topics:
+      - "local-llm"
+      - "local-ai"
+      - "ollama"
+      - "llama.cpp"
+      - "on-device"
+      - "on-device-ai"
+      - "self-hosted-ai"
+    keywords:
+      - "local LLM"
+      - "run LLM locally"
+      - "locally"
+      - "on-device"
+      - "self-hosted"
+      - "Ollama"
+      - "local inference"
+    sub_categories:
+      - "Local Runner"
+      - "Privacy Tool"
+      - "Edge AI"
+      - "Offline AI"
+
+  ai-infrastructure:
+    name: "AI Infrastructure"
+    description: "Model serving, GPU tools, orchestration, MLOps"
+    topics:
+      - "mlops"
+      - "model-serving"
+      - "gpu"
+      - "distributed-training"
+      - "kubernetes-ai"
+      - "ml-infrastructure"
+      - "inference-server"
+      - "vllm"
+    keywords:
+      - "inference optimization"
+      - "model serving"
+      - "distributed training"
+      - "ML pipeline"
+      - "GPU"
+    sub_categories:
+      - "Model Serving"
+      - "GPU Management"
+      - "Orchestration"
+      - "Monitoring"
+
   ai-agents:
     name: "AI Agents"
     description: "Autonomous agents, agent frameworks, multi-agent systems"
     topics:
       - "ai-agent"
+      - "ai-agents"
       - "autonomous-agent"
       - "agent-framework"
       - "multi-agent"
-      - "agent"
+      - "agents"
+      - "agentic-ai"
+      - "agent-skills"
       - "langchain"
-      - "autogpt"
       - "crewai"
     keywords:
-      - "AI agent framework"
+      - "AI agent"
       - "autonomous agent"
       - "multi-agent system"
-      - "agentic AI"
+      - "agentic"
       - "agent orchestration"
     sub_categories:
       - "Coding Agent"
@@ -31,209 +259,27 @@ categories:
     description: "LLM inference, fine-tuning, serving, and tooling"
     topics:
       - "llm"
+      - "llms"
       - "large-language-model"
+      - "large-language-models"
+      - "llm-inference"
       - "inference"
       - "fine-tuning"
       - "transformers"
       - "gguf"
       - "quantization"
+      - "gpt"
+      - "deepseek"
+      - "openai"
     keywords:
-      - "LLM framework"
-      - "language model inference"
+      - "LLM"
+      - "LLMs"
+      - "language model"
+      - "large language model"
       - "fine-tuning framework"
-      - "model serving"
-      - "LLM deployment"
+      - "quantization"
     sub_categories:
       - "Inference Engine"
       - "Fine-tuning"
       - "Quantization"
       - "Serving"
-
-  ai-coding:
-    name: "AI Coding Tools"
-    description: "Coding agents, code assistants, code generation"
-    topics:
-      - "coding-agent"
-      - "code-generation"
-      - "ai-code"
-      - "copilot"
-      - "code-assistant"
-    keywords:
-      - "coding agent"
-      - "AI code assistant"
-      - "code generation"
-      - "CLI coding tool"
-      - "AI pair programming"
-      - "code completion"
-    sub_categories:
-      - "CLI Tool"
-      - "IDE Extension"
-      - "Code Completion"
-      - "Code Review"
-
-  rag:
-    name: "RAG"
-    description: "Retrieval-Augmented Generation, vector databases, embeddings"
-    topics:
-      - "rag"
-      - "retrieval-augmented-generation"
-      - "vector-database"
-      - "embedding"
-      - "semantic-search"
-    keywords:
-      - "RAG framework"
-      - "vector database"
-      - "retrieval augmented"
-      - "semantic search"
-      - "knowledge base"
-    sub_categories:
-      - "Vector Database"
-      - "RAG Framework"
-      - "Embeddings"
-      - "Knowledge Management"
-
-  mcp:
-    name: "MCP"
-    description: "Model Context Protocol, MCP servers and tools"
-    topics:
-      - "mcp"
-      - "model-context-protocol"
-      - "mcp-server"
-    keywords:
-      - "MCP server"
-      - "model context protocol"
-      - "MCP tools"
-      - "MCP integration"
-    sub_categories:
-      - "Server"
-      - "Client"
-      - "Tool"
-      - "Integration"
-
-  local-ai:
-    name: "Local AI"
-    description: "Local LLMs, on-device AI, privacy-focused AI"
-    topics:
-      - "local-llm"
-      - "ollama"
-      - "on-device"
-      - "privacy-ai"
-      - "self-hosted-ai"
-      - "llama.cpp"
-    keywords:
-      - "local LLM"
-      - "run LLM locally"
-      - "on-device AI"
-      - "private AI"
-      - "self-hosted"
-      - "local inference"
-    sub_categories:
-      - "Local Runner"
-      - "Privacy Tool"
-      - "Edge AI"
-      - "Offline AI"
-
-  generative-ai:
-    name: "Generative AI"
-    description: "Image, video, audio generation and multimodal"
-    topics:
-      - "generative-ai"
-      - "image-generation"
-      - "video-generation"
-      - "stable-diffusion"
-      - "text-to-image"
-      - "text-to-video"
-      - "audio-generation"
-    keywords:
-      - "image generation"
-      - "video generation"
-      - "text to image"
-      - "diffusion model"
-      - "generative model"
-      - "AI art"
-    sub_categories:
-      - "Image"
-      - "Video"
-      - "Audio"
-      - "3D"
-
-  multimodal:
-    name: "Multimodal AI"
-    description: "Vision-language models, multimodal frameworks"
-    topics:
-      - "multimodal"
-      - "vision-language"
-      - "clip"
-      - "vlm"
-    keywords:
-      - "multimodal AI"
-      - "vision language model"
-      - "image understanding"
-      - "cross-modal"
-    sub_categories:
-      - "Vision-Language"
-      - "Audio-Language"
-      - "Omni-modal"
-
-  ai-infrastructure:
-    name: "AI Infrastructure"
-    description: "Model serving, GPU tools, orchestration, MLOps"
-    topics:
-      - "mlops"
-      - "model-serving"
-      - "gpu"
-      - "distributed-training"
-      - "kubernetes-ai"
-      - "ml-infrastructure"
-    keywords:
-      - "model serving"
-      - "GPU management"
-      - "ML pipeline"
-      - "distributed training"
-      - "inference optimization"
-    sub_categories:
-      - "Model Serving"
-      - "GPU Management"
-      - "Orchestration"
-      - "Monitoring"
-
-  evaluation:
-    name: "Evaluation & Benchmarks"
-    description: "LLM benchmarks, model comparison, testing frameworks"
-    topics:
-      - "benchmark"
-      - "evaluation"
-      - "llm-eval"
-      - "model-comparison"
-    keywords:
-      - "LLM benchmark"
-      - "model evaluation"
-      - "AI testing"
-      - "performance comparison"
-      - "leaderboard"
-    sub_categories:
-      - "Benchmark"
-      - "Evaluation Framework"
-      - "Comparison Tool"
-
-  ai-safety:
-    name: "AI Safety & Alignment"
-    description: "Guardrails, content filtering, bias detection, alignment"
-    topics:
-      - "ai-safety"
-      - "alignment"
-      - "guardrails"
-      - "content-filtering"
-      - "bias-detection"
-      - "red-teaming"
-    keywords:
-      - "AI safety"
-      - "alignment research"
-      - "content guardrails"
-      - "bias detection"
-      - "responsible AI"
-    sub_categories:
-      - "Guardrails"
-      - "Content Filtering"
-      - "Bias Detection"
-      - "Alignment Research"

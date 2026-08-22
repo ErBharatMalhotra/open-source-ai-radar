@@ -4,6 +4,7 @@ interface Props {
   description?: string;
   canonical?: string;
   jsonLd?: object;
+  ogImage?: string;
 }
 
 const {
@@ -11,11 +12,17 @@ const {
   description = "Discover what is becoming important before everyone else does. Track 5,000+ AI open-source projects with velocity scoring, anomaly detection, and breakout predictions.",
   canonical,
   jsonLd,
+  ogImage,
 } = Astro.props;
+
+// GoatCounter analytics — create a free account at goatcounter.com and put
+// your site code here (e.g. "example"). Left empty = analytics disabled.
+const GOATCOUNTER_SITE = import.meta.env.PUBLIC_GOATCOUNTER_SITE || "";
 
 const base = import.meta.env.BASE_URL;
 const siteUrl = "https://erbharatmalhotra.github.io";
 const fullUrl = canonical ? `${siteUrl}${canonical}` : `${siteUrl}${base}`;
+const socialImage = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}${base}favicon.svg`;
 
 const navItems = [
   { href: `${base}`, label: "Home" },
@@ -45,11 +52,19 @@ const navItems = [
     <meta property="og:title" content={`${title} — Open Source AI Radar`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={fullUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Open Source AI Radar" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${title} — Open Source AI Radar`} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    {GOATCOUNTER_SITE && (
+      <script is:inline data-goatcounter={`https://${GOATCOUNTER_SITE}.goatcounter.com/count`} async src="https://gc.zgo.at/count.js"></script>
+    )}
   
     <style is:global>
       /* Avatar fallback - shows initials when image fails */

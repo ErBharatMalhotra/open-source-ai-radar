@@ -50,6 +50,17 @@ const navItems = [
     <meta name="twitter:title" content={`${title} — Open Source AI Radar`} />
     <meta name="twitter:description" content={description} />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  
+    <style is:global>
+      /* Avatar fallback - shows initials when image fails */
+      .avatar-fallback {
+        width: 32px; height: 32px; border-radius: 50%;
+        background: var(--accent); color: #fff;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 12px; font-weight: 600; flex-shrink: 0;
+      }
+      img[data-failed="true"] { display: none !important; }
+    </style>
   </head>
   <body>
     <nav class="nav" role="navigation" aria-label="Main">
@@ -110,6 +121,24 @@ const navItems = [
           toggle.setAttribute('aria-expanded', String(open));
         });
       }
+    </script>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('img[data-owner]').forEach(function(img) {
+          img.onerror = function() {
+            var name = img.getAttribute('data-owner') || '?';
+            var initials = name.split('/').pop().substring(0, 2).toUpperCase();
+            var fallback = document.createElement('div');
+            fallback.className = 'avatar-fallback';
+            fallback.textContent = initials;
+            fallback.style.width = img.style.width || '32px';
+            fallback.style.height = img.style.height || '32px';
+            fallback.style.borderRadius = '50%';
+            img.parentNode.replaceChild(fallback, img);
+          };
+        });
+      });
     </script>
   </body>
 </html>

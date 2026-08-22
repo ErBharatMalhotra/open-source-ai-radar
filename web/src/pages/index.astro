@@ -4,31 +4,24 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const base = import.meta.env.BASE_URL;
-const dataPath = join(process.cwd(), '..', 'data', 'exports', 'stats.json');
-const topPath = join(process.cwd(), '..', 'data', 'exports', 'top.json');
-const trendsPath = join(process.cwd(), '..', 'data', 'exports', 'trends.json');
 
-let stats = { total_repos: 0, total_stars: 0, top_languages: {} };
+let stats = { total_repos: 0, total_stars: 0, top_languages: {} as Record<string, number> };
 let topRepos: any[] = [];
 let trends: any = {};
+let breakouts = { candidates: [] as any[] };
 
-try {
-  stats = JSON.parse(readFileSync(dataPath, 'utf-8'));
-  const topData = JSON.parse(readFileSync(topPath, 'utf-8'));
-  topRepos = topData.repos?.slice(0, 50) || [];
-} catch (e) {
-  console.error('Could not load data files');
-}
+try { stats = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'stats.json'), 'utf-8')); } catch {}
+try { topRepos = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'top.json'), 'utf-8')).repos?.slice(0, 50) || []; } catch {}
+try { trends = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'trends.json'), 'utf-8')); } catch {}
+try { breakouts = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'breakouts.json'), 'utf-8')); } catch {}
 
-try {
-  trends = JSON.parse(readFileSync(trendsPath, 'utf-8'));
-} catch (e) {
-  // No trends data yet
-}
+const catIntelligence = (() => {
+  try { return JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'category-intelligence.json'), 'utf-8')); } catch { return { categories: [] as any[] }; }
+})();
 
-function formatStars(n: number): string {
-  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+function fmt(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
   return n.toString();
 }
 
@@ -38,359 +31,169 @@ function scoreClass(s: number): string {
   return 'score-low';
 }
 
-function formatGrowth(n: number): string {
-  if (n > 0) return `+${formatStars(n)}`;
-  if (n < 0) return formatStars(n);
-  return '0';
+function momentumState(velocity: number, accel: number): string {
+  if (accel >= 2.0 && velocity >= 60) return 'breakout';
+  if (accel >= 1.5 && velocity >= 50) return 'accelerating';
+  if (velocity >= 40) return 'rising';
+  if (velocity >= 20) return 'stable';
+  return 'declining';
 }
 
-function repoUrl(fullName: string): string {
-  const [owner, repo] = fullName.split('/');
+function momentumLabel(state: string): string {
+  const labels: Record<string, string> = { breakout: 'Breakout', accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' };
+  return labels[state] || '—';
+}
+
+function momentumIcon(state: string): string {
+  const icons: Record<string, string> = {
+    breakout: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 14l4-4 3 3 7-7"/></svg>',
+    accelerating: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14l4-6 3 3 5-7"/></svg>',
+    rising: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14l3-4 3 2 6-8"/></svg>',
+    stable: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="10" x2="15" y2="10"/></svg>',
+    declining: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 3-2 5 6"/></svg>',
+  };
+  return icons[state] || '';
+}
+
+function repoUrl(name: string): string {
+  const [owner, repo] = name.split('/');
   return `${base}project/${owner}/${repo}`;
 }
 ---
 
-<Layout
-    title="Home"
-    description="Track 5,000+ AI open-source projects. Velocity scoring, anomaly detection, breakout predictions, category intelligence. Discover what is becoming important before everyone else does."
-    canonical="/open-source-ai-radar/"
-    jsonLd={{
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Open Source AI Radar",
-      "url": "https://erbharatmalhotra.github.io/open-source-ai-radar/",
-      "description": "Discover what is becoming important before everyone else does.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://erbharatmalhotra.github.io/open-source-ai-radar/top?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }}
-  >
-  <div class="hero">
-    <h1>📡 Open Source <span>AI Radar</span></h1>
-    <p>Discover what is becoming important before everyone else does.</p>
-  </div>
+<Layout title="Home" description="Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for 5,000+ projects." canonical="/open-source-ai-radar/"
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Open Source AI Radar",
+    "url": "https://erbharatmalhotra.github.io/open-source-ai-radar/",
+    "description": "Discover what is becoming important before everyone else does."
+  }}>
 
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-value">{stats.total_repos?.toLocaleString() || '0'}</div>
+  <section class="hero-editorial">
+    <h1>Discover <span class="accent">momentum</span> in open-source AI</h1>
+    <p>Track 5,000+ projects scored by impact, velocity, and health. Updated daily.</p>
+  </section>
+
+  <div class="stat-grid" style="margin-bottom: var(--sp-12);">
+    <div class="stat-card">
+      <div class="stat-value">{fmt(stats.total_repos || 0)}</div>
       <div class="stat-label">Projects Tracked</div>
     </div>
-    <div class="stat">
-      <div class="stat-value">{formatStars(stats.total_stars || 0)}</div>
+    <div class="stat-card">
+      <div class="stat-value">{fmt(stats.total_stars || 0)}</div>
       <div class="stat-label">Total Stars</div>
     </div>
-    <div class="stat">
+    <div class="stat-card">
       <div class="stat-value">{Object.keys(stats.top_languages || {}).length}</div>
       <div class="stat-label">Languages</div>
     </div>
-    {trends.categories && (
-      <div class="stat">
-        <div class="stat-value">{trends.categories.length}</div>
-        <div class="stat-label">Categories</div>
+    <div class="stat-card">
+      <div class="stat-value">{catIntelligence.categories?.length || 0}</div>
+      <div class="stat-label">AI Categories</div>
+    </div>
+  </div>
+
+  {breakouts.candidates && breakouts.candidates.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <h2>Breakout Candidates</h2>
+        <a href={`${base}breakouts`}>View all</a>
       </div>
-    )}
-  </div>
+      <div class="grid-3">
+        {breakouts.candidates.slice(0, 3).map((r: any, i: number) => (
+          <a href={repoUrl(r.repo_full_name)} class="card card-link" style="padding:var(--sp-5); text-decoration:none; color:inherit;">
+            <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-3);">
+              <span style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">#{i + 1}</span>
+              <span style="font-weight:600; font-size:var(--text-sm);">{r.repo_full_name}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-2);">
+              <span class={`score-pill ${scoreClass(r.breakout_score)}`}>{r.breakout_score}</span>
+              <span class="momentum momentum-breakout">Breakout</span>
+            </div>
+            <div style="display:flex; gap:var(--sp-4); font-size:var(--text-xs); color:var(--text-secondary);">
+              <span>{fmt(r.stars || 0)} stars</span>
+              <span>{r.velocity} vel</span>
+              <span>{r.star_growth_acceleration}x accel</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
-  <!-- Anomalies -->
-  {trends.anomalies && trends.anomalies.length > 0 ? (
-    <div class="section-header">
-      <h2>🚨 Anomalies Detected</h2>
-      <a href={`${base}trends`}>View all →</a>
-    </div>
-    <div class="anomaly-cards">
-      {trends.anomalies.slice(0, 4).map((a: any) => (
-        <div class="anomaly-card">
-          <div class="anomaly-type">
-            {a.trend_direction === 'up' ? '📈' : '📉'} {a.trend_direction === 'up' ? 'Score Jump' : 'Score Drop'}
+  {catIntelligence.categories && catIntelligence.categories.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <h2>AI Categories</h2>
+        <a href={`${base}categories`}>Explore</a>
+      </div>
+      <div class="grid-4">
+        {catIntelligence.categories.slice(0, 8).map((cat: any) => (
+          <div class="card" style="padding:var(--sp-5);">
+            <div style="font-weight:600; font-size:var(--text-sm); margin-bottom:var(--sp-1);">{cat.category}</div>
+            <div style="font-size:var(--text-xs); color:var(--text-secondary);">{cat.tracked} projects</div>
+            {cat.trend && <div style="font-size:var(--text-xs); color:var(--green); margin-top:var(--sp-2);">{cat.trend}</div>}
           </div>
-          <a class="anomaly-name" href={repoUrl(a.repo_full_name)}>{a.repo_full_name}</a>
-          <div class="anomaly-change">
-            <span class={a.score_change > 0 ? 'positive' : 'negative'}>
-              {a.score_change > 0 ? '+' : ''}{a.score_change?.toFixed(1)} pts
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Top Ranked</h2>
+      <a href={`${base}top`}>Full rankings</a>
+    </div>
+    <div>
+      {topRepos.slice(0, 20).map((r: any, i: number) => {
+        const state = momentumState(r.velocity || 0, r.star_growth_acceleration || 1);
+        return (
+          <a href={repoUrl(r.full_name)} class="project-row">
+            <span class="project-rank">{i + 1}</span>
+            {r.owner_avatar && <img src={r.owner_avatar} alt="" class="project-avatar" loading="lazy" />}
+            <div class="project-info">
+              <div class="project-name">{r.full_name}</div>
+              {r.description && <div class="project-desc">{r.description}</div>}
+            </div>
+            <span class="project-stars">{fmt(r.stars || 0)}</span>
+            <span class={`score-pill ${scoreClass(r.radar_score)}`}>{r.radar_score?.toFixed(1)}</span>
+            <span class={`momentum momentum-${state}`}>
+              <Fragment set:html={momentumIcon(state)} />
+              {momentumLabel(state)}
             </span>
-            <span class="anomaly-stars">⭐ {formatStars(a.stars || 0)}</span>
-          </div>
-        </div>
-      ))}
+          </a>
+        );
+      })}
     </div>
-  ) : null}
+  </section>
 
-  <!-- Rising Stars -->
-  {trends.rising_stars && trends.rising_stars.length > 0 ? (
-    <div class="section-header">
-      <h2>🔥 Rising Stars</h2>
-      <a href={`${base}trends`}>View all →</a>
-    </div>
-    <div class="trend-cards">
-      {trends.rising_stars.slice(0, 6).map((repo: any) => (
-        <a class="trend-card" href={repoUrl(repo.repo_full_name)}>
-          <div class="trend-card-header">
-            <span class="trend-name">{repo.repo_full_name}</span>
-            <span class={`score-badge ${scoreClass(repo.velocity)}`}>
-              {repo.velocity?.toFixed(0)}
-            </span>
-          </div>
-          <div class="trend-card-stats">
-            <span>⭐ {formatStars(repo.stars || 0)}</span>
-            <span>📊 {repo.radar_score?.toFixed(1)}</span>
-            {repo.language && <span>{repo.language}</span>}
-          </div>
-        </a>
-      ))}
-    </div>
-  ) : null}
-
-  <!-- Breakout Candidates -->
-  {trends.breakout_candidates && trends.breakout_candidates.length > 0 ? (
-    <div class="section-header">
-      <h2>🔥 Breakout Candidates</h2>
-      <a href={`${base}breakouts`}>View all →</a>
-    </div>
-    <div class="trend-cards">
-      {trends.breakout_candidates.slice(0, 4).map((repo: any) => (
-        <a class="trend-card breakout" href={repoUrl(repo.repo_full_name)}>
-          <div class="trend-card-header">
-            <span class="trend-name">{repo.repo_full_name}</span>
-            <span class="breakout-badge">
-              {repo.breakout_score?.toFixed(0)}
-            </span>
-          </div>
-          <div class="trend-card-stats">
-            <span>⭐ {formatStars(repo.stars || 0)}</span>
-            <span>🚀 {repo.velocity?.toFixed(0)} vel</span>
-            <span>📈 {repo.star_growth_acceleration?.toFixed(1)}x accel</span>
-          </div>
-        </a>
-      ))}
-    </div>
-  ) : null}
-
-  <!-- Hidden Gems -->
-  {trends.hidden_gems && trends.hidden_gems.length > 0 ? (
-    <div class="section-header">
-      <h2>💎 Hidden Gems</h2>
-      <a href={`${base}trends`}>View all →</a>
-    </div>
-    <div class="trend-cards">
-      {trends.hidden_gems.slice(0, 6).map((repo: any) => (
-        <a class="trend-card gem" href={repoUrl(repo.repo_full_name)}>
-          <div class="trend-card-header">
-            <span class="trend-name">{repo.repo_full_name}</span>
-            <span class="gem-badge">
-              {repo.velocity?.toFixed(0)}
-            </span>
-          </div>
-          <div class="trend-card-stats">
-            <span>⭐ {formatStars(repo.stars || 0)}</span>
-            <span>💚 Health: {repo.health?.toFixed(0)}</span>
-            {repo.language && <span>{repo.language}</span>}
-          </div>
-        </a>
-      ))}
-    </div>
-  ) : null}
-
-  <!-- Top Projects -->
-  <div class="section-header">
-    <h2>🏆 Top Projects by Radar Score</h2>
-    <a href={`${base}top`}>View all →</a>
-  </div>
-
-  <table class="repo-table">
-    <thead>
-      <tr>
-        <th class="rank">#</th>
-        <th>Project</th>
-        <th class="hide-mobile">Lang</th>
-        <th class="num">Stars</th>
-        <th class="num">Score</th>
-        <th class="hide-mobile">Impact</th>
-        <th class="hide-mobile">Velocity</th>
-        <th class="hide-mobile">Health</th>
-      </tr>
-    </thead>
-    <tbody>
-      {topRepos.map((repo: any, i: number) => (
-        <tr>
-          <td class="rank">{i + 1}</td>
-          <td>
-            <a class="repo-name" href={repoUrl(repo.full_name)}>
-              {repo.full_name}
+  {trends.top_rising && trends.top_rising.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <h2>Rising Fast</h2>
+        <a href={`${base}trending`}>All trending</a>
+      </div>
+      <div class="grid-auto">
+        {trends.top_rising.slice(0, 6).map((r: any) => {
+          const state = momentumState(r.velocity || 0, r.star_growth_acceleration || 1);
+          return (
+            <a href={repoUrl(r.repo_full_name)} class="card card-link" style="padding:var(--sp-5); text-decoration:none; color:inherit;">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-2);">
+                <span style="font-weight:600; font-size:var(--text-sm);">{r.repo_full_name.split('/')[1]}</span>
+                <span class={`momentum momentum-${state}`}>{momentumLabel(state)}</span>
+              </div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted);">
+                {r.category || 'Uncategorized'} · {fmt(r.stars || 0)} stars
+              </div>
+              <div style="margin-top:var(--sp-3); display:flex; gap:var(--sp-4); font-size:var(--text-xs); color:var(--text-secondary);">
+                <span>Velocity: {r.velocity?.toFixed(0)}</span>
+                <span>Score: {r.radar_score?.toFixed(1)}</span>
+              </div>
             </a>
-            {repo.description && <div class="repo-desc">{repo.description}</div>}
-          </td>
-          <td class="hide-mobile">
-            {repo.language && <span class="repo-lang">{repo.language}</span>}
-          </td>
-          <td class="num">{formatStars(repo.stars || 0)}</td>
-          <td class="num">
-            <span class={`score-badge ${scoreClass(repo.radar_score)}`}>
-              {repo.radar_score?.toFixed(1)}
-            </span>
-          </td>
-          <td class="hide-mobile num">
-            {repo.impact?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.impact}%`}></div></div>
-          </td>
-          <td class="hide-mobile num">
-            {repo.velocity?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.velocity}%`}></div></div>
-          </td>
-          <td class="hide-mobile num">
-            {repo.health?.toFixed(0)}
-            <div class="axis-bar"><div class="axis-fill" style={`width:${repo.health}%`}></div></div>
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-
-  <div class="section-header">
-    <h2>🚀 Fastest Growing</h2>
-    <a href={`${base}trending`}>View all →</a>
-  </div>
-
-  <div style="text-align:center; padding:2rem; color:var(--text-dim)">
-    <a href={`${base}trending`} style="color:var(--accent-light); text-decoration:none;">
-      Explore trending projects →
-    </a>
-  </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
 </Layout>
-
-<style>
-  .trend-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .trend-card {
-    display: block;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-    text-decoration: none;
-    color: var(--text);
-    transition: border-color 0.2s, transform 0.1s;
-  }
-
-  .trend-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-1px);
-  }
-
-  .trend-card.gem {
-    border-left: 3px solid var(--green);
-  }
-
-  .trend-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .trend-name {
-    font-weight: 600;
-    color: var(--accent-light);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
-  }
-
-  .score-badge {
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    background: rgba(108, 92, 231, 0.15);
-    color: var(--accent-light);
-  }
-
-  .gem-badge {
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    background: rgba(0, 210, 160, 0.15);
-    color: var(--green);
-  }
-
-  .trend-card-stats {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-
-  .anomaly-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .anomaly-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--orange);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-  }
-
-  .trend-card.breakout {
-    border-left: 3px solid var(--green);
-  }
-
-  .breakout-badge {
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    background: rgba(0, 210, 160, 0.15);
-    color: var(--green);
-  }
-
-  .anomaly-type {
-    font-size: 0.75rem;
-    color: var(--orange);
-    text-transform: uppercase;
-    margin-bottom: 0.25rem;
-  }
-
-  .anomaly-name {
-    font-weight: 600;
-    color: var(--accent-light);
-    text-decoration: none;
-    font-size: 0.95rem;
-  }
-
-  .anomaly-name:hover {
-    text-decoration: underline;
-  }
-
-  .anomaly-change {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-  }
-
-  .anomaly-change .positive { color: var(--green); font-weight: 600; }
-  .anomaly-change .negative { color: var(--red); font-weight: 600; }
-  .anomaly-stars { color: var(--text-dim); }
-
-  @media (max-width: 768px) {
-    .trend-cards, .anomaly-cards {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

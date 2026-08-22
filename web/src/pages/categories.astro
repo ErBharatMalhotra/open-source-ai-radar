@@ -4,251 +4,54 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const base = import.meta.env.BASE_URL;
-
-let categories: any = {};
 let intelligence: any = { categories: [] };
+try { intelligence = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'category-intelligence.json'), 'utf-8')); } catch {}
 
-try {
-  const catPath = join(process.cwd(), '..', 'data', 'exports', 'categories.json');
-  categories = JSON.parse(readFileSync(catPath, 'utf-8'));
-} catch (e) {
-  console.error('Could not load categories data');
+function repoUrl(name: string): string {
+  const [owner, repo] = name.split('/');
+  return `${base}project/${owner}/${repo}`;
 }
-
-try {
-  const intelPath = join(process.cwd(), '..', 'data', 'exports', 'category-intelligence.json');
-  intelligence = JSON.parse(readFileSync(intelPath, 'utf-8'));
-} catch (e) {
-  // No intelligence data yet
-}
-
-const total = Object.values(categories).reduce((a: number, b: number) => a + b, 0);
-const topLangs = Object.entries(categories).slice(0, 30);
-const maxCount = topLangs[0]?.[1] || 1;
-
-const trendIcons: Record<string, string> = {
-  rising: '🔥',
-  stable: '➡️',
-  declining: '📉',
-  new: '🆕',
-};
-
-const trendColors: Record<string, string> = {
-  rising: 'var(--green)',
-  stable: 'var(--text-dim)',
-  declining: 'var(--red)',
-  new: 'var(--accent-light)',
-};
 ---
 
-    description="AI category intelligence — momentum scores, growth rates, and trend detection across 12 AI categories."
-    canonical="/open-source-ai-radar/categories/"
-<Layout title="Categories" description="Programming language distribution and AI category momentum">
-  <div class="hero">
-    <h1>💻 <span>Categories</span></h1>
-    <p>Programming language distribution across {total.toLocaleString()} tracked open-source AI projects.</p>
-  </div>
+<Layout title="Categories" description="AI open-source project categories with momentum intelligence.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1>AI <span class="accent">Categories</span></h1>
+    <p>{intelligence.categories?.length || 0} categories tracked with momentum intelligence</p>
+  </section>
 
-  <!-- Category Intelligence Section -->
-  {intelligence.categories && intelligence.categories.length > 0 ? (
-    <div class="section">
-      <h2>📊 AI Category Intelligence</h2>
-      <p class="section-desc">Momentum scores based on velocity, growth, health, and discovery rate</p>
-
-      <div class="intel-grid">
-        {intelligence.categories.slice(0, 12).map((cat: any, i: number) => (
-          <div class="intel-card" style={`border-left-color: ${trendColors[cat.trend] || 'var(--border)'}`}>
-            <div class="intel-header">
-              <span class="intel-rank">#{i + 1}</span>
-              <span class="intel-category">{cat.category}</span>
-              <span class="intel-trend">{trendIcons[cat.trend] || ''} {cat.trend}</span>
-            </div>
-            <div class="intel-stats">
-              <div class="intel-stat">
-                <span class="intel-stat-value">{cat.tracked}</span>
-                <span class="intel-stat-label">Tracked</span>
-              </div>
-              <div class="intel-stat">
-                <span class="intel-stat-value">{cat.new || 0}</span>
-                <span class="intel-stat-label">New (30d)</span>
-              </div>
-              <div class="intel-stat">
-                <span class="intel-stat-value">{cat.velocity?.toFixed(0) || '0'}</span>
-                <span class="intel-stat-label">Velocity</span>
-              </div>
-              <div class="intel-stat">
-                <span class="intel-stat-value">{cat.health?.toFixed(0) || '0'}</span>
-                <span class="intel-stat-label">Health</span>
-              </div>
-              <div class="intel-stat">
-                <span class="intel-stat-value momentum">{cat.momentum?.toFixed(0) || '0'}</span>
-                <span class="intel-stat-label">Momentum</span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  ) : null}
-
-  <!-- Language Distribution -->
-  <div class="section">
-    <h2>🔤 Language Distribution</h2>
-    <div class="lang-grid">
-      {topLangs.map(([lang, count], i) => (
-        <div class="lang-card">
-          <div class="lang-header">
-            <span class="lang-name">{lang}</span>
-            <span class="lang-count">{(count as number).toLocaleString()}</span>
-          </div>
-          <div class="lang-bar-bg">
-            <div class="lang-bar-fill" style={`width: ${(Number(count) / maxCount * 100).toFixed(1)}%`}></div>
-          </div>
-          <div class="lang-pct">{((Number(count) / total) * 100).toFixed(1)}%</div>
+  <div class="grid-2">
+    {(intelligence.categories || []).map((cat: any) => (
+      <div class="card" style="padding:var(--sp-6);">
+        <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:var(--sp-4);">
+          <h2 style="font-size:var(--text-lg); font-weight:700;">{cat.category}</h2>
+          {cat.trend && <span class="badge">{cat.trend}</span>}
         </div>
-      ))}
-    </div>
+        <div style="display:flex; gap:var(--sp-6); margin-bottom:var(--sp-4);">
+          <div>
+            <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Tracked</div>
+            <div style="font-size:var(--text-xl); font-weight:700;">{cat.tracked}</div>
+          </div>
+          {cat.avg_score && (
+            <div>
+              <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase;">Avg Score</div>
+              <div style="font-size:var(--text-xl); font-weight:700;">{cat.avg_score?.toFixed(1)}</div>
+            </div>
+          )}
+        </div>
+        {cat.top_repos && cat.top_repos.length > 0 && (
+          <div style="border-top:1px solid var(--border); padding-top:var(--sp-3);">
+            <div style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--sp-2);">Top Projects</div>
+            {cat.top_repos.slice(0, 3).map((r: any) => {
+              const name = typeof r === 'string' ? r : (r.full_name || r.repo_full_name || '');
+              return (
+                <a href={repoUrl(name)} style="display:block; font-size:var(--text-sm); color:var(--accent); text-decoration:none; padding:2px 0;">
+                  {name}
+                </a>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    ))}
   </div>
 </Layout>
-
-<style>
-  .section {
-    margin-bottom: 3rem;
-  }
-
-  .section h2 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-  }
-
-  .section-desc {
-    color: var(--text-dim);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .intel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1rem;
-  }
-
-  .intel-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-  }
-
-  .intel-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .intel-rank {
-    color: var(--text-dim);
-    font-size: 0.8rem;
-    font-weight: 600;
-    min-width: 2rem;
-  }
-
-  .intel-category {
-    font-weight: 600;
-    font-size: 1rem;
-    flex: 1;
-  }
-
-  .intel-trend {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-
-  .intel-stats {
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  .intel-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .intel-stat-value {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--accent-light);
-  }
-
-  .intel-stat-value.momentum {
-    color: var(--green);
-  }
-
-  .intel-stat-label {
-    font-size: 0.65rem;
-    color: var(--text-dim);
-    text-transform: uppercase;
-  }
-
-  .lang-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .lang-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-  }
-
-  .lang-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;
-  }
-
-  .lang-name {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .lang-count {
-    font-size: 0.85rem;
-    color: var(--text-dim);
-    font-variant-numeric: tabular-nums;
-  }
-
-  .lang-bar-bg {
-    height: 6px;
-    background: var(--border);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: 0.35rem;
-  }
-
-  .lang-bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light));
-    border-radius: 3px;
-    transition: width 0.3s;
-  }
-
-  .lang-pct {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-  }
-
-  @media (max-width: 768px) {
-    .intel-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

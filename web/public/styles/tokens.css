@@ -1,0 +1,94 @@
+/* Open Source AI Radar — Design Tokens */
+:root {
+  /* Colors — restrained, professional */
+  --bg: #09090b;
+  --bg-surface: #18181b;
+  --bg-elevated: #1e1e22;
+  --bg-hover: #27272a;
+  --border: #27272a;
+  --border-subtle: #1e1e20;
+
+  --text: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --accent-muted: rgba(59, 130, 246, 0.12);
+
+  --green: #22c55e;
+  --green-muted: rgba(34, 197, 94, 0.12);
+  --amber: #f59e0b;
+  --amber-muted: rgba(245, 158, 11, 0.12);
+  --red: #ef4444;
+  --red-muted: rgba(239, 68, 68, 0.12);
+
+  /* Momentum states */
+  --breakout: #22c55e;
+  --breakout-bg: rgba(34, 197, 94, 0.10);
+  --accelerating: #3b82f6;
+  --accelerating-bg: rgba(59, 130, 246, 0.10);
+  --rising: #06b6d4;
+  --rising-bg: rgba(6, 182, 212, 0.10);
+  --stable: #71717a;
+  --stable-bg: rgba(113, 113, 122, 0.10);
+  --declining: #ef4444;
+  --declining-bg: rgba(239, 68, 68, 0.10);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+
+  /* Spacing (4px grid) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.5);
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 56px;
+}
+
+/* Google Fonts */

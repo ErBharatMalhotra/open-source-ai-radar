@@ -3,74 +3,59 @@ import Layout from '../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-const trendPath = join(process.cwd(), '..', 'data', 'exports', 'trending.json');
+const base = import.meta.env.BASE_URL;
 let repos: any[] = [];
-
 try {
-  const data = JSON.parse(readFileSync(trendPath, 'utf-8'));
-  repos = data.repos || [];
-} catch (e) {
-  console.error('Could not load trending data');
-}
+  const data = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'trending.json'), 'utf-8'));
+  repos = data.repos || data.trending || [];
+} catch {}
 
-function formatStars(n: number): string {
-  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+function fmt(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
   return n.toString();
 }
-
-function scoreClass(s: number): string {
-  if (s >= 75) return 'score-high';
-  if (s >= 50) return 'score-mid';
-  return 'score-low';
+function momentumState(v: number, a: number): string {
+  if (a >= 2.0 && v >= 60) return 'breakout';
+  if (a >= 1.5 && v >= 50) return 'accelerating';
+  if (v >= 40) return 'rising';
+  if (v >= 20) return 'stable';
+  return 'declining';
+}
+function momentumLabel(s: string): string {
+  return ({ breakout: 'Breakout', accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' } as any)[s] || '—';
+}
+function repoUrl(name: string): string {
+  const [owner, repo] = name.split('/');
+  return `${base}project/${owner}/${repo}`;
 }
 ---
 
-    description="Fastest growing AI open-source projects. Velocity-ranked trending repositories updated daily."
-    canonical="/open-source-ai-radar/trending/"
-<Layout title="Trending" description="Fastest growing open-source AI projects">
-  <div class="hero">
-    <h1>🚀 <span>Trending</span> Projects</h1>
-    <p>Open-source AI projects with the highest velocity — the ones growing fastest right now.</p>
-  </div>
+<Layout title="Trending" description="AI open-source projects gaining momentum right now.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1><span class="accent">Trending</span> Projects</h1>
+    <p>Projects gaining the most momentum this week</p>
+  </section>
 
-  <table class="repo-table">
-    <thead>
-      <tr>
-        <th class="rank">#</th>
-        <th>Project</th>
-        <th class="hide-mobile">Lang</th>
-        <th class="num">Stars</th>
-        <th class="num">Velocity</th>
-        <th class="num">Score</th>
-        <th class="hide-mobile">Impact</th>
-        <th class="hide-mobile">Health</th>
-      </tr>
-    </thead>
-    <tbody>
-      {repos.map((repo: any, i: number) => (
-        <tr>
-          <td class="rank">{i + 1}</td>
-          <td>
-            <a class="repo-name" href={`https://github.com/${repo.full_name}`} target="_blank" rel="noopener">
-              {repo.full_name}
-            </a>
-            {repo.description && <div class="repo-desc">{repo.description}</div>}
-          </td>
-          <td class="hide-mobile">
-            {repo.language && <span class="repo-lang">{repo.language}</span>}
-          </td>
-          <td class="num">{formatStars(repo.stars || 0)}</td>
-          <td class="num">
-            <span class={`score-badge ${scoreClass(repo.velocity)}`}>
-              {repo.velocity?.toFixed(1)}
-            </span>
-          </td>
-          <td class="num">{repo.radar_score?.toFixed(1)}</td>
-          <td class="hide-mobile num">{repo.impact?.toFixed(0)}</td>
-          <td class="hide-mobile num">{repo.health?.toFixed(0)}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+  <div class="grid-auto">
+    {repos.slice(0, 30).map((r: any) => {
+      const state = momentumState(r.velocity || 0, r.star_growth_acceleration || 1);
+      const name = r.full_name || r.repo_full_name || '';
+      return (
+        <a href={repoUrl(name)} class="card card-link" style="padding:var(--sp-5); text-decoration:none; color:inherit;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--sp-2);">
+            <span style="font-weight:600; font-size:var(--text-sm);">{name.split('/')[1]}</span>
+            <span class={`momentum momentum-${state}`}>{momentumLabel(state)}</span>
+          </div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-bottom:var(--sp-3);">
+            {name.split('/')[0]} · {r.language || ''} · {fmt(r.stars || 0)} stars
+          </div>
+          <div style="display:flex; gap:var(--sp-4); font-size:var(--text-xs); color:var(--text-secondary);">
+            <span>Velocity: {r.velocity?.toFixed(0)}</span>
+            <span>Score: {r.radar_score?.toFixed(1)}</span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
 </Layout>

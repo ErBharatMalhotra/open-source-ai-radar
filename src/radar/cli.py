@@ -949,5 +949,124 @@ def social_drafts(week: str | None = None) -> None:
     for platform, path in paths.items():
         click.echo(f"    {platform}: {path}")
 
+
+
+# ── Scale-aware commands ──
+
+@main.command()
+def sync_cursor():
+    """Sync all repos to the processing scheduler cursor table."""
+    from radar.scale.scheduler import ProcessingScheduler
+    scheduler = ProcessingScheduler()
+    new = scheduler.sync_repos_to_cursor()
+    stats = scheduler.get_stats()
+    click.echo()
+    click.echo('  Processing Scheduler')
+    click.echo(f"  {chr(9472) * 40}")
+    click.echo(f'  Total repos:      {stats["total_repos"]:,}')
+    click.echo(f'  New synced:       {new:,}')
+    click.echo(f'  Due now:          {stats["due_for_processing"]:,}')
+    click.echo(f'  Failed:           {stats["failed"]:,}')
+    click.echo(f'  Permanent fails:  {stats["permanent_failures"]:,}')
+    click.echo()
+    click.echo('  By tier:')
+    for tier, count in sorted(stats.get('by_tier', {}).items()):
+        click.echo(f'    Tier {tier}: {count:,} repos')
+    click.echo()
+
+@main.command()
+@click.option('--batch-size', '-n', default=None, type=int, help='Max repos to process')
+@click.option('--dry-run', is_flag=True, help='Show what would be processed')
+def schedule(batch_size: int | None, dry_run: bool):
+    """Show or run the processing schedule (tier-aware, rate-limited)."""
+    from radar.scale.scheduler import ProcessingScheduler
+    scheduler = ProcessingScheduler()
+
+    if dry_run:
+        batch = scheduler.get_next_batch(batch_size)
+        click.echo()
+        click.echo(f'  Next batch: {len(batch)} repos')
+        for r in batch[:20]:
+            click.echo(f"    T{r['tier']} {r['stars']:>7,}  {r['full_name']}")
+        if len(batch) > 20:
+            click.echo(f'    ... and {len(batch) - 20} more')
+        click.echo()
+        return
+
+    batch = scheduler.get_next_batch(batch_size)
+    if not batch:
+        click.echo('  No repos due for processing')
+        return
+
+    click.echo(f'  Processing {len(batch)} repos...')
+    scheduler.mark_processing(batch)
+    stats = scheduler.get_stats()
+    click.echo(f'  Marked {len(batch)} repos as processing')
+    click.echo(f'  Remaining due: {stats["due_for_processing"]:,}')
+
+@main.command()
+def scheduler_stats():
+    """Show detailed processing scheduler statistics."""
+    from radar.scale.scheduler import ProcessingScheduler
+    scheduler = ProcessingScheduler()
+    stats = scheduler.get_stats()
+
+    click.echo()
+    click.echo('  Processing Scheduler Stats')
+    click.echo(f'  {chr(9472) * 40}')
+    click.echo(f'  Total repos:       {stats["total_repos"]:,}')
+    click.echo(f'  Due for processing: {stats["due_for_processing"]:,}')
+    click.echo(f'  Failed:            {stats["failed"]:,}')
+    click.echo(f'  Permanent fails:   {stats["permanent_failures"]:,}')
+    click.echo(f'  Last successful:   {stats.get("last_successful_run", "never")}')
+    click.echo()
+    click.echo('  By status:')
+    for status, count in sorted(stats.get('by_status', {}).items()):
+        click.echo(f'    {status:<20} {count:,}')
+    click.echo()
+    click.echo('  By tier:')
+    for tier, count in sorted(stats.get('by_tier', {}).items()):
+        click.echo(f'    Tier {tier}: {count:,} repos')
+    click.echo()
+
+@main.command()
+def retention_stats():
+    """Show snapshot retention and storage statistics."""
+    from radar.scale.retention import SnapshotRetention
+    retention = SnapshotRetention()
+    storage = retention.get_storage_stats()
+
+    click.echo()
+    click.echo('  Snapshot Storage')
+    click.echo(f'  {chr(9472) * 40}')
+    click.echo(f'  Total snapshots:   {storage["total_snapshots"]:,}')
+    click.echo(f'  Unique repos:      {storage["unique_repos"]:,}')
+    click.echo(f'  Oldest:            {storage["oldest_snapshot"]}')
+    click.echo(f'  Newest:            {storage["newest_snapshot"]}')
+    click.echo(f'  DB size:           {storage["db_size_mb"]} MB')
+    click.echo()
+
+@main.command()
+@click.option('--execute', is_flag=True, help='Actually delete old snapshots (default is dry-run)')
+def retention_cleanup(execute: bool):
+    """Clean up old snapshots based on retention policy (dry-run by default)."""
+    from radar.scale.retention import SnapshotRetention
+    retention = SnapshotRetention()
+
+    candidates = retention.get_cleanup_candidates(dry_run=True)
+    if not candidates:
+        click.echo('  No old snapshots to clean up')
+        return
+
+    total = sum(c['count'] for c in candidates)
+    click.echo(f'  Found {total:,} old snapshots across {len(candidates)} repos')
+    if not execute:
+        click.echo('  (Dry run — use --execute to actually delete)')
+        result = retention.cleanup(dry_run=True)
+        click.echo(f'  Would delete: {result["deleted"]:,} snapshots')
+    else:
+        result = retention.cleanup(dry_run=False)
+        click.echo(f'  Deleted: {result["deleted"]:,} snapshots from {result["repos_affected"]} repos')
+
 if __name__ == "__main__":
     main()

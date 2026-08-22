@@ -1,16 +1,16 @@
-# Discover new open-source AI repositories twice daily
+# Discover new repos + sync scheduler (lightweight)
 name: Discover Repos
 
 on:
   schedule:
-    - cron: "0 2 * * *"   # Morning run at 2:00 UTC
-    - cron: "0 14 * * *"  # Evening run at 14:00 UTC
+    - cron: "0 2 * * *"
+    - cron: "0 14 * * *"
   workflow_dispatch:
 
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
@@ -41,21 +41,16 @@ jobs:
           key: radar-db-latest
           restore-keys: radar-db-
 
-      - name: Show smart discovery queries
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar smart-queries || echo "No smart queries yet"
-
       - name: Run category discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          uv run radar discover --limit 100 --category ai-agents
-          uv run radar discover --limit 100 --category llm-frameworks
-          uv run radar discover --limit 100 --category ai-coding
-          uv run radar discover --limit 100 --category mcp
-          uv run radar discover --limit 100 --category rag
-          uv run radar discover --limit 100 --category local-ai
+          uv run radar discover --limit 50 --category ai-agents
+          uv run radar discover --limit 50 --category llm-frameworks
+          uv run radar discover --limit 50 --category ai-coding
+          uv run radar discover --limit 50 --category mcp
+          uv run radar discover --limit 50 --category rag
+          uv run radar discover --limit 50 --category local-ai
 
       - name: Import to SQLite
         run: uv run radar import-json
@@ -63,28 +58,8 @@ jobs:
       - name: Classify repos
         run: uv run radar classify
 
-      - name: Save DB early (preserve discovery progress)
-        uses: actions/cache/save@v4
-        with:
-          path: data/radar.db
-          key: radar-db-latest
-
-      - name: Incremental pipeline (detect changes, snapshot, score)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar process --limit 1000
-
-      - name: Run anomaly detection
-        run: uv run radar anomalies || echo "No anomalies detected"
-
-      - name: Analyze why trending
-        run: uv run radar why-trending --limit 25 || echo "No trending data yet"
-
-      - name: Detect breakouts
-        run: uv run radar breakouts --limit 25 || echo "No breakout data yet"
-
-      - name: Export JSON
-        run: uv run python scripts/export.py
+      - name: Sync processing scheduler
+        run: uv run radar sync-cursor
 
       - name: Save database
         uses: actions/cache/save@v4
@@ -97,5 +72,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/exports/ -f
-          git diff --staged --quiet || git commit -m "chore: update discovery data"
+          git diff --staged --quiet || git commit -m "chore: discovery + scheduler sync"
           git push || echo "Push failed (maybe no changes)"

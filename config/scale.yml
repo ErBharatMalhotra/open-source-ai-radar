@@ -1,0 +1,58 @@
+# Open Source AI Radar — Scale Configuration
+# All timing/rate-limit values are configurable here.
+# No code changes needed to adjust behaviour.
+
+# ── Tier thresholds (stars) ──
+tiers:
+  1:
+    min_stars: 1000
+    interval_hours: 24        # daily
+    priority: 1               # highest
+  2:
+    min_stars: 100
+    interval_hours: 72        # every 3 days
+    priority: 2
+  3:
+    min_stars: 10
+    interval_hours: 168       # weekly
+    priority: 3
+  4:
+    min_stars: 0
+    interval_hours: 720       # monthly
+    priority: 4
+
+# ── Batch processing ──
+batch:
+  size: 700                   # max repos per process run
+  max_api_calls: 800          # budget per run (80% of 1000)
+  delay_between_requests: 0.1 # seconds (adaptive, increases as budget depletes)
+
+# ── Rate limiting ──
+rate_limit:
+  hourly_budget: 1000         # GITHUB_TOKEN limit
+  safety_threshold: 0.80      # use 80% max = 800 calls
+  cooldown_on_limit: true     # stop batch when rate limited
+  persist_on_cooldown: true   # save progress before stopping
+
+# ── Snapshot retention ──
+retention:
+  default_keep_days: 365      # 1 year for unclassified
+  tier_keep_days:
+    1: 730                    # 2 years
+    2: 365                    # 1 year
+    3: 180                    # 6 months
+    4: 90                     # 3 months
+  dry_run: true               # always dry-run first (safety)
+  cleanup_batch_size: 10000   # delete in batches
+
+# ── Processing retries ──
+retries:
+  max_attempts: 3
+  backoff_base_seconds: 30
+  backoff_max_seconds: 600    # 10 min max wait
+
+# ── Monitoring ──
+monitoring:
+  alert_on_failure: true
+  log_api_usage: true
+  status_page_repo_limit: 100 # top repos to show on /status

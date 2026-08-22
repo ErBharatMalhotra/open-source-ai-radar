@@ -1,16 +1,18 @@
-# Snapshot + score + export — runs twice daily after discover
-name: Daily Update
+# Process scheduled repos (snapshot + score + export + deploy)
+name: Process Repos
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # Morning after discover (2 UTC + 4h buffer)
-    - cron: "0 18 * * *"  # Evening after discover (14 UTC + 4h buffer)
+    - cron: "0 4 * * *"
+    - cron: "0 10 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 22 * * *"
   workflow_dispatch:
 
 jobs:
-  update:
+  process:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -34,17 +36,32 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Restore database
+      - name: Restore database cache
         uses: actions/cache/restore@v4
         with:
           path: data/radar.db
           key: radar-db-latest
           restore-keys: radar-db-
 
-      - name: Incremental pipeline (detect changes, snapshot, score)
+      - name: Show scheduler status
+        run: uv run radar scheduler-stats || echo "No scheduler yet"
+
+      - name: Mark repos as processing
+        run: uv run radar schedule --dry-run
+
+      - name: Process batch (rate-limit-aware)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run radar process --limit 3000
+        run: uv run radar process --limit 700
+
+      - name: Run anomaly detection
+        run: uv run radar anomalies || echo "No anomalies detected"
+
+      - name: Analyze why trending
+        run: uv run radar why-trending --limit 25 || echo "No trending data yet"
+
+      - name: Detect breakouts
+        run: uv run radar breakouts --limit 25 || echo "No breakout data yet"
 
       - name: Export JSON
         run: uv run python scripts/export.py
@@ -60,5 +77,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/exports/ -f
-          git diff --staged --quiet || git commit -m "chore: daily update [skip ci]"
-          git push || echo "Push failed"
+          git diff --staged --quiet || git commit -m "chore: process update [skip ci]"
+          git push || echo "Push failed (maybe no changes)"

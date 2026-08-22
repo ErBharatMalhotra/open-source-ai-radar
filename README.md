@@ -92,7 +92,33 @@ The **Radar Score** is: `Impact x 0.40 + Velocity x 0.35 + Health x 0.25`
 | `radar feed` | Generate RSS feed |
 | `radar export` | Export data to JSON |
 | `radar status` | Database stats |
+| `radar sync-cursor` | Sync repos to processing scheduler |
+| `radar schedule` | Show/run processing schedule (tier-aware) |
+| `radar scheduler-stats` | Scheduler statistics |
+| `radar retention-stats` | Snapshot storage statistics |
+| `radar retention-cleanup` | Clean old snapshots (dry-run by default) |
 
+
+## Scale Architecture
+
+The radar uses a **tier-based processing scheduler** that automatically distributes workload:
+
+| Tier | Stars | Process Every | Purpose |
+|------|-------|---------------|---------|
+| 1 | ≥1,000 | Daily | High-value repos |
+| 2 | 100-999 | Every 3 days | Growing repos |
+| 3 | 10-99 | Weekly | Long-tail repos |
+| 4 | <10 | Monthly | New/small repos |
+
+Configuration:  (all timing, batch sizes, retention periods).
+
+### Workflows
+
+
+
+Each workflow stays within GitHub API rate limits (1,000 GraphQL points/hour).
+
+## Configuration
 ## Configuration
 
 ### Categories (`config/categories.yml`)

@@ -12,6 +12,9 @@ on:
       - "data/exports/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Process Repos", "Discover Repos"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -24,6 +27,10 @@ concurrency:
 
 jobs:
   build:
+    # Skip if triggered by workflow_run and the source workflow failed
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

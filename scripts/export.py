@@ -327,6 +327,8 @@ def export_category_intelligence(db: Database, out: Path) -> None:
 
         # Export category rankings
         rankings = tracker.get_category_comparison()
+        # Exclude Uncategorized from display
+        rankings = [r for r in rankings if r.get("category") != "Uncategorized"]
         (out / "category-intelligence.json").write_text(
             json.dumps({
                 "generated_at": datetime.now(tz=UTC).isoformat(),

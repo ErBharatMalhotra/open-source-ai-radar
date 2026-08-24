@@ -214,6 +214,8 @@ class PublicAPI:
             from radar.analysis.category_tracker import CategoryTracker
             tracker = CategoryTracker(self.db)
             momentums = tracker.get_category_comparison()
+            # Exclude Uncategorized from display
+            momentums = [m for m in momentums if m.get("category") != "Uncategorized"]
 
             data = {
                 "api_version": "1.0",

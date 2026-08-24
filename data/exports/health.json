@@ -1,41 +1,40 @@
 {
-  "generated_at": "2026-08-24T08:46:48.125821+00:00",
+  "generated_at": "2026-08-24T10:37:13.231559+00:00",
   "overall_status": "warning",
   "checks": [
     {
       "name": "Data Freshness",
-      "status": "warning",
-      "last_snapshot": "2026-08-21T08:17:18.983543+00:00",
-      "last_score": "2026-08-21T08:17:19.674925+00:00",
-      "last_discovery": "2026-08-22T06:17:03.632410+00:00",
-      "issues": [
-        "Snapshots are 72h old (expected < 48h)",
-        "Scores are 72h old"
-      ]
+      "status": "healthy",
+      "last_snapshot": "2026-08-24T10:36:57.604020+00:00",
+      "last_score": "2026-08-24T10:36:58.109586+00:00",
+      "last_discovery": "2026-08-23T22:23:15.535529+00:00",
+      "issues": []
     },
     {
       "name": "Snapshot Coverage",
       "status": "warning",
-      "total_repos": 5422,
-      "snapshotted": 189,
-      "coverage_pct": 3.5,
+      "total_repos": 5425,
+      "snapshotted": 1370,
+      "coverage_pct": 25.3,
       "issues": [
-        "Only 3.5% of repos have snapshots"
+        "Only 25.3% of repos have snapshots"
       ]
     },
     {
       "name": "Scoring Coverage",
-      "status": "healthy",
-      "total_repos": 5422,
-      "scored": 5416,
-      "coverage_pct": 99.9,
-      "issues": []
+      "status": "warning",
+      "total_repos": 5425,
+      "scored": 700,
+      "coverage_pct": 12.9,
+      "issues": [
+        "Only 12.9% of repos have scores"
+      ]
     },
     {
       "name": "Category Coverage",
       "status": "healthy",
-      "total_repos": 5422,
-      "classified": 5422,
+      "total_repos": 5425,
+      "classified": 5425,
       "coverage_pct": 100.0,
       "issues": []
     },
@@ -43,23 +42,23 @@
       "name": "Database Health",
       "status": "healthy",
       "table_sizes": {
-        "repositories": 5422,
-        "snapshots": 300,
-        "scores": 23063,
-        "growth_metrics": 300,
-        "ai_analysis": 5422
+        "repositories": 5425,
+        "snapshots": 5900,
+        "scores": 28663,
+        "growth_metrics": 5900,
+        "ai_analysis": 5425
       },
       "issues": []
     },
     {
       "name": "Processing Stats",
       "status": "warning",
-      "total_repos": 5422,
-      "processed": 0,
-      "unprocessed": 5422,
-      "last_run": null,
+      "total_repos": 5425,
+      "processed": 1370,
+      "unprocessed": 4055,
+      "last_run": "2026-08-24T10:36:58.474149+00:00",
       "issues": [
-        "Only 0.0% of repos have processing signatures"
+        "Only 25.3% of repos have processing signatures"
       ]
     }
   ]

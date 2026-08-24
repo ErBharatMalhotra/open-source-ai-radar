@@ -83,6 +83,12 @@ jobs:
       - name: Sync processing scheduler
         run: uv run radar sync-cursor
 
+      - name: Export JSON
+        # Regenerate exports so classification changes (especially the
+        # weekly --force re-classify) reach the website immediately,
+        # instead of waiting for the next Process Repos run.
+        run: uv run python scripts/export.py
+
       - name: Save database
         uses: actions/cache/save@v4
         with:

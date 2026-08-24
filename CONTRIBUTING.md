@@ -30,6 +30,9 @@ uv sync
 
 # Install web dependencies
 cd web && npm install && cd ..
+
+# Enable repo hooks (commit message hygiene)
+git config core.hooksPath scripts/hooks
 ```
 
 ### Environment Variables

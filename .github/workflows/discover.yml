@@ -7,6 +7,13 @@ on:
     - cron: "0 14 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: discover-repos
+  cancel-in-progress: false
+
 jobs:
   discover:
     runs-on: ubuntu-latest
@@ -38,7 +45,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: data/radar.db
-          key: radar-db-latest
+          key: radar-db-${{ github.run_id }}
           restore-keys: radar-db-
 
       - name: Run category discovery
@@ -65,7 +72,9 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: data/radar.db
-          key: radar-db-latest
+          # Unique key per run — cache entries are immutable, a fixed key
+          # would silently skip every save after the first one.
+          key: radar-db-${{ github.run_id }}
 
       - name: Commit updated data
         run: |
@@ -76,5 +85,6 @@ jobs:
             echo "::notice::No data changes to commit — skipping push"
           else
             git commit -m "chore: discovery + scheduler sync"
+            git pull --rebase origin main
             git push
           fi

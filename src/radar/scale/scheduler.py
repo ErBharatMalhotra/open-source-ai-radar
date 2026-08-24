@@ -93,7 +93,9 @@ class ProcessingScheduler:
         now = datetime.now(tz=UTC).isoformat()
         max_attempts = self.config.get('retries', {}).get('max_attempts', 3)
         with self.db._conn() as conn:
-            row = conn.execute('SELECT processing_attempts FROM processing_cursor WHERE repo_full_name=?', (full_name,)).fetchone()
+            row = conn.execute(
+                'SELECT processing_attempts FROM processing_cursor WHERE repo_full_name=?',
+                (full_name,)).fetchone()
             status = 'permanent_failure' if (row and row[0] >= max_attempts) else 'failed'
             conn.execute("""UPDATE processing_cursor SET processing_status=?,
                 last_processing_error=?, updated_at=? WHERE repo_full_name=?""",
@@ -115,19 +117,31 @@ class ProcessingScheduler:
         with self.db._conn() as conn:
             total = conn.execute('SELECT COUNT(*) FROM processing_cursor').fetchone()[0]
             by_status = {r[0]: r[1] for r in conn.execute(
-                'SELECT processing_status, COUNT(*) FROM processing_cursor GROUP BY processing_status').fetchall()}
+                'SELECT processing_status, COUNT(*) FROM processing_cursor '
+                'GROUP BY processing_status').fetchall()}
             by_tier = {r[0]: r[1] for r in conn.execute(
-                'SELECT tier, COUNT(*) FROM processing_cursor GROUP BY tier ORDER BY tier').fetchall()}
+                'SELECT tier, COUNT(*) FROM processing_cursor '
+                'GROUP BY tier ORDER BY tier').fetchall()}
             now = datetime.now(tz=UTC).isoformat()
-            due = conn.execute('SELECT COUNT(*) FROM processing_cursor WHERE next_scheduled_at IS NULL OR next_scheduled_at<=?', (now,)).fetchone()[0]
-            last_run = conn.execute('SELECT MAX(last_processed_at) FROM processing_cursor').fetchone()[0]
-            failed = conn.execute("SELECT COUNT(*) FROM processing_cursor WHERE processing_status='failed'").fetchone()[0]
-            perm = conn.execute("SELECT COUNT(*) FROM processing_cursor WHERE processing_status='permanent_failure'").fetchone()[0]
+            due = conn.execute(
+                'SELECT COUNT(*) FROM processing_cursor '
+                'WHERE next_scheduled_at IS NULL OR next_scheduled_at<=?',
+                (now,)).fetchone()[0]
+            last_run = conn.execute(
+                'SELECT MAX(last_processed_at) FROM processing_cursor').fetchone()[0]
+            failed = conn.execute(
+                "SELECT COUNT(*) FROM processing_cursor "
+                "WHERE processing_status='failed'").fetchone()[0]
+            perm = conn.execute(
+                "SELECT COUNT(*) FROM processing_cursor "
+                "WHERE processing_status='permanent_failure'").fetchone()[0]
         return {'total_repos': total, 'due_for_processing': due, 'by_status': by_status,
                 'by_tier': by_tier, 'failed': failed, 'permanent_failures': perm,
                 'last_successful_run': last_run}
 
     def _get_tier(self, full_name):
         with self.db._conn() as conn:
-            row = conn.execute('SELECT tier FROM processing_cursor WHERE repo_full_name=?', (full_name,)).fetchone()
+            row = conn.execute(
+                'SELECT tier FROM processing_cursor WHERE repo_full_name=?',
+                (full_name,)).fetchone()
         return row[0] if row else 4

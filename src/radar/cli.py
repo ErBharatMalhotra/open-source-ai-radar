@@ -1085,7 +1085,8 @@ def retention_cleanup(execute: bool):
         click.echo(f'  Would delete: {result["deleted"]:,} snapshots')
     else:
         result = retention.cleanup(dry_run=False)
-        click.echo(f'  Deleted: {result["deleted"]:,} snapshots from {result["repos_affected"]} repos')
+        click.echo(f'  Deleted: {result["deleted"]:,} snapshots from '
+                   f'{result["repos_affected"]} repos')
 
 if __name__ == "__main__":
     main()

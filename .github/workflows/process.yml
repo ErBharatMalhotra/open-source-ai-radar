@@ -9,6 +9,13 @@ on:
     - cron: "0 22 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: process-repos
+  cancel-in-progress: false
+
 jobs:
   process:
     runs-on: ubuntu-latest
@@ -83,5 +90,6 @@ jobs:
             echo "::notice::No data changes to commit — skipping push"
           else
             git commit -m "chore: process update"
+            git pull --rebase origin main
             git push
           fi

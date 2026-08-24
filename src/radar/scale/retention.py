@@ -31,7 +31,8 @@ class SnapshotRetention:
                     JOIN repositories r ON s.repo_full_name = r.full_name
                     WHERE r.full_name IN (
                         SELECT full_name FROM repositories
-                        WHERE full_name IN (SELECT repo_full_name FROM processing_cursor WHERE tier=?)
+                        WHERE full_name IN (
+                            SELECT repo_full_name FROM processing_cursor WHERE tier=?)
                     ) AND s.timestamp < ?
                     GROUP BY s.repo_full_name""", (tier, cutoff)).fetchall()
             for row in rows:
@@ -76,10 +77,13 @@ class SnapshotRetention:
     def get_storage_stats(self):
         with self.db._conn() as conn:
             total_snapshots = conn.execute('SELECT COUNT(*) FROM snapshots').fetchone()[0]
-            unique_repos = conn.execute('SELECT COUNT(DISTINCT repo_full_name) FROM snapshots').fetchone()[0]
+            unique_repos = conn.execute(
+                'SELECT COUNT(DISTINCT repo_full_name) FROM snapshots').fetchone()[0]
             oldest = conn.execute('SELECT MIN(timestamp) FROM snapshots').fetchone()[0]
             newest = conn.execute('SELECT MAX(timestamp) FROM snapshots').fetchone()[0]
-            db_size = conn.execute('SELECT page_count * page_size FROM pragma_page_count(), pragma_page_size()').fetchone()[0]
+            db_size = conn.execute(
+                'SELECT page_count * page_size '
+                'FROM pragma_page_count(), pragma_page_size()').fetchone()[0]
         return {
             'total_snapshots': total_snapshots,
             'unique_repos': unique_repos,

@@ -32,8 +32,10 @@ def load_scale_config(path: Path | None = None) -> dict[str, Any]:
             "tier_keep_days": {1: 730, 2: 365, 3: 180, 4: 90},
             "dry_run": True, "cleanup_batch_size": 10000,
         },
-        "retries": {"max_attempts": 3, "backoff_base_seconds": 30, "backoff_max_seconds": 600},
-        "monitoring": {"alert_on_failure": True, "log_api_usage": True, "status_page_repo_limit": 100},
+        "retries": {"max_attempts": 3, "backoff_base_seconds": 30,
+                    "backoff_max_seconds": 600},
+        "monitoring": {"alert_on_failure": True, "log_api_usage": True,
+                       "status_page_repo_limit": 100},
     }
     if not config_path.exists():
         logger.warning(f"Scale config not found at {config_path}, using defaults")

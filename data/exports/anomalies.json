@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-08-24T16:59:52.715676+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-08-24T22:36:39.478955+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "n4ze3m/page-assist",
-      "stars": 8173,
-      "forks": 778,
-      "language": "TypeScript",
-      "url": "https://github.com/n4ze3m/page-assist",
-      "radar_score": 70.71,
-      "metric": "forks",
-      "current_rate": 0.6,
-      "normal_rate": 0.1,
-      "deviation": 4.3,
-      "forks_7d": 4,
-      "forks_30d": 4,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

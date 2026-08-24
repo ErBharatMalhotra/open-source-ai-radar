@@ -6,6 +6,11 @@ on:
     - cron: "0 2 * * *"
     - cron: "0 14 * * *"
   workflow_dispatch:
+    inputs:
+      force_classify:
+        description: "Re-classify ALL repos (backfill categorization)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -63,7 +68,17 @@ jobs:
         run: uv run radar import-json
 
       - name: Classify repos
-        run: uv run radar classify
+        # --force re-classifies every repo: heals drift when categorization
+        # rules change. Runs automatically every Sunday; on-demand via the
+        # force_classify dispatch input. Rule-based only, so it is cheap.
+        run: |
+          FORCE=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_classify }}" = "true" ]; then
+            FORCE="--force"
+          elif [ "$(date -u +%u)" = "7" ]; then
+            FORCE="--force"
+          fi
+          uv run radar classify $FORCE
 
       - name: Sync processing scheduler
         run: uv run radar sync-cursor

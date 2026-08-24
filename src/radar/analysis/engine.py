@@ -156,17 +156,32 @@ class AnalysisEngine:
             return {r["repo_full_name"]: dict(r) for r in rows}
 
     def _save_analyses_batch(self, analyses: list[dict[str, Any]]) -> None:
-        """Batch save analyses in a single transaction."""
+        """Batch save analyses in a single transaction.
+
+        Uses UPSERT so re-classification (--force) refreshes category fields
+        but never clobbers AI-enriched columns (tech_stack, use_cases,
+        maturity, quality, potential) set by _run_ai_analysis.
+        """
         if not analyses:
             return
         timestamp = datetime.now(tz=UTC).isoformat()
         with self.db._conn() as conn:
             conn.executemany(
-                """INSERT OR REPLACE INTO ai_analysis
+                """INSERT INTO ai_analysis
                     (repo_full_name, timestamp, category, sub_category,
                      summary, tech_stack, use_cases, maturity, quality,
                      potential, confidence, matched_by)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(repo_full_name) DO UPDATE SET
+                        timestamp=excluded.timestamp,
+                        category=excluded.category,
+                        sub_category=excluded.sub_category,
+                        summary=CASE
+                            WHEN ai_analysis.tech_stack != '[]'
+                            THEN ai_analysis.summary
+                            ELSE excluded.summary END,
+                        confidence=excluded.confidence,
+                        matched_by=excluded.matched_by""",
                 [
                     (
                         a["repo_full_name"],
@@ -174,11 +189,11 @@ class AnalysisEngine:
                         a.get("category", ""),
                         a.get("sub_category", ""),
                         a.get("summary", ""),
-                        "[]",  # tech_stack
-                        "[]",  # use_cases
-                        "Unknown",  # maturity
-                        0.0,  # quality
-                        0.0,  # potential
+                        "[]",  # tech_stack (only used on first insert)
+                        "[]",  # use_cases (only used on first insert)
+                        "Unknown",  # maturity (only used on first insert)
+                        0.0,  # quality (only used on first insert)
+                        0.0,  # potential (only used on first insert)
                         a.get("confidence", 0.0),
                         a.get("matched_by", "none"),
                     )

@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-08-22T12:59:17.101845+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-08-24T08:46:48.329974+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "rohitg00/ai-engineering-from-scratch",
+      "stars": 47570,
+      "forks": 8359,
+      "language": "Python",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "radar_score": 75.21,
+      "metric": "forks",
+      "current_rate": 0.7,
+      "normal_rate": 0.2,
+      "deviation": 4.3,
+      "forks_7d": 5,
+      "forks_30d": 5,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

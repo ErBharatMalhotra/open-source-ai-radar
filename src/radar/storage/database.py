@@ -466,6 +466,19 @@ class Database:
         with self._conn() as conn:
             return conn.execute("SELECT COUNT(*) FROM repositories").fetchone()[0]
 
+    def cleanup_orphan_analyses(self) -> int:
+        """Delete ai_analysis rows whose repo no longer exists in repositories.
+
+        Returns the number of orphaned rows removed.
+        """
+        with self._conn() as conn:
+            cursor = conn.execute(
+                "DELETE FROM ai_analysis "
+                "WHERE repo_full_name NOT IN "
+                "(SELECT full_name FROM repositories)"
+            )
+            return cursor.rowcount
+
     # --- Processing Signature ---
 
     def update_processing_signature(

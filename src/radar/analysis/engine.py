@@ -53,6 +53,11 @@ class AnalysisEngine:
 
         logger.info(f"Analyzing {len(repos)} repositories...")
 
+        # Clean up orphaned analyses from repos no longer in the DB
+        orphaned = self.db.cleanup_orphan_analyses()
+        if orphaned:
+            logger.info(f"Removed {orphaned} orphaned ai_analysis rows")
+
         # Step 1: Classify all repos with rules (batch DB writes)
         # Pre-fetch existing analyses if not forcing
         existing_map: dict[str, dict] = {}

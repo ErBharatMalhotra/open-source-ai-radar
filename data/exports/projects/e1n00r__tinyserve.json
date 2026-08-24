@@ -18,8 +18,8 @@
   "velocity": 26.75,
   "health": 38.96,
   "global_percentile": 7.31,
-  "category": "Uncategorized",
-  "sub_category": "",
+  "category": "AI Infrastructure",
+  "sub_category": "model serving",
   "summary": "30 tok/s for 20B MoE on 8 GB VRAM. Flat throughput to 32K context. Native MXFP4 + GGUF Q4_K/Q5_K/Q6_K via ggml CUDA kernels \u2014 zero dequant. Expert offloading for models that don't fit in GPU memory.",
   "maturity": "Unknown",
   "snapshot_count": 0

@@ -18,7 +18,7 @@
   "velocity": 29.34,
   "health": 52.11,
   "global_percentile": 12.41,
-  "category": "Uncategorized",
+  "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Tool schemas get re-prefilled on every LLM request. ContextCache compiles them into a KV cache once, stores it on disk and reuses it across users and sessions \u2014 TTFT stays near 200ms with 50 tools instead of 5.6s (Qwen3-8B, RTX 3090 Ti).",
   "maturity": "Unknown",

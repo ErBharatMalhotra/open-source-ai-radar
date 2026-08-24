@@ -34,10 +34,10 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 If your repo is tracked, grab a live badge for your README:
 
 ```markdown
-![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/data/exports/api/badges/OWNER__REPO/score.svg)
+![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)
 ```
 
-![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/data/exports/api/badges/BerriAI__litellm/score.svg)
+![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg)
 
 More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
 

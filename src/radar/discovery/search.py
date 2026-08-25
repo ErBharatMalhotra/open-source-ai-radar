@@ -4,6 +4,8 @@ Uses layered discovery:
   Layer 1: Topic-based (high precision)
   Layer 2: Keyword search (broader recall)
   Layer 3: Date/activity filters (catch emerging repos)
+  Layer 4/5: Free-text name/description match (most popular AI repos
+             ship without any GitHub topics)
 """
 
 from __future__ import annotations
@@ -43,6 +45,7 @@ def build_queries(
     Returns list of {query, category_slug, layer, label} dicts.
     """
     queries: list[dict[str, Any]] = []
+    seen_free_text: set[str] = set()
 
     cats = categories.get("categories", {})
     if category_filter:
@@ -75,7 +78,7 @@ def build_queries(
                     "query": f"topic:{topic} stars:>5 created:>{created_recent}",
                     "category_slug": slug,
                     "category_name": name,
-                    "layer": "topic新兴",
+                    "layer": "topic-emerging",
                     "label": f"Emerging: {topic}",
                 }
             )
@@ -103,6 +106,38 @@ def build_queries(
                     "category_name": name,
                     "layer": "trending",
                     "label": f"Trending: {name}",
+                }
+            )
+
+        # Layer 4/5: Free-text name and description match.
+        # A large share of popular AI repos carry no GitHub topics at
+        # all; bounded name/description searches recover them without
+        # blowing the search rate budget.
+        free_text_budget = 3
+        terms = [k for k in (cat.get("keywords") or []) if k]
+        if not terms:
+            terms = list(cat.get("topics") or [])
+        for term in terms[:free_text_budget]:
+            key = term.lower()
+            if key in seen_free_text:
+                continue
+            seen_free_text.add(key)
+            queries.append(
+                {
+                    "query": f'"{term}" in:name stars:>10',
+                    "category_slug": slug,
+                    "category_name": name,
+                    "layer": "name",
+                    "label": f'Name: "{term}"',
+                }
+            )
+            queries.append(
+                {
+                    "query": f'"{term}" in:description stars:>20 pushed:>{recent_date}',
+                    "category_slug": slug,
+                    "category_name": name,
+                    "layer": "description",
+                    "label": f'Description: "{term}"',
                 }
             )
 

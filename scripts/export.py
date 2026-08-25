@@ -232,12 +232,21 @@ def export_project_index(db: Database, out: Path) -> None:
     """Export a lightweight project index for search/listing."""
     repos = db.get_all_repos()
 
-    # Get latest scores for ranking
+    # Get latest scores for ranking.
+    # Use the newest score PER REPO, not the global max timestamp: the
+    # scheduler processes batches per run, so a single timestamp covers
+    # only that batch (~hundreds of repos), leaving the rest unscored.
     with db._conn() as conn:
         score_rows = conn.execute(
             """SELECT repo_full_name, radar_score, impact, velocity, health
-            FROM scores WHERE timestamp = (SELECT MAX(timestamp) FROM scores)
-            ORDER BY radar_score DESC"""
+            FROM (
+                SELECT repo_full_name, radar_score, impact, velocity, health,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY repo_full_name
+                           ORDER BY timestamp DESC
+                       ) AS rn
+                FROM scores
+            ) WHERE rn = 1"""
         ).fetchall()
 
     score_map = {r["repo_full_name"]: dict(r) for r in score_rows}

@@ -77,6 +77,54 @@ function velocityStory(v: number): string {
   if (v >= 15) return 'Modest but positive momentum.';
   return 'Momentum is cooling relative to the rest of the index.';
 }
+
+function fmtDate(ts: string): string {
+  try {
+    return new Date(ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  } catch {
+    return '';
+  }
+}
+
+interface Point { t: string; v: number }
+
+function buildChart(points: Point[], color: string): { svg: string; first: Point; last: Point } | null {
+  if (!points || points.length < 2) return null;
+  const w = 640, h = 150, pad = 10;
+  const vals = points.map((p) => p.v);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const range = max - min || Math.max(Math.abs(max) * 0.01, 1);
+  const stepX = (w - pad * 2) / (points.length - 1);
+  const coords = points.map((p, i) => ({
+    x: pad + i * stepX,
+    y: h - pad - ((p.v - min) / range) * (h - pad * 2),
+  }));
+  const line = coords.map((c) => `${c.x.toFixed(1)},${c.y.toFixed(1)}`).join(' ');
+  const area = `M${pad},${h - pad} L${coords.map((c) => `${c.x.toFixed(1)},${c.y.toFixed(1)}`).join(' L')} L${w - pad},${h - pad} Z`;
+  const lastPt = coords[coords.length - 1];
+  const gid = `g-${color.replace(/[^a-z]/gi, '')}`;
+  const svg = `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="width:100%; height:auto; display:block;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trend chart">
+    <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${color}" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#${gid})"/>
+    <polyline points="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${lastPt.x.toFixed(1)}" cy="${lastPt.y.toFixed(1)}" r="3.5" fill="${color}"/>
+  </svg>`;
+  return { svg, first: points[0], last: points[points.length - 1] };
+}
+
+const starPoints: Point[] = (history?.snapshots || [])
+  .map((s: any) => ({ t: s.timestamp, v: Number(s.stars) }))
+  .filter((p: Point) => Number.isFinite(p.v));
+const scorePoints: Point[] = (history?.scores || [])
+  .filter((s: any) => s.radar_score !== null && s.radar_score !== undefined)
+  .map((s: any) => ({ t: s.timestamp, v: Number(s.radar_score) }))
+  .filter((p: Point) => Number.isFinite(p.v));
+
+const starChart = buildChart(starPoints, 'var(--green)');
+const scoreChart = buildChart(scorePoints, 'var(--accent)');
 ---
 
 <Layout title={`${owner}/${repo}`} description={project.description || `Project details for ${owner}/${repo}`} ogImage={socialImage}>
@@ -112,6 +160,40 @@ function velocityStory(v: number): string {
       <div class="stat-label">Momentum</div>
     </div>
   </div>
+
+  {(starChart || scoreChart) && (
+    <section class="section" style="margin-bottom:var(--sp-8);">
+      <div class="grid-2">
+        {starChart && (
+          <div class="card" style="padding:var(--sp-6);">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:var(--sp-4);">
+              <h2 style="font-size:var(--text-lg); font-weight:700;">Star History</h2>
+              <span style="font-size:var(--text-sm); color:var(--text-muted);">{fmtDate(starChart.first.t)} → {fmtDate(starChart.last.t)}</span>
+            </div>
+            <Fragment set:html={starChart.svg} />
+            <div style="display:flex; justify-content:space-between; margin-top:var(--sp-2); font-size:var(--text-xs); color:var(--text-muted);">
+              <span>{fmt(starChart.first.v)} ★</span>
+              <span style="color:var(--green); font-weight:600;">{starChart.last.v >= starChart.first.v ? '+' : ''}{fmt(starChart.last.v - starChart.first.v)} in period</span>
+              <span>{fmt(starChart.last.v)} ★</span>
+            </div>
+          </div>
+        )}
+        {scoreChart && (
+          <div class="card" style="padding:var(--sp-6);">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:var(--sp-4);">
+              <h2 style="font-size:var(--text-lg); font-weight:700;">Radar Score History</h2>
+              <span style="font-size:var(--text-sm); color:var(--text-muted);">{fmtDate(scoreChart.first.t)} → {fmtDate(scoreChart.last.t)}</span>
+            </div>
+            <Fragment set:html={scoreChart.svg} />
+            <div style="display:flex; justify-content:space-between; margin-top:var(--sp-2); font-size:var(--text-xs); color:var(--text-muted);">
+              <span>{scoreChart.first.v.toFixed(1)}</span>
+              <span>now {scoreChart.last.v.toFixed(1)}</span>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
 
   <div class="grid-2" style="margin-bottom:var(--sp-8);">
     <div class="card" style="padding:var(--sp-6);">

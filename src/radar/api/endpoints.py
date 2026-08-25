@@ -50,6 +50,7 @@ class PublicAPI:
         counts["categories"] = self.generate_categories()
         counts["stats"] = self.generate_stats()
         counts["feed"] = self.generate_feed()
+        counts["llms_txt"] = self.generate_llms_txt()
 
         logger.info(f"Generated API endpoints: {counts}")
         return counts
@@ -287,6 +288,94 @@ class PublicAPI:
         (self.out / "feed.xml").write_text(
             feed, encoding="utf-8"
         )
+        return len(repos)
+
+    def generate_llms_txt(self) -> int:
+        """Generate /api/llms.txt — AI-crawler-friendly site guide.
+
+        Follows the llms.txt convention: a concise markdown overview of
+        what this project is, which structured datasets exist, and where
+        to fetch them. Helps LLM agents cite and use the data correctly.
+        """
+        base = "https://erbharatmalhotra.github.io/open-source-ai-radar"
+        repos = self.db.get_all_repos()
+        stats = self.db.get_stats()
+        total_stars = int(stats.get("total_stars", 0) or 0)
+        updated = datetime.now(tz=UTC).strftime("%Y-%m-%d")
+
+        try:
+            from radar.analysis.category_tracker import CategoryTracker
+            cats = [
+                c for c in CategoryTracker(self.db).get_category_comparison()
+                if c.get("category") != "Uncategorized"
+            ]
+            cat_lines = [
+                f"- [{c['category']}]({base}/api/categories.json): "
+                f"{c.get('tracked', 0)} projects, trend {c.get('trend', 'n/a')}"
+                for c in cats
+            ]
+        except Exception:
+            cat_lines = ["- See categories.json for the full list"]
+
+        top = self.db.get_top_repos(15, "radar_score")
+        top_lines = [
+            f"- [{r.get('full_name')}]({base}/project/{r.get('full_name', '').replace('/', '/')}): "
+            f"{r.get('stars', 0):,} stars, radar {r.get('radar_score', 0):.1f}/100 — "
+            f"{(r.get('description') or '')[:100]}"
+            for r in top
+        ]
+
+        content = f"""# Open Source AI Radar
+
+> Intelligence platform tracking {len(repos):,} open-source AI repositories
+> ({total_stars:,} combined stars) with a three-axis score: Impact (40%),
+> Velocity (35%), Health (25%). Data refreshes daily via automated
+> GitHub Actions; last export {updated}.
+
+Unlike plain leaderboards, every project carries an explanation of WHY it
+trends: velocity vs its own baseline, breakout detection, anomaly checks,
+and category momentum.
+
+## Datasets (static JSON, no auth, CC-BY-4.0)
+
+- [All repos]({base}/api/repos.json): {len(repos):,} records — \
+name, description, language, license, stars, forks, timestamps
+- [Top ranked]({base}/api/top.json): highest radar scores with axis breakdowns
+- [Trending]({base}/api/trending.json): sorted by velocity (stars/day momentum)
+- [Hidden gems]({base}/api/gems.json): low-star, high-velocity emerging projects
+- [Breakouts]({base}/api/breakouts.json): velocity anomalies vs own history
+- [Anomalies]({base}/api/anomalies.json): statistical outliers incl. star-spike review
+- [Categories]({base}/api/categories.json): per-category momentum intelligence
+- [Stats]({base}/api/stats.json): summary counts
+- [RSS feed]({base}/api/feed.xml): top 20 trending projects
+
+## Categories ({updated})
+
+{chr(10).join(cat_lines)}
+
+## Top projects right now
+
+{chr(10).join(top_lines)}
+
+## Scoring model
+
+Radar Score = Impact x 0.40 + Velocity x 0.35 + Health x 0.25.
+Impact: star/fork/watcher percentile ranks. Velocity: stars-per-day,
+fork ratio, commit recency, issue activity. Health: freshness, release
+cadence, issue load, fork-community shape, bus factor (maintainer count),
+and license safety.
+
+## Pages
+
+- [Rankings]({base}/top) - full sortable leaderboard
+- [Trending]({base}/trending) - momentum movers
+- [Breakouts]({base}/breakouts) - early-stage explosions
+- [Trends]({base}/trends) - rising stars, hidden gems, anomalies
+- [Categories]({base}/categories) - category intelligence
+- [API docs]({base}/api-docs) - endpoint reference
+"""
+
+        (self.out / "llms.txt").write_text(content, encoding="utf-8")
         return len(repos)
 
     def _clean_repo(self, r: dict) -> dict:

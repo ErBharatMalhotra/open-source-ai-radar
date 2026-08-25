@@ -51,6 +51,7 @@ class PublicAPI:
         counts["stats"] = self.generate_stats()
         counts["feed"] = self.generate_feed()
         counts["llms_txt"] = self.generate_llms_txt()
+        counts["compare_index"] = self.generate_compare_index()
 
         logger.info(f"Generated API endpoints: {counts}")
         return counts
@@ -377,6 +378,66 @@ and license safety.
 
         (self.out / "llms.txt").write_text(content, encoding="utf-8")
         return len(repos)
+
+    def generate_compare_index(self) -> int:
+        """Generate /api/compare-index.json — slim dataset for the
+        client-side compare tool (no descriptions/avatars, keeps it small)."""
+        repos = self.db.get_all_repos()
+
+        with self.db._conn() as conn:
+            score_rows = conn.execute(
+                """SELECT repo_full_name, radar_score, impact, velocity, health
+                FROM (
+                    SELECT repo_full_name, radar_score, impact, velocity, health,
+                           ROW_NUMBER() OVER (
+                               PARTITION BY repo_full_name
+                               ORDER BY timestamp DESC
+                           ) AS rn
+                    FROM scores
+                ) WHERE rn = 1"""
+            ).fetchall()
+        score_map = {r["repo_full_name"]: dict(r) for r in score_rows}
+
+        with self.db._conn() as conn:
+            cat_rows = conn.execute(
+                "SELECT repo_full_name, category FROM ai_analysis"
+            ).fetchall()
+        cat_map = {r["repo_full_name"]: r["category"] for r in cat_rows}
+
+        entries = []
+        for repo in repos:
+            fn = repo.get("full_name", "")
+            entry = {
+                "full_name": fn,
+                "language": repo.get("language"),
+                "stars": repo.get("stars", 0),
+                "forks": repo.get("forks", 0),
+                "license": repo.get("license"),
+                "created_at": repo.get("created_at"),
+                "pushed_at": repo.get("pushed_at"),
+                "category": cat_map.get(fn, ""),
+            }
+            s = score_map.get(fn)
+            if s:
+                entry.update({
+                    "radar_score": s["radar_score"],
+                    "impact": s["impact"],
+                    "velocity": s["velocity"],
+                    "health": s["health"],
+                })
+            entries.append(entry)
+
+        data = {
+            "api_version": "1.0",
+            "generated_at": datetime.now(tz=UTC).isoformat(),
+            "total": len(entries),
+            "projects": entries,
+        }
+        (self.out / "compare-index.json").write_text(
+            json.dumps(data, separators=(",", ":"), default=str),
+            encoding="utf-8",
+        )
+        return len(entries)
 
     def _clean_repo(self, r: dict) -> dict:
         """Clean repo for API response."""

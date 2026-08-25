@@ -268,6 +268,10 @@ def export_project_index(db: Database, out: Path) -> None:
             "description": repo.get("description", "")[:200],
             "language": repo.get("language"),
             "stars": repo.get("stars", 0),
+            "forks": repo.get("forks", 0),
+            "license": repo.get("license"),
+            "created_at": repo.get("created_at"),
+            "pushed_at": repo.get("pushed_at"),
             "owner_avatar": _avatar_url(repo),
         }
 

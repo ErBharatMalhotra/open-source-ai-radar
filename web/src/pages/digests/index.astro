@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { readFileSync, readdirSync, existsSync } from 'fs';
+import { join } from 'path';
+
+const base = import.meta.env.BASE_URL;
+const reportsDir = join(process.cwd(), '..', 'reports');
+
+function listDigests(): { slug: string; title: string }[] {
+  if (!existsSync(reportsDir)) return [];
+  try {
+    return readdirSync(reportsDir)
+      .filter((f) => /^week-\d{4}-W\d{2}\.md$/.test(f))
+      .sort()
+      .reverse()
+      .map((f) => {
+        const slug = f.replace(/\.md$/, '');
+        const m = slug.match(/week-(\d{4})-W(\d{2})/);
+        const title = m ? `Week ${Number(m[2])}, ${m[1]}` : slug;
+        return { slug, title };
+      });
+  } catch {
+    return [];
+  }
+}
+
+const digests = listDigests();
+---
+
+<Layout title="Weekly Digests" description="Browsable archive of weekly AI open-source intelligence digests.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1>Weekly <span class="accent">Digests</span></h1>
+    <p>{digests.length} weeks of intelligence — risers, hidden gems, and momentum shifts</p>
+  </section>
+
+  <div class="grid-2">
+    {digests.map((d) => (
+      <a href={`${base}digests/${d.slug}`} class="card" style="padding:var(--sp-6); text-decoration:none; color:inherit; display:block;">
+        <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-2); color:var(--accent);">{d.title}</h2>
+        <p style="font-size:var(--text-sm); color:var(--text-muted);">Top risers · hidden gems · new & promising · category shifts</p>
+      </a>
+    ))}
+  </div>
+
+  {digests.length === 0 && (
+    <div class="card" style="padding:var(--sp-8); text-align:center; color:var(--text-muted);">
+      No digests published yet. The weekly report workflow generates one every week.
+    </div>
+  )}
+</Layout>

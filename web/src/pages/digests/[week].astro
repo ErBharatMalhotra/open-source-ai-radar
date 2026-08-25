@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { readFileSync, readdirSync, existsSync } from 'fs';
+import { join } from 'path';
+import { marked } from 'marked';
+
+export function getStaticPaths() {
+  const reportsDir = join(process.cwd(), '..', 'reports');
+  if (!existsSync(reportsDir)) return [];
+  try {
+    return readdirSync(reportsDir)
+      .filter((f) => /^week-\d{4}-W\d{2}\.md$/.test(f))
+      .map((f) => ({ params: { week: f.replace(/\.md$/, '') } }));
+  } catch {
+    return [];
+  }
+}
+
+const { week } = Astro.params;
+const base = import.meta.env.BASE_URL;
+const reportsDir = join(process.cwd(), '..', 'reports');
+
+let html = '';
+let title = week || 'Digest';
+try {
+  const md = readFileSync(join(reportsDir, `${week}.md`), 'utf-8');
+  // First line "# ..." becomes the page title
+  const h1 = md.match(/^#\s+(.+)$/m);
+  if (h1) title = h1[1];
+  html = await marked.parse(md);
+} catch {
+  /* digest missing — empty state renders below */
+}
+
+const m = (week || '').match(/week-(\d{4})-W(\d{2})/);
+const crumbs = m ? `Week ${Number(m[2])}, ${m[1]}` : title;
+---
+
+<Layout title={`${crumbs} — Digest`} description={`Weekly AI open-source intelligence digest: ${crumbs}`}>
+  <nav style="margin-bottom:var(--sp-6); font-size:var(--text-sm);">
+    <a href={`${base}digests`} style="color:var(--accent); text-decoration:none;">Weekly Digests</a>
+    <span style="color:var(--text-muted); margin:0 var(--sp-2);">/</span>
+    <span style="color:var(--text-secondary);">{crumbs}</span>
+  </nav>
+
+  {html ? (
+    <article class="card digest-body" set:html={html} />
+  ) : (
+    <div class="card" style="padding:var(--sp-8); text-align:center; color:var(--text-muted);">
+      This digest could not be loaded.
+    </div>
+  )}
+</Layout>
+
+<style is:global>
+  .digest-body { padding: var(--sp-6); max-width: 900px; }
+  .digest-body h1 { font-size: var(--text-2xl); font-weight: 700; letter-spacing: var(--tracking-tight); margin-bottom: var(--sp-4); }
+  .digest-body h2 { font-size: var(--text-lg); font-weight: 700; margin-top: var(--sp-6); margin-bottom: var(--sp-3); padding-top: var(--sp-4); border-top: 1px solid var(--border-subtle); }
+  .digest-body blockquote { border-left: 3px solid var(--accent); padding-left: var(--sp-4); color: var(--text-muted); font-size: var(--text-sm); margin-bottom: var(--sp-4); }
+  .digest-body table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); margin: var(--sp-3) 0; }
+  .digest-body th, .digest-body td { text-align: left; padding: var(--sp-2) var(--sp-3); border-bottom: 1px solid var(--border-subtle); }
+  .digest-body th { font-size: var(--text-xs); text-transform: uppercase; color: var(--text-muted); }
+  .digest-body a { color: var(--accent); text-decoration: none; }
+  .digest-body a:hover { text-decoration: underline; }
+</style>

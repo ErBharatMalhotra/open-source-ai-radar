@@ -43,6 +43,14 @@ If your repo is tracked, grab a live badge for your README:
 
 More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
 
+**Want your project tracked?** [Open a submission](https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new?template=submit-repo.yml) — reviewed within a few days.
+
+### Explore
+
+- [Weekly Digests](https://erbharatmalhotra.github.io/open-source-ai-radar/digests/) — browsable archive of weekly intelligence
+- [Compare Projects](https://erbharatmalhotra.github.io/open-source-ai-radar/compare/) — side-by-side radar score comparison
+- [llms.txt](https://erbharatmalhotra.github.io/open-source-ai-radar/api/llms.txt) — machine-readable dataset guide for AI agents
+
 ---
 
 ## Quick Start

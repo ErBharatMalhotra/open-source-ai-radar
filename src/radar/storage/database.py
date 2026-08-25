@@ -479,6 +479,25 @@ class Database:
             )
             return cursor.rowcount
 
+    def get_latest_contributors(self) -> dict[str, int]:
+        """Map each repo to its most recent non-zero contributor count.
+
+        Used for bus-factor scoring; repos never snapshotted are absent.
+        """
+        with self._conn() as conn:
+            rows = conn.execute(
+                """SELECT repo_full_name, contributors FROM (
+                    SELECT repo_full_name, contributors,
+                           ROW_NUMBER() OVER (
+                               PARTITION BY repo_full_name
+                               ORDER BY timestamp DESC
+                           ) AS rn
+                    FROM snapshots
+                    WHERE contributors > 0
+                ) WHERE rn = 1"""
+            ).fetchall()
+            return {r["repo_full_name"]: int(r["contributors"]) for r in rows}
+
     # --- Processing Signature ---
 
     def update_processing_signature(

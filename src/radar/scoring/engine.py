@@ -18,7 +18,7 @@ from __future__ import annotations
 import logging
 import math
 from datetime import UTC, datetime
-from typing import Any
+from typing import Any, ClassVar
 
 from radar.storage.database import Database
 
@@ -89,6 +89,14 @@ class ScoringEngine:
             days = _days_since(r.get("pushed_at"))
             freshness_map[r["full_name"]] = math.exp(-FRESHNESS_LAMBDA * days)
 
+        # Bus factor: latest known contributor counts (empty until
+        # snapshots accumulate — scored conservatively as 0)
+        try:
+            contributors_map = self.db.get_latest_contributors()
+        except Exception:
+            logger.warning("Could not load contributor counts for bus factor")
+            contributors_map = {}
+
         # ═══ Score each repo (batch insert) ═══
         score_batch: list[dict[str, Any]] = []
         for repo in repos:
@@ -102,7 +110,9 @@ class ScoringEngine:
                 all_stars_log, all_forks_log, all_watchers
             )
             velocity = self._velocity(repo, all_issues)
-            health = self._health(repo, freshness_map[fn])
+            health = self._health(
+                repo, freshness_map[fn], contributors_map.get(fn, 0)
+            )
 
             radar = (
                 impact * self.weights["impact"]
@@ -202,7 +212,46 @@ class ScoringEngine:
 
     # ── Health ──────────────────────────────────────────────────────
 
-    def _health(self, repo: dict[str, Any], freshness: float) -> float:
+    #: SPDX license identifiers considered safe for adopters (OSI-approved
+    #: or widely-accepted). Anything unrecognized scores mid; missing
+    #: licenses score low.
+    SAFE_LICENSES: ClassVar[set[str]] = {
+        "MIT", "Apache-2.0", "Apache-2.0 WITH LLVM-exception", "BSD-2-Clause",
+        "BSD-3-Clause", "BSD-3-Clause-Clear", "ISC", "MPL-2.0", "Unlicense",
+        "CC0-1.0", "CC-BY-4.0", "Zlib", "0BSD", "BSL-1.0",
+        "GPL-2.0", "GPL-2.0-only", "GPL-2.0-or-later",
+        "GPL-3.0", "GPL-3.0-only", "GPL-3.0-or-later",
+        "LGPL-2.1", "LGPL-2.1-only", "LGPL-2.1-or-later",
+        "LGPL-3.0", "LGPL-3.0-only", "LGPL-3.0-or-later",
+        "AGPL-3.0", "AGPL-3.0-only", "AGPL-3.0-or-later",
+        "EPL-1.0", "EPL-2.0", "CDDL-1.0", "CECILL-2.1", "EUPL-1.2",
+    }
+
+    def _bus_factor_score(self, contributors: int) -> float:
+        """Score maintainer risk: how many people could keep this alive?"""
+        if contributors >= 25:
+            return 95.0
+        if contributors >= 10:
+            return 85.0
+        if contributors >= 5:
+            return 70.0
+        if contributors >= 2:
+            return 50.0
+        return 20.0
+
+    def _license_score(self, repo: dict[str, Any]) -> float:
+        """Score legal safety: can adopters actually use this project?"""
+        license_id = (repo.get("license") or "").strip()
+        if not license_id:
+            return 30.0
+        return 90.0 if license_id in self.SAFE_LICENSES else 60.0
+
+    def _health(
+        self,
+        repo: dict[str, Any],
+        freshness: float,
+        bus_factor: int = 0,
+    ) -> float:
         freshness_score = freshness * 100
 
         has_release = bool(repo.get("latest_release_tag"))
@@ -239,13 +288,18 @@ class ScoringEngine:
         else:
             community_health = 65.0
 
+        bus_factor_component = self._bus_factor_score(bus_factor)
+        license_component = self._license_score(repo)
+
         return (
-            freshness_score * 0.30
-            + release_score * 0.15
-            + release_recency * 0.15
-            + issue_health * 0.15
-            + community_health * 0.15
-            + (100.0 if has_release else 50.0) * 0.10
+            freshness_score * 0.25
+            + release_score * 0.10
+            + release_recency * 0.10
+            + issue_health * 0.12
+            + community_health * 0.13
+            + (100.0 if has_release else 50.0) * 0.05
+            + bus_factor_component * 0.15
+            + license_component * 0.10
         )
 
     # ── Percentiles ─────────────────────────────────────────────────

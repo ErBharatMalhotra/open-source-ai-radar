@@ -8,7 +8,9 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 
 **[Live Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/)** | **[API Docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/)** | **[RSS](https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml)**
 
-**Tracking 5,200+ repos · 96% auto-classified into 12 AI categories · Updated 6x daily**
+<!-- LIVE-STATS:START -->
+**Tracking 5,271 repos · 96% auto-classified into 11 AI categories · 26.2M stars tracked · Updated 2026-08-25 01:32 UTC**
+<!-- LIVE-STATS:END -->
 
 ---
 
@@ -40,6 +42,14 @@ If your repo is tracked, grab a live badge for your README:
 ![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg)
 
 More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
+
+**Want your project tracked?** [Open a submission](https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new?template=submit-repo.yml) — reviewed within a few days.
+
+### Explore
+
+- [Weekly Digests](https://erbharatmalhotra.github.io/open-source-ai-radar/digests/) — browsable archive of weekly intelligence
+- [Compare Projects](https://erbharatmalhotra.github.io/open-source-ai-radar/compare/) — side-by-side radar score comparison
+- [llms.txt](https://erbharatmalhotra.github.io/open-source-ai-radar/api/llms.txt) — machine-readable dataset guide for AI agents
 
 ---
 

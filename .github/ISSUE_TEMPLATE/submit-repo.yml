@@ -1,0 +1,61 @@
+name: "\U0001F4E1 Submit a repository"
+description: Suggest an AI open-source project to be tracked on the Radar
+title: "[Submit]: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a project! We track open-source AI repos and
+        score them on Impact / Velocity / Health. Submissions are reviewed
+        and picked up by discovery within a few days if they fit.
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      description: Full GitHub URL of the project
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which category fits best?
+      options:
+        - AI Agents
+        - AI Coding Tools
+        - AI Infrastructure
+        - AI Safety & Alignment
+        - Evaluation & Benchmarks
+        - Generative AI
+        - LLM Frameworks
+        - Local AI
+        - MCP
+        - Multimodal AI
+        - RAG
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be tracked?
+      description: What does it do, and why is it gaining (or deserves) attention?
+      placeholder: A one-paragraph pitch is plenty.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Quick checks
+      options:
+        - label: The repo is open source (has a license)
+          required: true
+        - label: It is actively maintained (pushed in the last ~3 months)
+          required: true
+        - label: It is my own project OR I am not affiliated with it
+        - label: It already has GitHub topics set

@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { loadRepoHistory } from '../../lib/history';
 
 const base = import.meta.env.BASE_URL;
 
 // Load data
 let index: any = { projects: [] };
-let repoHistory: Record<string, number[]> = {"affaan-m/ECC": [241862], "anomalyco/opencode": [200055], "awesome-selfhosted/awesome-selfhosted": [314209], "firecrawl/firecrawl": [170649], "f/prompts.chat": [167718], "microsoft/markitdown": [175318], "n8n-io/n8n": [201565], "NousResearch/hermes-agent": [234062], "ollama/ollama": [179138], "Significant-Gravitas/AutoGPT": [186737]};
+const repoHistory = loadRepoHistory();
 try { index = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8')); } catch {}
 
 let intelligence: any = { categories: [] };

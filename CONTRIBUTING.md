@@ -23,7 +23,7 @@ Thanks for your interest in contributing! This guide will help you get started.
 ```bash
 # Clone the repo
 git clone https://github.com/your-username/open-source-ai-radar.git
-cd open-source-radar
+cd open-source-ai-radar
 
 # Install Python dependencies
 uv sync
@@ -133,7 +133,7 @@ open-source-radar/
 
 - Impact: log-scaled percentile rank (stars, forks, watchers)
 - Velocity: growth rate, acceleration, commit frequency
-- Health: freshness, releases, issues, contributors
+- Health: freshness, releases, issue load, community shape, bus factor, license safety
 - Radar Score: weighted combination
 
 ### Processing Scheduler (`src/radar/scale/scheduler.py`)
@@ -197,24 +197,13 @@ velocity:
 ### Example
 
 ```python
-def calculate_score(impact: float, velocity: float, health: float) -> float:
-    """Calculate the Radar Score from three axes.
-    
-    Args:
-        impact: Impact score (0-100)
-        velocity: Velocity score (0-100)
-        health: Health score (0-100)
-        
-    Returns:
-        Radar Score (0-100)
-        
-    Raises:
-        ValueError: If any score is outside 0-100 range
-    """
-    if not all(0 <= s <= 100 for s in [impact, velocity, health]):
-        raise ValueError("Scores must be between 0 and 100")
-    
-    return impact * 0.40 + velocity * 0.35 + health * 0.25
+from radar.scoring.engine import ScoringEngine
+
+def test_license_safety_penalises_missing_license():
+    """Missing license should score 30, MIT should score 90."""
+    engine = ScoringEngine(db=None)
+    assert engine._license_score({"license": None}) == 30.0
+    assert engine._license_score({"license": "MIT"}) == 90.0
 ```
 
 ## Testing
@@ -223,22 +212,23 @@ def calculate_score(impact: float, velocity: float, health: float) -> float:
 
 ```python
 import pytest
-from radar.scoring.engine import calculate_score
+from radar.scoring.engine import ScoringEngine
 
-def test_calculate_score_basic():
-    """Test basic score calculation."""
-    result = calculate_score(80, 70, 90)
-    assert result == pytest.approx(79.5)
 
-def test_calculate_score_boundaries():
-    """Test boundary conditions."""
-    assert calculate_score(0, 0, 0) == 0.0
-    assert calculate_score(100, 100, 100) == 100.0
+@pytest.fixture
+def engine():
+    return ScoringEngine(db=None)
 
-def test_calculate_score_invalid():
-    """Test invalid input handling."""
-    with pytest.raises(ValueError):
-        calculate_score(-1, 50, 50)
+def test_bus_factor_single_maintainer_is_risky(engine):
+    """A repo with one contributor should get the lowest bus factor score."""
+    assert engine._bus_factor_score(1) == 20.0
+
+def test_license_score_boundaries(engine):
+    assert engine._license_score({"license": None}) == 30.0
+    assert engine._license_score({"license": "Apache-2.0"}) == 90.0
+
+def test_bus_factor_scales_with_team_size(engine):
+    assert engine._bus_factor_score(50) > engine._bus_factor_score(2)
 ```
 
 ### Running Tests

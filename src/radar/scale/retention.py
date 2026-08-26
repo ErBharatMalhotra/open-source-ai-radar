@@ -1,4 +1,4 @@
-"""Snapshot retention — configurable cleanup of old data."""
+"""Retention — configurable cleanup of old snapshots, scores, and growth metrics."""
 
 from __future__ import annotations
 
@@ -45,7 +45,6 @@ class SnapshotRetention:
 
     def cleanup(self, dry_run=True):
         ret = self.config.get('retention', {})
-        batch_size = ret.get('cleanup_batch_size', 10000)
         candidates = self.get_cleanup_candidates(dry_run=dry_run)
 
         if not candidates:
@@ -60,10 +59,17 @@ class SnapshotRetention:
             cutoff = (datetime.now(tz=UTC) - timedelta(days=tier_keep)).isoformat()
 
             with self.db._conn() as conn:
-                result = conn.execute("""DELETE FROM snapshots
-                    WHERE repo_full_name = ? AND timestamp < ?
-                    LIMIT ?""", (candidate['repo'], cutoff, batch_size))
-                deleted = result.rowcount
+                if dry_run:
+                    # Count what WOULD be deleted; standard SQLite builds do
+                    # not support DELETE ... LIMIT, so execute-time cleanup
+                    # removes everything past the cutoff in one statement.
+                    deleted = conn.execute("""SELECT COUNT(*) FROM snapshots
+                        WHERE repo_full_name = ? AND timestamp < ?""",
+                        (candidate['repo'], cutoff)).fetchone()[0]
+                else:
+                    deleted = conn.execute("""DELETE FROM snapshots
+                        WHERE repo_full_name = ? AND timestamp < ?""",
+                        (candidate['repo'], cutoff)).rowcount
                 if deleted > 0:
                     total_deleted += deleted
                     repos_affected += 1
@@ -81,6 +87,8 @@ class SnapshotRetention:
                 'SELECT COUNT(DISTINCT repo_full_name) FROM snapshots').fetchone()[0]
             oldest = conn.execute('SELECT MIN(timestamp) FROM snapshots').fetchone()[0]
             newest = conn.execute('SELECT MAX(timestamp) FROM snapshots').fetchone()[0]
+            total_scores = conn.execute('SELECT COUNT(*) FROM scores').fetchone()[0]
+            total_growth = conn.execute('SELECT COUNT(*) FROM growth_metrics').fetchone()[0]
             db_size = conn.execute(
                 'SELECT page_count * page_size '
                 'FROM pragma_page_count(), pragma_page_size()').fetchone()[0]
@@ -89,6 +97,49 @@ class SnapshotRetention:
             'unique_repos': unique_repos,
             'oldest_snapshot': oldest,
             'newest_snapshot': newest,
+            'total_scores': total_scores,
+            'total_growth_metrics': total_growth,
             'db_size_bytes': db_size,
             'db_size_mb': round(db_size / 1024 / 1024, 1),
         }
+
+
+class ScoreRetention:
+    """Retention for the per-run append-only tables: scores + growth_metrics.
+
+    Unlike ai_analysis (upserted per repo), these tables gain one row per
+    repo per run and would grow without bound — millions of rows/day at
+    500K repos. A single indexed cutoff DELETE keeps them bounded.
+    """
+
+    def __init__(self, db=None, config=None, keep_days=None):
+        self.db = db or Database()
+        self.config = config or load_scale_config()
+        self.keep_days = keep_days or self.config.get('retention', {}).get(
+            'score_keep_days', 120)
+
+    def _cutoff(self) -> str:
+        return (datetime.now(tz=UTC) - timedelta(days=self.keep_days)).isoformat()
+
+    def cleanup(self, dry_run=True) -> dict[str, int]:
+        cutoff = self._cutoff()
+        result: dict[str, int] = {'scores': 0, 'growth_metrics': 0, 'dry_run': dry_run}
+        with self.db._conn() as conn:
+            for table in ('scores', 'growth_metrics'):
+                if dry_run:
+                    deleted = conn.execute(
+                        f"SELECT COUNT(*) FROM {table} WHERE timestamp < ?", (cutoff,)
+                    ).fetchone()[0]
+                else:
+                    deleted = conn.execute(
+                        f"DELETE FROM {table} WHERE timestamp < ?", (cutoff,)
+                    ).rowcount
+                    if deleted > 0:
+                        logger.info(f'Cleaned {deleted} rows from {table} (older than {cutoff})')
+                result[table] = max(deleted, 0)
+        action = 'Would delete' if dry_run else 'Deleted'
+        logger.info(
+            f'{action} {result["scores"]} scores + '
+            f'{result["growth_metrics"]} growth_metrics rows'
+        )
+        return result

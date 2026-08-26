@@ -34,7 +34,7 @@ rate_limit:
   cooldown_on_limit: true     # stop batch when rate limited
   persist_on_cooldown: true   # save progress before stopping
 
-# ── Snapshot retention ──
+# ── Snapshot + score retention ──
 retention:
   default_keep_days: 365      # 1 year for unclassified
   tier_keep_days:
@@ -42,6 +42,7 @@ retention:
     2: 365                    # 1 year
     3: 180                    # 6 months
     4: 90                     # 3 months
+  score_keep_days: 120        # scores/growth_metrics window (charts show 90d)
   dry_run: true               # always dry-run first (safety)
   cleanup_batch_size: 10000   # delete in batches
 

@@ -73,6 +73,10 @@ jobs:
       - name: Export JSON
         run: uv run python scripts/export.py
 
+      - name: Retention cleanup (snapshots + scores)
+        # Cheap indexed deletes; no-ops until rows age past their keep window.
+        run: uv run radar retention-cleanup --execute
+
       - name: Refresh README live stats
         run: uv run python scripts/update_readme_stats.py
 

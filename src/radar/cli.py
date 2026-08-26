@@ -1050,43 +1050,56 @@ def scheduler_stats():
 
 @main.command()
 def retention_stats():
-    """Show snapshot retention and storage statistics."""
+    """Show snapshot/score retention and storage statistics."""
     from radar.scale.retention import SnapshotRetention
     retention = SnapshotRetention()
     storage = retention.get_storage_stats()
 
     click.echo()
-    click.echo('  Snapshot Storage')
+    click.echo('  Storage & Retention')
     click.echo(f'  {chr(9472) * 40}')
     click.echo(f'  Total snapshots:   {storage["total_snapshots"]:,}')
     click.echo(f'  Unique repos:      {storage["unique_repos"]:,}')
-    click.echo(f'  Oldest:            {storage["oldest_snapshot"]}')
-    click.echo(f'  Newest:            {storage["newest_snapshot"]}')
+    click.echo(f'  Oldest snapshot:   {storage["oldest_snapshot"]}')
+    click.echo(f'  Newest snapshot:   {storage["newest_snapshot"]}')
+    click.echo(f'  Score rows:        {storage["total_scores"]:,}')
+    click.echo(f'  Growth rows:       {storage["total_growth_metrics"]:,}')
     click.echo(f'  DB size:           {storage["db_size_mb"]} MB')
     click.echo()
 
 @main.command()
-@click.option('--execute', is_flag=True, help='Actually delete old snapshots (default is dry-run)')
-def retention_cleanup(execute: bool):
-    """Clean up old snapshots based on retention policy (dry-run by default)."""
-    from radar.scale.retention import SnapshotRetention
+@click.option('--execute', is_flag=True,
+              help='Actually delete old data (default is dry-run)')
+@click.option('--score-keep-days', type=int, default=None,
+              help='Override score/growth retention window (default from config)')
+def retention_cleanup(execute: bool, score_keep_days: int | None):
+    """Clean up old snapshots, scores, and growth metrics (dry-run by default)."""
+    from radar.scale.retention import ScoreRetention, SnapshotRetention
     retention = SnapshotRetention()
+    scores = ScoreRetention(keep_days=score_keep_days)
 
     candidates = retention.get_cleanup_candidates(dry_run=True)
     if not candidates:
         click.echo('  No old snapshots to clean up')
-        return
+    else:
+        total = sum(c['count'] for c in candidates)
+        click.echo(f'  Found {total:,} old snapshots across {len(candidates)} repos')
 
-    total = sum(c['count'] for c in candidates)
-    click.echo(f'  Found {total:,} old snapshots across {len(candidates)} repos')
+    preview = scores.cleanup(dry_run=True)
+    click.echo(f'  Scores older than {scores.keep_days}d to delete: '
+               f'{preview["scores"]:,} (+{preview["growth_metrics"]:,} growth rows)')
+
     if not execute:
         click.echo('  (Dry run — use --execute to actually delete)')
-        result = retention.cleanup(dry_run=True)
-        click.echo(f'  Would delete: {result["deleted"]:,} snapshots')
+        snap_result = retention.cleanup(dry_run=True)
+        click.echo(f'  Would delete: {snap_result["deleted"]:,} snapshots')
     else:
-        result = retention.cleanup(dry_run=False)
-        click.echo(f'  Deleted: {result["deleted"]:,} snapshots from '
-                   f'{result["repos_affected"]} repos')
+        snap_result = retention.cleanup(dry_run=False)
+        score_result = scores.cleanup(dry_run=False)
+        click.echo(f'  Deleted: {snap_result["deleted"]:,} snapshots from '
+                   f'{snap_result["repos_affected"]} repos')
+        click.echo(f'  Deleted: {score_result["scores"]:,} score rows, '
+                   f'{score_result["growth_metrics"]:,} growth rows')
 
 if __name__ == "__main__":
     main()

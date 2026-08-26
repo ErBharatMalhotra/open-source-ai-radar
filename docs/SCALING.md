@@ -6,12 +6,12 @@ This document outlines the plan to scale Open Source AI Radar from 5,000 to 500,
 
 | Metric | Value |
 |--------|-------|
-| Repositories | 5,271 |
+| Repositories | 7,000+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
 | API rate limit | 1,000 points/hour (single GITHUB_TOKEN) |
 | Processing | 4 runs/day x 700 repos = 2,800/day |
-| Full rotation | ~2 days (5,271 / 2,800) |
-| DB size | 11 MB |
-| Website pages | 5,280 |
+| Full rotation | ~2.5 days at current size |
+| DB size | ~11 MB |
+| Website pages | 9,000+ |
 
 ## Scaling Phases
 
@@ -155,25 +155,55 @@ WHERE timestamp >= '2026-08-01'
 
 ### Current Capacity
 
-- 5,280 static pages
+- 9,000+ static pages
 - 100 GB bandwidth/month (GitHub Pages free tier)
 - ~33 MB average page size
 
 ### Growth Projections
 
-| Repos | Pages | Bandwidth/Month | Hosting |
-|-------|-------|-----------------|---------|
-| 5,000 | 5,280 | 50 GB | GitHub Pages |
-| 10,000 | 10,280 | 100 GB | GitHub Pages |
-| 50,000 | 50,280 | 500 GB | Cloudflare Pages |
-| 100,000 | 100,280 | 1 TB | Cloudflare Pages |
-| 500,000 | 500,280 | 5 TB | Vercel/Netlify |
+| Repos | Pages | Bandwidth/Month | Deploy Artifact Size | Hosting |
+|-------|-------|-----------------|----------------------|---------|
+| 7,000 | 9,000+ | 50 GB | <100 MB | GitHub Pages |
+| 10,000 | 10,000+ | 100 GB | ~150 MB | GitHub Pages |
+| 25,000 | 25,000+ | 250 GB | **~800 MB (trigger!)** | GitHub Pages + page cap |
+| 50,000 | 10,000 capped | 500 GB | ~200 MB | Cloudflare Pages |
+| 100,000 | 10,000 capped | 1 TB | ~200 MB | Cloudflare Pages |
+| 500,000 | 10,000 capped | 5 TB | ~200 MB | Vercel/Netlify |
 
 ### Migration Triggers
 
-- **50K repos:** Migrate to Cloudflare Pages (free tier: unlimited bandwidth)
+- **Deploy artifact >800 MB or pages >20K:** Enable top-N page rendering — pre-render detail pages only for the top ~10K repos by score; all other repos stay queryable through `/api/repos.json` and `/api/compare-index.json` (client-side rendering, same pattern as the /compare tool). This caps artifact size permanently.
+- **Git history bloat:** Every run commits hundreds of changed export files. If the repo approaches GitHub's 5 GB soft limit, squash `data/` history periodically or move exports to an orphan branch.
+- **50K repos:** Migrate hosting to Cloudflare Pages (free tier: unlimited bandwidth)
 - **100K repos:** Consider Vercel Pro ($20/month, 1TB bandwidth)
 - **500K repos:** Enterprise hosting or self-hosted solution
+
+## Known Ceilings & Mitigations
+
+Two structural ceilings appear well before the 500K target:
+
+### 1. GitHub Pages deploy artifact (hard ~1 GB cap)
+
+Every repo produces a JSON export plus a pre-rendered HTML page, committed
+to git and shipped in the pages artifact. Bandwidth migration alone does
+NOT fix this — artifact size grows with repo count regardless of host.
+
+**Mitigation ladder:**
+1. Top-N page cap (see trigger above) — bounds HTML output at ~10K pages
+2. Slim per-repo JSON exports (drop verbose fields) if JSON side balloons
+3. Last resort: serve data from object storage (Cloudflare R2/S3) with the
+   site as a thin shell
+
+### 2. Unbounded `scores` table growth
+
+Snapshots are pruned by retention (`src/radar/scale/retention.py`, wired
+into the weekly workflow), but scores accumulate on every run for every
+scored repo. At scale that is millions of rows/day.
+
+**Mitigation (implemented):** score retention mirrors snapshot retention —
+rows older than the configured window are purged by
+`cleanup_scores()` in the weekly cleanup pass. Verify with
+`uv run radar retention-stats`.
 
 ## Performance Optimization
 

@@ -16,8 +16,9 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 
 ## Features
 
-- **Automated Discovery** — Finds AI repos via topics, keywords, and activity signals across 11 categories
+- **Automated Discovery** — Four-layer discovery: topics, keywords, trending activity, plus free-text name/description search (most popular AI repos ship without topics) across 11 categories
 - **Three-Axis Scoring** — Impact (40%) + Velocity (35%) + Health (25%) with historical tracking
+- **Health Intelligence** — Freshness, release cadence, issue load, community shape, bus factor (maintainer count), license safety
 - **Tier-Based Processing** — Smart scheduling: high-value repos processed more frequently
 - **Rate-Limit-Aware** — Adaptive API client that stays within GitHub limits
 - **Crash-Safe Scheduler** — Queue-based processing with persistent cursor; no work lost on failure
@@ -25,7 +26,7 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 - **Breakout Detection** — Identifies projects entering breakout territory
 - **Why Trending** — Explains why a project is trending with specific metrics
 - **Weekly Reports** — Auto-generated intelligence summaries with social media drafts
-- **Static Website** — 5,000+ project pages, search, filter, and explore rankings
+- **Static Website** — 9,000+ project pages, search, filter, explore rankings, side-by-side comparison, and weekly digest archive
 - **SEO Optimized** — OpenGraph, Twitter Cards, JSON-LD structured data, sitemap
 - **RSS Feed** — Subscribe to trending discoveries
 - **API Endpoints** — JSON API for programmatic access
@@ -88,7 +89,7 @@ GitHub API  ->  Discovery  ->  SQLite DB  ->  Scoring  ->  Exports  ->  Website
 
 ### Pipeline Stages
 
-1. **Discovery** — Searches GitHub for repos matching 11 AI categories (topics, keywords)
+1. **Discovery** — Searches GitHub for repos matching 11 AI categories (topics, keywords, trending, free-text name/description)
 2. **Import** — Stores repo metadata in SQLite with deduplication
 3. **Classification** — Assigns repos to categories using topic matching
 4. **Snapshot** — Fetches current metrics (stars, forks, contributors, releases)
@@ -101,14 +102,14 @@ GitHub API  ->  Discovery  ->  SQLite DB  ->  Scoring  ->  Exports  ->  Website
 
 The scheduler automatically distributes workload based on project importance:
 
-| Tier | Stars | Process Every | Repos (current) | API Calls |
-|------|-------|---------------|-----------------|-----------|
-| **T1** | >=1,000 | Daily | 2,069 | ~350/run |
-| **T2** | 100-999 | Every 3 days | 1,856 | ~350/run |
-| **T3** | 10-99 | Weekly | 1,325 | ~350/run |
-| **T4** | <10 | Monthly | 21 | ~350/run |
+| Tier | Stars | Process Every |
+|------|-------|---------------|
+| **T1** | >=1,000 | Daily |
+| **T2** | 100-999 | Every 3 days |
+| **T3** | 10-99 | Weekly |
+| **T4** | <10 | Monthly |
 
-Each workflow run stays within GitHub's 1,000 GraphQL points/hour budget.
+Live per-tier counts: `uv run radar scheduler-stats` or the [status page](https://erbharatmalhotra.github.io/open-source-ai-radar/status/). Each workflow run stays within GitHub's 1,000 GraphQL points/hour budget.
 
 ---
 
@@ -120,7 +121,7 @@ Every repository receives three independent scores (0-100):
 |------|--------|-----------------|
 | **Impact** | 40% | Stars, forks, watchers (log-scaled percentile rank) |
 | **Velocity** | 35% | Growth rate, acceleration, commit frequency |
-| **Health** | 25% | Freshness, releases, issue health, community |
+| **Health** | 25% | Freshness, releases, issue load, community shape, bus factor (maintainer count), license safety |
 
 The **Radar Score** is: `Impact x 0.40 + Velocity x 0.35 + Health x 0.25`
 
@@ -285,15 +286,17 @@ Built with [Astro](https://astro.build/), deployed to GitHub Pages:
 | Route | Description |
 |-------|-------------|
 | `/` | Homepage with leaderboard and highlights |
-| `/top` | Full rankings with three-axis scores |
+| `/top` | Full rankings with three-axis scores and sparklines |
 | `/trending` | Top projects by velocity |
 | `/trends` | Rising stars, hidden gems, category trends |
-| `/categories` | Browse by AI category |
-| `/languages` | Programming language distribution |
 | `/breakouts` | Breakout detection results |
+| `/categories` | Browse by AI category with momentum intelligence |
+| `/compare` | Side-by-side project comparison (pick 2-3 repos) |
+| `/digests` | Browsable archive of weekly intelligence digests |
+| `/languages` | Programming language distribution |
 | `/status` | Pipeline status and stats |
 | `/api-docs` | API documentation |
-| `/project/{owner}/{name}/` | Individual project pages (5,000+) |
+| `/project/{owner}/{name}/` | Individual project pages (9,000+) with 90-day history charts |
 
 SEO: OpenGraph tags, Twitter Cards, JSON-LD structured data, auto-generated sitemap.
 
@@ -304,19 +307,26 @@ SEO: OpenGraph tags, Twitter Cards, JSON-LD structured data, auto-generated site
 | Endpoint | Description |
 |----------|-------------|
 | `GET /api/repos.json` | All tracked repositories |
+| `GET /api/repos.csv` | All repositories as CSV |
 | `GET /api/top.json` | Top-ranked repositories |
 | `GET /api/trending.json` | Trending repositories |
 | `GET /api/gems.json` | Hidden gems |
+| `GET /api/breakouts.json` | Breakout candidates |
+| `GET /api/anomalies.json` | Detected anomalies |
 | `GET /api/categories.json` | Category data |
+| `GET /api/compare-index.json` | Slim dataset powering the [compare tool](https://erbharatmalhotra.github.io/open-source-ai-radar/compare/) |
+| `GET /api/llms.txt` | Machine-readable guide for AI agents (llms.txt convention) |
 | `GET /api/stats.json` | Database statistics |
 | `GET /api/feed.xml` | RSS feed |
+
+Full reference: [API docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
 
 ---
 
 ## Project Structure
 
 ```
-open-source-radar/
+open-source-ai-radar/
 +-- src/radar/               # Core Python package
 |   +-- github/              # GraphQL + REST API client
 |   +-- discovery/           # Layered discovery engine + telemetry
@@ -334,7 +344,7 @@ open-source-radar/
 +-- scripts/                 # export.py
 +-- docs/                    # Architecture and scaling docs
 +-- .github/workflows/       # 4 automation workflows
-+-- tests/                   # Unit tests (39 tests)
++-- tests/                   # Unit tests (50+)
 ```
 
 ---

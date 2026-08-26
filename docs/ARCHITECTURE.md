@@ -66,7 +66,8 @@ This document describes the system design, data flow, and rate limit strategy fo
 4. Scoring (scoring/engine.py)
    - Impact: log-scaled percentile rank of stars/forks/watchers
    - Velocity: growth rate, acceleration, commit frequency
-   - Health: freshness, releases, issues, contributors
+   - Health: freshness, releases, issue load, community shape,
+     bus factor (maintainer count), license safety
    - Radar Score = Impact * 0.40 + Velocity * 0.35 + Health * 0.25
    |
    v
@@ -88,8 +89,8 @@ This document describes the system design, data flow, and rate limit strategy fo
 
 ```
 1. Astro builds static HTML from data
-   - 5,000+ project pages
-   - 9 main route pages
+   - 9,000+ project pages
+   - 13 main route pages (incl. /compare, /digests)
    - SEO metadata (OpenGraph, JSON-LD, sitemap)
    |
    v
@@ -115,9 +116,9 @@ GITHUB_TOKEN in Actions:
 
 | Operation | API Calls | Points | Time |
 |-----------|-----------|--------|------|
-| Discovery (6 categories) | ~120 GraphQL | ~120 | ~2 min |
+| Discovery (11 categories, 4 layers, ~324 queries) | ~120 GraphQL | ~120 | ~11 min |
 | Process (700 repos) | ~700 GraphQL | ~700 | ~10 min |
-| **Total per run** | **~820** | **~820** | **~12 min** |
+| **Total per run** | **~820** | **~820** | **~21 min** |
 
 ### Budget Allocation
 
@@ -145,76 +146,132 @@ delay = 0.1 + (ratio * 2.0)  # 0.1s at start, 2s near limit
 
 ## Database Schema
 
+Source of truth: `SCHEMA` in `src/radar/storage/database.py` (plus
+`processing_cursor` created by `src/radar/scale/scheduler.py`).
+
 ### Core Tables
 
 ```sql
--- Repository metadata
+-- Repository metadata + denormalized latest values
 CREATE TABLE repositories (
     full_name TEXT PRIMARY KEY,
-    description TEXT,
+    url TEXT NOT NULL,
+    description TEXT DEFAULT '',
+    homepage TEXT DEFAULT '',
     language TEXT,
     license TEXT,
-    topics TEXT,  -- JSON array
-    stars INTEGER,
-    forks INTEGER,
-    open_issues INTEGER,
+    topics TEXT DEFAULT '[]',          -- JSON array
+    owner_login TEXT DEFAULT '',
+    owner_avatar TEXT DEFAULT '',
+    status TEXT DEFAULT 'active',
     created_at TEXT,
     pushed_at TEXT,
-    is_archived BOOLEAN,
-    is_fork BOOLEAN,
-    owner_login TEXT,
-    owner_avatar TEXT,
-    homepage TEXT,
-    default_branch TEXT,
-    mentionable_users INTEGER,
-    latest_release_tag TEXT,
-    latest_release_date TEXT,
-    total_commits INTEGER,
-    discovery_sources TEXT  -- JSON array
+    discovered_at TEXT,
+    last_analyzed_at TEXT,
+    discovery_sources TEXT DEFAULT '[]',  -- JSON array
+    stars INTEGER DEFAULT 0,
+    forks INTEGER DEFAULT 0,
+    open_issues INTEGER DEFAULT 0,
+    watchers INTEGER DEFAULT 0,
+    default_branch TEXT DEFAULT 'main',
+    processing_signature TEXT DEFAULT '', -- incremental processing
+    last_processed_at TEXT
 );
 
--- Point-in-time snapshots
+-- Point-in-time snapshots (one per processed repo per run)
 CREATE TABLE snapshots (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    repo_full_name TEXT,
-    timestamp TEXT,
-    stars INTEGER,
-    forks INTEGER,
-    open_issues INTEGER,
-    open_prs INTEGER,
-    watchers INTEGER,
-    contributors INTEGER,
-    days_since_last_push INTEGER,
-    freshness_score REAL,
-    star_growth_rate_7d REAL,
-    star_growth_rate_30d REAL,
-    star_growth_acceleration REAL,
-    forks_7d INTEGER,
-    forks_30d INTEGER,
-    contributors_7d INTEGER
+    repo_full_name TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    stars INTEGER DEFAULT 0,
+    forks INTEGER DEFAULT 0,
+    open_issues INTEGER DEFAULT 0,
+    closed_issues INTEGER DEFAULT 0,
+    pull_requests INTEGER DEFAULT 0,
+    contributors INTEGER DEFAULT 0,
+    commits_7d INTEGER DEFAULT 0,
+    commits_30d INTEGER DEFAULT 0,
+    releases INTEGER DEFAULT 0,
+    latest_release TEXT,
+    latest_release_date TEXT,
+    FOREIGN KEY (repo_full_name) REFERENCES repositories(full_name),
+    UNIQUE(repo_full_name, timestamp)
 );
 
--- Three-axis scores
+-- Three-axis scores (every run, every scored repo)
 CREATE TABLE scores (
-    repo_full_name TEXT,
-    timestamp TEXT,
-    impact REAL,
-    velocity REAL,
-    health REAL,
-    radar_score REAL
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    repo_full_name TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    impact REAL DEFAULT 0.0,
+    velocity REAL DEFAULT 0.0,
+    health REAL DEFAULT 0.0,
+    radar_score REAL DEFAULT 0.0,
+    global_percentile REAL DEFAULT 0.0,
+    category_percentile REAL DEFAULT 0.0,
+    FOREIGN KEY (repo_full_name) REFERENCES repositories(full_name),
+    UNIQUE(repo_full_name, timestamp)
 );
 
--- AI analysis and classification
+-- Growth metrics derived from snapshot deltas
+CREATE TABLE growth_metrics (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    repo_full_name TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    stars_7d INTEGER DEFAULT 0,
+    stars_30d INTEGER DEFAULT 0,
+    stars_90d INTEGER DEFAULT 0,
+    star_growth_rate_7d REAL DEFAULT 0.0,
+    star_growth_rate_30d REAL DEFAULT 0.0,
+    star_growth_acceleration REAL DEFAULT 0.0,
+    forks_7d INTEGER DEFAULT 0,
+    forks_30d INTEGER DEFAULT 0,
+    contributors_7d INTEGER DEFAULT 0,
+    days_since_last_push INTEGER DEFAULT 0,
+    freshness_score REAL DEFAULT 0.0,
+    FOREIGN KEY (repo_full_name) REFERENCES repositories(full_name),
+    UNIQUE(repo_full_name, timestamp)
+);
+
+-- AI analysis and classification (upserted per repo)
 CREATE TABLE ai_analysis (
-    repo_full_name TEXT PRIMARY KEY,
-    category TEXT,
-    sub_category TEXT,
-    why_trending TEXT,
-    anomaly_score REAL,
-    is_breakout BOOLEAN
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    repo_full_name TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    category TEXT DEFAULT '',
+    sub_category TEXT DEFAULT '',
+    summary TEXT DEFAULT '',
+    why_trending TEXT DEFAULT '',
+    tech_stack TEXT DEFAULT '[]',      -- JSON array
+    use_cases TEXT DEFAULT '[]',       -- JSON array
+    maturity TEXT DEFAULT 'Unknown',
+    quality REAL DEFAULT 0.0,
+    potential REAL DEFAULT 0.0,
+    confidence REAL DEFAULT 0.0,
+    matched_by TEXT DEFAULT 'none',    -- topic | keyword | none
+    FOREIGN KEY (repo_full_name) REFERENCES repositories(full_name)
+);
+-- Enforced unique so upserts behave: idx_analysis_repo_unique
+
+-- Category momentum history (per category per period)
+CREATE TABLE category_momentum (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    total_tracked INTEGER DEFAULT 0,
+    new_this_period INTEGER DEFAULT 0,
+    avg_stars REAL DEFAULT 0.0,
+    avg_growth_rate REAL DEFAULT 0.0,
+    avg_velocity REAL DEFAULT 0.0,
+    avg_health REAL DEFAULT 0.0,
+    total_stars INTEGER DEFAULT 0,
+    top_project TEXT DEFAULT '',
+    trend TEXT DEFAULT 'stable',
+    momentum_score REAL DEFAULT 0.0,
+    UNIQUE(category, timestamp)
 );
 
--- Processing scheduler (tier-based)
+-- Processing scheduler (tier-based queue)
 CREATE TABLE processing_cursor (
     repo_full_name TEXT PRIMARY KEY,
     tier INTEGER NOT NULL DEFAULT 4,
@@ -312,12 +369,14 @@ See [SCALING.md](SCALING.md) for the roadmap from 5K to 500K repositories.
 
 | Metric | Value |
 |--------|-------|
-| Tracked repositories | 5,271 |
-| Website pages | 5,280 |
-| API endpoints | 7 |
+| Tracked repositories | 7,000+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
+| Website pages | 9,000+ |
+| API endpoints | 12 + badges + per-repo history |
 | Snapshots per day | ~2,800 (4 runs x 700 repos) |
 | DB size | ~11 MB |
 | Git repo size | ~6 MB |
+
+Note: counts above are refreshed periodically; the stats.json link is always live.
 
 ### Growth Projections
 

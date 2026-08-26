@@ -100,7 +100,7 @@ uv run radar report
 ## Project Structure
 
 ```
-open-source-radar/
+open-source-ai-radar/
 +-- src/radar/               # Core Python package
 |   +-- github/              # GitHub API client
 |   +-- discovery/           # Repository discovery

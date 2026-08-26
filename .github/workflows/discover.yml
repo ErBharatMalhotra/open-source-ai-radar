@@ -105,7 +105,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/exports/ -f
-          git add README.md
+          git add README.md web/src/layouts/Layout.astro web/src/pages/index.astro
           if git diff --staged --quiet; then
             echo "::notice::No data changes to commit — skipping push"
           else

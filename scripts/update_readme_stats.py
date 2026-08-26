@@ -1,9 +1,8 @@
-"""Refresh the live-stats line in README.md from current DB state.
+"""Refresh live counts in README.md and web meta descriptions from DB state.
 
-Replaces the content between the LIVE-STATS markers with real numbers
-(repo count, classification rate, tracked stars, last update time).
-Called by CI workflows before committing so the README never shows a
-stale headline. No-op locally if markers are missing.
+Replaces content between the LIVE-STATS markers in README.md and patches
+the rounded repo-count claims in web page descriptions so marketing copy
+never goes stale. Called by CI workflows before committing.
 """
 
 from __future__ import annotations
@@ -16,6 +15,38 @@ from pathlib import Path
 README = Path("README.md")
 START = "<!-- LIVE-STATS:START -->"
 END = "<!-- LIVE-STATS:END -->"
+
+WEB_FILES = [
+    Path("web/src/layouts/Layout.astro"),
+    Path("web/src/pages/index.astro"),
+]
+
+# Rounded down to the nearest thousand so copy never overclaims
+def _rounded_thousands(n: int) -> str:
+    return f"{(n // 1000) * 1000:,}+"
+
+
+def _patch_web_counts(total_repos: int) -> int:
+    """Update 'X,000+' repo mentions in web meta descriptions."""
+    rounded = _rounded_thousands(total_repos)
+    patterns = [
+        re.compile(r"(Track )[\d,]+\+( AI open-source projects)"),
+        re.compile(r"(detection for )[\d,]+\+( projects)"),
+        re.compile(r"(Track )[\d,]+\+( projects scored)"),
+    ]
+    changed = 0
+    for path in WEB_FILES:
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        new_text = text
+        for pat in patterns:
+            new_text = pat.sub(lambda m: f"{m.group(1)}{rounded}{m.group(2)}", new_text)
+        if new_text != text:
+            path.write_text(new_text, encoding="utf-8")
+            print(f"Web counts updated in {path}")
+            changed += 1
+    return changed
 
 
 def main() -> int:
@@ -63,6 +94,8 @@ def main() -> int:
         print(f"README stats updated: {line}")
     else:
         print("README stats already up to date")
+
+    _patch_web_counts(total_repos)
     return 0
 
 

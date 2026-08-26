@@ -4,17 +4,21 @@ import Layout from '../layouts/Layout.astro';
 const siteUrl = "https://erbharatmalhotra.github.io/open-source-ai-radar";
 
 const endpoints = [
+  { method: "GET", path: "/api/repos.json", desc: "All tracked repositories" },
+  { method: "GET", path: "/api/repos.csv", desc: "All repositories as CSV" },
   { method: "GET", path: "/api/stats.json", desc: "Aggregate statistics" },
   { method: "GET", path: "/api/top.json", desc: "Top-ranked projects" },
   { method: "GET", path: "/api/trending.json", desc: "Trending projects" },
+  { method: "GET", path: "/api/gems.json", desc: "Hidden gems — low stars, high velocity + health" },
   { method: "GET", path: "/api/trends.json", desc: "Trends, anomalies, rising stars" },
   { method: "GET", path: "/api/breakouts.json", desc: "Breakout candidates" },
+  { method: "GET", path: "/api/anomalies.json", desc: "Detected anomalies" },
   { method: "GET", path: "/api/categories.json", desc: "Category listings" },
   { method: "GET", path: "/api/category-intelligence.json", desc: "Category momentum data" },
-  { method: "GET", path: "/api/projects-index.json", desc: "Full project search index" },
-  { method: "GET", path: "/api/projects/{owner}__{repo}.json", desc: "Individual project detail" },
-  { method: "GET", path: "/api/history/{owner}__{repo}.json", desc: "Project snapshot history" },
-  { method: "GET", path: "/api/feed.xml", desc: "RSS feed" },
+  { method: "GET", path: "/api/compare-index.json", desc: "Slim dataset powering the /compare tool" },
+  { method: "GET", path: "/api/history/{owner}__{repo}.json", desc: "Project snapshot history (top repos)" },
+  { method: "GET", path: "/api/llms.txt", desc: "Machine-readable guide for AI agents (llms.txt convention)" },
+  { method: "GET", path: "/api/feed.xml", desc: "RSS feed of trending projects" },
 ];
 ---
 

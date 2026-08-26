@@ -1,46 +1,30 @@
-# Astro Starter Kit: Basics
+# Open Source AI Radar — Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+Astro static site for the [Open Source AI Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Data Source
 
-## 🚀 Project Structure
+Pages are pre-rendered at **build time** from committed exports in
+`../data/exports/` (refreshed by the CI pipelines — this repo does not
+call the GitHub API during builds):
 
-Inside of your Astro project, you'll see the following folders and files:
+- `projects/*.json` → one page per project at `/project/{owner}/{repo}/`
+- `history/*.json` → 90-day star/score charts on project pages
+- `category-intelligence.json` → `/categories` and category pages
+- `trends.json` → `/trends` (rising stars, hidden gems, anomalies)
+- The `/compare` tool fetches `/api/compare-index.json` client-side
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Commands
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+| Command | Action |
+| :------ | :----- |
+| `npm install` | Install dependencies |
+| `npm run dev` | Local dev server at `localhost:4321` |
+| `npm run build` | Production build to `./dist/` |
+| `npm run preview` | Preview the production build |
 
-## 🧞 Commands
+## Notes
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `BASE_URL` is repo-relative (`/open-source-ai-radar/`) for GitHub Pages.
+- OG images per project are generated with satori + resvg (`src/pages/project/[owner]/[repo]/og.png.ts`).
+- Deploy happens via `.github/workflows/deploy.yml` on every push that touches site or data.

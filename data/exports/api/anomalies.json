@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-08-27T23:47:33.353747+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-08-28T01:00:43.349993+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "sweepai/sweep",
-      "stars": 7706,
-      "forks": 467,
-      "language": "Jupyter Notebook",
-      "url": "https://github.com/sweepai/sweep",
-      "radar_score": 57.81,
-      "metric": "forks",
-      "current_rate": 0.1,
-      "normal_rate": 0.0,
-      "deviation": 4.3,
-      "forks_7d": 1,
-      "forks_30d": 1,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

@@ -4,7 +4,13 @@
   "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "blackwell",
+    "cuda",
+    "moe",
+    "pytorch",
+    "llm-serving"
+  ],
   "stars": 14494,
   "forks": 2700,
   "open_issues": 564,
@@ -13,11 +19,11 @@
   "pushed_at": "2026-08-28T22:57:14Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
-  "radar_score": 75.01,
-  "impact": 93.6,
+  "radar_score": 75.02,
+  "impact": 93.62,
   "velocity": 63.95,
   "health": 60.75,
-  "global_percentile": 55.0,
+  "global_percentile": 54.14,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execut",
@@ -32,5 +38,5 @@
   "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 16
+  "snapshot_count": 17
 }

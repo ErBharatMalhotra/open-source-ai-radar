@@ -70,15 +70,13 @@ jobs:
       - name: Classify repos
         # --force re-classifies every repo: heals drift when categorization
         # rules change. Runs automatically every Sunday; on-demand via the
-        # force_classify dispatch input. Uses Groq LLM for low-confidence repos.
-        env:
-          GROQ_API_KEYS: ${{ secrets.GROQ_API_KEYS }}
+        # force_classify dispatch input. Rule-based only (fast, <1 second).
         run: |
           FORCE=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_classify }}" = "true" ]; then
-            FORCE="--force --provider groq"
+            FORCE="--force"
           elif [ "$(date -u +%u)" = "7" ]; then
-            FORCE="--force --provider groq"
+            FORCE="--force"
           fi
           uv run radar classify $FORCE
 

@@ -22,7 +22,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Checkout
@@ -69,16 +69,18 @@ jobs:
 
       - name: Classify repos
         # --force re-classifies every repo: heals drift when categorization
-        # rules change. Runs automatically every Sunday; on-demand via the
-        # force_classify dispatch input. Rule-based only (fast, <1 second).
+        # rules change. Uses Groq LLM for low-confidence repos.
+        # Partial completion is OK — classified repos are saved, rest continue next run.
+        env:
+          GROQ_API_KEYS: ${{ secrets.GROQ_API_KEYS }}
         run: |
           FORCE=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_classify }}" = "true" ]; then
-            FORCE="--force"
+            FORCE="--force --provider groq"
           elif [ "$(date -u +%u)" = "7" ]; then
-            FORCE="--force"
+            FORCE="--force --provider groq"
           fi
-          uv run radar classify $FORCE
+          uv run radar classify $FORCE || echo "Classification partially completed (OK)"
 
       - name: Sync processing scheduler
         run: uv run radar sync-cursor

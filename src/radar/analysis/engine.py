@@ -2,8 +2,9 @@
 
 Pipeline:
   1. Rule-based category classification (fast, deterministic)
-  2. Rule-based quality/potential estimation (fast, no API)
-  3. Optional: AI-powered deep analysis (for top repos only)
+  2. Optional: Groq LLM fallback for low-confidence repos
+  3. Rule-based quality/potential estimation (fast, no API)
+  4. Optional: AI-powered deep analysis (for top repos only)
 
 Results stored in the database for scoring and display.
 """
@@ -15,7 +16,7 @@ from datetime import UTC, datetime
 from typing import Any
 
 from radar.analysis.ai_provider import AIProvider, get_provider
-from radar.analysis.classifier import RuleClassifier
+from radar.analysis.classifier import HybridClassifier, RuleClassifier
 from radar.storage.database import Database
 
 logger = logging.getLogger(__name__)
@@ -27,7 +28,7 @@ class AnalysisEngine:
     def __init__(
         self,
         db: Database,
-        classifier: RuleClassifier | None = None,
+        classifier: RuleClassifier | HybridClassifier | None = None,
         ai_provider: AIProvider | None = None,
     ) -> None:
         self.db = db
@@ -38,18 +39,22 @@ class AnalysisEngine:
         self,
         max_ai_repos: int = 0,
         force: bool = False,
+        use_groq: bool = False,
+        groq_batch_size: int = 100,
     ) -> dict[str, int]:
         """Analyze all repositories.
 
         Args:
             max_ai_repos: Max repos to send to AI provider (0 = rules only).
             force: Re-analyze repos that already have analysis.
+            use_groq: Use Groq LLM for low-confidence classifications.
+            groq_batch_size: Repos per Groq API request.
 
         Returns:
-            Stats: {"classified": N, "ai_analyzed": N, "skipped": N}
+            Stats: {"classified": N, "ai_analyzed": N, "skipped": N, "groq_classified": N}
         """
         repos = self.db.get_all_repos()
-        stats = {"classified": 0, "ai_analyzed": 0, "skipped": 0}
+        stats = {"classified": 0, "ai_analyzed": 0, "skipped": 0, "groq_classified": 0}
 
         logger.info(f"Analyzing {len(repos)} repositories...")
 
@@ -58,19 +63,22 @@ class AnalysisEngine:
         if orphaned:
             logger.info(f"Removed {orphaned} orphaned ai_analysis rows")
 
-        # Step 1: Classify all repos with rules (batch DB writes)
+        # Step 1: Classify all repos (rules + optional Groq fallback)
         # Pre-fetch existing analyses if not forcing
         existing_map: dict[str, dict] = {}
         if not force:
             existing_map = self._get_all_existing_analyses()
 
-        analysis_batch: list[dict[str, Any]] = []
+        # Prepare repos for classification
+        repos_to_classify = []
+        skip_fns = set()
         for repo in repos:
             fn = repo["full_name"]
 
             # Skip if already analyzed (unless force)
             if not force and fn in existing_map:
                 stats["skipped"] += 1
+                skip_fns.add(fn)
                 continue
 
             # topics is stored as a JSON string in the DB — parse it so the
@@ -81,14 +89,33 @@ class AnalysisEngine:
             if isinstance(raw_topics, str):
                 try:
                     import json as _json
-
                     repo["topics"] = _json.loads(raw_topics or "[]")
                 except (ValueError, TypeError):
                     repo["topics"] = []
 
-            # Rule-based classification
-            classification = self.classifier.classify(repo)
+            repos_to_classify.append(repo)
 
+        # Use HybridClassifier if Groq enabled, else RuleClassifier
+        if use_groq:
+            classifier = HybridClassifier(
+                use_groq=True,
+                groq_batch_size=groq_batch_size,
+            )
+            classifications = classifier.classify_all(repos_to_classify)
+            # Count Groq-classified repos
+            for fn, cls in classifications.items():
+                if cls.get("matched_by") == "groq":
+                    stats["groq_classified"] += 1
+        else:
+            classifications = {}
+            for repo in repos_to_classify:
+                fn = repo["full_name"]
+                classifications[fn] = self.classifier.classify(repo)
+
+        # Build analysis batch
+        analysis_batch = []
+        for fn, classification in classifications.items():
+            repo = next((r for r in repos_to_classify if r["full_name"] == fn), {})
             analysis_batch.append({
                 "repo_full_name": fn,
                 "category": classification["category"],

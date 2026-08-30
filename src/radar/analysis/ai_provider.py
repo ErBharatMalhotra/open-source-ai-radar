@@ -1,6 +1,7 @@
 """AI analysis provider abstraction.
 
 Supports multiple backends:
+  - groq: Groq API (free tier, fast inference)
   - github: GitHub Models (free tier)
   - openai: OpenAI API
   - gemini: Google Gemini
@@ -8,14 +9,19 @@ Supports multiple backends:
   - none: Disabled (rule-based only)
 
 Configure via AI_PROVIDER environment variable.
+For Groq: set GROQ_API_KEYS env var (comma-separated for rotation).
 """
 
 from __future__ import annotations
 
 import logging
 import os
+import time
 from abc import ABC, abstractmethod
+from itertools import cycle
 from typing import Any, ClassVar
+
+import httpx
 
 logger = logging.getLogger(__name__)
 
@@ -244,6 +250,267 @@ class RuleBasedProvider(AIProvider):
         return use_cases[:5]
 
 
+class GroqProvider(AIProvider):
+    """Groq API provider with multiple API key support and batch classification.
+
+    Features:
+      - Multiple API keys with round-robin rotation
+      - Batch classification (100-200 repos per request)
+      - Structured JSON output
+      - Automatic retry on rate limits
+      - Free tier: 30 RPM, 6K TPM
+
+    Configure via:
+      - GROQ_API_KEYS: comma-separated API keys
+      - GROQ_MODEL: model name (default: llama-3.1-8b-instant)
+    """
+
+    BASE_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+    CATEGORIES: ClassVar[list[str]] = [
+        "AI Agents",
+        "AI Coding Tools",
+        "AI Infrastructure",
+        "AI Safety & Alignment",
+        "Evaluation & Benchmarks",
+        "Generative AI",
+        "Local AI",
+        "LLM Frameworks",
+        "MCP",
+        "Multimodal AI",
+        "RAG",
+    ]
+
+    def __init__(self) -> None:
+        keys_raw = os.environ.get("GROQ_API_KEYS", "")
+        self._api_keys = [k.strip() for k in keys_raw.split(",") if k.strip()]
+        self._key_cycle = cycle(self._api_keys) if self._api_keys else None
+        self._model = os.environ.get("GROQ_MODEL", "llama-3.1-8b-instant")
+        self._request_count = 0
+        self._last_request_time = 0.0
+
+        if not self._api_keys:
+            logger.warning("No GROQ_API_KEYS set — Groq provider will fail")
+
+    def _get_next_key(self) -> str | None:
+        if self._key_cycle is None:
+            return None
+        return next(self._key_cycle)
+
+    def _rate_limit(self) -> None:
+        """Simple rate limiter: 2 seconds between requests (30 RPM = 2s/request)."""
+        elapsed = time.time() - self._last_request_time
+        if elapsed < 2.0:
+            time.sleep(2.0 - elapsed)
+        self._last_request_time = time.time()
+        self._request_count += 1
+
+    def classify_batch(
+        self,
+        repos: list[dict[str, Any]],
+        max_repos_per_request: int = 100,
+    ) -> list[dict[str, Any]]:
+        """Classify a batch of repos using Groq API.
+
+        Args:
+            repos: List of repo dicts with full_name, description, topics, language
+            max_repos_per_request: Max repos per API call (default 100)
+
+        Returns:
+            List of classification results same order as input
+        """
+        if not self._api_keys:
+            logger.error("No Groq API keys configured")
+            return [
+                {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+                for _ in repos
+            ]
+
+        results = []
+        for i in range(0, len(repos), max_repos_per_request):
+            chunk = repos[i : i + max_repos_per_request]
+            batch_results = self._classify_chunk(chunk)
+            results.extend(batch_results)
+
+        return results
+
+    def _classify_chunk(self, repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Classify a single chunk of repos via one API call."""
+        categories_list = "\n".join(f"  - {c}" for c in self.CATEGORIES)
+
+        repos_text = ""
+        for idx, repo in enumerate(repos):
+            topics = repo.get("topics", [])
+            if isinstance(topics, str):
+                import json as _json
+                try:
+                    topics = _json.loads(topics or "[]")
+                except Exception:
+                    topics = []
+            topics_str = ", ".join(topics[:10]) if topics else "none"
+            desc = (repo.get("description") or "")[:200]
+            lang = repo.get("language") or "unknown"
+            repos_text += f"\n{idx}|{repo.get('full_name', '')}|{desc}|{topics_str}|{lang}\n"
+
+        prompt = f"""Classify each GitHub repository into exactly one category.
+
+Categories:
+{categories_list}
+
+For each repo, return category and confidence (0.0-1.0).
+Format: index|category|confidence
+One result per line, no JSON, no explanation.
+
+Repos:{repos_text}
+
+Results:"""
+
+        headers = {
+            "Authorization": f"Bearer {self._get_next_key()}",
+            "Content-Type": "application/json",
+        }
+
+        system_msg = (
+            "You are a GitHub repository classifier. "
+            "Return only index|category|confidence lines."
+        )
+        payload = {
+            "model": self._model,
+            "messages": [
+                {"role": "system", "content": system_msg},
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.1,
+            "max_tokens": 2000,
+        }
+
+        self._rate_limit()
+
+        try:
+            with httpx.Client(timeout=30.0) as client:
+                resp = client.post(self.BASE_URL, headers=headers, json=payload)
+                resp.raise_for_status()
+                data = resp.json()
+
+            content = data["choices"][0]["message"]["content"].strip()
+            return self._parse_batch_response(content, repos)
+
+        except httpx.HTTPStatusError as e:
+            if e.response.status_code == 429:
+                logger.warning("Groq rate limit hit, waiting 60s...")
+                time.sleep(60)
+                # Retry with next key
+                headers["Authorization"] = f"Bearer {self._get_next_key()}"
+                try:
+                    with httpx.Client(timeout=30.0) as client:
+                        resp = client.post(self.BASE_URL, headers=headers, json=payload)
+                        resp.raise_for_status()
+                        data = resp.json()
+                    content = data["choices"][0]["message"]["content"].strip()
+                    return self._parse_batch_response(content, repos)
+                except Exception:
+                    logger.error("Groq retry failed")
+                    return [
+                        {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+                        for _ in repos
+                    ]
+            logger.error(f"Groq API error: {e}")
+            return [
+                {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+                for _ in repos
+            ]
+        except Exception as e:
+            logger.error(f"Groq classification failed: {e}")
+            return [
+                {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+                for _ in repos
+            ]
+
+    def _parse_batch_response(
+        self, content: str, repos: list[dict[str, Any]]
+    ) -> list[dict[str, Any]]:
+        """Parse batch response lines into classification results."""
+        results = {}
+        for line in content.strip().split("\n"):
+            line = line.strip()
+            if not line or "|" not in line:
+                continue
+            parts = line.split("|")
+            if len(parts) < 3:
+                continue
+            try:
+                idx = int(parts[0].strip())
+                category = parts[1].strip()
+                confidence = float(parts[2].strip())
+                if 0 <= idx < len(repos) and category in self.CATEGORIES:
+                    results[idx] = {
+                        "category": category,
+                        "confidence": round(min(1.0, max(0.0, confidence)), 3),
+                        "matched_by": "groq",
+                    }
+            except (ValueError, IndexError):
+                continue
+
+        # Fill missing with Uncategorized
+        output = []
+        for idx in range(len(repos)):
+            if idx in results:
+                output.append(results[idx])
+            else:
+                output.append({
+                    "category": "Uncategorized",
+                    "confidence": 0.0,
+                    "matched_by": "groq_error",
+                })
+        return output
+
+    def analyze_repo(
+        self,
+        full_name: str,
+        description: str,
+        topics: list[str],
+        language: str | None,
+        readme_preview: str = "",
+    ) -> dict[str, Any]:
+        """Analyze a single repo (uses classify_batch under the hood)."""
+        repo_data = {
+            "full_name": full_name,
+            "description": description,
+            "topics": topics,
+            "language": language,
+        }
+        result = self.classify_batch([repo_data])
+        if result:
+            cat = result[0].get("category", "Uncategorized")
+            return {
+                "summary": description[:300],
+                "tech_stack": [],
+                "use_cases": [],
+                "maturity": "Unknown",
+                "quality": result[0].get("confidence", 0.0) * 100,
+                "potential": 0.0,
+                "category": cat,
+            }
+        return {
+            "summary": description[:300],
+            "tech_stack": [],
+            "use_cases": [],
+            "maturity": "Unknown",
+            "quality": 0.0,
+            "potential": 0.0,
+        }
+
+    @property
+    def stats(self) -> dict[str, Any]:
+        """Return usage stats."""
+        return {
+            "provider": "groq",
+            "model": self._model,
+            "api_keys_count": len(self._api_keys),
+            "requests_made": self._request_count,
+        }
+
+
 def get_provider(name: str | None = None) -> AIProvider:
     """Get AI provider by name.
 
@@ -259,6 +526,7 @@ def get_provider(name: str | None = None) -> AIProvider:
     providers = {
         "none": NoOpProvider,
         "rule": RuleBasedProvider,
+        "groq": GroqProvider,
         # Future providers:
         # "github": GitHubModelsProvider,
         # "openai": OpenAIProvider,

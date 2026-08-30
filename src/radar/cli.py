@@ -375,7 +375,9 @@ def import_json() -> None:
 @click.option("--ai", is_flag=True, help="Also run AI analysis on top repos")
 @click.option("--ai-limit", default=100, help="Max repos for AI analysis")
 @click.option("--force", is_flag=True, help="Re-analyze all repos")
-def classify(ai: bool, ai_limit: int, force: bool) -> None:
+@click.option("--provider", type=click.Choice(["rule", "groq"]), default="rule", help="Classification provider")
+@click.option("--groq-batch-size", default=100, help="Repos per Groq API request")
+def classify(ai: bool, ai_limit: int, force: bool, provider: str, groq_batch_size: int) -> None:
     """Classify all repos into AI categories."""
     from radar.analysis.engine import AnalysisEngine
     from radar.storage.database import Database
@@ -383,13 +385,23 @@ def classify(ai: bool, ai_limit: int, force: bool) -> None:
     db = Database()
     engine = AnalysisEngine(db)
 
+    use_groq = provider == "groq"
+    if use_groq:
+        import os
+        if not os.environ.get("GROQ_API_KEYS"):
+            click.echo("  ERROR: GROQ_API_KEYS env var not set. Use: set GROQ_API_KEYS=key1,key2")
+            return
+        click.echo(f"  Using Groq provider (batch size: {groq_batch_size})")
+
     click.echo("  Running category classification...")
     max_ai = ai_limit if ai else 0
-    stats = engine.analyze_all(max_ai_repos=max_ai, force=force)
+    stats = engine.analyze_all(max_ai_repos=max_ai, force=force, use_groq=use_groq, groq_batch_size=groq_batch_size)
 
     click.echo(f"  Classified: {stats['classified']} repos")
     click.echo(f"  AI analyzed: {stats['ai_analyzed']} repos")
     click.echo(f"  Skipped (already analyzed): {stats['skipped']} repos")
+    if use_groq:
+        click.echo(f"  Groq classified: {stats.get('groq_classified', 0)} repos")
 
     # Show category distribution
     dist = engine.get_category_distribution()

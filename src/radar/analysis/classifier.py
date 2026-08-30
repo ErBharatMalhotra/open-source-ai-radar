@@ -4,6 +4,7 @@ Uses three signal layers (in priority order):
   1. GitHub topics (high precision)
   2. Description + README keywords (broader recall)
   3. Language + metadata heuristics (fallback)
+  4. Groq LLM fallback (for low-confidence repos)
 
 Each repo gets a primary category + sub-category + confidence score.
 """
@@ -246,6 +247,120 @@ class RuleClassifier:
             fn = repo.get("full_name", "")
             if fn:
                 results[fn] = self.classify(repo)
+        return results
+
+    def get_category_stats(self, repos: list[dict[str, Any]]) -> dict[str, int]:
+        """Get distribution of repos across categories."""
+        counts: dict[str, int] = {}
+        for repo in repos:
+            result = self.classify(repo)
+            cat = result["category"]
+            counts[cat] = counts.get(cat, 0) + 1
+        return dict(sorted(counts.items(), key=lambda x: -x[1]))
+
+
+class HybridClassifier:
+    """Classifies repos using rules first, then Groq LLM for low-confidence cases.
+
+    Architecture:
+      1. RuleClassifier.classify() → confidence >= 0.5 → use rule result
+      2. RuleClassifier.classify() → confidence < 0.5 → Groq batch fallback
+      3. Groq fails → keep rule result (Uncategorized)
+
+    Usage:
+        clf = HybridClassifier(use_groq=True)
+        results = clf.classify_all(repos)
+    """
+
+    GROQ_CONFIDENCE_THRESHOLD = 0.5
+
+    def __init__(
+        self,
+        config_path: Path | None = None,
+        use_groq: bool = False,
+        groq_batch_size: int = 100,
+    ) -> None:
+        self.rule_clf = RuleClassifier(config_path)
+        self.use_groq = use_groq
+        self.groq_batch_size = groq_batch_size
+        self._groq_provider = None
+
+        if use_groq:
+            try:
+                from radar.analysis.ai_provider import GroqProvider
+                self._groq_provider = GroqProvider()
+                if not self._groq_provider._api_keys:
+                    logger.warning("Groq enabled but no API keys — falling back to rules only")
+                    self.use_groq = False
+            except Exception as e:
+                logger.warning(f"Failed to initialize Groq: {e}")
+                self.use_groq = False
+
+    def classify(self, repo: dict[str, Any]) -> dict[str, Any]:
+        """Classify a single repo with optional Groq fallback."""
+        rule_result = self.rule_clf.classify(repo)
+
+        if not self.use_groq:
+            return rule_result
+
+        if rule_result["confidence"] >= self.GROQ_CONFIDENCE_THRESHOLD:
+            return rule_result
+
+        # Low confidence — try Groq
+        try:
+            groq_results = self._groq_provider.classify_batch([repo])
+            if groq_results and groq_results[0].get("matched_by") == "groq":
+                groq_result = groq_results[0]
+                # Use Groq if it has higher confidence
+                if groq_result["confidence"] > rule_result["confidence"]:
+                    groq_result["sub_category"] = rule_result.get("sub_category", "")
+                    return groq_result
+        except Exception as e:
+            logger.debug(f"Groq fallback failed for {repo.get('full_name')}: {e}")
+
+        return rule_result
+
+    def classify_all(self, repos: list[dict[str, Any]]) -> dict[str, dict]:
+        """Classify all repos with optional Groq batch fallback.
+
+        For repos with low rule confidence, batches them for Groq classification.
+        """
+        results = {}
+        low_confidence_repos = []
+        low_confidence_indices = []
+
+        # First pass: rule-based classification
+        for idx, repo in enumerate(repos):
+            fn = repo.get("full_name", "")
+            if not fn:
+                continue
+            rule_result = self.rule_clf.classify(repo)
+            results[fn] = rule_result
+
+            if self.use_groq and rule_result["confidence"] < self.GROQ_CONFIDENCE_THRESHOLD:
+                low_confidence_repos.append(repo)
+                low_confidence_indices.append(fn)
+
+        # Second pass: Groq batch classification for low-confidence repos
+        if self.use_groq and low_confidence_repos and self._groq_provider:
+            logger.info(
+                f"Classifying {len(low_confidence_repos)} low-confidence repos via Groq..."
+            )
+            groq_results = self._groq_provider.classify_batch(
+                low_confidence_repos,
+                max_repos_per_request=self.groq_batch_size,
+            )
+
+            for fn, groq_result in zip(low_confidence_indices, groq_results):
+                if groq_result.get("matched_by") == "groq" and groq_result["confidence"] > 0:
+                    # Preserve sub_category from rule result if available
+                    rule_sub = results[fn].get("sub_category", "")
+                    groq_result["sub_category"] = rule_sub
+                    results[fn] = groq_result
+
+            groq_count = sum(1 for r in groq_results if r.get("matched_by") == "groq")
+            logger.info(f"Groq classified {groq_count} repos")
+
         return results
 
     def get_category_stats(self, repos: list[dict[str, Any]]) -> dict[str, int]:

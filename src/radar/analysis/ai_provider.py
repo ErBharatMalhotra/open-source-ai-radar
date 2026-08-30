@@ -298,17 +298,17 @@ class GroqProvider(AIProvider):
         return next(self._key_cycle)
 
     def _wait_for_rate_limit(self) -> None:
-        """Wait 5s between requests (conservative: 12 RPM vs 30 RPM limit)."""
+        """Wait 45s between requests (actual Groq free tier: ~1-2 RPM)."""
         elapsed = time.time() - self._last_request_time
-        if elapsed < 5.0:
-            wait_time = 5.0 - elapsed
-            logger.debug(f"Rate limit: waiting {wait_time:.1f}s")
+        if elapsed < 45.0:
+            wait_time = 45.0 - elapsed
+            logger.info(f"Rate limit: waiting {wait_time:.0f}s...")
             time.sleep(wait_time)
 
     def classify_batch(
         self,
         repos: list[dict[str, Any]],
-        max_repos_per_request: int = 50,
+        max_repos_per_request: int = 100,
     ) -> list[dict[str, Any]]:
         """Classify a batch of repos using Groq API."""
         if not self._api_keys:
@@ -321,19 +321,31 @@ class GroqProvider(AIProvider):
         max_repos_per_request = min(max_repos_per_request, 100)
         results = []
         total_batches = (len(repos) + max_repos_per_request - 1) // max_repos_per_request
+        classified_count = 0
 
         for i, batch_start in enumerate(range(0, len(repos), max_repos_per_request)):
             chunk = repos[batch_start : batch_start + max_repos_per_request]
-            logger.info(f"Groq batch {i+1}/{total_batches}: {len(chunk)} repos...")
+            logger.info(
+                f"Groq [{i+1}/{total_batches}] "
+                f"classifying {len(chunk)} repos "
+                f"(classified so far: {classified_count})..."
+            )
 
-            # Wait BEFORE building prompt (so delay is between HTTP requests)
+            # Wait BEFORE building prompt
             self._wait_for_rate_limit()
 
             batch_results = self._classify_chunk(chunk)
-            self._last_request_time = time.time()  # Record AFTER request
+            self._last_request_time = time.time()
             self._request_count += 1
+
+            # Count successful classifications
+            for r in batch_results:
+                if r.get("matched_by") == "groq":
+                    classified_count += 1
+
             results.extend(batch_results)
 
+        logger.info(f"Groq done: {classified_count}/{len(repos)} classified")
         return results
 
     def _classify_chunk(self, repos: list[dict[str, Any]]) -> list[dict[str, Any]]:

@@ -59,6 +59,7 @@ jobs:
       - name: Process batch (rate-limit-aware)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEYS: ${{ secrets.GROQ_API_KEYS }}
         run: uv run radar process --limit 700
 
       - name: Run anomaly detection

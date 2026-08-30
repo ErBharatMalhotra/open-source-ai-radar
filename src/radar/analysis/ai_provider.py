@@ -308,7 +308,7 @@ class GroqProvider(AIProvider):
     def classify_batch(
         self,
         repos: list[dict[str, Any]],
-        max_repos_per_request: int = 100,
+        max_repos_per_request: int = 200,
     ) -> list[dict[str, Any]]:
         """Classify a batch of repos using Groq API."""
         if not self._api_keys:
@@ -318,7 +318,7 @@ class GroqProvider(AIProvider):
                 for _ in repos
             ]
 
-        max_repos_per_request = min(max_repos_per_request, 100)
+        max_repos_per_request = min(max_repos_per_request, 50)
         results = []
         total_batches = (len(repos) + max_repos_per_request - 1) // max_repos_per_request
         classified_count = 0
@@ -327,18 +327,15 @@ class GroqProvider(AIProvider):
             chunk = repos[batch_start : batch_start + max_repos_per_request]
             logger.info(
                 f"Groq [{i+1}/{total_batches}] "
-                f"classifying {len(chunk)} repos "
-                f"(classified so far: {classified_count})..."
+                f"{len(chunk)} repos "
+                f"(classified: {classified_count}/{len(repos)})..."
             )
 
-            # Wait BEFORE building prompt
             self._wait_for_rate_limit()
-
             batch_results = self._classify_chunk(chunk)
             self._last_request_time = time.time()
             self._request_count += 1
 
-            # Count successful classifications
             for r in batch_results:
                 if r.get("matched_by") == "groq":
                     classified_count += 1
@@ -395,7 +392,7 @@ Results:"""
                 {"role": "user", "content": prompt},
             ],
             "temperature": 0.1,
-            "max_tokens": 2000,
+            "max_tokens": 4000,  # Allow ~80 repos per response
         }
 
         try:

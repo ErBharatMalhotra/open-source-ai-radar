@@ -285,7 +285,7 @@ class GroqProvider(AIProvider):
         keys_raw = os.environ.get("GROQ_API_KEYS", "")
         self._api_keys = [k.strip() for k in keys_raw.split(",") if k.strip()]
         self._key_cycle = cycle(self._api_keys) if self._api_keys else None
-        self._model = os.environ.get("GROQ_MODEL", "llama-3.1-8b-instant")
+        self._model = os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b")
         self._request_count = 0
         self._last_request_time = 0.0
 

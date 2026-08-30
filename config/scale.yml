@@ -63,7 +63,7 @@ monitoring:
 # Set GROQ_API_KEYS env var (comma-separated) to enable
 groq:
   enabled: false                # set true or GROQ_API_KEYS env var
-  model: "llama-3.1-8b-instant" # fast, free, good for classification
+  model: "qwen/qwen3.8-27b"    # fast, free, good for classification
   batch_size: 100               # repos per API request (max ~200)
-  confidence_threshold: 0.5     # rule result below this → Groq fallback
+  confidence_threshold: 0.5     # rule result below this -> Groq fallback
   rate_limit_delay: 2.0         # seconds between requests (30 RPM = 2s)

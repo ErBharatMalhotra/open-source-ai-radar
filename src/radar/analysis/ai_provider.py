@@ -288,6 +288,8 @@ class GroqProvider(AIProvider):
         self._model = os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b")
         self._request_count = 0
         self._last_request_time = 0.0
+        self._consecutive_429s = 0
+        self._base_delay = 3.0  # 3s between requests = 20 RPM (safe for 30 RPM limit)
 
         if not self._api_keys:
             logger.warning("No GROQ_API_KEYS set — Groq provider will fail")
@@ -298,23 +300,27 @@ class GroqProvider(AIProvider):
         return next(self._key_cycle)
 
     def _rate_limit(self) -> None:
-        """Simple rate limiter: 2 seconds between requests (30 RPM = 2s/request)."""
+        """Rate limiter: adaptive delay based on consecutive 429s."""
+        # Increase delay after consecutive 429s
+        delay = self._base_delay * (1 + self._consecutive_429s * 0.5)
+        delay = min(delay, 30.0)  # Cap at 30s
+
         elapsed = time.time() - self._last_request_time
-        if elapsed < 2.0:
-            time.sleep(2.0 - elapsed)
+        if elapsed < delay:
+            time.sleep(delay - elapsed)
         self._last_request_time = time.time()
         self._request_count += 1
 
     def classify_batch(
         self,
         repos: list[dict[str, Any]],
-        max_repos_per_request: int = 100,
+        max_repos_per_request: int = 50,
     ) -> list[dict[str, Any]]:
         """Classify a batch of repos using Groq API.
 
         Args:
             repos: List of repo dicts with full_name, description, topics, language
-            max_repos_per_request: Max repos per API call (default 100)
+            max_repos_per_request: Max repos per API call (default 50, max 100)
 
         Returns:
             List of classification results same order as input
@@ -326,9 +332,17 @@ class GroqProvider(AIProvider):
                 for _ in repos
             ]
 
+        # Cap at 100 repos per request
+        max_repos_per_request = min(max_repos_per_request, 100)
+
         results = []
-        for i in range(0, len(repos), max_repos_per_request):
-            chunk = repos[i : i + max_repos_per_request]
+        total_batches = (len(repos) + max_repos_per_request - 1) // max_repos_per_request
+        for i, batch_start in enumerate(range(0, len(repos), max_repos_per_request)):
+            chunk = repos[batch_start : batch_start + max_repos_per_request]
+            logger.info(
+                f"Groq batch {i+1}/{total_batches}: "
+                f"classifying {len(chunk)} repos..."
+            )
             batch_results = self._classify_chunk(chunk)
             results.extend(batch_results)
 
@@ -393,12 +407,18 @@ Results:"""
                 data = resp.json()
 
             content = data["choices"][0]["message"]["content"].strip()
+            self._consecutive_429s = 0  # Reset on success
             return self._parse_batch_response(content, repos)
 
         except httpx.HTTPStatusError as e:
             if e.response.status_code == 429:
-                logger.warning("Groq rate limit hit, waiting 60s...")
-                time.sleep(60)
+                self._consecutive_429s += 1
+                wait_time = min(60 * self._consecutive_429s, 300)  # Max 5 min
+                logger.warning(
+                    f"Groq rate limit hit (#{self._consecutive_429s}), "
+                    f"waiting {wait_time}s..."
+                )
+                time.sleep(wait_time)
                 # Retry with next key
                 headers["Authorization"] = f"Bearer {self._get_next_key()}"
                 try:
@@ -407,6 +427,7 @@ Results:"""
                         resp.raise_for_status()
                         data = resp.json()
                     content = data["choices"][0]["message"]["content"].strip()
+                    self._consecutive_429s = 0  # Reset on success
                     return self._parse_batch_response(content, repos)
                 except Exception:
                     logger.error("Groq retry failed")

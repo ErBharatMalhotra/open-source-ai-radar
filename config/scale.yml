@@ -64,6 +64,6 @@ monitoring:
 groq:
   enabled: false                # set true or GROQ_API_KEYS env var
   model: "qwen/qwen3.8-27b"    # fast, free, good for classification
-  batch_size: 100               # repos per API request (max ~200)
+  batch_size: 50                # repos per API request (max ~100, safer at 50)
   confidence_threshold: 0.5     # rule result below this -> Groq fallback
-  rate_limit_delay: 2.0         # seconds between requests (30 RPM = 2s)
+  rate_limit_delay: 3.0         # seconds between requests (20 RPM, safe for 30 RPM limit)

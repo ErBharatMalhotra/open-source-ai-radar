@@ -289,7 +289,7 @@ class GroqProvider(AIProvider):
         self._request_count = 0
         self._last_request_time = 0.0
         self._consecutive_429s = 0
-        self._base_delay = 3.0  # 3s between requests = 20 RPM (safe for 30 RPM limit)
+        self._min_delay = 3.0  # Minimum 3s between requests (20 RPM)
 
         if not self._api_keys:
             logger.warning("No GROQ_API_KEYS set — Groq provider will fail")
@@ -299,15 +299,16 @@ class GroqProvider(AIProvider):
             return None
         return next(self._key_cycle)
 
-    def _rate_limit(self) -> None:
-        """Rate limiter: adaptive delay based on consecutive 429s."""
-        # Increase delay after consecutive 429s
-        delay = self._base_delay * (1 + self._consecutive_429s * 0.5)
-        delay = min(delay, 30.0)  # Cap at 30s
-
+    def _wait_for_rate_limit(self) -> None:
+        """Wait until we can make the next request."""
         elapsed = time.time() - self._last_request_time
-        if elapsed < delay:
-            time.sleep(delay - elapsed)
+        if elapsed < self._min_delay:
+            wait_time = self._min_delay - elapsed
+            logger.debug(f"Rate limit: waiting {wait_time:.1f}s")
+            time.sleep(wait_time)
+
+    def _record_request(self) -> None:
+        """Record that we made a request."""
         self._last_request_time = time.time()
         self._request_count += 1
 
@@ -398,54 +399,55 @@ Results:"""
             "max_tokens": 2000,
         }
 
-        self._rate_limit()
+        # Wait for rate limit BEFORE making request
+        self._wait_for_rate_limit()
 
-        try:
-            with httpx.Client(timeout=30.0) as client:
-                resp = client.post(self.BASE_URL, headers=headers, json=payload)
-                resp.raise_for_status()
-                data = resp.json()
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                with httpx.Client(timeout=30.0) as client:
+                    resp = client.post(self.BASE_URL, headers=headers, json=payload)
+                    resp.raise_for_status()
+                    data = resp.json()
 
-            content = data["choices"][0]["message"]["content"].strip()
-            self._consecutive_429s = 0  # Reset on success
-            return self._parse_batch_response(content, repos)
+                # Record successful request
+                self._record_request()
+                self._consecutive_429s = 0
+                content = data["choices"][0]["message"]["content"].strip()
+                return self._parse_batch_response(content, repos)
 
-        except httpx.HTTPStatusError as e:
-            if e.response.status_code == 429:
-                self._consecutive_429s += 1
-                wait_time = min(60 * self._consecutive_429s, 300)  # Max 5 min
-                logger.warning(
-                    f"Groq rate limit hit (#{self._consecutive_429s}), "
-                    f"waiting {wait_time}s..."
-                )
-                time.sleep(wait_time)
-                # Retry with next key
-                headers["Authorization"] = f"Bearer {self._get_next_key()}"
-                try:
-                    with httpx.Client(timeout=30.0) as client:
-                        resp = client.post(self.BASE_URL, headers=headers, json=payload)
-                        resp.raise_for_status()
-                        data = resp.json()
-                    content = data["choices"][0]["message"]["content"].strip()
-                    self._consecutive_429s = 0  # Reset on success
-                    return self._parse_batch_response(content, repos)
-                except Exception:
-                    logger.error("Groq retry failed")
+            except httpx.HTTPStatusError as e:
+                if e.response.status_code == 429:
+                    self._consecutive_429s += 1
+                    # Wait longer: 10s first time, 30s second time
+                    wait_time = 10 * self._consecutive_429s
+                    wait_time = min(wait_time, 60)
+                    logger.warning(
+                        f"Groq 429 (attempt {attempt+1}/{max_retries}), "
+                        f"waiting {wait_time}s..."
+                    )
+                    time.sleep(wait_time)
+                    # Rotate to next API key
+                    headers["Authorization"] = f"Bearer {self._get_next_key()}"
+                else:
+                    logger.error(f"Groq API error: {e}")
                     return [
                         {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
                         for _ in repos
                     ]
-            logger.error(f"Groq API error: {e}")
-            return [
-                {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
-                for _ in repos
-            ]
-        except Exception as e:
-            logger.error(f"Groq classification failed: {e}")
-            return [
-                {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
-                for _ in repos
-            ]
+            except Exception as e:
+                logger.error(f"Groq classification failed: {e}")
+                return [
+                    {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+                    for _ in repos
+                ]
+
+        # All retries exhausted
+        logger.error("Groq: max retries exhausted")
+        return [
+            {"category": "Uncategorized", "confidence": 0.0, "matched_by": "groq_error"}
+            for _ in repos
+        ]
 
     def _parse_batch_response(
         self, content: str, repos: list[dict[str, Any]]

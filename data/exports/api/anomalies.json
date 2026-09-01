@@ -1,16 +1,49 @@
 {
-  "detected_at": "2026-09-01T09:27:58.169323+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-09-01T14:35:31.441330+00:00",
+  "total_anomalies": 2,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
-    "score_jumps": 0,
+    "fork_spikes": 1,
+    "score_jumps": 1,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
-  "score_jumps": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "nndl/llm-beginner",
+      "stars": 6694,
+      "forks": 1357,
+      "language": "Python",
+      "url": "https://github.com/nndl/llm-beginner",
+      "radar_score": 55.59,
+      "metric": "forks",
+      "current_rate": 0.1,
+      "normal_rate": 0.0,
+      "deviation": 4.3,
+      "forks_7d": 1,
+      "forks_30d": 1,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
+  "score_jumps": [
+    {
+      "repo_full_name": "ItzCrazyKns/Vane",
+      "stars": 36568,
+      "language": "TypeScript",
+      "url": "https://github.com/ItzCrazyKns/Vane",
+      "metric": "radar_score",
+      "previous_score": 68.1,
+      "current_score": 78.1,
+      "change": 10.1,
+      "direction": "up",
+      "cause": "Impact surge, Velocity acceleration, Health improvement",
+      "impact": 97.0,
+      "velocity": 66.9,
+      "health": 63.8,
+      "anomaly_type": "score_jumps"
+    }
+  ],
   "velocity_anomalies": [],
   "health_drops": []
 }

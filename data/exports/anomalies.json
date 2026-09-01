@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-09-01T07:07:22.458071+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-09-01T09:27:57.653210+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "Trusted-AI/adversarial-robustness-toolbox",
-      "stars": 6212,
-      "forks": 1340,
-      "language": "Python",
-      "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox",
-      "radar_score": 55.74,
-      "metric": "forks",
-      "current_rate": 0.7,
-      "normal_rate": 0.2,
-      "deviation": 4.3,
-      "forks_7d": 5,
-      "forks_30d": 5,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

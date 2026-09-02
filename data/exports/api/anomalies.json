@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-09-02T17:48:22.454506+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-09-02T19:31:15.708372+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "LearningCircuit/local-deep-research",
+      "stars": 9020,
+      "forks": 801,
+      "language": "Python",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "radar_score": 72.27,
+      "metric": "forks",
+      "current_rate": 1.1,
+      "normal_rate": 0.3,
+      "deviation": 3.8,
+      "forks_7d": 8,
+      "forks_30d": 9,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

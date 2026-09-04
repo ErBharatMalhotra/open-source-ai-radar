@@ -1,7 +1,7 @@
 {
   "full_name": "john-rocky/apple-silicon-llm-bench",
   "url": "https://github.com/john-rocky/apple-silicon-llm-bench",
-  "description": "Neutral, reproducible benchmark for local LLMs on Apple Silicon (Mac \u00b7 iPhone \u00b7 iPad) \u2014 MLX, llama.cpp, CoreML, Apple Foundation Models",
+  "description": "Reproducible on-device LLM benchmarks for Apple Silicon (iPhone 17 Pro, M4 Max): Apple Core AI vs MLX vs llama.cpp vs Core ML, same model, same harness \u2014 e.g. Qwen3-0.6B decode 181 tok/s (Core AI GPU) vs 112 (MLX) on iPhone 17 Pro; hybrid Mamba-2 models (Nemotron-3 Nano, Granite-4.0-H) included.",
   "language": "Python",
   "license": "MIT",
   "topics": [],
@@ -10,7 +10,7 @@
   "open_issues": 2,
   "watchers": 1,
   "created_at": "2026-05-02T07:18:41Z",
-  "pushed_at": "2026-08-27T05:23:36Z",
+  "pushed_at": "2026-09-04T08:08:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/john-rocky.png",
   "radar_score": 0,

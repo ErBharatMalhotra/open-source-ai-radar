@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-09T17:47:08.149256+00:00",
+  "generated_at": "2026-09-09T19:25:10.543588+00:00",
   "overall_status": "warning",
   "checks": [
     {
       "name": "Data Freshness",
       "status": "healthy",
-      "last_snapshot": "2026-09-09T14:12:05.464530+00:00",
-      "last_score": "2026-09-09T14:12:05.969127+00:00",
+      "last_snapshot": "2026-09-09T19:24:46.843054+00:00",
+      "last_score": "2026-09-09T19:24:47.347761+00:00",
       "last_discovery": "2026-09-09T17:46:45.765396+00:00",
       "issues": []
     },
@@ -14,7 +14,7 @@
       "name": "Snapshot Coverage",
       "status": "warning",
       "total_repos": 8137,
-      "snapshotted": 1854,
+      "snapshotted": 1855,
       "coverage_pct": 22.8,
       "issues": [
         "Only 22.8% of repos have snapshots"
@@ -43,9 +43,9 @@
       "status": "healthy",
       "table_sizes": {
         "repositories": 8137,
-        "snapshots": 50700,
-        "scores": 73463,
-        "growth_metrics": 50700,
+        "snapshots": 51400,
+        "scores": 74163,
+        "growth_metrics": 51400,
         "ai_analysis": 8137
       },
       "issues": []
@@ -54,9 +54,9 @@
       "name": "Processing Stats",
       "status": "warning",
       "total_repos": 8137,
-      "processed": 1854,
-      "unprocessed": 6283,
-      "last_run": "2026-09-09T14:12:06.465079+00:00",
+      "processed": 1855,
+      "unprocessed": 6282,
+      "last_run": "2026-09-09T19:24:47.856948+00:00",
       "issues": [
         "Only 22.8% of repos have processing signatures"
       ]

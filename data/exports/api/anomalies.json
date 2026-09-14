@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-09-13T18:52:54.562564+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-09-14T00:05:37.284442+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "0x0funky/agent-sprite-forge",
-      "stars": 4086,
-      "forks": 395,
-      "language": "Python",
-      "url": "https://github.com/0x0funky/agent-sprite-forge",
-      "radar_score": 62.41,
-      "metric": "forks",
-      "current_rate": 1.7,
-      "normal_rate": 0.4,
-      "deviation": 4.3,
-      "forks_7d": 12,
-      "forks_30d": 12,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

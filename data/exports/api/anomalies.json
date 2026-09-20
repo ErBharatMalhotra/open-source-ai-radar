@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-09-20T13:58:18.674233+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-09-20T18:51:16.670678+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "openvinotoolkit/open_model_zoo",
-      "stars": 4433,
-      "forks": 1408,
-      "language": "Python",
-      "url": "https://github.com/openvinotoolkit/open_model_zoo",
-      "radar_score": 65.59,
-      "metric": "forks",
-      "current_rate": 0.1,
-      "normal_rate": 0.0,
-      "deviation": 4.3,
-      "forks_7d": 1,
-      "forks_30d": 1,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

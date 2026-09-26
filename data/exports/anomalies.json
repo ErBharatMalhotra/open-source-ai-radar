@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-09-26T09:24:25.183769+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-09-26T14:08:58.018826+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "jev-chat/jev-chat-jarvis",
+      "stars": 6629,
+      "forks": 1141,
+      "language": "Kotlin",
+      "url": "https://github.com/jev-chat/jev-chat-jarvis",
+      "radar_score": 77.76,
+      "metric": "forks",
+      "current_rate": 1.7,
+      "normal_rate": 0.4,
+      "deviation": 4.3,
+      "forks_7d": 12,
+      "forks_30d": 12,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

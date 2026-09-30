@@ -1,16 +1,49 @@
 {
-  "detected_at": "2026-09-30T19:03:03.952071+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-09-30T20:56:50.568487+00:00",
+  "total_anomalies": 2,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
-    "score_jumps": 0,
+    "fork_spikes": 1,
+    "score_jumps": 1,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
-  "score_jumps": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "olistic/warriorjs",
+      "stars": 9543,
+      "forks": 501,
+      "language": "TypeScript",
+      "url": "https://github.com/olistic/warriorjs",
+      "radar_score": 56.75,
+      "metric": "forks",
+      "current_rate": 0.1,
+      "normal_rate": 0.0,
+      "deviation": 4.3,
+      "forks_7d": 1,
+      "forks_30d": 1,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
+  "score_jumps": [
+    {
+      "repo_full_name": "SYSTRAN/faster-whisper",
+      "stars": 25649,
+      "language": "Python",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "metric": "radar_score",
+      "previous_score": 65.2,
+      "current_score": 76.3,
+      "change": 11.1,
+      "direction": "up",
+      "cause": "Impact surge, Velocity acceleration, Health improvement",
+      "impact": 95.2,
+      "velocity": 63.6,
+      "health": 63.8,
+      "anomaly_type": "score_jumps"
+    }
+  ],
   "velocity_anomalies": [],
   "health_drops": []
 }

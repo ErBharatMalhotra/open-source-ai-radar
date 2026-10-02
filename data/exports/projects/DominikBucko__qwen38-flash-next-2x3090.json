@@ -1,7 +1,7 @@
 {
   "full_name": "DominikBucko/qwen38-flash-next-2x3090",
   "url": "https://github.com/DominikBucko/qwen38-flash-next-2x3090",
-  "description": "Qwen3.8-Flash-Next on 2\u00d7 RTX 3090: with 128 GB RAM up to 4,191 tok/s prefill \u00b7 111.5 tok/s decode (131K prompt; prefill and agent 128K profiles), full 256K window at 2,865 tok/s; with 64 GB RAM 3,410 tok/s prefill \u00b7 84 tok/s decode (64 GB profile).",
+  "description": "Qwen3.8-Flash-Next on 2\u00d7 RTX 3090: with 128 GB RAM up to 4,191 tok/s prefill \u00b7 111.5 tok/s decode (131K prompt), full 256K window at 2,865 tok/s; with 64 GB RAM 3,410 tok/s prefill \u00b7 84 tok/s decode. New: opt-in uncensored mode (runtime abliteration, no new weights).",
   "language": "Python",
   "license": "Apache-2.0",
   "topics": [],
@@ -10,7 +10,7 @@
   "open_issues": 6,
   "watchers": 1,
   "created_at": "2026-08-30T21:26:34Z",
-  "pushed_at": "2026-09-30T14:01:51Z",
+  "pushed_at": "2026-10-02T09:56:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/DominikBucko.png",
   "radar_score": 0,

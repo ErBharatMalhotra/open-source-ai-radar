@@ -9,7 +9,7 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 **[Live Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/)** | **[API Docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/)** | **[RSS](https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml)**
 
 <!-- LIVE-STATS:START -->
-**Tracking 8,866 repos · 76% auto-classified into 11 AI categories · 38.1M stars tracked · Updated 2026-10-03 07:26 UTC**
+**Tracking 8,866 repos · 76% auto-classified into 11 AI categories · 38.1M stars tracked · Updated 2026-10-03 09:54 UTC**
 <!-- LIVE-STATS:END -->
 
 ---

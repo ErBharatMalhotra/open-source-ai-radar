@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-10-10T08:03:30.434898+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-10-10T10:39:23.720255+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "tensorchord/Awesome-LLMOps",
-      "stars": 5954,
-      "forks": 1121,
-      "language": "Shell",
-      "url": "https://github.com/tensorchord/Awesome-LLMOps",
-      "radar_score": 67.95,
-      "metric": "forks",
-      "current_rate": 4.9,
-      "normal_rate": 1.1,
-      "deviation": 4.3,
-      "forks_7d": 34,
-      "forks_30d": 34,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

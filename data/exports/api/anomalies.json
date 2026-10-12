@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-10-11T20:20:15.174561+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-10-12T01:13:24.242029+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "ccch1mneyyy/dsh-TUI",
+      "stars": 4294,
+      "forks": 248,
+      "language": "TypeScript",
+      "url": "https://github.com/ccch1mneyyy/dsh-TUI",
+      "radar_score": 71.34,
+      "metric": "forks",
+      "current_rate": 1.4,
+      "normal_rate": 0.3,
+      "deviation": 4.3,
+      "forks_7d": 10,
+      "forks_30d": 10,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T00:07:17.626319+00:00",
+  "generated_at": "2026-10-19T07:16:56.420077+00:00",
   "overall_status": "warning",
   "checks": [
     {
@@ -7,23 +7,23 @@
       "status": "healthy",
       "last_snapshot": "2026-10-19T00:06:49.417216+00:00",
       "last_score": "2026-10-19T00:06:49.921442+00:00",
-      "last_discovery": "2026-10-17T17:02:09.832951+00:00",
+      "last_discovery": "2026-10-19T07:16:38.405189+00:00",
       "issues": []
     },
     {
       "name": "Snapshot Coverage",
       "status": "warning",
-      "total_repos": 9344,
+      "total_repos": 9392,
       "snapshotted": 2022,
-      "coverage_pct": 21.6,
+      "coverage_pct": 21.5,
       "issues": [
-        "Only 21.6% of repos have snapshots"
+        "Only 21.5% of repos have snapshots"
       ]
     },
     {
       "name": "Scoring Coverage",
       "status": "warning",
-      "total_repos": 9344,
+      "total_repos": 9392,
       "scored": 700,
       "coverage_pct": 7.5,
       "issues": [
@@ -33,8 +33,8 @@
     {
       "name": "Category Coverage",
       "status": "healthy",
-      "total_repos": 9344,
-      "classified": 9344,
+      "total_repos": 9392,
+      "classified": 9392,
       "coverage_pct": 100.0,
       "issues": []
     },
@@ -42,23 +42,23 @@
       "name": "Database Health",
       "status": "healthy",
       "table_sizes": {
-        "repositories": 9344,
+        "repositories": 9392,
         "snapshots": 161296,
         "scores": 184063,
         "growth_metrics": 161296,
-        "ai_analysis": 9344
+        "ai_analysis": 9392
       },
       "issues": []
     },
     {
       "name": "Processing Stats",
       "status": "warning",
-      "total_repos": 9344,
+      "total_repos": 9392,
       "processed": 2022,
-      "unprocessed": 7322,
+      "unprocessed": 7370,
       "last_run": "2026-10-19T00:06:50.518675+00:00",
       "issues": [
-        "Only 21.6% of repos have processing signatures"
+        "Only 21.5% of repos have processing signatures"
       ]
     }
   ]

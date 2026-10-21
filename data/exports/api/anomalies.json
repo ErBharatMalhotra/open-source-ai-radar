@@ -1,31 +1,15 @@
 {
-  "detected_at": "2026-10-21T06:57:48.578791+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-10-21T09:23:16.167980+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 1,
+    "fork_spikes": 0,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [
-    {
-      "repo_full_name": "devlikeapro/waha",
-      "stars": 7649,
-      "forks": 1837,
-      "language": "TypeScript",
-      "url": "https://github.com/devlikeapro/waha",
-      "radar_score": 69.12,
-      "metric": "forks",
-      "current_rate": 4.0,
-      "normal_rate": 1.2,
-      "deviation": 3.3,
-      "forks_7d": 28,
-      "forks_30d": 36,
-      "anomaly_type": "fork_spikes"
-    }
-  ],
+  "fork_spikes": [],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

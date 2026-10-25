@@ -1,33 +1,16 @@
 {
-  "detected_at": "2026-10-25T09:10:50.619238+00:00",
-  "total_anomalies": 1,
+  "detected_at": "2026-10-25T14:11:25.731816+00:00",
+  "total_anomalies": 0,
   "by_type": {
     "star_spikes": 0,
     "fork_spikes": 0,
-    "score_jumps": 1,
+    "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
   "fork_spikes": [],
-  "score_jumps": [
-    {
-      "repo_full_name": "labmlai/annotated_deep_learning_paper_implementations",
-      "stars": 67600,
-      "language": "Python",
-      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
-      "metric": "radar_score",
-      "previous_score": 65.6,
-      "current_score": 76.6,
-      "change": 11.0,
-      "direction": "up",
-      "cause": "Impact surge, Velocity acceleration, Health improvement",
-      "impact": 98.8,
-      "velocity": 64.3,
-      "health": 58.4,
-      "anomaly_type": "score_jumps"
-    }
-  ],
+  "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []
 }

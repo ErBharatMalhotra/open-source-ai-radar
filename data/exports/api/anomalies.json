@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-10-26T21:12:06.860172+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-10-27T01:22:28.055432+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "bblanchon/ArduinoJson",
+      "stars": 7235,
+      "forks": 1171,
+      "language": "C++",
+      "url": "https://github.com/bblanchon/ArduinoJson",
+      "radar_score": 65.47,
+      "metric": "forks",
+      "current_rate": 0.3,
+      "normal_rate": 0.1,
+      "deviation": 4.3,
+      "forks_7d": 2,
+      "forks_30d": 2,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

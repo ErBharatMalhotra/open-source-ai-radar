@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+const issueBase = 'https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new';
+---
+
+<Layout title="Submit an AI Repository" description="Suggest an open-source AI project to be tracked, scored, and featured on Open Source AI Radar.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-6);">
+    <h1>Submit a <span class="accent">Repository</span></h1>
+    <p>Track your AI project on Open Source AI Radar — scored 6x daily on Impact, Velocity, and Health.</p>
+  </section>
+
+  <div style="max-width:680px; margin:0 auto;">
+    <div class="card" style="padding:var(--sp-6); margin-bottom:var(--sp-6);">
+      <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Project Details</h2>
+
+      <div style="display:grid; gap:var(--sp-4);">
+        <div>
+          <label for="repoInput" style="display:block; font-size:var(--text-xs); color:var(--text-muted); font-weight:600; text-transform:uppercase; margin-bottom:var(--sp-1);">GitHub Repository</label>
+          <div style="display:flex; gap:var(--sp-2);">
+            <input
+              id="repoInput"
+              type="text"
+              placeholder="e.g. BerriAI/litellm or https://github.com/BerriAI/litellm"
+              style="width:100%; padding:var(--sp-3) var(--sp-4); border-radius:var(--radius); border:1px solid var(--border); background:var(--bg-surface); color:var(--text); font-size:var(--text-sm);"
+            />
+            <button id="previewBtn" class="filter-pill active" style="cursor:pointer; white-space:nowrap; padding:0 var(--sp-4);">
+              Inspect
+            </button>
+          </div>
+          <span id="previewMsg" style="display:block; font-size:var(--text-xs); color:var(--text-muted); margin-top:4px;"></span>
+        </div>
+
+        {/* Live Preview Box */}
+        <div id="previewCard" style="display:none; padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--accent); border-radius:var(--radius);">
+          <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-2);">
+            <img id="previewAvatar" src="" alt="" width="32" height="32" style="width:32px; height:32px; border-radius:6px;" />
+            <div>
+              <div id="previewName" style="font-weight:700; font-size:var(--text-base);"></div>
+              <div id="previewMeta" style="font-size:var(--text-xs); color:var(--text-muted);"></div>
+            </div>
+          </div>
+          <p id="previewDesc" style="font-size:var(--text-xs); color:var(--text-secondary); line-height:1.4; margin:0;"></p>
+        </div>
+
+        <div>
+          <label for="categorySelect" style="display:block; font-size:var(--text-xs); color:var(--text-muted); font-weight:600; text-transform:uppercase; margin-bottom:var(--sp-1);">Primary AI Category</label>
+          <select id="categorySelect" style="width:100%; padding:var(--sp-3) var(--sp-4); border-radius:var(--radius); border:1px solid var(--border); background:var(--bg-surface); color:var(--text); font-size:var(--text-sm);">
+            <option value="AI Agents">AI Agents</option>
+            <option value="AI Coding Tools">AI Coding Tools</option>
+            <option value="AI Infrastructure">AI Infrastructure</option>
+            <option value="AI Safety & Alignment">AI Safety & Alignment</option>
+            <option value="Evaluation & Benchmarks">Evaluation & Benchmarks</option>
+            <option value="Generative AI">Generative AI</option>
+            <option value="LLM Frameworks">LLM Frameworks</option>
+            <option value="Local AI">Local AI</option>
+            <option value="MCP">MCP (Model Context Protocol)</option>
+            <option value="Multimodal AI">Multimodal AI</option>
+            <option value="RAG">RAG (Retrieval Augmented Generation)</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="whyInput" style="display:block; font-size:var(--text-xs); color:var(--text-muted); font-weight:600; text-transform:uppercase; margin-bottom:var(--sp-1);">Why should this project be tracked?</label>
+          <textarea
+            id="whyInput"
+            rows="3"
+            placeholder="What does it do, and why is it important to the open-source community?"
+            style="width:100%; padding:var(--sp-3) var(--sp-4); border-radius:var(--radius); border:1px solid var(--border); background:var(--bg-surface); color:var(--text); font-size:var(--text-sm); resize:vertical;"
+          ></textarea>
+        </div>
+
+        <button id="submitBtn" class="filter-pill active" style="cursor:pointer; padding:var(--sp-3) var(--sp-6); font-size:var(--text-sm); font-weight:600; width:100%; justify-content:center; display:flex;">
+          Submit to Radar →
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="padding:var(--sp-5); font-size:var(--text-xs); color:var(--text-muted); line-height:1.6;">
+      <h3 style="font-size:var(--text-sm); font-weight:600; color:var(--text); margin-bottom:var(--sp-2);">How submissions work:</h3>
+      <ol style="padding-left:var(--sp-4); margin:0;">
+        <li>Submissions are automatically logged in the repository pipeline.</li>
+        <li>Our discovery workers fetch repository stars, velocity, commit frequency, and license compliance.</li>
+        <li>Once validated, the repository appears in project rankings, category indexes, and hourly radar digests.</li>
+      </ol>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const repoInput = document.getElementById('repoInput') as HTMLInputElement;
+  const previewBtn = document.getElementById('previewBtn') as HTMLButtonElement;
+  const previewCard = document.getElementById('previewCard') as HTMLElement;
+  const previewAvatar = document.getElementById('previewAvatar') as HTMLImageElement;
+  const previewName = document.getElementById('previewName') as HTMLElement;
+  const previewMeta = document.getElementById('previewMeta') as HTMLElement;
+  const previewDesc = document.getElementById('previewDesc') as HTMLElement;
+  const previewMsg = document.getElementById('previewMsg') as HTMLElement;
+  const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement;
+  const whyInput = document.getElementById('whyInput') as HTMLTextAreaElement;
+  const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
+
+  function parseRepo(val: string): { owner: string; repo: string } | null {
+    const clean = val.trim().replace(/^https?:\/\/github\.com\//i, '').replace(/\/+$/, '');
+    const parts = clean.split('/');
+    if (parts.length >= 2 && parts[0] && parts[1]) {
+      return { owner: parts[0], repo: parts[1].replace(/\.git$/i, '') };
+    }
+    return null;
+  }
+
+  async function inspectRepo() {
+    const parsed = parseRepo(repoInput?.value || '');
+    if (!parsed) {
+      if (previewMsg) previewMsg.textContent = 'Please enter a valid owner/repo or GitHub URL.';
+      return;
+    }
+
+    if (previewMsg) previewMsg.textContent = 'Inspecting GitHub...';
+    try {
+      const res = await fetch(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}`);
+      if (!res.ok) {
+        if (previewMsg) previewMsg.textContent = 'Repository not found or rate limit exceeded.';
+        return;
+      }
+      const data = await res.json();
+      if (previewAvatar) previewAvatar.src = data.owner?.avatar_url || '';
+      if (previewName) previewName.textContent = data.full_name;
+      if (previewMeta) previewMeta.textContent = `★ ${data.stargazers_count?.toLocaleString()} · ${data.language || 'Unknown language'} · ${data.license?.spdx_id || 'No license'}`;
+      if (previewDesc) previewDesc.textContent = data.description || 'No description provided.';
+      if (previewCard) previewCard.style.display = 'block';
+      if (previewMsg) previewMsg.textContent = '✓ Verified repository';
+    } catch {
+      if (previewMsg) previewMsg.textContent = 'Could not verify repository. You can still submit.';
+    }
+  }
+
+  previewBtn?.addEventListener('click', inspectRepo);
+  repoInput?.addEventListener('blur', () => { if (repoInput.value) inspectRepo(); });
+
+  submitBtn?.addEventListener('click', () => {
+    const parsed = parseRepo(repoInput?.value || '');
+    const url = parsed ? `https://github.com/${parsed.owner}/${parsed.repo}` : (repoInput?.value || '').trim();
+    if (!url) {
+      alert('Please enter a GitHub repository URL.');
+      return;
+    }
+    const cat = categorySelect?.value || 'AI Agents';
+    const why = encodeURIComponent((whyInput?.value || '').trim() || 'Emerging AI open-source project.');
+    const title = encodeURIComponent(`[Submit]: ${parsed ? `${parsed.owner}/${parsed.repo}` : url}`);
+    const issueUrl = `https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new?template=submit-repo.yml&title=${title}&repo-url=${encodeURIComponent(url)}&category=${encodeURIComponent(cat)}&why=${why}`;
+    window.open(issueUrl, '_blank', 'noopener,noreferrer');
+  });
+</script>

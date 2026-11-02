@@ -78,6 +78,16 @@ function repoUrl(r: any): string {
       <input type="text" id="searchInput" placeholder="Search projects by name, description, topic, language..." aria-label="Search projects" />
     </div>
 
+    {/* Quick Intent Pills */}
+    <div style="display:flex; flex-wrap:wrap; gap:var(--sp-2); margin-top:var(--sp-3); align-items:center;">
+      <span style="font-size:var(--text-xs); color:var(--text-muted);">Intent shortcuts:</span>
+      <button class="filter-pill" data-intent="mcp" style="cursor:pointer; font-size:var(--text-xs); padding:2px 8px;">🔌 MCP</button>
+      <button class="filter-pill" data-intent="rust" style="cursor:pointer; font-size:var(--text-xs); padding:2px 8px;">🦀 Rust</button>
+      <button class="filter-pill" data-intent="python" style="cursor:pointer; font-size:var(--text-xs); padding:2px 8px;">🐍 Python RAG</button>
+      <button class="filter-pill" data-intent="agent" style="cursor:pointer; font-size:var(--text-xs); padding:2px 8px;">🤖 AI Agents</button>
+      <button class="filter-pill" data-intent="mit" style="cursor:pointer; font-size:var(--text-xs); padding:2px 8px;">⚖️ MIT License</button>
+    </div>
+
     <div class="filters" id="filters" style="margin-top:var(--sp-4);">
       <button class="filter-pill active" data-filter="all">All</button>
       <button class="filter-pill" data-filter="breakout">Breakout</button>
@@ -260,6 +270,16 @@ function repoUrl(r: any): string {
       pill.classList.add('active');
       activeFilter = (pill as HTMLElement).dataset.filter || 'all';
       applyFilter();
+    });
+  });
+
+  document.querySelectorAll('[data-intent]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const intent = (btn as HTMLElement).dataset.intent || '';
+      if (input) {
+        input.value = intent;
+        applyFilter();
+      }
     });
   });
 

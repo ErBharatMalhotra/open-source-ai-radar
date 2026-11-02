@@ -380,6 +380,8 @@ uv run python scripts/export.py
 
 ## Documentation
 
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Local development, pipeline CLI, and PR guidelines
+- [docs/FAQ.md](docs/FAQ.md) — Frequently asked questions about scoring, tracking, and APIs
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — System design, data flow, rate limits
 - [docs/SCALING.md](docs/SCALING.md) — Roadmap from 5K to 500K repositories
 

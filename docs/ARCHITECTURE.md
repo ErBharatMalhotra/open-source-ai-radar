@@ -369,11 +369,12 @@ See [SCALING.md](SCALING.md) for the roadmap from 5K to 500K repositories.
 
 | Metric | Value |
 |--------|-------|
-| Tracked repositories | 7,000+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
-| Website pages | 9,000+ |
+| Tracked repositories | 9,800+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
+| Tracked stars | 42.0M+ |
+| Website pages | 9,800+ |
 | API endpoints | 12 + badges + per-repo history |
 | Snapshots per day | ~2,800 (4 runs x 700 repos) |
-| DB size | ~11 MB |
+| DB size | ~18 MB |
 | Git repo size | ~6 MB |
 
 Note: counts above are refreshed periodically; the stats.json link is always live.

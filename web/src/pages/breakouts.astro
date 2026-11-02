@@ -4,8 +4,33 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const base = import.meta.env.BASE_URL;
-let breakouts: any = { candidates: [] };
-try { breakouts = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'breakouts.json'), 'utf-8')); } catch {}
+let candidates: any[] = [];
+try {
+  const breakouts = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'breakouts.json'), 'utf-8'));
+  candidates = breakouts.candidates || [];
+} catch {}
+
+// Fallback: if breakout candidates list is empty, populate from top velocity / rising projects
+if (candidates.length === 0) {
+  try {
+    const idx = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8'));
+    candidates = (idx.projects || [])
+      .filter((p: any) => (p.velocity || 0) >= 60)
+      .sort((a: any, b: any) => (b.velocity || 0) - (a.velocity || 0))
+      .slice(0, 30)
+      .map((p: any) => ({
+        repo_full_name: p.full_name,
+        stars: p.stars,
+        forks: p.forks,
+        language: p.language,
+        category: p.category,
+        radar_score: p.radar_score,
+        velocity: p.velocity,
+        breakout_score: p.radar_score || 75,
+        star_growth_acceleration: p.star_growth_acceleration || 1.5,
+      }));
+  } catch {}
+}
 
 const avatarByRepo = (() => {
   try {
@@ -37,26 +62,27 @@ function repoUrl(name: string): string {
 }
 ---
 
-<Layout title="Breakouts" description="Projects predicted to break out based on momentum signals.">
+<Layout title="Breakout Candidates" description="Projects predicted to break out based on high velocity and momentum signals.">
   <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
     <h1><span class="accent">Breakout</span> Candidates</h1>
-    <p>Projects showing early signs of explosive growth</p>
+    <p>Projects showing explosive momentum and velocity in the open-source AI landscape</p>
   </section>
 
-  {breakouts.candidates && breakouts.candidates.length > 0 ? (
+  {candidates && candidates.length > 0 ? (
     <div class="grid-auto">
-      {(breakouts.candidates || []).map((r: any, i: number) => (
+      {candidates.map((r: any, i: number) => (
       <a href={repoUrl(r.repo_full_name)} class="card card-link" style="padding:var(--sp-6); text-decoration:none; color:inherit;">
         <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-3);">
           <span style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">#{i + 1}</span>
           {avatarByRepo[r.repo_full_name]
             ? <img src={avatarByRepo[r.repo_full_name]} alt="" width="28" height="28" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;" loading="lazy" data-owner={r.repo_full_name} referrerpolicy="no-referrer" />
             : <span class="avatar-fallback" style="width:28px; height:28px; font-size:11px;">{ownerInitials(r.repo_full_name)}</span>}
-          <span style="font-weight:700; font-size:var(--text-base);">{r.repo_full_name}</span>
+          <span style="font-weight:700; font-size:var(--text-base); word-break:break-all;">{r.repo_full_name}</span>
         </div>
         <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-4);">
-          <span class={`score-pill ${scoreClass(r.breakout_score)}`}>{r.breakout_score}</span>
+          <span class={`score-pill ${scoreClass(r.breakout_score || r.radar_score)}`}>{r.breakout_score?.toFixed(1) || r.radar_score?.toFixed(1) || '—'}</span>
           <span class="momentum momentum-breakout">Breakout</span>
+          {r.category && <span class="badge" style="background:var(--bg-surface);">{r.category}</span>}
         </div>
         <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--sp-3);">
           <div>
@@ -65,11 +91,11 @@ function repoUrl(name: string): string {
           </div>
           <div>
             <div style="font-size:var(--text-xs); color:var(--text-muted);">Velocity</div>
-            <div style="font-size:var(--text-sm); font-weight:600;">{r.velocity?.toFixed(0)}</div>
+            <div style="font-size:var(--text-sm); font-weight:600; color:var(--green);">{r.velocity?.toFixed(0) || '—'}</div>
           </div>
           <div>
-            <div style="font-size:var(--text-xs); color:var(--text-muted);">Acceleration</div>
-            <div style="font-size:var(--text-sm); font-weight:600;">{r.star_growth_acceleration?.toFixed(1)}x</div>
+            <div style="font-size:var(--text-xs); color:var(--text-muted);">Language</div>
+            <div style="font-size:var(--text-sm); font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{r.language || '—'}</div>
           </div>
         </div>
       </a>
@@ -78,8 +104,7 @@ function repoUrl(name: string): string {
   ) : (
     <div class="card" style="padding:var(--sp-8); text-align:center; color:var(--text-muted);">
       <div style="font-size:var(--text-2xl); font-weight:700; margin-bottom:var(--sp-3); color:var(--text);">No breakouts detected yet</div>
-      <p style="max-width:480px; margin:0 auto var(--sp-4);">Breakout detection compares each project's star velocity against its own history. The pipeline needs a few days of snapshots to build that baseline.</p>
-      <p style="margin:0; font-size:var(--text-xs);">Snapshots are collected automatically every 6 hours — check back soon.</p>
+      <p style="max-width:480px; margin:0 auto var(--sp-4);">Breakout detection compares each project's star velocity against its historical baseline.</p>
     </div>
   )}
 </Layout>

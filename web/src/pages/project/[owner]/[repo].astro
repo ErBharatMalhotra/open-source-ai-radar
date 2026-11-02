@@ -64,6 +64,23 @@ const socialImage = topProjectSet().has(`${owner}/${repo}`)
   ? `${base}project/${owner}/${repo}/og.png`
   : `${base}og.png`;
 
+const alternatives = (() => {
+  if (!project.category || project.category === 'Uncategorized') return [];
+  try {
+    const index = JSON.parse(readFileSync(join(process.cwd(), '..', 'data', 'exports', 'projects-index.json'), 'utf-8'));
+    return (index.projects || [])
+      .filter((p: any) => p.category === project.category && p.full_name !== `${owner}/${repo}`)
+      .sort((a: any, b: any) => (b.radar_score || 0) - (a.radar_score || 0))
+      .slice(0, 4);
+  } catch {
+    return [];
+  }
+})();
+
+const isPermissiveLicense = ['MIT', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'ISC'].some(l => (project.license || '').toLowerCase().includes(l.toLowerCase()));
+const licenseCategory = isPermissiveLicense ? 'Permissive (Commercial Friendly)' : (project.license ? project.license : 'Unlicensed / Custom');
+const healthGrade = (project.health || 0) >= 70 ? 'A+' : (project.health || 0) >= 55 ? 'A' : (project.health || 0) >= 40 ? 'B' : 'C';
+
 function percentileLabel(p: any): string {
   const v = Number(p);
   if (!Number.isFinite(v) || v <= 0) return '';
@@ -269,6 +286,75 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
       {project.why_trending && (
         <p style="margin-top:var(--sp-4); padding-top:var(--sp-4); border-top:1px solid var(--border-subtle); color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm);"><strong style="color:var(--text);">Trend signal:</strong> {project.why_trending}</p>
       )}
+    </div>
+  </section>
+
+  {/* Alternatives & Competitors */}
+  {alternatives.length > 0 && (
+    <section class="section" style="margin-top:var(--sp-6);">
+      <div class="card" style="padding:var(--sp-6);">
+        <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4);">Popular Alternatives & Competitors</h2>
+        <p style="font-size:var(--text-sm); color:var(--text-muted); margin-bottom:var(--sp-4);">Top projects in the same category ({project.category}) — compare side by side.</p>
+        <div class="grid-2" style="gap:var(--sp-3);">
+          {alternatives.map((alt: any) => (
+            <a href={`${base}project/${alt.full_name}`} class="card" style="padding:var(--sp-4); text-decoration:none; color:inherit; display:block;">
+              <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:var(--sp-2);">
+                {alt.owner_avatar
+                  ? <img src={alt.owner_avatar} alt="" width="24" height="24" style="width:24px; height:24px; border-radius:50%; object-fit:cover;" loading="lazy" referrerpolicy="no-referrer" />
+                  : <span class="avatar-fallback" style="width:24px; height:24px; font-size:10px;">{(alt.full_name.split('/')[0] || '?').replace(/[^a-zA-Z0-9]/g, '').substring(0, 2).toUpperCase()}</span>}
+                <span style="font-weight:600; font-size:var(--text-sm);">{alt.full_name}</span>
+              </div>
+              <div style="display:flex; gap:var(--sp-2); flex-wrap:wrap; font-size:var(--text-xs);">
+                <span class="badge">{alt.language || '—'}</span>
+                <span style="color:var(--text-muted);">★ {fmt(alt.stars || 0)}</span>
+                <span style="color:var(--green); font-weight:600;">Vel: {alt.velocity?.toFixed(0) || '—'}</span>
+                <span class={`score-pill ${scoreClass(alt.radar_score)}`}>{alt.radar_score?.toFixed(1) || '—'}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div style="margin-top:var(--sp-4); text-align:center;">
+          <a href={`${base}compare?a=${owner}/${repo}&b=${alternatives[0]?.full_name || ''}&c=${alternatives[1]?.full_name || ''}`} class="filter-pill" style="text-decoration:none; font-size:var(--text-sm);">
+            Compare All Side-by-Side →
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* Enterprise Readiness & Commercial Safety */}
+  <section class="section" style="margin-top:var(--sp-6);">
+    <div class="card" style="padding:var(--sp-6);">
+      <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4); display:flex; align-items:center; gap:var(--sp-2);">🛡️ Enterprise Readiness & Commercial Safety</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:var(--sp-4);">
+        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">License</div>
+          <div style="font-size:var(--text-base); font-weight:600;">{licenseCategory}</div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">
+            {isPermissiveLicense
+              ? 'Safe for commercial use, modification, and distribution.'
+              : 'Review license terms carefully before commercial adoption.'}
+          </div>
+        </div>
+        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">Health Grade</div>
+          <div style="font-size:var(--text-2xl); font-weight:700; color:var(--accent);">{healthGrade}</div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">Based on maintenance, issue response, and release cadence.</div>
+        </div>
+        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">Radar Score</div>
+          <div style="font-size:var(--text-2xl); font-weight:700; color:var(--green);">{project.radar_score?.toFixed(1) || '—'}</div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">Composite of Impact, Velocity, and Health.</div>
+        </div>
+        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">Maturity</div>
+          <div style="font-size:var(--text-2xl); font-weight:700;">{project.maturity || 'Emerging'}</div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">{project.maturity === 'Mature' ? 'Production-ready with stable API.' : project.maturity === 'Growing' ? 'Actively evolving — may have breaking changes.' : 'Early stage — evaluate carefully.'}</div>
+        </div>
+      </div>
+      <div style="margin-top:var(--sp-4); padding-top:var(--sp-4); border-top:1px solid var(--border-subtle); font-size:var(--text-xs); color:var(--text-muted);">
+        <strong>Disclaimer:</strong> This is an automated heuristic assessment based on public GitHub signals. Always perform your own security audit, dependency review, and legal compliance check before production deployment.
+      </div>
     </div>
   </section>
 

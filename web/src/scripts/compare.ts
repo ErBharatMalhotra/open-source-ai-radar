@@ -214,7 +214,36 @@ function init(): void {
     }
   });
   document.getElementById("compareBtn")?.addEventListener("click", render);
-  load().then(render);
+  load().then(() => {
+    const params = new URLSearchParams(window.location.search);
+    const p1 = params.get("p1") || params.get("a");
+    const p2 = params.get("p2") || params.get("b");
+    const p3 = params.get("p3") || params.get("c");
+    const inputs = document.querySelectorAll<HTMLInputElement>(".compare-search");
+
+    if (p1) {
+      const match1 = state.data.find((p) => p.full_name.toLowerCase() === p1.toLowerCase());
+      if (match1) {
+        state.picks[0] = match1;
+        if (inputs[0]) inputs[0].value = match1.full_name;
+      }
+    }
+    if (p2) {
+      const match2 = state.data.find((p) => p.full_name.toLowerCase() === p2.toLowerCase());
+      if (match2) {
+        state.picks[1] = match2;
+        if (inputs[1]) inputs[1].value = match2.full_name;
+      }
+    }
+    if (p3) {
+      const match3 = state.data.find((p) => p.full_name.toLowerCase() === p3.toLowerCase());
+      if (match3) {
+        state.picks[2] = match3;
+        if (inputs[2]) inputs[2].value = match3.full_name;
+      }
+    }
+    render();
+  });
 }
 
 init();

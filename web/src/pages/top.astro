@@ -130,40 +130,79 @@ function repoUrl(r: any): string {
         </table>
       </div>
     </div>
+
+    <div class="pagination" style="display:flex; justify-content:center; align-items:center; gap:var(--sp-4); margin-top:var(--sp-6);">
+      <button id="prevBtn" class="filter-pill" style="cursor:pointer;">← Previous</button>
+      <span id="pageIndicator" style="font-size:var(--text-sm); color:var(--text-muted); font-family:var(--font-mono);">Page 1 of 1</span>
+      <button id="nextBtn" class="filter-pill" style="cursor:pointer;">Next →</button>
+    </div>
   </div>
 </Layout>
 
 <script>
   const input = document.getElementById('searchInput') as HTMLInputElement;
-  const rows = document.querySelectorAll('.repo-row');
+  const rows = Array.from(document.querySelectorAll('.repo-row')) as HTMLElement[];
   const pills = document.querySelectorAll('.filter-pill');
   const countEl = document.getElementById('resultCount');
-  let activeFilter = 'all';
-  let activeCount = 0;
+  const prevBtn = document.getElementById('prevBtn') as HTMLButtonElement;
+  const nextBtn = document.getElementById('nextBtn') as HTMLButtonElement;
+  const pageIndicator = document.getElementById('pageIndicator');
 
-  function applyFilter() {
-    const q = (input?.value || '').toLowerCase().trim();
-    activeCount = 0;
-    rows.forEach(row => {
-      const r = row as HTMLElement;
-      const text = r.dataset.search || '';
-      const momentum = r.dataset.momentum || '';
-      const matchText = !q || text.includes(q);
-      const matchFilter = activeFilter === 'all' || momentum === activeFilter;
-      const visible = matchText && matchFilter;
-      r.style.display = visible ? '' : 'none';
-      if (visible) activeCount++;
-    });
+  let activeFilter = 'all';
+  let currentPage = 1;
+  const pageSize = 100;
+  let filteredRows = rows;
+  let searchTimer: any;
+
+  function updatePagination() {
+    const totalPages = Math.ceil(filteredRows.length / pageSize) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const start = (currentPage - 1) * pageSize;
+    const end = start + pageSize;
+
+    rows.forEach(r => (r.style.display = 'none'));
+    filteredRows.slice(start, end).forEach(r => (r.style.display = ''));
+
+    if (pageIndicator) pageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
+    if (prevBtn) {
+      prevBtn.style.opacity = currentPage === 1 ? '0.4' : '1';
+      prevBtn.style.pointerEvents = currentPage === 1 ? 'none' : 'auto';
+    }
+    if (nextBtn) {
+      nextBtn.style.opacity = currentPage === totalPages ? '0.4' : '1';
+      nextBtn.style.pointerEvents = currentPage === totalPages ? 'none' : 'auto';
+    }
+
     if (countEl) {
       const total = rows.length;
+      const q = (input?.value || '').toLowerCase().trim();
       const showing = activeFilter === 'all' && !q
-        ? `Showing all ${total.toLocaleString()} projects`
-        : `Showing ${activeCount.toLocaleString()} of ${total.toLocaleString()} projects`;
+        ? `Showing all ${total.toLocaleString()} projects (100 per page)`
+        : `Showing ${filteredRows.length.toLocaleString()} of ${total.toLocaleString()} projects`;
       countEl.textContent = showing;
     }
   }
 
-  input?.addEventListener('input', applyFilter);
+  function applyFilter() {
+    const q = (input?.value || '').toLowerCase().trim();
+    filteredRows = rows.filter(row => {
+      const text = row.dataset.search || '';
+      const momentum = row.dataset.momentum || '';
+      const matchText = !q || text.includes(q);
+      const matchFilter = activeFilter === 'all' || momentum === activeFilter;
+      return matchText && matchFilter;
+    });
+    currentPage = 1;
+    updatePagination();
+  }
+
+  input?.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilter, 150);
+  });
+
   pills.forEach(pill => {
     pill.addEventListener('click', () => {
       pills.forEach(p => p.classList.remove('active'));
@@ -172,4 +211,24 @@ function repoUrl(r: any): string {
       applyFilter();
     });
   });
+
+  prevBtn?.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updatePagination();
+      window.scrollTo({ top: 350, behavior: 'smooth' });
+    }
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    const totalPages = Math.ceil(filteredRows.length / pageSize) || 1;
+    if (currentPage < totalPages) {
+      currentPage++;
+      updatePagination();
+      window.scrollTo({ top: 350, behavior: 'smooth' });
+    }
+  });
+
+  // Initial render — show only page 1
+  updatePagination();
 </script>

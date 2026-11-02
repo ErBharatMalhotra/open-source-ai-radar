@@ -23,16 +23,18 @@ function scoreClass(s: number): string {
   return 'score-low';
 }
 function momentumState(v: number): string {
+  if (v >= 75) return 'breakout';
   if (v >= 60) return 'accelerating';
   if (v >= 40) return 'rising';
   if (v >= 20) return 'stable';
   return 'declining';
 }
 function momentumLabel(s: string): string {
-  return ({ accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' } as any)[s] || '—';
+  return ({ breakout: 'Breakout', accelerating: 'Accelerating', rising: 'Rising', stable: 'Stable', declining: 'Declining' } as any)[s] || '—';
 }
 function momentumIcon(s: string): string {
   const icons: Record<string, string> = {
+    breakout: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14l3-4 2 2 4-6 3 2"/><path d="M14 2v4h-4"/></svg>',
     accelerating: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14l4-6 3 3 5-7"/></svg>',
     rising: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14l3-4 3 2 6-8"/></svg>',
     stable: '<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="10" x2="15" y2="10"/></svg>',
@@ -73,18 +75,35 @@ function repoUrl(r: any): string {
   <div class="section">
     <div class="search-box" id="searchBox">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-      <input type="text" id="searchInput" placeholder="Search projects..." aria-label="Search projects" />
+      <input type="text" id="searchInput" placeholder="Search projects by name, description, topic, language..." aria-label="Search projects" />
     </div>
 
-    <div class="filters" id="filters">
+    <div class="filters" id="filters" style="margin-top:var(--sp-4);">
       <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="breakout">Breakout</button>
       <button class="filter-pill" data-filter="accelerating">Accelerating</button>
       <button class="filter-pill" data-filter="rising">Rising</button>
       <button class="filter-pill" data-filter="stable">Stable</button>
       <button class="filter-pill" data-filter="declining">Declining</button>
     </div>
 
-    <div id="resultCount" style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-3);">Showing all {repos.length.toString()} projects</div>
+    <div class="filters" style="margin-top:var(--sp-3); display:flex; flex-wrap:wrap; gap:var(--sp-2); align-items:center;">
+      <label style="display:inline-flex; align-items:center; gap:var(--sp-2); font-size:var(--text-xs); color:var(--text-muted); background:var(--bg-surface); padding:var(--sp-1) var(--sp-3); border-radius:var(--radius); border:1px solid var(--border);">
+        <span>Language:</span>
+        <select id="languageSelect" style="background:transparent; color:var(--text); border:none; font-size:var(--text-xs); outline:none; cursor:pointer;">
+          <option value="all" style="background:var(--bg-surface);">All</option>
+        </select>
+      </label>
+      <label style="display:inline-flex; align-items:center; gap:var(--sp-2); font-size:var(--text-xs); color:var(--text-muted); background:var(--bg-surface); padding:var(--sp-1) var(--sp-3); border-radius:var(--radius); border:1px solid var(--border);">
+        <span>License:</span>
+        <select id="licenseSelect" style="background:transparent; color:var(--text); border:none; font-size:var(--text-xs); outline:none; cursor:pointer;">
+          <option value="all" style="background:var(--bg-surface);">All</option>
+        </select>
+      </label>
+      <button id="clearFilters" class="filter-pill" style="cursor:pointer; display:none;">✕ Clear filters</button>
+    </div>
+
+    <div id="resultCount" style="font-size:var(--text-xs); color:var(--text-muted); margin-top:var(--sp-3);">Showing all {repos.length.toLocaleString()} projects (100 per page)</div>
 
     <div style="margin-top:var(--sp-4);">
       <div class="table-wrap">
@@ -106,7 +125,7 @@ function repoUrl(r: any): string {
               const state = momentumState(r.velocity || 0);
               const name = r.full_name || r.repo_full_name || '';
               return (
-                <tr class="repo-row" data-search={`${name} ${r.description || ''} ${r.language || ''} ${r.category || ''}`.toLowerCase()} data-momentum={state}>
+                <tr class="repo-row" data-search={`${name} ${r.description || ''} ${r.language || ''} ${r.category || ''}`.toLowerCase()} data-momentum={state} data-language={r.language || ''} data-license={r.license || ''}>
                   <td style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted);">{i + 1}</td>
                   <td>
                     <a href={repoUrl(r)} style="display:flex; align-items:center; gap:var(--sp-3); font-weight:600; color:var(--text); text-decoration:none;">
@@ -142,17 +161,43 @@ function repoUrl(r: any): string {
 <script>
   const input = document.getElementById('searchInput') as HTMLInputElement;
   const rows = Array.from(document.querySelectorAll('.repo-row')) as HTMLElement[];
-  const pills = document.querySelectorAll('.filter-pill');
+  const pills = document.querySelectorAll('.filter-pill[data-filter]');
   const countEl = document.getElementById('resultCount');
   const prevBtn = document.getElementById('prevBtn') as HTMLButtonElement;
   const nextBtn = document.getElementById('nextBtn') as HTMLButtonElement;
   const pageIndicator = document.getElementById('pageIndicator');
+  const languageSelect = document.getElementById('languageSelect') as HTMLSelectElement;
+  const licenseSelect = document.getElementById('licenseSelect') as HTMLSelectElement;
+  const clearBtn = document.getElementById('clearFilters') as HTMLButtonElement;
 
   let activeFilter = 'all';
+  let activeLanguage = 'all';
+  let activeLicense = 'all';
   let currentPage = 1;
   const pageSize = 100;
   let filteredRows = rows;
   let searchTimer: any;
+
+  // Dynamically populate language + license dropdowns with project counts
+  function populateSelect(select: HTMLSelectElement | null, attr: string) {
+    if (!select) return;
+    const counts = new Map<string, number>();
+    rows.forEach(r => {
+      const v = (r.dataset as any)[attr] || '';
+      if (!v || v === 'null' || v.toLowerCase() === 'none') return;
+      counts.set(v, (counts.get(v) || 0) + 1);
+    });
+    const sorted = Array.from(counts.entries()).sort((a, b) => b[1] - a[1]).slice(0, 30);
+    for (const [name, count] of sorted) {
+      const opt = document.createElement('option');
+      opt.value = name;
+      opt.textContent = `${name} (${count.toLocaleString()})`;
+      opt.style.background = 'var(--bg-surface)';
+      select.appendChild(opt);
+    }
+  }
+  populateSelect(languageSelect, 'language');
+  populateSelect(licenseSelect, 'license');
 
   function updatePagination() {
     const totalPages = Math.ceil(filteredRows.length / pageSize) || 1;
@@ -175,12 +220,14 @@ function repoUrl(r: any): string {
       nextBtn.style.pointerEvents = currentPage === totalPages ? 'none' : 'auto';
     }
 
+    const hasFilter = activeFilter !== 'all' || activeLanguage !== 'all' || activeLicense !== 'all' || !!(input?.value || '').trim();
+    if (clearBtn) clearBtn.style.display = hasFilter ? 'inline-block' : 'none';
+
     if (countEl) {
       const total = rows.length;
-      const q = (input?.value || '').toLowerCase().trim();
-      const showing = activeFilter === 'all' && !q
-        ? `Showing all ${total.toLocaleString()} projects (100 per page)`
-        : `Showing ${filteredRows.length.toLocaleString()} of ${total.toLocaleString()} projects`;
+      const showing = hasFilter
+        ? `Showing ${filteredRows.length.toLocaleString()} of ${total.toLocaleString()} projects`
+        : `Showing all ${total.toLocaleString()} projects (100 per page)`;
       countEl.textContent = showing;
     }
   }
@@ -190,9 +237,13 @@ function repoUrl(r: any): string {
     filteredRows = rows.filter(row => {
       const text = row.dataset.search || '';
       const momentum = row.dataset.momentum || '';
+      const lang = row.dataset.language || '';
+      const lic = row.dataset.license || '';
       const matchText = !q || text.includes(q);
-      const matchFilter = activeFilter === 'all' || momentum === activeFilter;
-      return matchText && matchFilter;
+      const matchMomentum = activeFilter === 'all' || momentum === activeFilter;
+      const matchLang = activeLanguage === 'all' || lang === activeLanguage;
+      const matchLic = activeLicense === 'all' || lic === activeLicense;
+      return matchText && matchMomentum && matchLang && matchLic;
     });
     currentPage = 1;
     updatePagination();
@@ -210,6 +261,19 @@ function repoUrl(r: any): string {
       activeFilter = (pill as HTMLElement).dataset.filter || 'all';
       applyFilter();
     });
+  });
+
+  languageSelect?.addEventListener('change', () => { activeLanguage = languageSelect.value; applyFilter(); });
+  licenseSelect?.addEventListener('change', () => { activeLicense = licenseSelect.value; applyFilter(); });
+  clearBtn?.addEventListener('click', () => {
+    if (input) input.value = '';
+    if (languageSelect) languageSelect.value = 'all';
+    if (licenseSelect) licenseSelect.value = 'all';
+    activeLanguage = 'all';
+    activeLicense = 'all';
+    activeFilter = 'all';
+    pills.forEach(p => p.classList.toggle('active', (p as HTMLElement).dataset.filter === 'all'));
+    applyFilter();
   });
 
   prevBtn?.addEventListener('click', () => {

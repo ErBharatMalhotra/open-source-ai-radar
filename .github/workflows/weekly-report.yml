@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,8 +52,8 @@ jobs:
 
       - name: Commit report and data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Bharat Malhotra"
+          git config user.email "mr.bharatmalhotra@gmail.com"
           git add reports/ data/exports/ -f
           git diff --staged --quiet || git commit -m "chore: weekly report $(date +'%Y-W%W') [skip ci]"
           git push || echo "Push failed"

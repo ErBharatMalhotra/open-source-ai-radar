@@ -549,6 +549,23 @@ def export_api(db_path: str = "data/radar.db", out_dir: str = "data/exports/api"
         api = PublicAPI(db, out_dir)
         counts = api.generate_all()
         print(f"Generated API endpoints: {counts}")
+        
+        # Mirror exports to API folder so all documented endpoints exist under /api/
+        import shutil
+        api_dir = Path(out_dir)
+        exports_dir = api_dir.parent
+        for fname in ["trends.json", "category-intelligence.json", "health.json"]:
+            src = exports_dir / fname
+            if src.exists():
+                shutil.copy2(src, api_dir / fname)
+        for dname in ["history", "projects"]:
+            src = exports_dir / dname
+            if src.exists():
+                dest = api_dir / dname
+                if dest.exists():
+                    shutil.rmtree(dest)
+                shutil.copytree(src, dest)
+        print("Mirrored trends, category-intelligence, health, history, and projects to /api/")
     except Exception as e:
         print(f"Warning: Could not generate API: {e}")
 

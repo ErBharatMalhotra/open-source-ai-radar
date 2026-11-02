@@ -2,6 +2,8 @@
 
 > Discover what is becoming important before everyone else does.
 
+![Open Source AI Radar](docs/assets/radar-screenshot.png)
+
 Open Source AI Radar is a **continuously updated intelligence platform** that discovers, analyzes, scores, and tracks emerging open-source AI projects on GitHub.
 
 Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (Impact, Velocity, Health) to find projects that are *becoming* important — not just ones that already are.
@@ -37,10 +39,12 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 If your repo is tracked, grab a live badge for your README:
 
 ```markdown
-![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)
+[![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/OWNER/REPO/)
 ```
 
-![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg)
+Replace `OWNER__REPO` with your GitHub owner and repo joined by two underscores (e.g. `BerriAI__litellm`), and `OWNER/REPO` with the slash form.
+
+[![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/BerriAI/litellm/)
 
 More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
 
@@ -378,6 +382,14 @@ uv run python scripts/export.py
 
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — System design, data flow, rate limits
 - [docs/SCALING.md](docs/SCALING.md) — Roadmap from 5K to 500K repositories
+
+---
+
+## Support & Contact
+
+- **Bug reports / feature requests:** [Open an issue](https://github.com/ErBharatMalhotra/open-source-ai-radar/issues)
+- **Get your project tracked:** [Submit a repo](https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new?template=submit-repo.yml)
+- **Email:** mr.bharatmalhotra@gmail.com
 
 ---
 

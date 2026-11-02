@@ -123,7 +123,7 @@ function render(): void {
   }
 
   const header = `<tr><th></th>${picked
-    .map((p) => `<th><a href="${SITE_BASE}project/${p.full_name}" style="color:var(--accent); text-decoration:none;">${p.full_name}</a></th>`)
+    .map((p) => `<th><a href="${import.meta.env.BASE_URL}project/${p.full_name}" style="color:var(--accent); text-decoration:none;">${p.full_name}</a></th>`)
     .join("")}</tr>`;
 
   const body = [

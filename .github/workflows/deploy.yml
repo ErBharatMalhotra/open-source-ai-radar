@@ -57,10 +57,17 @@ jobs:
 
       - name: Copy API files to dist
         run: |
+          mkdir -p dist/api
           if [ -d data/exports/api ]; then
-            cp -r data/exports/api dist/api
+            cp -r data/exports/api/* dist/api/
             echo "Copied API files to dist/api"
           fi
+          [ -f data/exports/trends.json ] && cp data/exports/trends.json dist/api/
+          [ -f data/exports/category-intelligence.json ] && cp data/exports/category-intelligence.json dist/api/
+          [ -f data/exports/health.json ] && cp data/exports/health.json dist/api/
+          [ -d data/exports/history ] && cp -r data/exports/history dist/api/
+          [ -d data/exports/projects ] && cp -r data/exports/projects dist/api/
+          echo "Ensured all documented API endpoints exist in dist/api"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

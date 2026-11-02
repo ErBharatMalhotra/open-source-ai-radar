@@ -103,6 +103,12 @@ function buildChart(points: Point[], color: string): { svg: string; first: Point
   const area = `M${pad},${h - pad} L${coords.map((c) => `${c.x.toFixed(1)},${c.y.toFixed(1)}`).join(' L')} L${w - pad},${h - pad} Z`;
   const lastPt = coords[coords.length - 1];
   const gid = `g-${color.replace(/[^a-z]/gi, '')}`;
+  const circles = coords.map((c, i) => {
+    const pt = points[i];
+    const dt = fmtDate(pt.t);
+    const val = Number.isInteger(pt.v) ? pt.v.toLocaleString() : pt.v.toFixed(1);
+    return `<circle cx="${c.x.toFixed(1)}" cy="${c.y.toFixed(1)}" r="4" fill="${color}" opacity="${i === coords.length - 1 ? 1 : 0.4}" style="cursor:pointer;"><title>${dt}: ${val}</title></circle>`;
+  }).join('');
   const svg = `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="width:100%; height:auto; display:block;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trend chart">
     <defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="${color}" stop-opacity="0.25"/>
@@ -110,7 +116,7 @@ function buildChart(points: Point[], color: string): { svg: string; first: Point
     </linearGradient></defs>
     <path d="${area}" fill="url(#${gid})"/>
     <polyline points="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="${lastPt.x.toFixed(1)}" cy="${lastPt.y.toFixed(1)}" r="3.5" fill="${color}"/>
+    ${circles}
   </svg>`;
   return { svg, first: points[0], last: points[points.length - 1] };
 }
@@ -263,6 +269,68 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
       {project.why_trending && (
         <p style="margin-top:var(--sp-4); padding-top:var(--sp-4); border-top:1px solid var(--border-subtle); color:var(--text-secondary); line-height:var(--leading-relaxed); font-size:var(--text-sm);"><strong style="color:var(--text);">Trend signal:</strong> {project.why_trending}</p>
       )}
+    </div>
+  </section>
+
+  {/* Embed & Share Section */}
+  <section class="section" style="margin-top:var(--sp-6);">
+    <div class="card" style="padding:var(--sp-6);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--sp-4); margin-bottom:var(--sp-4);">
+        <div>
+          <h2 style="font-size:var(--text-lg); font-weight:700;">Share &amp; Embed</h2>
+          <p style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">Display live Radar metrics in your documentation, website, or social profiles.</p>
+        </div>
+        <div style="display:flex; gap:var(--sp-2);">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${owner}/${repo} on Open Source AI Radar — Radar Score: ${project.radar_score?.toFixed(1) || ''} ★`)}&url=${encodeURIComponent(`https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="filter-pill"
+            style="text-decoration:none; font-size:var(--text-xs); display:inline-flex; align-items:center; gap:6px;"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Share on X
+          </a>
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="filter-pill"
+            style="text-decoration:none; font-size:var(--text-xs); display:inline-flex; align-items:center; gap:6px;"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr; gap:var(--sp-4);">
+        <div>
+          <label style="font-size:var(--text-xs); color:var(--text-muted); font-weight:600; display:block; margin-bottom:var(--sp-1);">Interactive Iframe Widget</label>
+          <div style="display:flex; gap:var(--sp-2);">
+            <input
+              type="text"
+              readonly
+              value={`<iframe src="https://erbharatmalhotra.github.io/open-source-ai-radar/embed/${owner}/${repo}" width="360" height="130" frameborder="0"></iframe>`}
+              style="width:100%; font-family:var(--font-mono); font-size:var(--text-xs); background:var(--bg-surface); color:var(--text-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp-2) var(--sp-3);"
+              onclick="this.select()"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label style="font-size:var(--text-xs); color:var(--text-muted); font-weight:600; display:block; margin-bottom:var(--sp-1);">README Markdown Badge</label>
+          <div style="display:flex; gap:var(--sp-2);">
+            <input
+              type="text"
+              readonly
+              value={`[![Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badge/${owner}__${repo}.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo})`}
+              style="width:100%; font-family:var(--font-mono); font-size:var(--text-xs); background:var(--bg-surface); color:var(--text-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp-2) var(--sp-3);"
+              onclick="this.select()"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

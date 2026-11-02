@@ -1,0 +1,197 @@
+---
+import { readFileSync, readdirSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  const projectsDir = join(process.cwd(), '..', 'data', 'exports', 'projects');
+  try {
+    const files = readdirSync(projectsDir).filter(f => f.endsWith('.json'));
+    return files.map(f => {
+      const name = f.replace('.json', '');
+      const [owner, repo] = name.split('__');
+      return { params: { owner, repo } };
+    });
+  } catch (e) {
+    return [];
+  }
+}
+
+const { owner, repo } = Astro.params;
+const base = import.meta.env.BASE_URL;
+
+const projectKey = `${owner}__${repo}`;
+const projectPath = join(process.cwd(), '..', 'data', 'exports', 'projects', `${projectKey}.json`);
+
+let project: any = null;
+try { project = JSON.parse(readFileSync(projectPath, 'utf-8')); } catch {}
+
+if (!project) {
+  return new Response(null, { status: 404, statusText: 'Not found' });
+}
+
+function fmt(n: number): string {
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
+  return n.toString();
+}
+
+function scoreClass(s: number): string {
+  if (s >= 75) return 'score-high';
+  if (s >= 50) return 'score-mid';
+  return 'score-low';
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{owner}/{repo} — Open Source AI Radar Widget</title>
+  <style>
+    :root {
+      --bg: #0e1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --green: #3fb950;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: transparent;
+      font-family: var(--font);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 6px;
+    }
+    .widget-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: border-color 0.2s;
+    }
+    .widget-card:hover {
+      border-color: var(--accent);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .title-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+    }
+    .avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .name {
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .score-badge {
+      background: #238636;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .score-high { background: #238636; }
+    .score-mid { background: #d29922; }
+    .score-low { background: #da3633; }
+    .stats {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 8px 0;
+    }
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .stat-val {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 6px;
+    }
+    .powered {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <a class="widget-card" href={`${base}project/${owner}/${repo}`} target="_blank" rel="noopener">
+    <div class="header">
+      <div class="title-group">
+        {project.owner_avatar && <img class="avatar" src={project.owner_avatar} alt="" referrerpolicy="no-referrer" />}
+        <span class="name">{owner}/{repo}</span>
+      </div>
+      <span class={`score-badge ${scoreClass(project.radar_score || 0)}`}>
+        ★ {project.radar_score?.toFixed(1) || '—'}
+      </span>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span>Stars:</span>
+        <span class="stat-val">{fmt(project.stars || 0)}</span>
+      </div>
+      <div class="stat-item">
+        <span>Velocity:</span>
+        <span class="stat-val">+{project.velocity?.toFixed(0) || '0'}</span>
+      </div>
+      {project.category && (
+        <div class="stat-item" style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+          <span>{project.category}</span>
+        </div>
+      )}
+    </div>
+
+    <div class="footer">
+      <span>Refreshed 6x Daily</span>
+      <span class="powered">Open Source AI Radar ↗</span>
+    </div>
+  </a>
+</body>
+</html>

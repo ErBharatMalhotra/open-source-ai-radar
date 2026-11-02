@@ -140,7 +140,63 @@ function render(): void {
     cell("Last Push", picked.map((p) => (p.pushed_at ? new Date(p.pushed_at).toLocaleDateString() : "—"))),
   ].join("");
 
-  el.innerHTML = `<div class="card" style="padding:var(--sp-4); overflow:auto;">
+  const colors = ["var(--accent, #6366f1)", "var(--green, #10b981)", "#f59e0b"];
+
+  const chartBars = [
+    { label: "Radar Score", key: "radar_score", max: 100 },
+    { label: "Velocity", key: "velocity", max: 100 },
+    { label: "Impact", key: "impact", max: 100 },
+    { label: "Health", key: "health", max: 100 },
+    { label: "Stars", key: "stars", max: Math.max(...picked.map((p) => p.stars || 1)) },
+  ];
+
+  const chartHtml = `
+    <div class="card" style="padding:var(--sp-6); margin-bottom:var(--sp-6);">
+      <h3 style="font-size:var(--text-md); font-weight:700; margin-bottom:var(--sp-4);">Metric Comparison Overlay</h3>
+      <div style="display:flex; gap:var(--sp-6); margin-bottom:var(--sp-4); font-size:var(--text-xs);">
+        ${picked
+          .map(
+            (p, i) =>
+              `<div style="display:flex; align-items:center; gap:6px;"><span style="width:10px; height:10px; border-radius:2px; background:${colors[i]};"></span><strong>${p.full_name}</strong></div>`,
+          )
+          .join("")}
+      </div>
+      <div style="display:grid; gap:var(--sp-4);">
+        ${chartBars
+          .map((bar) => {
+            return `
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:var(--text-xs); color:var(--text-muted); margin-bottom:4px;">
+                  <span>${bar.label}</span>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(${picked.length}, 1fr); gap:8px;">
+                  ${picked
+                    .map((p, i) => {
+                      const raw = (p as any)[bar.key] || 0;
+                      const pct = Math.min(100, Math.max(4, (raw / bar.max) * 100));
+                      const disp = bar.key === "stars" ? fmt(raw) : Number(raw).toFixed(1);
+                      return `
+                        <div>
+                          <div style="display:flex; justify-content:space-between; font-size:11px; margin-bottom:2px;">
+                            <span style="color:${colors[i]}; font-weight:600;">${disp}</span>
+                          </div>
+                          <div style="background:var(--border-subtle); height:8px; border-radius:4px; overflow:hidden;">
+                            <div style="background:${colors[i]}; width:${pct}%; height:100%; border-radius:4px; transition:width 0.4s ease;"></div>
+                          </div>
+                        </div>
+                      `;
+                    })
+                    .join("")}
+                </div>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+    </div>
+  `;
+
+  el.innerHTML = `${chartHtml}<div class="card" style="padding:var(--sp-4); overflow:auto;">
     <table class="cmp-table">${header}${body}</table>
   </div>`;
 }

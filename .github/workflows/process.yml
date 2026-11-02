@@ -81,6 +81,11 @@ jobs:
       - name: Refresh README live stats
         run: uv run python scripts/update_readme_stats.py
 
+      - name: Update GitHub repo description
+        env:
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN || secrets.GITHUB_TOKEN }}
+        run: uv run python scripts/update_repo_description.py || true
+
       - name: Save database
         uses: actions/cache/save@v4
         with:

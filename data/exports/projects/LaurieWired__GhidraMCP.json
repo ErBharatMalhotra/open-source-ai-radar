@@ -5,8 +5,8 @@
   "language": "Java",
   "license": "Apache-2.0",
   "topics": [],
-  "stars": 11729,
-  "forks": 1260,
+  "stars": 11732,
+  "forks": 1261,
   "open_issues": 57,
   "watchers": 79,
   "created_at": "2025-03-23T05:36:55Z",
@@ -15,22 +15,77 @@
   "owner_avatar": "https://github.com/LaurieWired.png",
   "radar_score": 70.11,
   "impact": 91.82,
-  "velocity": 55.04,
+  "velocity": 55.05,
   "health": 56.46,
-  "global_percentile": 25.86,
+  "global_percentile": 18.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP Server for Ghidra",
   "maturity": "Unknown",
   "stars_7d": 154,
-  "stars_30d": 637,
-  "stars_90d": 637,
+  "stars_30d": 640,
+  "stars_90d": 640,
   "star_growth_rate_7d": 22.0,
-  "star_growth_rate_30d": 30.333333333333332,
-  "star_growth_acceleration": 0.7252747252747253,
-  "forks_7d": 39,
-  "forks_30d": 112,
+  "star_growth_rate_30d": 30.476190476190474,
+  "star_growth_acceleration": 0.721875,
+  "forks_7d": 38,
+  "forks_30d": 113,
   "days_since_last_push": 23,
   "freshness_score": 0.794533602503334,
-  "snapshot_count": 79
+  "snapshot_count": 80,
+  "authenticity": {
+    "organic_confidence": 84.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "1,261 forks for 11,732 stars (10.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 81.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 74 stars (13 forks, 2.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 59.3,
+        "weight": 0.12,
+        "detail": "57 open issues for 11,732 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.0,
+        "weight": 0.1,
+        "detail": "Last push 23 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 74 stars (13 forks, 2.5x the daily average).",
+      "Maintenance cadence: Last push 23 days ago.",
+      "Fork-to-star ratio: 1,261 forks for 11,732 stars (10.7%)."
+    ],
+    "red_flags": []
+  }
 }

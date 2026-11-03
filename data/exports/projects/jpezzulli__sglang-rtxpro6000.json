@@ -22,5 +22,60 @@
   "sub_category": "gpu management",
   "summary": "Optimized SGLang runtime for Qwen3.8-27B FP8 with DFlash2 and Qwen3.8 Flash-Next NVFP4 with FR-Spec on one NVIDIA RTX PRO 6000 Blackwell 96 GB GPU (SM120): 524K context, HiCache and NIXL.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 95.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.1,
+        "weight": 0.22,
+        "detail": "27 forks for 188 stars (14.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 83.9,
+        "weight": 0.12,
+        "detail": "3 open issues for 188 stars (1.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 3 open issues for 188 stars (1.6%).",
+      "Fork-to-star ratio: 27 forks for 188 stars (14.4%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

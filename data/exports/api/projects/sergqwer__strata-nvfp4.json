@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Strata fork: Qwen3.8-Flash-Next 125B MoE in NVFP4 on one RTX 20-50 card (12 GB+) and 64 GB of RAM or more. Setup installs our GPTQ quants (huihui abliterated, OrcaRouter) from Hugging Face. CPU experts on AVX-512 or AVX2 (+AVX-VNNI), all experts in RAM from 92 GB, a low-RAM mode below, vision, W4A8 ",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 98.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "23 forks for 217 stars (10.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "12 open issues for 217 stars (5.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 94.1,
+        "weight": 0.1,
+        "detail": "Last push 9 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 9 days ago.",
+      "Fork-to-star ratio: 23 forks for 217 stars (10.6%).",
+      "Issue engagement: 12 open issues for 217 stars (5.5%)."
+    ],
+    "red_flags": []
+  }
 }

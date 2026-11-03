@@ -4,33 +4,103 @@
   "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 185752,
-  "forks": 18886,
-  "open_issues": 2639,
+  "topics": [
+    "llama",
+    "llm",
+    "llms",
+    "go",
+    "golang",
+    "ollama",
+    "mistral",
+    "gemma",
+    "deepseek",
+    "qwen",
+    "gpt-oss",
+    "glm",
+    "minimax",
+    "muse"
+  ],
+  "stars": 185769,
+  "forks": 18888,
+  "open_issues": 2641,
   "watchers": 1023,
   "created_at": "2023-06-26T19:39:32Z",
   "pushed_at": "2026-11-03T06:11:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ollama.png",
   "radar_score": 79.36,
-  "impact": 99.78,
+  "impact": 99.79,
   "velocity": 67.17,
   "health": 63.75,
-  "global_percentile": 94.14,
+  "global_percentile": 93.0,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
   "maturity": "Unknown",
-  "stars_7d": 926,
-  "stars_30d": 2965,
-  "stars_90d": 2965,
-  "star_growth_rate_7d": 132.28571428571428,
-  "star_growth_rate_30d": 134.77272727272728,
-  "star_growth_acceleration": 0.981546615273428,
-  "forks_7d": 291,
+  "stars_7d": 912,
+  "stars_30d": 2930,
+  "stars_90d": 2930,
+  "star_growth_rate_7d": 130.28571428571428,
+  "star_growth_rate_30d": 139.52380952380952,
+  "star_growth_acceleration": 0.9337883959044369,
+  "forks_7d": 285,
   "forks_30d": 663,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 293
+  "snapshot_count": 294,
+  "authenticity": {
+    "organic_confidence": 86.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "18,888 forks for 185,769 stars (10.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 70.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 406 stars (53 forks, 3.4x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 81.3,
+        "weight": 0.12,
+        "detail": "2,641 open issues for 185,769 stars (1.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 2,641 open issues for 185,769 stars (1.4%).",
+      "Fork-to-star ratio: 18,888 forks for 185,769 stars (10.2%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

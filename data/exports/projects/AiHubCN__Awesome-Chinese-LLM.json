@@ -4,8 +4,15 @@
   "description": "\u6574\u7406\u5f00\u6e90\u7684\u4e2d\u6587\u5927\u8bed\u8a00\u6a21\u578b\uff0c\u4ee5\u89c4\u6a21\u8f83\u5c0f\u3001\u53ef\u79c1\u6709\u5316\u90e8\u7f72\u3001\u8bad\u7ec3\u6210\u672c\u8f83\u4f4e\u7684\u6a21\u578b\u4e3a\u4e3b\uff0c\u5305\u62ec\u5e95\u5ea7\u6a21\u578b\uff0c\u5782\u76f4\u9886\u57df\u5fae\u8c03\u53ca\u5e94\u7528\uff0c\u6570\u636e\u96c6\u4e0e\u6559\u7a0b\u7b49\u3002",
   "language": null,
   "license": null,
-  "topics": [],
-  "stars": 22775,
+  "topics": [
+    "llm",
+    "nlp",
+    "chatglm",
+    "chinese",
+    "llama",
+    "awesome-lists"
+  ],
+  "stars": 22776,
   "forks": 2142,
   "open_issues": 13,
   "watchers": 242,
@@ -13,24 +20,79 @@
   "pushed_at": "2026-05-10T05:03:06Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/AiHubCN.png",
-  "radar_score": 61.8,
-  "impact": 95.55,
-  "velocity": 46.56,
-  "health": 29.13,
-  "global_percentile": 1.29,
+  "radar_score": 61.81,
+  "impact": 95.57,
+  "velocity": 46.59,
+  "health": 29.11,
+  "global_percentile": 1.57,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u6574\u7406\u5f00\u6e90\u7684\u4e2d\u6587\u5927\u8bed\u8a00\u6a21\u578b\uff0c\u4ee5\u89c4\u6a21\u8f83\u5c0f\u3001\u53ef\u79c1\u6709\u5316\u90e8\u7f72\u3001\u8bad\u7ec3\u6210\u672c\u8f83\u4f4e\u7684\u6a21\u578b\u4e3a\u4e3b\uff0c\u5305\u62ec\u5e95\u5ea7\u6a21\u578b\uff0c\u5782\u76f4\u9886\u57df\u5fae\u8c03\u53ca\u5e94\u7528\uff0c\u6570\u636e\u96c6\u4e0e\u6559\u7a0b\u7b49\u3002",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": 3,
+  "stars_7d": 4,
+  "stars_30d": 6,
   "stars_90d": 19,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": 0.1,
-  "star_growth_acceleration": 4.285714285714286,
-  "forks_7d": 1,
-  "forks_30d": 8,
-  "days_since_last_push": 176,
-  "freshness_score": 0.17204486382305054,
-  "snapshot_count": 119
+  "star_growth_rate_7d": 0.5714285714285714,
+  "star_growth_rate_30d": 0.20689655172413793,
+  "star_growth_acceleration": 2.761904761904762,
+  "forks_7d": 3,
+  "forks_30d": 9,
+  "days_since_last_push": 177,
+  "freshness_score": 0.17033298882540943,
+  "snapshot_count": 120,
+  "authenticity": {
+    "organic_confidence": 59.8,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.9,
+        "weight": 0.22,
+        "detail": "2,142 forks for 22,776 stars (9.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 45.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 6 stars (2 forks, 6.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 30.7,
+        "weight": 0.12,
+        "detail": "13 open issues for 22,776 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 45.8,
+        "weight": 0.1,
+        "detail": "Last push 177 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,142 forks for 22,776 stars (9.4%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 13 open issues for 22,776 stars (0.1%)."
+    ]
+  }
 }

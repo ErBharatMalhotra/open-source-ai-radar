@@ -22,5 +22,60 @@
   "sub_category": "ide extension",
   "summary": "Open-source, bilingual AI video-prompt skill \u2014 rewrite ideas into model-ready text-to-video prompts. A portable Agent Skill (Claude Code, Codex, OpenClaw, Hermes); generate via Atlas Cloud \u2014 Seedance 2.0, Kling, Veo, Hailuo, Wan, Vidu, Gemini Omni, Grok Imagine.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 69.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.7,
+        "weight": 0.22,
+        "detail": "26 forks for 156 stars (16.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 156 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 56.4,
+        "weight": 0.1,
+        "detail": "Last push 139 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 26 forks for 156 stars (16.7%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 156 stars (0.0%)."
+    ]
+  }
 }

@@ -22,5 +22,60 @@
   "sub_category": "benchmark",
   "summary": "DeepSeek V4 \u00d7 J-Space capability realization report \u2014 benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 81.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 86.0,
+        "weight": 0.22,
+        "detail": "63 forks for 1,031 stars (6.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 76.0,
+        "weight": 0.12,
+        "detail": "11 open issues for 1,031 stars (1.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 76.5,
+        "weight": 0.1,
+        "detail": "Last push 64 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 11 open issues for 1,031 stars (1.1%).",
+      "Maintenance cadence: Last push 64 days ago.",
+      "Fork-to-star ratio: 63 forks for 1,031 stars (6.1%)."
+    ],
+    "red_flags": []
+  }
 }

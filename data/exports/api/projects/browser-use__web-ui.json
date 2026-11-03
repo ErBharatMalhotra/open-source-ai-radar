@@ -4,7 +4,12 @@
   "description": "\ud83d\udda5\ufe0f Run AI Agent in your browser.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai-agent",
+    "browser-automation",
+    "browser-use-box",
+    "cloud-browser"
+  ],
   "stars": 16644,
   "forks": 2765,
   "open_issues": 270,
@@ -13,24 +18,79 @@
   "pushed_at": "2026-09-25T03:56:21Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/browser-use.png",
-  "radar_score": 70.97,
-  "impact": 94.49,
-  "velocity": 57.0,
-  "health": 52.89,
-  "global_percentile": 21.71,
+  "radar_score": 70.91,
+  "impact": 94.5,
+  "velocity": 56.99,
+  "health": 52.68,
+  "global_percentile": 22.14,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "\ud83d\udda5\ufe0f Run AI Agent in your browser.",
   "maturity": "Unknown",
-  "stars_7d": 18,
-  "stars_30d": 34,
-  "stars_90d": 64,
-  "star_growth_rate_7d": 2.5714285714285716,
-  "star_growth_rate_30d": 1.1333333333333333,
-  "star_growth_acceleration": 2.2689075630252105,
-  "forks_7d": 0,
+  "stars_7d": 20,
+  "stars_30d": 36,
+  "stars_90d": 66,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 1.2,
+  "star_growth_acceleration": 2.380952380952381,
+  "forks_7d": -2,
   "forks_30d": -2,
-  "days_since_last_push": 38,
-  "freshness_score": 0.6838614092123558,
-  "snapshot_count": 160
+  "days_since_last_push": 39,
+  "freshness_score": 0.6770568744981647,
+  "snapshot_count": 161,
+  "authenticity": {
+    "organic_confidence": 80.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.7,
+        "weight": 0.22,
+        "detail": "2,765 forks for 16,644 stars (16.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 60.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.2x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 84.3,
+        "weight": 0.12,
+        "detail": "270 open issues for 16,644 stars (1.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 82.8,
+        "weight": 0.1,
+        "detail": "Last push 39 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 39 days ago.",
+      "Issue engagement: 270 open issues for 16,644 stars (1.6%).",
+      "Fork-to-star ratio: 2,765 forks for 16,644 stars (16.6%)."
+    ],
+    "red_flags": []
+  }
 }

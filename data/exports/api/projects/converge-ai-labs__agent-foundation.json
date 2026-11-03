@@ -22,5 +22,60 @@
   "sub_category": "local runner",
   "summary": "An open-source library and self-hosted platform for building and running your own agent systems\u2014with managed agents, memory, sandboxes, computer use, and durable execution. Commercial Friendly. Built With Love \ud83d\udc9c @converge-ai-labs.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "20 forks for 172 stars (11.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "13 open issues for 172 stars (7.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 87.6,
+        "weight": 0.1,
+        "detail": "Last push 24 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 24 days ago.",
+      "Fork-to-star ratio: 20 forks for 172 stars (11.6%).",
+      "Issue engagement: 13 open issues for 172 stars (7.6%)."
+    ],
+    "red_flags": []
+  }
 }

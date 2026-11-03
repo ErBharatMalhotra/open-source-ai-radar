@@ -4,8 +4,19 @@
   "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D avatar running locally across platforms",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 14555,
+  "topics": [
+    "ai-vtuber",
+    "ai-waifu",
+    "ai",
+    "neuro-sama",
+    "chatbots",
+    "live2d",
+    "live2d-web",
+    "llm",
+    "ollama",
+    "ai-companion"
+  ],
+  "stars": 14560,
   "forks": 1749,
   "open_issues": 111,
   "watchers": 106,
@@ -13,24 +24,77 @@
   "pushed_at": "2026-05-15T07:18:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Open-LLM-VTuber.png",
-  "radar_score": 63.66,
+  "radar_score": 63.65,
   "impact": 93.36,
   "velocity": 48.28,
-  "health": 37.67,
-  "global_percentile": 3.29,
+  "health": 37.64,
+  "global_percentile": 3.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
   "maturity": "Unknown",
-  "stars_7d": 147,
-  "stars_30d": 511,
-  "stars_90d": 511,
-  "star_growth_rate_7d": 21.0,
-  "star_growth_rate_30d": 21.291666666666668,
-  "star_growth_acceleration": 0.9863013698630136,
-  "forks_7d": 15,
-  "forks_30d": 63,
-  "days_since_last_push": 171,
-  "freshness_score": 0.1808657926171221,
-  "snapshot_count": 249
+  "stars_7d": 159,
+  "stars_30d": 535,
+  "stars_90d": 535,
+  "star_growth_rate_7d": 22.714285714285715,
+  "star_growth_rate_30d": 22.291666666666668,
+  "star_growth_acceleration": 1.018958611481976,
+  "forks_7d": 17,
+  "forks_30d": 65,
+  "days_since_last_push": 172,
+  "freshness_score": 0.17906614791149322,
+  "snapshot_count": 250,
+  "authenticity": {
+    "organic_confidence": 69.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.6,
+        "weight": 0.22,
+        "detail": "1,749 forks for 14,560 stars (12.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 52.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 96 stars (16 forks, 4.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 67.9,
+        "weight": 0.12,
+        "detail": "111 open issues for 14,560 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 47.2,
+        "weight": 0.1,
+        "detail": "Last push 172 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 1,749 forks for 14,560 stars (12.0%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -4,8 +4,23 @@
   "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 39530,
+  "topics": [
+    "agent",
+    "vlm",
+    "vision",
+    "computer-use",
+    "mcp",
+    "mcp-server",
+    "gui-operator",
+    "browser-use",
+    "gui-agent",
+    "multimodal",
+    "tars",
+    "ui-tars",
+    "agent-tars",
+    "cowork"
+  ],
+  "stars": 39532,
   "forks": 4021,
   "open_issues": 358,
   "watchers": 277,
@@ -17,20 +32,74 @@
   "impact": 97.53,
   "velocity": 58.59,
   "health": 55.93,
-  "global_percentile": 46.86,
+  "global_percentile": 36.57,
   "category": "Multimodal AI",
   "sub_category": "omni-modal",
   "summary": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
   "maturity": "Unknown",
-  "stars_7d": 137,
-  "stars_30d": 313,
-  "stars_90d": 313,
-  "star_growth_rate_7d": 19.571428571428573,
-  "star_growth_rate_30d": 12.52,
-  "star_growth_acceleration": 1.5632131446827935,
+  "stars_7d": 139,
+  "stars_30d": 314,
+  "stars_90d": 314,
+  "star_growth_rate_7d": 19.857142857142858,
+  "star_growth_rate_30d": 12.56,
+  "star_growth_acceleration": 1.58098271155596,
   "forks_7d": 25,
   "forks_30d": 52,
   "days_since_last_push": 25,
   "freshness_score": 0.7788007830714049,
-  "snapshot_count": 249
+  "snapshot_count": 250,
+  "authenticity": {
+    "organic_confidence": 84.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "4,021 forks for 39,532 stars (10.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 74.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 33 stars (10 forks, 3.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 72.2,
+        "weight": 0.12,
+        "detail": "358 open issues for 39,532 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 87.2,
+        "weight": 0.1,
+        "detail": "Last push 25 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 25 days ago.",
+      "Fork-to-star ratio: 4,021 forks for 39,532 stars (10.2%)."
+    ],
+    "red_flags": []
+  }
 }

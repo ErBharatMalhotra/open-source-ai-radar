@@ -5,7 +5,7 @@
   "language": "Go",
   "license": "MIT",
   "topics": [],
-  "stars": 9794,
+  "stars": 9796,
   "forks": 773,
   "open_issues": 16,
   "watchers": 115,
@@ -13,24 +13,79 @@
   "pushed_at": "2026-10-16T10:37:59Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/etcd-io.png",
-  "radar_score": 64.41,
-  "impact": 90.94,
+  "radar_score": 64.33,
+  "impact": 90.93,
   "velocity": 38.58,
-  "health": 58.12,
-  "global_percentile": 8.57,
+  "health": 57.83,
+  "global_percentile": 4.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An embedded key/value database for Go.",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": 26,
-  "stars_90d": 82,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": 0.8666666666666667,
-  "star_growth_acceleration": 0.49450549450549447,
+  "stars_7d": 6,
+  "stars_30d": 29,
+  "stars_90d": 83,
+  "star_growth_rate_7d": 0.8571428571428571,
+  "star_growth_rate_30d": 1.0357142857142858,
+  "star_growth_acceleration": 0.8275862068965516,
   "forks_7d": 3,
-  "forks_30d": 13,
-  "days_since_last_push": 17,
-  "freshness_score": 0.8436648165963837,
-  "snapshot_count": 108
+  "forks_30d": 14,
+  "days_since_last_push": 18,
+  "freshness_score": 0.835270211411272,
+  "snapshot_count": 109,
+  "authenticity": {
+    "organic_confidence": 80.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.4,
+        "weight": 0.22,
+        "detail": "773 forks for 9,796 stars (7.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 75.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 3 stars (0 forks, 3.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": 95.9,
+        "weight": 0.14,
+        "detail": "Weekly growth is 0.83x the monthly baseline."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 41.3,
+        "weight": 0.12,
+        "detail": "16 open issues for 9,796 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 90.2,
+        "weight": 0.1,
+        "detail": "Last push 18 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 3.0x the daily average).",
+      "Maintenance cadence: Last push 18 days ago.",
+      "Fork-to-star ratio: 773 forks for 9,796 stars (7.9%)."
+    ],
+    "red_flags": []
+  }
 }

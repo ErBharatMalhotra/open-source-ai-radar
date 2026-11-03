@@ -22,5 +22,59 @@
   "sub_category": "local runner",
   "summary": "Spotlight-style local search for everything you saved and forgot: GitHub stars, local files, images, and bookmarks. Privacy-first, no full-disk scanning, fully on-device.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 84.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 71.4,
+        "weight": 0.22,
+        "detail": "6 forks for 176 stars (3.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 96.6,
+        "weight": 0.12,
+        "detail": "7 open issues for 176 stars (4.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 7 open issues for 176 stars (4.0%).",
+      "Maintenance cadence: Last push 3 days ago."
+    ],
+    "red_flags": []
+  }
 }

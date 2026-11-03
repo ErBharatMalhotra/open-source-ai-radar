@@ -4,8 +4,23 @@
   "description": "Curso para aprender el lenguaje de programaci\u00f3n Python desde cero y para principiantes. 100 clases, 44 horas en v\u00eddeo, c\u00f3digo, proyectos y grupo de chat. Fundamentos, frontend, backend, testing, IA...",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 37955,
+  "topics": [
+    "fastapi",
+    "mongodb",
+    "python",
+    "python3",
+    "tutorial",
+    "chatgpt",
+    "chatgpt-api",
+    "gpt-3",
+    "gpt-4",
+    "openai",
+    "openai-api",
+    "backend",
+    "frontend",
+    "reflex"
+  ],
+  "stars": 37957,
   "forks": 2346,
   "open_issues": 20,
   "watchers": 506,
@@ -13,24 +28,81 @@
   "pushed_at": "2025-08-11T12:00:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mouredev.png",
-  "radar_score": 63.99,
-  "impact": 97.14,
-  "velocity": 47.97,
+  "radar_score": 64.02,
+  "impact": 97.13,
+  "velocity": 48.07,
   "health": 33.38,
-  "global_percentile": 3.57,
+  "global_percentile": 4.0,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "Curso para aprender el lenguaje de programaci\u00f3n Python desde cero y para principiantes. 100 clases, 44 horas en v\u00eddeo, c\u00f3digo, proyectos y grupo de chat. Fundamentos, frontend, backend, testing, IA...",
   "maturity": "Unknown",
   "stars_7d": 79,
-  "stars_30d": 284,
-  "stars_90d": 284,
+  "stars_30d": 289,
+  "stars_90d": 289,
   "star_growth_rate_7d": 11.285714285714286,
-  "star_growth_rate_30d": 10.518518518518519,
-  "star_growth_acceleration": 1.0729376257545271,
-  "forks_7d": 0,
+  "star_growth_rate_30d": 10.703703703703704,
+  "star_growth_acceleration": 1.0543746910528917,
+  "forks_7d": 1,
   "forks_30d": 6,
   "days_since_last_push": 448,
   "freshness_score": 0.011333413154667387,
-  "snapshot_count": 224
+  "snapshot_count": 225,
+  "authenticity": {
+    "organic_confidence": 69.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 86.3,
+        "weight": 0.22,
+        "detail": "2,346 forks for 37,957 stars (6.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 93.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 18 stars (-2 forks, 1.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 30.3,
+        "weight": 0.12,
+        "detail": "20 open issues for 37,957 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 448 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,346 forks for 37,957 stars (6.2%).",
+      "Burst pattern: Largest 24h jump was 18 stars (-2 forks, 1.7x the daily average)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 448 days ago.",
+      "Issue engagement: 20 open issues for 37,957 stars (0.1%)."
+    ]
+  }
 }

@@ -4,8 +4,15 @@
   "description": "A modern self-hosted music player.",
   "language": "TypeScript",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 10322,
+  "topics": [
+    "jellyfin",
+    "music-player",
+    "navidrome",
+    "self-hosted",
+    "subsonic",
+    "subsonic-client"
+  ],
+  "stars": 10323,
   "forks": 597,
   "open_issues": 284,
   "watchers": 43,
@@ -14,23 +21,78 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/jeffvli.png",
   "radar_score": 70.69,
-  "impact": 88.94,
+  "impact": 88.95,
   "velocity": 54.78,
   "health": 63.75,
-  "global_percentile": 29.29,
+  "global_percentile": 21.14,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "A modern self-hosted music player.",
   "maturity": "Unknown",
-  "stars_7d": 72,
-  "stars_30d": 264,
-  "stars_90d": 275,
-  "star_growth_rate_7d": 10.285714285714286,
-  "star_growth_rate_30d": 8.8,
-  "star_growth_acceleration": 1.1688311688311688,
+  "stars_7d": 74,
+  "stars_30d": 265,
+  "stars_90d": 271,
+  "star_growth_rate_7d": 10.571428571428571,
+  "star_growth_rate_30d": 8.833333333333334,
+  "star_growth_acceleration": 1.196765498652291,
   "forks_7d": 14,
-  "forks_30d": 50,
+  "forks_30d": 49,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 226
+  "snapshot_count": 227,
+  "authenticity": {
+    "organic_confidence": 91.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 84.8,
+        "weight": 0.22,
+        "detail": "597 forks for 10,323 stars (5.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 92.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 15 stars (3 forks, 1.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 92.5,
+        "weight": 0.12,
+        "detail": "284 open issues for 10,323 stars (2.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 597 forks for 10,323 stars (5.8%).",
+      "Issue engagement: 284 open issues for 10,323 stars (2.8%).",
+      "Burst pattern: Largest 24h jump was 15 stars (3 forks, 1.7x the daily average)."
+    ],
+    "red_flags": []
+  }
 }

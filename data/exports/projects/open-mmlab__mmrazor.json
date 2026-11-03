@@ -22,5 +22,61 @@
   "sub_category": "benchmark",
   "summary": "OpenMMLab Model Compression Toolbox and Benchmark.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 82.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.1,
+        "weight": 0.22,
+        "detail": "246 forks for 1,689 stars (14.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "145 open issues for 1,689 stars (8.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 875 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 246 forks for 1,689 stars (14.6%).",
+      "Issue engagement: 145 open issues for 1,689 stars (8.6%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 875 days ago."
+    ]
+  }
 }

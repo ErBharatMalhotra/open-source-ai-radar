@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Shared context, memory, and task coordination across AI coding agents. Single Go binary, local SQLite, hybrid keyword and semantic search.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.1,
+        "weight": 0.22,
+        "detail": "44 forks for 303 stars (14.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 96.5,
+        "weight": 0.12,
+        "detail": "12 open issues for 303 stars (4.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 7 days ago.",
+      "Issue engagement: 12 open issues for 303 stars (4.0%).",
+      "Fork-to-star ratio: 44 forks for 303 stars (14.5%)."
+    ],
+    "red_flags": []
+  }
 }

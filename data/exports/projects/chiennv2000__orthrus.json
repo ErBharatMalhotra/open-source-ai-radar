@@ -22,5 +22,58 @@
   "sub_category": "image",
   "summary": "Fast, lossless LLM inference via dual-view diffusion decoding.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 74.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 81.8,
+        "weight": 0.22,
+        "detail": "24 forks for 483 stars (5.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 63.6,
+        "weight": 0.12,
+        "detail": "3 open issues for 483 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 72.0,
+        "weight": 0.1,
+        "detail": "Last push 82 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 24 forks for 483 stars (5.0%)."
+    ],
+    "red_flags": []
+  }
 }

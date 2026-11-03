@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "\ud83d\ude80 Run Codex Mobile Anywhere: Linux, Windows, or Termux on Android \ud83d\ude80",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.8,
+        "weight": 0.22,
+        "detail": "205 forks for 979 stars (20.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 78.4,
+        "weight": 0.12,
+        "detail": "12 open issues for 979 stars (1.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.5,
+        "weight": 0.1,
+        "detail": "Last push 44 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 12 open issues for 979 stars (1.2%).",
+      "Maintenance cadence: Last push 44 days ago.",
+      "Fork-to-star ratio: 205 forks for 979 stars (20.9%)."
+    ],
+    "red_flags": []
+  }
 }

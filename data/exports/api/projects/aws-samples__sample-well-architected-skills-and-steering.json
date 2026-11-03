@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Reusable skills and steering that teach AI coding agents how to apply the AWS Well-Architected Framework. One set of playbooks, 14 supported tools.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.6,
+        "weight": 0.22,
+        "detail": "47 forks for 276 stars (17.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 66.7,
+        "weight": 0.12,
+        "detail": "2 open issues for 276 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 94.6,
+        "weight": 0.1,
+        "detail": "Last push 8 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 8 days ago.",
+      "Fork-to-star ratio: 47 forks for 276 stars (17.0%)."
+    ],
+    "red_flags": []
+  }
 }

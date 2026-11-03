@@ -4,9 +4,14 @@
   "description": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 16586,
-  "forks": 14832,
+  "topics": [
+    "anthropic",
+    "chatbot",
+    "webcontainers-api",
+    "ai-playground"
+  ],
+  "stars": 16583,
+  "forks": 14833,
   "open_issues": 0,
   "watchers": 169,
   "created_at": "2024-09-24T16:07:49Z",
@@ -17,20 +22,76 @@
   "impact": 95.87,
   "velocity": 53.64,
   "health": 30.75,
-  "global_percentile": 5.14,
+  "global_percentile": 5.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "maturity": "Unknown",
-  "stars_7d": 7,
-  "stars_30d": 14,
-  "stars_90d": 14,
-  "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 0.5,
-  "star_growth_acceleration": 2.0,
-  "forks_7d": 2,
+  "stars_7d": 5,
+  "stars_30d": 13,
+  "stars_90d": 13,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": 0.4642857142857143,
+  "star_growth_acceleration": 1.5384615384615385,
+  "forks_7d": 3,
   "forks_30d": 4,
-  "days_since_last_push": 685,
-  "freshness_score": 0.001059455692907609,
-  "snapshot_count": 203
+  "days_since_last_push": 686,
+  "freshness_score": 0.0010489139326277882,
+  "snapshot_count": 204,
+  "authenticity": {
+    "organic_confidence": 54.8,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "14,833 forks for 16,583 stars (89.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 45.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 6 stars (4 forks, 6.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 16,583 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 686 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 14,833 forks for 16,583 stars (89.4%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 16,583 stars (0.0%).",
+      "Maintenance cadence: Last push 686 days ago."
+    ]
+  }
 }

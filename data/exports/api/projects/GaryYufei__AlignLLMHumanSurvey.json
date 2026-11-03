@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "Aligning Large Language Models with Human: A Survey",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 67.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 77.5,
+        "weight": 0.22,
+        "detail": "32 forks for 739 stars (4.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 38.5,
+        "weight": 0.12,
+        "detail": "1 open issues for 739 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 78.5,
+        "weight": 0.1,
+        "detail": "Last push 56 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 32 forks for 739 stars (4.3%).",
+      "Maintenance cadence: Last push 56 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 739 stars (0.1%)."
+    ]
+  }
 }

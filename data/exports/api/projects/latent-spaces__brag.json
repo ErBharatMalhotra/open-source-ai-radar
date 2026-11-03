@@ -4,33 +4,97 @@
   "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 20096,
-  "forks": 1557,
+  "topics": [
+    "agent-skills",
+    "claude-code",
+    "claude-skills",
+    "hyperframes",
+    "launch-video",
+    "video-generation"
+  ],
+  "stars": 20113,
+  "forks": 1558,
   "open_issues": 5,
   "watchers": 70,
   "created_at": "2026-06-16T19:36:36Z",
   "pushed_at": "2026-10-23T21:18:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/latent-spaces.png",
-  "radar_score": 71.22,
-  "impact": 93.41,
+  "radar_score": 71.23,
+  "impact": 93.43,
   "velocity": 57.54,
   "health": 54.87,
-  "global_percentile": 30.57,
+  "global_percentile": 23.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
   "maturity": "Unknown",
-  "stars_7d": 1402,
-  "stars_30d": 4850,
-  "stars_90d": 4850,
-  "star_growth_rate_7d": 200.28571428571428,
-  "star_growth_rate_30d": 220.45454545454547,
-  "star_growth_acceleration": 0.9085125184094255,
-  "forks_7d": 123,
-  "forks_30d": 442,
+  "stars_7d": 1349,
+  "stars_30d": 4754,
+  "stars_90d": 4754,
+  "star_growth_rate_7d": 192.71428571428572,
+  "star_growth_rate_30d": 226.38095238095238,
+  "star_growth_acceleration": 0.851283129995793,
+  "forks_7d": 114,
+  "forks_30d": 435,
   "days_since_last_push": 10,
   "freshness_score": 0.9048374180359595,
-  "snapshot_count": 132
+  "snapshot_count": 133,
+  "authenticity": {
+    "organic_confidence": 77.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 91.9,
+        "weight": 0.22,
+        "detail": "1,558 forks for 20,113 stars (7.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 82.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 557 stars (43 forks, 2.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 27.5,
+        "weight": 0.12,
+        "detail": "5 open issues for 20,113 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 93.7,
+        "weight": 0.1,
+        "detail": "Last push 10 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 557 stars (43 forks, 2.5x the daily average).",
+      "Fork-to-star ratio: 1,558 forks for 20,113 stars (7.7%).",
+      "Maintenance cadence: Last push 10 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 5 open issues for 20,113 stars (0.0%)."
+    ]
+  }
 }

@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "The AutoGPT MetaTrader Plugin is a software tool that enables traders to connect their MetaTrader 4 or 5 trading account to Auto-GPT.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 78.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.7,
+        "weight": 0.22,
+        "detail": "93 forks for 557 stars (16.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 86.9,
+        "weight": 0.12,
+        "detail": "10 open issues for 557 stars (1.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 1086 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 10 open issues for 557 stars (1.8%).",
+      "Fork-to-star ratio: 93 forks for 557 stars (16.7%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 1086 days ago."
+    ]
+  }
 }

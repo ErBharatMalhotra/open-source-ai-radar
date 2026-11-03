@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Collect structured responses from a ChatGPT scraper by sending a prompt with valid ChatGPT scraping API credentials. Enable live search, inject HTML context, and automate intelligent scraper ChatGPT workflows in just a few parameters.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 31.1,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 13.3,
+        "weight": 0.22,
+        "detail": "1 forks for 902 stars (0.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 36.1,
+        "weight": 0.12,
+        "detail": "1 open issues for 902 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 64.2,
+        "weight": 0.1,
+        "detail": "Last push 111 days ago."
+      }
+    ],
+    "reasons": [],
+    "red_flags": [
+      "Fork-to-star ratio: 1 forks for 902 stars (0.1%).",
+      "Issue engagement: 1 open issues for 902 stars (0.1%)."
+    ]
+  }
 }

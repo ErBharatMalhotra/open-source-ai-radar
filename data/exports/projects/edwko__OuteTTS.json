@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Interface for OuteTTS models.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 80.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 93.5,
+        "weight": 0.22,
+        "detail": "118 forks for 1,440 stars (8.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.7,
+        "weight": 0.12,
+        "detail": "36 open issues for 1,440 stars (2.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 40.1,
+        "weight": 0.1,
+        "detail": "Last push 225 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 36 open issues for 1,440 stars (2.5%).",
+      "Fork-to-star ratio: 118 forks for 1,440 stars (8.2%)."
+    ],
+    "red_flags": []
+  }
 }

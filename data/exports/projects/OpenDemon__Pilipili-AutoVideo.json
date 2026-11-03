@@ -22,5 +22,58 @@
   "sub_category": "",
   "summary": "\ud83c\udfac \u5168\u81ea\u52a8 AI \u89c6\u9891\u4ee3\u7406 \u00b7 \u4e00\u53e5\u8bdd\u751f\u6210\u5e26\u5b57\u5e55\u6210\u7247 \u00b7 Fully Automated AI Video Agent \u00b7 Local Deployment",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 75.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.4,
+        "weight": 0.22,
+        "detail": "27 forks for 206 stars (13.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 59.3,
+        "weight": 0.12,
+        "detail": "1 open issues for 206 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 40.5,
+        "weight": 0.1,
+        "detail": "Last push 222 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 27 forks for 206 stars (13.1%)."
+    ],
+    "red_flags": []
+  }
 }

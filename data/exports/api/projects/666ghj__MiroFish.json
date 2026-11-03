@@ -4,9 +4,20 @@
   "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 83609,
-  "forks": 12651,
+  "topics": [
+    "agent-memory",
+    "financial-forecasting",
+    "future-prediction",
+    "knowledge-graph",
+    "llms",
+    "multi-agent-simulation",
+    "public-opinion-analysis",
+    "python3",
+    "social-prediction",
+    "swarm-intelligence"
+  ],
+  "stars": 83632,
+  "forks": 12658,
   "open_issues": 86,
   "watchers": 481,
   "created_at": "2025-11-26T04:23:02Z",
@@ -15,22 +26,79 @@
   "owner_avatar": "https://github.com/666ghj.png",
   "radar_score": 76.04,
   "impact": 99.2,
-  "velocity": 62.57,
+  "velocity": 62.58,
   "health": 57.83,
-  "global_percentile": 65.43,
+  "global_percentile": 57.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
   "maturity": "Unknown",
-  "stars_7d": 1608,
-  "stars_30d": 5438,
-  "stars_90d": 5438,
-  "star_growth_rate_7d": 229.71428571428572,
-  "star_growth_rate_30d": 247.1818181818182,
-  "star_growth_acceleration": 0.9293332632795671,
-  "forks_7d": 245,
-  "forks_30d": 716,
+  "stars_7d": 1555,
+  "stars_30d": 5361,
+  "stars_90d": 5361,
+  "star_growth_rate_7d": 222.14285714285714,
+  "star_growth_rate_30d": 255.28571428571428,
+  "star_growth_acceleration": 0.8701734750979295,
+  "forks_7d": 243,
+  "forks_30d": 707,
   "days_since_last_push": 18,
   "freshness_score": 0.835270211411272,
-  "snapshot_count": 284
+  "snapshot_count": 285,
+  "authenticity": {
+    "organic_confidence": 83.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.0,
+        "weight": 0.22,
+        "detail": "12,658 forks for 83,632 stars (15.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 91.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 494 stars (36 forks, 1.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 35.3,
+        "weight": 0.12,
+        "detail": "86 open issues for 83,632 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 90.2,
+        "weight": 0.1,
+        "detail": "Last push 18 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 18 days ago.",
+      "Burst pattern: Largest 24h jump was 494 stars (36 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 12,658 forks for 83,632 stars (15.1%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 86 open issues for 83,632 stars (0.1%)."
+    ]
+  }
 }

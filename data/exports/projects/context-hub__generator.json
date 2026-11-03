@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "CTX: a tool that solves the context management gap when working with LLMs like ChatGPT or Claude. It helps developers organize and automatically collect information from their codebase into structured documents that can be easily shared with AI assistants.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 88.1,
+        "weight": 0.22,
+        "detail": "23 forks for 343 stars (6.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 96.9,
+        "weight": 0.12,
+        "detail": "14 open issues for 343 stars (4.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 38.9,
+        "weight": 0.1,
+        "detail": "Last push 236 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 23 forks for 343 stars (6.7%).",
+      "Issue engagement: 14 open issues for 343 stars (4.1%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 236 days ago."
+    ]
+  }
 }

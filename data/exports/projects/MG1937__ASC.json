@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 80.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.2,
+        "weight": 0.22,
+        "detail": "376 forks for 2,643 stars (14.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 32.6,
+        "weight": 0.12,
+        "detail": "2 open issues for 2,643 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.1,
+        "weight": 0.1,
+        "detail": "Last push 4 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 4 days ago.",
+      "Fork-to-star ratio: 376 forks for 2,643 stars (14.2%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 2 open issues for 2,643 stars (0.1%)."
+    ]
+  }
 }

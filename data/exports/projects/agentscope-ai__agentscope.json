@@ -4,33 +4,101 @@
   "description": "Build and run agents you can see, understand and trust.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 35275,
-  "forks": 3779,
-  "open_issues": 373,
+  "topics": [
+    "agent",
+    "chatbot",
+    "large-language-models",
+    "llm",
+    "llm-agent",
+    "multi-agent",
+    "multi-modal",
+    "mcp",
+    "react-agent",
+    "realtime-agent",
+    "voice-agent",
+    "voice-assistant"
+  ],
+  "stars": 35292,
+  "forks": 3781,
+  "open_issues": 372,
   "watchers": 159,
   "created_at": "2024-01-12T03:41:59Z",
-  "pushed_at": "2026-11-03T07:15:57Z",
+  "pushed_at": "2026-11-03T10:13:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/agentscope-ai.png",
   "radar_score": 78.11,
-  "impact": 96.78,
-  "velocity": 67.04,
+  "impact": 96.79,
+  "velocity": 67.02,
   "health": 63.75,
-  "global_percentile": 82.57,
+  "global_percentile": 82.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Build and run agents you can see, understand and trust.",
   "maturity": "Unknown",
-  "stars_7d": 1232,
-  "stars_30d": 2191,
-  "stars_90d": 2191,
-  "star_growth_rate_7d": 176.0,
-  "star_growth_rate_30d": 95.26086956521739,
-  "star_growth_acceleration": 1.847558192606116,
-  "forks_7d": 48,
-  "forks_30d": 149,
+  "stars_7d": 1097,
+  "stars_30d": 2252,
+  "stars_90d": 2252,
+  "star_growth_rate_7d": 156.71428571428572,
+  "star_growth_rate_30d": 97.91304347826087,
+  "star_growth_acceleration": 1.600545546815529,
+  "forks_7d": 47,
+  "forks_30d": 156,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 281
+  "snapshot_count": 282,
+  "authenticity": {
+    "organic_confidence": 87.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "3,781 forks for 35,292 stars (10.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 77.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 242 stars (0 forks, 2.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 75.8,
+        "weight": 0.12,
+        "detail": "372 open issues for 35,292 stars (1.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 372 open issues for 35,292 stars (1.1%).",
+      "Burst pattern: Largest 24h jump was 242 stars (0 forks, 2.8x the daily average).",
+      "Fork-to-star ratio: 3,781 forks for 35,292 stars (10.7%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -4,9 +4,16 @@
   "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 59874,
-  "forks": 3490,
+  "topics": [
+    "adhd",
+    "claude-",
+    "claude-code-plugin",
+    "claude-skills",
+    "developer-tools",
+    "productivity"
+  ],
+  "stars": 59889,
+  "forks": 3492,
   "open_issues": 33,
   "watchers": 166,
   "created_at": "2026-05-13T20:42:06Z",
@@ -17,20 +24,76 @@
   "impact": 97.53,
   "velocity": 60.79,
   "health": 53.61,
-  "global_percentile": 49.57,
+  "global_percentile": 38.86,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
   "maturity": "Unknown",
-  "stars_7d": 1088,
-  "stars_30d": 3383,
-  "stars_90d": 3383,
-  "star_growth_rate_7d": 155.42857142857142,
-  "star_growth_rate_30d": 153.77272727272728,
-  "star_growth_acceleration": 1.0107681263460158,
-  "forks_7d": 86,
-  "forks_30d": 255,
+  "stars_7d": 1054,
+  "stars_30d": 3288,
+  "stars_90d": 3288,
+  "star_growth_rate_7d": 150.57142857142858,
+  "star_growth_rate_30d": 156.57142857142858,
+  "star_growth_acceleration": 0.9616788321167883,
+  "forks_7d": 85,
+  "forks_30d": 251,
   "days_since_last_push": 14,
   "freshness_score": 0.8693582353988059,
-  "snapshot_count": 292
+  "snapshot_count": 293,
+  "authenticity": {
+    "organic_confidence": 70.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 85.0,
+        "weight": 0.22,
+        "detail": "3,492 forks for 59,889 stars (5.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 67.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 795 stars (28 forks, 3.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 30.5,
+        "weight": 0.12,
+        "detail": "33 open issues for 59,889 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 3,492 forks for 59,889 stars (5.8%).",
+      "Maintenance cadence: Last push 14 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 33 open issues for 59,889 stars (0.1%)."
+    ]
+  }
 }

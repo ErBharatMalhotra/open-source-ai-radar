@@ -22,5 +22,58 @@
   "sub_category": "local runner",
   "summary": "Build AI agents from first principles using a local LLM - no frameworks, no cloud APIs, no hidden reasoning.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 78.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.1,
+        "weight": 0.22,
+        "detail": "262 forks for 1,070 stars (24.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 53.7,
+        "weight": 0.12,
+        "detail": "4 open issues for 1,070 stars (0.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 67.2,
+        "weight": 0.1,
+        "detail": "Last push 100 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 262 forks for 1,070 stars (24.5%)."
+    ],
+    "red_flags": []
+  }
 }

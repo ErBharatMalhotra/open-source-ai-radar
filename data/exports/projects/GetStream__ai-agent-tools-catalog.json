@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Explore the must-have external ready-made toolkits to integrate with your AI agents built with Python and TypeScript",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 72.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.1,
+        "weight": 0.22,
+        "detail": "70 forks for 238 stars (29.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 70.2,
+        "weight": 0.12,
+        "detail": "2 open issues for 238 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 648 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 70 forks for 238 stars (29.4%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 648 days ago."
+    ]
+  }
 }

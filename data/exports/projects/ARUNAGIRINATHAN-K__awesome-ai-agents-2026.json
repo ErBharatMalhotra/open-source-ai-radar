@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Awesome AI Agents for 2026",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 96.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "308 forks for 354 stars (87.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "24 open issues for 354 stars (6.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 93.7,
+        "weight": 0.1,
+        "detail": "Last push 10 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 10 days ago.",
+      "Fork-to-star ratio: 308 forks for 354 stars (87.0%).",
+      "Issue engagement: 24 open issues for 354 stars (6.8%)."
+    ],
+    "red_flags": []
+  }
 }

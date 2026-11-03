@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "AI \uc5d0\uc774\uc804\ud2b8 58\uac1c\uac00 \ud611\uc5c5\ud558\ub294 211-step \ubc15\uc0ac \ub17c\ubb38 \uc5f0\uad6c \uc2dc\ubbac\ub808\uc774\uc158 \uc2dc\uc2a4\ud15c. AgenticWorkflow \ud504\ub808\uc784\uc6cc\ud06c\uc5d0\uc11c \ud0dc\uc5b4\ub09c \uc790\uc2dd \uc2dc\uc2a4\ud15c.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 66.3,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "141 forks for 107 stars (131.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 107 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 52.8,
+        "weight": 0.1,
+        "detail": "Last push 152 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 141 forks for 107 stars (131.8%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 107 stars (0.0%)."
+    ]
+  }
 }

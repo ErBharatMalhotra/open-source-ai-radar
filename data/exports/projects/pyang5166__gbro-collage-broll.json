@@ -22,5 +22,60 @@
   "sub_category": "coding agent",
   "summary": "\u534a\u8c03\u7eb8\u62fc\u8d34 B-roll \u751f\u6210 skill\uff1a\u4e09\u95f8\u95e8\u5ba1\u6279\uff0cGemini Omni Flash \u9996\u5c3e\u5e27\u7ec4\u88c5\u52a8\u753b | Editorial halftone paper-collage B-roll agent skill",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 70.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.5,
+        "weight": 0.22,
+        "detail": "137 forks for 1,615 stars (8.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 31.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 1,615 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 64.4,
+        "weight": 0.1,
+        "detail": "Last push 110 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 137 forks for 1,615 stars (8.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 1,615 stars (0.1%)."
+    ]
+  }
 }

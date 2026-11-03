@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Speech synthesis, speech recognition and voice activity detection for voice conversation, in C++ on ggml: Qwen3-TTS, Irodori-TTS, Qwen3-ASR, ReazonSpeech, parakeet and Silero VAD on Metal, Vulkan and the CPU, with an OpenAI-compatible server and live transcription.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 92.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 87.1,
+        "weight": 0.22,
+        "detail": "21 forks for 327 stars (6.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 95.6,
+        "weight": 0.12,
+        "detail": "12 open issues for 327 stars (3.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 21 forks for 327 stars (6.4%).",
+      "Issue engagement: 12 open issues for 327 stars (3.7%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": []
+  }
 }

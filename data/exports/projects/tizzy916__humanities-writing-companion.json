@@ -22,5 +22,61 @@
   "sub_category": "coding agent",
   "summary": "End-to-end humanities writing assistant \u2014 an Agent Skill (open SKILL.md format). 11 modes from Socratic research-question sharpening through AI-use disclosure. Bilingual (EN/\u4e2d\u6587), discipline-aware (literature/history/philosophy/art/religion/linguistics + cross-disciplinary). Four-layer critique, cali",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 75.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "48 forks for 473 stars (10.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 473 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 82.0,
+        "weight": 0.1,
+        "detail": "Last push 42 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 42 days ago.",
+      "Fork-to-star ratio: 48 forks for 473 stars (10.1%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 473 stars (0.0%)."
+    ]
+  }
 }

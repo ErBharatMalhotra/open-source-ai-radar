@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Graphical modeling and code generation tool based on Hierarchical State Machines (UML Statecharts) and QP Real-Time Event Frameworks",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.2,
+        "weight": 0.22,
+        "detail": "43 forks for 179 stars (24.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 94.5,
+        "weight": 0.12,
+        "detail": "6 open issues for 179 stars (3.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 66.7,
+        "weight": 0.1,
+        "detail": "Last push 102 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 6 open issues for 179 stars (3.4%).",
+      "Fork-to-star ratio: 43 forks for 179 stars (24.0%)."
+    ],
+    "red_flags": []
+  }
 }

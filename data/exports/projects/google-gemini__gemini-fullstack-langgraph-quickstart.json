@@ -4,8 +4,11 @@
   "description": "Get started with building Fullstack Agents using Gemini 2.5 and LangGraph",
   "language": "Jupyter Notebook",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 18363,
+  "topics": [
+    "gemini",
+    "gemini-api"
+  ],
+  "stars": 18364,
   "forks": 3059,
   "open_issues": 29,
   "watchers": 115,
@@ -13,24 +16,78 @@
   "pushed_at": "2026-06-14T05:25:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google-gemini.png",
-  "radar_score": 66.98,
+  "radar_score": 66.96,
   "impact": 94.75,
-  "velocity": 53.24,
-  "health": 41.77,
-  "global_percentile": 9.43,
+  "velocity": 53.23,
+  "health": 41.72,
+  "global_percentile": 10.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Get started with building Fullstack Agents using Gemini 2.5 and LangGraph",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 19,
-  "stars_90d": 30,
-  "star_growth_rate_7d": 1.2857142857142858,
-  "star_growth_rate_30d": 0.6333333333333333,
-  "star_growth_acceleration": 2.030075187969925,
+  "stars_7d": 14,
+  "stars_30d": 18,
+  "stars_90d": 33,
+  "star_growth_rate_7d": 2.0,
+  "star_growth_rate_30d": 0.6,
+  "star_growth_acceleration": 3.3333333333333335,
   "forks_7d": 0,
   "forks_30d": -1,
-  "days_since_last_push": 141,
-  "freshness_score": 0.2441432831534371,
-  "snapshot_count": 126
+  "days_since_last_push": 142,
+  "freshness_score": 0.24171401689703645,
+  "snapshot_count": 127,
+  "authenticity": {
+    "organic_confidence": 73.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.7,
+        "weight": 0.22,
+        "detail": "3,059 forks for 18,364 stars (16.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 75.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 3 stars (0 forks, 3.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 40.8,
+        "weight": 0.12,
+        "detail": "29 open issues for 18,364 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 55.6,
+        "weight": 0.1,
+        "detail": "Last push 142 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 3.0x the daily average).",
+      "Fork-to-star ratio: 3,059 forks for 18,364 stars (16.7%)."
+    ],
+    "red_flags": []
+  }
 }

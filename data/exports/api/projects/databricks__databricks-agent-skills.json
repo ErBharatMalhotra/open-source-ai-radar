@@ -22,5 +22,60 @@
   "sub_category": "ide extension",
   "summary": "Databricks AI Tools: skills and plugins for building on Databricks with Claude Code, Cursor, Codex, GitHub Copilot, and other AI coding agents.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 95.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.8,
+        "weight": 0.22,
+        "detail": "90 forks for 347 stars (25.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "33 open issues for 347 stars (9.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.5,
+        "weight": 0.1,
+        "detail": "Last push 22 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 22 days ago.",
+      "Fork-to-star ratio: 90 forks for 347 stars (25.9%).",
+      "Issue engagement: 33 open issues for 347 stars (9.5%)."
+    ],
+    "red_flags": []
+  }
 }

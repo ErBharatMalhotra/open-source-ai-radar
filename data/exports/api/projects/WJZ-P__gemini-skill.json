@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "gemini drawing MCP & skill through browser, can be used in openclaw or any agent that supports MCP. Gemini\u753b\u56fe MCP\u548csill\uff0c\u652f\u6301\u9f99\u867e\u6216\u4efb\u4f55agent\u4f7f\u7528\u0669(\u0e51>\u25e1<\u0e51)\u06f6",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.1,
+        "weight": 0.22,
+        "detail": "122 forks for 832 stars (14.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 78.0,
+        "weight": 0.12,
+        "detail": "10 open issues for 832 stars (1.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.2,
+        "weight": 0.1,
+        "detail": "Last push 45 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 10 open issues for 832 stars (1.2%).",
+      "Maintenance cadence: Last push 45 days ago.",
+      "Fork-to-star ratio: 122 forks for 832 stars (14.7%)."
+    ],
+    "red_flags": []
+  }
 }

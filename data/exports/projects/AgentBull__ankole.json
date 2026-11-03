@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "The Open-Source AI Workforce OS. Turn AI agents into autonomous labor that performs business functions and is measured by outcomes. Claude Tag open source alternative",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 93.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.0,
+        "weight": 0.22,
+        "detail": "22 forks for 110 stars (20.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 87.3,
+        "weight": 0.12,
+        "detail": "2 open issues for 110 stars (1.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 90.2,
+        "weight": 0.1,
+        "detail": "Last push 18 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 2 open issues for 110 stars (1.8%).",
+      "Maintenance cadence: Last push 18 days ago.",
+      "Fork-to-star ratio: 22 forks for 110 stars (20.0%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -4,33 +4,100 @@
   "description": "https://arxiv.org/abs/2606.28344. The end of web parsing. The beginning of scalable pixel-native search. link: https://pixelrag.ai/",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10840,
+  "topics": [
+    "agent",
+    "ai",
+    "memory",
+    "multimodal",
+    "rag",
+    "search",
+    "searchengine",
+    "vision",
+    "vlm"
+  ],
+  "stars": 10842,
   "forks": 978,
-  "open_issues": 13,
+  "open_issues": 10,
   "watchers": 36,
   "created_at": "2026-05-29T07:25:40Z",
-  "pushed_at": "2026-10-30T17:01:52Z",
+  "pushed_at": "2026-11-03T11:19:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/StarTrail-org.png",
-  "radar_score": 74.15,
+  "radar_score": 73.41,
   "impact": 89.75,
-  "velocity": 64.52,
-  "health": 62.65,
-  "global_percentile": 41.86,
+  "velocity": 65.48,
+  "health": 58.35,
+  "global_percentile": 36.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "https://arxiv.org/abs/2606.28344. The end of web parsing. The beginning of scalable pixel-native search. link: https://pixelrag.ai/",
   "maturity": "Unknown",
-  "stars_7d": 479,
-  "stars_30d": 707,
-  "stars_90d": 718,
-  "star_growth_rate_7d": 68.42857142857143,
-  "star_growth_rate_30d": 23.566666666666666,
-  "star_growth_acceleration": 2.9036168923014753,
-  "forks_7d": 60,
-  "forks_30d": 109,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 218
+  "stars_7d": 487,
+  "stars_30d": 715,
+  "stars_90d": 724,
+  "star_growth_rate_7d": 69.57142857142857,
+  "star_growth_rate_30d": 23.833333333333332,
+  "star_growth_acceleration": 2.919080919080919,
+  "forks_7d": 59,
+  "forks_30d": 108,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 219,
+  "authenticity": {
+    "organic_confidence": 60.3,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.5,
+        "weight": 0.22,
+        "detail": "978 forks for 10,842 stars (9.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 23.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 247 stars (19 forks, 10.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 34.2,
+        "weight": 0.12,
+        "detail": "10 open issues for 10,842 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 978 forks for 10,842 stars (9.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 247 stars (19 forks, 10.9x the daily average).",
+      "Issue engagement: 10 open issues for 10,842 stars (0.1%)."
+    ]
+  }
 }

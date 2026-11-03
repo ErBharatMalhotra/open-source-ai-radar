@@ -4,8 +4,20 @@
   "description": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 18354,
+  "topics": [
+    "ai",
+    "gemini",
+    "github",
+    "ollama",
+    "open-source",
+    "openai",
+    "openrouter",
+    "self-hosted",
+    "wiki",
+    "codex",
+    "grok-cli"
+  ],
+  "stars": 18359,
   "forks": 2026,
   "open_issues": 212,
   "watchers": 75,
@@ -14,23 +26,78 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/AsyncFuncAI.png",
   "radar_score": 75.01,
-  "impact": 93.61,
+  "impact": 93.62,
   "velocity": 63.08,
   "health": 61.94,
-  "global_percentile": 49.0,
+  "global_percentile": 48.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme",
   "maturity": "Unknown",
-  "stars_7d": 71,
-  "stars_30d": 237,
-  "stars_90d": 266,
-  "star_growth_rate_7d": 10.142857142857142,
-  "star_growth_rate_30d": 7.9,
-  "star_growth_acceleration": 1.283905967450271,
+  "stars_7d": 77,
+  "stars_30d": 244,
+  "stars_90d": 274,
+  "star_growth_rate_7d": 11.0,
+  "star_growth_rate_30d": 8.133333333333333,
+  "star_growth_acceleration": 1.3524590163934427,
   "forks_7d": 3,
   "forks_30d": 13,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 201
+  "snapshot_count": 202,
+  "authenticity": {
+    "organic_confidence": 90.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "2,026 forks for 18,359 stars (11.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 86.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 18 stars (1 forks, 2.2x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 77.3,
+        "weight": 0.12,
+        "detail": "212 open issues for 18,359 stars (1.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 96.4,
+        "weight": 0.1,
+        "detail": "Last push 5 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 212 open issues for 18,359 stars (1.2%).",
+      "Burst pattern: Largest 24h jump was 18 stars (1 forks, 2.2x the daily average).",
+      "Maintenance cadence: Last push 5 days ago."
+    ],
+    "red_flags": []
+  }
 }

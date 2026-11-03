@@ -4,9 +4,21 @@
   "description": "18 Lessons to Get Started Building AI Agents",
   "language": "Jupyter Notebook",
   "license": "MIT",
-  "topics": [],
-  "stars": 78761,
-  "forks": 25799,
+  "topics": [
+    "agentic-ai",
+    "agentic-framework",
+    "agentic-rag",
+    "ai-agents",
+    "ai-agents-framework",
+    "autogen",
+    "generative-ai",
+    "semantic-kernel",
+    "foundry",
+    "foundry-local",
+    "microsoft-foundry"
+  ],
+  "stars": 78775,
+  "forks": 25807,
   "open_issues": 2,
   "watchers": 575,
   "created_at": "2024-11-28T10:42:52Z",
@@ -15,22 +27,79 @@
   "owner_avatar": "https://github.com/microsoft.png",
   "radar_score": 76.53,
   "impact": 99.35,
-  "velocity": 65.29,
+  "velocity": 65.3,
   "health": 55.75,
-  "global_percentile": 70.0,
+  "global_percentile": 64.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "18 Lessons to Get Started Building AI Agents",
   "maturity": "Unknown",
-  "stars_7d": 847,
-  "stars_30d": 1819,
-  "stars_90d": 1819,
-  "star_growth_rate_7d": 121.0,
-  "star_growth_rate_30d": 82.68181818181819,
-  "star_growth_acceleration": 1.4634414513468939,
-  "forks_7d": 241,
-  "forks_30d": 533,
+  "stars_7d": 845,
+  "stars_30d": 1801,
+  "stars_90d": 1801,
+  "star_growth_rate_7d": 120.71428571428571,
+  "star_growth_rate_30d": 85.76190476190476,
+  "star_growth_acceleration": 1.4075513603553582,
+  "forks_7d": 244,
+  "forks_30d": 526,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 284
+  "snapshot_count": 285,
+  "authenticity": {
+    "organic_confidence": 77.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.4,
+        "weight": 0.22,
+        "detail": "25,807 forks for 78,775 stars (32.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 77.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 224 stars (33 forks, 2.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25.3,
+        "weight": 0.12,
+        "detail": "2 open issues for 78,775 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 224 stars (33 forks, 2.8x the daily average).",
+      "Fork-to-star ratio: 25,807 forks for 78,775 stars (32.8%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 2 open issues for 78,775 stars (0.0%)."
+    ]
+  }
 }

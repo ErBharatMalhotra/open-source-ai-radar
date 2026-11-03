@@ -5,7 +5,7 @@
   "language": "Rust",
   "license": "Apache-2.0",
   "topics": [],
-  "stars": 45332,
+  "stars": 45349,
   "forks": 3109,
   "open_issues": 230,
   "watchers": 101,
@@ -17,20 +17,75 @@
   "impact": 96.45,
   "velocity": 69.12,
   "health": 63.75,
-  "global_percentile": 89.86,
+  "global_percentile": 88.14,
   "category": "AI Agents",
   "sub_category": "task agent",
   "summary": "Browser automation CLI for AI agents",
   "maturity": "Unknown",
-  "stars_7d": 715,
-  "stars_30d": 1501,
-  "stars_90d": 1501,
-  "star_growth_rate_7d": 102.14285714285714,
-  "star_growth_rate_30d": 68.22727272727273,
-  "star_growth_acceleration": 1.4970971733130292,
-  "forks_7d": 49,
-  "forks_30d": 137,
+  "stars_7d": 723,
+  "stars_30d": 1505,
+  "stars_90d": 1505,
+  "star_growth_rate_7d": 103.28571428571429,
+  "star_growth_rate_30d": 71.66666666666667,
+  "star_growth_acceleration": 1.4411960132890365,
+  "forks_7d": 50,
+  "forks_30d": 134,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 282
+  "snapshot_count": 283,
+  "authenticity": {
+    "organic_confidence": 84.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 88.7,
+        "weight": 0.22,
+        "detail": "3,109 forks for 45,349 stars (6.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 85.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 143 stars (8 forks, 2.3x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 60.2,
+        "weight": 0.12,
+        "detail": "230 open issues for 45,349 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 143 stars (8 forks, 2.3x the daily average).",
+      "Fork-to-star ratio: 3,109 forks for 45,349 stars (6.9%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

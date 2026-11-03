@@ -4,9 +4,22 @@
   "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.\ud83e\udd9e",
   "language": null,
   "license": "MIT",
-  "topics": [],
-  "stars": 53515,
-  "forks": 5071,
+  "topics": [
+    "agent-skills",
+    "awesome-list",
+    "clawdbot",
+    "clawdbot-skill",
+    "clawd",
+    "clawdhub",
+    "moltbot",
+    "moltbot-skills",
+    "openclaw",
+    "openclaw-skills",
+    "awesome",
+    "awesome-lists"
+  ],
+  "stars": 53520,
+  "forks": 5072,
   "open_issues": 1,
   "watchers": 308,
   "created_at": "2026-01-25T09:22:32Z",
@@ -17,20 +30,77 @@
   "impact": 98.19,
   "velocity": 58.63,
   "health": 57.25,
-  "global_percentile": 51.86,
+  "global_percentile": 41.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.\ud83e\udd9e",
   "maturity": "Unknown",
-  "stars_7d": 158,
-  "stars_30d": 496,
-  "stars_90d": 496,
-  "star_growth_rate_7d": 22.571428571428573,
-  "star_growth_rate_30d": 20.666666666666668,
-  "star_growth_acceleration": 1.0921658986175116,
-  "forks_7d": 13,
-  "forks_30d": 24,
+  "stars_7d": 162,
+  "stars_30d": 488,
+  "stars_90d": 488,
+  "star_growth_rate_7d": 23.142857142857142,
+  "star_growth_rate_30d": 20.333333333333332,
+  "star_growth_acceleration": 1.1381733021077283,
+  "forks_7d": 14,
+  "forks_30d": 25,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 257
+  "snapshot_count": 258,
+  "authenticity": {
+    "organic_confidence": 83.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.1,
+        "weight": 0.22,
+        "detail": "5,072 forks for 53,520 stars (9.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 92.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 34 stars (1 forks, 1.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 53,520 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 34 stars (1 forks, 1.8x the daily average).",
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 5,072 forks for 53,520 stars (9.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 53,520 stars (0.0%)."
+    ]
+  }
 }

@@ -4,9 +4,11 @@
   "description": "Specification and documentation for Agent Skills",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 26899,
-  "forks": 1988,
+  "topics": [
+    "agent-skills"
+  ],
+  "stars": 26906,
+  "forks": 1990,
   "open_issues": 52,
   "watchers": 241,
   "created_at": "2025-12-16T15:47:19Z",
@@ -17,20 +19,73 @@
   "impact": 95.8,
   "velocity": 56.64,
   "health": 45.74,
-  "global_percentile": 16.43,
+  "global_percentile": 17.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Specification and documentation for Agent Skills",
   "maturity": "Unknown",
-  "stars_7d": 270,
-  "stars_30d": 866,
-  "stars_90d": 866,
-  "star_growth_rate_7d": 38.57142857142857,
-  "star_growth_rate_30d": 37.65217391304348,
-  "star_growth_acceleration": 1.024414384691521,
-  "forks_7d": 28,
-  "forks_30d": 31,
+  "stars_7d": 248,
+  "stars_30d": 879,
+  "stars_90d": 879,
+  "star_growth_rate_7d": 35.42857142857143,
+  "star_growth_rate_30d": 38.21739130434783,
+  "star_growth_acceleration": 0.927027466276613,
+  "forks_7d": 25,
+  "forks_30d": 32,
   "days_since_last_push": 85,
   "freshness_score": 0.4274149319487267,
-  "snapshot_count": 267
+  "snapshot_count": 268,
+  "authenticity": {
+    "organic_confidence": 70.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 90.6,
+        "weight": 0.22,
+        "detail": "1,990 forks for 26,906 stars (7.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 65.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 128 stars (8 forks, 3.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 44.3,
+        "weight": 0.12,
+        "detail": "52 open issues for 26,906 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 71.2,
+        "weight": 0.1,
+        "detail": "Last push 85 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 1,990 forks for 26,906 stars (7.4%)."
+    ],
+    "red_flags": []
+  }
 }

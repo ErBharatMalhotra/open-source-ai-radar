@@ -4,9 +4,21 @@
   "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 30455,
-  "forks": 4167,
+  "topics": [
+    "ai",
+    "python",
+    "agent",
+    "automation",
+    "research",
+    "search",
+    "webscraping",
+    "llms",
+    "deepresearch",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 30460,
+  "forks": 4166,
   "open_issues": 16,
   "watchers": 168,
   "created_at": "2023-05-12T10:33:54Z",
@@ -17,20 +29,77 @@
   "impact": 96.6,
   "velocity": 55.4,
   "health": 51.06,
-  "global_percentile": 29.71,
+  "global_percentile": 21.86,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "An autonomous agent that conducts deep research on any data using any LLM providers",
   "maturity": "Unknown",
-  "stars_7d": 154,
-  "stars_30d": 525,
-  "stars_90d": 525,
-  "star_growth_rate_7d": 22.0,
-  "star_growth_rate_30d": 18.75,
-  "star_growth_acceleration": 1.1733333333333333,
-  "forks_7d": 33,
-  "forks_30d": 83,
+  "stars_7d": 156,
+  "stars_30d": 533,
+  "stars_90d": 533,
+  "star_growth_rate_7d": 22.285714285714285,
+  "star_growth_rate_30d": 19.035714285714285,
+  "star_growth_acceleration": 1.170731707317073,
+  "forks_7d": 29,
+  "forks_30d": 82,
   "days_since_last_push": 23,
   "freshness_score": 0.794533602503334,
-  "snapshot_count": 251
+  "snapshot_count": 252,
+  "authenticity": {
+    "organic_confidence": 83.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.3,
+        "weight": 0.22,
+        "detail": "4,166 forks for 30,460 stars (13.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 92.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 32 stars (-1 forks, 1.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 30.3,
+        "weight": 0.12,
+        "detail": "16 open issues for 30,460 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.0,
+        "weight": 0.1,
+        "detail": "Last push 23 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 23 days ago.",
+      "Burst pattern: Largest 24h jump was 32 stars (-1 forks, 1.7x the daily average).",
+      "Fork-to-star ratio: 4,166 forks for 30,460 stars (13.7%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 16 open issues for 30,460 stars (0.1%)."
+    ]
+  }
 }

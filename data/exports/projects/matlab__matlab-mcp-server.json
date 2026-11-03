@@ -22,5 +22,60 @@
   "sub_category": "server",
   "summary": "Run MATLAB\u00ae using AI applications with the official MATLAB MCP Server from MathWorks\u00ae. This MCP server for MATLAB supports a wide range of coding agents like Claude Code\u00ae and Visual Studio\u00ae Code.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 90.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.9,
+        "weight": 0.22,
+        "detail": "141 forks for 1,757 stars (8.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 79.6,
+        "weight": 0.12,
+        "detail": "23 open issues for 1,757 stars (1.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 23 open issues for 1,757 stars (1.3%).",
+      "Fork-to-star ratio: 141 forks for 1,757 stars (8.0%).",
+      "Maintenance cadence: Last push 3 days ago."
+    ],
+    "red_flags": []
+  }
 }

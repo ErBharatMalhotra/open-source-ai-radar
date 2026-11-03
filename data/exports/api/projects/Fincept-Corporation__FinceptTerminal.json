@@ -23,8 +23,8 @@
     "qt",
     "trading"
   ],
-  "stars": 33365,
-  "forks": 4765,
+  "stars": 33369,
+  "forks": 4768,
   "open_issues": 14,
   "watchers": 188,
   "created_at": "2024-08-29T14:38:08Z",
@@ -35,20 +35,77 @@
   "impact": 97.03,
   "velocity": 60.51,
   "health": 52.86,
-  "global_percentile": 44.57,
+  "global_percentile": 35.29,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
   "maturity": "Unknown",
-  "stars_7d": 237,
-  "stars_30d": 967,
-  "stars_90d": 967,
-  "star_growth_rate_7d": 33.857142857142854,
-  "star_growth_rate_30d": 43.95454545454545,
-  "star_growth_acceleration": 0.7702762594179347,
-  "forks_7d": 37,
-  "forks_30d": 181,
+  "stars_7d": 224,
+  "stars_30d": 962,
+  "stars_90d": 962,
+  "star_growth_rate_7d": 32.0,
+  "star_growth_rate_30d": 45.80952380952381,
+  "star_growth_acceleration": 0.6985446985446986,
+  "forks_7d": 38,
+  "forks_30d": 184,
   "days_since_last_push": 7,
   "freshness_score": 0.9323938199059483,
-  "snapshot_count": 282
+  "snapshot_count": 283,
+  "authenticity": {
+    "organic_confidence": 83.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.1,
+        "weight": 0.22,
+        "detail": "4,768 forks for 33,369 stars (14.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 90.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 78 stars (12 forks, 2.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.2,
+        "weight": 0.12,
+        "detail": "14 open issues for 33,369 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 78 stars (12 forks, 2.0x the daily average).",
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 4,768 forks for 33,369 stars (14.3%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 14 open issues for 33,369 stars (0.0%)."
+    ]
+  }
 }

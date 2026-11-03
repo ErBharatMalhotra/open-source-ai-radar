@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "ChatGPT\u5b98\u7f51\u63a5\u53e3\u7eaf\u534f\u8bae\u7684\u9006\u5411\u5b9e\u73b0\uff0c\u652f\u6301\u6ce8\u518c\u673a\u7ef4\u6301\u53f7\u6c60\u989d\u5ea6\uff0c\u652f\u6301GPT-Image-2\u6a21\u578b\u3001\u6587\u672c\u6a21\u578b\uff0c\u517c\u5bb9OpenAI\u63a5\u53e3\u534f\u8bae\uff0c\u5728\u7ebf\u6279\u91cf\u751f\u56fe/\u7f16\u8f91\u56fe\uff0c\u53f7\u6c60\u7ba1\u7406\uff0c\u652f\u6301\u53ef\u7f16\u8f91PPT/PSD\u6587\u4ef6\u9006\u5411\uff0c\u652f\u6301\u5bfc\u5165CPA\u3001sub2api\u53f7\u6c60 \u3001\u652f\u6301\u63a5\u5165Cherry Studio\u3001New Api \u7b49\u8f6f\u4ef6",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 94.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.9,
+        "weight": 0.22,
+        "detail": "245 forks for 970 stars (25.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 90.9,
+        "weight": 0.12,
+        "detail": "22 open issues for 970 stars (2.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 93.3,
+        "weight": 0.1,
+        "detail": "Last push 11 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 22 open issues for 970 stars (2.3%).",
+      "Maintenance cadence: Last push 11 days ago.",
+      "Fork-to-star ratio: 245 forks for 970 stars (25.3%)."
+    ],
+    "red_flags": []
+  }
 }

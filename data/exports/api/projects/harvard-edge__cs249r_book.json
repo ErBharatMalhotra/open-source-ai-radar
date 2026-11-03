@@ -4,9 +4,28 @@
   "description": "Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I\u2013IV) \u2022 Harvard CS249r | https://mlsysbook.ai",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 29828,
-  "forks": 3692,
+  "topics": [
+    "artificial-intelligence",
+    "cloud-ml",
+    "computer-systems",
+    "courseware",
+    "deep-learning",
+    "edge-machine-learning",
+    "embedded-ml",
+    "machine-learning",
+    "machine-learning-systems",
+    "mobile-ml",
+    "textbook",
+    "tinyml",
+    "agentic-ai",
+    "ai-agents",
+    "embodied-ai",
+    "mlsys",
+    "physical-ai",
+    "robotics"
+  ],
+  "stars": 29832,
+  "forks": 3694,
   "open_issues": 5,
   "watchers": 211,
   "created_at": "2023-09-06T19:31:06Z",
@@ -17,20 +36,77 @@
   "impact": 96.62,
   "velocity": 61.38,
   "health": 55.35,
-  "global_percentile": 50.86,
+  "global_percentile": 40.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI (Vols I\u2013IV) \u2022 Harvard CS249r | https://mlsysbook.ai",
   "maturity": "Unknown",
-  "stars_7d": 170,
-  "stars_30d": 904,
-  "stars_90d": 904,
-  "star_growth_rate_7d": 24.285714285714285,
-  "star_growth_rate_30d": 37.666666666666664,
-  "star_growth_acceleration": 0.6447534766118838,
-  "forks_7d": 22,
-  "forks_30d": 51,
+  "stars_7d": 154,
+  "stars_30d": 912,
+  "stars_90d": 912,
+  "star_growth_rate_7d": 22.0,
+  "star_growth_rate_30d": 38.0,
+  "star_growth_acceleration": 0.5789473684210527,
+  "forks_7d": 24,
+  "forks_30d": 55,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 179
+  "snapshot_count": 180,
+  "authenticity": {
+    "organic_confidence": 61.8,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.5,
+        "weight": 0.22,
+        "detail": "3,694 forks for 29,832 stars (12.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 28.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 315 stars (53 forks, 9.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 26.7,
+        "weight": 0.12,
+        "detail": "5 open issues for 29,832 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 3,694 forks for 29,832 stars (12.4%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 5 open issues for 29,832 stars (0.0%).",
+      "Burst pattern: Largest 24h jump was 315 stars (53 forks, 9.1x the daily average)."
+    ]
+  }
 }

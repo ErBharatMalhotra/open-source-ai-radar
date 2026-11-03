@@ -22,5 +22,60 @@
   "sub_category": "cli tool",
   "summary": "Real-time web dashboard for pi coding-agent sessions. Multi-session view, live chat mirroring, integrated terminal, diff viewer, pi-flows execution, and mobile-first remote control via mDNS or zrok tunnel. Coexists with pi's TUI \u2014 doesn't replace it.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 95.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.0,
+        "weight": 0.22,
+        "detail": "44 forks for 292 stars (15.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "38 open issues for 292 stars (13.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.2,
+        "weight": 0.1,
+        "detail": "Last push 45 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 45 days ago.",
+      "Fork-to-star ratio: 44 forks for 292 stars (15.1%).",
+      "Issue engagement: 38 open issues for 292 stars (13.0%)."
+    ],
+    "red_flags": []
+  }
 }

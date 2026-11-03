@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "A simple, fast and versatile Datalog database",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 83.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 84.6,
+        "weight": 0.22,
+        "detail": "84 forks for 1,469 stars (5.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 88.6,
+        "weight": 0.12,
+        "detail": "28 open issues for 1,469 stars (1.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 74.0,
+        "weight": 0.1,
+        "detail": "Last push 74 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 84 forks for 1,469 stars (5.7%).",
+      "Issue engagement: 28 open issues for 1,469 stars (1.9%)."
+    ],
+    "red_flags": []
+  }
 }

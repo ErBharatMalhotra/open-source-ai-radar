@@ -22,5 +22,60 @@
   "sub_category": "local runner",
   "summary": "Self-hosted LLM router with a managed safety net. OpenAI-compatible. BYOK. Single-workspace. Streaming. For more advanced routing choose hosted OrcaRouter",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 93.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.6,
+        "weight": 0.22,
+        "detail": "248 forks for 1,443 stars (17.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.0,
+        "weight": 0.12,
+        "detail": "33 open issues for 1,443 stars (2.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 86.7,
+        "weight": 0.1,
+        "detail": "Last push 26 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 26 days ago.",
+      "Issue engagement: 33 open issues for 1,443 stars (2.3%).",
+      "Fork-to-star ratio: 248 forks for 1,443 stars (17.2%)."
+    ],
+    "red_flags": []
+  }
 }

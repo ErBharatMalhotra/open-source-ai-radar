@@ -22,5 +22,59 @@
   "sub_category": "server",
   "summary": "MCP Server (Model Context Protocol) for turning OpenAPI specifications into a MCP Resource",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 85.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.6,
+        "weight": 0.22,
+        "detail": "63 forks for 287 stars (22.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 86.1,
+        "weight": 0.12,
+        "detail": "5 open issues for 287 stars (1.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 56.1,
+        "weight": 0.1,
+        "detail": "Last push 140 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 5 open issues for 287 stars (1.7%).",
+      "Fork-to-star ratio: 63 forks for 287 stars (22.0%)."
+    ],
+    "red_flags": []
+  }
 }

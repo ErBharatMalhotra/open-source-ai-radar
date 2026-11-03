@@ -22,5 +22,59 @@
   "sub_category": "integration",
   "summary": "MCP plugin for Unreal Engine 5.7 & 5.8 \u2014 gives AI assistants full read/write access to Blueprints, Materials, Niagara, Animation, Mesh, AI, GAS, Logic Driver, ComboGraph, UI, Audio, plus Reflection Intelligence (decision / risk / C++ reflection / replication queries). 1,400+ actions across 25+ names",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.4,
+        "weight": 0.22,
+        "detail": "74 forks for 265 stars (27.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 92.1,
+        "weight": 0.12,
+        "detail": "7 open issues for 265 stars (2.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 69.2,
+        "weight": 0.1,
+        "detail": "Last push 93 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 7 open issues for 265 stars (2.6%).",
+      "Fork-to-star ratio: 74 forks for 265 stars (27.9%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Dyno Lab \u2014 an AI safety, alignment and interpretability research workbench for Apple Silicon. Explore activations, probes, SAEs and interventions with local inference, a Python SDK, APIs and MCP.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "152 forks for 153 stars (99.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "12 open issues for 153 stars (7.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 152 forks for 153 stars (99.3%).",
+      "Maintenance cadence: Last push 3 days ago.",
+      "Issue engagement: 12 open issues for 153 stars (7.8%)."
+    ],
+    "red_flags": []
+  }
 }

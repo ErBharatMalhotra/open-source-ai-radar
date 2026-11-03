@@ -4,10 +4,27 @@
   "description": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 22086,
+  "topics": [
+    "agent",
+    "agents",
+    "agents-sdk",
+    "ai",
+    "ai-agents",
+    "multi-agent-systems",
+    "multi-agents",
+    "multi-agents-collaboration",
+    "aiagentframework",
+    "genai",
+    "genai-chatbot",
+    "llms",
+    "agentic",
+    "agentic-ai",
+    "llm",
+    "multi-agent"
+  ],
+  "stars": 22088,
   "forks": 4292,
-  "open_issues": 203,
+  "open_issues": 205,
   "watchers": 151,
   "created_at": "2025-04-01T20:44:40Z",
   "pushed_at": "2026-11-03T07:48:01Z",
@@ -15,22 +32,76 @@
   "owner_avatar": "https://github.com/google.png",
   "radar_score": 78.52,
   "impact": 95.8,
-  "velocity": 69.32,
+  "velocity": 69.33,
   "health": 63.75,
-  "global_percentile": 85.86,
+  "global_percentile": 85.57,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
   "maturity": "Unknown",
-  "stars_7d": 79,
-  "stars_30d": 314,
-  "stars_90d": 314,
-  "star_growth_rate_7d": 11.285714285714286,
-  "star_growth_rate_30d": 14.272727272727273,
-  "star_growth_acceleration": 0.7907188353048226,
-  "forks_7d": 44,
+  "stars_7d": 75,
+  "stars_30d": 312,
+  "stars_90d": 312,
+  "star_growth_rate_7d": 10.714285714285714,
+  "star_growth_rate_30d": 13.565217391304348,
+  "star_growth_acceleration": 0.7898351648351648,
+  "forks_7d": 39,
   "forks_30d": 163,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 283
+  "snapshot_count": 284,
+  "authenticity": {
+    "organic_confidence": 85.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.1,
+        "weight": 0.22,
+        "detail": "4,292 forks for 22,088 stars (19.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 74.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 39 stars (19 forks, 3.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 72.8,
+        "weight": 0.12,
+        "detail": "205 open issues for 22,088 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 4,292 forks for 22,088 stars (19.4%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

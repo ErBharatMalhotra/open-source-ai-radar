@@ -4,9 +4,30 @@
   "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 16102,
-  "forks": 1587,
+  "topics": [
+    "claude-code",
+    "obsidian",
+    "second-brain",
+    "claude-code-skill",
+    "knowledge-management",
+    "open-source",
+    "agent-skills",
+    "ai-second-brain",
+    "claude-plugin",
+    "karpathy-llm-wiki",
+    "knowledge-graph",
+    "obsidian-ai",
+    "obsidian-plugin",
+    "pkm",
+    "ai-note-taking",
+    "claude-memory",
+    "note-taking",
+    "notion-alternative",
+    "obsidian-second-brain",
+    "personal-knowledge-management"
+  ],
+  "stars": 16110,
+  "forks": 1589,
   "open_issues": 17,
   "watchers": 62,
   "created_at": "2026-04-07T08:59:37Z",
@@ -17,20 +38,77 @@
   "impact": 92.72,
   "velocity": 60.83,
   "health": 60.92,
-  "global_percentile": 48.29,
+  "global_percentile": 38.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pat",
   "maturity": "Unknown",
-  "stars_7d": 267,
-  "stars_30d": 640,
-  "stars_90d": 640,
-  "star_growth_rate_7d": 38.142857142857146,
-  "star_growth_rate_30d": 29.09090909090909,
-  "star_growth_acceleration": 1.3111607142857145,
-  "forks_7d": 17,
-  "forks_30d": 50,
+  "stars_7d": 263,
+  "stars_30d": 646,
+  "stars_90d": 646,
+  "star_growth_rate_7d": 37.57142857142857,
+  "star_growth_rate_30d": 29.363636363636363,
+  "star_growth_acceleration": 1.2795223352498895,
+  "forks_7d": 15,
+  "forks_30d": 51,
   "days_since_last_push": 8,
   "freshness_score": 0.9231163463866358,
-  "snapshot_count": 264
+  "snapshot_count": 265,
+  "authenticity": {
+    "organic_confidence": 85.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.5,
+        "weight": 0.22,
+        "detail": "1,589 forks for 16,110 stars (9.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 93.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 43 stars (1 forks, 1.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 35.6,
+        "weight": 0.12,
+        "detail": "17 open issues for 16,110 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 94.6,
+        "weight": 0.1,
+        "detail": "Last push 8 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 43 stars (1 forks, 1.7x the daily average).",
+      "Maintenance cadence: Last push 8 days ago.",
+      "Fork-to-star ratio: 1,589 forks for 16,110 stars (9.9%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 17 open issues for 16,110 stars (0.1%)."
+    ]
+  }
 }

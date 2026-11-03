@@ -22,5 +22,61 @@
   "sub_category": "rag framework",
   "summary": "Rag (Retreival Augmented Generation) Python solution with llama3, LangChain, Ollama and ChromaDB in a Flask API based solution",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 78.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.0,
+        "weight": 0.22,
+        "detail": "76 forks for 218 stars (34.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 92.5,
+        "weight": 0.12,
+        "detail": "6 open issues for 218 stars (2.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 882 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 6 open issues for 218 stars (2.8%).",
+      "Fork-to-star ratio: 76 forks for 218 stars (34.9%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 882 days ago."
+    ]
+  }
 }

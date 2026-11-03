@@ -22,5 +22,60 @@
   "sub_category": "cli tool",
   "summary": "MCP server + CLI that distills code and database knowledge into a persistent, governed map of the entire repository \u2014 helping AI coding agents (Claude Code, Codex, Cursor, opencode) understand complex systems faster and carry development forward with greater precision.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 93.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.6,
+        "weight": 0.22,
+        "detail": "222 forks for 1,843 stars (12.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 77.1,
+        "weight": 0.12,
+        "detail": "21 open issues for 1,843 stars (1.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 21 open issues for 1,843 stars (1.1%).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 222 forks for 1,843 stars (12.0%)."
+    ],
+    "red_flags": []
+  }
 }

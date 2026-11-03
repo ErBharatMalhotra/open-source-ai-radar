@@ -4,33 +4,91 @@
   "description": "Ollama Python library",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ollama",
+    "python"
+  ],
   "stars": 10664,
-  "forks": 1227,
+  "forks": 1228,
   "open_issues": 114,
   "watchers": 78,
   "created_at": "2023-12-09T09:27:18Z",
   "pushed_at": "2026-10-16T19:45:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ollama.png",
-  "radar_score": 68.84,
+  "radar_score": 68.83,
   "impact": 91.42,
   "velocity": 50.68,
   "health": 58.12,
-  "global_percentile": 14.86,
+  "global_percentile": 15.57,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Ollama Python library",
   "maturity": "Unknown",
-  "stars_7d": 28,
-  "stars_30d": 94,
-  "stars_90d": 114,
-  "star_growth_rate_7d": 4.0,
-  "star_growth_rate_30d": 3.1333333333333333,
-  "star_growth_acceleration": 1.2765957446808511,
-  "forks_7d": 6,
-  "forks_30d": 41,
+  "stars_7d": 29,
+  "stars_30d": 93,
+  "stars_90d": 112,
+  "star_growth_rate_7d": 4.142857142857143,
+  "star_growth_rate_30d": 3.1,
+  "star_growth_acceleration": 1.336405529953917,
+  "forks_7d": 7,
+  "forks_30d": 40,
   "days_since_last_push": 17,
   "freshness_score": 0.8436648165963837,
-  "snapshot_count": 160
+  "snapshot_count": 161,
+  "authenticity": {
+    "organic_confidence": 87.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "1,228 forks for 10,664 stars (11.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 81.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 8 stars (0 forks, 2.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 76.0,
+        "weight": 0.12,
+        "detail": "114 open issues for 10,664 stars (1.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 90.7,
+        "weight": 0.1,
+        "detail": "Last push 17 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 114 open issues for 10,664 stars (1.1%).",
+      "Burst pattern: Largest 24h jump was 8 stars (0 forks, 2.5x the daily average).",
+      "Maintenance cadence: Last push 17 days ago."
+    ],
+    "red_flags": []
+  }
 }

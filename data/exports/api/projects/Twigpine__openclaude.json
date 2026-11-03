@@ -4,8 +4,14 @@
   "description": "runs anywhere. uses anything",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 34260,
+  "topics": [
+    "ai",
+    "ai-agent",
+    "ai-tools",
+    "cli",
+    "coding"
+  ],
+  "stars": 34264,
   "forks": 9132,
   "open_issues": 32,
   "watchers": 218,
@@ -13,25 +19,82 @@
   "pushed_at": "2026-11-02T06:31:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Twigpine.png",
-  "radar_score": 77.75,
-  "impact": 97.54,
-  "velocity": 72.98,
-  "health": 52.75,
-  "global_percentile": 78.0,
+  "radar_score": 77.65,
+  "impact": 97.55,
+  "velocity": 72.97,
+  "health": 52.38,
+  "global_percentile": 75.71,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "runs anywhere. uses anything",
   "maturity": "Unknown",
   "stars_7d": 102,
-  "stars_30d": 569,
-  "stars_90d": 569,
+  "stars_30d": 578,
+  "stars_90d": 578,
   "star_growth_rate_7d": 14.571428571428571,
-  "star_growth_rate_30d": 22.76,
-  "star_growth_acceleration": 0.6402209389907104,
-  "forks_7d": -1,
-  "forks_30d": 26,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 125,
-  "why_trending": "Strong momentum with 102 new stars this week. Above-average growth velocity. Active in the AI Agents category."
+  "star_growth_rate_30d": 23.12,
+  "star_growth_acceleration": 0.6302521008403361,
+  "forks_7d": 3,
+  "forks_30d": 28,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 126,
+  "why_trending": "Strong momentum with 102 new stars this week. Above-average growth velocity. Active in the AI Agents category.",
+  "authenticity": {
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.7,
+        "weight": 0.22,
+        "detail": "9,132 forks for 34,264 stars (26.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 80.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 55 stars (6 forks, 2.6x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 34.3,
+        "weight": 0.12,
+        "detail": "32 open issues for 34,264 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 55 stars (6 forks, 2.6x the daily average).",
+      "Fork-to-star ratio: 9,132 forks for 34,264 stars (26.7%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 32 open issues for 34,264 stars (0.1%)."
+    ]
+  }
 }

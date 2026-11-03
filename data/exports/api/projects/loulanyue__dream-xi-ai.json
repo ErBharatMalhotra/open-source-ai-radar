@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\ud83c\udfc4 Dream XI AI turns isolated AI agents into a World Cup-level dream team.\ud83c\udfc4 Dream XI AI \u662f\u4e00\u4e2a\u9762\u5411\u590d\u6742\u4efb\u52a1\u6267\u884c\u7684 Multi-Agent \u534f\u4f5c\u5e73\u53f0\uff0c\u501f\u9274\u8db3\u7403\u201c\u68a6\u4e4b\u961f\u201d\u9635\u578b\u7406\u5ff5\uff0c\u5c06\u4e0d\u540c\u80fd\u529b\u7684 AI Agent \u62bd\u8c61\u4e3a\u961f\u957f\u3001\u7ec4\u7ec7\u6838\u5fc3\u3001\u524d\u950b\u3001\u540e\u536b\u3001\u95e8\u5c06\u7b49\u89d2\u8272\uff0c\u5b9e\u73b0\u4efb\u52a1\u89c4\u5212\u3001\u5de5\u5177\u6267\u884c\u3001\u7ed3\u679c\u8bc4\u5ba1\u3001\u98ce\u9669\u62e6\u622a\u548c\u6700\u7ec8\u4ea4\u4ed8\u7684\u534f\u540c\u95ed\u73af\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 65.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 78.3,
+        "weight": 0.22,
+        "detail": "19 forks for 428 stars (4.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 428 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 84.5,
+        "weight": 0.1,
+        "detail": "Last push 32 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 19 forks for 428 stars (4.4%).",
+      "Maintenance cadence: Last push 32 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 428 stars (0.0%)."
+    ]
+  }
 }

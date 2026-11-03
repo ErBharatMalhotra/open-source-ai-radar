@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\u8ba9 AI \u7f16\u7a0b\u52a9\u624b\uff08Cursor / Claude Code \u7b49\uff09\u80fd\u66f4\u597d\u5730\u7f16\u5199 Minecraft \u6a21\u7ec4\u7684\u5b8c\u6574\u5de5\u5177\u5305\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 66.1,
+        "weight": 0.22,
+        "detail": "3 forks for 115 stars (2.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 86.1,
+        "weight": 0.12,
+        "detail": "2 open issues for 115 stars (1.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 2 open issues for 115 stars (1.7%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

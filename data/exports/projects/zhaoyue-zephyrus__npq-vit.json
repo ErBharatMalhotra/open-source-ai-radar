@@ -22,5 +22,59 @@
   "sub_category": "quantization",
   "summary": "[ICLR 2025] Binary Spherical Quantization + [CVPR 2026] Leech Spherical Quantization",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 82.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 69.4,
+        "weight": 0.22,
+        "detail": "7 forks for 225 stars (3.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "12 open issues for 225 stars (5.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 14 days ago.",
+      "Issue engagement: 12 open issues for 225 stars (5.3%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -22,5 +22,60 @@
   "sub_category": "benchmark",
   "summary": "Open-source benchmark for browser AI agents on daily tasks.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 87.3,
+        "weight": 0.22,
+        "detail": "62 forks for 959 stars (6.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 94.5,
+        "weight": 0.12,
+        "detail": "32 open issues for 959 stars (3.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 85.9,
+        "weight": 0.1,
+        "detail": "Last push 28 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 28 days ago.",
+      "Fork-to-star ratio: 62 forks for 959 stars (6.5%).",
+      "Issue engagement: 32 open issues for 959 stars (3.3%)."
+    ],
+    "red_flags": []
+  }
 }

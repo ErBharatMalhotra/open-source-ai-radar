@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Govern, Observe, Direct - a real-time control room for agent societies",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 91.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "136 forks for 1,258 stars (10.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 73.6,
+        "weight": 0.12,
+        "detail": "12 open issues for 1,258 stars (1.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 93.3,
+        "weight": 0.1,
+        "detail": "Last push 11 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 11 days ago.",
+      "Fork-to-star ratio: 136 forks for 1,258 stars (10.8%)."
+    ],
+    "red_flags": []
+  }
 }

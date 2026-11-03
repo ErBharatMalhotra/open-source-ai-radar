@@ -4,7 +4,25 @@
   "description": "Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "batch-processing",
+    "kafka",
+    "pathway",
+    "python",
+    "streaming",
+    "machine-learning-algorithms",
+    "real-time",
+    "data-analytics",
+    "data-pipelines",
+    "data-processing",
+    "dataflow",
+    "etl",
+    "etl-framework",
+    "iot-analytics",
+    "rust",
+    "stream-processing",
+    "time-series-analysis"
+  ],
   "stars": 62026,
   "forks": 1713,
   "open_issues": 30,
@@ -13,24 +31,80 @@
   "pushed_at": "2026-11-03T06:37:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/pathwaycom.png",
-  "radar_score": 72.19,
-  "impact": 96.3,
-  "velocity": 60.69,
-  "health": 49.7,
-  "global_percentile": 28.71,
+  "radar_score": 72.98,
+  "impact": 96.29,
+  "velocity": 62.18,
+  "health": 50.8,
+  "global_percentile": 33.0,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.",
   "maturity": "Unknown",
-  "stars_7d": -38,
-  "stars_30d": -160,
-  "stars_90d": -160,
-  "star_growth_rate_7d": -5.428571428571429,
-  "star_growth_rate_30d": -5.517241379310345,
+  "stars_7d": -36,
+  "stars_30d": -156,
+  "stars_90d": -156,
+  "star_growth_rate_7d": -5.142857142857143,
+  "star_growth_rate_30d": -5.379310344827586,
   "star_growth_acceleration": 1.0,
   "forks_7d": 29,
-  "forks_30d": 27,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 208
+  "forks_30d": 29,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 209,
+  "authenticity": {
+    "organic_confidence": 73.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 67.1,
+        "weight": 0.22,
+        "detail": "1,713 forks for 62,026 stars (2.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 90.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 2 stars (3 forks, 2.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.8,
+        "weight": 0.12,
+        "detail": "30 open issues for 62,026 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 2 stars (3 forks, 2.0x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 30 open issues for 62,026 stars (0.0%)."
+    ]
+  }
 }

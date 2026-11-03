@@ -4,8 +4,12 @@
   "description": "Access large language models from the command-line",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12698,
+  "topics": [
+    "llms",
+    "openai",
+    "ai"
+  ],
+  "stars": 12699,
   "forks": 1076,
   "open_issues": 435,
   "watchers": 61,
@@ -17,20 +21,75 @@
   "impact": 91.42,
   "velocity": 58.54,
   "health": 63.75,
-  "global_percentile": 42.57,
+  "global_percentile": 33.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Access large language models from the command-line",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 114,
-  "stars_90d": 124,
-  "star_growth_rate_7d": 3.5714285714285716,
-  "star_growth_rate_30d": 3.8,
-  "star_growth_acceleration": 0.9398496240601505,
+  "stars_7d": 26,
+  "stars_30d": 116,
+  "stars_90d": 126,
+  "star_growth_rate_7d": 3.7142857142857144,
+  "star_growth_rate_30d": 3.8666666666666667,
+  "star_growth_acceleration": 0.9605911330049262,
   "forks_7d": 9,
   "forks_30d": 63,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 191
+  "snapshot_count": 192,
+  "authenticity": {
+    "organic_confidence": 93.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.5,
+        "weight": 0.22,
+        "detail": "1,076 forks for 12,699 stars (8.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 89.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 8 stars (0 forks, 2.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 94.8,
+        "weight": 0.12,
+        "detail": "435 open issues for 12,699 stars (3.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 8 stars (0 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 1,076 forks for 12,699 stars (8.5%).",
+      "Issue engagement: 435 open issues for 12,699 stars (3.4%)."
+    ],
+    "red_flags": []
+  }
 }

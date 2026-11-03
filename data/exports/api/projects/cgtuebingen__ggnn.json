@@ -22,5 +22,60 @@
   "sub_category": "gpu management",
   "summary": "GGNN: State of the Art Graph-based GPU Nearest Neighbor Search",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 71.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.6,
+        "weight": 0.22,
+        "detail": "30 forks for 176 stars (17.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 62.0,
+        "weight": 0.12,
+        "detail": "1 open issues for 176 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 630 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 30 forks for 176 stars (17.0%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 630 days ago."
+    ]
+  }
 }

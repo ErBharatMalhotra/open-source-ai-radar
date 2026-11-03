@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "\ud83d\udd25 26\u5e7410\u6708\u6700\u65b0 | \u4f01\u4e1a\u7ea7 OpenAI / ChatGPT\u5145\u503c\u3001GPT\u5145\u503c\u3001GPT\u91c7\u8d2d\u3001Pro (5x/20x)\u3001GPTTeam \u4ee3\u5145\u5b98\u65b9\u5408\u89c4\u4ee3\u91c7\u5e73\u53f0\u3002\u652f\u6301\u4f01\u4e1a\u94f6\u884c\u516c\u5bf9\u516c\u8f6c\u8d26\u3001\u5f00\u5177 6% \u589e\u503c\u7a0e\u4e13\u7528\u53d1\u7968\u3001\u7b7e\u7f72\u52a0\u76d6\u516c\u7ae0 SLA \u515c\u5e95\u534f\u8bae\u3002\u5546\u52a1\u5fae\u4fe1\uff1ayqtp01",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 52.2,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 50.8,
+        "weight": 0.22,
+        "detail": "16 forks for 1,291 stars (1.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 1,291 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.0,
+        "weight": 0.1,
+        "detail": "Last push 23 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 23 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 1,291 stars (0.0%)."
+    ]
+  }
 }

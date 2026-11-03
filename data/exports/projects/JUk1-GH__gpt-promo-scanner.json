@@ -22,5 +22,58 @@
   "sub_category": "",
   "summary": "ChatGPT Team(Business) \u4fc3\u9500\u7801\u81ea\u52a8\u626b\u63cf\u5de5\u5177 \u2014 \u6279\u91cf\u53d1\u73b0/\u9a8c\u8bc1/\u4ef7\u683c\u6536\u96c6\uff0c\u652f\u6301 17 \u56fd 34 \u4e2a\u7801\uff0c\u6700\u9ad8\u6298\u6263 71% | ChatGPT Business promo code scanner \u2014 batch discovery, validation, price collection, 34 codes across 17 countries, up to 71% off",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 77.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.5,
+        "weight": 0.22,
+        "detail": "165 forks for 942 stars (17.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 64.1,
+        "weight": 0.12,
+        "detail": "6 open issues for 942 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 47.2,
+        "weight": 0.1,
+        "detail": "Last push 172 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 165 forks for 942 stars (17.5%)."
+    ],
+    "red_flags": []
+  }
 }

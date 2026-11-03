@@ -22,5 +22,59 @@
   "sub_category": "server",
   "summary": "\u53f0\u7063\u6cd5\u5f8b MCP \u4f3a\u670d\u5668 + CLI\uff08\u514d\u8cbb\u3001\u514d\u8a3b\u518a\u3001\u514d API key\uff09\uff1a2,250 \u842c\u7b46\u88c1\u5224\u66f8\u3001\u884c\u653f\u51fd\u91cb\u3001\u61b2\u6cd5\u6cd5\u5ead\u88c1\u5224\uff0c\u9644\u5f15\u7528\u67e5\u6838\u3002Free Taiwan legal MCP server for Claude/ChatGPT/Codex \u2014 bring your own LLM, retrieval-only.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.4,
+        "weight": 0.22,
+        "detail": "45 forks for 342 stars (13.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 62.5,
+        "weight": 0.12,
+        "detail": "2 open issues for 342 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 45 forks for 342 stars (13.2%)."
+    ],
+    "red_flags": []
+  }
 }

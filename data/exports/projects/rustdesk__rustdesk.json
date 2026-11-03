@@ -4,9 +4,29 @@
   "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
   "language": "Rust",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 127975,
-  "forks": 20263,
+  "topics": [
+    "remote-control",
+    "remote-desktop",
+    "teamviewer",
+    "anydesk",
+    "vnc",
+    "rdp",
+    "rust",
+    "p2p",
+    "flutter",
+    "flutter-apps",
+    "dart",
+    "rust-lang",
+    "wayland",
+    "linux",
+    "android",
+    "flatpak",
+    "ios",
+    "macos",
+    "windows"
+  ],
+  "stars": 128000,
+  "forks": 20269,
   "open_issues": 117,
   "watchers": 637,
   "created_at": "2020-09-28T15:36:08Z",
@@ -17,20 +37,77 @@
   "impact": 99.6,
   "velocity": 67.84,
   "health": 58.35,
-  "global_percentile": 85.0,
+  "global_percentile": 83.0,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
   "maturity": "Unknown",
-  "stars_7d": 869,
-  "stars_30d": 2446,
-  "stars_90d": 2446,
-  "star_growth_rate_7d": 124.14285714285714,
-  "star_growth_rate_30d": 111.18181818181819,
-  "star_growth_acceleration": 1.1165751664525172,
-  "forks_7d": 225,
-  "forks_30d": 651,
+  "stars_7d": 857,
+  "stars_30d": 2469,
+  "stars_90d": 2469,
+  "star_growth_rate_7d": 122.42857142857143,
+  "star_growth_rate_30d": 112.22727272727273,
+  "star_growth_acceleration": 1.090898570849968,
+  "forks_7d": 222,
+  "forks_30d": 654,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 291
+  "snapshot_count": 292,
+  "authenticity": {
+    "organic_confidence": 84.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.8,
+        "weight": 0.22,
+        "detail": "20,269 forks for 128,000 stars (15.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 88.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 201 stars (52 forks, 2.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 34.1,
+        "weight": 0.12,
+        "detail": "117 open issues for 128,000 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 201 stars (52 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 20,269 forks for 128,000 stars (15.8%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 117 open issues for 128,000 stars (0.1%)."
+    ]
+  }
 }

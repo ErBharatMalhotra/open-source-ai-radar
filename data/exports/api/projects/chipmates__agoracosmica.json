@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "A Living Library You Can Talk To. Open-source educational platform with 30 historical figures from philosophy, science, art, mysticism, and activism. Stories, dialogues, AI conversation, multi-figure councils. Nonprofit, BYOK, self-hostable, no behavioral tracking.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 89.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.1,
+        "weight": 0.22,
+        "detail": "29 forks for 150 stars (19.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 65.0,
+        "weight": 0.12,
+        "detail": "1 open issues for 150 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 29 forks for 150 stars (19.3%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": []
+  }
 }

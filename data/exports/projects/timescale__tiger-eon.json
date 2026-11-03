@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "An LLM-powered Slack bot for your internal knowledge, powered by tiger-agents-for-work libraries.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 83.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 89.0,
+        "weight": 0.22,
+        "detail": "8 forks for 115 stars (7.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 71.1,
+        "weight": 0.12,
+        "detail": "1 open issues for 115 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 84.5,
+        "weight": 0.1,
+        "detail": "Last push 32 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 32 days ago.",
+      "Fork-to-star ratio: 8 forks for 115 stars (7.0%)."
+    ],
+    "red_flags": []
+  }
 }

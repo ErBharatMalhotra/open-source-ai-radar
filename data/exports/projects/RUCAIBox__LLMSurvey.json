@@ -4,7 +4,19 @@
   "description": "The official GitHub page for the survey paper \"A Survey of Large Language Models\".",
   "language": "Python",
   "license": null,
-  "topics": [],
+  "topics": [
+    "chain-of-thought",
+    "chatgpt",
+    "in-context-learning",
+    "instruction-tuning",
+    "large-language-models",
+    "llm",
+    "llms",
+    "natural-language-processing",
+    "pre-trained-language-models",
+    "pre-training",
+    "rlhf"
+  ],
   "stars": 12231,
   "forks": 928,
   "open_issues": 26,
@@ -15,22 +27,77 @@
   "owner_avatar": "https://github.com/RUCAIBox.png",
   "radar_score": 59.58,
   "impact": 92.45,
-  "velocity": 41.19,
+  "velocity": 41.18,
   "health": 32.75,
-  "global_percentile": 0.14,
+  "global_percentile": 0.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The official GitHub page for the survey paper \"A Survey of Large Language Models\".",
   "maturity": "Unknown",
   "stars_7d": 2,
-  "stars_30d": 8,
-  "stars_90d": 26,
+  "stars_30d": 7,
+  "stars_90d": 25,
   "star_growth_rate_7d": 0.2857142857142857,
-  "star_growth_rate_30d": 0.2857142857142857,
-  "star_growth_acceleration": 1.0,
+  "star_growth_rate_30d": 0.2413793103448276,
+  "star_growth_acceleration": 1.183673469387755,
   "forks_7d": -1,
   "forks_30d": -2,
-  "days_since_last_push": 601,
-  "freshness_score": 0.002454088180413917,
-  "snapshot_count": 69
+  "days_since_last_push": 602,
+  "freshness_score": 0.0024296695950245953,
+  "snapshot_count": 70,
+  "authenticity": {
+    "organic_confidence": 63.7,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 91.3,
+        "weight": 0.22,
+        "detail": "928 forks for 12,231 stars (7.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 63.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 4 stars (-1 forks, 4.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 45.6,
+        "weight": 0.12,
+        "detail": "26 open issues for 12,231 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 602 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 928 forks for 12,231 stars (7.6%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 602 days ago."
+    ]
+  }
 }

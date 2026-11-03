@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "Adlik: Toolkit for Accelerating Deep Learning Inference",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 81.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "82 forks for 806 stars (10.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 93.7,
+        "weight": 0.12,
+        "detail": "25 open issues for 806 stars (3.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 1042 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 25 open issues for 806 stars (3.1%).",
+      "Fork-to-star ratio: 82 forks for 806 stars (10.2%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 1042 days ago."
+    ]
+  }
 }

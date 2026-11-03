@@ -22,5 +22,61 @@
   "sub_category": "server",
   "summary": "\ud83c\udfa8 Open-source design MCP server + shadcn/ui registry \u2014 AI design systems for Claude Code, Cursor, Codex, GitHub Copilot & any MCP client. 31 brand-grade themes (Linear, Stripe, Vercel, Notion, Apple, Supabase, Figma\u2026) + design tokens, UI principles & WCAG rules. Install any component with one comman",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 70.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 84.5,
+        "weight": 0.22,
+        "detail": "31 forks for 545 stars (5.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 545 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 94.6,
+        "weight": 0.1,
+        "detail": "Last push 8 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 31 forks for 545 stars (5.7%).",
+      "Maintenance cadence: Last push 8 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 545 stars (0.0%)."
+    ]
+  }
 }

@@ -22,5 +22,61 @@
   "sub_category": "local runner",
   "summary": "\u2b50\ufe0f Download Airi Self-Hosted AI \u2014 powerful AI assistant software with setup installer v1.0. Includes activation keygen, license key pre-activated, full version serial, latest build Pro updated. Get desktop working on Windows 10/11 PC. Intelligent chatbot solution with self-hosted model, privacy focu",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 27.9,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 199 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 199 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.8,
+        "weight": 0.1,
+        "detail": "Last push 43 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 43 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 199 stars (0.0%).",
+      "Issue engagement: 0 open issues for 199 stars (0.0%)."
+    ]
+  }
 }

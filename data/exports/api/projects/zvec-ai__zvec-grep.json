@@ -33,5 +33,59 @@
   "days_since_last_push": 0,
   "freshness_score": 1.0,
   "snapshot_count": 2,
-  "why_trending": "Strong momentum with 110 new stars this week. Above-average growth velocity. Active in the AI Agents category."
+  "why_trending": "Strong momentum with 110 new stars this week. Above-average growth velocity. Active in the AI Agents category.",
+  "authenticity": {
+    "organic_confidence": 85.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 85.9,
+        "weight": 0.22,
+        "detail": "257 forks for 4,218 stars (6.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 71.3,
+        "weight": 0.12,
+        "detail": "37 open issues for 4,218 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 257 forks for 4,218 stars (6.1%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

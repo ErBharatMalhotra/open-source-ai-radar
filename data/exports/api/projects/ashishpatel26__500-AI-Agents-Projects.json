@@ -4,8 +4,11 @@
   "description": "The 500 AI Agents Projects is a curated collection of AI agent use cases across various industries. It showcases practical applications and provides links to open-source projects for implementation, illustrating how AI agents are transforming sectors such as healthcare, finance, education, retail, and more.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 39264,
+  "topics": [
+    "ai-agents",
+    "genai"
+  ],
+  "stars": 39266,
   "forks": 7043,
   "open_issues": 19,
   "watchers": 423,
@@ -17,20 +20,76 @@
   "impact": 98.07,
   "velocity": 52.92,
   "health": 39.01,
-  "global_percentile": 15.43,
+  "global_percentile": 12.0,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "The 500 AI Agents Projects is a curated collection of AI agent use cases across various industries. It showcases practical applications and provides links to open-source projects for implementation, illustrating how AI agents are transforming sectors such as healthcare, finance, education, retail, a",
   "maturity": "Unknown",
-  "stars_7d": 242,
-  "stars_30d": 794,
-  "stars_90d": 794,
-  "star_growth_rate_7d": 34.57142857142857,
-  "star_growth_rate_30d": 34.52173913043478,
-  "star_growth_acceleration": 1.0014393666786614,
-  "forks_7d": 33,
-  "forks_30d": 145,
+  "stars_7d": 231,
+  "stars_30d": 759,
+  "stars_90d": 759,
+  "star_growth_rate_7d": 33.0,
+  "star_growth_rate_30d": 33.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 30,
+  "forks_30d": 143,
   "days_since_last_push": 99,
   "freshness_score": 0.3715766910220457,
-  "snapshot_count": 275
+  "snapshot_count": 276,
+  "authenticity": {
+    "organic_confidence": 76.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.4,
+        "weight": 0.22,
+        "detail": "7,043 forks for 39,266 stars (17.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 84.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 76 stars (5 forks, 2.4x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.8,
+        "weight": 0.12,
+        "detail": "19 open issues for 39,266 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 67.5,
+        "weight": 0.1,
+        "detail": "Last push 99 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 76 stars (5 forks, 2.4x the daily average).",
+      "Fork-to-star ratio: 7,043 forks for 39,266 stars (17.9%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 19 open issues for 39,266 stars (0.0%)."
+    ]
+  }
 }

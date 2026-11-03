@@ -22,5 +22,59 @@
   "sub_category": "code review",
   "summary": "Principled code generation from OpenAPI specifications",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 90.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.9,
+        "weight": 0.22,
+        "detail": "138 forks for 540 stars (25.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "139 open issues for 540 stars (25.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 65.0,
+        "weight": 0.1,
+        "detail": "Last push 108 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 138 forks for 540 stars (25.6%).",
+      "Issue engagement: 139 open issues for 540 stars (25.7%)."
+    ],
+    "red_flags": []
+  }
 }

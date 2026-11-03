@@ -22,5 +22,59 @@
   "sub_category": "rag framework",
   "summary": "\u672c\u9879\u76ee\u8bbe\u8ba1\u5e76\u5b9e\u73b0\u4e86\u4e00\u4e2a\u57fa\u4e8e\u77e5\u8bc6\u56fe\u8c31 RAG \u4e0e\u5927\u8bed\u8a00\u6a21\u578b\u7684\u533b\u7597\u667a\u80fd\u95ee\u7b54\u7cfb\u7edf\u3002\u7cfb\u7edf\u4ee5 DiseaseKG \u533b\u7597\u6570\u636e\u96c6\u4e3a\u57fa\u7840\uff0c\u4f9d\u6258 Neo4j \u6784\u5efa\u5305\u542b 4.4 \u4e07\u5b9e\u4f53\u4e0e 31 \u4e07\u5173\u7cfb\u7684\u9886\u57df\u77e5\u8bc6\u56fe\u8c31\uff1b\u7ed3\u5408 BERT \u547d\u540d\u5b9e\u4f53\u8bc6\u522b\u4e0e 32B \u5927\u6a21\u578b\u610f\u56fe\u8bc6\u522b\uff0c\u901a\u8fc7\u7cbe\u786e\u7684\u56fe\u8c31\u68c0\u7d22\u4e0e\u53d7\u63a7\u7684\u7b54\u6848\u751f\u6210\uff0c\u6709\u6548\u7f13\u89e3\u5927\u6a21\u578b\u5728\u533b\u7597\u573a\u666f\u4e2d\u7684\u5e7b\u89c9\u95ee\u9898\uff0c\u663e\u8457\u63d0\u5347\u56de\u7b54\u7684\u51c6\u786e\u6027\u4e0e\u53ef\u9760\u6027\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 86.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "150 forks for 1,499 stars (10.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 90.2,
+        "weight": 0.12,
+        "detail": "31 open issues for 1,499 stars (2.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 51.1,
+        "weight": 0.1,
+        "detail": "Last push 158 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 31 open issues for 1,499 stars (2.1%).",
+      "Fork-to-star ratio: 150 forks for 1,499 stars (10.0%)."
+    ],
+    "red_flags": []
+  }
 }

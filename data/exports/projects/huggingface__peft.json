@@ -4,9 +4,20 @@
   "description": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 21871,
-  "forks": 2646,
+  "topics": [
+    "adapter",
+    "diffusion",
+    "llm",
+    "parameter-efficient-learning",
+    "python",
+    "pytorch",
+    "transformers",
+    "lora",
+    "fine-tuning",
+    "peft"
+  ],
+  "stars": 21872,
+  "forks": 2645,
   "open_issues": 67,
   "watchers": 113,
   "created_at": "2022-11-25T03:51:09Z",
@@ -17,20 +28,74 @@
   "impact": 94.92,
   "velocity": 61.75,
   "health": 63.75,
-  "global_percentile": 53.57,
+  "global_percentile": 54.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 117,
-  "stars_90d": 120,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 3.9,
-  "star_growth_acceleration": 0.5494505494505495,
-  "forks_7d": 21,
+  "stars_7d": 21,
+  "stars_30d": 122,
+  "stars_90d": 124,
+  "star_growth_rate_7d": 3.0,
+  "star_growth_rate_30d": 4.066666666666666,
+  "star_growth_acceleration": 0.7377049180327869,
+  "forks_7d": 22,
   "forks_30d": 99,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 216
+  "snapshot_count": 217,
+  "authenticity": {
+    "organic_confidence": 80.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.6,
+        "weight": 0.22,
+        "detail": "2,645 forks for 21,872 stars (12.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 70.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 14 stars (2 forks, 3.4x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 50.3,
+        "weight": 0.12,
+        "detail": "67 open issues for 21,872 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,645 forks for 21,872 stars (12.1%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

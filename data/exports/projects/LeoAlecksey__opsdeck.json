@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "DevOps cockpit in one window: terminal with local AI, Kubernetes, SSH, databases, IDE with git, alerts, notes and KeePass. Free, open source, Linux/Windows/macOS. \u0420\u0430\u0431\u043e\u0447\u0435\u0435 \u043c\u0435\u0441\u0442\u043e DevOps-\u0438\u043d\u0436\u0435\u043d\u0435\u0440\u0430 \u0432 \u043e\u0434\u043d\u043e\u043c \u043e\u043a\u043d\u0435.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "23 forks for 215 stars (10.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.1,
+        "weight": 0.12,
+        "detail": "5 open issues for 215 stars (2.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 5 open issues for 215 stars (2.3%).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 23 forks for 215 stars (10.7%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "A small proof-of-concept language model (not an LLM) incorporating latent-space prediction, internal state using recurrent trace units, and byte-by-byte output, built with MLX.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.3,
+        "weight": 0.22,
+        "detail": "61 forks for 327 stars (18.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 99.6,
+        "weight": 0.12,
+        "detail": "16 open issues for 327 stars (4.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 61 forks for 327 stars (18.7%).",
+      "Issue engagement: 16 open issues for 327 stars (4.9%)."
+    ],
+    "red_flags": []
+  }
 }

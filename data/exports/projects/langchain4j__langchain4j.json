@@ -4,33 +4,109 @@
   "description": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 13348,
+  "topics": [
+    "huggingface",
+    "java",
+    "langchain",
+    "openai",
+    "chatgpt",
+    "gpt",
+    "llama",
+    "milvus",
+    "pinecone",
+    "onnx",
+    "embeddings",
+    "vector-database",
+    "chroma",
+    "gemini",
+    "ollama",
+    "anthropic",
+    "openai-api",
+    "pgvector",
+    "llm",
+    "llms"
+  ],
+  "stars": 13349,
   "forks": 2657,
-  "open_issues": 677,
+  "open_issues": 679,
   "watchers": 119,
   "created_at": "2023-06-20T15:30:29Z",
-  "pushed_at": "2026-11-03T08:48:30Z",
+  "pushed_at": "2026-11-03T08:51:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/langchain4j.png",
   "radar_score": 74.58,
-  "impact": 93.78,
+  "impact": 93.79,
   "velocity": 62.94,
   "health": 60.15,
-  "global_percentile": 55.14,
+  "global_percentile": 44.0,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Jav",
   "maturity": "Unknown",
-  "stars_7d": 43,
-  "stars_30d": 130,
-  "stars_90d": 130,
-  "star_growth_rate_7d": 6.142857142857143,
-  "star_growth_rate_30d": 5.2,
-  "star_growth_acceleration": 1.1813186813186813,
+  "stars_7d": 45,
+  "stars_30d": 131,
+  "stars_90d": 131,
+  "star_growth_rate_7d": 6.428571428571429,
+  "star_growth_rate_30d": 5.24,
+  "star_growth_acceleration": 1.2268266085059978,
   "forks_7d": 15,
   "forks_30d": 62,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 247
+  "snapshot_count": 248,
+  "authenticity": {
+    "organic_confidence": 93.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.0,
+        "weight": 0.22,
+        "detail": "2,657 forks for 13,349 stars (19.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 83.4,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 12 stars (12 forks, 2.4x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "679 open issues for 13,349 stars (5.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 12 stars (12 forks, 2.4x the daily average).",
+      "Fork-to-star ratio: 2,657 forks for 13,349 stars (19.9%).",
+      "Issue engagement: 679 open issues for 13,349 stars (5.1%)."
+    ],
+    "red_flags": []
+  }
 }

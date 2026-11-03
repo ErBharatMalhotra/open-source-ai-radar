@@ -22,5 +22,59 @@
   "sub_category": "serving",
   "summary": "\u5e2e\u4f60\u7684 Claude Science \u4e00\u952e\u63a5\u5165\u4f60\u81ea\u5df1\u7684 API\uff1aDeepSeek / \u901a\u4e49\u5343\u95ee / \u667a\u8c31 GLM / Kimi / MiniMax / \u5c0f\u7c73 MiMo / \u7845\u57fa\u6d41\u52a8 / OpenRouter / \u4efb\u610f OpenAI\u00b7Anthropic \u517c\u5bb9\u7aef\u70b9",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 93.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.4,
+        "weight": 0.22,
+        "detail": "48 forks for 488 stars (9.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "35 open issues for 488 stars (7.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 74.5,
+        "weight": 0.1,
+        "detail": "Last push 72 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 48 forks for 488 stars (9.8%).",
+      "Issue engagement: 35 open issues for 488 stars (7.2%)."
+    ],
+    "red_flags": []
+  }
 }

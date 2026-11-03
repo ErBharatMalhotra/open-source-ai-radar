@@ -22,5 +22,59 @@
   "sub_category": "inference engine",
   "summary": "Swift + Metal MoE inference for Apple Silicon: Qwen 3.6 35B at 23.5\u201329.3 tok/s decode with 2.20\u00d7 faster long-prompt prefill on a 24 GB M5; Gemma 4 26B in ~2 GB, DeepSeek-V4-Flash 284B, Inkling-Small 276B, native Mac app, CLI, and OpenAI-compatible server.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 87.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.0,
+        "weight": 0.22,
+        "detail": "18 forks for 122 stars (14.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 69.6,
+        "weight": 0.12,
+        "detail": "1 open issues for 122 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 83.0,
+        "weight": 0.1,
+        "detail": "Last push 38 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 38 days ago.",
+      "Fork-to-star ratio: 18 forks for 122 stars (14.8%)."
+    ],
+    "red_flags": []
+  }
 }

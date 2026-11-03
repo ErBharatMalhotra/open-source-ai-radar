@@ -22,5 +22,58 @@
   "sub_category": "",
   "summary": "Drop-in memory harness for AI agents \u2014 3-tier memory, compaction tree, hybrid search. One command to set up. Works with Claude Code and OpenClaw.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 73.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 81.7,
+        "weight": 0.22,
+        "detail": "10 forks for 202 stars (5.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 74.7,
+        "weight": 0.12,
+        "detail": "2 open issues for 202 stars (1.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 54.2,
+        "weight": 0.1,
+        "detail": "Last push 147 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 10 forks for 202 stars (5.0%)."
+    ],
+    "red_flags": []
+  }
 }

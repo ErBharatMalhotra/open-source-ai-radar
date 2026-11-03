@@ -22,5 +22,61 @@
   "sub_category": "code review",
   "summary": "GPT-5.6 \u54ea\u4e2a\u6863\u4f4d\u80fd\u7528\uff1f2026 \u6700\u65b0 ChatGPT \u5145\u503c / \u4ee3\u5145\u6559\u7a0b\uff0c\u652f\u4ed8\u5b9d\u3001\u5fae\u4fe1\u5f00\u901a Plus\u3001Pro\u3001Go\u3001Codex\u3002\u4e0d\u7528\u4ea4\u8d26\u53f7\u5bc6\u7801\uff0c\u81ea\u52a9\u5145\u503c\uff0c\u652f\u6301\u5f00\u53d1\u7968\u53ef\u62a5\u9500\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 72.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 90.2,
+        "weight": 0.22,
+        "detail": "25 forks for 343 stars (7.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 343 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.9,
+        "weight": 0.1,
+        "detail": "Last push 21 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 21 days ago.",
+      "Fork-to-star ratio: 25 forks for 343 stars (7.3%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 343 stars (0.0%)."
+    ]
+  }
 }

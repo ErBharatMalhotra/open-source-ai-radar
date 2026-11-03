@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Metis is a coding agent that boosts AI/LLM coding performance by 50% QQ\u7fa4: 801193315",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 91.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 93.7,
+        "weight": 0.22,
+        "detail": "36 forks for 436 stars (8.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 84.1,
+        "weight": 0.12,
+        "detail": "7 open issues for 436 stars (1.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.1,
+        "weight": 0.1,
+        "detail": "Last push 4 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 7 open issues for 436 stars (1.6%).",
+      "Fork-to-star ratio: 36 forks for 436 stars (8.3%).",
+      "Maintenance cadence: Last push 4 days ago."
+    ],
+    "red_flags": []
+  }
 }

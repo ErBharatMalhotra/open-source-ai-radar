@@ -4,8 +4,17 @@
   "description": "A community collection of OpenClaw use cases for making life easier.",
   "language": null,
   "license": "MIT",
-  "topics": [],
-  "stars": 31639,
+  "topics": [
+    "awesome-list",
+    "clawdbot",
+    "moltbot",
+    "openclaw",
+    "openclaw-plugin",
+    "openclaw-setup",
+    "openclaw-skills",
+    "usecase"
+  ],
+  "stars": 31640,
   "forks": 2704,
   "open_issues": 0,
   "watchers": 256,
@@ -22,15 +31,70 @@
   "sub_category": "",
   "summary": "A community collection of OpenClaw use cases for making life easier.",
   "maturity": "Unknown",
-  "stars_7d": -2,
+  "stars_7d": -3,
   "stars_30d": -40,
-  "stars_90d": -35,
-  "star_growth_rate_7d": -0.2857142857142857,
+  "stars_90d": -36,
+  "star_growth_rate_7d": -0.42857142857142855,
   "star_growth_rate_30d": -1.3333333333333333,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 1,
+  "forks_7d": 0,
   "forks_30d": -6,
   "days_since_last_push": 223,
   "freshness_score": 0.10752843013579495,
-  "snapshot_count": 162
+  "snapshot_count": 163,
+  "authenticity": {
+    "organic_confidence": 63.4,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.8,
+        "weight": 0.22,
+        "detail": "2,704 forks for 31,640 stars (8.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 63.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 4 stars (-3 forks, 4.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 31,640 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 40.4,
+        "weight": 0.1,
+        "detail": "Last push 223 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,704 forks for 31,640 stars (8.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 31,640 stars (0.0%)."
+    ]
+  }
 }

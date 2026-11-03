@@ -4,7 +4,9 @@
   "description": "MLX: An array framework for Apple silicon",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "mlx"
+  ],
   "stars": 29033,
   "forks": 2398,
   "open_issues": 81,
@@ -14,23 +16,78 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/ml-explore.png",
   "radar_score": 77.18,
-  "impact": 96.05,
+  "impact": 96.06,
   "velocity": 65.2,
   "health": 63.75,
-  "global_percentile": 75.29,
+  "global_percentile": 70.71,
   "category": "Local AI",
   "sub_category": "",
   "summary": "MLX: An array framework for Apple silicon",
   "maturity": "Unknown",
-  "stars_7d": 92,
-  "stars_30d": 318,
-  "stars_90d": 318,
-  "star_growth_rate_7d": 13.142857142857142,
-  "star_growth_rate_30d": 13.826086956521738,
-  "star_growth_acceleration": 0.9505840071877808,
-  "forks_7d": 17,
-  "forks_30d": 72,
+  "stars_7d": 89,
+  "stars_30d": 316,
+  "stars_90d": 316,
+  "star_growth_rate_7d": 12.714285714285714,
+  "star_growth_rate_30d": 13.73913043478261,
+  "star_growth_acceleration": 0.9254068716094032,
+  "forks_7d": 15,
+  "forks_30d": 73,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 258
+  "snapshot_count": 259,
+  "authenticity": {
+    "organic_confidence": 85.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 93.7,
+        "weight": 0.22,
+        "detail": "2,398 forks for 29,033 stars (8.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 90.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 25 stars (2 forks, 1.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 48.9,
+        "weight": 0.12,
+        "detail": "81 open issues for 29,033 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 25 stars (2 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 2,398 forks for 29,033 stars (8.3%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

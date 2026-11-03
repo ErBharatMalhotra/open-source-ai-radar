@@ -22,5 +22,58 @@
   "sub_category": "local runner",
   "summary": "Mano-P: Open-source GUI-VLA agent for edge devices. #1 on OSWorld (specialized, 58.2%). Runs locally on Apple M4 Mac mini/MacBook \u2014 no data leaves your device.Mano-P \u662f\u4e00\u4e2a\u5f00\u6e90 GUI-VLA \u9879\u76ee\uff0c\u652f\u6301\u5728 Mac mini/MacBook \u4e0a\u6216\u901a\u8fc7\u7b97\u529b\u68d2\u672c\u5730\u8fd0\u884c\u63a8\u7406\uff0c\u5b9e\u73b0\u7eaf\u89c6\u89c9\u9a71\u52a8\u7684\u8de8\u5e73\u53f0 GUI \u81ea\u52a8\u5316\u64cd\u4f5c\u3002\u6570\u636e\u5b8c\u5168\u672c\u5730\u5904\u7406\uff0c\u652f\u6301\u590d\u6742\u591a\u6b65\u9aa4\u4efb\u52a1\u89c4\u5212\u4e0e\u6267\u884c\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 81.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.8,
+        "weight": 0.22,
+        "detail": "275 forks for 2,841 stars (9.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 69.3,
+        "weight": 0.12,
+        "detail": "23 open issues for 2,841 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 58.6,
+        "weight": 0.1,
+        "detail": "Last push 131 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 275 forks for 2,841 stars (9.7%)."
+    ],
+    "red_flags": []
+  }
 }

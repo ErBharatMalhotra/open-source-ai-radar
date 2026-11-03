@@ -22,5 +22,59 @@
   "sub_category": "tool",
   "summary": "C2S Agent is an lightweight AI Agent construction platform that provides configurable online Agents and MCP services, You can configure any HTTP request interface as an MCP tool. C2S Agent \u662f\u4e00\u4e2a\u8f7b\u91cf\u7ea7\u7684AI Agent\u6784\u5efa\u5e73\u53f0\uff0c\u63d0\u4f9b\u5728\u7ebf\u53ef\u914d\u7f6e\u7684Agent\uff0cMCP\uff0c\u60a8\u53ef\u4ee5\u4e00\u4e2aHTTP\u8bf7\u6c42\u7684\u63a5\u53e3\u914d\u7f6e\u6210\u4e3a\u4e00\u4e2aMCP\u5de5\u5177\uff0cAgent\u4e4b\u95f4\u53ef\u4ee5\u8fdb\u884c\u81ea\u4ea4\u6d41\u3002\u5e76\u63d0\u4f9b\u4e86\u5355\u7aef\u53e3\u591aA2A\u670d\u52a1\uff0cMCP\u670d\u52a1\u7684\u89e3\u51b3\u65b9\u6848",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 77.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 83.0,
+        "weight": 0.22,
+        "detail": "16 forks for 303 stars (5.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 93.2,
+        "weight": 0.12,
+        "detail": "9 open issues for 303 stars (3.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 44.5,
+        "weight": 0.1,
+        "detail": "Last push 185 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 16 forks for 303 stars (5.3%).",
+      "Issue engagement: 9 open issues for 303 stars (3.0%)."
+    ],
+    "red_flags": []
+  }
 }

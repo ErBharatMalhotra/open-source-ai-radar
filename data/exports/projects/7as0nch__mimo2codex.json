@@ -22,5 +22,59 @@
   "sub_category": "serving",
   "summary": "\u8ba9\u6700\u65b0\u7248 OpenAI Codex CLI / Codex \u684c\u9762\u7aef\u63a5\u5165\u4e3b\u6d41\u5927\u6a21\u578b\u7684\u672c\u5730\u4ee3\u7406(\u65b0\u589emac/win\u5305\u652f\u6301\uff0c\u540e\u53f0\u8fd0\u884c\uff0c\u5f00\u673a\u81ea\u52a8\u91cd\u542f)\u3002\u5185\u7f6e \u5c0f\u7c73 MiMo V2.5/DeepSeek V4 Pro\uff0c\u5e76\u63d0\u4f9b\u901a\u7528 provider \u673a\u5236\uff0c**OpenAI Chat Completions \u517c\u5bb9**\uff08Qwen / GLM / Kimi / \u672c\u5730 vLLM / Ollama / LM Studio \u2026\uff09\u6216**\u539f\u751f Responses API**\uff08OpenAI \u81ea\u5bb6\uff09\u7684\u4e0a\u6e38\u63a5\u5230\u65b0\u7248 Codex\u3002\u628a Codex \u7684 Responses API \u5b9e\u65f6\u7ffb\u8bd1\u6210\u4e0a\u6e38\u7684 Chat Completions ",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "65 forks for 633 stars (10.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.8,
+        "weight": 0.12,
+        "detail": "16 open issues for 633 stars (2.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 61.1,
+        "weight": 0.1,
+        "detail": "Last push 122 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 16 open issues for 633 stars (2.5%).",
+      "Fork-to-star ratio: 65 forks for 633 stars (10.3%)."
+    ],
+    "red_flags": []
+  }
 }

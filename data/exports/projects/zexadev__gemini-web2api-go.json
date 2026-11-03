@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u628a Google Gemini \u7f51\u9875\u53cd\u4ee3\u6210 OpenAI \u517c\u5bb9 API \u00b7 Reverse Google Gemini's web protocol into an OpenAI-compatible API. Single binary, Chrome 146 fingerprint, SQLite, built-in admin dashboard.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 82.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.1,
+        "weight": 0.22,
+        "detail": "151 forks for 775 stars (19.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 37.9,
+        "weight": 0.12,
+        "detail": "1 open issues for 775 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 151 forks for 775 stars (19.5%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 775 stars (0.1%)."
+    ]
+  }
 }

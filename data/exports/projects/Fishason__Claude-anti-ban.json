@@ -22,5 +22,56 @@
   "sub_category": "",
   "summary": "2026 \u6700\u65b0 Claude \u9632\u5c01\u53f7\u6df1\u5ea6\u6307\u5357\uff1a6 \u5927\u5c01\u53f7\u539f\u56e0\u89e3\u6790 + \u5b9e\u6218\u9632\u5c01\u65b9\u6848\u5bf9\u6bd4 + Claude Code \u56fd\u5185\u5b89\u5168\u4f7f\u7528\u5168\u653b\u7565 \u00b7 \u6301\u7eed\u66f4\u65b0",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 67.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 68.4,
+        "weight": 0.22,
+        "detail": "13 forks for 439 stars (3.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 72.3,
+        "weight": 0.12,
+        "detail": "4 open issues for 439 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 58.3,
+        "weight": 0.1,
+        "detail": "Last push 132 days ago."
+      }
+    ],
+    "reasons": [],
+    "red_flags": []
+  }
 }

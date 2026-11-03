@@ -4,9 +4,24 @@
   "description": "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 68312,
-  "forks": 8109,
+  "topics": [
+    "ai",
+    "chatgpt",
+    "llm",
+    "python",
+    "rag",
+    "long-term-memory",
+    "memory",
+    "memory-management",
+    "state-management",
+    "ai-agents",
+    "agents",
+    "genai",
+    "agentic-memory",
+    "agentic-memory-system"
+  ],
+  "stars": 68322,
+  "forks": 8111,
   "open_issues": 446,
   "watchers": 253,
   "created_at": "2023-06-20T08:58:36Z",
@@ -17,20 +32,75 @@
   "impact": 98.54,
   "velocity": 65.94,
   "health": 62.65,
-  "global_percentile": 84.71,
+  "global_percentile": 82.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Universal memory layer for AI Agents",
   "maturity": "Unknown",
-  "stars_7d": 476,
-  "stars_30d": 1314,
-  "stars_90d": 1314,
-  "star_growth_rate_7d": 68.0,
-  "star_growth_rate_30d": 59.72727272727273,
-  "star_growth_acceleration": 1.1385083713850837,
-  "forks_7d": 90,
-  "forks_30d": 228,
+  "stars_7d": 472,
+  "stars_30d": 1291,
+  "stars_90d": 1291,
+  "star_growth_rate_7d": 67.42857142857143,
+  "star_growth_rate_30d": 61.476190476190474,
+  "star_growth_acceleration": 1.0968241673121613,
+  "forks_7d": 86,
+  "forks_30d": 229,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 287
+  "snapshot_count": 288,
+  "authenticity": {
+    "organic_confidence": 91.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.6,
+        "weight": 0.22,
+        "detail": "8,111 forks for 68,322 stars (11.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 93.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 98 stars (4 forks, 1.6x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 64.6,
+        "weight": 0.12,
+        "detail": "446 open issues for 68,322 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 98 stars (4 forks, 1.6x the daily average).",
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 8,111 forks for 68,322 stars (11.9%)."
+    ],
+    "red_flags": []
+  }
 }

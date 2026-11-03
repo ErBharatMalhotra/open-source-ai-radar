@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\ud83e\uddec Symbio\uff08\u5171\u751f\uff09- AI Infra \u7ea7\u591a Agent \u534f\u540c\u6846\u67b6 | 33 Killer Features: \u52a8\u6001 DAG, \u672c\u4f53\u5316\u8bb0\u5fc6, \u9632\u8fc7\u65e9\u5b8c\u6210, \u6570\u636e\u98de\u8f6e, \u795e\u7ecf\u7b26\u53f7\u5b89\u5168, OpenTelemetry \u53ef\u89c2\u6d4b, HITL \u4eba\u7c7b\u4ecb\u5165, MCP \u539f\u751f\u652f\u6301, \u8bed\u4e49\u7f13\u5b58, PromptOps, \u8fb9\u7f18\u8ba1\u7b97, \u9690\u79c1\u8ba1\u7b97 | Next-Gen AI Infrastructure for Multi-Agent Orchestration",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 38.2,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 31.9,
+        "weight": 0.22,
+        "detail": "1 forks for 264 stars (0.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 264 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 68.1,
+        "weight": 0.1,
+        "detail": "Last push 97 days ago."
+      }
+    ],
+    "reasons": [],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 264 stars (0.0%).",
+      "Fork-to-star ratio: 1 forks for 264 stars (0.4%)."
+    ]
+  }
 }

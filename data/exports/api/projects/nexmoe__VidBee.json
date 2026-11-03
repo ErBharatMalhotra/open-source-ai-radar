@@ -4,7 +4,28 @@
   "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "downloader",
+    "facebook",
+    "tiktok",
+    "twitter",
+    "youtube",
+    "ai-summary",
+    "audio-downloader",
+    "cross-platform",
+    "electron",
+    "media-library",
+    "rss",
+    "speaker-diarization",
+    "speech-to-text",
+    "subtitles",
+    "transcription",
+    "video-downloader",
+    "whisper",
+    "yt-dlp",
+    "audio-transcription",
+    "video-transcription"
+  ],
   "stars": 11058,
   "forks": 868,
   "open_issues": 46,
@@ -15,22 +36,77 @@
   "owner_avatar": "https://github.com/nexmoe.png",
   "radar_score": 74.36,
   "impact": 89.95,
-  "velocity": 64.38,
+  "velocity": 64.39,
   "health": 63.38,
-  "global_percentile": 43.0,
+  "global_percentile": 42.71,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
   "maturity": "Unknown",
-  "stars_7d": 27,
-  "stars_30d": 27,
-  "stars_90d": 27,
-  "star_growth_rate_7d": 13.5,
-  "star_growth_rate_30d": 13.5,
+  "stars_7d": 33,
+  "stars_30d": 33,
+  "stars_90d": 33,
+  "star_growth_rate_7d": 16.5,
+  "star_growth_rate_30d": 16.5,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 3,
-  "forks_30d": 3,
+  "forks_7d": 5,
+  "forks_30d": 5,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 4
+  "snapshot_count": 5,
+  "authenticity": {
+    "organic_confidence": 89.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.3,
+        "weight": 0.22,
+        "detail": "868 forks for 11,058 stars (7.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 100.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 9 stars (3 forks, 0.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 55.8,
+        "weight": 0.12,
+        "detail": "46 open issues for 11,058 stars (0.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 868 forks for 11,058 stars (7.8%).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Burst pattern: Largest 24h jump was 9 stars (3 forks, 0.7x the daily average)."
+    ],
+    "red_flags": []
+  }
 }

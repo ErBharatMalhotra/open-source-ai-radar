@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "U-Claw \u867e\u76d8 \u2014 OpenClaw AI \u52a9\u624b\u79bb\u7ebf\u5b89\u88c5 U \u76d8\uff1a\u4e00\u952e\u88c5\u597d Claude Code/Codex/OpenClaw\uff0c\u65e0\u9700\u8054\u7f51\u5373\u63d2\u5373\u7528\uff1b\u65b0\u54c1 U-King AI \u88c5\u673a\u7ba1\u5bb6\u8be6\u89c1 u-king.org\uff0c\u53e6\u6709\u8fdc\u7a0b\u652f\u6301\u4e0e\u5b9a\u5236 AI \u5f00\u53d1\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.2,
+        "weight": 0.22,
+        "detail": "418 forks for 1,743 stars (24.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 49.3,
+        "weight": 0.12,
+        "detail": "5 open issues for 1,743 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 77.5,
+        "weight": 0.1,
+        "detail": "Last push 60 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 60 days ago.",
+      "Fork-to-star ratio: 418 forks for 1,743 stars (24.0%)."
+    ],
+    "red_flags": []
+  }
 }

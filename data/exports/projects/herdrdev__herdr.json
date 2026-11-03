@@ -4,33 +4,107 @@
   "description": "the runtime your coding agents live on",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 47714,
-  "forks": 3825,
-  "open_issues": 392,
+  "topics": [
+    "agent",
+    "agent-orchestration",
+    "ai",
+    "ai-agents",
+    "claude-code",
+    "cli",
+    "codex",
+    "coding-agents",
+    "developer-tools",
+    "devtools",
+    "multiplexer",
+    "rust",
+    "terminal",
+    "terminal-multiplexer",
+    "terminal-ui",
+    "tmux",
+    "tui",
+    "workspace-manager"
+  ],
+  "stars": 47742,
+  "forks": 3829,
+  "open_issues": 393,
   "watchers": 112,
   "created_at": "2026-03-27T17:54:33Z",
-  "pushed_at": "2026-11-02T14:30:41Z",
+  "pushed_at": "2026-11-03T11:36:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/herdrdev.png",
   "radar_score": 79.1,
   "impact": 96.89,
-  "velocity": 69.73,
+  "velocity": 69.74,
   "health": 63.75,
-  "global_percentile": 92.43,
+  "global_percentile": 91.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "the runtime your coding agents live on",
   "maturity": "Unknown",
-  "stars_7d": 1782,
-  "stars_30d": 4279,
-  "stars_90d": 4279,
-  "star_growth_rate_7d": 254.57142857142858,
-  "star_growth_rate_30d": 194.5,
-  "star_growth_acceleration": 1.308850532500918,
+  "stars_7d": 1767,
+  "stars_30d": 4223,
+  "stars_90d": 4223,
+  "star_growth_rate_7d": 252.42857142857142,
+  "star_growth_rate_30d": 201.0952380952381,
+  "star_growth_acceleration": 1.2552687662798958,
   "forks_7d": 163,
-  "forks_30d": 399,
+  "forks_30d": 397,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 292
+  "snapshot_count": 293,
+  "authenticity": {
+    "organic_confidence": 89.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.9,
+        "weight": 0.22,
+        "detail": "3,829 forks for 47,742 stars (8.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 92.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 333 stars (21 forks, 1.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 69.7,
+        "weight": 0.12,
+        "detail": "393 open issues for 47,742 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 333 stars (21 forks, 1.8x the daily average).",
+      "Fork-to-star ratio: 3,829 forks for 47,742 stars (8.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

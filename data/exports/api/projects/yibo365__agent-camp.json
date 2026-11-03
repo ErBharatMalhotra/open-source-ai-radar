@@ -22,5 +22,60 @@
   "sub_category": "cli tool",
   "summary": "AI Agent \u9762\u8bd5\u77e5\u8bc6\u5e93\uff1a\u8986\u76d6 LLM\u3001Prompt\u3001RAG\u3001MCP\u3001Tool Use\u3001Agent \u67b6\u6784\u3001Multi-Agent\u3001LangGraph\u3001Claude Code\u3001Codex CLI\u3001\u5de5\u7a0b\u5316\u8bc4\u4f30\u3001\u5b89\u5168\u4e0e\u6e90\u7801\u89e3\u6790\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 70.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.5,
+        "weight": 0.22,
+        "detail": "9 forks for 103 stars (8.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 103 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 71.0,
+        "weight": 0.1,
+        "detail": "Last push 86 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 9 forks for 103 stars (8.7%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 103 stars (0.0%)."
+    ]
+  }
 }

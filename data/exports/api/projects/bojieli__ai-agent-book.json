@@ -4,9 +4,23 @@
   "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Agent\uff1a\u8bbe\u8ba1\u539f\u7406\u4e0e\u5de5\u7a0b\u5b9e\u8df5\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e3b\u4ed3\u5e93\uff1a\u5168\u4e66\u6b63\u6587\u3001\u7f16\u8bd1\u7248 PDF \u4e0e\u6309\u7ae0\u914d\u5957\u4ee3\u7801",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 57019,
-  "forks": 6574,
+  "topics": [
+    "agent",
+    "agent-memory",
+    "ai-agent",
+    "book",
+    "coding-agent",
+    "context-engineering",
+    "large-language-models",
+    "llm",
+    "mcp",
+    "multi-agent",
+    "multimodal",
+    "rag",
+    "reinforcement-learning"
+  ],
+  "stars": 57031,
+  "forks": 6578,
   "open_issues": 25,
   "watchers": 210,
   "created_at": "2025-09-09T02:41:44Z",
@@ -14,7 +28,7 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/bojieli.png",
   "radar_score": 71.55,
-  "impact": 98.06,
+  "impact": 98.08,
   "velocity": 56.25,
   "health": 50.53,
   "global_percentile": 25.57,
@@ -22,15 +36,72 @@
   "sub_category": "",
   "summary": "\u300a\u6df1\u5165\u7406\u89e3 AI Agent\uff1a\u8bbe\u8ba1\u539f\u7406\u4e0e\u5de5\u7a0b\u5b9e\u8df5\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e3b\u4ed3\u5e93\uff1a\u5168\u4e66\u6b63\u6587\u3001\u7f16\u8bd1\u7248 PDF \u4e0e\u6309\u7ae0\u914d\u5957\u4ee3\u7801",
   "maturity": "Unknown",
-  "stars_7d": 1133,
-  "stars_30d": 3594,
-  "stars_90d": 3594,
-  "star_growth_rate_7d": 161.85714285714286,
-  "star_growth_rate_30d": 156.2608695652174,
-  "star_growth_acceleration": 1.0358136576834407,
-  "forks_7d": 167,
-  "forks_30d": 533,
+  "stars_7d": 1051,
+  "stars_30d": 3651,
+  "stars_90d": 3651,
+  "star_growth_rate_7d": 150.14285714285714,
+  "star_growth_rate_30d": 158.7391304347826,
+  "star_growth_acceleration": 0.9458465391086591,
+  "forks_7d": 155,
+  "forks_30d": 541,
   "days_since_last_push": 25,
   "freshness_score": 0.7788007830714049,
-  "snapshot_count": 285
+  "snapshot_count": 286,
+  "authenticity": {
+    "organic_confidence": 82.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "6,578 forks for 57,031 stars (11.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 91.2,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 296 stars (34 forks, 1.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.4,
+        "weight": 0.12,
+        "detail": "25 open issues for 57,031 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 87.2,
+        "weight": 0.1,
+        "detail": "Last push 25 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 25 days ago.",
+      "Burst pattern: Largest 24h jump was 296 stars (34 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 6,578 forks for 57,031 stars (11.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 25 open issues for 57,031 stars (0.0%)."
+    ]
+  }
 }

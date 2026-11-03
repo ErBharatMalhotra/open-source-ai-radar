@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Xilinx Embedded Software (embeddedsw) Development",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 97.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "1,152 forks for 1,242 stars (92.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "242 open issues for 1,242 stars (19.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 98.6,
+        "weight": 0.1,
+        "detail": "Last push 2 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 1,152 forks for 1,242 stars (92.8%).",
+      "Maintenance cadence: Last push 2 days ago.",
+      "Issue engagement: 242 open issues for 1,242 stars (19.5%)."
+    ],
+    "red_flags": []
+  }
 }

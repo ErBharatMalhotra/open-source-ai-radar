@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\u57fa\u4e8eLangChain\u3001FastAPI\u548cReact\u7684RAG\u9879\u76ee\uff0c\u4e3b\u5206\u652f\u4e3a\u57fa\u4e8eRAG\u7684\u667a\u80fd\u7b14\u8bb0\u52a9\u624b\uff0cbase-rag\u5206\u652f\u4e3a\u5f00\u7bb1\u5373\u7528\u7684\u57fa\u7840RAG\u9879\u76ee\u4f9b\u5b66\u4e60\u4f7f\u7528",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.3,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.3,
+        "weight": 0.22,
+        "detail": "81 forks for 436 stars (18.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 46.5,
+        "weight": 0.12,
+        "detail": "1 open issues for 436 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 77.0,
+        "weight": 0.1,
+        "detail": "Last push 62 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 62 days ago.",
+      "Fork-to-star ratio: 81 forks for 436 stars (18.6%)."
+    ],
+    "red_flags": []
+  }
 }

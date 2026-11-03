@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Up to 71.5x fewer tokens per session on Claude Code with Obsidian + Graphify. Persistent memory, codebase knowledge graphs, and chat import pipeline. \ud83c\udde7\ud83c\uddf7 PT-BR included.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 82.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.3,
+        "weight": 0.22,
+        "detail": "91 forks for 1,014 stars (9.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 54.7,
+        "weight": 0.12,
+        "detail": "4 open issues for 1,014 stars (0.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 86.7,
+        "weight": 0.1,
+        "detail": "Last push 26 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 26 days ago.",
+      "Fork-to-star ratio: 91 forks for 1,014 stars (9.0%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -22,5 +22,58 @@
   "sub_category": "",
   "summary": "AZMX AI \u2014 The sovereign agent platform.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 34.1,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 134 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 67.4,
+        "weight": 0.12,
+        "detail": "1 open issues for 134 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 58.1,
+        "weight": 0.1,
+        "detail": "Last push 133 days ago."
+      }
+    ],
+    "reasons": [],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 134 stars (0.0%)."
+    ]
+  }
 }

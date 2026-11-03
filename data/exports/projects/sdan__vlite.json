@@ -22,5 +22,59 @@
   "sub_category": "vector database",
   "summary": "fastest vector database made in numpy",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 72.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 81.8,
+        "weight": 0.22,
+        "detail": "38 forks for 765 stars (5.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 48.1,
+        "weight": 0.12,
+        "detail": "2 open issues for 765 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 82.2,
+        "weight": 0.1,
+        "detail": "Last push 41 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 38 forks for 765 stars (5.0%).",
+      "Maintenance cadence: Last push 41 days ago."
+    ],
+    "red_flags": []
+  }
 }

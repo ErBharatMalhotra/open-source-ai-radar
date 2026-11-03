@@ -4,8 +4,16 @@
   "description": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 36537,
+  "topics": [
+    "graphrag",
+    "rag",
+    "llm",
+    "llms",
+    "gpt",
+    "gpt-4",
+    "gpt4"
+  ],
+  "stars": 36539,
   "forks": 3869,
   "open_issues": 27,
   "watchers": 205,
@@ -17,20 +25,77 @@
   "impact": 97.08,
   "velocity": 64.36,
   "health": 57.98,
-  "global_percentile": 64.14,
+  "global_percentile": 55.71,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
   "maturity": "Unknown",
-  "stars_7d": 87,
-  "stars_30d": 319,
-  "stars_90d": 319,
-  "star_growth_rate_7d": 12.428571428571429,
-  "star_growth_rate_30d": 11.0,
-  "star_growth_acceleration": 1.12987012987013,
-  "forks_7d": 2,
-  "forks_30d": 34,
+  "stars_7d": 85,
+  "stars_30d": 320,
+  "stars_90d": 320,
+  "star_growth_rate_7d": 12.142857142857142,
+  "star_growth_rate_30d": 11.03448275862069,
+  "star_growth_acceleration": 1.1004464285714284,
+  "forks_7d": 1,
+  "forks_30d": 33,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 226
+  "snapshot_count": 227,
+  "authenticity": {
+    "organic_confidence": 81.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "3,869 forks for 36,539 stars (10.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 82.4,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 27 stars (5 forks, 2.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 32.4,
+        "weight": 0.12,
+        "detail": "27 open issues for 36,539 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 27 stars (5 forks, 2.5x the daily average).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 3,869 forks for 36,539 stars (10.6%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 27 open issues for 36,539 stars (0.1%)."
+    ]
+  }
 }

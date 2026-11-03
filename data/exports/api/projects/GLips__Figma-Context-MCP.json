@@ -4,8 +4,14 @@
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 16144,
+  "topics": [
+    "ai",
+    "cursor",
+    "figma",
+    "mcp",
+    "typescript"
+  ],
+  "stars": 16146,
   "forks": 1274,
   "open_issues": 8,
   "watchers": 59,
@@ -15,22 +21,78 @@
   "owner_avatar": "https://github.com/GLips.png",
   "radar_score": 70.93,
   "impact": 92.29,
-  "velocity": 57.3,
+  "velocity": 57.29,
   "health": 55.86,
-  "global_percentile": 30.14,
+  "global_percentile": 22.29,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "maturity": "Unknown",
-  "stars_7d": 71,
-  "stars_30d": 193,
-  "stars_90d": 200,
-  "star_growth_rate_7d": 10.142857142857142,
-  "star_growth_rate_30d": 6.433333333333334,
-  "star_growth_acceleration": 1.5766099185788303,
+  "stars_7d": 73,
+  "stars_30d": 196,
+  "stars_90d": 202,
+  "star_growth_rate_7d": 10.428571428571429,
+  "star_growth_rate_30d": 6.533333333333333,
+  "star_growth_acceleration": 1.5962099125364433,
   "forks_7d": 7,
   "forks_30d": 10,
   "days_since_last_push": 7,
   "freshness_score": 0.9323938199059483,
-  "snapshot_count": 193
+  "snapshot_count": 194,
+  "authenticity": {
+    "organic_confidence": 74.3,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.4,
+        "weight": 0.22,
+        "detail": "1,274 forks for 16,146 stars (7.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 71.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 22 stars (2 forks, 3.3x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 30.0,
+        "weight": 0.12,
+        "detail": "8 open issues for 16,146 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 1,274 forks for 16,146 stars (7.9%).",
+      "Maintenance cadence: Last push 7 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 8 open issues for 16,146 stars (0.0%)."
+    ]
+  }
 }

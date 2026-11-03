@@ -4,33 +4,99 @@
   "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12267,
-  "forks": 2118,
+  "topics": [
+    "amd",
+    "cuda",
+    "inference",
+    "kv-cache",
+    "llm",
+    "pytorch",
+    "rocm",
+    "vllm",
+    "fast",
+    "speed"
+  ],
+  "stars": 12268,
+  "forks": 2119,
   "open_issues": 247,
   "watchers": 68,
   "created_at": "2024-05-28T21:06:04Z",
-  "pushed_at": "2026-11-03T08:39:09Z",
+  "pushed_at": "2026-11-03T11:36:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/LMCache.png",
   "radar_score": 75.19,
   "impact": 92.46,
   "velocity": 63.64,
   "health": 63.75,
-  "global_percentile": 59.86,
+  "global_percentile": 50.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
   "maturity": "Unknown",
-  "stars_7d": 96,
-  "stars_30d": 296,
-  "stars_90d": 296,
-  "star_growth_rate_7d": 13.714285714285714,
-  "star_growth_rate_30d": 11.384615384615385,
-  "star_growth_acceleration": 1.2046332046332044,
-  "forks_7d": 45,
-  "forks_30d": 130,
+  "stars_7d": 97,
+  "stars_30d": 297,
+  "stars_90d": 297,
+  "star_growth_rate_7d": 13.857142857142858,
+  "star_growth_rate_30d": 11.423076923076923,
+  "star_growth_acceleration": 1.2130832130832132,
+  "forks_7d": 44,
+  "forks_30d": 131,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 262
+  "snapshot_count": 263,
+  "authenticity": {
+    "organic_confidence": 84.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.5,
+        "weight": 0.22,
+        "detail": "2,119 forks for 12,268 stars (17.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 62.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 43 stars (10 forks, 4.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 90.0,
+        "weight": 0.12,
+        "detail": "247 open issues for 12,268 stars (2.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 247 open issues for 12,268 stars (2.0%).",
+      "Fork-to-star ratio: 2,119 forks for 12,268 stars (17.3%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

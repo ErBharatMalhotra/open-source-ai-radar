@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. ",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.0,
+        "weight": 0.22,
+        "detail": "50 forks for 562 stars (8.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 66.4,
+        "weight": 0.12,
+        "detail": "4 open issues for 562 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 96.4,
+        "weight": 0.1,
+        "detail": "Last push 5 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 50 forks for 562 stars (8.9%).",
+      "Maintenance cadence: Last push 5 days ago."
+    ],
+    "red_flags": []
+  }
 }

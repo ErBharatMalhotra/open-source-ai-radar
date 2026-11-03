@@ -4,33 +4,106 @@
   "description": "Mobile MCP: let AI agents drive your iOS and Android apps. MCP server for simulators, emulators and real devices. Works with Claude Code, Codex, Cursor and any MCP client.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10248,
-  "forks": 919,
+  "topics": [
+    "android",
+    "ios",
+    "mcp",
+    "mobile",
+    "agent",
+    "emulator",
+    "simulator",
+    "appium-alternative",
+    "claude-code",
+    "codex",
+    "cursor",
+    "skills",
+    "android-automation",
+    "ios-automation",
+    "mcp-server",
+    "mobile-automation",
+    "mobile-testing",
+    "real-device"
+  ],
+  "stars": 10256,
+  "forks": 921,
   "open_issues": 41,
   "watchers": 55,
   "created_at": "2025-03-28T16:21:06Z",
   "pushed_at": "2026-11-02T14:50:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mobile-next.png",
-  "radar_score": 73.5,
-  "impact": 90.25,
-  "velocity": 61.33,
+  "radar_score": 73.51,
+  "impact": 90.26,
+  "velocity": 61.34,
   "health": 63.75,
-  "global_percentile": 46.86,
+  "global_percentile": 36.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
   "maturity": "Unknown",
-  "stars_7d": 229,
-  "stars_30d": 1653,
-  "stars_90d": 2908,
-  "star_growth_rate_7d": 32.714285714285715,
-  "star_growth_rate_30d": 55.1,
-  "star_growth_acceleration": 0.5937256935442053,
-  "forks_7d": 25,
-  "forks_30d": 162,
+  "stars_7d": 243,
+  "stars_30d": 1667,
+  "stars_90d": 2669,
+  "star_growth_rate_7d": 34.714285714285715,
+  "star_growth_rate_30d": 55.56666666666667,
+  "star_growth_acceleration": 0.6247321964178593,
+  "forks_7d": 27,
+  "forks_30d": 164,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 140
+  "snapshot_count": 141,
+  "authenticity": {
+    "organic_confidence": 69.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.3,
+        "weight": 0.22,
+        "detail": "921 forks for 10,256 stars (9.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 40.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 366 stars (28 forks, 6.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 55.0,
+        "weight": 0.12,
+        "detail": "41 open issues for 10,256 stars (0.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 921 forks for 10,256 stars (9.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

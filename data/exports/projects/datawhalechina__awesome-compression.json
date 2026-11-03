@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u6a21\u578b\u538b\u7f29\u7684\u5c0f\u767d\u5165\u95e8\u6559\u7a0b\uff0cPDF\u4e0b\u8f7d\u5730\u5740 https://github.com/datawhalechina/awesome-compression/releases",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 76.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "43 forks for 379 stars (11.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 75.8,
+        "weight": 0.12,
+        "detail": "4 open issues for 379 stars (1.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 27.4,
+        "weight": 0.1,
+        "detail": "Last push 343 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 4 open issues for 379 stars (1.1%).",
+      "Fork-to-star ratio: 43 forks for 379 stars (11.3%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 343 days ago."
+    ]
+  }
 }

@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "dsh-purge Community \u00b7 DeepSeek Harness \u793e\u533a\u7ef4\u62a4\u7248\uff1a\u5bbf\u4e3b\u517c\u5bb9\u3001\u72b6\u6001\u8bca\u65ad\u3001\u63d0\u793a\u8bcd\u7ba1\u7406\u3001\u66f4\u65b0\u4e0e\u672c\u673a\u5907\u4efd\u56de\u6eda\u3002\u57fa\u4e8e\u5c0f\u6768 / YuJunZhiXue \u7684 dsh-purge\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 85.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "2,119 forks for 4,257 stars (49.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 55.0,
+        "weight": 0.12,
+        "detail": "17 open issues for 4,257 stars (0.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,119 forks for 4,257 stars (49.8%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": []
+  }
 }

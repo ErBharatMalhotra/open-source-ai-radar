@@ -4,8 +4,24 @@
   "description": "Yet another WebUI for Nginx",
   "language": "Go",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 11730,
+  "topics": [
+    "nginx",
+    "webui",
+    "vue",
+    "self-hosted",
+    "go",
+    "cron",
+    "letsencrypt",
+    "code-completion",
+    "copilot",
+    "linux",
+    "macos",
+    "windows",
+    "docker",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 11734,
   "forks": 915,
   "open_issues": 39,
   "watchers": 48,
@@ -13,24 +29,78 @@
   "pushed_at": "2026-11-02T06:04:43Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/0xJacky.png",
-  "radar_score": 70.47,
+  "radar_score": 70.38,
   "impact": 90.46,
-  "velocity": 52.43,
-  "health": 63.75,
-  "global_percentile": 19.71,
+  "velocity": 52.44,
+  "health": 63.38,
+  "global_percentile": 19.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Yet another WebUI for Nginx",
   "maturity": "Unknown",
-  "stars_7d": 59,
-  "stars_30d": 163,
-  "stars_90d": 164,
-  "star_growth_rate_7d": 8.428571428571429,
-  "star_growth_rate_30d": 5.433333333333334,
-  "star_growth_acceleration": 1.551270815074496,
-  "forks_7d": 8,
+  "stars_7d": 64,
+  "stars_30d": 169,
+  "stars_90d": 170,
+  "star_growth_rate_7d": 9.142857142857142,
+  "star_growth_rate_30d": 5.633333333333334,
+  "star_growth_acceleration": 1.6229923922231613,
+  "forks_7d": 10,
   "forks_30d": 27,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 201
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 202,
+  "authenticity": {
+    "organic_confidence": 73.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.1,
+        "weight": 0.22,
+        "detail": "915 forks for 11,734 stars (7.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 56.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 26 stars (2 forks, 4.6x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 51.6,
+        "weight": 0.12,
+        "detail": "39 open issues for 11,734 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 915 forks for 11,734 stars (7.8%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": []
+  }
 }

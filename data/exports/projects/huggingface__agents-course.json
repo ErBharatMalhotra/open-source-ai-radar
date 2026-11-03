@@ -4,8 +4,16 @@
   "description": "This repository contains the Hugging Face Agents Course. ",
   "language": "MDX",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 34393,
+  "topics": [
+    "agentic-ai",
+    "agents",
+    "course",
+    "huggingface",
+    "langchain",
+    "llamaindex",
+    "smolagents"
+  ],
+  "stars": 34398,
   "forks": 2462,
   "open_issues": 111,
   "watchers": 228,
@@ -13,24 +21,79 @@
   "pushed_at": "2026-10-14T11:34:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/huggingface.png",
-  "radar_score": 72.96,
+  "radar_score": 72.89,
   "impact": 96.61,
   "velocity": 56.93,
-  "health": 57.55,
-  "global_percentile": 42.43,
+  "health": 57.27,
+  "global_percentile": 32.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "This repository contains the Hugging Face Agents Course. ",
   "maturity": "Unknown",
-  "stars_7d": 351,
-  "stars_30d": 938,
-  "stars_90d": 938,
-  "star_growth_rate_7d": 50.142857142857146,
-  "star_growth_rate_30d": 42.63636363636363,
-  "star_growth_acceleration": 1.1760584830947305,
-  "forks_7d": 18,
-  "forks_30d": 60,
-  "days_since_last_push": 19,
-  "freshness_score": 0.8269591339433623,
-  "snapshot_count": 285
+  "stars_7d": 346,
+  "stars_30d": 939,
+  "stars_90d": 939,
+  "star_growth_rate_7d": 49.42857142857143,
+  "star_growth_rate_30d": 42.68181818181818,
+  "star_growth_acceleration": 1.1580708960900654,
+  "forks_7d": 19,
+  "forks_30d": 61,
+  "days_since_last_push": 20,
+  "freshness_score": 0.8187307530779818,
+  "snapshot_count": 286,
+  "authenticity": {
+    "organic_confidence": 84.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 89.8,
+        "weight": 0.22,
+        "detail": "2,462 forks for 34,398 stars (7.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 95.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 61 stars (3 forks, 1.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 51.1,
+        "weight": 0.12,
+        "detail": "111 open issues for 34,398 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 89.3,
+        "weight": 0.1,
+        "detail": "Last push 20 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 20 days ago.",
+      "Fork-to-star ratio: 2,462 forks for 34,398 stars (7.2%).",
+      "Burst pattern: Largest 24h jump was 61 stars (3 forks, 1.5x the daily average)."
+    ],
+    "red_flags": []
+  }
 }

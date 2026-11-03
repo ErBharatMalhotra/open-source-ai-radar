@@ -22,5 +22,59 @@
   "sub_category": "code review",
   "summary": "The Ultimate Claude Code Docker Development Environment - Run Claude AI's coding assistant in a fully containerized, reproducible environment with pre-configured development profiles.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "130 forks for 1,169 stars (11.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 73.2,
+        "weight": 0.12,
+        "detail": "11 open issues for 1,169 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 80.8,
+        "weight": 0.1,
+        "detail": "Last push 47 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 47 days ago.",
+      "Fork-to-star ratio: 130 forks for 1,169 stars (11.1%)."
+    ],
+    "red_flags": []
+  }
 }

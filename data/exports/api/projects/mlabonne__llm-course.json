@@ -4,9 +4,15 @@
   "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
   "language": null,
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 84874,
-  "forks": 9875,
+  "topics": [
+    "course",
+    "llm",
+    "machine-learning",
+    "roadmap",
+    "large-language-models"
+  ],
+  "stars": 84876,
+  "forks": 9876,
   "open_issues": 67,
   "watchers": 759,
   "created_at": "2023-06-17T22:16:25Z",
@@ -17,20 +23,77 @@
   "impact": 99.26,
   "velocity": 52.05,
   "health": 33.79,
-  "global_percentile": 11.57,
+  "global_percentile": 9.43,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
   "maturity": "Unknown",
-  "stars_7d": 161,
-  "stars_30d": 1404,
-  "stars_90d": 1404,
-  "star_growth_rate_7d": 23.0,
-  "star_growth_rate_30d": 63.81818181818182,
-  "star_growth_acceleration": 0.3603988603988604,
-  "forks_7d": 34,
+  "stars_7d": 156,
+  "stars_30d": 1396,
+  "stars_90d": 1396,
+  "star_growth_rate_7d": 22.285714285714285,
+  "star_growth_rate_30d": 63.45454545454545,
+  "star_growth_acceleration": 0.351207531723291,
+  "forks_7d": 35,
   "forks_30d": 159,
   "days_since_last_push": 270,
   "freshness_score": 0.06720551273974976,
-  "snapshot_count": 265
+  "snapshot_count": 266,
+  "authenticity": {
+    "organic_confidence": 53.6,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "9,876 forks for 84,876 stars (11.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 29.3,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 489 stars (30 forks, 9.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 32.9,
+        "weight": 0.12,
+        "detail": "67 open issues for 84,876 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 35.3,
+        "weight": 0.1,
+        "detail": "Last push 270 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 9,876 forks for 84,876 stars (11.6%)."
+    ],
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 489 stars (30 forks, 9.0x the daily average).",
+      "Issue engagement: 67 open issues for 84,876 stars (0.1%).",
+      "Maintenance cadence: Last push 270 days ago."
+    ]
+  }
 }

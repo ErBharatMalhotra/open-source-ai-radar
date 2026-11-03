@@ -22,5 +22,59 @@
   "sub_category": "local runner",
   "summary": "Run Kimi K3 locally on CPU with ~55GB measured runtime RAM. A single-file Linux inference server powered by cPilot Runtime.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 31.3,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 12.4,
+        "weight": 0.22,
+        "detail": "1 forks for 1,019 stars (0.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 34.8,
+        "weight": 0.12,
+        "detail": "1 open issues for 1,019 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 68.6,
+        "weight": 0.1,
+        "detail": "Last push 95 days ago."
+      }
+    ],
+    "reasons": [],
+    "red_flags": [
+      "Fork-to-star ratio: 1 forks for 1,019 stars (0.1%).",
+      "Issue engagement: 1 open issues for 1,019 stars (0.1%)."
+    ]
+  }
 }

@@ -4,33 +4,93 @@
   "description": "\ud83e\udde0 Train a 64M-parameter LLM from scratch in just 2h!",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 64812,
-  "forks": 8481,
+  "topics": [
+    "artificial-intelligence",
+    "large-language-model"
+  ],
+  "stars": 64817,
+  "forks": 8483,
   "open_issues": 29,
   "watchers": 288,
   "created_at": "2024-07-27T04:34:12Z",
   "pushed_at": "2026-10-27T06:57:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jingyaogong.png",
-  "radar_score": 74.99,
+  "radar_score": 74.92,
   "impact": 98.6,
-  "velocity": 61.42,
-  "health": 56.2,
-  "global_percentile": 48.57,
+  "velocity": 61.46,
+  "health": 55.86,
+  "global_percentile": 47.57,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "\ud83e\udde0 Train a 64M-parameter LLM from scratch in just 2h!",
   "maturity": "Unknown",
-  "stars_7d": 371,
-  "stars_30d": 1361,
-  "stars_90d": 1361,
-  "star_growth_rate_7d": 53.0,
-  "star_growth_rate_30d": 56.708333333333336,
-  "star_growth_acceleration": 0.93460690668626,
-  "forks_7d": 84,
-  "forks_30d": 236,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 279
+  "stars_7d": 374,
+  "stars_30d": 1381,
+  "stars_90d": 1381,
+  "star_growth_rate_7d": 53.42857142857143,
+  "star_growth_rate_30d": 57.541666666666664,
+  "star_growth_acceleration": 0.9285197062170271,
+  "forks_7d": 82,
+  "forks_30d": 242,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 280,
+  "authenticity": {
+    "organic_confidence": 81.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.4,
+        "weight": 0.22,
+        "detail": "8,483 forks for 64,817 stars (13.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 85.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 127 stars (16 forks, 2.3x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.5,
+        "weight": 0.12,
+        "detail": "29 open issues for 64,817 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 127 stars (16 forks, 2.3x the daily average).",
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 8,483 forks for 64,817 stars (13.1%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 29 open issues for 64,817 stars (0.0%)."
+    ]
+  }
 }

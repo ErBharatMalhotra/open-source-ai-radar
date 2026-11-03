@@ -4,8 +4,16 @@
   "description": "Official code repo for the O'Reilly Book - \"Hands-On Large Language Models\"",
   "language": "Jupyter Notebook",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 30033,
+  "topics": [
+    "artificial-intelligence",
+    "book",
+    "large-language-models",
+    "llm",
+    "llms",
+    "oreilly",
+    "oreilly-books"
+  ],
+  "stars": 30039,
   "forks": 6820,
   "open_issues": 31,
   "watchers": 290,
@@ -13,24 +21,79 @@
   "pushed_at": "2026-04-24T10:20:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/HandsOnLLM.png",
-  "radar_score": 67.95,
+  "radar_score": 67.94,
   "impact": 97.28,
-  "velocity": 54.29,
-  "health": 40.15,
-  "global_percentile": 18.0,
+  "velocity": 54.28,
+  "health": 40.13,
+  "global_percentile": 13.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Official code repo for the O'Reilly Book - \"Hands-On Large Language Models\"",
   "maturity": "Unknown",
-  "stars_7d": 114,
-  "stars_30d": 519,
-  "stars_90d": 519,
-  "star_growth_rate_7d": 16.285714285714285,
-  "star_growth_rate_30d": 19.22222222222222,
-  "star_growth_acceleration": 0.847233691164327,
-  "forks_7d": 25,
-  "forks_30d": 96,
-  "days_since_last_push": 192,
-  "freshness_score": 0.14660696213035015,
-  "snapshot_count": 257
+  "stars_7d": 119,
+  "stars_30d": 520,
+  "stars_90d": 520,
+  "star_growth_rate_7d": 17.0,
+  "star_growth_rate_30d": 19.25925925925926,
+  "star_growth_acceleration": 0.8826923076923077,
+  "forks_7d": 26,
+  "forks_30d": 95,
+  "days_since_last_push": 193,
+  "freshness_score": 0.14514819848362373,
+  "snapshot_count": 258,
+  "authenticity": {
+    "organic_confidence": 60.1,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.5,
+        "weight": 0.22,
+        "detail": "6,820 forks for 30,039 stars (22.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 45.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 122 stars (57 forks, 6.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 35.3,
+        "weight": 0.12,
+        "detail": "31 open issues for 30,039 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 43.6,
+        "weight": 0.1,
+        "detail": "Last push 193 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 6,820 forks for 30,039 stars (22.7%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 31 open issues for 30,039 stars (0.1%)."
+    ]
+  }
 }

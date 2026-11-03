@@ -22,5 +22,61 @@
   "sub_category": "local runner",
   "summary": "Real-time voice assistant \u2014 WebRTC streaming, faster-whisper ASR, local LLM, Vui Nano (300M) TTS. OpenAI Realtime API compatible. Voice cloning, barge-in, ~9\u00d7 realtime on a 4090. Apache 2.0.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 76.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "85 forks for 776 stars (11.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 776 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 87.6,
+        "weight": 0.1,
+        "detail": "Last push 24 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 24 days ago.",
+      "Fork-to-star ratio: 85 forks for 776 stars (11.0%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 776 stars (0.0%)."
+    ]
+  }
 }

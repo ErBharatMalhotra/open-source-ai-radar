@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "SimWorld: An Open-ended Realistic Simulator for Autonomous Agents in Physical and Social Worlds",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 83.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "90 forks for 786 stars (11.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 75.3,
+        "weight": 0.12,
+        "detail": "8 open issues for 786 stars (1.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 58.9,
+        "weight": 0.1,
+        "detail": "Last push 130 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 8 open issues for 786 stars (1.0%).",
+      "Fork-to-star ratio: 90 forks for 786 stars (11.5%)."
+    ],
+    "red_flags": []
+  }
 }

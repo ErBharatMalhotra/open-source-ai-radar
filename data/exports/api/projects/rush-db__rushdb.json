@@ -22,5 +22,60 @@
   "sub_category": "vector database",
   "summary": "RushDB is a graph + vector database and memory layer for AI agents. Push any JSON, get typed, searchable, relationship-aware records back \u2014 no schema, no migrations. Built on Neo4j.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 91.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 93.0,
+        "weight": 0.22,
+        "detail": "26 forks for 323 stars (8.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "19 open issues for 323 stars (5.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 76.8,
+        "weight": 0.1,
+        "detail": "Last push 63 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 63 days ago.",
+      "Fork-to-star ratio: 26 forks for 323 stars (8.0%).",
+      "Issue engagement: 19 open issues for 323 stars (5.9%)."
+    ],
+    "red_flags": []
+  }
 }

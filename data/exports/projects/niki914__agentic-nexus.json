@@ -22,5 +22,59 @@
   "sub_category": "task agent",
   "summary": "Android Native AI agent for phone automation \u2014 control apps via Accessibility / Root / Shizuku, run Shell / SSH commands, and extend with MCP, Skills",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 84.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 80.7,
+        "weight": 0.22,
+        "detail": "6 forks for 125 stars (4.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "44 open issues for 125 stars (35.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 74.8,
+        "weight": 0.1,
+        "detail": "Last push 71 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 6 forks for 125 stars (4.8%).",
+      "Issue engagement: 44 open issues for 125 stars (35.2%)."
+    ],
+    "red_flags": []
+  }
 }

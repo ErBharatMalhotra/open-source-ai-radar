@@ -5,7 +5,7 @@
   "language": "C",
   "license": "MIT",
   "topics": [],
-  "stars": 24212,
+  "stars": 24213,
   "forks": 2355,
   "open_issues": 310,
   "watchers": 174,
@@ -13,24 +13,81 @@
   "pushed_at": "2026-11-02T10:30:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/antirez.png",
-  "radar_score": 78.69,
-  "impact": 95.5,
+  "radar_score": 78.6,
+  "impact": 95.51,
   "velocity": 70.14,
-  "health": 63.75,
-  "global_percentile": 88.43,
+  "health": 63.38,
+  "global_percentile": 86.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
   "maturity": "Unknown",
-  "stars_7d": 115,
-  "stars_30d": 604,
-  "stars_90d": 604,
-  "star_growth_rate_7d": 16.428571428571427,
-  "star_growth_rate_30d": 22.37037037037037,
-  "star_growth_acceleration": 0.7343897824030273,
-  "forks_7d": 19,
+  "stars_7d": 118,
+  "stars_30d": 605,
+  "stars_90d": 605,
+  "star_growth_rate_7d": 16.857142857142858,
+  "star_growth_rate_30d": 22.40740740740741,
+  "star_growth_acceleration": 0.7523022432113341,
+  "forks_7d": 18,
   "forks_30d": 83,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 268
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 269,
+  "authenticity": {
+    "organic_confidence": 74.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.0,
+        "weight": 0.22,
+        "detail": "2,355 forks for 24,213 stars (9.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 38.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 213 stars (22 forks, 7.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 79.2,
+        "weight": 0.12,
+        "detail": "310 open issues for 24,213 stars (1.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 310 open issues for 24,213 stars (1.3%).",
+      "Fork-to-star ratio: 2,355 forks for 24,213 stars (9.7%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 213 stars (22 forks, 7.1x the daily average)."
+    ]
+  }
 }

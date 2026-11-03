@@ -22,5 +22,61 @@
   "sub_category": "server",
   "summary": "Google Ads MCP + Meta Ads MCP + GA4 in one server for Claude, ChatGPT, Cursor & n8n \u2014 250+ tools, hosted remote MCP, OAuth login, no API keys. By Ryze AI.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 76.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.9,
+        "weight": 0.22,
+        "detail": "363 forks for 2,379 stars (15.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 2,379 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 82.5,
+        "weight": 0.1,
+        "detail": "Last push 40 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 40 days ago.",
+      "Fork-to-star ratio: 363 forks for 2,379 stars (15.3%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 2,379 stars (0.0%)."
+    ]
+  }
 }

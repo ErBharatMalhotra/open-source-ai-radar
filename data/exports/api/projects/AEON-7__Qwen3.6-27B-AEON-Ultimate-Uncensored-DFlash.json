@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Fully uncensored, capability-enhanced abliteration of Qwen3.6-27B. NVFP4 + z-lab DFlash speculative decoding (n=12) on the unified ghcr.io/aeon-7/aeon-vllm-ultimate:latest container, tuned for long-context draft acceptance on DGX Spark. 6 HF variants (BF16/NVFP4/MTP/MTP-XS), docker-compose, and Quic",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 93.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "53 forks for 482 stars (11.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 88.0,
+        "weight": 0.12,
+        "detail": "9 open issues for 482 stars (1.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 85.9,
+        "weight": 0.1,
+        "detail": "Last push 28 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 28 days ago.",
+      "Issue engagement: 9 open issues for 482 stars (1.9%).",
+      "Fork-to-star ratio: 53 forks for 482 stars (11.0%)."
+    ],
+    "red_flags": []
+  }
 }

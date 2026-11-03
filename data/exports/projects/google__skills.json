@@ -4,33 +4,94 @@
   "description": "Agent Skills for Google products and technologies",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 21810,
-  "forks": 1862,
-  "open_issues": 24,
+  "topics": [
+    "google",
+    "googlecloud",
+    "skills"
+  ],
+  "stars": 21820,
+  "forks": 1863,
+  "open_issues": 23,
   "watchers": 137,
   "created_at": "2026-03-31T19:02:20Z",
-  "pushed_at": "2026-11-03T06:36:44Z",
+  "pushed_at": "2026-11-03T10:25:31Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google.png",
-  "radar_score": 77.32,
-  "impact": 94.78,
-  "velocity": 67.05,
+  "radar_score": 77.3,
+  "impact": 94.79,
+  "velocity": 66.99,
   "health": 63.75,
-  "global_percentile": 76.43,
+  "global_percentile": 72.43,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Agent Skills for Google products and technologies",
   "maturity": "Unknown",
-  "stars_7d": 225,
-  "stars_30d": 636,
-  "stars_90d": 636,
-  "star_growth_rate_7d": 32.142857142857146,
-  "star_growth_rate_30d": 28.90909090909091,
-  "star_growth_acceleration": 1.1118598382749327,
+  "stars_7d": 235,
+  "stars_30d": 634,
+  "stars_90d": 634,
+  "star_growth_rate_7d": 33.57142857142857,
+  "star_growth_rate_30d": 28.818181818181817,
+  "star_growth_acceleration": 1.1649391617845877,
   "forks_7d": 36,
   "forks_30d": 94,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 275
+  "snapshot_count": 276,
+  "authenticity": {
+    "organic_confidence": 82.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.7,
+        "weight": 0.22,
+        "detail": "1,863 forks for 21,820 stars (8.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 88.4,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 63 stars (8 forks, 2.1x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 35.5,
+        "weight": 0.12,
+        "detail": "23 open issues for 21,820 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 63 stars (8 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 1,863 forks for 21,820 stars (8.5%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 23 open issues for 21,820 stars (0.1%)."
+    ]
+  }
 }

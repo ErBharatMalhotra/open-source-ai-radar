@@ -22,5 +22,59 @@
   "sub_category": "serving",
   "summary": "\u5c06\u00a0DeepSeek \u7f51\u9875\u7aef\u514d\u8d39\u5bf9\u8bdd\uff08chat.deepseek.com\uff09\u8f6c\u6362\u4e3a\u00a0OpenAI + Anthropic \u517c\u5bb9 API\uff08Chat Completions / Responses / Anthropic Messages\uff09\u652f\u6301\u5de5\u5177\u8c03\u7528\uff08Function Calling\uff09\u3001\u52a8\u6001\u6a21\u578b\u53d1\u73b0\u3001PoW \u81ea\u52a8\u6c42\u89e3\u3001Token \u81ea\u52a8\u5237\u65b0\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 84.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.8,
+        "weight": 0.22,
+        "detail": "85 forks for 328 stars (25.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 50.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 328 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 98.6,
+        "weight": 0.1,
+        "detail": "Last push 2 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 85 forks for 328 stars (25.9%).",
+      "Maintenance cadence: Last push 2 days ago."
+    ],
+    "red_flags": []
+  }
 }

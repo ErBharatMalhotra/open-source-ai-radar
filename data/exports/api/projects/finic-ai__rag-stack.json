@@ -22,5 +22,60 @@
   "sub_category": "rag framework",
   "summary": "\ud83e\udd16 Deploy a private ChatGPT alternative hosted within your VPC. \ud83d\udd2e Connect it to your organization's knowledge base and use it as a corporate oracle. Supports open-source LLMs like Llama 2, Falcon, and GPT4All.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 90.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.2,
+        "weight": 0.22,
+        "detail": "137 forks for 1,582 stars (8.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 84.7,
+        "weight": 0.12,
+        "detail": "26 open issues for 1,582 stars (1.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.9,
+        "weight": 0.1,
+        "detail": "Last push 21 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 26 open issues for 1,582 stars (1.6%).",
+      "Maintenance cadence: Last push 21 days ago.",
+      "Fork-to-star ratio: 137 forks for 1,582 stars (8.7%)."
+    ],
+    "red_flags": []
+  }
 }

@@ -22,5 +22,60 @@
   "sub_category": "gpu management",
   "summary": "run a 27b local ai on your gaming gpu, rtx 3060 and up, radeon rx 6600 and up in beta, 8gb or more, linux and windows, one line to install",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 91.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "19 forks for 169 stars (11.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 77.8,
+        "weight": 0.12,
+        "detail": "2 open issues for 169 stars (1.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 91.1,
+        "weight": 0.1,
+        "detail": "Last push 16 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 2 open issues for 169 stars (1.2%).",
+      "Maintenance cadence: Last push 16 days ago.",
+      "Fork-to-star ratio: 19 forks for 169 stars (11.2%)."
+    ],
+    "red_flags": []
+  }
 }

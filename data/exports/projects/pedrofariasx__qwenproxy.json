@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "Proxy API OpenAI-compatible que usa automa\u00e7\u00e3o com Playwright para rotear requisi\u00e7\u00f5es para modelos do Qwen com suporte a m\u00faltiplas contas, tools e sess\u00f5es persistentes.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 86.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "78 forks for 185 stars (42.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 61.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 185 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.1,
+        "weight": 0.1,
+        "detail": "Last push 4 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 78 forks for 185 stars (42.2%).",
+      "Maintenance cadence: Last push 4 days ago."
+    ],
+    "red_flags": []
+  }
 }

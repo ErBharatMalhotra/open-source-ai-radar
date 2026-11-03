@@ -4,9 +4,15 @@
   "description": "The absolute trainer to light up AI agents.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 18882,
-  "forks": 1703,
+  "topics": [
+    "agent",
+    "agentic-ai",
+    "llm",
+    "mlops",
+    "reinforcement-learning"
+  ],
+  "stars": 18885,
+  "forks": 1705,
   "open_issues": 111,
   "watchers": 78,
   "created_at": "2025-06-18T07:28:45Z",
@@ -17,20 +23,75 @@
   "impact": 93.54,
   "velocity": 65.74,
   "health": 63.75,
-  "global_percentile": 61.29,
+  "global_percentile": 61.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "The absolute trainer to light up AI agents.",
   "maturity": "Unknown",
-  "stars_7d": 61,
-  "stars_30d": 306,
-  "stars_90d": 306,
-  "star_growth_rate_7d": 8.714285714285714,
-  "star_growth_rate_30d": 11.333333333333334,
-  "star_growth_acceleration": 0.76890756302521,
-  "forks_7d": 8,
-  "forks_30d": 46,
+  "stars_7d": 68,
+  "stars_30d": 314,
+  "stars_90d": 314,
+  "star_growth_rate_7d": 9.714285714285714,
+  "star_growth_rate_30d": 11.214285714285714,
+  "star_growth_acceleration": 0.8662420382165605,
+  "forks_7d": 11,
+  "forks_30d": 49,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 231
+  "snapshot_count": 232,
+  "authenticity": {
+    "organic_confidence": 85.2,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.5,
+        "weight": 0.22,
+        "detail": "1,705 forks for 18,885 stars (9.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 79.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 30 stars (8 forks, 2.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 62.6,
+        "weight": 0.12,
+        "detail": "111 open issues for 18,885 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 30 stars (8 forks, 2.7x the daily average).",
+      "Fork-to-star ratio: 1,705 forks for 18,885 stars (9.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

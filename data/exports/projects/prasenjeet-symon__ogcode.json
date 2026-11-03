@@ -22,5 +22,60 @@
   "sub_category": "code review",
   "summary": "The token-efficient agentic coding workbench. Built for a future where every token counts \u2014 it optimizes token usage at the agent-loop level, saving 70%+ on long sessions, while planning, remembering your codebase, and shipping features in parallel from a single self-hosted binary.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 98.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "15 forks for 145 stars (10.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "12 open issues for 145 stars (8.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.0,
+        "weight": 0.1,
+        "detail": "Last push 7 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 15 forks for 145 stars (10.3%).",
+      "Issue engagement: 12 open issues for 145 stars (8.3%)."
+    ],
+    "red_flags": []
+  }
 }

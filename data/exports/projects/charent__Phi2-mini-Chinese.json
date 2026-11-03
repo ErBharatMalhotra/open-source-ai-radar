@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Phi2-Chinese-0.2B \u4ece0\u5f00\u59cb\u8bad\u7ec3\u81ea\u5df1\u7684Phi2\u4e2d\u6587\u5c0f\u6a21\u578b\uff0c\u652f\u6301\u63a5\u5165langchain\u52a0\u8f7d\u672c\u5730\u77e5\u8bc6\u5e93\u505a\u68c0\u7d22\u589e\u5f3a\u751f\u6210RAG\u3002Training your own Phi2 small chat model from scratch.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 69.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "66 forks for 590 stars (11.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 51.9,
+        "weight": 0.12,
+        "detail": "2 open issues for 590 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 844 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 66 forks for 590 stars (11.2%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 844 days ago."
+    ]
+  }
 }

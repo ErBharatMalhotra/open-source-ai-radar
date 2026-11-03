@@ -22,5 +22,59 @@
   "sub_category": "local runner",
   "summary": "Local LLM Testing & Benchmarking for Apple Silicon",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 90.8,
+        "weight": 0.22,
+        "detail": "16 forks for 215 stars (7.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 58.3,
+        "weight": 0.12,
+        "detail": "1 open issues for 215 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 77.8,
+        "weight": 0.1,
+        "detail": "Last push 59 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 59 days ago.",
+      "Fork-to-star ratio: 16 forks for 215 stars (7.4%)."
+    ],
+    "red_flags": []
+  }
 }

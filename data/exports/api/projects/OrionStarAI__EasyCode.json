@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Easy Code (formerly DeepV Code) \u2014 A highly customizable AI coding assistant compatible with all major AI models. The perfect alternative to Claude Code and Codex, offering deep code analysis, intelligent suggestions, version rollback, multi-device sync, and automated testing across multiple language",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 69.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "46 forks for 423 stars (10.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 423 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 56.7,
+        "weight": 0.1,
+        "detail": "Last push 138 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 46 forks for 423 stars (10.9%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 423 stars (0.0%)."
+    ]
+  }
 }

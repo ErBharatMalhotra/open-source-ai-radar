@@ -4,7 +4,28 @@
   "description": "\ud83e\udd16 \u53ef DIY \u7684 \u591a\u6a21\u6001 AI \u804a\u5929\u673a\u5668\u4eba | \ud83d\ude80 \u5feb\u901f\u63a5\u5165 \u5fae\u4fe1\u3001 QQ\u3001Telegram\u3001\u7b49\u804a\u5929\u5e73\u53f0 | \ud83e\udd88\u652f\u6301DeepSeek\u3001Grok\u3001Claude\u3001Ollama\u3001Gemini\u3001OpenAI | \u5de5\u4f5c\u6d41\u7cfb\u7edf\u3001\u7f51\u9875\u641c\u7d22\u3001AI\u753b\u56fe\u3001\u4eba\u8bbe\u8c03\u6559\u3001\u865a\u62df\u5973\u4ec6\u3001\u8bed\u97f3\u5bf9\u8bdd | ",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
+  "topics": [
+    "chatgpt",
+    "openai",
+    "qq",
+    "qqbot",
+    "bot",
+    "new-bing",
+    "sydney",
+    "bard",
+    "discord",
+    "ernie",
+    "poe",
+    "chatglm-6b",
+    "go-cqhttp",
+    "mirai",
+    "telegram",
+    "wechat",
+    "xinghuo",
+    "deepseek",
+    "ollama",
+    "grok"
+  ],
   "stars": 19265,
   "forks": 1835,
   "open_issues": 2,
@@ -13,24 +34,81 @@
   "pushed_at": "2026-10-22T09:34:31Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/lss233.png",
-  "radar_score": 67.7,
+  "radar_score": 67.63,
   "impact": 94.06,
-  "velocity": 46.98,
-  "health": 54.55,
-  "global_percentile": 11.57,
+  "velocity": 46.99,
+  "health": 54.23,
+  "global_percentile": 12.29,
   "category": "Local AI",
   "sub_category": "",
   "summary": "\ud83e\udd16 \u53ef DIY \u7684 \u591a\u6a21\u6001 AI \u804a\u5929\u673a\u5668\u4eba | \ud83d\ude80 \u5feb\u901f\u63a5\u5165 \u5fae\u4fe1\u3001 QQ\u3001Telegram\u3001\u7b49\u804a\u5929\u5e73\u53f0 | \ud83e\udd88\u652f\u6301DeepSeek\u3001Grok\u3001Claude\u3001Ollama\u3001Gemini\u3001OpenAI | \u5de5\u4f5c\u6d41\u7cfb\u7edf\u3001\u7f51\u9875\u641c\u7d22\u3001AI\u753b\u56fe\u3001\u4eba\u8bbe\u8c03\u6559\u3001\u865a\u62df\u5973\u4ec6\u3001\u8bed\u97f3\u5bf9\u8bdd | ",
   "maturity": "Unknown",
-  "stars_7d": 76,
-  "stars_30d": 201,
+  "stars_7d": 63,
+  "stars_30d": 205,
   "stars_90d": 216,
-  "star_growth_rate_7d": 10.857142857142858,
-  "star_growth_rate_30d": 6.7,
-  "star_growth_acceleration": 1.6204690831556503,
+  "star_growth_rate_7d": 9.0,
+  "star_growth_rate_30d": 7.068965517241379,
+  "star_growth_acceleration": 1.273170731707317,
   "forks_7d": 0,
   "forks_30d": 1,
-  "days_since_last_push": 11,
-  "freshness_score": 0.8958341352965282,
-  "snapshot_count": 159
+  "days_since_last_push": 12,
+  "freshness_score": 0.8869204367171575,
+  "snapshot_count": 160,
+  "authenticity": {
+    "organic_confidence": 77.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.3,
+        "weight": 0.22,
+        "detail": "1,835 forks for 19,265 stars (9.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 77.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 20 stars (0 forks, 2.8x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 26.0,
+        "weight": 0.12,
+        "detail": "2 open issues for 19,265 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.8,
+        "weight": 0.1,
+        "detail": "Last push 12 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 20 stars (0 forks, 2.8x the daily average).",
+      "Maintenance cadence: Last push 12 days ago.",
+      "Fork-to-star ratio: 1,835 forks for 19,265 stars (9.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 2 open issues for 19,265 stars (0.0%)."
+    ]
+  }
 }

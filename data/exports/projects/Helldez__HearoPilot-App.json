@@ -22,5 +22,58 @@
   "sub_category": "local runner",
   "summary": "On-device AI meeting assistant \u2014 real-time transcription & LLM insights, 100% offline",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.3,
+        "weight": 0.22,
+        "detail": "34 forks for 102 stars (33.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 74.4,
+        "weight": 0.12,
+        "detail": "1 open issues for 102 stars (1.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 54.4,
+        "weight": 0.1,
+        "detail": "Last push 146 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 34 forks for 102 stars (33.3%)."
+    ],
+    "red_flags": []
+  }
 }

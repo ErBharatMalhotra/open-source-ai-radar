@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "An AI editor that watches its own cut: talking-head / AI-avatar video \u2192 auto-edited short video. \u7f51\u611f\u53e3\u64ad\u7cbe\u526a\uff1a\u6570\u5b57\u4eba/\u771f\u4eba\u53e3\u64ad \u2192 AI \u81ea\u52a8\u7cbe\u526a\u6210\u7f51\u611f\u52a8\u6548\u77ed\u89c6\u9891 \u2192 \u53ef\u9009\u526a\u6620\u5206\u5c42\u8349\u7a3f",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 78.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.2,
+        "weight": 0.22,
+        "detail": "80 forks for 421 stars (19.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 421 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.1,
+        "weight": 0.1,
+        "detail": "Last push 4 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 4 days ago.",
+      "Fork-to-star ratio: 80 forks for 421 stars (19.0%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 421 stars (0.0%)."
+    ]
+  }
 }

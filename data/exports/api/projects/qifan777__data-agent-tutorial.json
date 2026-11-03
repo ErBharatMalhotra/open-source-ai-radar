@@ -22,5 +22,58 @@
   "sub_category": "rag framework",
   "summary": "Data-Agent\uff1a\u4ece 0 \u5230 1 \u6784\u5efa Text2SQL \u667a\u80fd\u4f53\u5b9e\u6218\u6559\u7a0b\uff0c\u8986\u76d6 StateGraph \u7f16\u6392\u3001\u53cc\u91cd RAG\u3001\u5173\u7cfb\u56fe\u8c31\u3001HITL \u4eba\u5de5\u786e\u8ba4\u3001SQL \u81ea\u52a8\u7ea0\u9519\u3001Python Docker \u6c99\u76d2\u6267\u884c\u4e0e A2A + SSE \u6d41\u5f0f\u4ea4\u4e92\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 84.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.4,
+        "weight": 0.22,
+        "detail": "14 forks for 106 stars (13.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 73.3,
+        "weight": 0.12,
+        "detail": "1 open issues for 106 stars (0.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 64.4,
+        "weight": 0.1,
+        "detail": "Last push 110 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 14 forks for 106 stars (13.2%)."
+    ],
+    "red_flags": []
+  }
 }

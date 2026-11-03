@@ -22,5 +22,61 @@
   "sub_category": "vector database",
   "summary": "A simple, easy-to-hack Vector Database",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 75.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 85.0,
+        "weight": 0.22,
+        "detail": "12 forks for 206 stars (5.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 93.0,
+        "weight": 0.12,
+        "detail": "6 open issues for 206 stars (2.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 32.2,
+        "weight": 0.1,
+        "detail": "Last push 298 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 12 forks for 206 stars (5.8%).",
+      "Issue engagement: 6 open issues for 206 stars (2.9%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 298 days ago."
+    ]
+  }
 }

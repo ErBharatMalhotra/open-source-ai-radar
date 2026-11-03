@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 43.7,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 34.7,
+        "weight": 0.22,
+        "detail": "10 forks for 2,381 stars (0.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 29.2,
+        "weight": 0.12,
+        "detail": "1 open issues for 2,381 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.0,
+        "weight": 0.1,
+        "detail": "Last push 46 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 46 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 2,381 stars (0.0%).",
+      "Fork-to-star ratio: 10 forks for 2,381 stars (0.4%)."
+    ]
+  }
 }

@@ -22,5 +22,59 @@
   "sub_category": "image",
   "summary": "\u6c34\u4ed9\u7684AI\u63d0\u793a\u8bcd\uff5c5,000+ \u4e2d\u6587 AI \u7ed8\u753b\u63d0\u793a\u8bcd\u5e93\uff1a\u68c0\u7d22 / \u5206\u7c7b / \u4e00\u952e\u590d\u5236\u3002\u63d0\u793a\u8bcd\u8986\u76d6 ChatGPT\u3001Grok\u3001Gemini\u3001Midjourney\u3001Stable Diffusion\u3001Flux\u3001\u5373\u68a6\u3001\u53ef\u7075\u3001\u8c46\u5305\u3001\u6d77\u87ba\u3001\u6587\u5fc3\u4e00\u683c\u7b49\u4e3b\u6d41\u751f\u56fe\u6a21\u578b\u3002\u6e90\u7801 + \u6570\u636e\u96c6\u5168\u90e8\u5f00\u6e90\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 83.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.7,
+        "weight": 0.22,
+        "detail": "88 forks for 529 stars (16.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 43.9,
+        "weight": 0.12,
+        "detail": "1 open issues for 529 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 95.7,
+        "weight": 0.1,
+        "detail": "Last push 6 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 6 days ago.",
+      "Fork-to-star ratio: 88 forks for 529 stars (16.6%)."
+    ],
+    "red_flags": []
+  }
 }

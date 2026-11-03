@@ -4,8 +4,13 @@
   "description": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
   "language": null,
   "license": "MIT",
-  "topics": [],
-  "stars": 15441,
+  "topics": [
+    "claude-ai",
+    "claude-skills",
+    "llm",
+    "prompt-engineering"
+  ],
+  "stars": 15445,
   "forks": 1788,
   "open_issues": 17,
   "watchers": 193,
@@ -14,23 +19,80 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/nidhinjs.png",
   "radar_score": 74.17,
-  "impact": 94.28,
+  "impact": 94.27,
   "velocity": 61.35,
   "health": 59.95,
-  "global_percentile": 52.43,
+  "global_percentile": 42.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
   "maturity": "Unknown",
-  "stars_7d": 358,
-  "stars_30d": 1128,
-  "stars_90d": 1128,
-  "star_growth_rate_7d": 51.142857142857146,
-  "star_growth_rate_30d": 51.27272727272727,
-  "star_growth_acceleration": 0.997467071935157,
+  "stars_7d": 347,
+  "stars_30d": 1120,
+  "stars_90d": 1120,
+  "star_growth_rate_7d": 49.57142857142857,
+  "star_growth_rate_30d": 50.90909090909091,
+  "star_growth_acceleration": 0.9737244897959184,
   "forks_7d": 43,
-  "forks_30d": 128,
+  "forks_30d": 126,
   "days_since_last_push": 11,
   "freshness_score": 0.8958341352965282,
-  "snapshot_count": 291
+  "snapshot_count": 292,
+  "authenticity": {
+    "organic_confidence": 82.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "1,788 forks for 15,445 stars (11.6%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 86.4,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 106 stars (-7 forks, 2.2x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 36.0,
+        "weight": 0.12,
+        "detail": "17 open issues for 15,445 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 93.3,
+        "weight": 0.1,
+        "detail": "Last push 11 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 106 stars (-7 forks, 2.2x the daily average).",
+      "Maintenance cadence: Last push 11 days ago.",
+      "Fork-to-star ratio: 1,788 forks for 15,445 stars (11.6%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 17 open issues for 15,445 stars (0.1%)."
+    ]
+  }
 }

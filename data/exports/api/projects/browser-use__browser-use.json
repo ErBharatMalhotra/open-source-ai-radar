@@ -4,9 +4,27 @@
   "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 119902,
-  "forks": 13371,
+  "topics": [
+    "llm",
+    "ai-agents",
+    "ai-tools",
+    "browser-automation",
+    "python",
+    "browser-use",
+    "playwright",
+    "browser-agent",
+    "cdp",
+    "cloud-browser",
+    "computer-use",
+    "headless-browser",
+    "mcp",
+    "remote-browser",
+    "stealth-browser",
+    "web-automation",
+    "web-scraping"
+  ],
+  "stars": 119914,
+  "forks": 13372,
   "open_issues": 179,
   "watchers": 473,
   "created_at": "2024-10-31T16:00:56Z",
@@ -17,20 +35,77 @@
   "impact": 99.43,
   "velocity": 66.75,
   "health": 63.38,
-  "global_percentile": 91.14,
+  "global_percentile": 89.57,
   "category": "AI Agents",
   "sub_category": "task agent",
   "summary": "\ud83c\udf10 Make websites accessible for AI agents. Automate tasks online with ease.",
   "maturity": "Unknown",
-  "stars_7d": 730,
-  "stars_30d": 2237,
-  "stars_90d": 2237,
-  "star_growth_rate_7d": 104.28571428571429,
-  "star_growth_rate_30d": 101.68181818181819,
-  "star_growth_acceleration": 1.025608276390574,
-  "forks_7d": 127,
-  "forks_30d": 352,
+  "stars_7d": 722,
+  "stars_30d": 2203,
+  "stars_90d": 2203,
+  "star_growth_rate_7d": 103.14285714285714,
+  "star_growth_rate_30d": 104.9047619047619,
+  "star_growth_acceleration": 0.9832047208352247,
+  "forks_7d": 120,
+  "forks_30d": 348,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 292
+  "snapshot_count": 293,
+  "authenticity": {
+    "organic_confidence": 87.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.8,
+        "weight": 0.22,
+        "detail": "13,372 forks for 119,914 stars (11.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 95.0,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 141 stars (13 forks, 1.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 39.9,
+        "weight": 0.12,
+        "detail": "179 open issues for 119,914 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 141 stars (13 forks, 1.5x the daily average).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 13,372 forks for 119,914 stars (11.2%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 179 open issues for 119,914 stars (0.1%)."
+    ]
+  }
 }

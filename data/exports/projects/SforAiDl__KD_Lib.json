@@ -22,5 +22,61 @@
   "sub_category": "quantization",
   "summary": "A Pytorch Knowledge Distillation library for benchmarking and extending works in the domains of Knowledge Distillation, Pruning, and Quantization.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 79.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 97.2,
+        "weight": 0.22,
+        "detail": "60 forks for 650 stars (9.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 90.5,
+        "weight": 0.12,
+        "detail": "14 open issues for 650 stars (2.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 1342 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 14 open issues for 650 stars (2.2%).",
+      "Fork-to-star ratio: 60 forks for 650 stars (9.2%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 1342 days ago."
+    ]
+  }
 }

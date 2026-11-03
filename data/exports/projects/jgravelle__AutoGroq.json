@@ -22,5 +22,60 @@
   "sub_category": "coding agent",
   "summary": "AutoGroq is a groundbreaking tool that revolutionizes the way users interact with Autogen\u2122 and other AI assistants. By dynamically generating tailored teams of AI agents based on your project requirements, AutoGroq eliminates the need for manual configuration and allows you to tackle any question, p",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 66.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.2,
+        "weight": 0.22,
+        "detail": "439 forks for 1,508 stars (29.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 48.3,
+        "weight": 0.12,
+        "detail": "4 open issues for 1,508 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 679 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 439 forks for 1,508 stars (29.1%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 679 days ago."
+    ]
+  }
 }

@@ -4,8 +4,15 @@
   "description": "A straightforward method for training your LLM, from downloading data to generating text.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 13104,
+  "topics": [
+    "gemini",
+    "large-language-models",
+    "llm",
+    "openai",
+    "training",
+    "transformers"
+  ],
+  "stars": 13108,
   "forks": 1813,
   "open_issues": 1,
   "watchers": 91,
@@ -13,24 +20,80 @@
   "pushed_at": "2026-10-02T14:45:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/FareedKhan-dev.png",
-  "radar_score": 64.99,
+  "radar_score": 64.98,
   "impact": 92.91,
-  "velocity": 44.46,
+  "velocity": 44.45,
   "health": 49.05,
-  "global_percentile": 9.43,
+  "global_percentile": 5.57,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "A straightforward method for training your LLM, from downloading data to generating text.",
   "maturity": "Unknown",
-  "stars_7d": 601,
-  "stars_30d": 1083,
-  "stars_90d": 1083,
-  "star_growth_rate_7d": 85.85714285714286,
-  "star_growth_rate_30d": 43.32,
-  "star_growth_acceleration": 1.981928505474212,
-  "forks_7d": 81,
-  "forks_30d": 161,
+  "stars_7d": 605,
+  "stars_30d": 1087,
+  "stars_90d": 1087,
+  "star_growth_rate_7d": 86.42857142857143,
+  "star_growth_rate_30d": 43.48,
+  "star_growth_acceleration": 1.987777631751873,
+  "forks_7d": 79,
+  "forks_30d": 160,
   "days_since_last_push": 31,
   "freshness_score": 0.7334469562242892,
-  "snapshot_count": 250
+  "snapshot_count": 251,
+  "authenticity": {
+    "organic_confidence": 68.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.2,
+        "weight": 0.22,
+        "detail": "1,813 forks for 13,108 stars (13.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 53.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 192 stars (30 forks, 4.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25.8,
+        "weight": 0.12,
+        "detail": "1 open issues for 13,108 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 84.8,
+        "weight": 0.1,
+        "detail": "Last push 31 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 31 days ago.",
+      "Fork-to-star ratio: 1,813 forks for 13,108 stars (13.8%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 13,108 stars (0.0%)."
+    ]
+  }
 }

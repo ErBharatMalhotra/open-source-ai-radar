@@ -22,5 +22,59 @@
   "sub_category": "local runner",
   "summary": "Open Dungeon \u2014 the first easy-to-use, fully local AI roleplay app. Story and inline scene images generated 100% on your machine (Gemma 4 QAT via Ollama(and others) + FLUX). No accounts, no API keys, no cloud.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 87.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "28 forks for 240 stars (11.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 85.0,
+        "weight": 0.12,
+        "detail": "4 open issues for 240 stars (1.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 61.7,
+        "weight": 0.1,
+        "detail": "Last push 120 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 4 open issues for 240 stars (1.7%).",
+      "Fork-to-star ratio: 28 forks for 240 stars (11.7%)."
+    ],
+    "red_flags": []
+  }
 }

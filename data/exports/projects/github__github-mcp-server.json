@@ -4,33 +4,92 @@
   "description": "GitHub's official MCP Server",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 34180,
-  "forks": 5279,
-  "open_issues": 206,
+  "topics": [
+    "github",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 34181,
+  "forks": 5280,
+  "open_issues": 205,
   "watchers": 413,
   "created_at": "2025-03-04T16:42:04Z",
-  "pushed_at": "2026-11-02T22:19:47Z",
+  "pushed_at": "2026-11-03T11:04:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/github.png",
   "radar_score": 78.84,
-  "impact": 97.64,
-  "velocity": 68.14,
+  "impact": 97.65,
+  "velocity": 68.13,
   "health": 63.75,
-  "global_percentile": 90.14,
+  "global_percentile": 88.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "GitHub's official MCP Server",
   "maturity": "Unknown",
-  "stars_7d": 213,
-  "stars_30d": 661,
-  "stars_90d": 661,
-  "star_growth_rate_7d": 30.428571428571427,
-  "star_growth_rate_30d": 30.045454545454547,
-  "star_growth_acceleration": 1.012751242705857,
-  "forks_7d": 47,
-  "forks_30d": 147,
+  "stars_7d": 202,
+  "stars_30d": 656,
+  "stars_90d": 656,
+  "star_growth_rate_7d": 28.857142857142858,
+  "star_growth_rate_30d": 29.818181818181817,
+  "star_growth_acceleration": 0.9677700348432057,
+  "forks_7d": 48,
+  "forks_30d": 148,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 288
+  "snapshot_count": 289,
+  "authenticity": {
+    "organic_confidence": 91.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.9,
+        "weight": 0.22,
+        "detail": "5,280 forks for 34,181 stars (15.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 95.1,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 41 stars (13 forks, 1.5x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 63.0,
+        "weight": 0.12,
+        "detail": "205 open issues for 34,181 stars (0.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 41 stars (13 forks, 1.5x the daily average).",
+      "Fork-to-star ratio: 5,280 forks for 34,181 stars (15.4%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

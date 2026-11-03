@@ -22,5 +22,60 @@
   "sub_category": "inference engine",
   "summary": "LSP server leveraging LLMs for code completion (and more?)",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 90.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 93.3,
+        "weight": 0.22,
+        "detail": "72 forks for 884 stars (8.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.3,
+        "weight": 0.12,
+        "detail": "21 open issues for 884 stars (2.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 82.5,
+        "weight": 0.1,
+        "detail": "Last push 40 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 40 days ago.",
+      "Issue engagement: 21 open issues for 884 stars (2.4%).",
+      "Fork-to-star ratio: 72 forks for 884 stars (8.1%)."
+    ],
+    "red_flags": []
+  }
 }

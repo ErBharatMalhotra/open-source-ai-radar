@@ -4,34 +4,98 @@
   "description": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 22922,
+  "topics": [
+    "ai-agents",
+    "nvidia",
+    "openclaw",
+    "openshell",
+    "sandboxing",
+    "typescript",
+    "hermes",
+    "deep-agents"
+  ],
+  "stars": 22923,
   "forks": 3197,
-  "open_issues": 668,
+  "open_issues": 669,
   "watchers": 110,
   "created_at": "2026-03-15T17:04:09Z",
-  "pushed_at": "2026-11-03T08:47:44Z",
+  "pushed_at": "2026-11-03T11:33:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
   "radar_score": 79.08,
-  "impact": 95.15,
+  "impact": 95.16,
   "velocity": 71.67,
   "health": 63.75,
-  "global_percentile": 92.29,
+  "global_percentile": 90.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
   "maturity": "Unknown",
-  "stars_7d": 76,
-  "stars_30d": 205,
-  "stars_90d": 205,
-  "star_growth_rate_7d": 10.857142857142858,
-  "star_growth_rate_30d": 9.318181818181818,
-  "star_growth_acceleration": 1.1651567944250871,
-  "forks_7d": 31,
-  "forks_30d": 61,
+  "stars_7d": 74,
+  "stars_30d": 204,
+  "stars_90d": 204,
+  "star_growth_rate_7d": 10.571428571428571,
+  "star_growth_rate_30d": 9.714285714285714,
+  "star_growth_acceleration": 1.0882352941176472,
+  "forks_7d": 30,
+  "forks_30d": 62,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 284,
-  "why_trending": "Steady growth with 76 new stars this week. Above-average growth velocity. High developer adoption with 31 new forks this week. Active in the Uncategorized category."
+  "snapshot_count": 285,
+  "why_trending": "Steady growth with 74 new stars this week. Above-average growth velocity. High developer adoption with 30 new forks this week. Active in the Uncategorized category.",
+  "authenticity": {
+    "organic_confidence": 93.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.2,
+        "weight": 0.22,
+        "detail": "3,197 forks for 22,923 stars (13.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 86.2,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 20 stars (5 forks, 2.3x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 93.1,
+        "weight": 0.12,
+        "detail": "669 open issues for 22,923 stars (2.9%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 20 stars (5 forks, 2.3x the daily average).",
+      "Issue engagement: 669 open issues for 22,923 stars (2.9%).",
+      "Fork-to-star ratio: 3,197 forks for 22,923 stars (13.9%)."
+    ],
+    "red_flags": []
+  }
 }

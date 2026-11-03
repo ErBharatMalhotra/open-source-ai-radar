@@ -22,5 +22,60 @@
   "sub_category": "quantization",
   "summary": "List of papers related to neural network quantization in recent AI conferences and journals.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 64.6,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.2,
+        "weight": 0.22,
+        "detail": "66 forks for 843 stars (7.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 46.9,
+        "weight": 0.12,
+        "detail": "2 open issues for 843 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 586 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 66 forks for 843 stars (7.8%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 586 days ago."
+    ]
+  }
 }

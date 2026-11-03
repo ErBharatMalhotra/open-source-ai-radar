@@ -4,8 +4,22 @@
   "description": "Agent S: the state-of-the-art open source computer use agents",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12861,
+  "topics": [
+    "agent-computer-interface",
+    "ai-agents",
+    "computer-automation",
+    "gui-agents",
+    "memory",
+    "mllm",
+    "planning",
+    "retrieval-augmented-generation",
+    "in-context-reinforcement-learning",
+    "computer-use",
+    "grounding",
+    "computer-use-agent",
+    "cua"
+  ],
+  "stars": 12862,
   "forks": 1502,
   "open_issues": 27,
   "watchers": 90,
@@ -13,24 +27,79 @@
   "pushed_at": "2026-10-30T20:56:06Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/simular-ai.png",
-  "radar_score": 73.58,
-  "impact": 92.53,
-  "velocity": 59.71,
+  "radar_score": 73.57,
+  "impact": 92.52,
+  "velocity": 59.72,
   "health": 62.65,
-  "global_percentile": 37.0,
+  "global_percentile": 37.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Agent S: an open agentic framework that uses computers like a human",
   "maturity": "Unknown",
-  "stars_7d": 122,
-  "stars_30d": 329,
-  "stars_90d": 329,
-  "star_growth_rate_7d": 17.428571428571427,
-  "star_growth_rate_30d": 11.344827586206897,
-  "star_growth_acceleration": 1.5362570560138948,
-  "forks_7d": 7,
-  "forks_30d": 38,
+  "stars_7d": 111,
+  "stars_30d": 328,
+  "stars_90d": 328,
+  "star_growth_rate_7d": 15.857142857142858,
+  "star_growth_rate_30d": 11.310344827586206,
+  "star_growth_acceleration": 1.4020034843205575,
+  "forks_7d": 5,
+  "forks_30d": 37,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 208
+  "snapshot_count": 209,
+  "authenticity": {
+    "organic_confidence": 81.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.7,
+        "weight": 0.22,
+        "detail": "1,502 forks for 12,862 stars (11.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 76.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 32 stars (0 forks, 2.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 45.5,
+        "weight": 0.12,
+        "detail": "27 open issues for 12,862 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 32 stars (0 forks, 2.9x the daily average).",
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 1,502 forks for 12,862 stars (11.7%)."
+    ],
+    "red_flags": []
+  }
 }

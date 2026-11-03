@@ -22,5 +22,59 @@
   "sub_category": "code review",
   "summary": "A \u80a1\u77ed\u7ebf\u590d\u76d8\u770b\u677f\uff1a\u6da8\u505c\u6c60\u00b7\u8fde\u677f\u68af\u961f\u00b7\u9f99\u864e\u699c\u00b7\u677f\u5757\u8d44\u91d1\u4e00\u5c4f\u770b\u5b8c\uff0c\u8d5a\u94b1\u6548\u5e94/\u664b\u7ea7\u7387/\u68af\u961f\u65ad\u5c42/\u60c5\u7eea\u5468\u671f\u7b49\u6d3e\u751f\u6307\u6807\u7eaf\u8ba1\u7b97\u76f4\u51fa\uff08\u4e0d\u7ecf\u8fc7 AI\uff09\uff0cAI \u53ea\u628a\u6570\u636e\u4e32\u6210\u80fd\u8bfb\u7684\u76d8\u9762\u7814\u5224\u3002\u5168\u672c\u5730\u8fd0\u884c\uff0c\u53ef\u7528 Claude/Codex \u8ba2\u9605\u514d API key\u3002| A-share short-term daily-review dashboard: derived sentiment metrics computed locally, AI only writes the narrative. No API key needed.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 81.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.6,
+        "weight": 0.22,
+        "detail": "182 forks for 672 stars (27.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 49.9,
+        "weight": 0.12,
+        "detail": "2 open issues for 672 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.0,
+        "weight": 0.1,
+        "detail": "Last push 23 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 23 days ago.",
+      "Fork-to-star ratio: 182 forks for 672 stars (27.1%)."
+    ],
+    "red_flags": []
+  }
 }

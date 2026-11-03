@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Agentlens is a trusted agent trading platform.  Here, you can quickly find the Agent that meets your needs, and you can also publish your own Agent to turn it into your digital asset.  We encourage everyone to transform their areas of expertise into Agents and turn them into digital assets, allowing",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 81.4,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 85.0,
+        "weight": 0.22,
+        "detail": "60 forks for 1,031 stars (5.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 80.4,
+        "weight": 0.12,
+        "detail": "14 open issues for 1,031 stars (1.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 75.0,
+        "weight": 0.1,
+        "detail": "Last push 70 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 70 days ago.",
+      "Issue engagement: 14 open issues for 1,031 stars (1.4%).",
+      "Fork-to-star ratio: 60 forks for 1,031 stars (5.8%)."
+    ],
+    "red_flags": []
+  }
 }

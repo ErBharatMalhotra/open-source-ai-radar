@@ -4,8 +4,16 @@
   "description": "Bindu: The identity, communication, and payments layer for AI agents.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 10010,
+  "topics": [
+    "agent-communication",
+    "autonomous-agents",
+    "agent-orchestration",
+    "a2a",
+    "ai-agent",
+    "machine-learning",
+    "eu-ai-act"
+  ],
+  "stars": 10009,
   "forks": 666,
   "open_issues": 35,
   "watchers": 20,
@@ -14,23 +22,79 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/GetBindu.png",
   "radar_score": 63.52,
-  "impact": 87.11,
-  "velocity": 48.79,
+  "impact": 87.12,
+  "velocity": 48.78,
   "health": 46.38,
-  "global_percentile": 7.14,
+  "global_percentile": 3.0,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "Bindu: The identity, communication, and payments layer for AI agents.",
   "maturity": "Unknown",
-  "stars_7d": -16,
-  "stars_30d": -43,
-  "stars_90d": 202,
-  "star_growth_rate_7d": -2.2857142857142856,
-  "star_growth_rate_30d": -1.4333333333333333,
+  "stars_7d": -20,
+  "stars_30d": -62,
+  "stars_90d": 201,
+  "star_growth_rate_7d": -2.857142857142857,
+  "star_growth_rate_30d": -2.066666666666667,
   "star_growth_acceleration": 1.0,
   "forks_7d": -3,
-  "forks_30d": 57,
+  "forks_30d": 39,
   "days_since_last_push": 57,
   "freshness_score": 0.5655254386995371,
-  "snapshot_count": 192
+  "snapshot_count": 193,
+  "authenticity": {
+    "organic_confidence": 56.5,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 88.0,
+        "weight": 0.22,
+        "detail": "666 forks for 10,009 stars (6.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 20.6,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 12 stars (11 forks, 12.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 52.5,
+        "weight": 0.12,
+        "detail": "35 open issues for 10,009 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 78.2,
+        "weight": 0.1,
+        "detail": "Last push 57 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 57 days ago.",
+      "Fork-to-star ratio: 666 forks for 10,009 stars (6.7%)."
+    ],
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 12 stars (11 forks, 12.0x the daily average)."
+    ]
+  }
 }

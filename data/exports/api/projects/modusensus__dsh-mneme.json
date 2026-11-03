@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "\ud83e\udde0 The memory that dreams \u2014 self-evolving memory for DeepSeek Harness: your AI remembers across sessions, consolidates in its sleep, forgets what matters less, and grows smarter over time. Fully offline & private.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 95.5,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.5,
+        "weight": 0.22,
+        "detail": "14 forks for 112 stars (12.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "18 open issues for 112 stars (16.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.2,
+        "weight": 0.1,
+        "detail": "Last push 45 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 45 days ago.",
+      "Fork-to-star ratio: 14 forks for 112 stars (12.5%).",
+      "Issue engagement: 18 open issues for 112 stars (16.1%)."
+    ],
+    "red_flags": []
+  }
 }

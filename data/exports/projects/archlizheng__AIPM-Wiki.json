@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\ud83e\uddf1 AI \u4ea7\u54c1\u7ecf\u7406\u5165\u95e8\u77e5\u8bc6\u5e93:\u9762\u8bd5\u9898\u5e93 \u00b7 AI \u57fa\u7840 \u00b7 \u6848\u4f8b\u62c6\u89e3 \u00b7 \u5b66\u4e60\u8def\u7ebf | \u65e0\u8bba\u662f\u96f6\u57fa\u7840\u8f6c\u884c\u8fd8\u662f\u6301\u7eed\u8fdb\u6b65,\u4e00\u4e2a\u4ed3\u5e93\u5c31\u591f\u4e86",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 72.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 89.3,
+        "weight": 0.22,
+        "detail": "32 forks for 456 stars (7.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 456 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 91.1,
+        "weight": 0.1,
+        "detail": "Last push 16 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 32 forks for 456 stars (7.0%).",
+      "Maintenance cadence: Last push 16 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 456 stars (0.0%)."
+    ]
+  }
 }

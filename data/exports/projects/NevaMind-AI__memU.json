@@ -4,8 +4,19 @@
   "description": "Personal memory across agents",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 14596,
+  "topics": [
+    "mcp",
+    "memory",
+    "sandbox",
+    "agent-memory",
+    "claude-skills",
+    "skills",
+    "openclaw",
+    "openclaw-skills",
+    "harness",
+    "loop-engineering"
+  ],
+  "stars": 14599,
   "forks": 1096,
   "open_issues": 67,
   "watchers": 63,
@@ -13,24 +24,78 @@
   "pushed_at": "2026-11-03T02:47:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NevaMind-AI.png",
-  "radar_score": 73.9,
+  "radar_score": 74.62,
   "impact": 91.9,
-  "velocity": 63.26,
-  "health": 60.01,
-  "global_percentile": 40.43,
+  "velocity": 64.77,
+  "health": 60.75,
+  "global_percentile": 44.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Personal memory across agents",
   "maturity": "Unknown",
-  "stars_7d": 31,
-  "stars_30d": 103,
-  "stars_90d": 164,
-  "star_growth_rate_7d": 4.428571428571429,
-  "star_growth_rate_30d": 3.433333333333333,
-  "star_growth_acceleration": 1.289875173370319,
+  "stars_7d": 35,
+  "stars_30d": 108,
+  "stars_90d": 170,
+  "star_growth_rate_7d": 5.0,
+  "star_growth_rate_30d": 3.6,
+  "star_growth_acceleration": 1.3888888888888888,
   "forks_7d": 4,
   "forks_30d": 13,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 162
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 163,
+  "authenticity": {
+    "organic_confidence": 80.1,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 91.0,
+        "weight": 0.22,
+        "detail": "1,096 forks for 14,599 stars (7.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 72.8,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 12 stars (0 forks, 3.2x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 57.9,
+        "weight": 0.12,
+        "detail": "67 open issues for 14,599 stars (0.5%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 1,096 forks for 14,599 stars (7.5%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

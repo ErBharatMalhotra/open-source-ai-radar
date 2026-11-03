@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\ud83d\udc7e \u4e0b\u4e00\u4ee3\u900f\u660e\u667a\u80fd\u4f53\u67b6\u6784 | Next-Gen Transparent Agent Architecture \ud83d\udd0d \u5168\u884c\u4e3a\u5ba1\u8ba1 | \ud83d\udee1\ufe0f \u4e24\u6bb5\u5f0f\u5b89\u5168\u8c03\u7528 | \ud83e\udde0 \u53cc\u6c34\u4f4d\u8bb0\u5fc6 | \u23f0 \u5fc3\u8df3\u4efb\u52a1 \ud83d\udcca P0 \u7ea7\u4e8b\u6545\u7387\u964d\u4f4e 80% | \u517c\u5bb9 OpenClaw + Claude Code \u6280\u80fd\u751f\u6001",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 74.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "34 forks for 335 stars (10.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 335 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 79.2,
+        "weight": 0.1,
+        "detail": "Last push 53 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 53 days ago.",
+      "Fork-to-star ratio: 34 forks for 335 stars (10.1%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 335 stars (0.0%)."
+    ]
+  }
 }

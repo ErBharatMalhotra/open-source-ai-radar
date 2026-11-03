@@ -22,5 +22,60 @@
   "sub_category": "omni-modal",
   "summary": "\ud83e\udd16 A full-stack Agent Chat Runtime for pre-production validation, built with act, TypeScript, and LangGraph JS combining streaming, multimodal, HITL, and tools with durable Task/Step execution, retry budgets, idempotency, compensation, distributed locks, context governance, OpenTelemetry tracing, mod",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 94.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.9,
+        "weight": 0.22,
+        "detail": "14 forks for 135 stars (10.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "11 open issues for 135 stars (8.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 76.8,
+        "weight": 0.1,
+        "detail": "Last push 63 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 63 days ago.",
+      "Fork-to-star ratio: 14 forks for 135 stars (10.4%).",
+      "Issue engagement: 11 open issues for 135 stars (8.1%)."
+    ],
+    "red_flags": []
+  }
 }

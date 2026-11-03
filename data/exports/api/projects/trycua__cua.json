@@ -4,33 +4,107 @@
   "description": "Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
-  "stars": 31633,
+  "topics": [
+    "apple",
+    "cua",
+    "lume",
+    "macos",
+    "virtualization",
+    "virtualization-framework",
+    "swift",
+    "ai-agent",
+    "computer-use",
+    "manus",
+    "operator",
+    "agent",
+    "containerization",
+    "windows",
+    "windows-sandbox",
+    "hacktoberfest",
+    "computer-use-agent",
+    "desktop-automation"
+  ],
+  "stars": 31650,
   "forks": 2347,
-  "open_issues": 730,
+  "open_issues": 731,
   "watchers": 100,
   "created_at": "2025-01-31T15:02:49Z",
-  "pushed_at": "2026-11-03T08:47:40Z",
+  "pushed_at": "2026-11-03T11:45:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/trycua.png",
-  "radar_score": 77.27,
-  "impact": 95.39,
+  "radar_score": 77.28,
+  "impact": 95.4,
   "velocity": 66.23,
   "health": 63.75,
-  "global_percentile": 76.14,
+  "global_percentile": 71.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
   "maturity": "Unknown",
-  "stars_7d": 632,
-  "stars_30d": 2230,
-  "stars_90d": 2230,
-  "star_growth_rate_7d": 90.28571428571429,
-  "star_growth_rate_30d": 101.36363636363636,
-  "star_growth_acceleration": 0.8907110826393339,
-  "forks_7d": 79,
-  "forks_30d": 258,
+  "stars_7d": 635,
+  "stars_30d": 2197,
+  "stars_90d": 2197,
+  "star_growth_rate_7d": 90.71428571428571,
+  "star_growth_rate_30d": 104.61904761904762,
+  "star_growth_acceleration": 0.8670914883932634,
+  "forks_7d": 76,
+  "forks_30d": 250,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 292
+  "snapshot_count": 293,
+  "authenticity": {
+    "organic_confidence": 86.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 90.7,
+        "weight": 0.22,
+        "detail": "2,347 forks for 31,650 stars (7.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 75.9,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 359 stars (12 forks, 2.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 91.0,
+        "weight": 0.12,
+        "detail": "731 open issues for 31,650 stars (2.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 359 stars (12 forks, 2.9x the daily average).",
+      "Fork-to-star ratio: 2,347 forks for 31,650 stars (7.4%).",
+      "Issue engagement: 731 open issues for 31,650 stars (2.3%)."
+    ],
+    "red_flags": []
+  }
 }

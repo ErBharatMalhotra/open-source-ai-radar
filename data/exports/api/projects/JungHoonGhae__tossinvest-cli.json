@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\ud1a0\uc2a4\uc99d\uad8c\uc744 AI \uc5d0\uc774\uc804\ud2b8\uc640 \ud130\ubbf8\ub110\uc5d0\uc11c \ub2e4\ub8e8\ub294 \ub3c4\uad6c. CLI \uc640 MCP \uc11c\ubc84\ub85c \uacc4\uc88c\u00b7\uc2dc\uc138\u00b7\uc8fc\ubb38\uc740 \ubb3c\ub860 \uc6f9\uc571 \uc804\uc6a9 \uae30\ub2a5(\uc218\uae09\u00b7AI \uc2dc\uadf8\ub110\u00b7\uc2a4\ud06c\ub9ac\ub108\u00b7\ubc30\ub2f9)\uae4c\uc9c0, JSON\u00b7CSV \uad6c\uc870\ud654 \ucd9c\ub825\uc73c\ub85c AI \ub3c4\uad6c\u00b7\uc790\ub3d9\ud654\uc5d0 \ubc14\ub85c \uc5f0\ub3d9.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 85.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.5,
+        "weight": 0.22,
+        "detail": "85 forks for 490 stars (17.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 69.5,
+        "weight": 0.12,
+        "detail": "4 open issues for 490 stars (0.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 77.8,
+        "weight": 0.1,
+        "detail": "Last push 59 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 59 days ago.",
+      "Fork-to-star ratio: 85 forks for 490 stars (17.3%)."
+    ],
+    "red_flags": []
+  }
 }

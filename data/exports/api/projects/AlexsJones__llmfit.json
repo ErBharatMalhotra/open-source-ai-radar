@@ -4,33 +4,97 @@
   "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
-  "stars": 38594,
-  "forks": 2495,
+  "topics": [
+    "llm",
+    "skill",
+    "localai",
+    "gguf",
+    "mlx",
+    "unsloth"
+  ],
+  "stars": 38601,
+  "forks": 2496,
   "open_issues": 32,
   "watchers": 112,
   "created_at": "2026-02-15T16:11:31Z",
-  "pushed_at": "2026-11-03T06:54:39Z",
+  "pushed_at": "2026-11-03T11:35:43Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/AlexsJones.png",
   "radar_score": 76.43,
   "impact": 96.06,
   "velocity": 66.92,
   "health": 58.35,
-  "global_percentile": 68.86,
+  "global_percentile": 62.86,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Hundreds of models & providers. One command to find what runs on your hardware.",
   "maturity": "Unknown",
-  "stars_7d": 203,
-  "stars_30d": 793,
-  "stars_90d": 793,
-  "star_growth_rate_7d": 29.0,
-  "star_growth_rate_30d": 36.04545454545455,
-  "star_growth_acceleration": 0.8045397225725094,
-  "forks_7d": 20,
+  "stars_7d": 210,
+  "stars_30d": 794,
+  "stars_90d": 794,
+  "star_growth_rate_7d": 30.0,
+  "star_growth_rate_30d": 36.09090909090909,
+  "star_growth_acceleration": 0.8312342569269521,
+  "forks_7d": 21,
   "forks_30d": 69,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 287
+  "snapshot_count": 288,
+  "authenticity": {
+    "organic_confidence": 80.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 87.3,
+        "weight": 0.22,
+        "detail": "2,496 forks for 38,601 stars (6.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 90.7,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 66 stars (4 forks, 1.9x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 33.3,
+        "weight": 0.12,
+        "detail": "32 open issues for 38,601 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,496 forks for 38,601 stars (6.5%).",
+      "Burst pattern: Largest 24h jump was 66 stars (4 forks, 1.9x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 32 open issues for 38,601 stars (0.1%)."
+    ]
+  }
 }

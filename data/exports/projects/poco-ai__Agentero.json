@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "Unified research workspace for humans & agents \u2014 PDF Q&A with citations, Vault, writing. \u4e3a\u4eba\u4e0e Agent \u534f\u4f5c\u7684\u79d1\u7814\u5de5\u4f5c\u53f0\uff1b\u8865\u9f50 Zotero \u65f6\u4ee3\u7684\u4eba\u673a\u4e0a\u4e0b\u6587\u65ad\u70b9\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 95.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 91.8,
+        "weight": 0.22,
+        "detail": "83 forks for 1,074 stars (7.7%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "60 open issues for 1,074 stars (5.6%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 83 forks for 1,074 stars (7.7%).",
+      "Issue engagement: 60 open issues for 1,074 stars (5.6%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

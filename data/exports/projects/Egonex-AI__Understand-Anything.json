@@ -4,9 +4,27 @@
   "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 90095,
-  "forks": 7686,
+  "topics": [
+    "claude-code",
+    "claude-skills",
+    "understandcode",
+    "codex",
+    "codex-skills",
+    "knowledge-graph",
+    "opencode-skills",
+    "antigravity-skills",
+    "gemini-cli-skills",
+    "pi-agent",
+    "business-knowledge",
+    "knowledge-base",
+    "memory",
+    "karpathy-llm-wiki",
+    "codebase-analysis",
+    "developer-tools-ai-agent",
+    "vibe-coding"
+  ],
+  "stars": 90116,
+  "forks": 7690,
   "open_issues": 128,
   "watchers": 281,
   "created_at": "2026-03-15T02:30:51Z",
@@ -15,22 +33,79 @@
   "owner_avatar": "https://github.com/Egonex-AI.png",
   "radar_score": 76.9,
   "impact": 98.85,
-  "velocity": 63.22,
+  "velocity": 63.23,
   "health": 60.92,
-  "global_percentile": 72.71,
+  "global_percentile": 67.86,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
   "maturity": "Unknown",
-  "stars_7d": 1729,
-  "stars_30d": 4132,
-  "stars_90d": 4132,
-  "star_growth_rate_7d": 247.0,
-  "star_growth_rate_30d": 187.8181818181818,
-  "star_growth_acceleration": 1.3151016456921587,
-  "forks_7d": 221,
-  "forks_30d": 441,
+  "stars_7d": 1746,
+  "stars_30d": 4110,
+  "stars_90d": 4110,
+  "star_growth_rate_7d": 249.42857142857142,
+  "star_growth_rate_30d": 195.71428571428572,
+  "star_growth_acceleration": 1.2744525547445253,
+  "forks_7d": 230,
+  "forks_30d": 442,
   "days_since_last_push": 8,
   "freshness_score": 0.9231163463866358,
-  "snapshot_count": 284
+  "snapshot_count": 285,
+  "authenticity": {
+    "organic_confidence": 81.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.7,
+        "weight": 0.22,
+        "detail": "7,690 forks for 90,116 stars (8.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 86.2,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 367 stars (65 forks, 2.3x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 39.2,
+        "weight": 0.12,
+        "detail": "128 open issues for 90,116 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 94.6,
+        "weight": 0.1,
+        "detail": "Last push 8 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 367 stars (65 forks, 2.3x the daily average).",
+      "Maintenance cadence: Last push 8 days ago.",
+      "Fork-to-star ratio: 7,690 forks for 90,116 stars (8.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 128 open issues for 90,116 stars (0.1%)."
+    ]
+  }
 }

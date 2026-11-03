@@ -4,8 +4,29 @@
   "description": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 18830,
+  "topics": [
+    "ai-agent",
+    "browser-agent",
+    "browser-automation",
+    "browser-use",
+    "cdp",
+    "cloud-browser",
+    "llm",
+    "web-automation",
+    "browser-use-box",
+    "browser-use-cloud",
+    "persistent-browser",
+    "telegram-agent",
+    "vps-agent",
+    "chrome",
+    "chrome-devtools-protocol",
+    "claude-code",
+    "codex",
+    "cursor",
+    "mcp",
+    "real-browser"
+  ],
+  "stars": 18833,
   "forks": 1859,
   "open_issues": 58,
   "watchers": 50,
@@ -22,15 +43,70 @@
   "sub_category": "",
   "summary": "Browser Harness | Self-healing harness that enables LLMs to complete any task.",
   "maturity": "Unknown",
-  "stars_7d": 211,
-  "stars_30d": 457,
-  "stars_90d": 457,
-  "star_growth_rate_7d": 30.142857142857142,
-  "star_growth_rate_30d": 19.041666666666668,
-  "star_growth_acceleration": 1.5829946858393247,
-  "forks_7d": 16,
-  "forks_30d": 63,
+  "stars_7d": 199,
+  "stars_30d": 464,
+  "stars_90d": 464,
+  "star_growth_rate_7d": 28.428571428571427,
+  "star_growth_rate_30d": 19.333333333333332,
+  "star_growth_acceleration": 1.4704433497536946,
+  "forks_7d": 14,
+  "forks_30d": 64,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 260
+  "snapshot_count": 261,
+  "authenticity": {
+    "organic_confidence": 82.3,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.5,
+        "weight": 0.22,
+        "detail": "1,859 forks for 18,833 stars (9.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 75.2,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 56 stars (0 forks, 3.0x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 50.4,
+        "weight": 0.12,
+        "detail": "58 open issues for 18,833 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 56 stars (0 forks, 3.0x the daily average).",
+      "Fork-to-star ratio: 1,859 forks for 18,833 stars (9.9%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

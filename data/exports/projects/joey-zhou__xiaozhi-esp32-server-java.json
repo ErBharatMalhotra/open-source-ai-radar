@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u5c0f\u667aESP32\u7684Java\u4f01\u4e1a\u7ea7\u7ba1\u7406\u5e73\u53f0\uff0c\u63d0\u4f9b\u8bbe\u5907\u76d1\u63a7\u3001\u97f3\u8272\u5b9a\u5236\u3001\u89d2\u8272\u5207\u6362\u548c\u5bf9\u8bdd\u8bb0\u5f55\u7ba1\u7406\u7684\u524d\u540e\u7aef\u53ca\u670d\u52a1\u7aef\u4e00\u4f53\u5316\u89e3\u51b3\u65b9\u6848",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 77.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "511 forks for 1,406 stars (36.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 39.2,
+        "weight": 0.12,
+        "detail": "2 open issues for 1,406 stars (0.1%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 83.2,
+        "weight": 0.1,
+        "detail": "Last push 37 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 37 days ago.",
+      "Fork-to-star ratio: 511 forks for 1,406 stars (36.3%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 2 open issues for 1,406 stars (0.1%)."
+    ]
+  }
 }

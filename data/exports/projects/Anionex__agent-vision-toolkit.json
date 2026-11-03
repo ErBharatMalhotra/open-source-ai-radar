@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\u4e3a\u7eaf\u6587\u672c\u6a21\u578b\"\u770b\u56fe\u201c\u8bbe\u8ba1\u66f4\u597d\u7684\u89c6\u89c9\u5de5\u5177\u7bb1\u548c\u6280\u80fd\uff0c\u652f\u6301\u591a\u56fe\u7406\u89e3\uff0c\u56fe\u7247\u95ee\u7b54\uff0c\u524d\u7aefUI\u8fd8\u539f\u3001GUI \u81ea\u52a8\u5316\u7b49\uff0c\u5e76\u53ef\u9009\u65e0\u7f1d\u63a5\u5165\u591a\u4e2a\u4e3b\u6d41agent\uff0c\u76f4\u63a5\u8bc6\u522b\u7c98\u8d34\u56fe\u7247\uff5c A vision toolkit and skill designed for text-only llms \u2014 image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation, with optional seamless integration for Codex, Claude Code, Pi, Oh My Pi, and OpenCode",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 71.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 75.2,
+        "weight": 0.22,
+        "detail": "50 forks for 1,254 stars (4.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 50.9,
+        "weight": 0.12,
+        "detail": "4 open issues for 1,254 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.9,
+        "weight": 0.1,
+        "detail": "Last push 21 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 50 forks for 1,254 stars (4.0%).",
+      "Maintenance cadence: Last push 21 days ago."
+    ],
+    "red_flags": []
+  }
 }

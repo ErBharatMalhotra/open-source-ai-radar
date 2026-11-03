@@ -5,7 +5,7 @@
   "language": null,
   "license": "CC0-1.0",
   "topics": [],
-  "stars": 27473,
+  "stars": 27474,
   "forks": 2770,
   "open_issues": 43,
   "watchers": 423,
@@ -17,20 +17,75 @@
   "impact": 96.51,
   "velocity": 48.95,
   "health": 38.78,
-  "global_percentile": 6.29,
+  "global_percentile": 7.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Awesome-LLM: a curated list of Large Language Model",
   "maturity": "Unknown",
   "stars_7d": 22,
-  "stars_30d": 40,
-  "stars_90d": 54,
+  "stars_30d": 39,
+  "stars_90d": 53,
   "star_growth_rate_7d": 3.142857142857143,
-  "star_growth_rate_30d": 1.3333333333333333,
-  "star_growth_acceleration": 2.357142857142857,
-  "forks_7d": 9,
+  "star_growth_rate_30d": 1.3,
+  "star_growth_acceleration": 2.4175824175824174,
+  "forks_7d": 10,
   "forks_30d": 37,
-  "days_since_last_push": 459,
-  "freshness_score": 0.010152858373369763,
-  "snapshot_count": 165
+  "days_since_last_push": 460,
+  "freshness_score": 0.010051835744633576,
+  "snapshot_count": 166,
+  "authenticity": {
+    "organic_confidence": 62.7,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 100.0,
+        "weight": 0.22,
+        "detail": "2,770 forks for 27,474 stars (10.1%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 55.4,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.7x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 40.7,
+        "weight": 0.12,
+        "detail": "43 open issues for 27,474 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 25,
+        "weight": 0.1,
+        "detail": "Last push 460 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 2,770 forks for 27,474 stars (10.1%)."
+    ],
+    "red_flags": [
+      "Maintenance cadence: Last push 460 days ago."
+    ]
+  }
 }

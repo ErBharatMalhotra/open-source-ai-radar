@@ -4,8 +4,18 @@
   "description": "Air-gapped, privacy-focused, open-source NotebookLM alternative. AI agent that researches, transforms, and edits your documents. Join our Discord: https://discord.gg/ejRNvftDp9",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16741,
+  "topics": [
+    "ai",
+    "rag",
+    "notebooklm",
+    "agent",
+    "agents",
+    "notebooklm-alternative",
+    "web-scraping",
+    "self-hosted",
+    "self-hosted-ai"
+  ],
+  "stars": 16749,
   "forks": 1598,
   "open_issues": 51,
   "watchers": 86,
@@ -17,20 +27,75 @@
   "impact": 93.36,
   "velocity": 62.96,
   "health": 63.75,
-  "global_percentile": 60.86,
+  "global_percentile": 51.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Open-source NotebookLM alternative. Research the open web with live data(Reddit, YT, IG, TikTok, Indeed, Google Search, Maps etc) through one platform, API or MCP server. Join our Discord: https://discord.gg/ejRNvftDp9",
   "maturity": "Unknown",
-  "stars_7d": 135,
-  "stars_30d": 391,
-  "stars_90d": 391,
-  "star_growth_rate_7d": 19.285714285714285,
-  "star_growth_rate_30d": 17.0,
-  "star_growth_acceleration": 1.134453781512605,
+  "stars_7d": 142,
+  "stars_30d": 400,
+  "stars_90d": 400,
+  "star_growth_rate_7d": 20.285714285714285,
+  "star_growth_rate_30d": 17.391304347826086,
+  "star_growth_acceleration": 1.1664285714285714,
   "forks_7d": 2,
   "forks_30d": 28,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 249
+  "snapshot_count": 250,
+  "authenticity": {
+    "organic_confidence": 83.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.3,
+        "weight": 0.22,
+        "detail": "1,598 forks for 16,749 stars (9.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": 80.5,
+        "weight": 0.24,
+        "detail": "Largest 24h jump was 39 stars (2 forks, 2.6x the daily average)."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 50.2,
+        "weight": 0.12,
+        "detail": "51 open issues for 16,749 stars (0.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Burst pattern: Largest 24h jump was 39 stars (2 forks, 2.6x the daily average).",
+      "Fork-to-star ratio: 1,598 forks for 16,749 stars (9.5%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

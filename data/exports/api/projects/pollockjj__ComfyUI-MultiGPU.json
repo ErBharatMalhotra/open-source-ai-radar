@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "This custom_node for ComfyUI adds one-click \"Virtual VRAM\" for any UNet and CLIP loader as well MultiGPU integration in WanVideoWrapper, managing the offload/Block Swap of layers to DRAM *or* VRAM to maximize the latent space of your card. Also includes nodes for directly loading entire components (",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 91.8,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 94.1,
+        "weight": 0.22,
+        "detail": "83 forks for 992 stars (8.4%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 96.1,
+        "weight": 0.12,
+        "detail": "38 open issues for 992 stars (3.8%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 81.8,
+        "weight": 0.1,
+        "detail": "Last push 43 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 43 days ago.",
+      "Fork-to-star ratio: 83 forks for 992 stars (8.4%).",
+      "Issue engagement: 38 open issues for 992 stars (3.8%)."
+    ],
+    "red_flags": []
+  }
 }

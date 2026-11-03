@@ -4,8 +4,14 @@
   "description": "Accessible large language models via k-bit quantization for PyTorch.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 8537,
+  "topics": [
+    "llm",
+    "machine-learning",
+    "pytorch",
+    "qlora",
+    "quantization"
+  ],
+  "stars": 8538,
   "forks": 942,
   "open_issues": 54,
   "watchers": 51,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-02T14:36:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bitsandbytes-foundation.png",
-  "radar_score": 69.99,
+  "radar_score": 69.89,
   "impact": 89.53,
   "velocity": 52.11,
-  "health": 63.75,
-  "global_percentile": 25.14,
+  "health": 63.38,
+  "global_percentile": 15.71,
   "category": "LLM Frameworks",
   "sub_category": "quantization",
   "summary": "Accessible large language models via k-bit quantization for PyTorch.",
   "maturity": "Unknown",
-  "stars_7d": 4,
-  "stars_30d": 27,
-  "stars_90d": 100,
-  "star_growth_rate_7d": 0.5714285714285714,
-  "star_growth_rate_30d": 0.9,
-  "star_growth_acceleration": 0.6349206349206349,
-  "forks_7d": 2,
+  "stars_7d": 5,
+  "stars_30d": 26,
+  "stars_90d": 99,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": 0.9285714285714286,
+  "star_growth_acceleration": 0.7692307692307693,
+  "forks_7d": 3,
   "forks_30d": 4,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 97,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 98,
   "authenticity": {
-    "organic_confidence": 84.8,
+    "organic_confidence": 84.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +49,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "942 forks for 8,537 stars (11.0%)."
+        "detail": "942 forks for 8,538 stars (11.0%)."
       },
       {
         "key": "burst",
@@ -71,20 +77,20 @@
         "label": "Issue engagement",
         "score": 64.0,
         "weight": 0.12,
-        "detail": "54 open issues for 8,537 stars (0.6%)."
+        "detail": "54 open issues for 8,538 stars (0.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (-1 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 942 forks for 8,537 stars (11.0%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 942 forks for 8,538 stars (11.0%)."
     ],
     "red_flags": []
   }

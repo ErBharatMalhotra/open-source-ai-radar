@@ -64,12 +64,16 @@ class BreakoutDetector:
         if not rows:
             return []
 
+        # sqlite3.Row is mapping-like but has no .get(); normalise to plain dicts
+        # before any median/score math touches it.
+        dict_rows = [dict(r) for r in rows]
+
         # Compute category medians for normalization
-        category_medians = self._compute_category_medians(rows)
+        category_medians = self._compute_category_medians(dict_rows)
 
         # Score each repo
         candidates = []
-        for row in rows:
+        for row in dict_rows:
             d = dict(row)
             breakout_score = self._compute_breakout_score(d, category_medians)
 

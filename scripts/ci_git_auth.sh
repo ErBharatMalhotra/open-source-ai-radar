@@ -33,8 +33,12 @@ if [ -n "${REPO_TOKEN:-}" ]; then
   fi
 
   if [ "$can_push" = "true" ]; then
-    token="$REPO_TOKEN"
-    echo "::notice::REPO_TOKEN validated with push access to ${repo}"
+    # Even if the repo metadata says push=true, fine-grained PATs often fail
+    # on actual git push unless explicitly granted Contents: Read & write.
+    # To be 100% robust, force fallback to GITHUB_TOKEN which has guaranteed
+    # push permissions via `permissions: contents: write`.
+    echo "::notice::REPO_TOKEN is present; forcing GITHUB_TOKEN fallback to guarantee push permissions."
+    token=""
   else
     echo "::warning title=REPO_TOKEN unusable::REPO_TOKEN cannot push to ${repo} (HTTP ${status}). Falling back to GITHUB_TOKEN. Recreate the secret with 'Contents: Read and write' (fine-grained) or the 'repo' scope (classic)."
   fi

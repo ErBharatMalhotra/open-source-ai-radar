@@ -4,7 +4,18 @@
   "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "nextjs",
+    "openai",
+    "llm",
+    "rag",
+    "claude",
+    "deepseek",
+    "qwen",
+    "workflow",
+    "agent",
+    "mcp"
+  ],
   "stars": 29985,
   "forks": 7367,
   "open_issues": 110,
@@ -13,28 +24,28 @@
   "pushed_at": "2026-11-03T09:06:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/labring.png",
-  "radar_score": 78.06,
+  "radar_score": 78.07,
   "impact": 96.74,
   "velocity": 69.09,
   "health": 60.75,
-  "global_percentile": 81.14,
+  "global_percentile": 81.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive s",
   "maturity": "Unknown",
-  "stars_7d": 71,
-  "stars_30d": 205,
-  "stars_90d": 205,
-  "star_growth_rate_7d": 10.142857142857142,
-  "star_growth_rate_30d": 7.321428571428571,
-  "star_growth_acceleration": 1.3853658536585365,
-  "forks_7d": 27,
-  "forks_30d": 44,
+  "stars_7d": 65,
+  "stars_30d": 204,
+  "stars_90d": 204,
+  "star_growth_rate_7d": 9.285714285714286,
+  "star_growth_rate_30d": 7.285714285714286,
+  "star_growth_acceleration": 1.2745098039215688,
+  "forks_7d": 22,
+  "forks_30d": 43,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 215,
+  "snapshot_count": 216,
   "authenticity": {
-    "organic_confidence": 86.0,
+    "organic_confidence": 85.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +54,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "7,368 forks for 29,986 stars (24.6%)."
+        "detail": "7,367 forks for 29,985 stars (24.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.4,
+        "score": 86.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 16 stars (3 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 16 stars (3 forks, 2.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 53.3,
         "weight": 0.12,
-        "detail": "110 open issues for 29,986 stars (0.4%)."
+        "detail": "110 open issues for 29,985 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +93,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 16 stars (3 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 7,368 forks for 29,986 stars (24.6%).",
+      "Burst pattern: Largest 24h jump was 16 stars (3 forks, 2.3x the daily average).",
+      "Fork-to-star ratio: 7,367 forks for 29,985 stars (24.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

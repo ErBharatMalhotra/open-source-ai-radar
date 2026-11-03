@@ -4,37 +4,58 @@
   "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 66474,
-  "forks": 5812,
-  "open_issues": 7,
+  "topics": [
+    "ai-prompts",
+    "claude",
+    "claude-code",
+    "reddit",
+    "twitter",
+    "hackernews",
+    "polymarket",
+    "research",
+    "youtube",
+    "ai-skill",
+    "bluesky",
+    "clawhub",
+    "deep-research",
+    "instagram",
+    "openclaw",
+    "recency",
+    "social-media",
+    "tiktok",
+    "trends",
+    "web-search"
+  ],
+  "stars": 66478,
+  "forks": 5813,
+  "open_issues": 8,
   "watchers": 218,
   "created_at": "2026-01-23T20:37:37Z",
   "pushed_at": "2026-11-03T14:42:28Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mvanhorn.png",
-  "radar_score": 76.5,
+  "radar_score": 76.6,
   "impact": 98.24,
-  "velocity": 64.61,
+  "velocity": 64.9,
   "health": 58.35,
-  "global_percentile": 64.0,
+  "global_percentile": 64.71,
   "category": "AI Agents",
   "sub_category": "research agent",
   "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "maturity": "Unknown",
-  "stars_7d": 877,
-  "stars_30d": 2421,
-  "stars_90d": 2421,
-  "star_growth_rate_7d": 125.28571428571429,
-  "star_growth_rate_30d": 110.04545454545455,
-  "star_growth_acceleration": 1.1384905883047147,
-  "forks_7d": 118,
-  "forks_30d": 232,
+  "stars_7d": 892,
+  "stars_30d": 2404,
+  "stars_90d": 2404,
+  "star_growth_rate_7d": 127.42857142857143,
+  "star_growth_rate_30d": 109.27272727272727,
+  "star_growth_acceleration": 1.1661516520085573,
+  "forks_7d": 116,
+  "forks_30d": 225,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 284,
+  "snapshot_count": 285,
   "authenticity": {
-    "organic_confidence": 83.0,
+    "organic_confidence": 83.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.5,
         "weight": 0.22,
-        "detail": "5,814 forks for 66,452 stars (8.7%)."
+        "detail": "5,813 forks for 66,478 stars (8.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.0,
+        "score": 93.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 168 stars (14 forks, 1.7x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 26.1,
+        "score": 26.2,
         "weight": 0.12,
-        "detail": "7 open issues for 66,452 stars (0.0%)."
+        "detail": "8 open issues for 66,478 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +104,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 168 stars (14 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 5,814 forks for 66,452 stars (8.7%).",
+      "Fork-to-star ratio: 5,813 forks for 66,478 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 66,452 stars (0.0%)."
+      "Issue engagement: 8 open issues for 66,478 stars (0.0%)."
     ]
   }
 }

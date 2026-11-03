@@ -4,7 +4,17 @@
   "description": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java\u8bca\u65ad\u5229\u5668Arthas",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "java",
+    "agent",
+    "trace",
+    "jvm",
+    "arthas",
+    "trouble-shooting",
+    "diagnosis",
+    "classloader",
+    "alibaba"
+  ],
   "stars": 37608,
   "forks": 7642,
   "open_issues": 392,
@@ -13,7 +23,7 @@
   "pushed_at": "2026-10-23T11:04:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
-  "radar_score": 74.58,
+  "radar_score": 74.59,
   "impact": 98.2,
   "velocity": 58.05,
   "health": 59.95,
@@ -22,19 +32,19 @@
   "sub_category": "",
   "summary": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java\u8bca\u65ad\u5229\u5668Arthas",
   "maturity": "Unknown",
-  "stars_7d": 20,
-  "stars_30d": 42,
-  "stars_90d": 79,
-  "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 1.4,
-  "star_growth_acceleration": 2.0408163265306123,
+  "stars_7d": 21,
+  "stars_30d": 41,
+  "stars_90d": 78,
+  "star_growth_rate_7d": 3.0,
+  "star_growth_rate_30d": 1.4137931034482758,
+  "star_growth_acceleration": 2.1219512195121952,
   "forks_7d": 2,
-  "forks_30d": -1,
+  "forks_30d": -2,
   "days_since_last_push": 11,
   "freshness_score": 0.8958341352965282,
-  "snapshot_count": 121,
+  "snapshot_count": 122,
   "authenticity": {
-    "organic_confidence": 79.6,
+    "organic_confidence": 79.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.9,
         "weight": 0.22,
-        "detail": "7,642 forks for 37,607 stars (20.3%)."
+        "detail": "7,642 forks for 37,608 stars (20.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 59.0,
+        "score": 60.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.4x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +81,7 @@
         "label": "Issue engagement",
         "score": 75.6,
         "weight": 0.12,
-        "detail": "392 open issues for 37,607 stars (1.0%)."
+        "detail": "392 open issues for 37,608 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +92,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 392 open issues for 37,607 stars (1.0%).",
+      "Issue engagement: 392 open issues for 37,608 stars (1.0%).",
       "Maintenance cadence: Last push 11 days ago.",
-      "Fork-to-star ratio: 7,642 forks for 37,607 stars (20.3%)."
+      "Fork-to-star ratio: 7,642 forks for 37,608 stars (20.3%)."
     ],
     "red_flags": []
   }

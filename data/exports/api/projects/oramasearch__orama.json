@@ -4,7 +4,23 @@
   "description": "\ud83c\udf0c  A complete search engine and RAG pipeline in your browser, server or edge network with support for full-text, vector, and hybrid search in less than 2kb.",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "data-structures",
+    "full-text",
+    "search",
+    "typo-tolerance",
+    "algiorithm",
+    "search-engine",
+    "search-algorithm",
+    "javascript",
+    "typescript",
+    "node",
+    "vector",
+    "vector-database",
+    "vector-database-embedding",
+    "vector-search",
+    "vector-search-engine"
+  ],
   "stars": 10596,
   "forks": 409,
   "open_issues": 18,
@@ -13,28 +29,28 @@
   "pushed_at": "2026-10-18T16:53:33Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/oramasearch.png",
-  "radar_score": 62.92,
-  "impact": 88.04,
-  "velocity": 42.63,
-  "health": 51.16,
-  "global_percentile": 2.29,
+  "radar_score": 62.84,
+  "impact": 88.01,
+  "velocity": 42.62,
+  "health": 50.87,
+  "global_percentile": 2.14,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "\ud83c\udf0c  A complete search engine and RAG pipeline in your browser, server or edge network with support for full-text, vector, and hybrid search in less than 2kb.",
   "maturity": "Unknown",
-  "stars_7d": 6,
-  "stars_30d": 24,
-  "stars_90d": 57,
-  "star_growth_rate_7d": 0.8571428571428571,
-  "star_growth_rate_30d": 0.8,
-  "star_growth_acceleration": 1.0714285714285714,
+  "stars_7d": 10,
+  "stars_30d": 26,
+  "stars_90d": 59,
+  "star_growth_rate_7d": 1.4285714285714286,
+  "star_growth_rate_30d": 0.896551724137931,
+  "star_growth_acceleration": 1.5934065934065935,
   "forks_7d": 0,
   "forks_30d": 4,
-  "days_since_last_push": 15,
-  "freshness_score": 0.8607079764250578,
-  "snapshot_count": 99,
+  "days_since_last_push": 16,
+  "freshness_score": 0.8521437889662113,
+  "snapshot_count": 100,
   "authenticity": {
-    "organic_confidence": 67.3,
+    "organic_confidence": 69.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +59,7 @@
         "label": "Fork-to-star ratio",
         "score": 74.4,
         "weight": 0.22,
-        "detail": "409 forks for 10,593 stars (3.9%)."
+        "detail": "409 forks for 10,596 stars (3.9%)."
       },
       {
         "key": "burst",
@@ -62,16 +78,16 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 82.2,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.59x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 42.0,
         "weight": 0.12,
-        "detail": "18 open issues for 10,593 stars (0.2%)."
+        "detail": "18 open issues for 10,596 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,6 +98,7 @@
       }
     ],
     "reasons": [
+      "Growth acceleration: Weekly growth is 1.59x the monthly baseline.",
       "Maintenance cadence: Last push 16 days ago."
     ],
     "red_flags": []

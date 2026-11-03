@@ -4,8 +4,21 @@
   "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 32581,
+  "topics": [
+    "ai-coding",
+    "claude",
+    "claude-code",
+    "code-review",
+    "graphrag",
+    "incremental",
+    "knowledge-graph",
+    "llm",
+    "mcp",
+    "python",
+    "static-analysis",
+    "tree-sitter"
+  ],
+  "stars": 32580,
   "forks": 2965,
   "open_issues": 103,
   "watchers": 93,
@@ -13,26 +26,26 @@
   "pushed_at": "2026-10-29T10:34:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tirth8205.png",
-  "radar_score": 76.64,
-  "impact": 95.64,
-  "velocity": 65.44,
+  "radar_score": 76.65,
+  "impact": 95.65,
+  "velocity": 65.45,
   "health": 61.94,
-  "global_percentile": 65.71,
+  "global_percentile": 65.43,
   "category": "MCP",
   "sub_category": "tool",
   "summary": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
   "maturity": "Unknown",
-  "stars_7d": 171,
-  "stars_30d": 577,
-  "stars_90d": 577,
-  "star_growth_rate_7d": 24.428571428571427,
-  "star_growth_rate_30d": 23.08,
-  "star_growth_acceleration": 1.0584303045308245,
+  "stars_7d": 170,
+  "stars_30d": 576,
+  "stars_90d": 576,
+  "star_growth_rate_7d": 24.285714285714285,
+  "star_growth_rate_30d": 23.04,
+  "star_growth_acceleration": 1.0540674603174602,
   "forks_7d": 7,
   "forks_30d": 34,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 265,
+  "snapshot_count": 266,
   "authenticity": {
     "organic_confidence": 87.1,
     "verdict": "organic",
@@ -43,12 +56,12 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "2,965 forks for 32,581 stars (9.1%)."
+        "detail": "2,965 forks for 32,580 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.6,
+        "score": 92.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 39 stars (0 forks, 1.7x the daily average)."
       },
@@ -71,7 +84,7 @@
         "label": "Issue engagement",
         "score": 50.8,
         "weight": 0.12,
-        "detail": "103 open issues for 32,581 stars (0.3%)."
+        "detail": "103 open issues for 32,580 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +97,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 39 stars (0 forks, 1.7x the daily average).",
       "Maintenance cadence: Last push 5 days ago.",
-      "Fork-to-star ratio: 2,965 forks for 32,581 stars (9.1%)."
+      "Fork-to-star ratio: 2,965 forks for 32,580 stars (9.1%)."
     ],
     "red_flags": []
   }

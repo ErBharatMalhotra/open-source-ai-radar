@@ -4,7 +4,14 @@
   "description": "The LLM Evaluation Framework",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "evaluation-metrics",
+    "evaluation-framework",
+    "llm-evaluation",
+    "llm-evaluation-framework",
+    "llm-evaluation-metrics",
+    "python"
+  ],
   "stars": 19273,
   "forks": 2164,
   "open_issues": 330,
@@ -13,28 +20,28 @@
   "pushed_at": "2026-11-02T19:23:56Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/confident-ai.png",
-  "radar_score": 75.53,
+  "radar_score": 75.43,
   "impact": 93.59,
   "velocity": 63.29,
-  "health": 63.75,
-  "global_percentile": 53.86,
+  "health": 63.38,
+  "global_percentile": 52.57,
   "category": "Evaluation & Benchmarks",
   "sub_category": "benchmark",
   "summary": "The LLM Evaluation Framework",
   "maturity": "Unknown",
-  "stars_7d": 156,
-  "stars_30d": 558,
-  "stars_90d": 558,
-  "star_growth_rate_7d": 22.285714285714285,
-  "star_growth_rate_30d": 22.32,
-  "star_growth_acceleration": 0.9984639016897081,
+  "stars_7d": 152,
+  "stars_30d": 551,
+  "stars_90d": 551,
+  "star_growth_rate_7d": 21.714285714285715,
+  "star_growth_rate_30d": 22.04,
+  "star_growth_acceleration": 0.9852216748768474,
   "forks_7d": 28,
-  "forks_30d": 130,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 255,
+  "forks_30d": 126,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 256,
   "authenticity": {
-    "organic_confidence": 90.0,
+    "organic_confidence": 89.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +55,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 79.1,
+        "score": 78.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 59 stars (12 forks, 2.7x the daily average)."
       },
@@ -69,22 +76,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 85.6,
+        "score": 85.7,
         "weight": 0.12,
-        "detail": "329 open issues for 19,273 stars (1.7%)."
+        "detail": "330 open issues for 19,273 stars (1.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 59 stars (12 forks, 2.7x the daily average).",
-      "Issue engagement: 329 open issues for 19,273 stars (1.7%).",
-      "Fork-to-star ratio: 2,164 forks for 19,273 stars (11.2%)."
+      "Issue engagement: 330 open issues for 19,273 stars (1.7%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

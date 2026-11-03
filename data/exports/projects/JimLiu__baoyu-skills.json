@@ -4,7 +4,12 @@
   "description": "",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "agent-skills",
+    "claude-skills",
+    "codex-skills",
+    "openclaw-skills"
+  ],
   "stars": 27240,
   "forks": 2969,
   "open_issues": 1,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-02T19:25:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/JimLiu.png",
-  "radar_score": 73.94,
+  "radar_score": 73.86,
   "impact": 95.4,
-  "velocity": 60.56,
-  "health": 58.35,
-  "global_percentile": 40.0,
+  "velocity": 60.58,
+  "health": 57.98,
+  "global_percentile": 39.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "",
   "maturity": "Unknown",
-  "stars_7d": 262,
-  "stars_30d": 817,
-  "stars_90d": 817,
-  "star_growth_rate_7d": 37.42857142857143,
-  "star_growth_rate_30d": 31.423076923076923,
-  "star_growth_acceleration": 1.1911173282042316,
-  "forks_7d": 19,
-  "forks_30d": 57,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 233,
+  "stars_7d": 241,
+  "stars_30d": 804,
+  "stars_90d": 804,
+  "star_growth_rate_7d": 34.42857142857143,
+  "star_growth_rate_30d": 30.923076923076923,
+  "star_growth_acceleration": 1.113361762615494,
+  "forks_7d": 18,
+  "forks_30d": 55,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 234,
   "authenticity": {
-    "organic_confidence": 84.0,
+    "organic_confidence": 83.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "2,969 forks for 27,242 stars (10.9%)."
+        "detail": "2,969 forks for 27,240 stars (10.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.2,
+        "score": 92.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 54 stars (4 forks, 1.8x the daily average)."
       },
@@ -71,23 +76,23 @@
         "label": "Issue engagement",
         "score": 25.4,
         "weight": 0.12,
-        "detail": "1 open issues for 27,242 stars (0.0%)."
+        "detail": "1 open issues for 27,240 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 54 stars (4 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 2,969 forks for 27,242 stars (10.9%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 2,969 forks for 27,240 stars (10.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 27,242 stars (0.0%)."
+      "Issue engagement: 1 open issues for 27,240 stars (0.0%)."
     ]
   }
 }

@@ -4,37 +4,47 @@
   "description": "\ud83d\ude80 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 14406,
-  "forks": 2062,
+  "topics": [
+    "openai",
+    "pull-request",
+    "code-review",
+    "pull-requests",
+    "coding-assistant",
+    "devtools",
+    "ai",
+    "anthropic",
+    "ollama"
+  ],
+  "stars": 14427,
+  "forks": 2063,
   "open_issues": 19,
   "watchers": 62,
   "created_at": "2023-07-05T21:02:15Z",
   "pushed_at": "2026-11-03T19:36:35Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/The-PR-Agent.png",
-  "radar_score": 73.46,
-  "impact": 92.7,
-  "velocity": 58.42,
+  "radar_score": 73.51,
+  "impact": 92.71,
+  "velocity": 58.54,
   "health": 63.75,
-  "global_percentile": 36.29,
+  "global_percentile": 36.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\ud83d\ude80 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
   "maturity": "Unknown",
-  "stars_7d": 736,
-  "stars_30d": 1020,
-  "stars_90d": 1020,
-  "star_growth_rate_7d": 105.14285714285714,
-  "star_growth_rate_30d": 44.34782608695652,
-  "star_growth_acceleration": 2.3708683473389356,
-  "forks_7d": 63,
-  "forks_30d": 109,
+  "stars_7d": 807,
+  "stars_30d": 1069,
+  "stars_90d": 1069,
+  "star_growth_rate_7d": 115.28571428571429,
+  "star_growth_rate_30d": 48.59090909090909,
+  "star_growth_acceleration": 2.372577843111052,
+  "forks_7d": 64,
+  "forks_30d": 106,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 265,
+  "snapshot_count": 266,
   "authenticity": {
-    "organic_confidence": 61.1,
+    "organic_confidence": 62.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "2,060 forks for 14,353 stars (14.4%)."
+        "detail": "2,063 forks for 14,427 stars (14.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 21.9,
+        "score": 24.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 420 stars (24 forks, 11.5x the daily average)."
+        "detail": "Largest 24h jump was 420 stars (24 forks, 10.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 37.5,
+        "score": 38.2,
         "weight": 0.12,
-        "detail": "18 open issues for 14,353 stars (0.1%)."
+        "detail": "19 open issues for 14,427 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +92,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,060 forks for 14,353 stars (14.4%).",
+      "Fork-to-star ratio: 2,063 forks for 14,427 stars (14.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 420 stars (24 forks, 11.5x the daily average).",
-      "Issue engagement: 18 open issues for 14,353 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 420 stars (24 forks, 10.8x the daily average).",
+      "Issue engagement: 19 open issues for 14,427 stars (0.1%)."
     ]
   }
 }

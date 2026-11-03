@@ -4,8 +4,29 @@
   "description": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 18846,
+  "topics": [
+    "ai-agent",
+    "browser-agent",
+    "browser-automation",
+    "browser-use",
+    "cdp",
+    "cloud-browser",
+    "llm",
+    "web-automation",
+    "browser-use-box",
+    "browser-use-cloud",
+    "persistent-browser",
+    "telegram-agent",
+    "vps-agent",
+    "chrome",
+    "chrome-devtools-protocol",
+    "claude-code",
+    "codex",
+    "cursor",
+    "mcp",
+    "real-browser"
+  ],
+  "stars": 18848,
   "forks": 1860,
   "open_issues": 58,
   "watchers": 50,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-02T20:08:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/browser-use.png",
-  "radar_score": 77.18,
-  "impact": 92.92,
+  "radar_score": 77.09,
+  "impact": 92.93,
   "velocity": 68.79,
-  "health": 63.75,
-  "global_percentile": 71.14,
+  "health": 63.38,
+  "global_percentile": 69.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Browser Harness | Self-healing harness that enables LLMs to complete any task.",
   "maturity": "Unknown",
-  "stars_7d": 208,
-  "stars_30d": 479,
-  "stars_90d": 479,
-  "star_growth_rate_7d": 29.714285714285715,
-  "star_growth_rate_30d": 19.958333333333332,
-  "star_growth_acceleration": 1.4888159856844618,
-  "forks_7d": 14,
-  "forks_30d": 64,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 262,
+  "stars_7d": 199,
+  "stars_30d": 475,
+  "stars_90d": 475,
+  "star_growth_rate_7d": 28.428571428571427,
+  "star_growth_rate_30d": 19.791666666666668,
+  "star_growth_acceleration": 1.4363909774436088,
+  "forks_7d": 15,
+  "forks_30d": 66,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 263,
   "authenticity": {
-    "organic_confidence": 82.5,
+    "organic_confidence": 82.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "1,859 forks for 18,843 stars (9.9%)."
+        "detail": "1,860 forks for 18,848 stars (9.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.6,
+        "score": 75.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 56 stars (0 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 56 stars (0 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +92,20 @@
         "label": "Issue engagement",
         "score": 50.4,
         "weight": 0.12,
-        "detail": "58 open issues for 18,843 stars (0.3%)."
+        "detail": "58 open issues for 18,848 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 56 stars (0 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 1,859 forks for 18,843 stars (9.9%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 56 stars (0 forks, 2.9x the daily average).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 1,860 forks for 18,848 stars (9.9%)."
     ],
     "red_flags": []
   }

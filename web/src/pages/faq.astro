@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    q: "How do I get my open-source AI project tracked on Radar?",
+    a: `Open a submission using our <a href="/submit" class="link">Submit a Repo</a> template. Submissions are reviewed and imported within a few days. The radar also runs automated 4-layer discovery (topics, keywords, trending activity, and free-text search) daily to discover emerging repositories automatically.`
+  },
+  {
+    q: "How often is the radar data refreshed?",
+    a: `• <strong>Processing pipeline</strong>: Runs <strong>4 times daily</strong> (00:00, 06:00, 12:00, 18:00 UTC) to update stars, forks, issues, PRs, and re-compute Impact, Velocity, and Health scores.<br>
+• <strong>Discovery pipeline</strong>: Runs <strong>twice daily</strong> (02:00, 14:00 UTC) to discover newly published or trending AI projects.<br>
+• <strong>Website deployment</strong>: Automatically triggers after processing to publish the updated static dashboard to GitHub Pages.`
+  },
+  {
+    q: "Why did my project's Velocity score drop even though star count increased?",
+    a: `Radar uses <strong>three-axis scoring</strong>:
+• <strong>Impact (40%)</strong>: Percentile ranking of stars, forks, and watchers.
+• <strong>Velocity (35%)</strong>: 7-day and 30-day growth rate and acceleration, not absolute star volume.
+• <strong>Health (25%)</strong>: Commit recency, release cadence, issue turnaround, and maintainer count.
+
+If a project's star growth slows down relative to the prior week (e.g., from +100 stars/day to +20 stars/day), the acceleration drops, causing Velocity to decrease even while cumulative stars rise.`
+  },
+  {
+    q: "How can I embed a dynamic badge on my GitHub README?",
+    a: `Use the badge endpoint:
+<pre><code>[![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/OWNER/REPO/)</code></pre>
+Replace <code>OWNER__REPO</code> with your repository path separated by two underscores (e.g. <code>BerriAI__litellm</code>).`
+  },
+  {
+    q: "Can I consume Radar data via API?",
+    a: `Yes, all radar intelligence is published statically under <code>/api/</code>:
+<ul>
+<li>Top projects: <code>/api/top.json</code></li>
+<li>All repos: <code>/api/repos.json</code> (and <code>/api/repos.csv</code>)</li>
+<li>Category intelligence: <code>/api/categories.json</code></li>
+<li>Anomaly alerts: <code>/api/anomalies.json</code></li>
+<li>Breakout candidates: <code>/api/breakouts.json</code></li>
+<li>Machine-readable dataset for LLMs: <code>/api/llms.txt</code></li>
+</ul>
+Full documentation is available at <a href="/api-docs" class="link">API Docs</a>.`
+  },
+  {
+    q: "What do the score tiers mean?",
+    a: `Scores are normalized 0–100 and bucketed into tiers:
+<ul>
+<li><strong>90–100</strong>: <span style="color:var(--purple)">Elite</span> — Category-defining projects</li>
+<li><strong>75–89</strong>: <span style="color:var(--blue)">Leading</span> — Strong momentum & adoption</li>
+<li><strong>60–74</strong>: <span style="color:var(--green)">Rising</span> — Healthy growth trajectory</li>
+<li><strong>40–59</strong>: <span style="color:var(--amber)">Emerging</span> — Early traction</li>
+<li><strong>0–39</strong>: <span style="color:var(--gray)">Discovering</span> — New or low activity</li>
+</ul>`
+  },
+  {
+    q: "How is the Health score calculated?",
+    a: `Health (25% weight) combines:
+<ul>
+<li><strong>Commit recency</strong>: Days since last commit (lower = better)</li>
+<li><strong>Release cadence</strong>: Frequency of tagged releases</li>
+<li><strong>Issue turnaround</strong>: Median time to close issues</li>
+<li><strong>Maintainer count</strong>: Number of distinct committers (more = resilient)</li>
+</ul>
+A project with frequent commits, regular releases, quick issue resolution, and multiple maintainers scores highest.`
+  },
+  {
+    q: "Can I compare projects side-by-side?",
+    a: `Yes! Use the <a href="/compare" class="link">Compare Tool</a> — enter up to 4 repositories to see Impact, Velocity, Health scores and historical trends side by side.`
+  },
+  {
+    q: "What are Breakouts?",
+    a: `Breakouts are projects with <strong>high Velocity + Health but lower Impact</strong> — they're accelerating fast but haven't hit mainstream visibility yet. The <a href="/breakouts" class="link">Breakouts page</a> surfaces these rising stars early.`
+  },
+  {
+    q: "How do I report incorrect data?",
+    a: `Open an issue on GitHub with the <strong>Data Correction</strong> template, or submit a fresh entry via <a href="/submit" class="link">Submit a Repo</a> — we'll re-process on the next pipeline run.`
+  },
+  {
+    q: "Is the data open for research?",
+    a: `Absolutely. All data is public via the <a href="/api-docs" class="link">API</a> (JSON/CSV). We also publish <code>/api/llms.txt</code> following the <a href="https://llmstxt.org/" target="_blank" rel="noopener" class="link">llms.txt convention</a> for AI agent consumption.`
+  }
+];
+---
+
+<Layout title="FAQ" description="Frequently asked questions about Open Source AI Radar.">
+  <section class="hero-editorial" style="padding-bottom:var(--sp-8);">
+    <h1><span class="accent">FAQ</span></h1>
+    <p>Everything you need to know about how the radar works, scoring, badges, and API access.</p>
+  </section>
+
+  <section class="section">
+    <div class="card" style="padding:0; overflow:hidden;">
+      <dl class="faq-list">
+        {faqs.map((faq, i) => (
+          <div class="faq-item">
+            <dt>
+              <button class="faq-question" aria-expanded="false" aria-controls={`faq-answer-${i}`}>
+                <span>{faq.q}</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </dt>
+            <dd id={`faq-answer-${i}`} class="faq-answer" hidden>
+              <div class="faq-content" set:html={faq.a} />
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card" style="padding:var(--sp-6); text-align:center;">
+      <h2 style="font-size:var(--text-lg); margin-bottom:var(--sp-2);">Still have questions?</h2>
+      <p style="color:var(--text-secondary); margin-bottom:var(--sp-4);">Open a discussion or submit an issue — we're happy to help.</p>
+      <div style="display:flex; gap:var(--sp-3); justify-content:center; flex-wrap:wrap;">
+        <a href="https://github.com/ErBharatMalhotra/open-source-ai-radar/discussions/new/choose" target="_blank" rel="noopener" class="btn btn-primary">Start a Discussion</a>
+        <a href="https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new/choose" target="_blank" rel="noopener" class="btn btn-secondary">Report an Issue</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .faq-list {
+    border-top: 1px solid var(--border);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sp-4) var(--sp-5);
+    background: transparent;
+    border: none;
+    text-align: left;
+    font: inherit;
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+  }
+  .faq-question:hover {
+    background: var(--bg-elevated);
+  }
+  .faq-question:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--text-muted);
+    transition: transform var(--transition-fast);
+  }
+  .faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(180deg);
+  }
+  .faq-answer {
+    padding: 0 var(--sp-5) var(--sp-5);
+    overflow: hidden;
+  }
+  .faq-answer[hidden] {
+    display: none;
+  }
+  .faq-content {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: var(--text-sm);
+  }
+  .faq-content a.link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .faq-content a.link:hover {
+    color: var(--accent-hover);
+  }
+  .faq-content code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: var(--bg);
+    padding: 0.1em 0.4em;
+    border-radius: var(--radius-sm);
+  }
+  .faq-content pre {
+    margin: var(--sp-3) 0;
+    padding: var(--sp-3);
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+  }
+  .faq-content pre code {
+    background: transparent;
+    padding: 0;
+    font-size: var(--text-xs);
+  }
+  .faq-content ul {
+    margin: var(--sp-3) 0;
+    padding-left: var(--sp-6);
+  }
+  .faq-content li {
+    margin: var(--sp-1) 0;
+  }
+  .faq-content strong {
+    color: var(--text);
+  }
+  @media (max-width: 640px) {
+    .faq-question {
+      padding: var(--sp-3) var(--sp-4);
+      font-size: var(--text-sm);
+    }
+    .faq-answer {
+      padding: 0 var(--sp-4) var(--sp-4);
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const answer = document.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (!expanded) {
+        answer.hidden = false;
+      } else {
+        answer.hidden = true;
+      }
+    });
+  });
+</script>

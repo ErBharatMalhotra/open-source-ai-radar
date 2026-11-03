@@ -7,6 +7,7 @@ static JSON files that the Astro website reads at build time.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -14,6 +15,35 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from radar.storage.database import Database
+
+
+def _repo_key(full_name: str) -> str:
+    """GitHub repository names are case-insensitive; collapse case variants."""
+    return (full_name or "").strip().lower()
+
+
+def _freshness(repo: dict) -> tuple[str, int]:
+    """Sort key for picking the most authoritative duplicate row."""
+    return (str(repo.get("pushed_at") or ""), int(repo.get("stars") or 0))
+
+
+def _dedupe_repos(repos: list[dict]) -> list[dict]:
+    """Keep one row per repository.
+
+    `repositories.full_name` is case-sensitive, so an upstream rename that only
+    changes casing (e.g. `jub0t/Concat` -> `jub0t/concat`) could leave two rows
+    for the same project. That produced duplicate project pages, duplicate
+    ranking entries and case-colliding export filenames. Keep the freshest row.
+    """
+    best: dict[str, dict] = {}
+    for repo in repos:
+        key = _repo_key(repo.get("full_name", ""))
+        if not key:
+            continue
+        current = best.get(key)
+        if current is None or _freshness(repo) > _freshness(current):
+            best[key] = repo
+    return list(best.values())
 
 
 def export_all(db_path: str = "data/radar.db", out_dir: str = "data/exports") -> None:
@@ -25,7 +55,7 @@ def export_all(db_path: str = "data/radar.db", out_dir: str = "data/exports") ->
     now = datetime.now(tz=UTC).isoformat()
 
     # ── repositories.json (all repos, sorted by stars) ──
-    repos = db.get_all_repos()
+    repos = _dedupe_repos(db.get_all_repos())
     repos_data = {
         "generated_at": now,
         "total": len(repos),
@@ -120,8 +150,9 @@ def export_project_pages(db: Database, out: Path) -> None:
     projects_dir = out / "projects"
     projects_dir.mkdir(exist_ok=True)
 
-    repos = db.get_all_repos()
+    repos = _dedupe_repos(db.get_all_repos())
     count = 0
+    written: dict[str, str] = {}
 
     for repo in repos:
         fn = repo["full_name"]
@@ -223,14 +254,28 @@ def export_project_pages(db: Database, out: Path) -> None:
         # Write to projects directory
         project_file = projects_dir / f"{owner}__{name}.json"
         project_file.write_text(json.dumps(project_data, indent=2, default=str), encoding="utf-8")
+        written[project_file.name.lower()] = project_file.name
         count += 1
+
+    # Drop case-variant leftovers (e.g. `Owner__Repo.json` next to
+    # `owner__repo.json`) so the site stops serving two pages per project.
+    # Skipped on case-insensitive filesystems, where both names are one file.
+    for existing in projects_dir.glob("*.json"):
+        canonical = written.get(existing.name.lower())
+        if (
+            canonical
+            and canonical != existing.name
+            and os.path.normcase(canonical) != os.path.normcase(existing.name)
+        ):
+            existing.unlink()
+            print(f"Removed duplicate project export: {existing.name}")
 
     print(f"Exported {count} project detail pages")
 
 
 def export_project_index(db: Database, out: Path) -> None:
     """Export a lightweight project index for search/listing."""
-    repos = db.get_all_repos()
+    repos = _dedupe_repos(db.get_all_repos())
 
     # Get latest scores for ranking.
     # Use the newest score PER REPO, not the global max timestamp: the
@@ -378,7 +423,7 @@ def export_history(db: Database, out: Path) -> None:
     history_dir.mkdir(exist_ok=True)
 
     # Get top 50 repos by score
-    top_repos = db.get_top_repos(50)
+    top_repos = _dedupe_repos(db.get_top_repos(50))
 
     for repo in top_repos:
         fn = repo["full_name"]
@@ -549,7 +594,7 @@ def export_api(db_path: str = "data/radar.db", out_dir: str = "data/exports/api"
         api = PublicAPI(db, out_dir)
         counts = api.generate_all()
         print(f"Generated API endpoints: {counts}")
-        
+
         # Mirror exports to API folder so all documented endpoints exist under /api/
         import shutil
         api_dir = Path(out_dir)

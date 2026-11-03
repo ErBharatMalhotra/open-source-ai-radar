@@ -363,18 +363,21 @@ class Database:
         now = datetime.now(tz=UTC).isoformat()
 
         with self._conn() as conn:
-            # Get existing names
+            # Get existing names. GitHub repo names are case-insensitive, so an
+            # upstream rename that only changes casing must update the stored
+            # row instead of inserting a second one for the same project.
             existing_rows = conn.execute(
                 "SELECT full_name FROM repositories"
             ).fetchall()
-            existing_names = {r["full_name"] for r in existing_rows}
+            existing_by_lower = {r["full_name"].lower(): r["full_name"] for r in existing_rows}
 
             # Batch insert new repos
             new_repos = []
             for repo in repos:
                 fn = repo.get("full_name", "")
-                if fn in existing_names:
-                    # Update
+                canonical = existing_by_lower.get(fn.lower())
+                if canonical is not None:
+                    # Update the existing row (keeping the casing we already store)
                     conn.execute(
                         """UPDATE repositories SET
                             url=?, description=?, homepage=?, language=?,
@@ -398,16 +401,25 @@ class Database:
                             repo.get("open_issues", 0),
                             repo.get("watchers", 0),
                             repo.get("default_branch", "main"),
-                            fn,
+                            canonical,
                         ),
                     )
                     updated += 1
                 else:
                     new_repos.append(repo)
-                    new += 1
 
-            # Batch insert new repos (filter out any that snuck into both lists)
-            truly_new = [r for r in new_repos if r.get("full_name", "") not in existing_names]
+            # Insert only genuinely new repos, deduped by case-insensitive name
+            # so two rows can never be created for one project in a single batch.
+            seen = set(existing_by_lower)
+            truly_new = []
+            for r in new_repos:
+                key = r.get("full_name", "").lower()
+                if not key or key in seen:
+                    continue
+                seen.add(key)
+                truly_new.append(r)
+
+            new = len(truly_new)
             if truly_new:
                 conn.executemany(
                     """INSERT OR REPLACE INTO repositories

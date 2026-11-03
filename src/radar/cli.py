@@ -602,6 +602,54 @@ def breakouts(limit: int) -> None:
 
 
 @main.command()
+@click.option("--limit", "-n", default=25, help="Max results to show")
+@click.option("--min-stars", default=100, help="Minimum stars threshold")
+@click.option("--flagged-only", is_flag=True, help="Show only mixed/suspicious repos")
+def authenticity(limit: int, min_stars: int, flagged_only: bool) -> None:
+    """Analyze star authenticity and calculate organic growth confidence."""
+    from radar.analysis.authenticity import AuthenticityScorer
+    from radar.storage.database import Database
+
+    db = Database()
+    scorer = AuthenticityScorer(db)
+
+    click.echo("\n  🛡️  Auditing star authenticity & organic growth signals...")
+    results = scorer.compute(min_stars=min_stars)
+
+    if not results:
+        click.echo("  No repositories with sufficient data to audit.")
+        return
+
+    saved = scorer.save(results)
+    summary = scorer.summary(results)
+
+    display = results
+    if flagged_only:
+        display = [r for r in display if r["verdict"] in ("mixed", "suspicious")]
+    else:
+        display = sorted(display, key=lambda r: r["organic_confidence"])
+
+    click.echo(
+        f"\n  Organic Confidence Audit (Scored {saved:,} repos, showing {min(limit, len(display))})"
+    )
+    click.echo(f"  {'─' * 88}")
+    hdr = f"  {'#':>3}  {'Confidence':>10}  {'Verdict':<15}  {'Stars':>8}  {'Forks':>7}  {'Repo':<32}"
+    click.echo(hdr)
+    click.echo(f"  {'─' * 88}")
+
+    for i, r in enumerate(display[:limit], 1):
+        click.echo(
+            f"  {i:>3}  {r['organic_confidence']:>9.1f}%  "
+            f"{r['label']:<15}  {r['stars']:>8,}  {r['forks']:>7,}  {r['repo_full_name'][:32]}"
+        )
+        if r.get("red_flags"):
+            click.echo(f"       ⚠️  {r['red_flags'][0]}")
+
+    click.echo(f"\n  Breakdown: {summary['buckets']}")
+    click.echo()
+
+
+@main.command()
 @click.option("--limit", "-n", default=25, help="Max repos to analyze")
 def why_trending(limit: int) -> None:
     """Analyze why top trending repos are gaining attention."""

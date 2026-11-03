@@ -141,6 +141,9 @@ def export_all(db_path: str = "data/radar.db", out_dir: str = "data/exports") ->
     # ── category intelligence ──
     export_category_intelligence(db, out)
 
+    # ── star authenticity & organic growth confidence ──
+    export_authenticity(db, out)
+
     # ── historical data for charts ──
     export_history(db, out)
 
@@ -153,6 +156,27 @@ def export_project_pages(db: Database, out: Path) -> None:
     repos = _dedupe_repos(db.get_all_repos())
     count = 0
     written: dict[str, str] = {}
+
+    # Bulk-load latest authenticity scores to avoid per-repo lookups
+    auth_map: dict[str, dict] = {}
+    try:
+        with db._conn() as conn:
+            auth_rows = conn.execute(
+                """SELECT repo_full_name, organic_confidence, verdict, label,
+                          signals, reasons, red_flags
+                   FROM star_authenticity"""
+            ).fetchall()
+        for ar in auth_rows:
+            auth_map[ar["repo_full_name"]] = {
+                "organic_confidence": ar["organic_confidence"],
+                "verdict": ar["verdict"],
+                "label": ar["label"],
+                "signals": json.loads(ar["signals"]) if ar["signals"] else [],
+                "reasons": json.loads(ar["reasons"]) if ar["reasons"] else [],
+                "red_flags": json.loads(ar["red_flags"]) if ar["red_flags"] else [],
+            }
+    except Exception:
+        auth_map = {}
 
     for repo in repos:
         fn = repo["full_name"]
@@ -250,6 +274,10 @@ def export_project_pages(db: Database, out: Path) -> None:
         why = db.get_why_trending(fn)
         if why:
             project_data["why_trending"] = why
+
+        # Add star authenticity / organic confidence
+        if fn in auth_map:
+            project_data["authenticity"] = auth_map[fn]
 
         # Write to projects directory
         project_file = projects_dir / f"{owner}__{name}.json"
@@ -415,6 +443,24 @@ def export_category_intelligence(db: Database, out: Path) -> None:
         print(f"Exported category history for {len(momentums)} categories")
     except Exception as e:
         print(f"Warning: Could not export category intelligence: {e}")
+
+
+def export_authenticity(db: Database, out: Path) -> None:
+    """Export star authenticity & organic growth confidence audit results."""
+    try:
+        from radar.analysis.authenticity import AuthenticityScorer
+        scorer = AuthenticityScorer(db)
+        results = scorer.compute(min_stars=100)
+        scorer.save(results)
+        summary = scorer.summary(results)
+
+        (out / "authenticity.json").write_text(
+            json.dumps(summary, indent=2, default=str),
+            encoding="utf-8",
+        )
+        print(f"Exported authenticity audit ({summary['total_scored']} repos scored)")
+    except Exception as e:
+        print(f"Warning: Could not export authenticity: {e}")
 
 
 def export_history(db: Database, out: Path) -> None:

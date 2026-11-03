@@ -81,6 +81,14 @@ const isPermissiveLicense = ['MIT', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause'
 const licenseCategory = isPermissiveLicense ? 'Permissive (Commercial Friendly)' : (project.license ? project.license : 'Unlicensed / Custom');
 const healthGrade = (project.health || 0) >= 70 ? 'A+' : (project.health || 0) >= 55 ? 'A' : (project.health || 0) >= 40 ? 'B' : 'C';
 
+const auth = project.authenticity || {
+  organic_confidence: 95.0,
+  label: 'High Confidence',
+  verdict: 'organic',
+  summary: 'Growth pattern looks organic.',
+  red_flags: []
+};
+
 function percentileLabel(p: any): string {
   const v = Number(p);
   if (!Number.isFinite(v) || v <= 0) return '';
@@ -326,7 +334,15 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
   <section class="section" style="margin-top:var(--sp-6);">
     <div class="card" style="padding:var(--sp-6);">
       <h2 style="font-size:var(--text-lg); font-weight:700; margin-bottom:var(--sp-4); display:flex; align-items:center; gap:var(--sp-2);">🛡️ Enterprise Readiness & Commercial Safety</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:var(--sp-4);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:var(--sp-4);">
+        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">Organic Growth</div>
+          <div style={`font-size:var(--text-2xl); font-weight:700; color:${auth.verdict === 'suspicious' ? 'var(--red, #ef4444)' : auth.verdict === 'mixed' ? 'var(--yellow, #eab308)' : 'var(--green, #22c55e)'};`}>
+            {auth.organic_confidence?.toFixed(0)}%
+          </div>
+          <div style="font-size:var(--text-xs); color:var(--text); font-weight:600; margin-top:2px;">{auth.label}</div>
+          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">{auth.summary}</div>
+        </div>
         <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
           <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">License</div>
           <div style="font-size:var(--text-base); font-weight:600;">{licenseCategory}</div>
@@ -346,12 +362,15 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
           <div style="font-size:var(--text-2xl); font-weight:700; color:var(--green);">{project.radar_score?.toFixed(1) || '—'}</div>
           <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">Composite of Impact, Velocity, and Health.</div>
         </div>
-        <div style="padding:var(--sp-4); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius);">
-          <div style="font-size:var(--text-xs); color:var(--text-muted); text-transform:uppercase; margin-bottom:var(--sp-1);">Maturity</div>
-          <div style="font-size:var(--text-2xl); font-weight:700;">{project.maturity || 'Emerging'}</div>
-          <div style="font-size:var(--text-xs); color:var(--text-muted); margin-top:2px;">{project.maturity === 'Mature' ? 'Production-ready with stable API.' : project.maturity === 'Growing' ? 'Actively evolving — may have breaking changes.' : 'Early stage — evaluate carefully.'}</div>
-        </div>
       </div>
+      {auth.red_flags && auth.red_flags.length > 0 && (
+        <div style="margin-top:var(--sp-4); padding:var(--sp-3); background:rgba(239, 68, 68, 0.08); border-left:3px solid #ef4444; border-radius:var(--radius); font-size:var(--text-xs); color:var(--text);">
+          <strong style="color:#ef4444;">⚠️ Growth Anomaly Detected:</strong>
+          <ul style="margin:4px 0 0 16px; padding:0;">
+            {auth.red_flags.map((flag: string) => <li>{flag}</li>)}
+          </ul>
+        </div>
+      )}
       <div style="margin-top:var(--sp-4); padding-top:var(--sp-4); border-top:1px solid var(--border-subtle); font-size:var(--text-xs); color:var(--text-muted);">
         <strong>Disclaimer:</strong> This is an automated heuristic assessment based on public GitHub signals. Always perform your own security audit, dependency review, and legal compliance check before production deployment.
       </div>

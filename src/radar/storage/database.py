@@ -145,6 +145,23 @@ CREATE TABLE IF NOT EXISTS category_momentum (
 
 CREATE INDEX IF NOT EXISTS idx_momentum_category ON category_momentum(category);
 CREATE INDEX IF NOT EXISTS idx_momentum_time ON category_momentum(timestamp);
+
+CREATE TABLE IF NOT EXISTS star_authenticity (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    repo_full_name TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    organic_confidence REAL DEFAULT 100.0,
+    verdict TEXT DEFAULT 'organic',
+    label TEXT DEFAULT 'High Confidence',
+    signals TEXT DEFAULT '[]',
+    reasons TEXT DEFAULT '[]',
+    red_flags TEXT DEFAULT '[]',
+    FOREIGN KEY (repo_full_name) REFERENCES repositories(full_name),
+    UNIQUE(repo_full_name, timestamp)
+);
+
+CREATE INDEX IF NOT EXISTS idx_authenticity_repo ON star_authenticity(repo_full_name);
+CREATE INDEX IF NOT EXISTS idx_authenticity_score ON star_authenticity(organic_confidence);
 """
 
 

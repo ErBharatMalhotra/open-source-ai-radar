@@ -85,6 +85,9 @@ jobs:
       - name: Detect breakouts
         run: uv run radar breakouts --limit 25 || echo "No breakout data yet"
 
+      - name: Audit star authenticity
+        run: uv run radar authenticity --limit 25 || echo "Authenticity audit skipped"
+
       - name: Export JSON
         run: uv run python scripts/export.py
 

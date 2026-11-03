@@ -1,7 +1,7 @@
 {
   "full_name": "1115714829/llama.cpp-v100",
   "url": "https://github.com/1115714829/llama.cpp-v100",
-  "description": "llama.cpp optimized for NVIDIA Tesla V100 (SM70): Qwen3.8-Flash-Next with MTP (prefill 3402 tok/s at 200K context on 6x V100-16GB; also runs on 2x V100-16GB) and Qwen3.8-27B with DFlash2 (decode up to 220 tok/s); 2-6 GPUs, 262K-512K context, multimodal, concurrent serving, built-in web UI.",
+  "description": "llama.cpp optimized for NVIDIA Tesla V100 (SM70). Qwen3.8-Flash-Next (MoE) with MTP on 1/2/3/6x V100-16GB at 262K context (6 GPUs: prefill 3402 tok/s at 200K; 2 GPUs on one socket: 2152 tok/s). Qwen3.8-27B with DFlash2 on 1-6 GPUs, up to 512K context. Multimodal, thinking, concurrent serving, built-in web UI.",
   "language": "C++",
   "license": "GPL-3.0",
   "topics": [],
@@ -10,7 +10,7 @@
   "open_issues": 5,
   "watchers": 1,
   "created_at": "2026-09-21T07:18:27Z",
-  "pushed_at": "2026-10-23T08:10:59Z",
+  "pushed_at": "2026-11-03T08:29:51Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/1115714829.png",
   "radar_score": 0,

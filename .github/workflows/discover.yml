@@ -28,7 +28,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,6 +38,14 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
+
+      # REPO_TOKEN is optional: a stale/limited PAT used to fail every push with
+      # HTTP 403. The script validates it and falls back to GITHUB_TOKEN.
+      - name: Configure git auth (validated token)
+        env:
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/ci_git_auth.sh
 
       - name: Cache uv dependencies
         uses: actions/cache@v4

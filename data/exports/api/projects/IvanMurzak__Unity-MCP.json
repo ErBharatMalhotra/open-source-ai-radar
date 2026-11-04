@@ -34,7 +34,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 18,
   "authenticity": {
-    "organic_confidence": 90.9,
+    "organic_confidence": 91.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +48,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "No single-day star surge in the last 30 days."
+        "detail": "Not enough snapshots yet."
       },
       {
         "key": "alignment",
@@ -83,8 +83,8 @@
     ],
     "reasons": [
       "Issue engagement: 47 open issues for 4,576 stars (1.0%).",
-      "Burst pattern: No single-day star surge in the last 30 days.",
-      "Fork-to-star ratio: 408 forks for 4,576 stars (8.9%)."
+      "Fork-to-star ratio: 408 forks for 4,576 stars (8.9%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

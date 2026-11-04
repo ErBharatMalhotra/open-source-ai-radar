@@ -34,7 +34,7 @@
   "freshness_score": 0.029896914436926308,
   "snapshot_count": 11,
   "authenticity": {
-    "organic_confidence": 75.5,
+    "organic_confidence": 67.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +48,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "No single-day star surge in the last 30 days."
+        "detail": "Not enough snapshots yet."
       },
       {
         "key": "alignment",
@@ -78,15 +78,14 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 373 days ago."
+        "detail": "Last push 374 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: No single-day star surge in the last 30 days.",
       "Fork-to-star ratio: 1,006 forks for 4,395 stars (22.9%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 373 days ago."
+      "Maintenance cadence: Last push 374 days ago."
     ]
   }
 }

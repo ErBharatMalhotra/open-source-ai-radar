@@ -4,37 +4,47 @@
   "description": "Open source MCP Servers for AWS",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9872,
+  "topics": [
+    "aws",
+    "mcp",
+    "mcp-client",
+    "mcp-clients",
+    "mcp-host",
+    "mcp-server",
+    "mcp-servers",
+    "mcp-tools",
+    "modelcontextprotocol"
+  ],
+  "stars": 9874,
   "forks": 1847,
-  "open_issues": 145,
+  "open_issues": 143,
   "watchers": 75,
   "created_at": "2025-03-21T00:39:00Z",
-  "pushed_at": "2026-11-03T20:17:23Z",
+  "pushed_at": "2026-11-03T22:19:45Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/awslabs.png",
-  "radar_score": 75.46,
+  "radar_score": 75.45,
   "impact": 91.72,
-  "velocity": 65.24,
+  "velocity": 65.22,
   "health": 63.75,
-  "global_percentile": 62.29,
+  "global_percentile": 57.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Open source MCP Servers for AWS",
   "maturity": "Unknown",
-  "stars_7d": 29,
-  "stars_30d": 115,
-  "stars_90d": 135,
-  "star_growth_rate_7d": 4.142857142857143,
-  "star_growth_rate_30d": 3.8333333333333335,
-  "star_growth_acceleration": 1.0807453416149069,
-  "forks_7d": 17,
-  "forks_30d": 61,
+  "stars_7d": 38,
+  "stars_30d": 119,
+  "stars_90d": 145,
+  "star_growth_rate_7d": 5.428571428571429,
+  "star_growth_rate_30d": 4.103448275862069,
+  "star_growth_acceleration": 1.3229291716686673,
+  "forks_7d": 14,
+  "forks_30d": 54,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 176,
+  "snapshot_count": 177,
   "authenticity": {
-    "organic_confidence": 88.1,
+    "organic_confidence": 88.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.3,
         "weight": 0.22,
-        "detail": "1,847 forks for 9,872 stars (18.7%)."
+        "detail": "1,847 forks for 9,874 stars (18.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.8,
+        "score": 79.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (5 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (5 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 82.0,
+        "score": 81.7,
         "weight": 0.12,
-        "detail": "145 open issues for 9,872 stars (1.5%)."
+        "detail": "143 open issues for 9,874 stars (1.4%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +92,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 11 stars (5 forks, 2.9x the daily average).",
-      "Issue engagement: 145 open issues for 9,872 stars (1.5%).",
-      "Fork-to-star ratio: 1,847 forks for 9,872 stars (18.7%)."
+      "Burst pattern: Largest 24h jump was 11 stars (5 forks, 2.7x the daily average).",
+      "Issue engagement: 143 open issues for 9,874 stars (1.4%).",
+      "Fork-to-star ratio: 1,847 forks for 9,874 stars (18.7%)."
     ],
     "red_flags": []
   }

@@ -4,7 +4,13 @@
   "description": "OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledge, reasoning, coding, science, language, long-context, and safety.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "evaluation",
+    "benchmark",
+    "large-language-model",
+    "llm",
+    "llm-eval"
+  ],
   "stars": 7563,
   "forks": 900,
   "open_issues": 250,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-03T02:27:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/open-compass.png",
-  "radar_score": 70.65,
-  "impact": 87.75,
-  "velocity": 56.02,
+  "radar_score": 70.63,
+  "impact": 87.72,
+  "velocity": 56.03,
   "health": 63.75,
-  "global_percentile": 28.43,
+  "global_percentile": 24.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets.",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 73,
-  "stars_90d": 214,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 2.433333333333333,
-  "star_growth_acceleration": 0.8219178082191781,
+  "stars_7d": 12,
+  "stars_30d": 70,
+  "stars_90d": 204,
+  "star_growth_rate_7d": 1.7142857142857142,
+  "star_growth_rate_30d": 2.5,
+  "star_growth_acceleration": 0.6857142857142857,
   "forks_7d": 7,
-  "forks_30d": 24,
+  "forks_30d": 22,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 96,
+  "snapshot_count": 97,
   "authenticity": {
-    "organic_confidence": 95.3,
+    "organic_confidence": 95.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.8,
+        "score": 88.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (2 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (2 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +88,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 5 stars (2 forks, 2.0x the daily average).",
+      "Burst pattern: Largest 24h jump was 5 stars (2 forks, 2.1x the daily average).",
       "Issue engagement: 250 open issues for 7,563 stars (3.3%).",
       "Fork-to-star ratio: 900 forks for 7,563 stars (11.9%)."
     ],

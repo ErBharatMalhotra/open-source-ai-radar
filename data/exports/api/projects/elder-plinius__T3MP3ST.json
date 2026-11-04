@@ -35,9 +35,9 @@
   "snapshot_count": 83,
   "why_trending": "Strong momentum with 149 new stars this week. Above-average growth velocity. High developer adoption with 23 new forks this week. Active in the AI Safety & Alignment category.",
   "authenticity": {
-    "organic_confidence": 80.3,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 78.4,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -49,9 +49,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.1,
+        "score": 82.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 23 stars (0 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 23 stars (0 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -84,7 +84,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 56 days ago.",
-      "Burst pattern: Largest 24h jump was 23 stars (0 forks, 2.1x the daily average).",
+      "Burst pattern: Largest 24h jump was 23 stars (0 forks, 2.5x the daily average).",
       "Fork-to-star ratio: 1,388 forks for 6,670 stars (20.8%)."
     ],
     "red_flags": [

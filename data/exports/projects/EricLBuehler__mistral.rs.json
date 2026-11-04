@@ -4,53 +4,57 @@
   "description": "Fast, flexible LLM inference",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "llm",
+    "rust",
+    "uqff"
+  ],
   "stars": 7805,
-  "forks": 760,
+  "forks": 759,
   "open_issues": 255,
   "watchers": 47,
   "created_at": "2024-02-26T22:30:06Z",
   "pushed_at": "2026-11-03T04:35:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/EricLBuehler.png",
-  "radar_score": 71.44,
-  "impact": 88.68,
-  "velocity": 57.22,
+  "radar_score": 71.43,
+  "impact": 88.65,
+  "velocity": 57.23,
   "health": 63.75,
-  "global_percentile": 31.86,
+  "global_percentile": 28.29,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Fast, flexible LLM inference",
   "maturity": "Unknown",
-  "stars_7d": 17,
-  "stars_30d": 65,
-  "stars_90d": 144,
-  "star_growth_rate_7d": 2.4285714285714284,
-  "star_growth_rate_30d": 2.1666666666666665,
-  "star_growth_acceleration": 1.120879120879121,
+  "stars_7d": 25,
+  "stars_30d": 72,
+  "stars_90d": 150,
+  "star_growth_rate_7d": 3.5714285714285716,
+  "star_growth_rate_30d": 2.5714285714285716,
+  "star_growth_acceleration": 1.3888888888888888,
   "forks_7d": 11,
-  "forks_30d": 38,
+  "forks_30d": 37,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 108,
+  "snapshot_count": 109,
   "authenticity": {
-    "organic_confidence": 93.9,
+    "organic_confidence": 87.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.1,
+        "score": 99.0,
         "weight": 0.22,
-        "detail": "760 forks for 7,805 stars (9.7%)."
+        "detail": "759 forks for 7,805 stars (9.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.6,
+        "score": 67.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (0 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 9 stars (0 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,9 +86,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 5 stars (0 forks, 2.2x the daily average).",
       "Issue engagement: 255 open issues for 7,805 stars (3.3%).",
-      "Fork-to-star ratio: 760 forks for 7,805 stars (9.7%)."
+      "Fork-to-star ratio: 759 forks for 7,805 stars (9.7%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

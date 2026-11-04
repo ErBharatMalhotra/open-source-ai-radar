@@ -22,5 +22,59 @@
   "sub_category": "cli tool",
   "summary": "2026.3.31 claude code \u610f\u5916\u628a\u5305\u542b\u6e90\u7801\u7684\u6587\u4ef6\u4e0a\u4f20\u5230 npm \u4ed3\u5e93\uff0c\u7248\u672c\u53f7\u662f 2.1.88\uff0c\u5176\u4e2d cli.js.map \u6587\u4ef6\u6709 57MB \u7684\u4f53\u79ef\uff0cclaude code \u7684\u6e90\u7801\u5728\u8be5\u6587\u4ef6\u7684 sourcesContent \u5b57\u6bb5\u91cc\u9762\uff0c\u89e3\u538b\u8fd8\u539f\u540e\u6709 70w \u884c\u4ee3\u7801",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 82.7,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "3,509 forks for 2,335 stars (150.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 45.7,
+        "weight": 0.12,
+        "detail": "5 open issues for 2,335 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 3,509 forks for 2,335 stars (150.3%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

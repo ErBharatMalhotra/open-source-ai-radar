@@ -4,13 +4,19 @@
   "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 60500,
-  "forks": 9041,
+  "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "llms",
+    "aiagentframework"
+  ],
+  "stars": 60502,
+  "forks": 9043,
   "open_issues": 451,
   "watchers": 387,
   "created_at": "2023-10-27T03:26:59Z",
-  "pushed_at": "2026-11-04T20:04:27Z",
+  "pushed_at": "2026-11-04T21:31:59Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/crewAIInc.png",
   "radar_score": 79.35,
@@ -22,19 +28,19 @@
   "sub_category": "task agent",
   "summary": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
   "maturity": "Unknown",
-  "stars_7d": 319,
-  "stars_30d": 881,
-  "stars_90d": 881,
-  "star_growth_rate_7d": 45.57142857142857,
-  "star_growth_rate_30d": 40.04545454545455,
-  "star_growth_acceleration": 1.1379925409437326,
-  "forks_7d": 123,
-  "forks_30d": 330,
+  "stars_7d": 317,
+  "stars_30d": 878,
+  "stars_90d": 878,
+  "star_growth_rate_7d": 45.285714285714285,
+  "star_growth_rate_30d": 39.90909090909091,
+  "star_growth_acceleration": 1.1347217702570778,
+  "forks_7d": 126,
+  "forks_30d": 331,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 284,
+  "snapshot_count": 285,
   "authenticity": {
-    "organic_confidence": 92.8,
+    "organic_confidence": 92.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +49,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.0,
         "weight": 0.22,
-        "detail": "9,039 forks for 60,499 stars (14.9%)."
+        "detail": "9,043 forks for 60,502 stars (14.9%)."
       },
       {
         "key": "burst",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 67.2,
+        "score": 67.4,
         "weight": 0.12,
-        "detail": "447 open issues for 60,499 stars (0.7%)."
+        "detail": "451 open issues for 60,502 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +89,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 49 stars (10 forks, 1.3x the daily average).",
-      "Fork-to-star ratio: 9,039 forks for 60,499 stars (14.9%).",
+      "Fork-to-star ratio: 9,043 forks for 60,502 stars (14.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

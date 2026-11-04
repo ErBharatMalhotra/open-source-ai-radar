@@ -4,7 +4,12 @@
   "description": "An open-source RAG-based tool for chatting with your documents.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "chatbot",
+    "llms",
+    "open-source",
+    "rag"
+  ],
   "stars": 25853,
   "forks": 2164,
   "open_issues": 222,
@@ -17,40 +22,40 @@
   "impact": 95.18,
   "velocity": 53.01,
   "health": 43.34,
-  "global_percentile": 8.86,
+  "global_percentile": 11.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "An open-source RAG-based tool for chatting with your documents.",
   "maturity": "Unknown",
   "stars_7d": 23,
   "stars_30d": 58,
-  "stars_90d": 75,
+  "stars_90d": 76,
   "star_growth_rate_7d": 3.2857142857142856,
   "star_growth_rate_30d": 1.9333333333333333,
   "star_growth_acceleration": 1.6995073891625614,
-  "forks_7d": 5,
-  "forks_30d": 12,
+  "forks_7d": 1,
+  "forks_30d": 8,
   "days_since_last_push": 113,
   "freshness_score": 0.3230332564222529,
-  "snapshot_count": 153,
+  "snapshot_count": 154,
   "authenticity": {
-    "organic_confidence": 76.5,
+    "organic_confidence": 76.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 94.2,
+        "score": 94.1,
         "weight": 0.22,
-        "detail": "2,168 forks for 25,853 stars (8.4%)."
+        "detail": "2,164 forks for 25,853 stars (8.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.6,
+        "score": 69.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (1 forks, 3.6x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (1 forks, 3.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,168 forks for 25,853 stars (8.4%)."
+      "Fork-to-star ratio: 2,164 forks for 25,853 stars (8.4%)."
     ],
     "red_flags": []
   }

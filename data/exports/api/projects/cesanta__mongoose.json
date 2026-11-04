@@ -4,7 +4,19 @@
   "description": "Embedded web server, with TCP/IP network stack, MQTT and Websocket",
   "language": "C",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "websocket",
+    "mqtt",
+    "embedded",
+    "webserver",
+    "web-server",
+    "iot",
+    "http",
+    "tcp",
+    "udp",
+    "tcpip",
+    "tls13"
+  ],
   "stars": 13124,
   "forks": 2958,
   "open_issues": 1,
@@ -13,28 +25,28 @@
   "pushed_at": "2026-11-04T20:16:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/cesanta.png",
-  "radar_score": 67.17,
+  "radar_score": 67.27,
   "impact": 94.91,
-  "velocity": 44.17,
-  "health": 54.98,
-  "global_percentile": 10.57,
+  "velocity": 44.18,
+  "health": 55.35,
+  "global_percentile": 10.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embedded web server, with TCP/IP network stack, MQTT and Websocket",
   "maturity": "Unknown",
-  "stars_7d": 13,
-  "stars_30d": 57,
-  "stars_90d": 72,
-  "star_growth_rate_7d": 1.8571428571428572,
-  "star_growth_rate_30d": 1.9,
-  "star_growth_acceleration": 0.9774436090225564,
+  "stars_7d": 10,
+  "stars_30d": 54,
+  "stars_90d": 69,
+  "star_growth_rate_7d": 1.4285714285714286,
+  "star_growth_rate_30d": 1.8,
+  "star_growth_acceleration": 0.7936507936507936,
   "forks_7d": 3,
   "forks_30d": 15,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 155,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 156,
   "authenticity": {
-    "organic_confidence": 76.3,
+    "organic_confidence": 75.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.5,
         "weight": 0.22,
-        "detail": "2,958 forks for 13,127 stars (22.5%)."
+        "detail": "2,958 forks for 13,124 stars (22.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.9,
+        "score": 70.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 3.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,22 +83,22 @@
         "label": "Issue engagement",
         "score": 25.8,
         "weight": 0.12,
-        "detail": "1 open issues for 13,127 stars (0.0%)."
+        "detail": "1 open issues for 13,124 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,958 forks for 13,127 stars (22.5%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Fork-to-star ratio: 2,958 forks for 13,124 stars (22.5%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 13,127 stars (0.0%)."
+      "Issue engagement: 1 open issues for 13,124 stars (0.0%)."
     ]
   }
 }

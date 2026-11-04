@@ -4,8 +4,10 @@
   "description": "Specification and documentation for Agent Skills",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 26939,
+  "topics": [
+    "agent-skills"
+  ],
+  "stars": 26941,
   "forks": 1992,
   "open_issues": 52,
   "watchers": 241,
@@ -13,28 +15,28 @@
   "pushed_at": "2026-11-04T19:47:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/agentskills.png",
-  "radar_score": 69.57,
+  "radar_score": 78.04,
   "impact": 95.83,
-  "velocity": 56.65,
-  "health": 45.63,
-  "global_percentile": 14.14,
+  "velocity": 67.9,
+  "health": 63.75,
+  "global_percentile": 80.14,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Specification and documentation for Agent Skills",
   "maturity": "Unknown",
-  "stars_7d": 234,
-  "stars_30d": 889,
-  "stars_90d": 889,
-  "star_growth_rate_7d": 33.42857142857143,
-  "star_growth_rate_30d": 38.65217391304348,
-  "star_growth_acceleration": 0.8648561786919493,
-  "forks_7d": 21,
-  "forks_30d": 29,
-  "days_since_last_push": 86,
-  "freshness_score": 0.4231620823177488,
-  "snapshot_count": 272,
+  "stars_7d": 212,
+  "stars_30d": 876,
+  "stars_90d": 876,
+  "star_growth_rate_7d": 30.285714285714285,
+  "star_growth_rate_30d": 38.08695652173913,
+  "star_growth_acceleration": 0.7951728636660143,
+  "forks_7d": 18,
+  "forks_30d": 27,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 273,
   "authenticity": {
-    "organic_confidence": 70.8,
+    "organic_confidence": 75.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +45,7 @@
         "label": "Fork-to-star ratio",
         "score": 90.6,
         "weight": 0.22,
-        "detail": "1,992 forks for 26,936 stars (7.4%)."
+        "detail": "1,992 forks for 26,941 stars (7.4%)."
       },
       {
         "key": "burst",
@@ -71,18 +73,19 @@
         "label": "Issue engagement",
         "score": 44.3,
         "weight": 0.12,
-        "detail": "52 open issues for 26,936 stars (0.2%)."
+        "detail": "52 open issues for 26,941 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 71.0,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 86 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,992 forks for 26,936 stars (7.4%)."
+      "Fork-to-star ratio: 1,992 forks for 26,941 stars (7.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

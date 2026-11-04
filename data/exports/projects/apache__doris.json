@@ -4,7 +4,26 @@
   "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "olap",
+    "database",
+    "hudi",
+    "iceberg",
+    "real-time",
+    "sql",
+    "bigquery",
+    "delta-lake",
+    "lakehouse",
+    "query-engine",
+    "redshift",
+    "snowflake",
+    "agent",
+    "ai",
+    "paimon",
+    "observability",
+    "search",
+    "vector"
+  ],
   "stars": 16179,
   "forks": 4009,
   "open_issues": 426,
@@ -14,10 +33,10 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/apache.png",
   "radar_score": 74.66,
-  "impact": 95.57,
+  "impact": 95.58,
   "velocity": 58.54,
   "health": 63.75,
-  "global_percentile": 44.43,
+  "global_percentile": 45.57,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
@@ -32,9 +51,9 @@
   "forks_30d": 2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 48,
+  "snapshot_count": 49,
   "authenticity": {
-    "organic_confidence": 95.9,
+    "organic_confidence": 95.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +67,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.1,
+        "score": 94.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (1 forks, 1.5x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (1 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +90,7 @@
         "label": "Issue engagement",
         "score": 92.1,
         "weight": 0.12,
-        "detail": "425 open issues for 16,179 stars (2.6%)."
+        "detail": "426 open issues for 16,179 stars (2.6%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +101,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 425 open issues for 16,179 stars (2.6%).",
-      "Burst pattern: Largest 24h jump was 10 stars (1 forks, 1.5x the daily average).",
+      "Issue engagement: 426 open issues for 16,179 stars (2.6%).",
+      "Burst pattern: Largest 24h jump was 10 stars (1 forks, 1.6x the daily average).",
       "Fork-to-star ratio: 4,009 forks for 16,179 stars (24.8%)."
     ],
     "red_flags": []

@@ -24,7 +24,7 @@
   "maturity": "Unknown",
   "snapshot_count": 0,
   "authenticity": {
-    "organic_confidence": 89.6,
+    "organic_confidence": 93.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -33,7 +33,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.9,
         "weight": 0.22,
-        "detail": "30 forks for 145 stars (20.7%)."
+        "detail": "30 forks for 147 stars (20.4%)."
       },
       {
         "key": "burst",
@@ -59,9 +59,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 65.7,
+        "score": 80.4,
         "weight": 0.12,
-        "detail": "1 open issues for 145 stars (0.7%)."
+        "detail": "2 open issues for 147 stars (1.4%)."
       },
       {
         "key": "maintenance",
@@ -72,7 +72,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 30 forks for 145 stars (20.7%).",
+      "Issue engagement: 2 open issues for 147 stars (1.4%).",
+      "Fork-to-star ratio: 30 forks for 147 stars (20.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

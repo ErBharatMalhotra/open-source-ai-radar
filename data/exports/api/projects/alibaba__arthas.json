@@ -4,8 +4,18 @@
   "description": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java\u8bca\u65ad\u5229\u5668Arthas",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 37609,
+  "topics": [
+    "java",
+    "agent",
+    "trace",
+    "jvm",
+    "arthas",
+    "trouble-shooting",
+    "diagnosis",
+    "classloader",
+    "alibaba"
+  ],
+  "stars": 37608,
   "forks": 7643,
   "open_issues": 391,
   "watchers": 1096,
@@ -13,44 +23,44 @@
   "pushed_at": "2026-11-04T02:02:39Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
-  "radar_score": 74.59,
+  "radar_score": 77.64,
   "impact": 98.2,
-  "velocity": 58.05,
-  "health": 59.95,
-  "global_percentile": 44.14,
+  "velocity": 64.05,
+  "health": 63.75,
+  "global_percentile": 74.71,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java\u8bca\u65ad\u5229\u5668Arthas",
   "maturity": "Unknown",
-  "stars_7d": 21,
+  "stars_7d": 19,
   "stars_30d": 41,
-  "stars_90d": 78,
-  "star_growth_rate_7d": 3.0,
-  "star_growth_rate_30d": 1.4137931034482758,
-  "star_growth_acceleration": 2.1219512195121952,
-  "forks_7d": 2,
-  "forks_30d": -2,
-  "days_since_last_push": 11,
-  "freshness_score": 0.8958341352965282,
-  "snapshot_count": 122,
+  "stars_90d": 77,
+  "star_growth_rate_7d": 2.7142857142857144,
+  "star_growth_rate_30d": 1.3666666666666667,
+  "star_growth_acceleration": 1.986062717770035,
+  "forks_7d": 3,
+  "forks_30d": -1,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 123,
   "authenticity": {
-    "organic_confidence": 79.9,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 97.9,
         "weight": 0.22,
-        "detail": "7,642 forks for 37,608 stars (20.3%)."
+        "detail": "7,643 forks for 37,608 stars (20.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 60.0,
+        "score": 58.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.3x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (-1 forks, 4.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +81,20 @@
         "label": "Issue engagement",
         "score": 75.6,
         "weight": 0.12,
-        "detail": "392 open issues for 37,608 stars (1.0%)."
+        "detail": "391 open issues for 37,608 stars (1.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 93.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 11 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 392 open issues for 37,608 stars (1.0%).",
-      "Maintenance cadence: Last push 11 days ago.",
-      "Fork-to-star ratio: 7,642 forks for 37,608 stars (20.3%)."
+      "Issue engagement: 391 open issues for 37,608 stars (1.0%).",
+      "Fork-to-star ratio: 7,643 forks for 37,608 stars (20.3%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

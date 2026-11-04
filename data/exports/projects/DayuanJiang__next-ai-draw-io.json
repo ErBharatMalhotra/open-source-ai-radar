@@ -4,37 +4,54 @@
   "description": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 36665,
-  "forks": 3823,
-  "open_issues": 31,
+  "topics": [
+    "ai",
+    "diagrams",
+    "architecture-diagram",
+    "claude-code",
+    "diagram-generator",
+    "draw-io",
+    "drawio",
+    "electron",
+    "flowchart",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "nextjs",
+    "gemini-cli-extension",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "stars": 36673,
+  "forks": 3826,
+  "open_issues": 32,
   "watchers": 136,
   "created_at": "2025-03-23T15:03:48Z",
   "pushed_at": "2026-11-04T06:45:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/DayuanJiang.png",
-  "radar_score": 75.85,
-  "impact": 96.67,
-  "velocity": 64.55,
+  "radar_score": 75.87,
+  "impact": 96.68,
+  "velocity": 64.61,
   "health": 58.35,
-  "global_percentile": 59.57,
+  "global_percentile": 55.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
   "maturity": "Unknown",
-  "stars_7d": 214,
-  "stars_30d": 380,
-  "stars_90d": 380,
-  "star_growth_rate_7d": 30.571428571428573,
-  "star_growth_rate_30d": 21.11111111111111,
-  "star_growth_acceleration": 1.4481203007518797,
-  "forks_7d": 10,
-  "forks_30d": -33,
+  "stars_7d": 231,
+  "stars_30d": 401,
+  "stars_90d": 401,
+  "star_growth_rate_7d": 33.0,
+  "star_growth_rate_30d": 21.105263157894736,
+  "star_growth_acceleration": 1.5635910224438903,
+  "forks_7d": 15,
+  "forks_30d": -27,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 73,
+  "snapshot_count": 74,
   "authenticity": {
-    "organic_confidence": 80.4,
+    "organic_confidence": 80.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +60,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "3,820 forks for 36,652 stars (10.4%)."
+        "detail": "3,826 forks for 36,673 stars (10.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 77.9,
+        "score": 79.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 57 stars (2 forks, 2.8x the daily average)."
+        "detail": "Largest 24h jump was 57 stars (2 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 33.5,
+        "score": 33.7,
         "weight": 0.12,
-        "detail": "31 open issues for 36,652 stars (0.1%)."
+        "detail": "32 open issues for 36,673 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +99,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 57 stars (2 forks, 2.8x the daily average).",
-      "Fork-to-star ratio: 3,820 forks for 36,652 stars (10.4%).",
+      "Burst pattern: Largest 24h jump was 57 stars (2 forks, 2.7x the daily average).",
+      "Fork-to-star ratio: 3,826 forks for 36,673 stars (10.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 31 open issues for 36,652 stars (0.1%)."
+      "Issue engagement: 32 open issues for 36,673 stars (0.1%)."
     ]
   }
 }

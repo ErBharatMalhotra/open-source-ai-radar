@@ -4,35 +4,56 @@
   "description": "817 structured cybersecurity skills for AI agents \u00b7 Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) \u00b7 agentskills.io standard \u00b7 Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms \u00b7 29 security domains \u00b7 Apache 2.0",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 35543,
-  "forks": 4333,
+  "topics": [
+    "ai-agents",
+    "claude-code",
+    "cybersecurity",
+    "incident-response",
+    "mitre-attack",
+    "penetration-testing",
+    "red-team",
+    "security",
+    "cloud-security",
+    "malware-analysis",
+    "devsecops",
+    "ethical-hacking",
+    "infosec",
+    "llm",
+    "mcp",
+    "osint",
+    "security-automation",
+    "threat-intelligence",
+    "nist-csf",
+    "threat-hunting"
+  ],
+  "stars": 35552,
+  "forks": 4332,
   "open_issues": 26,
   "watchers": 268,
   "created_at": "2026-02-25T09:47:50Z",
   "pushed_at": "2026-08-31T04:32:44Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mukul975.png",
-  "radar_score": 69.63,
-  "impact": 97.35,
+  "radar_score": 69.6,
+  "impact": 97.37,
   "velocity": 57.02,
-  "health": 42.92,
-  "global_percentile": 19.0,
+  "health": 42.78,
+  "global_percentile": 16.86,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "817 structured cybersecurity skills for AI agents \u00b7 Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) \u00b7 agentskills.io standard \u00b7 Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms \u00b7 29 security domains \u00b7 ",
   "maturity": "Unknown",
-  "stars_7d": 438,
-  "stars_30d": 1209,
-  "stars_90d": 1209,
-  "star_growth_rate_7d": 62.57142857142857,
-  "star_growth_rate_30d": 57.57142857142857,
-  "star_growth_acceleration": 1.086848635235732,
-  "forks_7d": 48,
-  "forks_30d": 153,
-  "days_since_last_push": 64,
-  "freshness_score": 0.5272924240430485,
-  "snapshot_count": 297,
+  "stars_7d": 452,
+  "stars_30d": 1202,
+  "stars_90d": 1202,
+  "star_growth_rate_7d": 64.57142857142857,
+  "star_growth_rate_30d": 54.63636363636363,
+  "star_growth_acceleration": 1.1818397908248157,
+  "forks_7d": 54,
+  "forks_30d": 154,
+  "days_since_last_push": 65,
+  "freshness_score": 0.522045776761016,
+  "snapshot_count": 298,
   "authenticity": {
     "organic_confidence": 80.2,
     "verdict": "organic",
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "4,326 forks for 35,526 stars (12.2%)."
+        "detail": "4,332 forks for 35,552 stars (12.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.0,
+        "score": 88.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 125 stars (23 forks, 2.1x the daily average)."
       },
@@ -71,23 +92,23 @@
         "label": "Issue engagement",
         "score": 32.3,
         "weight": 0.12,
-        "detail": "26 open issues for 35,526 stars (0.1%)."
+        "detail": "26 open issues for 35,552 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 76.5,
+        "score": 76.2,
         "weight": 0.1,
-        "detail": "Last push 64 days ago."
+        "detail": "Last push 65 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 64 days ago.",
+      "Maintenance cadence: Last push 65 days ago.",
       "Burst pattern: Largest 24h jump was 125 stars (23 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 4,326 forks for 35,526 stars (12.2%)."
+      "Fork-to-star ratio: 4,332 forks for 35,552 stars (12.2%)."
     ],
     "red_flags": [
-      "Issue engagement: 26 open issues for 35,526 stars (0.1%)."
+      "Issue engagement: 26 open issues for 35,552 stars (0.1%)."
     ]
   }
 }

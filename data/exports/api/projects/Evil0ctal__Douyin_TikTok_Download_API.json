@@ -4,37 +4,58 @@
   "description": "\ud83d\ude80 \u81ea\u6258\u7ba1\u7684\u6296\u97f3\u3001TikTok\u3001B \u7ad9\u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u652f\u6301 AI agent \u901a\u8fc7 MCP \u8c03\u7528\u4e0e\u79bb\u7ebf\u8bed\u97f3\u8f6c\u6587\u5b57\uff0cDocker \u4e00\u952e\u90e8\u7f72\u3002| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader \u2014 async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 21150,
-  "forks": 2945,
-  "open_issues": 3,
+  "topics": [
+    "tiktok",
+    "douyin",
+    "scraper",
+    "crawler",
+    "web-scraping",
+    "tiktok-scraper",
+    "douyin-api",
+    "tiktok-api",
+    "data-collection",
+    "downloader",
+    "fastapi",
+    "mcp-server",
+    "model-context-protocol",
+    "openapi",
+    "rest-api",
+    "social-media",
+    "tiktok-downloader",
+    "video-downloader",
+    "speech-to-text",
+    "bilibili"
+  ],
+  "stars": 21156,
+  "forks": 2947,
+  "open_issues": 4,
   "watchers": 108,
   "created_at": "2021-11-07T01:35:09Z",
   "pushed_at": "2026-11-02T07:43:14Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Evil0ctal.png",
-  "radar_score": 71.41,
-  "impact": 94.88,
-  "velocity": 54.19,
-  "health": 57.98,
-  "global_percentile": 28.0,
+  "radar_score": 71.04,
+  "impact": 94.9,
+  "velocity": 53.37,
+  "health": 57.61,
+  "global_percentile": 22.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "\ud83d\ude80 Self-hosted TikTok & Douyin scraper and no-watermark video downloader \u2014 async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. \u6296\u97f3\u3001TikTok \u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u81ea\u6258\u7ba1\uff0c\u652f\u6301 MCP \u8c03\u7528\u4e0e Docker \u4e00\u952e\u90e8\u7f72\u3002",
   "maturity": "Unknown",
-  "stars_7d": 200,
-  "stars_30d": 598,
-  "stars_90d": 598,
-  "star_growth_rate_7d": 28.571428571428573,
-  "star_growth_rate_30d": 23.92,
-  "star_growth_acceleration": 1.1944577161968466,
-  "forks_7d": 30,
-  "forks_30d": 95,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 178,
+  "stars_7d": 214,
+  "stars_30d": 608,
+  "stars_90d": 608,
+  "star_growth_rate_7d": 30.571428571428573,
+  "star_growth_rate_30d": 24.32,
+  "star_growth_acceleration": 1.2570488721804511,
+  "forks_7d": 37,
+  "forks_30d": 100,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 179,
   "authenticity": {
-    "organic_confidence": 81.9,
+    "organic_confidence": 82.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "2,941 forks for 21,135 stars (13.9%)."
+        "detail": "2,947 forks for 21,156 stars (13.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.6,
+        "score": 87.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 50 stars (36 forks, 2.2x the daily average)."
       },
@@ -69,25 +90,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 26.4,
+        "score": 26.9,
         "weight": 0.12,
-        "detail": "3 open issues for 21,135 stars (0.0%)."
+        "detail": "4 open issues for 21,156 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 50 stars (36 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 2,941 forks for 21,135 stars (13.9%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Maintenance cadence: Last push 2 days ago.",
+      "Fork-to-star ratio: 2,947 forks for 21,156 stars (13.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 21,135 stars (0.0%)."
+      "Issue engagement: 4 open issues for 21,156 stars (0.0%)."
     ]
   }
 }

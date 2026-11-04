@@ -4,54 +4,62 @@
   "description": "DeepSeek Harness \u7834\u7532\uff1a\u8ba9\u6240\u6709\u6a21\u578b\u90fd\u80fd\u7834\u7532\uff0c\u4e0d\u540c\u6a21\u578b\u53ef\u6362\u4e0d\u540c\u63d0\u793a\u8bcd\uff1b\u9ed8\u8ba4\u63d0\u793a\u8bcd\u9762\u5411\u56fd\u6a21\u300c\u5c0f\u7801\u9171\u300d\u3002Jailbreak for every model \u2014 swap prompts per model. \u6c42 Star \u6536\u85cf \u2b50 \u5982\u8981\u4e8c\u5f00\uff0c\u8bf7\u67e5\u770b\u7f72\u540d\u8981\u6c42\u90e8\u5206",
   "language": "JavaScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 17461,
-  "forks": 4058,
+  "topics": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "llm-jailbreak",
+    "harness-jailbreak",
+    "jailbreak",
+    "deepseek",
+    "deepseek-harness"
+  ],
+  "stars": 17691,
+  "forks": 4107,
   "open_issues": 9,
-  "watchers": 32,
+  "watchers": 33,
   "created_at": "2026-08-19T07:41:12Z",
   "pushed_at": "2026-11-03T16:45:47Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/HunYiSage.png",
-  "radar_score": 77.82,
-  "impact": 92.61,
-  "velocity": 74.82,
+  "radar_score": 77.98,
+  "impact": 92.79,
+  "velocity": 75.08,
   "health": 58.35,
   "global_percentile": 79.86,
   "category": "AI Safety & Alignment",
   "sub_category": "",
   "summary": "DeepSeek Harness \u7834\u7532\uff1a\u8ba9\u6240\u6709\u6a21\u578b\u90fd\u80fd\u7834\u7532\uff0c\u4e0d\u540c\u6a21\u578b\u53ef\u6362\u4e0d\u540c\u63d0\u793a\u8bcd\uff1b\u9ed8\u8ba4\u63d0\u793a\u8bcd\u9762\u5411\u56fd\u6a21\u300c\u5c0f\u7801\u9171\u300d\u3002Jailbreak for every model \u2014 swap prompts per model. \u6c42 Star \u6536\u85cf \u2b50 \u5982\u8981\u4e8c\u5f00\uff0c\u8bf7\u67e5\u770b\u7f72\u540d\u8981\u6c42\u90e8\u5206",
   "maturity": "Unknown",
-  "stars_7d": 98,
-  "stars_30d": 98,
-  "stars_90d": 98,
+  "stars_7d": 647,
+  "stars_30d": 647,
+  "stars_90d": 647,
   "star_growth_rate_7d": 0.0,
   "star_growth_rate_30d": 0.0,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 32,
-  "forks_30d": 32,
+  "forks_7d": 171,
+  "forks_30d": 171,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 2,
-  "why_trending": "Steady growth with 98 new stars this week. Above-average growth velocity. High developer adoption with 32 new forks this week. Active in the AI Safety & Alignment category.",
+  "snapshot_count": 3,
+  "why_trending": "Strong momentum with 647 new stars this week. Above-average growth velocity. High developer adoption with 171 new forks this week. Active in the AI Safety & Alignment category.",
   "authenticity": {
-    "organic_confidence": 79.5,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 86.8,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 97.4,
         "weight": 0.22,
-        "detail": "3,968 forks for 17,142 stars (23.1%)."
+        "detail": "4,107 forks for 17,691 stars (23.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 100.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "Largest 24h jump was 647 stars (171 forks, 0.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.7,
+        "score": 30.1,
         "weight": 0.12,
-        "detail": "8 open issues for 17,142 stars (0.0%)."
+        "detail": "9 open issues for 17,691 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +91,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,968 forks for 17,142 stars (23.1%).",
+      "Fork-to-star ratio: 4,107 forks for 17,691 stars (23.2%).",
+      "Burst pattern: Largest 24h jump was 647 stars (171 forks, 0.6x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 17,142 stars (0.0%)."
+      "Issue engagement: 9 open issues for 17,691 stars (0.1%)."
     ]
   }
 }

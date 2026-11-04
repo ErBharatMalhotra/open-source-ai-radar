@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-04T08:28:06.643950+00:00",
-  "total_scored": 6881,
+  "generated_at": "2026-11-04T12:07:05.712736+00:00",
+  "total_scored": 6880,
   "buckets": {
     "organic": 3865,
-    "likely_organic": 2448,
-    "mixed": 503,
+    "likely_organic": 2445,
+    "mixed": 505,
     "suspicious": 65
   },
   "most_suspicious": [
@@ -67,7 +67,7 @@
         "Fork-to-star ratio: 0 forks for 241 stars (0.0%).",
         "Issue engagement: 0 open issues for 241 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.349700+00:00"
+      "computed_at": "2026-11-04T12:07:05.335518+00:00"
     },
     {
       "repo_full_name": "syfr512/SweetrollLM",
@@ -128,7 +128,7 @@
         "Fork-to-star ratio: 0 forks for 100 stars (0.0%).",
         "Issue engagement: 0 open issues for 100 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.367344+00:00"
+      "computed_at": "2026-11-04T12:07:05.373152+00:00"
     },
     {
       "repo_full_name": "usedotai/dot-loom",
@@ -189,7 +189,68 @@
         "Fork-to-star ratio: 0 forks for 165 stars (0.0%).",
         "Issue engagement: 0 open issues for 165 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.357503+00:00"
+      "computed_at": "2026-11-04T12:07:05.352122+00:00"
+    },
+    {
+      "repo_full_name": "Fractal-Compute-Orchestrations/FractalAndroid",
+      "stars": 4895,
+      "forks": 0,
+      "stars_7d": 0,
+      "fork_ratio": 0.0,
+      "organic_confidence": 26.1,
+      "label": "Low Confidence",
+      "verdict": "suspicious",
+      "summary": "Pattern matches known star inflation.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 5,
+          "weight": 0.22,
+          "detail": "0 forks for 4,895 stars (0.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 25,
+          "weight": 0.12,
+          "detail": "0 open issues for 4,895 stars (0.0%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 74.0,
+          "weight": 0.1,
+          "detail": "Last push 74 days ago."
+        }
+      ],
+      "reasons": [],
+      "red_flags": [
+        "Fork-to-star ratio: 0 forks for 4,895 stars (0.0%).",
+        "Issue engagement: 0 open issues for 4,895 stars (0.0%)."
+      ],
+      "computed_at": "2026-11-04T12:07:05.209675+00:00"
     },
     {
       "repo_full_name": "endend2003-cmd/Tactical-Matrix-Console",
@@ -250,7 +311,7 @@
         "Fork-to-star ratio: 0 forks for 117 stars (0.0%).",
         "Issue engagement: 0 open issues for 117 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364154+00:00"
+      "computed_at": "2026-11-04T12:07:05.366450+00:00"
     },
     {
       "repo_full_name": "rafaelmateo123/Arena-of-Autonomous-Threads",
@@ -311,7 +372,7 @@
         "Fork-to-star ratio: 0 forks for 117 stars (0.0%).",
         "Issue engagement: 0 open issues for 117 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364165+00:00"
+      "computed_at": "2026-11-04T12:07:05.366474+00:00"
     },
     {
       "repo_full_name": "charan820/PhantomCrowd-Simulacra",
@@ -372,7 +433,7 @@
         "Fork-to-star ratio: 0 forks for 116 stars (0.0%).",
         "Issue engagement: 0 open issues for 116 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364345+00:00"
+      "computed_at": "2026-11-04T12:07:05.366871+00:00"
     },
     {
       "repo_full_name": "Atrayee-dev/secure-ai-agent-boundary",
@@ -433,7 +494,7 @@
         "Fork-to-star ratio: 0 forks for 115 stars (0.0%).",
         "Issue engagement: 0 open issues for 115 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364499+00:00"
+      "computed_at": "2026-11-04T12:07:05.367262+00:00"
     },
     {
       "repo_full_name": "janaador0827-commits/simulacra-forge",
@@ -494,68 +555,7 @@
         "Fork-to-star ratio: 0 forks for 115 stars (0.0%).",
         "Issue engagement: 0 open issues for 115 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364511+00:00"
-    },
-    {
-      "repo_full_name": "Fractal-Compute-Orchestrations/FractalAndroid",
-      "stars": 4895,
-      "forks": 0,
-      "stars_7d": 0,
-      "fork_ratio": 0.0,
-      "organic_confidence": 26.2,
-      "label": "Low Confidence",
-      "verdict": "suspicious",
-      "summary": "Pattern matches known star inflation.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 5,
-          "weight": 0.22,
-          "detail": "0 forks for 4,895 stars (0.0%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 25,
-          "weight": 0.12,
-          "detail": "0 open issues for 4,895 stars (0.0%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 74.2,
-          "weight": 0.1,
-          "detail": "Last push 73 days ago."
-        }
-      ],
-      "reasons": [],
-      "red_flags": [
-        "Fork-to-star ratio: 0 forks for 4,895 stars (0.0%).",
-        "Issue engagement: 0 open issues for 4,895 stars (0.0%)."
-      ],
-      "computed_at": "2026-11-04T08:28:06.292092+00:00"
+      "computed_at": "2026-11-04T12:07:05.367288+00:00"
     },
     {
       "repo_full_name": "nil-sakariya/uninstall-copilot",
@@ -618,7 +618,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.359397+00:00"
+      "computed_at": "2026-11-04T12:07:05.356460+00:00"
     },
     {
       "repo_full_name": "DDGTESTDEV-IONICS/ollama-gui-simple",
@@ -681,7 +681,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.359410+00:00"
+      "computed_at": "2026-11-04T12:07:05.356487+00:00"
     },
     {
       "repo_full_name": "nooour2/buzz-transcriber-alt",
@@ -744,7 +744,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.359421+00:00"
+      "computed_at": "2026-11-04T12:07:05.356513+00:00"
     },
     {
       "repo_full_name": "claudiosequeida81-maker/whisper-gui-windows",
@@ -807,7 +807,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.359446+00:00"
+      "computed_at": "2026-11-04T12:07:05.356558+00:00"
     },
     {
       "repo_full_name": "ChaoYuZhang001/CaoGen",
@@ -870,7 +870,7 @@
         "Fork-to-star ratio: 0 forks for 121 stars (0.0%).",
         "Issue engagement: 0 open issues for 121 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.363572+00:00"
+      "computed_at": "2026-11-04T12:07:05.365228+00:00"
     },
     {
       "repo_full_name": "allouacheelias/disable-copilot-gui",
@@ -933,7 +933,7 @@
         "Fork-to-star ratio: 0 forks for 119 stars (0.0%).",
         "Issue engagement: 0 open issues for 119 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.364015+00:00"
+      "computed_at": "2026-11-04T12:07:05.366138+00:00"
     },
     {
       "repo_full_name": "24vojo-coder/rembg-gui-batch",
@@ -996,7 +996,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.359435+00:00"
+      "computed_at": "2026-11-04T12:07:05.356536+00:00"
     },
     {
       "repo_full_name": "aigrantsindia/aigrantsindia",
@@ -1058,7 +1058,7 @@
         "Maintenance cadence: Last push 512 days ago.",
         "Fork-to-star ratio: 6 forks for 1,833 stars (0.3%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.308451+00:00"
+      "computed_at": "2026-11-04T12:07:05.246189+00:00"
     },
     {
       "repo_full_name": "Powertracall/local-llm-suite",
@@ -1121,7 +1121,7 @@
         "Fork-to-star ratio: 0 forks for 287 stars (0.0%).",
         "Issue engagement: 0 open issues for 287 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.346262+00:00"
+      "computed_at": "2026-11-04T12:07:05.328316+00:00"
     },
     {
       "repo_full_name": "Alice53211/auth-codex-plugin",
@@ -1184,7 +1184,7 @@
         "Fork-to-star ratio: 0 forks for 136 stars (0.0%).",
         "Issue engagement: 0 open issues for 136 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.361291+00:00"
+      "computed_at": "2026-11-04T12:07:05.360493+00:00"
     },
     {
       "repo_full_name": "AhmadHassan-BTed/Noria",
@@ -1245,7 +1245,7 @@
         "Fork-to-star ratio: 4 forks for 4,646 stars (0.1%).",
         "Issue engagement: 0 open issues for 4,646 stars (0.0%)."
       ],
-      "computed_at": "2026-11-04T08:28:06.292894+00:00"
+      "computed_at": "2026-11-04T12:07:05.211456+00:00"
     }
   ],
   "most_organic": [
@@ -1309,7 +1309,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.290975+00:00"
+      "computed_at": "2026-11-04T12:07:05.207080+00:00"
     },
     {
       "repo_full_name": "zephium-browser/Zephium",
@@ -1371,7 +1371,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.320207+00:00"
+      "computed_at": "2026-11-04T12:07:05.271623+00:00"
     },
     {
       "repo_full_name": "scenario-labs/blender-plugin",
@@ -1433,7 +1433,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.321208+00:00"
+      "computed_at": "2026-11-04T12:07:05.273829+00:00"
     },
     {
       "repo_full_name": "onevcat/Prowl",
@@ -1495,7 +1495,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.328526+00:00"
+      "computed_at": "2026-11-04T12:07:05.289596+00:00"
     },
     {
       "repo_full_name": "Code-Amadeus/Amadeus",
@@ -1557,7 +1557,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.333992+00:00"
+      "computed_at": "2026-11-04T12:07:05.301395+00:00"
     },
     {
       "repo_full_name": "agent-substrate/substrate",
@@ -1619,7 +1619,7 @@
         "Issue engagement: 545 open issues for 6,056 stars (9.0%)."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.288785+00:00"
+      "computed_at": "2026-11-04T12:07:05.202267+00:00"
     },
     {
       "repo_full_name": "gpustack/gpustack",
@@ -1681,7 +1681,7 @@
         "Issue engagement: 659 open issues for 5,964 stars (11.0%)."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.289194+00:00"
+      "computed_at": "2026-11-04T12:07:05.203134+00:00"
     },
     {
       "repo_full_name": "vercel/eve",
@@ -1743,7 +1743,7 @@
         "Issue engagement: 299 open issues for 5,788 stars (5.2%)."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.289848+00:00"
+      "computed_at": "2026-11-04T12:07:05.204544+00:00"
     },
     {
       "repo_full_name": "hardbeat920/monocode",
@@ -1805,7 +1805,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.296791+00:00"
+      "computed_at": "2026-11-04T12:07:05.219911+00:00"
     },
     {
       "repo_full_name": "mirage-project/mirage",
@@ -1867,7 +1867,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.302159+00:00"
+      "computed_at": "2026-11-04T12:07:05.231490+00:00"
     },
     {
       "repo_full_name": "happier-dev/happier",
@@ -1929,7 +1929,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.305805+00:00"
+      "computed_at": "2026-11-04T12:07:05.240487+00:00"
     },
     {
       "repo_full_name": "LodyAI/Lody",
@@ -1991,7 +1991,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.310145+00:00"
+      "computed_at": "2026-11-04T12:07:05.249821+00:00"
     },
     {
       "repo_full_name": "lmstudio-ai/mlx-engine",
@@ -2053,7 +2053,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.316347+00:00"
+      "computed_at": "2026-11-04T12:07:05.263286+00:00"
     },
     {
       "repo_full_name": "editor-code-assistant/eca-emacs",
@@ -2115,7 +2115,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.333660+00:00"
+      "computed_at": "2026-11-04T12:07:05.300692+00:00"
     },
     {
       "repo_full_name": "razzant/claudexor",
@@ -2177,69 +2177,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.333698+00:00"
-    },
-    {
-      "repo_full_name": "xybrid-ai/xybrid",
-      "stars": 513,
-      "forks": 58,
-      "stars_7d": 0,
-      "fork_ratio": 0.1131,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.7,
-          "weight": 0.22,
-          "detail": "58 forks for 513 stars (11.3%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "29 open issues for 513 stars (5.7%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 58 forks for 513 stars (11.3%).",
-        "Issue engagement: 29 open issues for 513 stars (5.7%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.334081+00:00"
+      "computed_at": "2026-11-04T12:07:05.300796+00:00"
     },
     {
       "repo_full_name": "mezmo/aura",
@@ -2301,7 +2239,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.339233+00:00"
+      "computed_at": "2026-11-04T12:07:05.313134+00:00"
     },
     {
       "repo_full_name": "TypeWhisper/typewhisper-win",
@@ -2363,7 +2301,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.349596+00:00"
+      "computed_at": "2026-11-04T12:07:05.335268+00:00"
     },
     {
       "repo_full_name": "slow-stack/mneme",
@@ -2425,7 +2363,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.352594+00:00"
+      "computed_at": "2026-11-04T12:07:05.341669+00:00"
     },
     {
       "repo_full_name": "fsdatalab/quail",
@@ -2487,7 +2425,69 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-04T08:28:06.355753+00:00"
+      "computed_at": "2026-11-04T12:07:05.348392+00:00"
+    },
+    {
+      "repo_full_name": "proteus-evolve/Proteus",
+      "stars": 111,
+      "forks": 12,
+      "stars_7d": 0,
+      "fork_ratio": 0.1081,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.8,
+          "weight": 0.22,
+          "detail": "12 forks for 111 stars (10.8%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "8 open issues for 111 stars (7.2%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 12 forks for 111 stars (10.8%).",
+        "Issue engagement: 8 open issues for 111 stars (7.2%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-04T12:07:05.369072+00:00"
     }
   ]
 }

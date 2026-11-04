@@ -4,37 +4,54 @@
   "description": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "nacos",
+    "dubbo",
+    "kubernetes",
+    "istio",
+    "spring-cloud",
+    "microservices",
+    "configuration-management",
+    "distributed-configuration",
+    "ai-registry",
+    "mcp",
+    "mcp-registry",
+    "a2a-registry",
+    "mcp-management",
+    "prompt",
+    "skills",
+    "agent"
+  ],
   "stars": 33496,
   "forks": 13280,
   "open_issues": 177,
   "watchers": 887,
   "created_at": "2018-06-15T06:49:27Z",
-  "pushed_at": "2026-11-04T07:01:32Z",
+  "pushed_at": "2026-11-04T11:56:43Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
   "radar_score": 78.48,
-  "impact": 98.19,
+  "impact": 98.18,
   "velocity": 68.33,
   "health": 61.15,
-  "global_percentile": 84.57,
+  "global_percentile": 84.43,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
   "maturity": "Unknown",
-  "stars_7d": 10,
+  "stars_7d": 9,
   "stars_30d": 80,
   "stars_90d": 75,
-  "star_growth_rate_7d": 1.4285714285714286,
-  "star_growth_rate_30d": 2.7586206896551726,
-  "star_growth_acceleration": 0.5178571428571428,
-  "forks_7d": 1,
-  "forks_30d": -13,
+  "star_growth_rate_7d": 1.2857142857142858,
+  "star_growth_rate_30d": 2.6666666666666665,
+  "star_growth_acceleration": 0.4821428571428572,
+  "forks_7d": -2,
+  "forks_30d": -15,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 179,
+  "snapshot_count": 180,
   "authenticity": {
-    "organic_confidence": 72.4,
+    "organic_confidence": 72.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +60,14 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "13,282 forks for 33,496 stars (39.7%)."
+        "detail": "13,280 forks for 33,496 stars (39.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 46.1,
+        "score": 45.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 16 stars (-3 forks, 5.9x the daily average)."
+        "detail": "Largest 24h jump was 16 stars (-3 forks, 6.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 60.7,
+        "score": 60.9,
         "weight": 0.12,
-        "detail": "175 open issues for 33,496 stars (0.5%)."
+        "detail": "177 open issues for 33,496 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +99,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 13,282 forks for 33,496 stars (39.7%).",
+      "Fork-to-star ratio: 13,280 forks for 33,496 stars (39.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

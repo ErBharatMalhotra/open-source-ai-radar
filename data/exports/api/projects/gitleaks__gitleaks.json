@@ -4,8 +4,29 @@
   "description": "Find secrets with Gitleaks \ud83d\udd11",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 30660,
+  "topics": [
+    "security",
+    "security-tools",
+    "git",
+    "golang",
+    "go",
+    "secret",
+    "gitleaks",
+    "devsecops",
+    "hacktoberfest",
+    "ci-cd",
+    "cicd",
+    "cli",
+    "data-loss-prevention",
+    "dlp",
+    "open-source",
+    "ai-powered",
+    "llm",
+    "llm-inference",
+    "llm-training",
+    "nhi"
+  ],
+  "stars": 30665,
   "forks": 2333,
   "open_issues": 284,
   "watchers": 180,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-10-28T04:14:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/gitleaks.png",
-  "radar_score": 72.81,
-  "impact": 96.07,
+  "radar_score": 72.73,
+  "impact": 96.08,
   "velocity": 54.24,
-  "health": 61.6,
-  "global_percentile": 37.86,
+  "health": 61.26,
+  "global_percentile": 31.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Find secrets with Gitleaks \ud83d\udd11",
   "maturity": "Unknown",
-  "stars_7d": 277,
-  "stars_30d": 811,
-  "stars_90d": 811,
-  "star_growth_rate_7d": 39.57142857142857,
-  "star_growth_rate_30d": 33.791666666666664,
-  "star_growth_acceleration": 1.171041042804298,
+  "stars_7d": 281,
+  "stars_30d": 820,
+  "stars_90d": 820,
+  "star_growth_rate_7d": 40.142857142857146,
+  "star_growth_rate_30d": 34.166666666666664,
+  "star_growth_acceleration": 1.174912891986063,
   "forks_7d": 18,
-  "forks_30d": 59,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 258,
+  "forks_30d": 57,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 259,
   "authenticity": {
-    "organic_confidence": 89.0,
+    "organic_confidence": 88.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 91.4,
         "weight": 0.22,
-        "detail": "2,333 forks for 30,651 stars (7.6%)."
+        "detail": "2,333 forks for 30,665 stars (7.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.1,
+        "score": 92.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 59 stars (22 forks, 1.8x the daily average)."
       },
@@ -71,20 +92,20 @@
         "label": "Issue engagement",
         "score": 72.8,
         "weight": 0.12,
-        "detail": "284 open issues for 30,651 stars (0.9%)."
+        "detail": "284 open issues for 30,665 stars (0.9%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 95.0,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 7 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,333 forks for 30,651 stars (7.6%).",
+      "Fork-to-star ratio: 2,333 forks for 30,665 stars (7.6%).",
       "Burst pattern: Largest 24h jump was 59 stars (22 forks, 1.8x the daily average).",
-      "Maintenance cadence: Last push 6 days ago."
+      "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": []
   }

@@ -4,37 +4,57 @@
   "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
   "language": "Rust",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 128128,
-  "forks": 20303,
-  "open_issues": 121,
+  "topics": [
+    "remote-control",
+    "remote-desktop",
+    "teamviewer",
+    "anydesk",
+    "vnc",
+    "rdp",
+    "rust",
+    "p2p",
+    "flutter",
+    "flutter-apps",
+    "dart",
+    "rust-lang",
+    "wayland",
+    "linux",
+    "android",
+    "flatpak",
+    "ios",
+    "macos",
+    "windows"
+  ],
+  "stars": 128148,
+  "forks": 20304,
+  "open_issues": 120,
   "watchers": 638,
   "created_at": "2020-09-28T15:36:08Z",
   "pushed_at": "2026-11-04T05:57:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/rustdesk.png",
-  "radar_score": 78.19,
+  "radar_score": 78.18,
   "impact": 99.6,
-  "velocity": 67.89,
+  "velocity": 67.87,
   "health": 58.35,
-  "global_percentile": 83.14,
+  "global_percentile": 82.43,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
   "maturity": "Unknown",
-  "stars_7d": 851,
-  "stars_30d": 2454,
-  "stars_90d": 2454,
-  "star_growth_rate_7d": 121.57142857142857,
-  "star_growth_rate_30d": 111.54545454545455,
-  "star_growth_acceleration": 1.0898824077308185,
-  "forks_7d": 215,
-  "forks_30d": 657,
+  "stars_7d": 890,
+  "stars_30d": 2467,
+  "stars_90d": 2467,
+  "star_growth_rate_7d": 127.14285714285714,
+  "star_growth_rate_30d": 112.13636363636364,
+  "star_growth_acceleration": 1.1338236145694596,
+  "forks_7d": 226,
+  "forks_30d": 659,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 295,
+  "snapshot_count": 296,
   "authenticity": {
-    "organic_confidence": 84.3,
+    "organic_confidence": 84.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "20,287 forks for 128,080 stars (15.8%)."
+        "detail": "20,304 forks for 128,148 stars (15.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.4,
+        "score": 89.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 201 stars (52 forks, 2.0x the daily average)."
       },
@@ -69,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 34.6,
+        "score": 34.4,
         "weight": 0.12,
-        "detail": "123 open issues for 128,080 stars (0.1%)."
+        "detail": "120 open issues for 128,148 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +103,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 201 stars (52 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 20,287 forks for 128,080 stars (15.8%).",
+      "Fork-to-star ratio: 20,304 forks for 128,148 stars (15.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 123 open issues for 128,080 stars (0.1%)."
+      "Issue engagement: 120 open issues for 128,148 stars (0.1%)."
     ]
   }
 }

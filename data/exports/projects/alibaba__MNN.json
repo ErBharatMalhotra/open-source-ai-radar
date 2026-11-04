@@ -4,8 +4,20 @@
   "description": "MNN: A blazing-fast, lightweight inference engine battle-tested by Alibaba, powering high-performance on-device LLMs and Edge AI.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16348,
+  "topics": [
+    "mnn",
+    "convolution",
+    "vulkan",
+    "embedded-devices",
+    "winograd-algorithm",
+    "machine-learning",
+    "deep-learning",
+    "ml",
+    "arm",
+    "llm",
+    "transformer"
+  ],
+  "stars": 16349,
   "forks": 2502,
   "open_issues": 41,
   "watchers": 236,
@@ -13,26 +25,26 @@
   "pushed_at": "2026-11-04T02:30:20Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
-  "radar_score": 73.19,
+  "radar_score": 73.22,
   "impact": 94.99,
-  "velocity": 55.02,
+  "velocity": 55.1,
   "health": 63.75,
-  "global_percentile": 34.86,
+  "global_percentile": 35.14,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "MNN: A blazing-fast, lightweight inference engine battle-tested by Alibaba, powering high-performance on-device LLMs and Edge AI.",
   "maturity": "Unknown",
-  "stars_7d": 55,
-  "stars_30d": 176,
-  "stars_90d": 185,
-  "star_growth_rate_7d": 7.857142857142857,
-  "star_growth_rate_30d": 5.866666666666666,
-  "star_growth_acceleration": 1.3392857142857144,
-  "forks_7d": 11,
+  "stars_7d": 53,
+  "stars_30d": 178,
+  "stars_90d": 184,
+  "star_growth_rate_7d": 7.571428571428571,
+  "star_growth_rate_30d": 5.933333333333334,
+  "star_growth_acceleration": 1.276083467094703,
+  "forks_7d": 12,
   "forks_30d": 36,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 200,
+  "snapshot_count": 201,
   "authenticity": {
     "organic_confidence": 85.8,
     "verdict": "organic",
@@ -43,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "2,499 forks for 16,347 stars (15.3%)."
+        "detail": "2,502 forks for 16,349 stars (15.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.4,
+        "score": 87.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 13 stars (4 forks, 2.2x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 46.9,
+        "score": 47.5,
         "weight": 0.12,
-        "detail": "39 open issues for 16,347 stars (0.2%)."
+        "detail": "41 open issues for 16,349 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +95,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 13 stars (4 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 2,499 forks for 16,347 stars (15.3%).",
+      "Fork-to-star ratio: 2,502 forks for 16,349 stars (15.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

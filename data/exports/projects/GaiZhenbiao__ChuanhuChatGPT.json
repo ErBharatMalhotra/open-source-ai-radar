@@ -4,7 +4,25 @@
   "description": "GUI for ChatGPT API and many LLMs. Supports agents, file-based QA, GPT finetuning and query with web search. All with a neat UI.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "chatbot",
+    "chatgpt-api",
+    "chatglm",
+    "claude",
+    "dalle3",
+    "ernie",
+    "gemini",
+    "gemma",
+    "llama",
+    "midjourney",
+    "minimax",
+    "moss",
+    "ollama",
+    "qwen",
+    "spark",
+    "stablelm",
+    "inspurai"
+  ],
   "stars": 15248,
   "forks": 2179,
   "open_issues": 122,
@@ -13,28 +31,28 @@
   "pushed_at": "2026-09-16T11:44:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/GaiZhenbiao.png",
-  "radar_score": 67.41,
-  "impact": 93.4,
+  "radar_score": 67.38,
+  "impact": 93.43,
   "velocity": 49.5,
-  "health": 50.92,
-  "global_percentile": 11.43,
+  "health": 50.74,
+  "global_percentile": 11.29,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "GUI for ChatGPT API and many LLMs. Supports agents, file-based QA, GPT finetuning and query with web search. All with a neat UI.",
   "maturity": "Unknown",
-  "stars_7d": -6,
-  "stars_30d": -22,
-  "stars_90d": -29,
-  "star_growth_rate_7d": -0.8571428571428571,
-  "star_growth_rate_30d": -0.7586206896551724,
+  "stars_7d": -7,
+  "stars_30d": -24,
+  "stars_90d": -31,
+  "star_growth_rate_7d": -1.0,
+  "star_growth_rate_30d": -0.8,
   "star_growth_acceleration": 1.0,
   "forks_7d": -2,
   "forks_30d": -10,
-  "days_since_last_push": 48,
-  "freshness_score": 0.6187833918061408,
-  "snapshot_count": 93,
+  "days_since_last_push": 49,
+  "freshness_score": 0.6126263941844161,
+  "snapshot_count": 94,
   "authenticity": {
-    "organic_confidence": 91.4,
+    "organic_confidence": 91.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +61,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "2,179 forks for 15,250 stars (14.3%)."
+        "detail": "2,179 forks for 15,248 stars (14.3%)."
       },
       {
         "key": "burst",
@@ -71,19 +89,19 @@
         "label": "Issue engagement",
         "score": 69.0,
         "weight": 0.12,
-        "detail": "122 open issues for 15,250 stars (0.8%)."
+        "detail": "122 open issues for 15,248 stars (0.8%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 80.5,
+        "score": 80.2,
         "weight": 0.1,
-        "detail": "Last push 48 days ago."
+        "detail": "Last push 49 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 48 days ago.",
-      "Fork-to-star ratio: 2,179 forks for 15,250 stars (14.3%).",
+      "Maintenance cadence: Last push 49 days ago.",
+      "Fork-to-star ratio: 2,179 forks for 15,248 stars (14.3%).",
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": []

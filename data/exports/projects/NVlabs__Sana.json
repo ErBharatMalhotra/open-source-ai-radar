@@ -1,11 +1,26 @@
 {
   "full_name": "NVlabs/Sana",
   "url": "https://github.com/NVlabs/Sana",
-  "description": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
+  "description": "SANA & Sol: Efficient Generative Models and Full-Stack Training & Inference Engines for Image, Video, and World Modeling",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9764,
+  "topics": [
+    "diffusion",
+    "dit",
+    "pytorch",
+    "sana",
+    "text-to-image-generation",
+    "transformers",
+    "video-generation",
+    "linear-transformer",
+    "nvfp4",
+    "reinforcement-learning",
+    "system-algorithm-deisgn",
+    "text-to-video",
+    "world-models",
+    "streaming-video"
+  ],
+  "stars": 9765,
   "forks": 794,
   "open_issues": 130,
   "watchers": 97,
@@ -13,28 +28,28 @@
   "pushed_at": "2026-11-03T06:42:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVlabs.png",
-  "radar_score": 73.2,
-  "impact": 90.68,
+  "radar_score": 73.11,
+  "impact": 90.7,
   "velocity": 59.97,
-  "health": 63.75,
-  "global_percentile": 40.57,
+  "health": 63.38,
+  "global_percentile": 33.57,
   "category": "Generative AI",
   "sub_category": "image",
   "summary": "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer",
   "maturity": "Unknown",
-  "stars_7d": 96,
+  "stars_7d": 94,
   "stars_30d": 558,
   "stars_90d": 648,
-  "star_growth_rate_7d": 13.714285714285714,
+  "star_growth_rate_7d": 13.428571428571429,
   "star_growth_rate_30d": 19.24137931034483,
-  "star_growth_acceleration": 0.7127496159754223,
-  "forks_7d": 15,
-  "forks_30d": 55,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 167,
+  "star_growth_acceleration": 0.6979006656426011,
+  "forks_7d": 18,
+  "forks_30d": 57,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 168,
   "authenticity": {
-    "organic_confidence": 69.0,
+    "organic_confidence": 68.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +58,14 @@
         "label": "Fork-to-star ratio",
         "score": 93.3,
         "weight": 0.22,
-        "detail": "794 forks for 9,764 stars (8.1%)."
+        "detail": "794 forks for 9,765 stars (8.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 28.6,
+        "score": 28.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 175 stars (18 forks, 9.2x the daily average)."
+        "detail": "Largest 24h jump was 175 stars (18 forks, 9.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +86,7 @@
         "label": "Issue engagement",
         "score": 80.0,
         "weight": 0.12,
-        "detail": "130 open issues for 9,764 stars (1.3%)."
+        "detail": "130 open issues for 9,765 stars (1.3%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +97,12 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 130 open issues for 9,764 stars (1.3%).",
-      "Fork-to-star ratio: 794 forks for 9,764 stars (8.1%).",
+      "Issue engagement: 130 open issues for 9,765 stars (1.3%).",
+      "Fork-to-star ratio: 794 forks for 9,765 stars (8.1%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 175 stars (18 forks, 9.2x the daily average)."
+      "Burst pattern: Largest 24h jump was 175 stars (18 forks, 9.4x the daily average)."
     ]
   }
 }

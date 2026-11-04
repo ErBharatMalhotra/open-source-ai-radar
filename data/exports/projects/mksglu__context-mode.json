@@ -2,7 +2,7 @@
   "full_name": "mksglu/context-mode",
   "url": "https://github.com/mksglu/context-mode",
   "description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
-  "language": "TypeScript",
+  "language": "JavaScript",
   "license": "NOASSERTION",
   "topics": [
     "claude",
@@ -26,36 +26,36 @@
     "zed-extension",
     "context-mode"
   ],
-  "stars": 33425,
-  "forks": 2302,
-  "open_issues": 0,
+  "stars": 33449,
+  "forks": 2303,
+  "open_issues": 174,
   "watchers": 110,
   "created_at": "2026-02-23T05:56:28Z",
-  "pushed_at": "2026-11-04T10:50:52Z",
+  "pushed_at": "2026-11-04T17:25:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mksglu.png",
-  "radar_score": 71.26,
+  "radar_score": 77.6,
   "impact": 95.69,
-  "velocity": 54.72,
-  "health": 55.35,
-  "global_percentile": 23.29,
+  "velocity": 68.96,
+  "health": 60.75,
+  "global_percentile": 73.57,
   "category": "MCP",
   "sub_category": "tool",
   "summary": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
   "maturity": "Unknown",
-  "stars_7d": 899,
-  "stars_30d": 5673,
-  "stars_90d": 5673,
-  "star_growth_rate_7d": 128.42857142857142,
-  "star_growth_rate_30d": 257.8636363636364,
-  "star_growth_acceleration": 0.4980483996877439,
-  "forks_7d": 51,
-  "forks_30d": 333,
+  "stars_7d": 903,
+  "stars_30d": 5458,
+  "stars_90d": 5458,
+  "star_growth_rate_7d": 129.0,
+  "star_growth_rate_30d": 248.0909090909091,
+  "star_growth_acceleration": 0.519970685232686,
+  "forks_7d": 50,
+  "forks_30d": 321,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 298,
+  "snapshot_count": 299,
   "authenticity": {
-    "organic_confidence": 71.9,
+    "organic_confidence": 78.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -64,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 88.8,
         "weight": 0.22,
-        "detail": "2,302 forks for 33,425 stars (6.9%)."
+        "detail": "2,303 forks for 33,449 stars (6.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.3,
+        "score": 68.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 961 stars (47 forks, 3.6x the daily average)."
       },
@@ -90,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25,
+        "score": 60.6,
         "weight": 0.12,
-        "detail": "0 open issues for 33,425 stars (0.0%)."
+        "detail": "174 open issues for 33,449 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -103,11 +103,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,302 forks for 33,425 stars (6.9%).",
+      "Fork-to-star ratio: 2,303 forks for 33,449 stars (6.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Issue engagement: 0 open issues for 33,425 stars (0.0%)."
-    ]
+    "red_flags": []
   }
 }

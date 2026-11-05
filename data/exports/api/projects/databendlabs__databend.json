@@ -4,37 +4,52 @@
   "description": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  \u2014 rebuilt from scratch. Unified architecture on your S3.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9490,
+  "topics": [
+    "rust",
+    "database",
+    "serverless",
+    "bigdata",
+    "snowflake",
+    "ai",
+    "lakehouse",
+    "olap",
+    "sql",
+    "vector-database",
+    "cloud-native",
+    "elasticsearch",
+    "geospatial",
+    "vector-search"
+  ],
+  "stars": 9491,
   "forks": 901,
-  "open_issues": 327,
+  "open_issues": 341,
   "watchers": 92,
   "created_at": "2020-10-10T06:04:42Z",
-  "pushed_at": "2026-11-05T08:40:03Z",
+  "pushed_at": "2026-11-05T17:41:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/databendlabs.png",
   "radar_score": 70.83,
   "impact": 90.74,
-  "velocity": 53.13,
+  "velocity": 53.15,
   "health": 63.75,
-  "global_percentile": 27.14,
+  "global_percentile": 20.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  \u2014 rebuilt from scratch. Unified architecture on your S3.",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": 37,
-  "stars_90d": 34,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": 1.2333333333333334,
-  "star_growth_acceleration": 0.34749034749034746,
+  "stars_7d": 4,
+  "stars_30d": 38,
+  "stars_90d": 35,
+  "star_growth_rate_7d": 0.5714285714285714,
+  "star_growth_rate_30d": 1.2666666666666666,
+  "star_growth_acceleration": 0.45112781954887216,
   "forks_7d": 1,
   "forks_30d": 0,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 211,
+  "snapshot_count": 212,
   "authenticity": {
-    "organic_confidence": 88.2,
+    "organic_confidence": 88.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +58,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "901 forks for 9,490 stars (9.5%)."
+        "detail": "901 forks for 9,491 stars (9.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 70.9,
+        "score": 71.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (0 forks, 3.4x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (0 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +84,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 94.8,
+        "score": 95.3,
         "weight": 0.12,
-        "detail": "327 open issues for 9,490 stars (3.4%)."
+        "detail": "341 open issues for 9,491 stars (3.6%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +97,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 327 open issues for 9,490 stars (3.4%).",
-      "Fork-to-star ratio: 901 forks for 9,490 stars (9.5%).",
+      "Issue engagement: 341 open issues for 9,491 stars (3.6%).",
+      "Fork-to-star ratio: 901 forks for 9,491 stars (9.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

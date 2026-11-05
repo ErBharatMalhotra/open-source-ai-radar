@@ -30,24 +30,24 @@
   "impact": 96.94,
   "velocity": 59.88,
   "health": 58.35,
-  "global_percentile": 43.43,
+  "global_percentile": 42.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Open source AI job application bot in Python: browser automation and web scraping to read job postings, then auto-apply with a tailored resume and cover letter for each posting.",
   "maturity": "Unknown",
-  "stars_7d": 5,
-  "stars_30d": 5,
-  "stars_90d": 2147,
+  "stars_7d": -30,
+  "stars_30d": -30,
+  "stars_90d": 2112,
   "star_growth_rate_7d": 0.0,
   "star_growth_rate_30d": 0.0,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 1,
-  "forks_30d": 1,
+  "forks_7d": 2,
+  "forks_30d": 2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 36,
+  "snapshot_count": 37,
   "authenticity": {
-    "organic_confidence": 86.6,
+    "organic_confidence": 83.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -61,9 +61,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 100.0,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (1 forks, 0.6x the daily average)."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -95,8 +95,8 @@
       }
     ],
     "reasons": [
+      "Burst pattern: No single-day star surge in the last 30 days.",
       "Fork-to-star ratio: 4,739 forks for 32,390 stars (14.6%).",
-      "Burst pattern: Largest 24h jump was 5 stars (1 forks, 0.6x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

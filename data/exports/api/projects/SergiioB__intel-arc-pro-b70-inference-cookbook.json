@@ -1,7 +1,7 @@
 {
   "full_name": "SergiioB/intel-arc-pro-b70-inference-cookbook",
   "url": "https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook",
-  "description": "Open recipes, engine patches, and benchmark harnesses for LLM inference on Intel Arc Pro B60/B70 (Battlemage, Xe2). MoE 35B at 160 t/s decode / 7.5K t/s prefill single-stream, 27B at 50~ t/s decode / 1.7K t/s prefill single stream. vLLM XPU MTP unlocked. Muse Glimmer recipe added!!",
+  "description": "Pinned Intel Arc Pro B60/B70 inference recipes, engine patches and measurement records: Qwen3.8-27B EXL3 on one card (262,144 context, 63 tok/s; MTP3 measured lossy on 27% of a fixed 329-item set), Nemotron Bolt 74B, Flash-Next, dual-card routes, and a machine-checked catalog where each speculative row states whether the drafter changes the answer.",
   "language": "Python",
   "license": "MIT",
   "topics": [],
@@ -10,7 +10,7 @@
   "open_issues": 2,
   "watchers": 12,
   "created_at": "2026-08-06T14:20:06Z",
-  "pushed_at": "2026-11-05T00:09:57Z",
+  "pushed_at": "2026-11-05T11:02:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/SergiioB.png",
   "radar_score": 0,

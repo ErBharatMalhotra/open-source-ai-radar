@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-05T02:12:03.781574+00:00",
-  "total_scored": 6887,
+  "generated_at": "2026-11-05T08:53:25.821175+00:00",
+  "total_scored": 6895,
   "buckets": {
-    "organic": 3870,
-    "likely_organic": 2447,
+    "organic": 3878,
+    "likely_organic": 2446,
     "mixed": 505,
-    "suspicious": 65
+    "suspicious": 66
   },
   "most_suspicious": [
     {
@@ -57,9 +57,9 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 44.1,
+          "score": 44.0,
           "weight": 0.1,
-          "detail": "Last push 188 days ago."
+          "detail": "Last push 189 days ago."
         }
       ],
       "reasons": [],
@@ -67,15 +67,15 @@
         "Fork-to-star ratio: 0 forks for 241 stars (0.0%).",
         "Issue engagement: 0 open issues for 241 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.406538+00:00"
+      "computed_at": "2026-11-05T08:53:25.437462+00:00"
     },
     {
       "repo_full_name": "syfr512/SweetrollLM",
-      "stars": 101,
+      "stars": 100,
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
-      "organic_confidence": 22.7,
+      "organic_confidence": 22.6,
       "label": "Low Confidence",
       "verdict": "suspicious",
       "summary": "Pattern matches known star inflation.",
@@ -85,7 +85,7 @@
           "label": "Fork-to-star ratio",
           "score": 5,
           "weight": 0.22,
-          "detail": "0 forks for 101 stars (0.0%)."
+          "detail": "0 forks for 100 stars (0.0%)."
         },
         {
           "key": "burst",
@@ -113,22 +113,22 @@
           "label": "Issue engagement",
           "score": 25,
           "weight": 0.12,
-          "detail": "0 open issues for 101 stars (0.0%)."
+          "detail": "0 open issues for 100 stars (0.0%)."
         },
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 58.9,
+          "score": 58.6,
           "weight": 0.1,
-          "detail": "Last push 130 days ago."
+          "detail": "Last push 131 days ago."
         }
       ],
       "reasons": [],
       "red_flags": [
-        "Fork-to-star ratio: 0 forks for 101 stars (0.0%).",
-        "Issue engagement: 0 open issues for 101 stars (0.0%)."
+        "Fork-to-star ratio: 0 forks for 100 stars (0.0%).",
+        "Issue engagement: 0 open issues for 100 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.432069+00:00"
+      "computed_at": "2026-11-05T08:53:25.467956+00:00"
     },
     {
       "repo_full_name": "usedotai/dot-loom",
@@ -189,68 +189,7 @@
         "Fork-to-star ratio: 0 forks for 165 stars (0.0%).",
         "Issue engagement: 0 open issues for 165 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.417961+00:00"
-    },
-    {
-      "repo_full_name": "Fractal-Compute-Orchestrations/FractalAndroid",
-      "stars": 4893,
-      "forks": 0,
-      "stars_7d": 0,
-      "fork_ratio": 0.0,
-      "organic_confidence": 26.1,
-      "label": "Low Confidence",
-      "verdict": "suspicious",
-      "summary": "Pattern matches known star inflation.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 5,
-          "weight": 0.22,
-          "detail": "0 forks for 4,893 stars (0.0%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 25,
-          "weight": 0.12,
-          "detail": "0 open issues for 4,893 stars (0.0%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 74.0,
-          "weight": 0.1,
-          "detail": "Last push 74 days ago."
-        }
-      ],
-      "reasons": [],
-      "red_flags": [
-        "Fork-to-star ratio: 0 forks for 4,893 stars (0.0%).",
-        "Issue engagement: 0 open issues for 4,893 stars (0.0%)."
-      ],
-      "computed_at": "2026-11-05T02:12:03.320010+00:00"
+      "computed_at": "2026-11-05T08:53:25.450726+00:00"
     },
     {
       "repo_full_name": "endend2003-cmd/Tactical-Matrix-Console",
@@ -258,7 +197,7 @@
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
-      "organic_confidence": 26.1,
+      "organic_confidence": 26.0,
       "label": "Low Confidence",
       "verdict": "suspicious",
       "summary": "Pattern matches known star inflation.",
@@ -301,9 +240,9 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 73.8,
+          "score": 73.5,
           "weight": 0.1,
-          "detail": "Last push 75 days ago."
+          "detail": "Last push 76 days ago."
         }
       ],
       "reasons": [],
@@ -311,7 +250,7 @@
         "Fork-to-star ratio: 0 forks for 117 stars (0.0%).",
         "Issue engagement: 0 open issues for 117 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.427736+00:00"
+      "computed_at": "2026-11-05T08:53:25.462127+00:00"
     },
     {
       "repo_full_name": "rafaelmateo123/Arena-of-Autonomous-Threads",
@@ -319,7 +258,7 @@
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
-      "organic_confidence": 26.1,
+      "organic_confidence": 26.0,
       "label": "Low Confidence",
       "verdict": "suspicious",
       "summary": "Pattern matches known star inflation.",
@@ -362,9 +301,9 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 73.8,
+          "score": 73.5,
           "weight": 0.1,
-          "detail": "Last push 75 days ago."
+          "detail": "Last push 76 days ago."
         }
       ],
       "reasons": [],
@@ -372,7 +311,7 @@
         "Fork-to-star ratio: 0 forks for 117 stars (0.0%).",
         "Issue engagement: 0 open issues for 117 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.427755+00:00"
+      "computed_at": "2026-11-05T08:53:25.462147+00:00"
     },
     {
       "repo_full_name": "charan820/PhantomCrowd-Simulacra",
@@ -380,7 +319,7 @@
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
-      "organic_confidence": 26.1,
+      "organic_confidence": 26.0,
       "label": "Low Confidence",
       "verdict": "suspicious",
       "summary": "Pattern matches known star inflation.",
@@ -423,9 +362,9 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 73.8,
+          "score": 73.5,
           "weight": 0.1,
-          "detail": "Last push 75 days ago."
+          "detail": "Last push 76 days ago."
         }
       ],
       "reasons": [],
@@ -433,7 +372,7 @@
         "Fork-to-star ratio: 0 forks for 116 stars (0.0%).",
         "Issue engagement: 0 open issues for 116 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.428047+00:00"
+      "computed_at": "2026-11-05T08:53:25.462505+00:00"
     },
     {
       "repo_full_name": "Atrayee-dev/secure-ai-agent-boundary",
@@ -441,7 +380,7 @@
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
-      "organic_confidence": 26.1,
+      "organic_confidence": 26.0,
       "label": "Low Confidence",
       "verdict": "suspicious",
       "summary": "Pattern matches known star inflation.",
@@ -484,9 +423,9 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 73.8,
+          "score": 73.5,
           "weight": 0.1,
-          "detail": "Last push 75 days ago."
+          "detail": "Last push 76 days ago."
         }
       ],
       "reasons": [],
@@ -494,11 +433,72 @@
         "Fork-to-star ratio: 0 forks for 115 stars (0.0%).",
         "Issue engagement: 0 open issues for 115 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.428235+00:00"
+      "computed_at": "2026-11-05T08:53:25.462715+00:00"
     },
     {
       "repo_full_name": "janaador0827-commits/simulacra-forge",
       "stars": 115,
+      "forks": 0,
+      "stars_7d": 0,
+      "fork_ratio": 0.0,
+      "organic_confidence": 26.0,
+      "label": "Low Confidence",
+      "verdict": "suspicious",
+      "summary": "Pattern matches known star inflation.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 5,
+          "weight": 0.22,
+          "detail": "0 forks for 115 stars (0.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 25,
+          "weight": 0.12,
+          "detail": "0 open issues for 115 stars (0.0%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 73.5,
+          "weight": 0.1,
+          "detail": "Last push 76 days ago."
+        }
+      ],
+      "reasons": [],
+      "red_flags": [
+        "Fork-to-star ratio: 0 forks for 115 stars (0.0%).",
+        "Issue engagement: 0 open issues for 115 stars (0.0%)."
+      ],
+      "computed_at": "2026-11-05T08:53:25.462734+00:00"
+    },
+    {
+      "repo_full_name": "Fractal-Compute-Orchestrations/FractalAndroid",
+      "stars": 4888,
       "forks": 0,
       "stars_7d": 0,
       "fork_ratio": 0.0,
@@ -512,7 +512,7 @@
           "label": "Fork-to-star ratio",
           "score": 5,
           "weight": 0.22,
-          "detail": "0 forks for 115 stars (0.0%)."
+          "detail": "0 forks for 4,888 stars (0.0%)."
         },
         {
           "key": "burst",
@@ -540,22 +540,146 @@
           "label": "Issue engagement",
           "score": 25,
           "weight": 0.12,
-          "detail": "0 open issues for 115 stars (0.0%)."
+          "detail": "0 open issues for 4,888 stars (0.0%)."
         },
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 73.8,
+          "score": 74.0,
           "weight": 0.1,
-          "detail": "Last push 75 days ago."
+          "detail": "Last push 74 days ago."
         }
       ],
       "reasons": [],
       "red_flags": [
-        "Fork-to-star ratio: 0 forks for 115 stars (0.0%).",
-        "Issue engagement: 0 open issues for 115 stars (0.0%)."
+        "Fork-to-star ratio: 0 forks for 4,888 stars (0.0%).",
+        "Issue engagement: 0 open issues for 4,888 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.428251+00:00"
+      "computed_at": "2026-11-05T08:53:25.337139+00:00"
+    },
+    {
+      "repo_full_name": "CoordClaw/CoordClaw",
+      "stars": 160,
+      "forks": 0,
+      "stars_7d": 0,
+      "fork_ratio": 0.0,
+      "organic_confidence": 26.2,
+      "label": "Low Confidence",
+      "verdict": "suspicious",
+      "summary": "Pattern matches known star inflation.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 5,
+          "weight": 0.22,
+          "detail": "0 forks for 160 stars (0.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 25,
+          "weight": 0.12,
+          "detail": "0 open issues for 160 stars (0.0%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 74.2,
+          "weight": 0.1,
+          "detail": "Last push 73 days ago."
+        }
+      ],
+      "reasons": [],
+      "red_flags": [
+        "Fork-to-star ratio: 0 forks for 160 stars (0.0%).",
+        "Issue engagement: 0 open issues for 160 stars (0.0%)."
+      ],
+      "computed_at": "2026-11-05T08:53:25.451905+00:00"
+    },
+    {
+      "repo_full_name": "ChaoYuZhang001/CaoGen",
+      "stars": 121,
+      "forks": 0,
+      "stars_7d": 0,
+      "fork_ratio": 0.0,
+      "organic_confidence": 26.4,
+      "label": "Low Confidence",
+      "verdict": "suspicious",
+      "summary": "Pattern matches known star inflation.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 5,
+          "weight": 0.22,
+          "detail": "0 forks for 121 stars (0.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 25,
+          "weight": 0.12,
+          "detail": "0 open issues for 121 stars (0.0%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 75.2,
+          "weight": 0.1,
+          "detail": "Last push 69 days ago."
+        }
+      ],
+      "reasons": [
+        "Maintenance cadence: Last push 69 days ago."
+      ],
+      "red_flags": [
+        "Fork-to-star ratio: 0 forks for 121 stars (0.0%).",
+        "Issue engagement: 0 open issues for 121 stars (0.0%)."
+      ],
+      "computed_at": "2026-11-05T08:53:25.461217+00:00"
     },
     {
       "repo_full_name": "nil-sakariya/uninstall-copilot",
@@ -618,7 +742,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.420798+00:00"
+      "computed_at": "2026-11-05T08:53:25.454108+00:00"
     },
     {
       "repo_full_name": "DDGTESTDEV-IONICS/ollama-gui-simple",
@@ -681,7 +805,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.420815+00:00"
+      "computed_at": "2026-11-05T08:53:25.454132+00:00"
     },
     {
       "repo_full_name": "nooour2/buzz-transcriber-alt",
@@ -744,7 +868,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.420834+00:00"
+      "computed_at": "2026-11-05T08:53:25.454151+00:00"
     },
     {
       "repo_full_name": "24vojo-coder/rembg-gui-batch",
@@ -807,7 +931,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.420851+00:00"
+      "computed_at": "2026-11-05T08:53:25.454170+00:00"
     },
     {
       "repo_full_name": "claudiosequeida81-maker/whisper-gui-windows",
@@ -870,70 +994,7 @@
         "Fork-to-star ratio: 0 forks for 150 stars (0.0%).",
         "Issue engagement: 0 open issues for 150 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.420868+00:00"
-    },
-    {
-      "repo_full_name": "ChaoYuZhang001/CaoGen",
-      "stars": 121,
-      "forks": 0,
-      "stars_7d": 0,
-      "fork_ratio": 0.0,
-      "organic_confidence": 26.5,
-      "label": "Low Confidence",
-      "verdict": "suspicious",
-      "summary": "Pattern matches known star inflation.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 5,
-          "weight": 0.22,
-          "detail": "0 forks for 121 stars (0.0%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 25,
-          "weight": 0.12,
-          "detail": "0 open issues for 121 stars (0.0%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 75.5,
-          "weight": 0.1,
-          "detail": "Last push 68 days ago."
-        }
-      ],
-      "reasons": [
-        "Maintenance cadence: Last push 68 days ago."
-      ],
-      "red_flags": [
-        "Fork-to-star ratio: 0 forks for 121 stars (0.0%).",
-        "Issue engagement: 0 open issues for 121 stars (0.0%)."
-      ],
-      "computed_at": "2026-11-05T02:12:03.426888+00:00"
+      "computed_at": "2026-11-05T08:53:25.454192+00:00"
     },
     {
       "repo_full_name": "allouacheelias/disable-copilot-gui",
@@ -996,7 +1057,7 @@
         "Fork-to-star ratio: 0 forks for 119 stars (0.0%).",
         "Issue engagement: 0 open issues for 119 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.427548+00:00"
+      "computed_at": "2026-11-05T08:53:25.461897+00:00"
     },
     {
       "repo_full_name": "aigrantsindia/aigrantsindia",
@@ -1058,7 +1119,7 @@
         "Maintenance cadence: Last push 513 days ago.",
         "Fork-to-star ratio: 6 forks for 1,833 stars (0.3%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.344445+00:00"
+      "computed_at": "2026-11-05T08:53:25.365593+00:00"
     },
     {
       "repo_full_name": "Powertracall/local-llm-suite",
@@ -1121,7 +1182,7 @@
         "Fork-to-star ratio: 0 forks for 287 stars (0.0%).",
         "Issue engagement: 0 open issues for 287 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.401397+00:00"
+      "computed_at": "2026-11-05T08:53:25.431755+00:00"
     },
     {
       "repo_full_name": "Alice53211/auth-codex-plugin",
@@ -1172,37 +1233,39 @@
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 79.8,
+          "score": 79.5,
           "weight": 0.1,
-          "detail": "Last push 51 days ago."
+          "detail": "Last push 52 days ago."
         }
       ],
       "reasons": [
-        "Maintenance cadence: Last push 51 days ago."
+        "Maintenance cadence: Last push 52 days ago."
       ],
       "red_flags": [
         "Fork-to-star ratio: 0 forks for 136 stars (0.0%).",
         "Issue engagement: 0 open issues for 136 stars (0.0%)."
       ],
-      "computed_at": "2026-11-05T02:12:03.423581+00:00"
-    },
+      "computed_at": "2026-11-05T08:53:25.457300+00:00"
+    }
+  ],
+  "most_organic": [
     {
-      "repo_full_name": "AhmadHassan-BTed/Noria",
-      "stars": 4645,
-      "forks": 4,
+      "repo_full_name": "nightly-labs/openbot",
+      "stars": 5657,
+      "forks": 572,
       "stars_7d": 0,
-      "fork_ratio": 0.0009,
-      "organic_confidence": 27.5,
-      "label": "Low Confidence",
-      "verdict": "suspicious",
-      "summary": "Pattern matches known star inflation.",
+      "fork_ratio": 0.1011,
+      "organic_confidence": 100.0,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
       "signals": [
         {
           "key": "fork_ratio",
           "label": "Fork-to-star ratio",
-          "score": 11.5,
+          "score": 100.0,
           "weight": 0.22,
-          "detail": "4 forks for 4,645 stars (0.1%)."
+          "detail": "572 forks for 5,657 stars (10.1%)."
         },
         {
           "key": "burst",
@@ -1228,31 +1291,92 @@
         {
           "key": "engagement",
           "label": "Issue engagement",
-          "score": 25,
+          "score": 100,
           "weight": 0.12,
-          "detail": "0 open issues for 4,645 stars (0.0%)."
+          "detail": "463 open issues for 5,657 stars (8.2%)."
         },
         {
           "key": "maintenance",
           "label": "Maintenance cadence",
-          "score": 65.8,
+          "score": 100,
           "weight": 0.1,
-          "detail": "Last push 105 days ago."
+          "detail": "Last push 0 days ago."
         }
       ],
-      "reasons": [],
-      "red_flags": [
-        "Fork-to-star ratio: 4 forks for 4,645 stars (0.1%).",
-        "Issue engagement: 0 open issues for 4,645 stars (0.0%)."
+      "reasons": [
+        "Fork-to-star ratio: 572 forks for 5,657 stars (10.1%).",
+        "Issue engagement: 463 open issues for 5,657 stars (8.2%).",
+        "Maintenance cadence: Last push 0 days ago."
       ],
-      "computed_at": "2026-11-05T02:12:03.321230+00:00"
-    }
-  ],
-  "most_organic": [
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.333847+00:00"
+    },
     {
-      "repo_full_name": "nightly-labs/openbot",
-      "stars": 5520,
-      "forks": 559,
+      "repo_full_name": "happier-dev/happier",
+      "stars": 2145,
+      "forks": 214,
+      "stars_7d": 0,
+      "fork_ratio": 0.0998,
+      "organic_confidence": 100.0,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.9,
+          "weight": 0.22,
+          "detail": "214 forks for 2,145 stars (10.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "204 open issues for 2,145 stars (9.5%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 214 forks for 2,145 stars (10.0%).",
+        "Issue engagement: 204 open issues for 2,145 stars (9.5%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.360996+00:00"
+    },
+    {
+      "repo_full_name": "Code-Amadeus/Amadeus",
+      "stars": 523,
+      "forks": 53,
       "stars_7d": 0,
       "fork_ratio": 0.1013,
       "organic_confidence": 100.0,
@@ -1265,7 +1389,7 @@
           "label": "Fork-to-star ratio",
           "score": 100.0,
           "weight": 0.22,
-          "detail": "559 forks for 5,520 stars (10.1%)."
+          "detail": "53 forks for 523 stars (10.1%)."
         },
         {
           "key": "burst",
@@ -1293,7 +1417,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "446 open issues for 5,520 stars (8.1%)."
+          "detail": "29 open issues for 523 stars (5.5%)."
         },
         {
           "key": "maintenance",
@@ -1304,20 +1428,20 @@
         }
       ],
       "reasons": [
-        "Fork-to-star ratio: 559 forks for 5,520 stars (10.1%).",
-        "Issue engagement: 446 open issues for 5,520 stars (8.1%).",
+        "Fork-to-star ratio: 53 forks for 523 stars (10.1%).",
+        "Issue engagement: 29 open issues for 523 stars (5.5%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.317651+00:00"
+      "computed_at": "2026-11-05T08:53:25.409989+00:00"
     },
     {
-      "repo_full_name": "zephium-browser/Zephium",
-      "stars": 980,
-      "forks": 98,
+      "repo_full_name": "agent-substrate/substrate",
+      "stars": 6077,
+      "forks": 684,
       "stars_7d": 0,
-      "fork_ratio": 0.1,
-      "organic_confidence": 100.0,
+      "fork_ratio": 0.1126,
+      "organic_confidence": 99.9,
       "label": "High Confidence",
       "verdict": "organic",
       "summary": "Growth pattern looks organic.",
@@ -1325,9 +1449,195 @@
         {
           "key": "fork_ratio",
           "label": "Fork-to-star ratio",
-          "score": 100.0,
+          "score": 99.7,
           "weight": 0.22,
-          "detail": "98 forks for 980 stars (10.0%)."
+          "detail": "684 forks for 6,077 stars (11.3%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": 100.0,
+          "weight": 0.24,
+          "detail": "Largest 24h jump was 8 stars (0 forks, 0.4x the daily average)."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "559 open issues for 6,077 stars (9.2%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 684 forks for 6,077 stars (11.3%).",
+        "Burst pattern: Largest 24h jump was 8 stars (0 forks, 0.4x the daily average).",
+        "Issue engagement: 559 open issues for 6,077 stars (9.2%)."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.331423+00:00"
+    },
+    {
+      "repo_full_name": "gpustack/gpustack",
+      "stars": 5976,
+      "forks": 721,
+      "stars_7d": 0,
+      "fork_ratio": 0.1206,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.6,
+          "weight": 0.22,
+          "detail": "721 forks for 5,976 stars (12.1%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": 100.0,
+          "weight": 0.24,
+          "detail": "Largest 24h jump was 1 stars (0 forks, 0.2x the daily average)."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "661 open issues for 5,976 stars (11.1%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 721 forks for 5,976 stars (12.1%).",
+        "Burst pattern: Largest 24h jump was 1 stars (0 forks, 0.2x the daily average).",
+        "Issue engagement: 661 open issues for 5,976 stars (11.1%)."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.332007+00:00"
+    },
+    {
+      "repo_full_name": "vercel/eve",
+      "stars": 5801,
+      "forks": 642,
+      "stars_7d": 0,
+      "fork_ratio": 0.1107,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.8,
+          "weight": 0.22,
+          "detail": "642 forks for 5,801 stars (11.1%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": 100.0,
+          "weight": 0.24,
+          "detail": "Largest 24h jump was 6 stars (1 forks, 0.5x the daily average)."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "333 open issues for 5,801 stars (5.7%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 642 forks for 5,801 stars (11.1%).",
+        "Burst pattern: Largest 24h jump was 6 stars (1 forks, 0.5x the daily average).",
+        "Issue engagement: 333 open issues for 5,801 stars (5.7%)."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.333113+00:00"
+    },
+    {
+      "repo_full_name": "hardbeat920/monocode",
+      "stars": 3620,
+      "forks": 414,
+      "stars_7d": 0,
+      "fork_ratio": 0.1144,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.7,
+          "weight": 0.22,
+          "detail": "414 forks for 3,620 stars (11.4%)."
         },
         {
           "key": "burst",
@@ -1355,7 +1665,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "88 open issues for 980 stars (9.0%)."
+          "detail": "309 open issues for 3,620 stars (8.5%)."
         },
         {
           "key": "maintenance",
@@ -1366,20 +1676,82 @@
         }
       ],
       "reasons": [
-        "Fork-to-star ratio: 98 forks for 980 stars (10.0%).",
-        "Issue engagement: 88 open issues for 980 stars (9.0%).",
+        "Fork-to-star ratio: 414 forks for 3,620 stars (11.4%).",
+        "Issue engagement: 309 open issues for 3,620 stars (8.5%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.362042+00:00"
+      "computed_at": "2026-11-05T08:53:25.344816+00:00"
     },
     {
-      "repo_full_name": "onevcat/Prowl",
-      "stars": 670,
-      "forks": 70,
+      "repo_full_name": "LodyAI/Lody",
+      "stars": 1667,
+      "forks": 181,
       "stars_7d": 0,
-      "fork_ratio": 0.1045,
-      "organic_confidence": 100.0,
+      "fork_ratio": 0.1086,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.8,
+          "weight": 0.22,
+          "detail": "181 forks for 1,667 stars (10.9%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "185 open issues for 1,667 stars (11.1%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 181 forks for 1,667 stars (10.9%).",
+        "Issue engagement: 185 open issues for 1,667 stars (11.1%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.368514+00:00"
+    },
+    {
+      "repo_full_name": "zephium-browser/Zephium",
+      "stars": 983,
+      "forks": 98,
+      "stars_7d": 0,
+      "fork_ratio": 0.0997,
+      "organic_confidence": 99.9,
       "label": "High Confidence",
       "verdict": "organic",
       "summary": "Growth pattern looks organic.",
@@ -1389,7 +1761,131 @@
           "label": "Fork-to-star ratio",
           "score": 99.9,
           "weight": 0.22,
-          "detail": "70 forks for 670 stars (10.4%)."
+          "detail": "98 forks for 983 stars (10.0%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "88 open issues for 983 stars (9.0%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 98 forks for 983 stars (10.0%).",
+        "Issue engagement: 88 open issues for 983 stars (9.0%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.385999+00:00"
+    },
+    {
+      "repo_full_name": "scenario-labs/blender-plugin",
+      "stars": 952,
+      "forks": 97,
+      "stars_7d": 0,
+      "fork_ratio": 0.1019,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 100.0,
+          "weight": 0.22,
+          "detail": "97 forks for 952 stars (10.2%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 99.8,
+          "weight": 0.12,
+          "detail": "47 open issues for 952 stars (4.9%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Issue engagement: 47 open issues for 952 stars (4.9%).",
+        "Fork-to-star ratio: 97 forks for 952 stars (10.2%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.387559+00:00"
+    },
+    {
+      "repo_full_name": "onevcat/Prowl",
+      "stars": 670,
+      "forks": 71,
+      "stars_7d": 0,
+      "fork_ratio": 0.106,
+      "organic_confidence": 99.9,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.9,
+          "weight": 0.22,
+          "detail": "71 forks for 670 stars (10.6%)."
         },
         {
           "key": "burst",
@@ -1428,508 +1924,12 @@
         }
       ],
       "reasons": [
-        "Fork-to-star ratio: 70 forks for 670 stars (10.4%).",
+        "Fork-to-star ratio: 71 forks for 670 stars (10.6%).",
         "Issue engagement: 36 open issues for 670 stars (5.4%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.374790+00:00"
-    },
-    {
-      "repo_full_name": "Code-Amadeus/Amadeus",
-      "stars": 519,
-      "forks": 52,
-      "stars_7d": 0,
-      "fork_ratio": 0.1002,
-      "organic_confidence": 100.0,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 100.0,
-          "weight": 0.22,
-          "detail": "52 forks for 519 stars (10.0%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "28 open issues for 519 stars (5.4%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 52 forks for 519 stars (10.0%).",
-        "Issue engagement: 28 open issues for 519 stars (5.4%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.382837+00:00"
-    },
-    {
-      "repo_full_name": "agent-substrate/substrate",
-      "stars": 6069,
-      "forks": 683,
-      "stars_7d": 0,
-      "fork_ratio": 0.1125,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.7,
-          "weight": 0.22,
-          "detail": "683 forks for 6,069 stars (11.3%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": 100.0,
-          "weight": 0.24,
-          "detail": "Largest 24h jump was 8 stars (0 forks, 0.4x the daily average)."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "558 open issues for 6,069 stars (9.2%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 683 forks for 6,069 stars (11.3%).",
-        "Burst pattern: Largest 24h jump was 8 stars (0 forks, 0.4x the daily average).",
-        "Issue engagement: 558 open issues for 6,069 stars (9.2%)."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.315006+00:00"
-    },
-    {
-      "repo_full_name": "gpustack/gpustack",
-      "stars": 5970,
-      "forks": 720,
-      "stars_7d": 0,
-      "fork_ratio": 0.1206,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.6,
-          "weight": 0.22,
-          "detail": "720 forks for 5,970 stars (12.1%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": 100.0,
-          "weight": 0.24,
-          "detail": "Largest 24h jump was 1 stars (0 forks, 0.2x the daily average)."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "660 open issues for 5,970 stars (11.1%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 720 forks for 5,970 stars (12.1%).",
-        "Burst pattern: Largest 24h jump was 1 stars (0 forks, 0.2x the daily average).",
-        "Issue engagement: 660 open issues for 5,970 stars (11.1%)."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.315533+00:00"
-    },
-    {
-      "repo_full_name": "vercel/eve",
-      "stars": 5793,
-      "forks": 642,
-      "stars_7d": 0,
-      "fork_ratio": 0.1108,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.8,
-          "weight": 0.22,
-          "detail": "642 forks for 5,793 stars (11.1%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": 100.0,
-          "weight": 0.24,
-          "detail": "Largest 24h jump was 6 stars (1 forks, 0.5x the daily average)."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "332 open issues for 5,793 stars (5.7%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 642 forks for 5,793 stars (11.1%).",
-        "Burst pattern: Largest 24h jump was 6 stars (1 forks, 0.5x the daily average).",
-        "Issue engagement: 332 open issues for 5,793 stars (5.7%)."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.316590+00:00"
-    },
-    {
-      "repo_full_name": "hardbeat920/monocode",
-      "stars": 3606,
-      "forks": 414,
-      "stars_7d": 0,
-      "fork_ratio": 0.1148,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.7,
-          "weight": 0.22,
-          "detail": "414 forks for 3,606 stars (11.5%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "306 open issues for 3,606 stars (8.5%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 414 forks for 3,606 stars (11.5%).",
-        "Issue engagement: 306 open issues for 3,606 stars (8.5%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.326697+00:00"
-    },
-    {
-      "repo_full_name": "happier-dev/happier",
-      "stars": 2139,
-      "forks": 213,
-      "stars_7d": 0,
-      "fork_ratio": 0.0996,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.8,
-          "weight": 0.22,
-          "detail": "213 forks for 2,139 stars (10.0%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "202 open issues for 2,139 stars (9.4%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 213 forks for 2,139 stars (10.0%).",
-        "Issue engagement: 202 open issues for 2,139 stars (9.4%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.340513+00:00"
-    },
-    {
-      "repo_full_name": "LodyAI/Lody",
-      "stars": 1663,
-      "forks": 180,
-      "stars_7d": 0,
-      "fork_ratio": 0.1082,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.8,
-          "weight": 0.22,
-          "detail": "180 forks for 1,663 stars (10.8%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "184 open issues for 1,663 stars (11.1%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 180 forks for 1,663 stars (10.8%).",
-        "Issue engagement: 184 open issues for 1,663 stars (11.1%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.347017+00:00"
-    },
-    {
-      "repo_full_name": "scenario-labs/blender-plugin",
-      "stars": 947,
-      "forks": 97,
-      "stars_7d": 0,
-      "fork_ratio": 0.1024,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 100.0,
-          "weight": 0.22,
-          "detail": "97 forks for 947 stars (10.2%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 99.9,
-          "weight": 0.12,
-          "detail": "47 open issues for 947 stars (5.0%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Issue engagement: 47 open issues for 947 stars (5.0%).",
-        "Fork-to-star ratio: 97 forks for 947 stars (10.2%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.363508+00:00"
+      "computed_at": "2026-11-05T08:53:25.400851+00:00"
     },
     {
       "repo_full_name": "razzant/claudexor",
@@ -1991,7 +1991,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.382576+00:00"
+      "computed_at": "2026-11-05T08:53:25.409969+00:00"
     },
     {
       "repo_full_name": "xybrid-ai/xybrid",
@@ -2053,69 +2053,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.383116+00:00"
-    },
-    {
-      "repo_full_name": "mezmo/aura",
-      "stars": 412,
-      "forks": 44,
-      "stars_7d": 0,
-      "fork_ratio": 0.1068,
-      "organic_confidence": 99.9,
-      "label": "High Confidence",
-      "verdict": "organic",
-      "summary": "Growth pattern looks organic.",
-      "signals": [
-        {
-          "key": "fork_ratio",
-          "label": "Fork-to-star ratio",
-          "score": 99.9,
-          "weight": 0.22,
-          "detail": "44 forks for 412 stars (10.7%)."
-        },
-        {
-          "key": "burst",
-          "label": "Burst pattern",
-          "score": null,
-          "weight": 0.24,
-          "detail": "Not enough snapshots yet."
-        },
-        {
-          "key": "alignment",
-          "label": "Star/fork velocity alignment",
-          "score": null,
-          "weight": 0.18,
-          "detail": "Weekly star growth too small to compare."
-        },
-        {
-          "key": "acceleration",
-          "label": "Growth acceleration",
-          "score": null,
-          "weight": 0.14,
-          "detail": "No acceleration data."
-        },
-        {
-          "key": "engagement",
-          "label": "Issue engagement",
-          "score": 100,
-          "weight": 0.12,
-          "detail": "144 open issues for 412 stars (35.0%)."
-        },
-        {
-          "key": "maintenance",
-          "label": "Maintenance cadence",
-          "score": 100,
-          "weight": 0.1,
-          "detail": "Last push 0 days ago."
-        }
-      ],
-      "reasons": [
-        "Fork-to-star ratio: 44 forks for 412 stars (10.7%).",
-        "Issue engagement: 144 open issues for 412 stars (35.0%).",
-        "Maintenance cadence: Last push 0 days ago."
-      ],
-      "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.391017+00:00"
+      "computed_at": "2026-11-05T08:53:25.410651+00:00"
     },
     {
       "repo_full_name": "TypeWhisper/typewhisper-win",
@@ -2161,7 +2099,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "13 open issues for 242 stars (5.4%)."
+          "detail": "14 open issues for 242 stars (5.8%)."
         },
         {
           "key": "maintenance",
@@ -2173,11 +2111,11 @@
       ],
       "reasons": [
         "Fork-to-star ratio: 27 forks for 242 stars (11.2%).",
-        "Issue engagement: 13 open issues for 242 stars (5.4%).",
+        "Issue engagement: 14 open issues for 242 stars (5.8%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.406400+00:00"
+      "computed_at": "2026-11-05T08:53:25.437289+00:00"
     },
     {
       "repo_full_name": "fsdatalab/quail",
@@ -2239,7 +2177,7 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.415397+00:00"
+      "computed_at": "2026-11-05T08:53:25.447805+00:00"
     },
     {
       "repo_full_name": "grafana/cog",
@@ -2301,14 +2239,14 @@
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.431402+00:00"
+      "computed_at": "2026-11-05T08:53:25.466801+00:00"
     },
     {
       "repo_full_name": "FlashML-org/FreeVideo",
-      "stars": 2760,
-      "forks": 331,
+      "stars": 2773,
+      "forks": 332,
       "stars_7d": 0,
-      "fork_ratio": 0.1199,
+      "fork_ratio": 0.1197,
       "organic_confidence": 99.8,
       "label": "High Confidence",
       "verdict": "organic",
@@ -2319,7 +2257,7 @@
           "label": "Fork-to-star ratio",
           "score": 99.6,
           "weight": 0.22,
-          "detail": "331 forks for 2,760 stars (12.0%)."
+          "detail": "332 forks for 2,773 stars (12.0%)."
         },
         {
           "key": "burst",
@@ -2347,7 +2285,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "437 open issues for 2,760 stars (15.8%)."
+          "detail": "440 open issues for 2,773 stars (15.9%)."
         },
         {
           "key": "maintenance",
@@ -2358,19 +2296,19 @@
         }
       ],
       "reasons": [
-        "Fork-to-star ratio: 331 forks for 2,760 stars (12.0%).",
-        "Issue engagement: 437 open issues for 2,760 stars (15.8%).",
+        "Fork-to-star ratio: 332 forks for 2,773 stars (12.0%).",
+        "Issue engagement: 440 open issues for 2,773 stars (15.9%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.333172+00:00"
+      "computed_at": "2026-11-05T08:53:25.352468+00:00"
     },
     {
       "repo_full_name": "mirage-project/mirage",
-      "stars": 2596,
+      "stars": 2599,
       "forks": 274,
       "stars_7d": 0,
-      "fork_ratio": 0.1055,
+      "fork_ratio": 0.1054,
       "organic_confidence": 99.8,
       "label": "High Confidence",
       "verdict": "organic",
@@ -2381,7 +2319,7 @@
           "label": "Fork-to-star ratio",
           "score": 99.9,
           "weight": 0.22,
-          "detail": "274 forks for 2,596 stars (10.6%)."
+          "detail": "274 forks for 2,599 stars (10.5%)."
         },
         {
           "key": "burst",
@@ -2409,7 +2347,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "213 open issues for 2,596 stars (8.2%)."
+          "detail": "213 open issues for 2,599 stars (8.2%)."
         },
         {
           "key": "maintenance",
@@ -2421,18 +2359,18 @@
       ],
       "reasons": [
         "Maintenance cadence: Last push 1 days ago.",
-        "Fork-to-star ratio: 274 forks for 2,596 stars (10.6%).",
-        "Issue engagement: 213 open issues for 2,596 stars (8.2%)."
+        "Fork-to-star ratio: 274 forks for 2,599 stars (10.5%).",
+        "Issue engagement: 213 open issues for 2,599 stars (8.2%)."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.334817+00:00"
+      "computed_at": "2026-11-05T08:53:25.354513+00:00"
     },
     {
-      "repo_full_name": "NVIDIA/spark-local-inference",
-      "stars": 765,
-      "forks": 89,
+      "repo_full_name": "GD4AI/obsidian-llm-wiki",
+      "stars": 773,
+      "forks": 95,
       "stars_7d": 0,
-      "fork_ratio": 0.1163,
+      "fork_ratio": 0.1229,
       "organic_confidence": 99.8,
       "label": "High Confidence",
       "verdict": "organic",
@@ -2441,9 +2379,9 @@
         {
           "key": "fork_ratio",
           "label": "Fork-to-star ratio",
-          "score": 99.7,
+          "score": 99.5,
           "weight": 0.22,
-          "detail": "89 forks for 765 stars (11.6%)."
+          "detail": "95 forks for 773 stars (12.3%)."
         },
         {
           "key": "burst",
@@ -2471,7 +2409,7 @@
           "label": "Issue engagement",
           "score": 100,
           "weight": 0.12,
-          "detail": "45 open issues for 765 stars (5.9%)."
+          "detail": "41 open issues for 773 stars (5.3%)."
         },
         {
           "key": "maintenance",
@@ -2482,12 +2420,74 @@
         }
       ],
       "reasons": [
-        "Fork-to-star ratio: 89 forks for 765 stars (11.6%).",
-        "Issue engagement: 45 open issues for 765 stars (5.9%).",
+        "Fork-to-star ratio: 95 forks for 773 stars (12.3%).",
+        "Issue engagement: 41 open issues for 773 stars (5.3%).",
         "Maintenance cadence: Last push 0 days ago."
       ],
       "red_flags": [],
-      "computed_at": "2026-11-05T02:12:03.370734+00:00"
+      "computed_at": "2026-11-05T08:53:25.395623+00:00"
+    },
+    {
+      "repo_full_name": "NVIDIA/spark-local-inference",
+      "stars": 767,
+      "forks": 90,
+      "stars_7d": 0,
+      "fork_ratio": 0.1173,
+      "organic_confidence": 99.8,
+      "label": "High Confidence",
+      "verdict": "organic",
+      "summary": "Growth pattern looks organic.",
+      "signals": [
+        {
+          "key": "fork_ratio",
+          "label": "Fork-to-star ratio",
+          "score": 99.7,
+          "weight": 0.22,
+          "detail": "90 forks for 767 stars (11.7%)."
+        },
+        {
+          "key": "burst",
+          "label": "Burst pattern",
+          "score": null,
+          "weight": 0.24,
+          "detail": "Not enough snapshots yet."
+        },
+        {
+          "key": "alignment",
+          "label": "Star/fork velocity alignment",
+          "score": null,
+          "weight": 0.18,
+          "detail": "Weekly star growth too small to compare."
+        },
+        {
+          "key": "acceleration",
+          "label": "Growth acceleration",
+          "score": null,
+          "weight": 0.14,
+          "detail": "No acceleration data."
+        },
+        {
+          "key": "engagement",
+          "label": "Issue engagement",
+          "score": 100,
+          "weight": 0.12,
+          "detail": "44 open issues for 767 stars (5.7%)."
+        },
+        {
+          "key": "maintenance",
+          "label": "Maintenance cadence",
+          "score": 100,
+          "weight": 0.1,
+          "detail": "Last push 0 days ago."
+        }
+      ],
+      "reasons": [
+        "Fork-to-star ratio: 90 forks for 767 stars (11.7%).",
+        "Issue engagement: 44 open issues for 767 stars (5.7%).",
+        "Maintenance cadence: Last push 0 days ago."
+      ],
+      "red_flags": [],
+      "computed_at": "2026-11-05T08:53:25.395967+00:00"
     }
   ]
 }

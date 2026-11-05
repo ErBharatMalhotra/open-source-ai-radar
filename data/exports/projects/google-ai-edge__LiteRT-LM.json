@@ -4,37 +4,41 @@
   "description": "LiteRT-LM is Google's production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6815,
+  "topics": [
+    "edge-ai",
+    "on-device-ai",
+    "on-device-llm"
+  ],
+  "stars": 6817,
   "forks": 781,
-  "open_issues": 221,
-  "watchers": 68,
+  "open_issues": 220,
+  "watchers": 67,
   "created_at": "2025-04-14T21:00:20Z",
-  "pushed_at": "2026-11-04T19:25:37Z",
+  "pushed_at": "2026-11-05T02:00:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google-ai-edge.png",
-  "radar_score": 72.71,
+  "radar_score": 72.7,
   "impact": 88.79,
-  "velocity": 60.73,
+  "velocity": 60.72,
   "health": 63.75,
-  "global_percentile": 40.57,
+  "global_percentile": 38.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "LiteRT-LM is Google's production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices.",
   "maturity": "Unknown",
-  "stars_7d": 17,
-  "stars_30d": 237,
-  "stars_90d": 525,
-  "star_growth_rate_7d": 8.5,
-  "star_growth_rate_30d": 7.9,
-  "star_growth_acceleration": 1.0759493670886076,
-  "forks_7d": 4,
-  "forks_30d": 42,
+  "stars_7d": 29,
+  "stars_30d": 230,
+  "stars_90d": 537,
+  "star_growth_rate_7d": 7.25,
+  "star_growth_rate_30d": 7.931034482758621,
+  "star_growth_acceleration": 0.9141304347826087,
+  "forks_7d": 5,
+  "forks_30d": 41,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 86,
+  "snapshot_count": 87,
   "authenticity": {
-    "organic_confidence": 96.5,
+    "organic_confidence": 96.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +47,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "781 forks for 6,815 stars (11.5%)."
+        "detail": "781 forks for 6,817 stars (11.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.2,
+        "score": 93.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 13 stars (4 forks, 1.7x the daily average)."
       },
@@ -71,7 +75,7 @@
         "label": "Issue engagement",
         "score": 94.1,
         "weight": 0.12,
-        "detail": "221 open issues for 6,815 stars (3.2%)."
+        "detail": "220 open issues for 6,817 stars (3.2%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +87,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 13 stars (4 forks, 1.7x the daily average).",
-      "Issue engagement: 221 open issues for 6,815 stars (3.2%).",
-      "Fork-to-star ratio: 781 forks for 6,815 stars (11.5%)."
+      "Issue engagement: 220 open issues for 6,817 stars (3.2%).",
+      "Fork-to-star ratio: 781 forks for 6,817 stars (11.5%)."
     ],
     "red_flags": []
   }

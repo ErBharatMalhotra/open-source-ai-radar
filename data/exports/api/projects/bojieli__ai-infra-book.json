@@ -4,51 +4,67 @@
   "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 7316,
-  "forks": 580,
+  "topics": [
+    "accelerator",
+    "ai-infra",
+    "ai-infrastructure",
+    "book",
+    "datacenter-network",
+    "deepseek",
+    "distributed-systems",
+    "gpu",
+    "kv-cache",
+    "llm",
+    "llm-inference",
+    "llm-serving",
+    "llm-training",
+    "mixture-of-experts",
+    "performance-engineering"
+  ],
+  "stars": 7319,
+  "forks": 581,
   "open_issues": 6,
   "watchers": 21,
   "created_at": "2026-08-22T15:30:41Z",
   "pushed_at": "2026-10-01T08:19:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bojieli.png",
-  "radar_score": 66.89,
-  "impact": 85.79,
-  "velocity": 58.35,
-  "health": 48.59,
-  "global_percentile": 11.14,
+  "radar_score": 66.87,
+  "impact": 85.86,
+  "velocity": 58.38,
+  "health": 48.36,
+  "global_percentile": 13.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
   "maturity": "Unknown",
-  "stars_7d": 228,
-  "stars_30d": 1438,
-  "stars_90d": 2614,
-  "star_growth_rate_7d": 32.57142857142857,
-  "star_growth_rate_30d": 47.93333333333333,
-  "star_growth_acceleration": 0.6795151996820982,
-  "forks_7d": 13,
-  "forks_30d": 150,
-  "days_since_last_push": 33,
-  "freshness_score": 0.7189237334319262,
-  "snapshot_count": 44,
+  "stars_7d": 212,
+  "stars_30d": 1412,
+  "stars_90d": 2648,
+  "star_growth_rate_7d": 30.285714285714285,
+  "star_growth_rate_30d": 48.689655172413794,
+  "star_growth_acceleration": 0.6220153783893161,
+  "forks_7d": 15,
+  "forks_30d": 148,
+  "days_since_last_push": 34,
+  "freshness_score": 0.7117703227626097,
+  "snapshot_count": 45,
   "authenticity": {
-    "organic_confidence": 76.7,
+    "organic_confidence": 76.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 92.5,
+        "score": 92.6,
         "weight": 0.22,
-        "detail": "580 forks for 7,316 stars (7.9%)."
+        "detail": "581 forks for 7,319 stars (7.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 80.9,
+        "score": 80.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 124 stars (9 forks, 2.6x the daily average)."
       },
@@ -71,7 +87,7 @@
         "label": "Issue engagement",
         "score": 33.2,
         "weight": 0.12,
-        "detail": "6 open issues for 7,316 stars (0.1%)."
+        "detail": "6 open issues for 7,319 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,10 +100,10 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 124 stars (9 forks, 2.6x the daily average).",
       "Maintenance cadence: Last push 34 days ago.",
-      "Fork-to-star ratio: 580 forks for 7,316 stars (7.9%)."
+      "Fork-to-star ratio: 581 forks for 7,319 stars (7.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 6 open issues for 7,316 stars (0.1%)."
+      "Issue engagement: 6 open issues for 7,319 stars (0.1%)."
     ]
   }
 }

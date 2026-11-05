@@ -4,8 +4,29 @@
   "description": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into editable, tested draw.io architecture diagrams: incremental sync, multi-view projection, drift diff, CI architecture tests, whiteboard derasterize, interactive HTML/PPTX/Mermaid exports.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 10570,
+  "topics": [
+    "drawio",
+    "diagram",
+    "agent-skills",
+    "architecture-diagram",
+    "claude-code",
+    "flowchart",
+    "uml",
+    "sysml",
+    "bpmn",
+    "image-to-diagram",
+    "architecture",
+    "c4-model",
+    "github-actions",
+    "kubernetes",
+    "mcp-server",
+    "terraform",
+    "diagrams-as-code",
+    "asyncapi",
+    "protobuf",
+    "graphql"
+  ],
+  "stars": 10572,
   "forks": 728,
   "open_issues": 0,
   "watchers": 23,
@@ -14,27 +35,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/Agents365-ai.png",
   "radar_score": 68.1,
-  "impact": 87.9,
+  "impact": 87.92,
   "velocity": 53.22,
   "health": 57.25,
-  "global_percentile": 10.71,
+  "global_percentile": 17.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Generate draw.io diagrams from natural language \u2014 11 presets (UML, SysML/MBSE, BPMN, network, C4\u2026), 39 tools: codebase/CI/infra-to-diagram, image\u2192editable diagram, Databricks product icons, mind maps, build-up animation, exec-view compression, click-through runbooks, PR diff bot. Vision self-check, ",
   "maturity": "Unknown",
-  "stars_7d": 168,
-  "stars_30d": 631,
-  "stars_90d": 631,
-  "star_growth_rate_7d": 24.0,
-  "star_growth_rate_30d": 21.75862068965517,
-  "star_growth_acceleration": 1.1030110935023774,
-  "forks_7d": 8,
+  "stars_7d": 160,
+  "stars_30d": 630,
+  "stars_90d": 630,
+  "star_growth_rate_7d": 22.857142857142858,
+  "star_growth_rate_30d": 21.724137931034484,
+  "star_growth_acceleration": 1.0521541950113378,
+  "forks_7d": 7,
   "forks_30d": 28,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 225,
+  "snapshot_count": 226,
   "authenticity": {
-    "organic_confidence": 81.2,
+    "organic_confidence": 81.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 88.8,
         "weight": 0.22,
-        "detail": "728 forks for 10,570 stars (6.9%)."
+        "detail": "728 forks for 10,572 stars (6.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.4,
+        "score": 95.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 31 stars (8 forks, 1.5x the daily average)."
       },
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 10,570 stars (0.0%)."
+        "detail": "0 open issues for 10,572 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 728 forks for 10,570 stars (6.9%).",
+      "Fork-to-star ratio: 728 forks for 10,572 stars (6.9%).",
       "Burst pattern: Largest 24h jump was 31 stars (8 forks, 1.5x the daily average).",
       "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 10,570 stars (0.0%)."
+      "Issue engagement: 0 open issues for 10,572 stars (0.0%)."
     ]
   }
 }

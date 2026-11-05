@@ -4,35 +4,46 @@
   "description": "FlashInfer: Kernel Library for LLM Serving",
   "language": "Cuda",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6856,
-  "forks": 1695,
-  "open_issues": 493,
+  "topics": [
+    "gpu",
+    "large-large-models",
+    "cuda",
+    "pytorch",
+    "llm-inference",
+    "jit",
+    "attention",
+    "nvidia",
+    "distributed-inference",
+    "moe"
+  ],
+  "stars": 6857,
+  "forks": 1696,
+  "open_issues": 489,
   "watchers": 57,
   "created_at": "2023-07-22T00:29:04Z",
-  "pushed_at": "2026-11-04T20:29:25Z",
+  "pushed_at": "2026-11-05T02:05:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/flashinfer-ai.png",
-  "radar_score": 71.84,
-  "impact": 89.77,
-  "velocity": 59.69,
+  "radar_score": 71.85,
+  "impact": 89.79,
+  "velocity": 59.71,
   "health": 60.15,
-  "global_percentile": 30.71,
+  "global_percentile": 32.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "FlashInfer: Kernel Library for LLM Serving",
   "maturity": "Unknown",
-  "stars_7d": 50,
-  "stars_30d": 307,
-  "stars_90d": 601,
-  "star_growth_rate_7d": 7.142857142857143,
-  "star_growth_rate_30d": 10.233333333333333,
-  "star_growth_acceleration": 0.6979990693345743,
-  "forks_7d": 40,
-  "forks_30d": 161,
+  "stars_7d": 31,
+  "stars_30d": 308,
+  "stars_90d": 589,
+  "star_growth_rate_7d": 7.75,
+  "star_growth_rate_30d": 10.620689655172415,
+  "star_growth_acceleration": 0.7297077922077921,
+  "forks_7d": 20,
+  "forks_30d": 159,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 93,
+  "snapshot_count": 94,
   "authenticity": {
     "organic_confidence": 98.5,
     "verdict": "organic",
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "1,695 forks for 6,856 stars (24.7%)."
+        "detail": "1,696 forks for 6,857 stars (24.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 98.4,
+        "score": 98.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (6 forks, 1.2x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "493 open issues for 6,856 stars (7.2%)."
+        "detail": "489 open issues for 6,857 stars (7.1%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +93,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,695 forks for 6,856 stars (24.7%).",
+      "Fork-to-star ratio: 1,696 forks for 6,857 stars (24.7%).",
       "Burst pattern: Largest 24h jump was 12 stars (6 forks, 1.2x the daily average).",
-      "Issue engagement: 493 open issues for 6,856 stars (7.2%)."
+      "Issue engagement: 489 open issues for 6,857 stars (7.1%)."
     ],
     "red_flags": []
   }

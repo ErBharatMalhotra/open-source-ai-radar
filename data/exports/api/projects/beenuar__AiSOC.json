@@ -4,37 +4,58 @@
   "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 7218,
-  "forks": 740,
-  "open_issues": 4,
-  "watchers": 226,
+  "topics": [
+    "ai-security",
+    "alert-triage",
+    "cybersecurity",
+    "detection-engineering",
+    "incident-response",
+    "mitre-attack",
+    "purple-team",
+    "security-operations",
+    "self-hosted",
+    "siem",
+    "soar",
+    "soc",
+    "threat-detection",
+    "threat-intelligence",
+    "agentic-ai",
+    "langgraph",
+    "blue-team",
+    "llm-agents",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "stars": 7252,
+  "forks": 748,
+  "open_issues": 3,
+  "watchers": 233,
   "created_at": "2026-05-02T03:30:19Z",
-  "pushed_at": "2026-11-04T20:42:33Z",
+  "pushed_at": "2026-11-05T01:52:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/beenuar.png",
-  "radar_score": 73.16,
-  "impact": 90.16,
-  "velocity": 64.3,
+  "radar_score": 72.86,
+  "impact": 90.46,
+  "velocity": 63.12,
   "health": 58.35,
-  "global_percentile": 40.29,
+  "global_percentile": 39.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Open-source AI-powered Security Operations Center \u2014 alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable.",
   "maturity": "Unknown",
-  "stars_7d": 886,
-  "stars_30d": 886,
-  "stars_90d": 886,
-  "star_growth_rate_7d": 443.0,
-  "star_growth_rate_30d": 443.0,
+  "stars_7d": 1131,
+  "stars_30d": 1131,
+  "stars_90d": 1131,
+  "star_growth_rate_7d": 377.0,
+  "star_growth_rate_30d": 377.0,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 82,
-  "forks_30d": 82,
+  "forks_7d": 109,
+  "forks_30d": 109,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 6,
+  "snapshot_count": 7,
   "authenticity": {
-    "organic_confidence": 87.7,
+    "organic_confidence": 87.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "740 forks for 7,218 stars (10.3%)."
+        "detail": "748 forks for 7,252 stars (10.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 277 stars (33 forks, 0.7x the daily average)."
+        "detail": "Largest 24h jump was 277 stars (33 forks, 0.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 30.5,
+        "score": 29.1,
         "weight": 0.12,
-        "detail": "4 open issues for 7,218 stars (0.1%)."
+        "detail": "3 open issues for 7,252 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 740 forks for 7,218 stars (10.3%).",
-      "Burst pattern: Largest 24h jump was 277 stars (33 forks, 0.7x the daily average).",
+      "Fork-to-star ratio: 748 forks for 7,252 stars (10.3%).",
+      "Burst pattern: Largest 24h jump was 277 stars (33 forks, 0.8x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 4 open issues for 7,218 stars (0.1%)."
+      "Issue engagement: 3 open issues for 7,252 stars (0.0%)."
     ]
   }
 }

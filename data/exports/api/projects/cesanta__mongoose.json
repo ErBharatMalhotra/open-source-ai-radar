@@ -4,7 +4,19 @@
   "description": "Embedded web server, with TCP/IP network stack, MQTT and Websocket",
   "language": "C",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "websocket",
+    "mqtt",
+    "embedded",
+    "webserver",
+    "web-server",
+    "iot",
+    "http",
+    "tcp",
+    "udp",
+    "tcpip",
+    "tls13"
+  ],
   "stars": 13127,
   "forks": 2957,
   "open_issues": 0,
@@ -13,28 +25,28 @@
   "pushed_at": "2026-11-05T20:56:40Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/cesanta.png",
-  "radar_score": 67.26,
-  "impact": 94.91,
-  "velocity": 44.17,
+  "radar_score": 65.62,
+  "impact": 94.9,
+  "velocity": 39.5,
   "health": 55.35,
-  "global_percentile": 9.29,
+  "global_percentile": 6.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embedded web server, with TCP/IP network stack, MQTT and Websocket",
   "maturity": "Unknown",
-  "stars_7d": 10,
+  "stars_7d": 8,
   "stars_30d": 56,
-  "stars_90d": 72,
-  "star_growth_rate_7d": 1.4285714285714286,
+  "stars_90d": 73,
+  "star_growth_rate_7d": 1.1428571428571428,
   "star_growth_rate_30d": 1.8666666666666667,
-  "star_growth_acceleration": 0.7653061224489796,
-  "forks_7d": 2,
+  "star_growth_acceleration": 0.6122448979591836,
+  "forks_7d": 3,
   "forks_30d": 15,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 158,
+  "snapshot_count": 159,
   "authenticity": {
-    "organic_confidence": 76.2,
+    "organic_confidence": 76.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25.8,
+        "score": 25,
         "weight": 0.12,
-        "detail": "1 open issues for 13,127 stars (0.0%)."
+        "detail": "0 open issues for 13,127 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -86,7 +98,7 @@
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 13,127 stars (0.0%)."
+      "Issue engagement: 0 open issues for 13,127 stars (0.0%)."
     ]
   }
 }

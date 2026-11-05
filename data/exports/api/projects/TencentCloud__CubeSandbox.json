@@ -4,7 +4,11 @@
   "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agents",
+    "container",
+    "sandbox"
+  ],
   "stars": 13174,
   "forks": 1199,
   "open_issues": 110,
@@ -13,26 +17,26 @@
   "pushed_at": "2026-11-05T09:28:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/TencentCloud.png",
-  "radar_score": 76.05,
+  "radar_score": 76.04,
   "impact": 91.55,
   "velocity": 69.25,
   "health": 60.75,
-  "global_percentile": 58.0,
+  "global_percentile": 57.14,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "maturity": "Unknown",
-  "stars_7d": 101,
-  "stars_30d": 366,
-  "stars_90d": 366,
-  "star_growth_rate_7d": 14.428571428571429,
-  "star_growth_rate_30d": 12.2,
-  "star_growth_acceleration": 1.1826697892271663,
-  "forks_7d": 12,
+  "stars_7d": 88,
+  "stars_30d": 364,
+  "stars_90d": 364,
+  "star_growth_rate_7d": 12.571428571428571,
+  "star_growth_rate_30d": 12.133333333333333,
+  "star_growth_acceleration": 1.0361067503924648,
+  "forks_7d": 9,
   "forks_30d": 25,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 231,
+  "snapshot_count": 232,
   "authenticity": {
     "organic_confidence": 90.8,
     "verdict": "organic",
@@ -43,12 +47,12 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "1,199 forks for 13,173 stars (9.1%)."
+        "detail": "1,199 forks for 13,174 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.9,
+        "score": 91.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (2 forks, 1.8x the daily average)."
       },
@@ -69,9 +73,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 70.1,
+        "score": 70.0,
         "weight": 0.12,
-        "detail": "110 open issues for 13,173 stars (0.8%)."
+        "detail": "110 open issues for 13,174 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +87,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (2 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 1,199 forks for 13,173 stars (9.1%).",
+      "Fork-to-star ratio: 1,199 forks for 13,174 stars (9.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

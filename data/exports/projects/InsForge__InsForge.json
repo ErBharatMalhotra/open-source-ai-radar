@@ -4,35 +4,49 @@
   "description": "The all-in-one, open-source backend platform for agentic coding. InsForge gives your coding agent database, auth, storage, compute, hosting, and AI gateway to ship full-stack apps end-to-end.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ai",
+    "ai-agents",
+    "coding",
+    "oauth2",
+    "postgresql",
+    "deno",
+    "embeddings",
+    "insforge",
+    "nextjs",
+    "pgvector",
+    "realtime",
+    "vectors",
+    "websockets"
+  ],
   "stars": 13285,
   "forks": 1248,
   "open_issues": 130,
   "watchers": 34,
   "created_at": "2025-07-29T05:56:00Z",
-  "pushed_at": "2026-11-02T21:47:33Z",
+  "pushed_at": "2026-11-05T21:17:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/InsForge.png",
-  "radar_score": 74.59,
-  "impact": 90.67,
-  "velocity": 64.5,
-  "health": 63.01,
-  "global_percentile": 44.86,
+  "radar_score": 75.3,
+  "impact": 90.66,
+  "velocity": 66.0,
+  "health": 63.75,
+  "global_percentile": 50.71,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "The all-in-one, open-source backend platform for agentic coding. InsForge gives your coding agent database, auth, storage, compute, hosting, and AI gateway to ship full-stack apps end-to-end.",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 232,
-  "stars_90d": 233,
-  "star_growth_rate_7d": 3.5714285714285716,
-  "star_growth_rate_30d": 7.733333333333333,
-  "star_growth_acceleration": 0.4618226600985222,
+  "stars_7d": 24,
+  "stars_30d": 230,
+  "stars_90d": 232,
+  "star_growth_rate_7d": 3.4285714285714284,
+  "star_growth_rate_30d": 7.666666666666667,
+  "star_growth_acceleration": 0.44720496894409933,
   "forks_7d": 8,
   "forks_30d": 37,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 207,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 208,
   "authenticity": {
     "organic_confidence": 82.4,
     "verdict": "organic",
@@ -48,9 +62,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 65.4,
+        "score": 65.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 29 stars (7 forks, 3.8x the daily average)."
+        "detail": "Largest 24h jump was 29 stars (7 forks, 3.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,14 +90,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Fork-to-star ratio: 1,248 forks for 13,285 stars (9.4%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

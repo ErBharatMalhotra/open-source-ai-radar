@@ -4,7 +4,16 @@
   "description": "Structured Outputs",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "generative-ai",
+    "llms",
+    "prompt-engineering",
+    "symbolic-ai",
+    "cfg",
+    "json",
+    "regex",
+    "structured-generation"
+  ],
   "stars": 16003,
   "forks": 910,
   "open_issues": 106,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-09-21T17:58:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dottxt-ai.png",
-  "radar_score": 66.1,
-  "impact": 91.62,
+  "radar_score": 66.04,
+  "impact": 91.6,
   "velocity": 47.23,
-  "health": 51.67,
-  "global_percentile": 8.0,
+  "health": 51.48,
+  "global_percentile": 7.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Structured Outputs",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 107,
+  "stars_7d": 14,
+  "stars_30d": 106,
   "stars_90d": 110,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 3.566666666666667,
-  "star_growth_acceleration": 0.6008010680907877,
-  "forks_7d": 4,
+  "star_growth_rate_7d": 2.0,
+  "star_growth_rate_30d": 3.533333333333333,
+  "star_growth_acceleration": 0.5660377358490566,
+  "forks_7d": 3,
   "forks_30d": 13,
-  "days_since_last_push": 44,
-  "freshness_score": 0.6440364210831414,
-  "snapshot_count": 193,
+  "days_since_last_push": 45,
+  "freshness_score": 0.6376281516217733,
+  "snapshot_count": 194,
   "authenticity": {
-    "organic_confidence": 77.6,
+    "organic_confidence": 77.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +52,14 @@
         "label": "Fork-to-star ratio",
         "score": 84.5,
         "weight": 0.22,
-        "detail": "910 forks for 16,004 stars (5.7%)."
+        "detail": "910 forks for 16,003 stars (5.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.0,
+        "score": 74.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (1 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (1 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +80,19 @@
         "label": "Issue engagement",
         "score": 64.9,
         "weight": 0.12,
-        "detail": "106 open issues for 16,004 stars (0.7%)."
+        "detail": "106 open issues for 16,003 stars (0.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 81.5,
+        "score": 81.2,
         "weight": 0.1,
-        "detail": "Last push 44 days ago."
+        "detail": "Last push 45 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 10 stars (1 forks, 2.9x the daily average).",
-      "Maintenance cadence: Last push 44 days ago.",
-      "Fork-to-star ratio: 910 forks for 16,004 stars (5.7%)."
+      "Maintenance cadence: Last push 45 days ago.",
+      "Fork-to-star ratio: 910 forks for 16,003 stars (5.7%)."
     ],
     "red_flags": []
   }

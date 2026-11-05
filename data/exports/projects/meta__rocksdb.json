@@ -4,20 +4,23 @@
   "description": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "language": "C++",
   "license": "GPL-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "storage-engine"
+  ],
   "stars": 32247,
   "forks": 7009,
   "open_issues": 981,
   "watchers": 974,
   "created_at": "2012-11-30T06:16:18Z",
-  "pushed_at": "2026-11-05T21:05:00Z",
+  "pushed_at": "2026-11-05T21:36:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/meta.png",
   "radar_score": 75.96,
-  "impact": 97.85,
+  "impact": 97.86,
   "velocity": 59.67,
   "health": 63.75,
-  "global_percentile": 57.29,
+  "global_percentile": 56.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A library that provides an embeddable, persistent key-value store for fast storage.",
@@ -26,15 +29,15 @@
   "stars_30d": 14,
   "stars_90d": 14,
   "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 2.0,
-  "star_growth_acceleration": 1.0,
+  "star_growth_rate_30d": 1.75,
+  "star_growth_acceleration": 1.1428571428571428,
   "forks_7d": 20,
-  "forks_30d": 20,
+  "forks_30d": 21,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 28,
+  "snapshot_count": 29,
   "authenticity": {
-    "organic_confidence": 87.8,
+    "organic_confidence": 87.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +46,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.7,
         "weight": 0.22,
-        "detail": "7,008 forks for 32,247 stars (21.7%)."
+        "detail": "7,009 forks for 32,247 stars (21.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 70.7,
+        "score": 69.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (1 forks, 3.4x the daily average)."
       },
@@ -83,7 +86,7 @@
     ],
     "reasons": [
       "Issue engagement: 981 open issues for 32,247 stars (3.0%).",
-      "Fork-to-star ratio: 7,008 forks for 32,247 stars (21.7%).",
+      "Fork-to-star ratio: 7,009 forks for 32,247 stars (21.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

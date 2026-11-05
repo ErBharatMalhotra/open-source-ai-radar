@@ -4,7 +4,28 @@
   "description": "The Reliable USB Formatting Utility",
   "language": "C",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "usb",
+    "iso",
+    "bootable-drives",
+    "mbr",
+    "uefi",
+    "bios",
+    "boot",
+    "windows",
+    "syslinux",
+    "freedos",
+    "grub",
+    "grub4dos",
+    "sha1",
+    "sha256",
+    "md5",
+    "gpt",
+    "windows-to-go",
+    "persistence",
+    "secure-boot",
+    "rufus"
+  ],
   "stars": 38255,
   "forks": 3201,
   "open_issues": 9,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-05T12:03:32Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/pbatard.png",
-  "radar_score": 69.73,
-  "impact": 97.58,
-  "velocity": 47.57,
-  "health": 56.2,
-  "global_percentile": 17.0,
+  "radar_score": 71.58,
+  "impact": 97.57,
+  "velocity": 51.31,
+  "health": 58.35,
+  "global_percentile": 24.43,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "The Reliable USB Formatting Utility",
   "maturity": "Unknown",
-  "stars_7d": 105,
-  "stars_30d": 357,
-  "stars_90d": 357,
-  "star_growth_rate_7d": 15.0,
-  "star_growth_rate_30d": 13.222222222222221,
-  "star_growth_acceleration": 1.134453781512605,
-  "forks_7d": 3,
-  "forks_30d": 23,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 230,
+  "stars_7d": 104,
+  "stars_30d": 353,
+  "stars_90d": 353,
+  "star_growth_rate_7d": 14.857142857142858,
+  "star_growth_rate_30d": 13.074074074074074,
+  "star_growth_acceleration": 1.1363820315661675,
+  "forks_7d": 2,
+  "forks_30d": 24,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 231,
   "authenticity": {
-    "organic_confidence": 82.9,
+    "organic_confidence": 83.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 94.1,
         "weight": 0.22,
-        "detail": "3,200 forks for 38,249 stars (8.4%)."
+        "detail": "3,201 forks for 38,255 stars (8.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.9,
+        "score": 95.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 19 stars (3 forks, 1.5x the daily average)."
       },
@@ -71,23 +92,23 @@
         "label": "Issue engagement",
         "score": 27.4,
         "weight": 0.12,
-        "detail": "9 open issues for 38,249 stars (0.0%)."
+        "detail": "9 open issues for 38,255 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,200 forks for 38,249 stars (8.4%).",
+      "Fork-to-star ratio: 3,201 forks for 38,255 stars (8.4%).",
       "Burst pattern: Largest 24h jump was 19 stars (3 forks, 1.5x the daily average).",
-      "Maintenance cadence: Last push 6 days ago."
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 9 open issues for 38,249 stars (0.0%)."
+      "Issue engagement: 9 open issues for 38,255 stars (0.0%)."
     ]
   }
 }

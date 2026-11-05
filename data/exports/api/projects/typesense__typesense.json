@@ -4,9 +4,30 @@
   "description": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch \u26a1 \ud83d\udd0d \u2728 Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences",
   "language": "C++",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "search-engine",
+    "search",
+    "typo-tolerance",
+    "site-search",
+    "instantsearch",
+    "fuzzy-search",
+    "full-text-search",
+    "enterprise-search",
+    "synonyms",
+    "faceting",
+    "geosearch",
+    "algolia",
+    "elasticsearch",
+    "merchandising",
+    "datastore",
+    "in-memory",
+    "vector-search",
+    "pinecone",
+    "semantic-search",
+    "similarity-search"
+  ],
   "stars": 27092,
-  "forks": 1027,
+  "forks": 1028,
   "open_issues": 806,
   "watchers": 137,
   "created_at": "2017-01-18T08:01:47Z",
@@ -14,43 +35,43 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/typesense.png",
   "radar_score": 71.86,
-  "impact": 94.34,
+  "impact": 94.32,
   "velocity": 55.49,
   "health": 58.83,
-  "global_percentile": 26.57,
+  "global_percentile": 26.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch \u26a1 \ud83d\udd0d \u2728 Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences",
   "maturity": "Unknown",
-  "stars_7d": 24,
-  "stars_30d": 456,
-  "stars_90d": 456,
-  "star_growth_rate_7d": 3.4285714285714284,
-  "star_growth_rate_30d": 15.2,
-  "star_growth_acceleration": 0.22556390977443608,
-  "forks_7d": 4,
-  "forks_30d": 39,
+  "stars_7d": 28,
+  "stars_30d": 461,
+  "stars_90d": 461,
+  "star_growth_rate_7d": 4.666666666666667,
+  "star_growth_rate_30d": 15.366666666666667,
+  "star_growth_acceleration": 0.3036876355748373,
+  "forks_7d": 5,
+  "forks_30d": 41,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 197,
+  "snapshot_count": 198,
   "authenticity": {
-    "organic_confidence": 63.6,
+    "organic_confidence": 63.7,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 73.9,
+        "score": 74.0,
         "weight": 0.22,
-        "detail": "1,026 forks for 27,086 stars (3.8%)."
+        "detail": "1,028 forks for 27,092 stars (3.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 24.3,
+        "score": 24.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 163 stars (16 forks, 10.7x the daily average)."
+        "detail": "Largest 24h jump was 163 stars (16 forks, 10.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 93.2,
+        "score": 93.3,
         "weight": 0.12,
-        "detail": "805 open issues for 27,086 stars (3.0%)."
+        "detail": "806 open issues for 27,092 stars (3.0%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +103,11 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 805 open issues for 27,086 stars (3.0%).",
+      "Issue engagement: 806 open issues for 27,092 stars (3.0%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 163 stars (16 forks, 10.7x the daily average)."
+      "Burst pattern: Largest 24h jump was 163 stars (16 forks, 10.6x the daily average)."
     ]
   }
 }

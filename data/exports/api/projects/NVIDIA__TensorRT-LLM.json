@@ -4,37 +4,43 @@
   "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "blackwell",
+    "cuda",
+    "moe",
+    "pytorch",
+    "llm-serving"
+  ],
   "stars": 15017,
   "forks": 2908,
-  "open_issues": 711,
+  "open_issues": 710,
   "watchers": 119,
   "created_at": "2023-08-16T17:14:27Z",
-  "pushed_at": "2026-11-05T08:41:41Z",
+  "pushed_at": "2026-11-05T10:26:45Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
-  "radar_score": 75.29,
-  "impact": 94.23,
+  "radar_score": 75.3,
+  "impact": 94.24,
   "velocity": 64.04,
   "health": 60.75,
-  "global_percentile": 55.71,
+  "global_percentile": 51.57,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execut",
   "maturity": "Unknown",
-  "stars_7d": 48,
-  "stars_30d": 210,
-  "stars_90d": 210,
-  "star_growth_rate_7d": 6.857142857142857,
-  "star_growth_rate_30d": 9.130434782608695,
-  "star_growth_acceleration": 0.7510204081632653,
-  "forks_7d": 32,
-  "forks_30d": 97,
+  "stars_7d": 53,
+  "stars_30d": 215,
+  "stars_90d": 215,
+  "star_growth_rate_7d": 7.571428571428571,
+  "star_growth_rate_30d": 9.347826086956522,
+  "star_growth_acceleration": 0.8099667774086379,
+  "forks_7d": 31,
+  "forks_30d": 96,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 256,
+  "snapshot_count": 257,
   "authenticity": {
-    "organic_confidence": 83.5,
+    "organic_confidence": 83.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +49,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.1,
         "weight": 0.22,
-        "detail": "2,907 forks for 15,011 stars (19.4%)."
+        "detail": "2,908 forks for 15,017 stars (19.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 55.5,
+        "score": 55.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 39 stars (4 forks, 4.7x the daily average)."
       },
@@ -71,7 +77,7 @@
         "label": "Issue engagement",
         "score": 99.1,
         "weight": 0.12,
-        "detail": "711 open issues for 15,011 stars (4.7%)."
+        "detail": "710 open issues for 15,017 stars (4.7%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +88,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,907 forks for 15,011 stars (19.4%).",
-      "Issue engagement: 711 open issues for 15,011 stars (4.7%).",
+      "Fork-to-star ratio: 2,908 forks for 15,017 stars (19.4%).",
+      "Issue engagement: 710 open issues for 15,017 stars (4.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

@@ -4,9 +4,30 @@
   "description": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 14762,
-  "forks": 1889,
+  "topics": [
+    "oidc",
+    "sso",
+    "oauth",
+    "iam",
+    "saml",
+    "webauthn",
+    "mfa",
+    "single-sign-on",
+    "radius",
+    "scim",
+    "auth",
+    "authentication",
+    "mcp-gateway",
+    "ai-gateway",
+    "mcp",
+    "agent",
+    "openclaw",
+    "agentic-ai",
+    "agi",
+    "llm"
+  ],
+  "stars": 14764,
+  "forks": 1890,
   "open_issues": 83,
   "watchers": 79,
   "created_at": "2020-10-22T14:40:03Z",
@@ -15,26 +36,26 @@
   "owner_avatar": "https://github.com/casdoor.png",
   "radar_score": 72.79,
   "impact": 93.09,
-  "velocity": 56.04,
+  "velocity": 56.06,
   "health": 63.75,
   "global_percentile": 32.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "maturity": "Unknown",
-  "stars_7d": 73,
-  "stars_30d": 211,
-  "stars_90d": 211,
-  "star_growth_rate_7d": 10.428571428571429,
-  "star_growth_rate_30d": 8.791666666666666,
-  "star_growth_acceleration": 1.1861882193635749,
+  "stars_7d": 72,
+  "stars_30d": 217,
+  "stars_90d": 217,
+  "star_growth_rate_7d": 10.285714285714286,
+  "star_growth_rate_30d": 9.041666666666666,
+  "star_growth_acceleration": 1.1375905200789995,
   "forks_7d": 10,
-  "forks_30d": 46,
+  "forks_30d": 48,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 240,
+  "snapshot_count": 241,
   "authenticity": {
-    "organic_confidence": 89.6,
+    "organic_confidence": 89.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "1,887 forks for 14,757 stars (12.8%)."
+        "detail": "1,890 forks for 14,764 stars (12.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.3,
+        "score": 90.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 16 stars (5 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 16 stars (5 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.7,
+        "score": 61.9,
         "weight": 0.12,
-        "detail": "82 open issues for 14,757 stars (0.6%)."
+        "detail": "83 open issues for 14,764 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +103,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 16 stars (5 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 1,887 forks for 14,757 stars (12.8%).",
+      "Burst pattern: Largest 24h jump was 16 stars (5 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 1,890 forks for 14,764 stars (12.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

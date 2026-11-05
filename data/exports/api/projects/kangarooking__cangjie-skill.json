@@ -4,53 +4,62 @@
   "description": "\u628a\u4e66\u3001\u957f\u89c6\u9891\u3001\u64ad\u5ba2\u7b49\u9ad8\u4ef7\u503c\u5185\u5bb9\u84b8\u998f\u6210\u53ef\u6267\u884c\u7684 Agent Skills\uff08Distill high-value content from books, long-form videos, podcasts, and more into executable Agent Skills\uff09",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 12184,
-  "forks": 1432,
+  "topics": [
+    "agent-workflows",
+    "ai-skills",
+    "automation",
+    "book-to-skill",
+    "knowledge-distillation",
+    "prompt-engineering",
+    "skill-generator",
+    "templates"
+  ],
+  "stars": 12203,
+  "forks": 1433,
   "open_issues": 7,
   "watchers": 47,
   "created_at": "2026-04-16T05:54:32Z",
   "pushed_at": "2026-10-02T03:17:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/kangarooking.png",
-  "radar_score": 67.63,
-  "impact": 91.23,
+  "radar_score": 67.58,
+  "impact": 91.24,
   "velocity": 54.27,
-  "health": 48.59,
-  "global_percentile": 15.86,
+  "health": 48.36,
+  "global_percentile": 11.86,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "\u628a\u4e66\u3001\u957f\u89c6\u9891\u3001\u64ad\u5ba2\u7b49\u9ad8\u4ef7\u503c\u5185\u5bb9\u84b8\u998f\u6210\u53ef\u6267\u884c\u7684 Agent Skills\uff08Distill high-value content from books, long-form videos, podcasts, and more into executable Agent Skills\uff09",
   "maturity": "Unknown",
-  "stars_7d": 294,
-  "stars_30d": 987,
-  "stars_90d": 987,
-  "star_growth_rate_7d": 42.0,
-  "star_growth_rate_30d": 39.48,
-  "star_growth_acceleration": 1.0638297872340425,
-  "forks_7d": 37,
-  "forks_30d": 127,
-  "days_since_last_push": 33,
-  "freshness_score": 0.7189237334319262,
-  "snapshot_count": 254,
+  "stars_7d": 355,
+  "stars_30d": 1056,
+  "stars_90d": 1056,
+  "star_growth_rate_7d": 50.714285714285715,
+  "star_growth_rate_30d": 42.24,
+  "star_growth_acceleration": 1.2006222943722944,
+  "forks_7d": 41,
+  "forks_30d": 133,
+  "days_since_last_push": 34,
+  "freshness_score": 0.7117703227626097,
+  "snapshot_count": 255,
   "authenticity": {
-    "organic_confidence": 82.6,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.7,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.6,
+        "score": 99.7,
         "weight": 0.22,
-        "detail": "1,427 forks for 12,133 stars (11.8%)."
+        "detail": "1,433 forks for 12,203 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.3,
+        "score": 84.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 69 stars (7 forks, 1.8x the daily average)."
+        "detail": "Largest 24h jump was 98 stars (8 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,25 +78,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 30.8,
+        "score": 30.7,
         "weight": 0.12,
-        "detail": "7 open issues for 12,133 stars (0.1%)."
+        "detail": "7 open issues for 12,203 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 84.2,
+        "score": 84.0,
         "weight": 0.1,
-        "detail": "Last push 33 days ago."
+        "detail": "Last push 34 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 33 days ago.",
-      "Burst pattern: Largest 24h jump was 69 stars (7 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 1,427 forks for 12,133 stars (11.8%)."
+      "Maintenance cadence: Last push 34 days ago.",
+      "Burst pattern: Largest 24h jump was 98 stars (8 forks, 2.4x the daily average).",
+      "Fork-to-star ratio: 1,433 forks for 12,203 stars (11.7%)."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 12,133 stars (0.1%)."
+      "Issue engagement: 7 open issues for 12,203 stars (0.1%)."
     ]
   }
 }

@@ -4,37 +4,56 @@
   "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "anns",
+    "nearest-neighbor-search",
+    "faiss",
+    "vector-search",
+    "image-search",
+    "hnsw",
+    "vector-database",
+    "embedding-database",
+    "embedding-store",
+    "vector-store",
+    "vector-similarity",
+    "embedding-similarity",
+    "distributed",
+    "golang",
+    "llm",
+    "cloud-native",
+    "diskann",
+    "rag"
+  ],
   "stars": 46600,
-  "forks": 4328,
-  "open_issues": 1136,
+  "forks": 4329,
+  "open_issues": 1138,
   "watchers": 333,
   "created_at": "2019-09-16T06:43:43Z",
-  "pushed_at": "2026-11-05T07:51:05Z",
+  "pushed_at": "2026-11-05T11:36:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/milvus-io.png",
   "radar_score": 77.45,
   "impact": 97.99,
   "velocity": 63.78,
   "health": 63.75,
-  "global_percentile": 75.0,
+  "global_percentile": 73.29,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
   "maturity": "Unknown",
-  "stars_7d": 87,
-  "stars_30d": 251,
-  "stars_90d": 251,
-  "star_growth_rate_7d": 12.428571428571429,
-  "star_growth_rate_30d": 9.653846153846153,
-  "star_growth_acceleration": 1.2874217416050087,
-  "forks_7d": 10,
+  "stars_7d": 90,
+  "stars_30d": 253,
+  "stars_90d": 253,
+  "star_growth_rate_7d": 12.857142857142858,
+  "star_growth_rate_30d": 9.73076923076923,
+  "star_growth_acceleration": 1.32128740824393,
+  "forks_7d": 11,
   "forks_30d": 42,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 251,
+  "snapshot_count": 252,
   "authenticity": {
-    "organic_confidence": 93.8,
+    "organic_confidence": 93.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +62,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.4,
         "weight": 0.22,
-        "detail": "4,328 forks for 46,597 stars (9.3%)."
+        "detail": "4,329 forks for 46,600 stars (9.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.0,
+        "score": 88.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 19 stars (0 forks, 2.1x the daily average)."
       },
@@ -69,9 +88,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 91.4,
+        "score": 91.5,
         "weight": 0.12,
-        "detail": "1,130 open issues for 46,597 stars (2.4%)."
+        "detail": "1,138 open issues for 46,600 stars (2.4%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +102,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 19 stars (0 forks, 2.1x the daily average).",
-      "Issue engagement: 1,130 open issues for 46,597 stars (2.4%).",
-      "Fork-to-star ratio: 4,328 forks for 46,597 stars (9.3%)."
+      "Issue engagement: 1,138 open issues for 46,600 stars (2.4%).",
+      "Fork-to-star ratio: 4,329 forks for 46,600 stars (9.3%)."
     ],
     "red_flags": []
   }

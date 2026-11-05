@@ -4,51 +4,63 @@
   "description": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 33351,
-  "forks": 3024,
-  "open_issues": 30,
-  "watchers": 209,
+  "topics": [
+    "3d-modeling",
+    "ai",
+    "blender",
+    "blender-addon",
+    "claude",
+    "generative-ai",
+    "llm",
+    "mcp",
+    "model-context-protocol",
+    "python",
+    "blender-mcp"
+  ],
+  "stars": 33363,
+  "forks": 3027,
+  "open_issues": 27,
+  "watchers": 208,
   "created_at": "2025-03-07T09:58:58Z",
   "pushed_at": "2026-11-04T13:04:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ahujasid.png",
-  "radar_score": 75.7,
+  "radar_score": 75.64,
   "impact": 96.69,
-  "velocity": 64.09,
+  "velocity": 63.92,
   "health": 58.35,
-  "global_percentile": 58.71,
+  "global_percentile": 54.0,
   "category": "MCP",
   "sub_category": "integration",
   "summary": "Community plugin to control Blender 3D with any LLM of your choice",
   "maturity": "Unknown",
-  "stars_7d": 763,
-  "stars_30d": 2715,
-  "stars_90d": 2715,
-  "star_growth_rate_7d": 109.0,
-  "star_growth_rate_30d": 123.4090909090909,
-  "star_growth_acceleration": 0.8832412523020258,
-  "forks_7d": 70,
-  "forks_30d": 251,
+  "stars_7d": 774,
+  "stars_30d": 2727,
+  "stars_90d": 2727,
+  "star_growth_rate_7d": 110.57142857142857,
+  "star_growth_rate_30d": 123.95454545454545,
+  "star_growth_acceleration": 0.892032060348892,
+  "forks_7d": 72,
+  "forks_30d": 257,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 198,
+  "snapshot_count": 199,
   "authenticity": {
-    "organic_confidence": 83.4,
+    "organic_confidence": 83.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 96.6,
+        "score": 96.7,
         "weight": 0.22,
-        "detail": "3,021 forks for 33,327 stars (9.1%)."
+        "detail": "3,027 forks for 33,363 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.2,
+        "score": 89.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 227 stars (41 forks, 2.1x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 34.0,
+        "score": 33.1,
         "weight": 0.12,
-        "detail": "30 open issues for 33,327 stars (0.1%)."
+        "detail": "27 open issues for 33,363 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +95,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 227 stars (41 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 3,021 forks for 33,327 stars (9.1%).",
+      "Fork-to-star ratio: 3,027 forks for 33,363 stars (9.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 30 open issues for 33,327 stars (0.1%)."
+      "Issue engagement: 27 open issues for 33,363 stars (0.1%)."
     ]
   }
 }

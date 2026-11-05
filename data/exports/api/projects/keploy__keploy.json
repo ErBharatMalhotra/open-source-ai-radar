@@ -4,37 +4,52 @@
   "description": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 19425,
+  "topics": [
+    "testing",
+    "test-automation",
+    "api-testing",
+    "testing-tools",
+    "test-automation-framework",
+    "test-generation",
+    "testing-library",
+    "mock",
+    "mock-data-generator",
+    "mock-framework",
+    "agentic-ai",
+    "ai-testing-tool",
+    "testing-tool",
+    "code-quality"
+  ],
+  "stars": 19431,
   "forks": 2447,
   "open_issues": 384,
   "watchers": 47,
   "created_at": "2022-01-19T10:40:31Z",
-  "pushed_at": "2026-11-05T08:42:33Z",
+  "pushed_at": "2026-11-05T11:58:47Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/keploy.png",
   "radar_score": 74.49,
   "impact": 93.22,
   "velocity": 60.75,
   "health": 63.75,
-  "global_percentile": 50.57,
+  "global_percentile": 44.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
   "maturity": "Unknown",
-  "stars_7d": 538,
-  "stars_30d": 840,
-  "stars_90d": 840,
-  "star_growth_rate_7d": 76.85714285714286,
-  "star_growth_rate_30d": 38.18181818181818,
-  "star_growth_acceleration": 2.0129251700680273,
-  "forks_7d": 12,
+  "stars_7d": 554,
+  "stars_30d": 862,
+  "stars_90d": 862,
+  "star_growth_rate_7d": 79.14285714285714,
+  "star_growth_rate_30d": 39.18181818181818,
+  "star_growth_acceleration": 2.019887305270136,
+  "forks_7d": 11,
   "forks_30d": 38,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 272,
+  "snapshot_count": 273,
   "authenticity": {
-    "organic_confidence": 76.8,
+    "organic_confidence": 77.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +58,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "2,447 forks for 19,408 stars (12.6%)."
+        "detail": "2,447 forks for 19,431 stars (12.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 39.9,
+        "score": 40.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 200 stars (2 forks, 6.8x the daily average)."
+        "detail": "Largest 24h jump was 200 stars (2 forks, 6.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +84,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 89.7,
+        "score": 89.6,
         "weight": 0.12,
-        "detail": "384 open issues for 19,408 stars (2.0%)."
+        "detail": "384 open issues for 19,431 stars (2.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +97,10 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 384 open issues for 19,408 stars (2.0%).",
-      "Fork-to-star ratio: 2,447 forks for 19,408 stars (12.6%).",
+      "Issue engagement: 384 open issues for 19,431 stars (2.0%).",
+      "Fork-to-star ratio: 2,447 forks for 19,431 stars (12.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Burst pattern: Largest 24h jump was 200 stars (2 forks, 6.8x the daily average)."
-    ]
+    "red_flags": []
   }
 }

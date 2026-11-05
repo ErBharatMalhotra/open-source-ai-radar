@@ -4,7 +4,17 @@
   "description": "Unified framework for building enterprise RAG pipelines with small, specialized models",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "parsing",
+    "retrieval-augmented-generation",
+    "agents",
+    "generative-ai-tools",
+    "llamacpp",
+    "llm",
+    "small-specialized-models",
+    "onnx",
+    "openvino"
+  ],
   "stars": 14821,
   "forks": 2926,
   "open_issues": 73,
@@ -13,26 +23,26 @@
   "pushed_at": "2026-10-01T16:09:57Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/llmware-ai.png",
-  "radar_score": 68.84,
-  "impact": 93.1,
-  "velocity": 51.73,
-  "health": 53.99,
+  "radar_score": 68.78,
+  "impact": 93.11,
+  "velocity": 51.71,
+  "health": 53.76,
   "global_percentile": 15.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Unified framework for building enterprise RAG pipelines with small, specialized models",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": -5,
-  "stars_90d": -32,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": -0.16666666666666666,
+  "stars_7d": 5,
+  "stars_30d": -3,
+  "stars_90d": -31,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": -0.1,
   "star_growth_acceleration": 1.0,
   "forks_7d": -1,
-  "forks_30d": -5,
-  "days_since_last_push": 33,
-  "freshness_score": 0.7189237334319262,
-  "snapshot_count": 111,
+  "forks_30d": -6,
+  "days_since_last_push": 34,
+  "freshness_score": 0.7117703227626097,
+  "snapshot_count": 112,
   "authenticity": {
     "organic_confidence": 77.0,
     "verdict": "likely_organic",
@@ -41,9 +51,9 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 98.0,
+        "score": 98.1,
         "weight": 0.22,
-        "detail": "2,927 forks for 14,820 stars (19.8%)."
+        "detail": "2,926 forks for 14,821 stars (19.7%)."
       },
       {
         "key": "burst",
@@ -71,7 +81,7 @@
         "label": "Issue engagement",
         "score": 59.6,
         "weight": 0.12,
-        "detail": "73 open issues for 14,820 stars (0.5%)."
+        "detail": "73 open issues for 14,821 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +93,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 34 days ago.",
-      "Fork-to-star ratio: 2,927 forks for 14,820 stars (19.8%)."
+      "Fork-to-star ratio: 2,926 forks for 14,821 stars (19.7%)."
     ],
     "red_flags": []
   }

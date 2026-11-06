@@ -4,37 +4,44 @@
   "description": "Modern embedded framework, using Rust and async.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "async",
+    "embedded",
+    "executor",
+    "rust",
+    "hal",
+    "drivers"
+  ],
   "stars": 10075,
-  "forks": 1735,
-  "open_issues": 502,
+  "forks": 1734,
+  "open_issues": 495,
   "watchers": 50,
   "created_at": "2020-09-22T16:04:20Z",
-  "pushed_at": "2026-11-06T05:11:27Z",
+  "pushed_at": "2026-11-06T14:01:11Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/embassy-rs.png",
   "radar_score": 71.91,
   "impact": 90.99,
   "velocity": 55.94,
   "health": 63.75,
-  "global_percentile": 31.86,
+  "global_percentile": 27.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Modern embedded framework, using Rust and async.",
   "maturity": "Unknown",
   "stars_7d": 31,
-  "stars_30d": 150,
-  "stars_90d": 179,
+  "stars_30d": 148,
+  "stars_90d": 177,
   "star_growth_rate_7d": 4.428571428571429,
-  "star_growth_rate_30d": 5.0,
-  "star_growth_acceleration": 0.8857142857142858,
-  "forks_7d": 10,
-  "forks_30d": 56,
+  "star_growth_rate_30d": 4.933333333333334,
+  "star_growth_acceleration": 0.8976833976833977,
+  "forks_7d": 12,
+  "forks_30d": 55,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 204,
+  "snapshot_count": 205,
   "authenticity": {
-    "organic_confidence": 95.6,
+    "organic_confidence": 95.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.6,
         "weight": 0.22,
-        "detail": "1,735 forks for 10,075 stars (17.2%)."
+        "detail": "1,734 forks for 10,075 stars (17.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.9,
+        "score": 88.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 10 stars (3 forks, 2.1x the daily average)."
       },
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 99.9,
+        "score": 99.7,
         "weight": 0.12,
-        "detail": "502 open issues for 10,075 stars (5.0%)."
+        "detail": "495 open issues for 10,075 stars (4.9%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +90,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 10 stars (3 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 1,735 forks for 10,075 stars (17.2%).",
-      "Issue engagement: 502 open issues for 10,075 stars (5.0%)."
+      "Fork-to-star ratio: 1,734 forks for 10,075 stars (17.2%).",
+      "Issue engagement: 495 open issues for 10,075 stars (4.9%)."
     ],
     "red_flags": []
   }

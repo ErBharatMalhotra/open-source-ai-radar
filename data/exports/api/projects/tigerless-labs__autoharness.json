@@ -4,8 +4,14 @@
   "description": "Building the self-learning layer next-gen agents will ship with, learning skills from real work.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 10746,
+  "topics": [
+    "agent-skills",
+    "claude-code",
+    "claude-code-plugin",
+    "llm-agents",
+    "python"
+  ],
+  "stars": 10749,
   "forks": 653,
   "open_issues": 14,
   "watchers": 261,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-04T16:47:40Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tigerless-labs.png",
-  "radar_score": 75.36,
-  "impact": 91.64,
-  "velocity": 65.3,
-  "health": 63.38,
-  "global_percentile": 51.43,
+  "radar_score": 74.74,
+  "impact": 91.63,
+  "velocity": 63.8,
+  "health": 63.01,
+  "global_percentile": 46.86,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Autoharness \u2014 a self-learning skill layer for Claude Code \u2014 distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
   "maturity": "Unknown",
-  "stars_7d": 249,
-  "stars_30d": 1145,
-  "stars_90d": 1145,
-  "star_growth_rate_7d": 35.57142857142857,
-  "star_growth_rate_30d": 40.892857142857146,
-  "star_growth_acceleration": 0.8698689956331876,
-  "forks_7d": 13,
-  "forks_30d": 49,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 113,
+  "stars_7d": 188,
+  "stars_30d": 949,
+  "stars_90d": 949,
+  "star_growth_rate_7d": 26.857142857142858,
+  "star_growth_rate_30d": 33.892857142857146,
+  "star_growth_acceleration": 0.7924130663856691,
+  "forks_7d": 9,
+  "forks_30d": 48,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 114,
   "authenticity": {
-    "organic_confidence": 49.1,
+    "organic_confidence": 49.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +49,14 @@
         "label": "Fork-to-star ratio",
         "score": 85.9,
         "weight": 0.22,
-        "detail": "653 forks for 10,746 stars (6.1%)."
+        "detail": "653 forks for 10,749 stars (6.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 0.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1,181 stars (5 forks, 22.0x the daily average). Only 0.4% of burst stars came with a fork."
+        "detail": "Largest 24h jump was 1,181 stars (5 forks, 22.5x the daily average). Only 0.4% of burst stars came with a fork."
       },
       {
         "key": "alignment",
@@ -71,23 +77,23 @@
         "label": "Issue engagement",
         "score": 38.0,
         "weight": 0.12,
-        "detail": "14 open issues for 10,746 stars (0.1%)."
+        "detail": "14 open issues for 10,749 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 653 forks for 10,746 stars (6.1%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Fork-to-star ratio: 653 forks for 10,749 stars (6.1%).",
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 1,181 stars (5 forks, 22.0x the daily average). Only 0.4% of burst stars came with a fork.",
-      "Issue engagement: 14 open issues for 10,746 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 1,181 stars (5 forks, 22.5x the daily average). Only 0.4% of burst stars came with a fork.",
+      "Issue engagement: 14 open issues for 10,749 stars (0.1%)."
     ]
   }
 }

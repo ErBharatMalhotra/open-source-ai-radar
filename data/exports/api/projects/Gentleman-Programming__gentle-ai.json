@@ -4,38 +4,56 @@
   "description": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 8399,
-  "forks": 882,
-  "open_issues": 363,
+  "topics": [
+    "ai-coding",
+    "claude-code",
+    "code-review",
+    "copilot",
+    "cursor",
+    "developer-tools",
+    "golang",
+    "llm",
+    "mcp",
+    "opencode",
+    "persistent-memory",
+    "spec-driven-development",
+    "agent-skills",
+    "ai-agents",
+    "codex",
+    "coding-agents",
+    "pi"
+  ],
+  "stars": 8426,
+  "forks": 883,
+  "open_issues": 366,
   "watchers": 44,
   "created_at": "2026-02-27T23:28:01Z",
   "pushed_at": "2026-11-05T09:09:20Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Gentleman-Programming.png",
-  "radar_score": 76.15,
-  "impact": 89.08,
-  "velocity": 70.51,
-  "health": 63.38,
-  "global_percentile": 62.86,
+  "radar_score": 76.24,
+  "impact": 89.11,
+  "velocity": 70.45,
+  "health": 63.75,
+  "global_percentile": 65.43,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Spec-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
   "maturity": "Unknown",
-  "stars_7d": 174,
-  "stars_30d": 724,
-  "stars_90d": 1561,
-  "star_growth_rate_7d": 24.857142857142858,
-  "star_growth_rate_30d": 24.96551724137931,
-  "star_growth_acceleration": 0.9956590370955012,
-  "forks_7d": 12,
-  "forks_30d": 53,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 100,
+  "stars_7d": 290,
+  "stars_30d": 864,
+  "stars_90d": 1695,
+  "star_growth_rate_7d": 41.42857142857143,
+  "star_growth_rate_30d": 28.8,
+  "star_growth_acceleration": 1.4384920634920635,
+  "forks_7d": 10,
+  "forks_30d": 55,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 101,
   "why_trending": "Strong momentum with 162 new stars this week. Above-average growth velocity. High developer adoption with 12 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 98.6,
+    "organic_confidence": 99.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +62,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "882 forks for 8,399 stars (10.5%)."
+        "detail": "883 forks for 8,426 stars (10.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 97.3,
+        "score": 99.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 31 stars (4 forks, 1.3x the daily average)."
+        "detail": "Largest 24h jump was 31 stars (4 forks, 1.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +88,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 97.7,
+        "score": 97.8,
         "weight": 0.12,
-        "detail": "363 open issues for 8,399 stars (4.3%)."
+        "detail": "366 open issues for 8,426 stars (4.3%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +101,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 31 stars (4 forks, 1.3x the daily average).",
-      "Issue engagement: 363 open issues for 8,399 stars (4.3%).",
-      "Fork-to-star ratio: 882 forks for 8,399 stars (10.5%)."
+      "Issue engagement: 366 open issues for 8,426 stars (4.3%).",
+      "Burst pattern: Largest 24h jump was 31 stars (4 forks, 1.1x the daily average).",
+      "Fork-to-star ratio: 883 forks for 8,426 stars (10.5%)."
     ],
     "red_flags": []
   }

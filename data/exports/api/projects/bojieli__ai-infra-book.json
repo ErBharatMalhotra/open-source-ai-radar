@@ -4,8 +4,24 @@
   "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 7338,
+  "topics": [
+    "accelerator",
+    "ai-infra",
+    "ai-infrastructure",
+    "book",
+    "datacenter-network",
+    "deepseek",
+    "distributed-systems",
+    "gpu",
+    "kv-cache",
+    "llm",
+    "llm-inference",
+    "llm-serving",
+    "llm-training",
+    "mixture-of-experts",
+    "performance-engineering"
+  ],
+  "stars": 7340,
   "forks": 584,
   "open_issues": 6,
   "watchers": 21,
@@ -13,44 +29,44 @@
   "pushed_at": "2026-10-01T08:19:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bojieli.png",
-  "radar_score": 66.87,
-  "impact": 85.86,
-  "velocity": 58.38,
-  "health": 48.36,
-  "global_percentile": 13.0,
+  "radar_score": 66.83,
+  "impact": 85.88,
+  "velocity": 58.4,
+  "health": 48.14,
+  "global_percentile": 11.57,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
   "maturity": "Unknown",
-  "stars_7d": 212,
-  "stars_30d": 1412,
-  "stars_90d": 2648,
-  "star_growth_rate_7d": 30.285714285714285,
-  "star_growth_rate_30d": 48.689655172413794,
-  "star_growth_acceleration": 0.6220153783893161,
-  "forks_7d": 15,
-  "forks_30d": 148,
-  "days_since_last_push": 34,
-  "freshness_score": 0.7117703227626097,
-  "snapshot_count": 45,
+  "stars_7d": 191,
+  "stars_30d": 1433,
+  "stars_90d": 2669,
+  "star_growth_rate_7d": 27.285714285714285,
+  "star_growth_rate_30d": 47.766666666666666,
+  "star_growth_acceleration": 0.5712291895125112,
+  "forks_7d": 17,
+  "forks_30d": 151,
+  "days_since_last_push": 35,
+  "freshness_score": 0.7046880897187134,
+  "snapshot_count": 46,
   "authenticity": {
-    "organic_confidence": 76.6,
+    "organic_confidence": 76.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 92.7,
+        "score": 92.6,
         "weight": 0.22,
-        "detail": "584 forks for 7,338 stars (8.0%)."
+        "detail": "584 forks for 7,340 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 80.7,
+        "score": 79.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 124 stars (9 forks, 2.6x the daily average)."
+        "detail": "Largest 24h jump was 124 stars (9 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +87,7 @@
         "label": "Issue engagement",
         "score": 33.2,
         "weight": 0.12,
-        "detail": "6 open issues for 7,338 stars (0.1%)."
+        "detail": "6 open issues for 7,340 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +98,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 124 stars (9 forks, 2.6x the daily average).",
+      "Burst pattern: Largest 24h jump was 124 stars (9 forks, 2.7x the daily average).",
       "Maintenance cadence: Last push 35 days ago.",
-      "Fork-to-star ratio: 584 forks for 7,338 stars (8.0%)."
+      "Fork-to-star ratio: 584 forks for 7,340 stars (8.0%)."
     ],
     "red_flags": [
-      "Issue engagement: 6 open issues for 7,338 stars (0.1%)."
+      "Issue engagement: 6 open issues for 7,340 stars (0.1%)."
     ]
   }
 }

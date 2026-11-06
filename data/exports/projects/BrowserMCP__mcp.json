@@ -4,35 +4,42 @@
   "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "browser-automation",
+    "browser-extension",
+    "claude",
+    "cursor",
+    "mcp",
+    "mcp-server"
+  ],
   "stars": 7297,
-  "forks": 601,
+  "forks": 600,
   "open_issues": 1,
   "watchers": 19,
   "created_at": "2025-03-28T02:01:22Z",
   "pushed_at": "2026-11-03T01:57:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/BrowserMCP.png",
-  "radar_score": 65.71,
-  "impact": 85.56,
-  "velocity": 48.81,
-  "health": 57.61,
-  "global_percentile": 11.14,
+  "radar_score": 65.63,
+  "impact": 85.57,
+  "velocity": 48.82,
+  "health": 57.25,
+  "global_percentile": 10.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
   "maturity": "Unknown",
-  "stars_7d": 50,
-  "stars_30d": 130,
-  "stars_90d": 275,
-  "star_growth_rate_7d": 7.142857142857143,
-  "star_growth_rate_30d": 4.482758620689655,
-  "star_growth_acceleration": 1.5934065934065935,
-  "forks_7d": 6,
-  "forks_30d": 14,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 98,
+  "stars_7d": 47,
+  "stars_30d": 138,
+  "stars_90d": 280,
+  "star_growth_rate_7d": 6.714285714285714,
+  "star_growth_rate_30d": 4.6,
+  "star_growth_acceleration": 1.4596273291925468,
+  "forks_7d": 3,
+  "forks_30d": 13,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 99,
   "authenticity": {
     "organic_confidence": 81.9,
     "verdict": "organic",
@@ -41,14 +48,14 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 93.7,
+        "score": 93.6,
         "weight": 0.22,
-        "detail": "601 forks for 7,297 stars (8.2%)."
+        "detail": "600 forks for 7,297 stars (8.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.0,
+        "score": 92.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 8 stars (0 forks, 1.8x the daily average)."
       },
@@ -76,15 +83,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 8 stars (0 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 601 forks for 7,297 stars (8.2%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Fork-to-star ratio: 600 forks for 7,297 stars (8.2%).",
+      "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": [
       "Issue engagement: 1 open issues for 7,297 stars (0.0%)."

@@ -4,7 +4,25 @@
   "description": "\u2728 AI Coding, Vim Style",
   "language": "Lua",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "neovim",
+    "openai",
+    "anthropic",
+    "ollama",
+    "plugin",
+    "copilot",
+    "gemini",
+    "google-gemini",
+    "llm",
+    "nvim",
+    "deepseek",
+    "acp",
+    "agent-client-protocol",
+    "claude-code",
+    "agent",
+    "openrouter",
+    "kimi"
+  ],
   "stars": 6923,
   "forks": 472,
   "open_issues": 0,
@@ -13,28 +31,28 @@
   "pushed_at": "2026-11-02T18:28:57Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/olimorris.png",
-  "radar_score": 62.36,
-  "impact": 85.69,
-  "velocity": 39.1,
-  "health": 57.61,
-  "global_percentile": 5.29,
+  "radar_score": 62.27,
+  "impact": 85.68,
+  "velocity": 39.09,
+  "health": 57.25,
+  "global_percentile": 4.71,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "\u2728 AI Coding, Vim Style",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 41,
-  "stars_90d": 107,
-  "star_growth_rate_7d": 2.2857142857142856,
-  "star_growth_rate_30d": 1.4137931034482758,
-  "star_growth_acceleration": 1.6167247386759582,
-  "forks_7d": 2,
+  "stars_7d": 4,
+  "stars_30d": 39,
+  "stars_90d": 104,
+  "star_growth_rate_7d": 0.8,
+  "star_growth_rate_30d": 1.3,
+  "star_growth_acceleration": 0.6153846153846154,
+  "forks_7d": -1,
   "forks_30d": 10,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 91,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 92,
   "authenticity": {
-    "organic_confidence": 71.7,
+    "organic_confidence": 74.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +66,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.8,
+        "score": 64.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (1 forks, 3.5x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (1 forks, 3.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -62,9 +80,9 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 96.9,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.62x the monthly baseline."
       },
       {
         "key": "engagement",
@@ -83,6 +101,7 @@
     ],
     "reasons": [
       "Fork-to-star ratio: 472 forks for 6,923 stars (6.8%).",
+      "Growth acceleration: Weekly growth is 0.62x the monthly baseline.",
       "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": [

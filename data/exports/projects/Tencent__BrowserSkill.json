@@ -4,9 +4,13 @@
   "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 10067,
-  "forks": 726,
+  "topics": [
+    "agent",
+    "dsh-plugin",
+    "browser-use"
+  ],
+  "stars": 10076,
+  "forks": 724,
   "open_issues": 71,
   "watchers": 25,
   "created_at": "2026-06-22T07:24:40Z",
@@ -17,41 +21,41 @@
   "impact": 87.99,
   "velocity": 68.24,
   "health": 63.75,
-  "global_percentile": 49.14,
+  "global_percentile": 55.0,
   "category": "AI Agents",
   "sub_category": "task agent",
   "summary": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
   "maturity": "Unknown",
-  "stars_7d": 325,
-  "stars_30d": 1898,
-  "stars_90d": 2747,
-  "star_growth_rate_7d": 46.42857142857143,
-  "star_growth_rate_30d": 63.266666666666666,
-  "star_growth_acceleration": 0.7338551859099804,
-  "forks_7d": 29,
-  "forks_30d": 142,
+  "stars_7d": 298,
+  "stars_30d": 1908,
+  "stars_90d": 2706,
+  "star_growth_rate_7d": 42.57142857142857,
+  "star_growth_rate_30d": 63.6,
+  "star_growth_acceleration": 0.669362084456424,
+  "forks_7d": 26,
+  "forks_30d": 140,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 102,
+  "snapshot_count": 103,
   "why_trending": "Above-average growth velocity. Active in the AI Agents category.",
   "authenticity": {
-    "organic_confidence": 87.1,
+    "organic_confidence": 86.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 90.0,
+        "score": 89.9,
         "weight": 0.22,
-        "detail": "726 forks for 10,067 stars (7.2%)."
+        "detail": "724 forks for 10,076 stars (7.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.5,
+        "score": 88.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 127 stars (3 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 127 stars (3 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 66.2,
+        "score": 66.1,
         "weight": 0.12,
-        "detail": "71 open issues for 10,067 stars (0.7%)."
+        "detail": "71 open issues for 10,076 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +87,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 127 stars (3 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 726 forks for 10,067 stars (7.2%).",
+      "Burst pattern: Largest 24h jump was 127 stars (3 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 724 forks for 10,076 stars (7.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

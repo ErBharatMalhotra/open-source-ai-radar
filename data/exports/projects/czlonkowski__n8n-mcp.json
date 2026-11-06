@@ -4,7 +4,12 @@
   "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "n8n",
+    "workflows"
+  ],
   "stars": 23220,
   "forks": 3679,
   "open_issues": 27,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-05T22:35:38Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/czlonkowski.png",
-  "radar_score": 76.64,
-  "impact": 95.81,
-  "velocity": 64.46,
-  "health": 63.01,
-  "global_percentile": 65.14,
+  "radar_score": 77.34,
+  "impact": 95.8,
+  "velocity": 65.96,
+  "health": 63.75,
+  "global_percentile": 72.43,
   "category": "MCP",
   "sub_category": "",
   "summary": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
   "maturity": "Unknown",
   "stars_7d": 57,
-  "stars_30d": 173,
-  "stars_90d": 173,
+  "stars_30d": 174,
+  "stars_90d": 174,
   "star_growth_rate_7d": 8.142857142857142,
-  "star_growth_rate_30d": 5.766666666666667,
-  "star_growth_acceleration": 1.412056151940545,
-  "forks_7d": 4,
-  "forks_30d": 20,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 225,
+  "star_growth_rate_30d": 5.8,
+  "star_growth_acceleration": 1.4039408866995073,
+  "forks_7d": 3,
+  "forks_30d": 18,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 226,
   "authenticity": {
-    "organic_confidence": 84.3,
+    "organic_confidence": 84.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "3,681 forks for 23,217 stars (15.9%)."
+        "detail": "3,679 forks for 23,220 stars (15.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.8,
+        "score": 89.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (-1 forks, 2.1x the daily average)."
       },
@@ -71,23 +76,23 @@
         "label": "Issue engagement",
         "score": 36.6,
         "weight": 0.12,
-        "detail": "27 open issues for 23,217 stars (0.1%)."
+        "detail": "27 open issues for 23,220 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (-1 forks, 2.1x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 3,681 forks for 23,217 stars (15.9%)."
+      "Fork-to-star ratio: 3,679 forks for 23,220 stars (15.8%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 27 open issues for 23,217 stars (0.1%)."
+      "Issue engagement: 27 open issues for 23,220 stars (0.1%)."
     ]
   }
 }

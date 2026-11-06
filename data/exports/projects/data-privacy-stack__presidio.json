@@ -4,8 +4,29 @@
   "description": "An open-source framework for detecting, redacting, masking, and anonymizing sensitive data (PII) across text, images, and structured data. Supports NLP, pattern matching, and customizable pipelines.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 11751,
+  "topics": [
+    "python",
+    "pii",
+    "privacy",
+    "data-anonymization",
+    "de-identification",
+    "data-masking",
+    "transformers",
+    "pii-detection",
+    "data-obfuscation",
+    "data-privacy",
+    "data-redaction",
+    "guardrails",
+    "image-redactor",
+    "named-entity-recognition",
+    "nlp",
+    "personally-identifiable-information",
+    "phi",
+    "sensitive-data",
+    "spacy",
+    "anonymization"
+  ],
+  "stars": 11756,
   "forks": 1416,
   "open_issues": 98,
   "watchers": 96,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-02T14:30:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/data-privacy-stack.png",
-  "radar_score": 70.33,
-  "impact": 92.21,
-  "velocity": 50.82,
+  "radar_score": 70.32,
+  "impact": 92.2,
+  "velocity": 50.8,
   "health": 62.65,
-  "global_percentile": 23.14,
+  "global_percentile": 19.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An open-source framework for detecting, redacting, masking, and anonymizing sensitive data (PII) across text, images, and structured data. Supports NLP, pattern matching, and customizable pipelines.",
   "maturity": "Unknown",
-  "stars_7d": 170,
-  "stars_30d": 451,
-  "stars_90d": 451,
-  "star_growth_rate_7d": 24.285714285714285,
-  "star_growth_rate_30d": 18.791666666666668,
-  "star_growth_acceleration": 1.2923661704149507,
-  "forks_7d": 25,
+  "stars_7d": 174,
+  "stars_30d": 460,
+  "stars_90d": 460,
+  "star_growth_rate_7d": 24.857142857142858,
+  "star_growth_rate_30d": 19.166666666666668,
+  "star_growth_acceleration": 1.296894409937888,
+  "forks_7d": 26,
   "forks_30d": 74,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 257,
+  "snapshot_count": 258,
   "authenticity": {
-    "organic_confidence": 89.6,
+    "organic_confidence": 89.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "1,415 forks for 11,746 stars (12.0%)."
+        "detail": "1,416 forks for 11,756 stars (12.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.7,
+        "score": 86.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 41 stars (3 forks, 2.2x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 70.3,
+        "score": 70.0,
         "weight": 0.12,
-        "detail": "99 open issues for 11,746 stars (0.8%)."
+        "detail": "98 open issues for 11,756 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +105,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 41 stars (3 forks, 2.2x the daily average).",
       "Maintenance cadence: Last push 3 days ago.",
-      "Fork-to-star ratio: 1,415 forks for 11,746 stars (12.0%)."
+      "Fork-to-star ratio: 1,416 forks for 11,756 stars (12.0%)."
     ],
     "red_flags": []
   }

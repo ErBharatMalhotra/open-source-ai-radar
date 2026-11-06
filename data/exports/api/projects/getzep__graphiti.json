@@ -4,8 +4,13 @@
   "description": "Build Real-Time Knowledge Graphs for AI Agents",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 32581,
+  "topics": [
+    "agents",
+    "graph",
+    "llms",
+    "rag"
+  ],
+  "stars": 32585,
   "forks": 3348,
   "open_issues": 260,
   "watchers": 169,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-06T04:49:51Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/getzep.png",
-  "radar_score": 77.21,
-  "impact": 96.58,
-  "velocity": 65.21,
-  "health": 63.01,
-  "global_percentile": 74.86,
+  "radar_score": 77.92,
+  "impact": 96.57,
+  "velocity": 66.71,
+  "health": 63.75,
+  "global_percentile": 78.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Build Real-Time Knowledge Graphs for AI Agents",
   "maturity": "Unknown",
-  "stars_7d": 243,
-  "stars_30d": 876,
-  "stars_90d": 876,
-  "star_growth_rate_7d": 34.714285714285715,
-  "star_growth_rate_30d": 38.08695652173913,
-  "star_growth_acceleration": 0.9114481409001957,
-  "forks_7d": 24,
-  "forks_30d": 83,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 289,
+  "stars_7d": 250,
+  "stars_30d": 875,
+  "stars_90d": 875,
+  "star_growth_rate_7d": 35.714285714285715,
+  "star_growth_rate_30d": 38.04347826086956,
+  "star_growth_acceleration": 0.9387755102040817,
+  "forks_7d": 26,
+  "forks_30d": 85,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 290,
   "authenticity": {
-    "organic_confidence": 88.3,
+    "organic_confidence": 88.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "3,346 forks for 32,573 stars (10.3%)."
+        "detail": "3,348 forks for 32,585 stars (10.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.1,
+        "score": 83.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 88 stars (5 forks, 2.5x the daily average)."
       },
@@ -71,20 +76,20 @@
         "label": "Issue engagement",
         "score": 68.9,
         "weight": 0.12,
-        "detail": "260 open issues for 32,573 stars (0.8%)."
+        "detail": "260 open issues for 32,585 stars (0.8%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 88 stars (5 forks, 2.5x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 3,346 forks for 32,573 stars (10.3%)."
+      "Fork-to-star ratio: 3,348 forks for 32,585 stars (10.3%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

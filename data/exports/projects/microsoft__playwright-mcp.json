@@ -4,37 +4,40 @@
   "description": "Playwright MCP server",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "playwright"
+  ],
   "stars": 39254,
-  "forks": 3389,
+  "forks": 3388,
   "open_issues": 17,
-  "watchers": 149,
+  "watchers": 148,
   "created_at": "2025-03-21T17:48:36Z",
   "pushed_at": "2026-11-05T18:38:45Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/microsoft.png",
-  "radar_score": 73.65,
-  "impact": 96.82,
-  "velocity": 58.1,
+  "radar_score": 75.36,
+  "impact": 96.81,
+  "velocity": 62.99,
   "health": 58.35,
-  "global_percentile": 44.57,
+  "global_percentile": 51.0,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Playwright MCP server",
   "maturity": "Unknown",
-  "stars_7d": 436,
-  "stars_30d": 1104,
-  "stars_90d": 1104,
-  "star_growth_rate_7d": 62.285714285714285,
-  "star_growth_rate_30d": 50.18181818181818,
-  "star_growth_acceleration": 1.24120082815735,
-  "forks_7d": 46,
-  "forks_30d": 141,
+  "stars_7d": 448,
+  "stars_30d": 1111,
+  "stars_90d": 1111,
+  "star_growth_rate_7d": 64.0,
+  "star_growth_rate_30d": 50.5,
+  "star_growth_acceleration": 1.2673267326732673,
+  "forks_7d": 44,
+  "forks_30d": 140,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 293,
+  "snapshot_count": 294,
   "authenticity": {
-    "organic_confidence": 75.8,
+    "organic_confidence": 76.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +46,14 @@
         "label": "Fork-to-star ratio",
         "score": 95.1,
         "weight": 0.22,
-        "detail": "3,387 forks for 39,235 stars (8.6%)."
+        "detail": "3,388 forks for 39,254 stars (8.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.2,
+        "score": 73.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 143 stars (11 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 143 stars (11 forks, 3.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +72,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25.5,
+        "score": 29.3,
         "weight": 0.12,
-        "detail": "2 open issues for 39,235 stars (0.0%)."
+        "detail": "17 open issues for 39,254 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +85,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,387 forks for 39,235 stars (8.6%).",
+      "Fork-to-star ratio: 3,388 forks for 39,254 stars (8.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 39,235 stars (0.0%)."
+      "Issue engagement: 17 open issues for 39,254 stars (0.0%)."
     ]
   }
 }

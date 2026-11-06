@@ -4,35 +4,56 @@
   "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
   "language": "Rust",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 59794,
-  "forks": 2783,
-  "open_issues": 250,
+  "topics": [
+    "search-engine",
+    "typo-tolerance",
+    "site-search",
+    "database",
+    "enterprise-search",
+    "search",
+    "app-search",
+    "full-text-search",
+    "geosearch",
+    "instantsearch",
+    "search-as-you-type",
+    "faceting",
+    "fuzzy-search",
+    "vector-database",
+    "vectors",
+    "hybrid-search",
+    "semantic-search",
+    "ai",
+    "api",
+    "vector-search"
+  ],
+  "stars": 59799,
+  "forks": 2782,
+  "open_issues": 251,
   "watchers": 293,
   "created_at": "2018-04-23T11:45:28Z",
   "pushed_at": "2026-11-05T10:32:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/meilisearch.png",
-  "radar_score": 75.01,
+  "radar_score": 74.92,
   "impact": 97.73,
   "velocity": 62.48,
-  "health": 56.2,
-  "global_percentile": 54.71,
+  "health": 55.83,
+  "global_percentile": 48.29,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
   "maturity": "Unknown",
-  "stars_7d": 88,
-  "stars_30d": 252,
-  "stars_90d": 252,
-  "star_growth_rate_7d": 12.571428571428571,
-  "star_growth_rate_30d": 9.692307692307692,
-  "star_growth_acceleration": 1.2970521541950113,
-  "forks_7d": 16,
-  "forks_30d": 58,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 245,
+  "stars_7d": 92,
+  "stars_30d": 257,
+  "stars_90d": 257,
+  "star_growth_rate_7d": 13.142857142857142,
+  "star_growth_rate_30d": 9.884615384615385,
+  "star_growth_acceleration": 1.329627570872707,
+  "forks_7d": 14,
+  "forks_30d": 57,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 246,
   "authenticity": {
     "organic_confidence": 83.3,
     "verdict": "organic",
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 79.7,
         "weight": 0.22,
-        "detail": "2,783 forks for 59,792 stars (4.7%)."
+        "detail": "2,782 forks for 59,799 stars (4.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.4,
+        "score": 93.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 16 stars (2 forks, 1.7x the daily average)."
+        "detail": "Largest 24h jump was 16 stars (2 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +90,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 55.8,
+        "score": 56.0,
         "weight": 0.12,
-        "detail": "249 open issues for 59,792 stars (0.4%)."
+        "detail": "251 open issues for 59,799 stars (0.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,783 forks for 59,792 stars (4.7%).",
-      "Burst pattern: Largest 24h jump was 16 stars (2 forks, 1.7x the daily average).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Fork-to-star ratio: 2,782 forks for 59,799 stars (4.7%).",
+      "Burst pattern: Largest 24h jump was 16 stars (2 forks, 1.6x the daily average).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

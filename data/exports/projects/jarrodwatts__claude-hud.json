@@ -4,37 +4,45 @@
   "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 29121,
-  "forks": 1332,
+  "topics": [
+    "anthropic",
+    "claude",
+    "claude-code",
+    "cli",
+    "plugin",
+    "statusline",
+    "typescript"
+  ],
+  "stars": 29122,
+  "forks": 1333,
   "open_issues": 3,
   "watchers": 36,
   "created_at": "2026-01-02T01:35:07Z",
   "pushed_at": "2026-11-03T08:28:58Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jarrodwatts.png",
-  "radar_score": 71.32,
+  "radar_score": 71.24,
   "impact": 92.73,
-  "velocity": 59.91,
-  "health": 53.06,
-  "global_percentile": 28.14,
+  "velocity": 59.92,
+  "health": 52.7,
+  "global_percentile": 23.0,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
   "maturity": "Unknown",
-  "stars_7d": 122,
-  "stars_30d": 657,
-  "stars_90d": 657,
-  "star_growth_rate_7d": 17.428571428571427,
-  "star_growth_rate_30d": 26.28,
-  "star_growth_acceleration": 0.6631876494890193,
-  "forks_7d": 1,
-  "forks_30d": 16,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 247,
+  "stars_7d": 121,
+  "stars_30d": 661,
+  "stars_90d": 661,
+  "star_growth_rate_7d": 17.285714285714285,
+  "star_growth_rate_30d": 26.44,
+  "star_growth_acceleration": 0.6537713421223255,
+  "forks_7d": 2,
+  "forks_30d": 17,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 248,
   "authenticity": {
-    "organic_confidence": 76.9,
+    "organic_confidence": 76.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 79.2,
         "weight": 0.22,
-        "detail": "1,332 forks for 29,117 stars (4.6%)."
+        "detail": "1,333 forks for 29,122 stars (4.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.1,
+        "score": 91.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 48 stars (5 forks, 1.9x the daily average)."
       },
@@ -71,23 +79,23 @@
         "label": "Issue engagement",
         "score": 26.0,
         "weight": 0.12,
-        "detail": "3 open issues for 29,117 stars (0.0%)."
+        "detail": "3 open issues for 29,122 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,332 forks for 29,117 stars (4.6%).",
+      "Fork-to-star ratio: 1,333 forks for 29,122 stars (4.6%).",
       "Burst pattern: Largest 24h jump was 48 stars (5 forks, 1.9x the daily average).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 29,117 stars (0.0%)."
+      "Issue engagement: 3 open issues for 29,122 stars (0.0%)."
     ]
   }
 }

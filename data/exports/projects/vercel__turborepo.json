@@ -4,8 +4,14 @@
   "description": "The build system for coding agents.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
-  "stars": 31308,
+  "topics": [
+    "monorepo",
+    "javascript",
+    "typescript",
+    "build-tool",
+    "build-system"
+  ],
+  "stars": 31307,
   "forks": 2477,
   "open_issues": 1,
   "watchers": 143,
@@ -14,10 +20,10 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/vercel.png",
   "radar_score": 71.39,
-  "impact": 95.94,
+  "impact": 95.93,
   "velocity": 52.65,
   "health": 58.35,
-  "global_percentile": 28.57,
+  "global_percentile": 24.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "The build system for coding agents.",
@@ -32,11 +38,11 @@
   "forks_30d": 0,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 2,
+  "snapshot_count": 3,
   "authenticity": {
-    "organic_confidence": 75.9,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.9,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -82,6 +88,7 @@
       }
     ],
     "reasons": [
+      "Burst pattern: No single-day star surge in the last 30 days.",
       "Fork-to-star ratio: 2,477 forks for 31,307 stars (7.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

@@ -4,8 +4,25 @@
   "description": "Google Workspace CLI \u2014 one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 32140,
+  "topics": [
+    "google-workspace",
+    "agent-skills",
+    "ai-agent",
+    "automation",
+    "cli",
+    "discovery-api",
+    "google-admin",
+    "google-api",
+    "google-calendar",
+    "google-chat",
+    "google-docs",
+    "google-drive",
+    "google-sheets",
+    "oauth2",
+    "rust",
+    "gemini-cli-extension"
+  ],
+  "stars": 32141,
   "forks": 1986,
   "open_issues": 134,
   "watchers": 96,
@@ -17,22 +34,22 @@
   "impact": 95.2,
   "velocity": 67.06,
   "health": 62.65,
-  "global_percentile": 74.86,
+  "global_percentile": 71.0,
   "category": "AI Agents",
   "sub_category": "conversational agent",
   "summary": "Google Workspace CLI \u2014 one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
   "maturity": "Unknown",
-  "stars_7d": 150,
-  "stars_30d": 650,
-  "stars_90d": 650,
-  "star_growth_rate_7d": 21.428571428571427,
-  "star_growth_rate_30d": 29.545454545454547,
-  "star_growth_acceleration": 0.7252747252747251,
-  "forks_7d": 23,
-  "forks_30d": 95,
+  "stars_7d": 152,
+  "stars_30d": 649,
+  "stars_90d": 649,
+  "star_growth_rate_7d": 21.714285714285715,
+  "star_growth_rate_30d": 29.5,
+  "star_growth_acceleration": 0.7360774818401937,
+  "forks_7d": 22,
+  "forks_30d": 93,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 276,
+  "snapshot_count": 277,
   "authenticity": {
     "organic_confidence": 81.1,
     "verdict": "organic",
@@ -41,14 +58,14 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 86.3,
+        "score": 86.2,
         "weight": 0.22,
-        "detail": "1,986 forks for 32,131 stars (6.2%)."
+        "detail": "1,986 forks for 32,141 stars (6.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.9,
+        "score": 82.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 74 stars (12 forks, 2.5x the daily average)."
       },
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 55.9,
+        "score": 55.8,
         "weight": 0.12,
-        "detail": "134 open issues for 32,131 stars (0.4%)."
+        "detail": "134 open issues for 32,141 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +100,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 74 stars (12 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 1,986 forks for 32,131 stars (6.2%).",
+      "Fork-to-star ratio: 1,986 forks for 32,141 stars (6.2%).",
       "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": []

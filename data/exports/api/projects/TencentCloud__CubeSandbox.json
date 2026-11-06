@@ -4,7 +4,11 @@
   "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agents",
+    "container",
+    "sandbox"
+  ],
   "stars": 13182,
   "forks": 1201,
   "open_issues": 109,
@@ -13,28 +17,28 @@
   "pushed_at": "2026-11-06T09:03:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/TencentCloud.png",
-  "radar_score": 76.04,
-  "impact": 91.54,
+  "radar_score": 76.05,
+  "impact": 91.55,
   "velocity": 69.25,
   "health": 60.75,
-  "global_percentile": 58.57,
+  "global_percentile": 57.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "maturity": "Unknown",
-  "stars_7d": 93,
-  "stars_30d": 365,
-  "stars_90d": 365,
-  "star_growth_rate_7d": 13.285714285714286,
-  "star_growth_rate_30d": 12.166666666666666,
-  "star_growth_acceleration": 1.091976516634051,
+  "stars_7d": 92,
+  "stars_30d": 363,
+  "stars_90d": 363,
+  "star_growth_rate_7d": 13.142857142857142,
+  "star_growth_rate_30d": 12.1,
+  "star_growth_acceleration": 1.0861865407319953,
   "forks_7d": 11,
   "forks_30d": 27,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 234,
+  "snapshot_count": 235,
   "authenticity": {
-    "organic_confidence": 90.7,
+    "organic_confidence": 90.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +52,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.8,
+        "score": 91.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 22 stars (2 forks, 1.8x the daily average)."
+        "detail": "Largest 24h jump was 22 stars (2 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +86,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 22 stars (2 forks, 1.8x the daily average).",
+      "Burst pattern: Largest 24h jump was 22 stars (2 forks, 1.9x the daily average).",
       "Fork-to-star ratio: 1,201 forks for 13,182 stars (9.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

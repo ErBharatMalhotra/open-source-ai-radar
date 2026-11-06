@@ -34,7 +34,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 1,
   "authenticity": {
-    "organic_confidence": 99.2,
+    "organic_confidence": 99.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -76,14 +76,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
+      "Maintenance cadence: Last push 2 days ago.",
       "Fork-to-star ratio: 341 forks for 2,061 stars (16.5%).",
-      "Maintenance cadence: Last push 1 days ago.",
       "Issue engagement: 946 open issues for 2,061 stars (45.9%)."
     ],
     "red_flags": []

@@ -4,7 +4,10 @@
   "description": "Examples and guides for using the Gemini API",
   "language": "Jupyter Notebook",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "gemini",
+    "gemini-api"
+  ],
   "stars": 17912,
   "forks": 2829,
   "open_issues": 3,
@@ -13,28 +16,28 @@
   "pushed_at": "2026-11-05T17:09:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google-gemini.png",
-  "radar_score": 73.15,
+  "radar_score": 73.05,
   "impact": 95.23,
-  "velocity": 58.48,
-  "health": 58.35,
-  "global_percentile": 35.29,
+  "velocity": 58.47,
+  "health": 57.98,
+  "global_percentile": 34.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Examples and guides for using the Gemini API",
   "maturity": "Unknown",
-  "stars_7d": 30,
-  "stars_30d": 91,
-  "stars_90d": 90,
-  "star_growth_rate_7d": 4.285714285714286,
-  "star_growth_rate_30d": 3.033333333333333,
-  "star_growth_acceleration": 1.41287284144427,
-  "forks_7d": 10,
-  "forks_30d": 36,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 200,
+  "stars_7d": 32,
+  "stars_30d": 94,
+  "stars_90d": 96,
+  "star_growth_rate_7d": 4.571428571428571,
+  "star_growth_rate_30d": 3.1333333333333333,
+  "star_growth_acceleration": 1.458966565349544,
+  "forks_7d": 8,
+  "forks_30d": 34,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 201,
   "authenticity": {
-    "organic_confidence": 78.0,
+    "organic_confidence": 79.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +46,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "2,830 forks for 17,907 stars (15.8%)."
+        "detail": "2,829 forks for 17,912 stars (15.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.6,
+        "score": 79.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 9 stars (2 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 9 stars (2 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +74,7 @@
         "label": "Issue engagement",
         "score": 26.7,
         "weight": 0.12,
-        "detail": "3 open issues for 17,907 stars (0.0%)."
+        "detail": "3 open issues for 17,912 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +85,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 9 stars (2 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 2,830 forks for 17,907 stars (15.8%).",
+      "Burst pattern: Largest 24h jump was 9 stars (2 forks, 2.7x the daily average).",
+      "Fork-to-star ratio: 2,829 forks for 17,912 stars (15.8%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 17,907 stars (0.0%)."
+      "Issue engagement: 3 open issues for 17,912 stars (0.0%)."
     ]
   }
 }

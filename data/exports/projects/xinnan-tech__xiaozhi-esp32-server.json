@@ -4,7 +4,15 @@
   "description": "\u672c\u9879\u76ee\u4e3axiaozhi-esp32\u63d0\u4f9b\u540e\u7aef\u670d\u52a1\uff0c\u5e2e\u52a9\u60a8\u5feb\u901f\u642d\u5efaESP32\u8bbe\u5907\u63a7\u5236\u670d\u52a1\u5668\u3002Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "dify",
+    "esp32",
+    "xiaozhi-esp32",
+    "mcp-server",
+    "xiaozhi",
+    "xiaozhi-ai",
+    "xiaozhi-server"
+  ],
   "stars": 11184,
   "forks": 3809,
   "open_issues": 687,
@@ -17,25 +25,25 @@
   "impact": 93.34,
   "velocity": 70.91,
   "health": 57.18,
-  "global_percentile": 62.86,
+  "global_percentile": 61.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\u672c\u9879\u76ee\u4e3axiaozhi-esp32\u63d0\u4f9b\u540e\u7aef\u670d\u52a1\uff0c\u5e2e\u52a9\u60a8\u5feb\u901f\u642d\u5efaESP32\u8bbe\u5907\u63a7\u5236\u670d\u52a1\u5668\u3002Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
   "maturity": "Unknown",
-  "stars_7d": 97,
-  "stars_30d": 437,
-  "stars_90d": 437,
-  "star_growth_rate_7d": 13.857142857142858,
-  "star_growth_rate_30d": 15.068965517241379,
-  "star_growth_acceleration": 0.9195815626021576,
-  "forks_7d": 42,
-  "forks_30d": 141,
+  "stars_7d": 89,
+  "stars_30d": 431,
+  "stars_90d": 431,
+  "star_growth_rate_7d": 12.714285714285714,
+  "star_growth_rate_30d": 14.862068965517242,
+  "star_growth_acceleration": 0.855485581703679,
+  "forks_7d": 39,
+  "forks_30d": 139,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 224,
+  "snapshot_count": 225,
   "why_trending": "Strong momentum with 102 new stars this week. Above-average growth velocity. High developer adoption with 47 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 94.1,
+    "organic_confidence": 94.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,12 +52,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.2,
         "weight": 0.22,
-        "detail": "3,808 forks for 11,184 stars (34.0%)."
+        "detail": "3,809 forks for 11,184 stars (34.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.1,
+        "score": 88.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 31 stars (10 forks, 2.1x the daily average)."
       },
@@ -84,7 +92,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 31 stars (10 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 3,808 forks for 11,184 stars (34.0%).",
+      "Fork-to-star ratio: 3,809 forks for 11,184 stars (34.1%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []

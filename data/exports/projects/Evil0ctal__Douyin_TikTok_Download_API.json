@@ -4,7 +4,28 @@
   "description": "\ud83d\ude80 \u81ea\u6258\u7ba1\u7684\u6296\u97f3\u3001TikTok\u3001B \u7ad9\u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u652f\u6301 AI agent \u901a\u8fc7 MCP \u8c03\u7528\u4e0e\u79bb\u7ebf\u8bed\u97f3\u8f6c\u6587\u5b57\uff0cDocker \u4e00\u952e\u90e8\u7f72\u3002| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader \u2014 async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "tiktok",
+    "douyin",
+    "scraper",
+    "crawler",
+    "web-scraping",
+    "tiktok-scraper",
+    "douyin-api",
+    "tiktok-api",
+    "data-collection",
+    "downloader",
+    "fastapi",
+    "mcp-server",
+    "model-context-protocol",
+    "openapi",
+    "rest-api",
+    "social-media",
+    "tiktok-downloader",
+    "video-downloader",
+    "speech-to-text",
+    "bilibili"
+  ],
   "stars": 21223,
   "forks": 2954,
   "open_issues": 6,
@@ -14,25 +35,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/Evil0ctal.png",
   "radar_score": 70.42,
-  "impact": 94.89,
+  "impact": 94.9,
   "velocity": 52.1,
   "health": 56.89,
-  "global_percentile": 20.29,
+  "global_percentile": 20.0,
   "category": "MCP",
   "sub_category": "server",
   "summary": "\ud83d\ude80 Self-hosted TikTok & Douyin scraper and no-watermark video downloader \u2014 async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. \u6296\u97f3\u3001TikTok \u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u81ea\u6258\u7ba1\uff0c\u652f\u6301 MCP \u8c03\u7528\u4e0e Docker \u4e00\u952e\u90e8\u7f72\u3002",
   "maturity": "Unknown",
   "stars_7d": 238,
-  "stars_30d": 613,
-  "stars_90d": 613,
+  "stars_30d": 598,
+  "stars_90d": 598,
   "star_growth_rate_7d": 34.0,
-  "star_growth_rate_30d": 25.541666666666668,
-  "star_growth_acceleration": 1.33115823817292,
+  "star_growth_rate_30d": 24.916666666666668,
+  "star_growth_acceleration": 1.3645484949832776,
   "forks_7d": 33,
-  "forks_30d": 94,
+  "forks_30d": 88,
   "days_since_last_push": 4,
   "freshness_score": 0.9607894391523232,
-  "snapshot_count": 186,
+  "snapshot_count": 187,
   "authenticity": {
     "organic_confidence": 82.7,
     "verdict": "organic",
@@ -43,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "2,954 forks for 21,222 stars (13.9%)."
+        "detail": "2,954 forks for 21,223 stars (13.9%)."
       },
       {
         "key": "burst",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 27.8,
         "weight": 0.12,
-        "detail": "6 open issues for 21,222 stars (0.0%)."
+        "detail": "6 open issues for 21,223 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -84,10 +105,10 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 50 stars (36 forks, 2.1x the daily average).",
       "Maintenance cadence: Last push 4 days ago.",
-      "Fork-to-star ratio: 2,954 forks for 21,222 stars (13.9%)."
+      "Fork-to-star ratio: 2,954 forks for 21,223 stars (13.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 6 open issues for 21,222 stars (0.0%)."
+      "Issue engagement: 6 open issues for 21,223 stars (0.0%)."
     ]
   }
 }

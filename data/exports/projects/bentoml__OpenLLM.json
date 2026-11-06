@@ -4,8 +4,27 @@
   "description": "Run any open-source LLMs, such as DeepSeek and Llama, as OpenAI compatible API endpoint in the cloud.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12582,
+  "topics": [
+    "llm",
+    "llmops",
+    "model-inference",
+    "fine-tuning",
+    "llm-serving",
+    "llama",
+    "vicuna",
+    "bentoml",
+    "llama2",
+    "llm-inference",
+    "llm-ops",
+    "open-source-llm",
+    "openllm",
+    "mistral",
+    "mlops",
+    "llama3-1",
+    "llama3-2",
+    "llama3-2-vision"
+  ],
+  "stars": 12583,
   "forks": 847,
   "open_issues": 6,
   "watchers": 81,
@@ -13,44 +32,44 @@
   "pushed_at": "2026-11-02T17:13:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bentoml.png",
-  "radar_score": 68.76,
-  "impact": 91.44,
-  "velocity": 50.82,
-  "health": 57.61,
-  "global_percentile": 15.29,
+  "radar_score": 67.77,
+  "impact": 91.37,
+  "velocity": 48.57,
+  "health": 56.89,
+  "global_percentile": 11.86,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "Run any open-source LLMs, such as DeepSeek and Llama, as OpenAI compatible API endpoint in the cloud.",
   "maturity": "Unknown",
-  "stars_7d": 11,
-  "stars_30d": 33,
-  "stars_90d": 55,
-  "star_growth_rate_7d": 1.5714285714285714,
-  "star_growth_rate_30d": 1.1379310344827587,
-  "star_growth_acceleration": 1.380952380952381,
+  "stars_7d": 9,
+  "stars_30d": 31,
+  "stars_90d": 54,
+  "star_growth_rate_7d": 1.2857142857142858,
+  "star_growth_rate_30d": 1.0333333333333334,
+  "star_growth_acceleration": 1.2442396313364055,
   "forks_7d": -1,
-  "forks_30d": 2,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 120,
+  "forks_30d": 0,
+  "days_since_last_push": 4,
+  "freshness_score": 0.9607894391523232,
+  "snapshot_count": 121,
   "authenticity": {
-    "organic_confidence": 65.6,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 64.6,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 88.3,
+        "score": 88.2,
         "weight": 0.22,
-        "detail": "849 forks for 12,583 stars (6.7%)."
+        "detail": "847 forks for 12,583 stars (6.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 49.3,
+        "score": 46.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 5.4x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 5.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,14 +95,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 97.1,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 4 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 849 forks for 12,583 stars (6.7%).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Fork-to-star ratio: 847 forks for 12,583 stars (6.7%).",
+      "Maintenance cadence: Last push 4 days ago."
     ],
     "red_flags": [
       "Issue engagement: 6 open issues for 12,583 stars (0.0%)."

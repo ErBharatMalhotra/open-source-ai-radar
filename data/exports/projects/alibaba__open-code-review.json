@@ -4,8 +4,15 @@
   "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 49564,
+  "topics": [
+    "agent",
+    "code-review",
+    "code-review-assistant",
+    "harness",
+    "repository-level-context",
+    "agent-skills"
+  ],
+  "stars": 49565,
   "forks": 3636,
   "open_issues": 139,
   "watchers": 142,
@@ -22,17 +29,17 @@
   "sub_category": "",
   "summary": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "maturity": "Unknown",
-  "stars_7d": 609,
-  "stars_30d": 2290,
-  "stars_90d": 2290,
-  "star_growth_rate_7d": 87.0,
-  "star_growth_rate_30d": 104.0909090909091,
-  "star_growth_acceleration": 0.8358078602620087,
-  "forks_7d": 57,
-  "forks_30d": 194,
+  "stars_7d": 593,
+  "stars_30d": 2250,
+  "stars_90d": 2250,
+  "star_growth_rate_7d": 84.71428571428571,
+  "star_growth_rate_30d": 102.27272727272727,
+  "star_growth_acceleration": 0.8283174603174603,
+  "forks_7d": 54,
+  "forks_30d": 193,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 305,
+  "snapshot_count": 306,
   "authenticity": {
     "organic_confidence": 70.6,
     "verdict": "likely_organic",
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 90.4,
         "weight": 0.22,
-        "detail": "3,637 forks for 49,560 stars (7.3%)."
+        "detail": "3,636 forks for 49,565 stars (7.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 51.1,
+        "score": 50.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 920 stars (55 forks, 5.1x the daily average)."
+        "detail": "Largest 24h jump was 920 stars (55 forks, 5.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.9,
+        "score": 49.0,
         "weight": 0.12,
-        "detail": "138 open issues for 49,560 stars (0.3%)."
+        "detail": "139 open issues for 49,565 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,637 forks for 49,560 stars (7.3%).",
+      "Fork-to-star ratio: 3,636 forks for 49,565 stars (7.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

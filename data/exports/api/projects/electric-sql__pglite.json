@@ -4,7 +4,11 @@
   "description": "Embeddable Postgres with real-time, reactive bindings.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "postgres",
+    "wasm"
+  ],
   "stars": 16244,
   "forks": 470,
   "open_issues": 117,
@@ -13,44 +17,44 @@
   "pushed_at": "2026-11-04T09:05:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/electric-sql.png",
-  "radar_score": 71.31,
-  "impact": 90.41,
-  "velocity": 58.66,
+  "radar_score": 71.32,
+  "impact": 90.42,
+  "velocity": 58.67,
   "health": 58.46,
-  "global_percentile": 23.29,
+  "global_percentile": 23.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embeddable Postgres with real-time, reactive bindings.",
   "maturity": "Unknown",
-  "stars_7d": 31,
-  "stars_30d": 112,
-  "stars_90d": 130,
-  "star_growth_rate_7d": 4.428571428571429,
-  "star_growth_rate_30d": 3.7333333333333334,
-  "star_growth_acceleration": 1.1862244897959184,
-  "forks_7d": 1,
-  "forks_30d": 21,
+  "stars_7d": 29,
+  "stars_30d": 116,
+  "stars_90d": 132,
+  "star_growth_rate_7d": 4.142857142857143,
+  "star_growth_rate_30d": 3.8666666666666667,
+  "star_growth_acceleration": 1.0714285714285716,
+  "forks_7d": 4,
+  "forks_30d": 23,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 177,
+  "snapshot_count": 178,
   "authenticity": {
-    "organic_confidence": 75.0,
+    "organic_confidence": 74.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 67.9,
+        "score": 68.0,
         "weight": 0.22,
-        "detail": "469 forks for 16,242 stars (2.9%)."
+        "detail": "470 forks for 16,244 stars (2.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.0,
+        "score": 75.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (1 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (1 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +73,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 66.4,
+        "score": 66.6,
         "weight": 0.12,
-        "detail": "116 open issues for 16,242 stars (0.7%)."
+        "detail": "117 open issues for 16,244 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +86,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 11 stars (1 forks, 2.9x the daily average).",
+      "Burst pattern: Largest 24h jump was 11 stars (1 forks, 3.0x the daily average).",
       "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": []

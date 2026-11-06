@@ -4,7 +4,28 @@
   "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "search-engine",
+    "semantic-search",
+    "semantic-search-engine",
+    "vector-search",
+    "vector-search-engine",
+    "vector-database",
+    "approximate-nearest-neighbor-search",
+    "image-search",
+    "hnsw",
+    "information-retrieval",
+    "mlops",
+    "nearest-neighbor-search",
+    "neural-search",
+    "recommender-system",
+    "similarity-search",
+    "vectors",
+    "generative-search",
+    "hybrid-search",
+    "weaviate",
+    "grpc"
+  ],
   "stars": 16940,
   "forks": 1434,
   "open_issues": 506,
@@ -17,22 +38,22 @@
   "impact": 93.84,
   "velocity": 53.14,
   "health": 60.75,
-  "global_percentile": 23.86,
+  "global_percentile": 23.57,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
   "maturity": "Unknown",
   "stars_7d": 11,
-  "stars_30d": 72,
-  "stars_90d": 72,
+  "stars_30d": 71,
+  "stars_90d": 73,
   "star_growth_rate_7d": 1.5714285714285714,
-  "star_growth_rate_30d": 2.4,
-  "star_growth_acceleration": 0.6547619047619048,
+  "star_growth_rate_30d": 2.3666666666666667,
+  "star_growth_acceleration": 0.6639839034205232,
   "forks_7d": 4,
-  "forks_30d": 12,
+  "forks_30d": 11,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 235,
+  "snapshot_count": 236,
   "authenticity": {
     "organic_confidence": 87.7,
     "verdict": "organic",
@@ -43,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 94.5,
         "weight": 0.22,
-        "detail": "1,434 forks for 16,939 stars (8.5%)."
+        "detail": "1,434 forks for 16,940 stars (8.5%)."
       },
       {
         "key": "burst",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 93.3,
         "weight": 0.12,
-        "detail": "506 open issues for 16,939 stars (3.0%)."
+        "detail": "506 open issues for 16,940 stars (3.0%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +103,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 506 open issues for 16,939 stars (3.0%).",
-      "Fork-to-star ratio: 1,434 forks for 16,939 stars (8.5%).",
+      "Issue engagement: 506 open issues for 16,940 stars (3.0%).",
+      "Fork-to-star ratio: 1,434 forks for 16,940 stars (8.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

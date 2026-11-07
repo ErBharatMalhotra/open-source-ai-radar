@@ -4,9 +4,14 @@
   "description": "Reverse Engineering: Decompiling Binary Code with Large Language Models",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 7258,
-  "forks": 580,
+  "topics": [
+    "decompile",
+    "reverse-engineering",
+    "large-language-models",
+    "binary"
+  ],
+  "stars": 7260,
+  "forks": 581,
   "open_issues": 43,
   "watchers": 82,
   "created_at": "2024-02-28T03:16:44Z",
@@ -14,43 +19,43 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/albertan017.png",
   "radar_score": 59.46,
-  "impact": 88.67,
+  "impact": 88.66,
   "velocity": 40.56,
   "health": 39.21,
-  "global_percentile": 1.14,
+  "global_percentile": 2.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Reverse Engineering: Decompiling Binary Code with Large Language Models",
   "maturity": "Unknown",
-  "stars_7d": 63,
-  "stars_30d": 178,
-  "stars_90d": 272,
-  "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 5.933333333333334,
-  "star_growth_acceleration": 1.5168539325842696,
-  "forks_7d": 13,
-  "forks_30d": 28,
-  "days_since_last_push": 266,
-  "freshness_score": 0.06994822174465536,
-  "snapshot_count": 80,
+  "stars_7d": 66,
+  "stars_30d": 170,
+  "stars_90d": 278,
+  "star_growth_rate_7d": 9.428571428571429,
+  "star_growth_rate_30d": 5.666666666666667,
+  "star_growth_acceleration": 1.6638655462184873,
+  "forks_7d": 14,
+  "forks_30d": 29,
+  "days_since_last_push": 267,
+  "freshness_score": 0.069252225309346,
+  "snapshot_count": 81,
   "authenticity": {
-    "organic_confidence": 64.9,
-    "verdict": "mixed",
-    "label": "Mixed Signals",
+    "organic_confidence": 65.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 92.8,
         "weight": 0.22,
-        "detail": "580 forks for 7,258 stars (8.0%)."
+        "detail": "581 forks for 7,260 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 52.5,
+        "score": 52.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 28 stars (6 forks, 5.0x the daily average)."
+        "detail": "Largest 24h jump was 28 stars (6 forks, 4.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +76,7 @@
         "label": "Issue engagement",
         "score": 62.8,
         "weight": 0.12,
-        "detail": "43 open issues for 7,258 stars (0.6%)."
+        "detail": "43 open issues for 7,260 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 580 forks for 7,258 stars (8.0%)."
+      "Fork-to-star ratio: 581 forks for 7,260 stars (8.0%)."
     ],
     "red_flags": [
       "Maintenance cadence: Last push 267 days ago."

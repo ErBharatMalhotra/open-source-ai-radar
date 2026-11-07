@@ -4,35 +4,46 @@
   "description": "A Datacenter Scale Distributed Inference Serving Framework",
   "language": "Rust",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "diffusion",
+    "disaggregated-serving",
+    "kubernetes",
+    "llm-inference",
+    "omni",
+    "routing-engine",
+    "rust",
+    "sglang",
+    "tensorrt-llm",
+    "vllm"
+  ],
   "stars": 8451,
-  "forks": 1826,
-  "open_issues": 823,
+  "forks": 1827,
+  "open_issues": 819,
   "watchers": 77,
   "created_at": "2025-03-03T18:40:07Z",
-  "pushed_at": "2026-11-06T20:17:27Z",
+  "pushed_at": "2026-11-07T01:46:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ai-dynamo.png",
-  "radar_score": 73.65,
-  "impact": 91.21,
+  "radar_score": 73.64,
+  "impact": 91.2,
   "velocity": 65.35,
   "health": 57.15,
-  "global_percentile": 44.57,
+  "global_percentile": 45.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A Datacenter Scale Distributed Inference Serving Framework",
   "maturity": "Unknown",
-  "stars_7d": 34,
-  "stars_30d": 218,
-  "stars_90d": 308,
-  "star_growth_rate_7d": 4.857142857142857,
-  "star_growth_rate_30d": 7.266666666666667,
-  "star_growth_acceleration": 0.6684141546526867,
-  "forks_7d": 34,
-  "forks_30d": 158,
+  "stars_7d": 38,
+  "stars_30d": 210,
+  "stars_90d": 310,
+  "star_growth_rate_7d": 5.428571428571429,
+  "star_growth_rate_30d": 7.0,
+  "star_growth_acceleration": 0.7755102040816327,
+  "forks_7d": 32,
+  "forks_30d": 154,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 158,
+  "snapshot_count": 159,
   "authenticity": {
     "organic_confidence": 93.4,
     "verdict": "organic",
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.7,
         "weight": 0.22,
-        "detail": "1,826 forks for 8,451 stars (21.6%)."
+        "detail": "1,827 forks for 8,451 stars (21.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.4,
+        "score": 83.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 17 stars (6 forks, 2.4x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "823 open issues for 8,451 stars (9.7%)."
+        "detail": "819 open issues for 8,451 stars (9.7%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +94,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 17 stars (6 forks, 2.4x the daily average).",
-      "Fork-to-star ratio: 1,826 forks for 8,451 stars (21.6%).",
-      "Issue engagement: 823 open issues for 8,451 stars (9.7%)."
+      "Fork-to-star ratio: 1,827 forks for 8,451 stars (21.6%).",
+      "Issue engagement: 819 open issues for 8,451 stars (9.7%)."
     ],
     "red_flags": []
   }

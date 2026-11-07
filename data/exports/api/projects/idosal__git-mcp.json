@@ -4,7 +4,17 @@
   "description": "Put an end to code hallucinations! GitMCP is a free, open-source, remote MCP server for any GitHub project",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "claude",
+    "copilot",
+    "cursor",
+    "git",
+    "llm",
+    "mcp"
+  ],
   "stars": 8503,
   "forks": 761,
   "open_issues": 61,
@@ -13,28 +23,28 @@
   "pushed_at": "2026-05-08T14:21:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/idosal.png",
-  "radar_score": 62.23,
-  "impact": 88.95,
-  "velocity": 47.27,
-  "health": 40.43,
-  "global_percentile": 5.0,
+  "radar_score": 61.89,
+  "impact": 88.94,
+  "velocity": 46.35,
+  "health": 40.38,
+  "global_percentile": 4.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Put an end to code hallucinations! GitMCP is a free, open-source, remote MCP server for any GitHub project",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 52,
-  "stars_90d": 140,
-  "star_growth_rate_7d": 1.2857142857142858,
-  "star_growth_rate_30d": 1.793103448275862,
-  "star_growth_acceleration": 0.717032967032967,
-  "forks_7d": 2,
-  "forks_30d": 11,
-  "days_since_last_push": 180,
-  "freshness_score": 0.16529888822158653,
-  "snapshot_count": 104,
+  "stars_7d": 4,
+  "stars_30d": 49,
+  "stars_90d": 139,
+  "star_growth_rate_7d": 0.5714285714285714,
+  "star_growth_rate_30d": 1.6333333333333333,
+  "star_growth_acceleration": 0.3498542274052478,
+  "forks_7d": 1,
+  "forks_30d": 12,
+  "days_since_last_push": 182,
+  "freshness_score": 0.16202575093388075,
+  "snapshot_count": 105,
   "authenticity": {
-    "organic_confidence": 64.8,
+    "organic_confidence": 63.1,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -48,9 +58,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 43.4,
+        "score": 38.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (2 forks, 6.3x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (2 forks, 7.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -84,6 +94,8 @@
     "reasons": [
       "Fork-to-star ratio: 761 forks for 8,503 stars (8.9%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 11 stars (2 forks, 7.0x the daily average)."
+    ]
   }
 }

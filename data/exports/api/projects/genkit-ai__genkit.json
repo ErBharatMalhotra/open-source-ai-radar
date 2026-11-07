@@ -4,37 +4,46 @@
   "description": "Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ai",
+    "genkit",
+    "vector-database",
+    "embedders",
+    "agents",
+    "llm",
+    "multimodal",
+    "rag"
+  ],
   "stars": 6572,
   "forks": 879,
-  "open_issues": 579,
+  "open_issues": 581,
   "watchers": 56,
   "created_at": "2024-04-29T22:04:42Z",
-  "pushed_at": "2026-11-06T19:46:00Z",
+  "pushed_at": "2026-11-06T22:57:51Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/genkit-ai.png",
-  "radar_score": 70.72,
-  "impact": 88.55,
+  "radar_score": 70.73,
+  "impact": 88.59,
   "velocity": 57.88,
   "health": 60.15,
-  "global_percentile": 29.57,
+  "global_percentile": 27.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google",
   "maturity": "Unknown",
-  "stars_7d": 1,
-  "stars_30d": 95,
-  "stars_90d": 212,
-  "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 3.1666666666666665,
-  "star_growth_acceleration": 0.31578947368421056,
-  "forks_7d": 0,
-  "forks_30d": 18,
+  "stars_7d": 10,
+  "stars_30d": 91,
+  "stars_90d": 221,
+  "star_growth_rate_7d": 2.0,
+  "star_growth_rate_30d": 3.033333333333333,
+  "star_growth_acceleration": 0.6593406593406593,
+  "forks_7d": 4,
+  "forks_30d": 22,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 80,
+  "snapshot_count": 81,
   "authenticity": {
-    "organic_confidence": 90.1,
+    "organic_confidence": 88.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +57,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.7,
+        "score": 67.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (0 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (0 forks, 3.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +80,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "579 open issues for 6,572 stars (8.8%)."
+        "detail": "581 open issues for 6,572 stars (8.8%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +92,7 @@
     ],
     "reasons": [
       "Fork-to-star ratio: 879 forks for 6,572 stars (13.4%).",
-      "Issue engagement: 579 open issues for 6,572 stars (8.8%).",
+      "Issue engagement: 581 open issues for 6,572 stars (8.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

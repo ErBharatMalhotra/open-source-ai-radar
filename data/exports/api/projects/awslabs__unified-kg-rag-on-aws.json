@@ -1,7 +1,7 @@
 {
   "full_name": "awslabs/unified-kg-rag-on-aws",
   "url": "https://github.com/awslabs/unified-kg-rag-on-aws",
-  "description": "AWS-native knowledge graph RAG framework unifying two graph-retrieval methodologies \u2014 Microsoft GraphRAG community summarization and LightRAG dual-level keyword search \u2014 on Amazon Bedrock, Neptune, and OpenSearch. Multi-hop QA over document corpora, with incremental indexing and multilingual support.",
+  "description": "AWS-native knowledge graph RAG framework. Runs GraphRAG, LightRAG, HippoRAG 2 and RAPTOR on one shared index, each selectable at index and query time, with hybrid BM25 + vector + graph retrieval and source provenance. Amazon Bedrock, Neptune and OpenSearch, or fully local. Incremental indexing, multilingual, bring-your-own KG, built-in evaluation.",
   "language": "Python",
   "license": "Apache-2.0",
   "topics": [],
@@ -10,7 +10,7 @@
   "open_issues": 0,
   "watchers": 0,
   "created_at": "2026-07-20T23:39:01Z",
-  "pushed_at": "2026-11-06T19:55:45Z",
+  "pushed_at": "2026-11-07T08:00:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/awslabs.png",
   "radar_score": 32.62,

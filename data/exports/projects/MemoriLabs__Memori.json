@@ -4,37 +4,56 @@
   "description": "Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. Built for enterprise, Memori works with the data infrastructure you already run, no rip-and-replace, and deploys across managed cloud, single-tenant cloud, VPC, and on-premises.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agent",
+    "ai",
+    "long-short-term-memory",
+    "memory",
+    "python",
+    "rag",
+    "state-management",
+    "memory-management",
+    "llm",
+    "agent-memory",
+    "ai-memory",
+    "stateful",
+    "typescript",
+    "agenticai",
+    "claude-code",
+    "enterprise",
+    "hermes",
+    "openclaw"
+  ],
   "stars": 17453,
-  "forks": 3894,
+  "forks": 3895,
   "open_issues": 26,
   "watchers": 75,
   "created_at": "2025-07-24T07:07:51Z",
   "pushed_at": "2026-10-03T01:33:14Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/MemoriLabs.png",
-  "radar_score": 70.18,
-  "impact": 94.24,
-  "velocity": 56.56,
-  "health": 50.76,
-  "global_percentile": 19.29,
+  "radar_score": 70.13,
+  "impact": 94.25,
+  "velocity": 56.57,
+  "health": 50.54,
+  "global_percentile": 19.0,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. Built for enterprise, Memori works with the data infrastructure you already run, no rip-and-replace, and deploys across managed clo",
   "maturity": "Unknown",
-  "stars_7d": 235,
-  "stars_30d": 345,
-  "stars_90d": 345,
-  "star_growth_rate_7d": 33.57142857142857,
-  "star_growth_rate_30d": 11.89655172413793,
-  "star_growth_acceleration": 2.8219461697722568,
-  "forks_7d": 154,
-  "forks_30d": 209,
-  "days_since_last_push": 34,
-  "freshness_score": 0.7117703227626097,
-  "snapshot_count": 256,
+  "stars_7d": 217,
+  "stars_30d": 319,
+  "stars_90d": 319,
+  "star_growth_rate_7d": 31.0,
+  "star_growth_rate_30d": 11.0,
+  "star_growth_acceleration": 2.8181818181818183,
+  "forks_7d": 145,
+  "forks_30d": 193,
+  "days_since_last_push": 35,
+  "freshness_score": 0.7046880897187134,
+  "snapshot_count": 257,
   "authenticity": {
-    "organic_confidence": 65.0,
+    "organic_confidence": 64.9,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +62,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.5,
         "weight": 0.22,
-        "detail": "3,889 forks for 17,448 stars (22.3%)."
+        "detail": "3,895 forks for 17,453 stars (22.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 39.8,
+        "score": 39.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 80 stars (51 forks, 6.8x the daily average)."
+        "detail": "Largest 24h jump was 80 stars (51 forks, 6.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +90,7 @@
         "label": "Issue engagement",
         "score": 39.9,
         "weight": 0.12,
-        "detail": "26 open issues for 17,448 stars (0.1%)."
+        "detail": "26 open issues for 17,453 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +102,11 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 35 days ago.",
-      "Fork-to-star ratio: 3,889 forks for 17,448 stars (22.3%)."
+      "Fork-to-star ratio: 3,895 forks for 17,453 stars (22.3%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 80 stars (51 forks, 6.8x the daily average).",
-      "Issue engagement: 26 open issues for 17,448 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 80 stars (51 forks, 6.9x the daily average).",
+      "Issue engagement: 26 open issues for 17,453 stars (0.1%)."
     ]
   }
 }

@@ -4,9 +4,15 @@
   "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 105002,
-  "forks": 6240,
+  "topics": [
+    "agent-skills",
+    "ai",
+    "anti-slop",
+    "design",
+    "slop"
+  ],
+  "stars": 105081,
+  "forks": 6243,
   "open_issues": 42,
   "watchers": 222,
   "created_at": "2025-11-16T01:52:04Z",
@@ -17,24 +23,24 @@
   "impact": 98.63,
   "velocity": 67.2,
   "health": 58.35,
-  "global_percentile": 77.43,
+  "global_percentile": 74.71,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
   "maturity": "Unknown",
-  "stars_7d": 8540,
-  "stars_30d": 13619,
-  "stars_90d": 13619,
-  "star_growth_rate_7d": 1220.0,
-  "star_growth_rate_30d": 1513.2222222222222,
-  "star_growth_acceleration": 0.8062265951978853,
-  "forks_7d": 567,
-  "forks_30d": 831,
+  "stars_7d": 8417,
+  "stars_30d": 13875,
+  "stars_90d": 13875,
+  "star_growth_rate_7d": 1202.4285714285713,
+  "star_growth_rate_30d": 1387.5,
+  "star_growth_acceleration": 0.8666151866151866,
+  "forks_7d": 549,
+  "forks_30d": 844,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 42,
+  "snapshot_count": 43,
   "authenticity": {
-    "organic_confidence": 80.4,
+    "organic_confidence": 80.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +49,12 @@
         "label": "Fork-to-star ratio",
         "score": 85.4,
         "weight": 0.22,
-        "detail": "6,230 forks for 104,825 stars (5.9%)."
+        "detail": "6,243 forks for 105,081 stars (5.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.3,
+        "score": 93.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 2,355 stars (133 forks, 1.7x the daily average)."
       },
@@ -71,7 +77,7 @@
         "label": "Issue engagement",
         "score": 29.0,
         "weight": 0.12,
-        "detail": "42 open issues for 104,825 stars (0.0%)."
+        "detail": "42 open issues for 105,081 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +88,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,230 forks for 104,825 stars (5.9%).",
+      "Fork-to-star ratio: 6,243 forks for 105,081 stars (5.9%).",
       "Burst pattern: Largest 24h jump was 2,355 stars (133 forks, 1.7x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 42 open issues for 104,825 stars (0.0%)."
+      "Issue engagement: 42 open issues for 105,081 stars (0.0%)."
     ]
   }
 }

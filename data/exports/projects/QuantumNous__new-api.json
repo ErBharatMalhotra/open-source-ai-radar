@@ -4,9 +4,21 @@
   "description": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
   "language": "Go",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 51514,
-  "forks": 12535,
+  "topics": [
+    "claude",
+    "gemini",
+    "openai",
+    "rerank",
+    "ai-gateway",
+    "deepseek",
+    "newapi",
+    "api-management",
+    "llm-gateway",
+    "model-routing",
+    "self-hosted"
+  ],
+  "stars": 51523,
+  "forks": 12539,
   "open_issues": 774,
   "watchers": 160,
   "created_at": "2023-11-10T19:33:36Z",
@@ -17,23 +29,23 @@
   "impact": 98.02,
   "velocity": 71.32,
   "health": 63.75,
-  "global_percentile": 97.71,
+  "global_percentile": 97.29,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management.",
   "maturity": "Unknown",
-  "stars_7d": 467,
-  "stars_30d": 1469,
-  "stars_90d": 1469,
-  "star_growth_rate_7d": 66.71428571428571,
-  "star_growth_rate_30d": 66.77272727272727,
-  "star_growth_acceleration": 0.9991247690362735,
-  "forks_7d": 165,
-  "forks_30d": 494,
+  "stars_7d": 474,
+  "stars_30d": 1487,
+  "stars_90d": 1487,
+  "star_growth_rate_7d": 67.71428571428571,
+  "star_growth_rate_30d": 67.5909090909091,
+  "star_growth_acceleration": 1.001825343452781,
+  "forks_7d": 171,
+  "forks_30d": 501,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 289,
-  "why_trending": "Strong momentum with 527 new stars this week. Above-average growth velocity. High developer adoption with 176 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 290,
+  "why_trending": "Strong momentum with 474 new stars this week. Above-average growth velocity. High developer adoption with 171 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
     "organic_confidence": 92.7,
     "verdict": "organic",
@@ -44,12 +56,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "12,530 forks for 51,505 stars (24.3%)."
+        "detail": "12,539 forks for 51,523 stars (24.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.8,
+        "score": 90.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 136 stars (26 forks, 1.9x the daily average)."
       },
@@ -72,7 +84,7 @@
         "label": "Issue engagement",
         "score": 82.5,
         "weight": 0.12,
-        "detail": "774 open issues for 51,505 stars (1.5%)."
+        "detail": "774 open issues for 51,523 stars (1.5%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +95,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 774 open issues for 51,505 stars (1.5%).",
+      "Issue engagement: 774 open issues for 51,523 stars (1.5%).",
       "Burst pattern: Largest 24h jump was 136 stars (26 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 12,530 forks for 51,505 stars (24.3%)."
+      "Fork-to-star ratio: 12,539 forks for 51,523 stars (24.3%)."
     ],
     "red_flags": []
   }

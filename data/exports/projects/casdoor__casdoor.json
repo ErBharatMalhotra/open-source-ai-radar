@@ -4,8 +4,29 @@
   "description": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 14776,
+  "topics": [
+    "oidc",
+    "sso",
+    "oauth",
+    "iam",
+    "saml",
+    "webauthn",
+    "mfa",
+    "single-sign-on",
+    "radius",
+    "scim",
+    "auth",
+    "authentication",
+    "mcp-gateway",
+    "ai-gateway",
+    "mcp",
+    "agent",
+    "openclaw",
+    "agentic-ai",
+    "agi",
+    "llm"
+  ],
+  "stars": 14778,
   "forks": 1896,
   "open_issues": 82,
   "watchers": 79,
@@ -17,24 +38,24 @@
   "impact": 93.08,
   "velocity": 56.06,
   "health": 63.75,
-  "global_percentile": 32.0,
+  "global_percentile": 31.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "maturity": "Unknown",
-  "stars_7d": 59,
-  "stars_30d": 218,
-  "stars_90d": 218,
-  "star_growth_rate_7d": 8.428571428571429,
-  "star_growth_rate_30d": 9.083333333333334,
-  "star_growth_acceleration": 0.927916120576671,
-  "forks_7d": 15,
-  "forks_30d": 52,
+  "stars_7d": 61,
+  "stars_30d": 220,
+  "stars_90d": 220,
+  "star_growth_rate_7d": 8.714285714285714,
+  "star_growth_rate_30d": 9.166666666666666,
+  "star_growth_acceleration": 0.9506493506493506,
+  "forks_7d": 17,
+  "forks_30d": 53,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 247,
+  "snapshot_count": 248,
   "authenticity": {
-    "organic_confidence": 90.0,
+    "organic_confidence": 89.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "1,895 forks for 14,774 stars (12.8%)."
+        "detail": "1,896 forks for 14,778 stars (12.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.2,
+        "score": 91.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 16 stars (5 forks, 1.9x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.9,
+        "score": 61.6,
         "weight": 0.12,
-        "detail": "83 open issues for 14,774 stars (0.6%)."
+        "detail": "82 open issues for 14,778 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +104,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 16 stars (5 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 1,895 forks for 14,774 stars (12.8%).",
+      "Fork-to-star ratio: 1,896 forks for 14,778 stars (12.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

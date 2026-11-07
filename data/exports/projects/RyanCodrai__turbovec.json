@@ -4,7 +4,23 @@
   "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ann",
+    "avx512",
+    "embeddings",
+    "faiss",
+    "nearest-neighbor",
+    "neon",
+    "python",
+    "quantization",
+    "rag",
+    "rust",
+    "simd",
+    "vector-search",
+    "embedding",
+    "quant",
+    "turboquant"
+  ],
   "stars": 17473,
   "forks": 1484,
   "open_issues": 23,
@@ -13,26 +29,26 @@
   "pushed_at": "2026-10-07T06:55:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/RyanCodrai.png",
-  "radar_score": 71.45,
-  "impact": 93.03,
-  "velocity": 58.74,
-  "health": 54.69,
-  "global_percentile": 25.14,
+  "radar_score": 70.34,
+  "impact": 93.04,
+  "velocity": 55.75,
+  "health": 54.45,
+  "global_percentile": 19.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
   "maturity": "Unknown",
-  "stars_7d": 30,
-  "stars_30d": 128,
-  "stars_90d": 190,
-  "star_growth_rate_7d": 4.285714285714286,
-  "star_growth_rate_30d": 4.266666666666667,
-  "star_growth_acceleration": 1.0044642857142858,
+  "stars_7d": 31,
+  "stars_30d": 120,
+  "stars_90d": 192,
+  "star_growth_rate_7d": 4.428571428571429,
+  "star_growth_rate_30d": 4.0,
+  "star_growth_acceleration": 1.1071428571428572,
   "forks_7d": -1,
-  "forks_30d": 0,
-  "days_since_last_push": 30,
-  "freshness_score": 0.7408182206817179,
-  "snapshot_count": 232,
+  "forks_30d": -1,
+  "days_since_last_push": 31,
+  "freshness_score": 0.7334469562242892,
+  "snapshot_count": 233,
   "authenticity": {
     "organic_confidence": 81.0,
     "verdict": "organic",
@@ -43,12 +59,12 @@
         "label": "Fork-to-star ratio",
         "score": 94.6,
         "weight": 0.22,
-        "detail": "1,484 forks for 17,470 stars (8.5%)."
+        "detail": "1,484 forks for 17,473 stars (8.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.2,
+        "score": 88.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 8 stars (1 forks, 2.1x the daily average)."
       },
@@ -71,23 +87,23 @@
         "label": "Issue engagement",
         "score": 38.2,
         "weight": 0.12,
-        "detail": "23 open issues for 17,470 stars (0.1%)."
+        "detail": "23 open issues for 17,473 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 85.0,
+        "score": 84.8,
         "weight": 0.1,
-        "detail": "Last push 30 days ago."
+        "detail": "Last push 31 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 30 days ago.",
+      "Maintenance cadence: Last push 31 days ago.",
       "Burst pattern: Largest 24h jump was 8 stars (1 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 1,484 forks for 17,470 stars (8.5%)."
+      "Fork-to-star ratio: 1,484 forks for 17,473 stars (8.5%)."
     ],
     "red_flags": [
-      "Issue engagement: 23 open issues for 17,470 stars (0.1%)."
+      "Issue engagement: 23 open issues for 17,473 stars (0.1%)."
     ]
   }
 }

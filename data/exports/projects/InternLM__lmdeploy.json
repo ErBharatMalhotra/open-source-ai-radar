@@ -4,8 +4,20 @@
   "description": "LMDeploy is a toolkit for compressing, deploying, and serving LLMs.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 8135,
+  "topics": [
+    "cuda-kernels",
+    "deepspeed",
+    "fastertransformer",
+    "llm-inference",
+    "turbomind",
+    "internlm",
+    "llama",
+    "llm",
+    "codellama",
+    "llama2",
+    "llama3"
+  ],
+  "stars": 8136,
   "forks": 773,
   "open_issues": 544,
   "watchers": 55,
@@ -13,28 +25,28 @@
   "pushed_at": "2026-11-06T11:25:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/InternLM.png",
-  "radar_score": 70.34,
-  "impact": 89.17,
+  "radar_score": 70.26,
+  "impact": 89.19,
   "velocity": 56.11,
-  "health": 60.15,
-  "global_percentile": 25.29,
+  "health": 59.78,
+  "global_percentile": 19.86,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "LMDeploy is a toolkit for compressing, deploying, and serving LLMs.",
   "maturity": "Unknown",
-  "stars_7d": 8,
-  "stars_30d": 31,
-  "stars_90d": 92,
-  "star_growth_rate_7d": 1.1428571428571428,
-  "star_growth_rate_30d": 1.0333333333333334,
-  "star_growth_acceleration": 1.1059907834101381,
+  "stars_7d": 10,
+  "stars_30d": 33,
+  "stars_90d": 94,
+  "star_growth_rate_7d": 1.4285714285714286,
+  "star_growth_rate_30d": 1.1,
+  "star_growth_acceleration": 1.2987012987012987,
   "forks_7d": 1,
   "forks_30d": 13,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 115,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 116,
   "authenticity": {
-    "organic_confidence": 90.9,
+    "organic_confidence": 91.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "773 forks for 8,135 stars (9.5%)."
+        "detail": "773 forks for 8,136 stars (9.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.0,
+        "score": 77.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 3 stars (0 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 3 stars (0 forks, 2.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +83,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "544 open issues for 8,135 stars (6.7%)."
+        "detail": "544 open issues for 8,136 stars (6.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 2.9x the daily average).",
-      "Fork-to-star ratio: 773 forks for 8,135 stars (9.5%).",
-      "Issue engagement: 544 open issues for 8,135 stars (6.7%)."
+      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 2.8x the daily average).",
+      "Fork-to-star ratio: 773 forks for 8,136 stars (9.5%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

@@ -21,7 +21,7 @@
   "radar_score": 59.66,
   "impact": 97.75,
   "velocity": 39.04,
-  "health": 27.59,
+  "health": 27.58,
   "global_percentile": 0.14,
   "category": "AI Infrastructure",
   "sub_category": "",
@@ -35,11 +35,11 @@
   "star_growth_acceleration": 0.526634382566586,
   "forks_7d": 11,
   "forks_30d": 91,
-  "days_since_last_push": 311,
-  "freshness_score": 0.044600955340274535,
-  "snapshot_count": 190,
+  "days_since_last_push": 312,
+  "freshness_score": 0.04415716841969286,
+  "snapshot_count": 191,
   "authenticity": {
-    "organic_confidence": 49.1,
+    "organic_confidence": 49.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -53,9 +53,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 22.6,
+        "score": 22.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 90 stars (29 forks, 11.3x the daily average)."
+        "detail": "Largest 24h jump was 90 stars (29 forks, 11.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -81,18 +81,18 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 30.8,
+        "score": 30.7,
         "weight": 0.1,
-        "detail": "Last push 311 days ago."
+        "detail": "Last push 312 days ago."
       }
     ],
     "reasons": [
       "Fork-to-star ratio: 5,419 forks for 42,331 stars (12.8%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 90 stars (29 forks, 11.3x the daily average).",
+      "Burst pattern: Largest 24h jump was 90 stars (29 forks, 11.4x the daily average).",
       "Issue engagement: 0 open issues for 42,331 stars (0.0%).",
-      "Maintenance cadence: Last push 311 days ago."
+      "Maintenance cadence: Last push 312 days ago."
     ]
   }
 }

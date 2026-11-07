@@ -4,27 +4,47 @@
   "description": "Open-source status page, incident response and uptime monitoring",
   "language": "TypeScript",
   "license": "AGPL-3.0",
-  "topics": [],
+  "topics": [
+    "observability",
+    "open-source",
+    "status-page",
+    "turso",
+    "tinybird",
+    "monitoring",
+    "on-call",
+    "synthetic-monitoring",
+    "uptime-checker",
+    "uptime-monitor",
+    "uptime",
+    "statuspage",
+    "monitoring-as-code",
+    "incident-management",
+    "mcp",
+    "mcp-server",
+    "alerting",
+    "sre",
+    "terraform"
+  ],
   "stars": 9249,
-  "forks": 808,
+  "forks": 807,
   "open_issues": 33,
   "watchers": 26,
   "created_at": "2023-06-19T15:32:41Z",
-  "pushed_at": "2026-11-07T07:52:27Z",
+  "pushed_at": "2026-11-07T14:31:56Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/openstatusHQ.png",
   "radar_score": 70.18,
-  "impact": 88.0,
+  "impact": 88.01,
   "velocity": 54.41,
   "health": 63.75,
-  "global_percentile": 24.71,
+  "global_percentile": 19.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\ud83e\uded6 Status page with uptime monitoring & API monitoring as code   \ud83e\uded6",
   "maturity": "Unknown",
   "stars_7d": 7,
   "stars_30d": 74,
-  "stars_90d": 115,
+  "stars_90d": 113,
   "star_growth_rate_7d": 1.0,
   "star_growth_rate_30d": 2.466666666666667,
   "star_growth_acceleration": 0.4054054054054054,
@@ -32,9 +52,9 @@
   "forks_30d": 20,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 179,
+  "snapshot_count": 180,
   "authenticity": {
-    "organic_confidence": 76.8,
+    "organic_confidence": 76.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +63,14 @@
         "label": "Fork-to-star ratio",
         "score": 95.4,
         "weight": 0.22,
-        "detail": "808 forks for 9,249 stars (8.7%)."
+        "detail": "807 forks for 9,249 stars (8.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 62.0,
+        "score": 61.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (0 forks, 4.1x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (0 forks, 4.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +102,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 808 forks for 9,249 stars (8.7%).",
+      "Fork-to-star ratio: 807 forks for 9,249 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

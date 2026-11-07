@@ -4,8 +4,24 @@
   "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9386,
+  "topics": [
+    "ai",
+    "ai-coding-assistant",
+    "claude-code",
+    "codex",
+    "coding-agents",
+    "git",
+    "gitops",
+    "kilo-code",
+    "mcp",
+    "mcp-client",
+    "opencode",
+    "opencode-ai",
+    "opencode-skills",
+    "self-hosted",
+    "skills"
+  ],
+  "stars": 9392,
   "forks": 362,
   "open_issues": 26,
   "watchers": 55,
@@ -13,18 +29,18 @@
   "pushed_at": "2026-11-06T23:31:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tryatlas.png",
-  "radar_score": 72.88,
-  "impact": 87.64,
-  "velocity": 65.79,
+  "radar_score": 72.89,
+  "impact": 87.65,
+  "velocity": 65.78,
   "health": 59.2,
-  "global_percentile": 39.29,
+  "global_percentile": 34.29,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 0,
+  "stars_7d": 9,
+  "stars_30d": 9,
+  "stars_90d": 9,
   "star_growth_rate_7d": 0.0,
   "star_growth_rate_30d": 0.0,
   "star_growth_acceleration": 1.0,
@@ -32,25 +48,25 @@
   "forks_30d": 0,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 1,
+  "snapshot_count": 2,
   "authenticity": {
-    "organic_confidence": 73.2,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 82.7,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 74.4,
         "weight": 0.22,
-        "detail": "362 forks for 9,386 stars (3.9%)."
+        "detail": "362 forks for 9,392 stars (3.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 100.0,
         "weight": 0.24,
-        "detail": "Not enough snapshots yet."
+        "detail": "Largest 24h jump was 9 stars (0 forks, 0.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.9,
+        "score": 48.8,
         "weight": 0.12,
-        "detail": "26 open issues for 9,386 stars (0.3%)."
+        "detail": "26 open issues for 9,392 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,6 +98,7 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 9 stars (0 forks, 0.6x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

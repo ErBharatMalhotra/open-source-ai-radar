@@ -4,8 +4,24 @@
   "description": "Run frontier LLMs and VLMs locally on Qualcomm devices across NPU, GPU, and CPU with a few lines of code",
   "language": "Go",
   "license": "BSD-3-Clause",
-  "topics": [],
-  "stars": 8506,
+  "topics": [
+    "llm",
+    "on-device-ai",
+    "sdk",
+    "vlm",
+    "go",
+    "gpt-oss",
+    "llama3",
+    "qwen3",
+    "granite4",
+    "qwen3vl",
+    "gemma4",
+    "hexagon",
+    "local-ai",
+    "qualcomm",
+    "snapdragon"
+  ],
+  "stars": 8507,
   "forks": 1078,
   "open_issues": 56,
   "watchers": 531,
@@ -13,26 +29,26 @@
   "pushed_at": "2026-11-06T03:34:51Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/qualcomm.png",
-  "radar_score": 73.41,
-  "impact": 92.22,
+  "radar_score": 73.32,
+  "impact": 92.23,
   "velocity": 58.8,
-  "health": 63.75,
-  "global_percentile": 44.0,
+  "health": 63.38,
+  "global_percentile": 38.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Run frontier LLMs and VLMs locally on Qualcomm devices across NPU, GPU, and CPU with a few lines of code",
   "maturity": "Unknown",
-  "stars_7d": 22,
-  "stars_30d": 87,
-  "stars_90d": 151,
-  "star_growth_rate_7d": 3.142857142857143,
-  "star_growth_rate_30d": 2.9,
-  "star_growth_acceleration": 1.083743842364532,
+  "stars_7d": 24,
+  "stars_30d": 89,
+  "stars_90d": 153,
+  "star_growth_rate_7d": 3.4285714285714284,
+  "star_growth_rate_30d": 2.966666666666667,
+  "star_growth_acceleration": 1.1556982343499196,
   "forks_7d": 4,
   "forks_30d": 10,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 117,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 118,
   "authenticity": {
     "organic_confidence": 87.9,
     "verdict": "organic",
@@ -43,12 +59,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "1,078 forks for 8,506 stars (12.7%)."
+        "detail": "1,078 forks for 8,507 stars (12.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 84.2,
+        "score": 84.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 7 stars (0 forks, 2.4x the daily average)."
       },
@@ -69,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 64.8,
+        "score": 64.7,
         "weight": 0.12,
-        "detail": "56 open issues for 8,506 stars (0.7%)."
+        "detail": "56 open issues for 8,507 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +100,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 7 stars (0 forks, 2.4x the daily average).",
       "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 1,078 forks for 8,506 stars (12.7%)."
+      "Fork-to-star ratio: 1,078 forks for 8,507 stars (12.7%)."
     ],
     "red_flags": []
   }

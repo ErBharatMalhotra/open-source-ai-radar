@@ -4,7 +4,14 @@
   "description": "structured outputs for llms ",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "openai",
+    "python",
+    "pydantic-v2",
+    "openai-functions",
+    "validation",
+    "openai-function-calli"
+  ],
   "stars": 14100,
   "forks": 1358,
   "open_issues": 0,
@@ -17,38 +24,38 @@
   "impact": 91.76,
   "velocity": 45.36,
   "health": 58.35,
-  "global_percentile": 10.0,
+  "global_percentile": 9.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "structured outputs for llms ",
   "maturity": "Unknown",
   "stars_7d": 19,
   "stars_30d": 116,
-  "stars_90d": 119,
+  "stars_90d": 120,
   "star_growth_rate_7d": 2.7142857142857144,
   "star_growth_rate_30d": 3.8666666666666667,
   "star_growth_acceleration": 0.7019704433497537,
-  "forks_7d": 12,
-  "forks_30d": 69,
+  "forks_7d": 13,
+  "forks_30d": 70,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 218,
+  "snapshot_count": 219,
   "authenticity": {
-    "organic_confidence": 80.8,
+    "organic_confidence": 80.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 98.6,
+        "score": 98.7,
         "weight": 0.22,
-        "detail": "1,357 forks for 14,100 stars (9.6%)."
+        "detail": "1,358 forks for 14,100 stars (9.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 84.4,
+        "score": 83.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (3 forks, 2.4x the daily average)."
       },
@@ -83,7 +90,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 9 stars (3 forks, 2.4x the daily average).",
-      "Fork-to-star ratio: 1,357 forks for 14,100 stars (9.6%).",
+      "Fork-to-star ratio: 1,358 forks for 14,100 stars (9.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

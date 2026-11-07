@@ -4,8 +4,25 @@
   "description": "\u2b50AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.\ud83c\udfaf \u544a\u522b\u4fe1\u606f\u8fc7\u8f7d\uff0c\u4f60\u7684 AI \u8206\u60c5\u76d1\u63a7\u52a9\u624b\u4e0e\u70ed\u70b9\u7b5b\u9009\u5de5\u5177\uff01\u805a\u5408\u591a\u5e73\u53f0\u70ed\u70b9 +  RSS \u8ba2\u9605\uff0c\u652f\u6301\u5173\u952e\u8bcd\u7cbe\u51c6\u7b5b\u9009\u3002AI \u667a\u80fd\u7b5b\u9009\u65b0\u95fb + AI \u7ffb\u8bd1 +  AI \u5206\u6790\u7b80\u62a5\u76f4\u63a8\u624b\u673a\uff0c\u4e5f\u652f\u6301\u63a5\u5165 MCP \u67b6\u6784\uff0c\u8d4b\u80fd AI \u81ea\u7136\u8bed\u8a00\u5bf9\u8bdd\u5206\u6790\u3001\u60c5\u611f\u6d1e\u5bdf\u4e0e\u8d8b\u52bf\u9884\u6d4b\u7b49\u3002\u652f\u6301 Docker \uff0c\u6570\u636e\u672c\u5730/\u4e91\u7aef\u81ea\u6301\u3002\u96c6\u6210\u5fae\u4fe1/\u98de\u4e66/\u9489\u9489/Telegram/\u90ae\u4ef6/ntfy/bark/slack \u7b49\u6e20\u9053\u667a\u80fd\u63a8\u9001\u3002",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 63516,
+  "topics": [
+    "data-analysis",
+    "python",
+    "trending-topics",
+    "news",
+    "hot-news",
+    "docker",
+    "ntfy",
+    "mail",
+    "mcp",
+    "mcp-server",
+    "wechat",
+    "wework",
+    "bark",
+    "rss",
+    "ai",
+    "llm"
+  ],
+  "stars": 63517,
   "forks": 24919,
   "open_issues": 32,
   "watchers": 208,
@@ -15,24 +32,24 @@
   "owner_avatar": "https://github.com/sansan0.png",
   "radar_score": 78.29,
   "impact": 98.55,
-  "velocity": 71.76,
+  "velocity": 71.77,
   "health": 55.01,
-  "global_percentile": 84.14,
+  "global_percentile": 83.57,
   "category": "MCP",
   "sub_category": "",
   "summary": "\u2b50AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.\ud83c\udfaf \u544a\u522b\u4fe1\u606f\u8fc7\u8f7d\uff0c\u4f60\u7684 AI \u8206\u60c5\u76d1\u63a7\u52a9\u624b\u4e0e\u70ed\u70b9\u7b5b\u9009\u5de5\u5177\uff01\u805a\u5408\u591a\u5e73\u53f0\u70ed\u70b9 +  RSS \u8ba2\u9605\uff0c\u652f\u6301\u5173\u952e\u8bcd\u7cbe\u51c6\u7b5b\u9009\u3002AI \u667a\u80fd\u7b5b\u9009\u65b0\u95fb + AI \u7ffb\u8bd1 +  AI \u5206\u6790\u7b80\u62a5\u76f4\u63a8\u624b\u673a\uff0c\u4e5f\u652f\u6301\u63a5\u5165 MCP \u67b6\u6784\uff0c\u8d4b\u80fd AI \u81ea\u7136\u8bed\u8a00\u5bf9\u8bdd\u5206\u6790\u3001\u60c5\u611f\u6d1e\u5bdf\u4e0e\u8d8b\u52bf\u9884\u6d4b\u7b49\u3002\u652f\u6301 Docker \uff0c\u6570\u636e\u672c\u5730/\u4e91\u7aef\u81ea\u6301\u3002\u96c6\u6210\u5fae\u4fe1/\u98de\u4e66/\u9489\u9489/Telegram/\u90ae\u4ef6/ntfy/bark/slack \u7b49\u6e20\u9053\u667a\u80fd\u63a8\u9001\u3002",
   "maturity": "Unknown",
   "stars_7d": 201,
-  "stars_30d": 604,
-  "stars_90d": 604,
+  "stars_30d": 607,
+  "stars_90d": 607,
   "star_growth_rate_7d": 28.714285714285715,
-  "star_growth_rate_30d": 26.26086956521739,
-  "star_growth_acceleration": 1.0934247871333964,
-  "forks_7d": 6,
-  "forks_30d": 15,
+  "star_growth_rate_30d": 26.391304347826086,
+  "star_growth_acceleration": 1.088020710755472,
+  "forks_7d": 7,
+  "forks_30d": 14,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 279,
+  "snapshot_count": 280,
   "why_trending": "Strong momentum with 201 new stars this week. Above-average growth velocity. Active in the MCP category.",
   "authenticity": {
     "organic_confidence": 83.3,
@@ -44,12 +61,12 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "24,918 forks for 63,513 stars (39.2%)."
+        "detail": "24,919 forks for 63,517 stars (39.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.8,
+        "score": 93.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 44 stars (-2 forks, 1.7x the daily average)."
       },
@@ -72,7 +89,7 @@
         "label": "Issue engagement",
         "score": 30.0,
         "weight": 0.12,
-        "detail": "32 open issues for 63,513 stars (0.1%)."
+        "detail": "32 open issues for 63,517 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,11 +101,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 44 stars (-2 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 24,918 forks for 63,513 stars (39.2%).",
+      "Fork-to-star ratio: 24,919 forks for 63,517 stars (39.2%).",
       "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 32 open issues for 63,513 stars (0.1%)."
+      "Issue engagement: 32 open issues for 63,517 stars (0.1%)."
     ]
   }
 }

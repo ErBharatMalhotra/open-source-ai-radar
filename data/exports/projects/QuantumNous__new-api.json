@@ -4,8 +4,20 @@
   "description": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
   "language": "Go",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 51539,
+  "topics": [
+    "claude",
+    "gemini",
+    "openai",
+    "rerank",
+    "ai-gateway",
+    "deepseek",
+    "newapi",
+    "api-management",
+    "llm-gateway",
+    "model-routing",
+    "self-hosted"
+  ],
+  "stars": 51540,
   "forks": 12547,
   "open_issues": 773,
   "watchers": 160,
@@ -17,23 +29,23 @@
   "impact": 98.02,
   "velocity": 71.32,
   "health": 63.75,
-  "global_percentile": 97.29,
+  "global_percentile": 97.0,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management.",
   "maturity": "Unknown",
-  "stars_7d": 485,
-  "stars_30d": 1463,
-  "stars_90d": 1463,
-  "star_growth_rate_7d": 69.28571428571429,
-  "star_growth_rate_30d": 66.5,
-  "star_growth_acceleration": 1.041890440386681,
-  "forks_7d": 176,
-  "forks_30d": 495,
+  "stars_7d": 484,
+  "stars_30d": 1456,
+  "stars_90d": 1456,
+  "star_growth_rate_7d": 69.14285714285714,
+  "star_growth_rate_30d": 66.18181818181819,
+  "star_growth_acceleration": 1.0447409733124018,
+  "forks_7d": 175,
+  "forks_30d": 491,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 291,
-  "why_trending": "Strong momentum with 485 new stars this week. Above-average growth velocity. High developer adoption with 176 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 292,
+  "why_trending": "Strong momentum with 484 new stars this week. Above-average growth velocity. High developer adoption with 175 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
     "organic_confidence": 92.7,
     "verdict": "organic",
@@ -44,12 +56,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "12,544 forks for 51,534 stars (24.3%)."
+        "detail": "12,547 forks for 51,540 stars (24.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.6,
+        "score": 90.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 136 stars (26 forks, 1.9x the daily average)."
       },
@@ -72,7 +84,7 @@
         "label": "Issue engagement",
         "score": 82.5,
         "weight": 0.12,
-        "detail": "773 open issues for 51,534 stars (1.5%)."
+        "detail": "773 open issues for 51,540 stars (1.5%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +95,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 773 open issues for 51,534 stars (1.5%).",
+      "Issue engagement: 773 open issues for 51,540 stars (1.5%).",
       "Burst pattern: Largest 24h jump was 136 stars (26 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 12,544 forks for 51,534 stars (24.3%)."
+      "Fork-to-star ratio: 12,547 forks for 51,540 stars (24.3%)."
     ],
     "red_flags": []
   }

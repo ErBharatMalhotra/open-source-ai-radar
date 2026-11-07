@@ -4,7 +4,15 @@
   "description": "A coding agent for open models like Kimi K3 and GLM 5.3",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "coding-agent",
+    "deepseek",
+    "kimi",
+    "qwen",
+    "rust",
+    "acp",
+    "python"
+  ],
   "stars": 68825,
   "forks": 5938,
   "open_issues": 20,
@@ -13,28 +21,28 @@
   "pushed_at": "2026-11-07T18:18:43Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/openinterpreter.png",
-  "radar_score": 75.41,
-  "impact": 98.7,
-  "velocity": 61.77,
-  "health": 57.25,
-  "global_percentile": 54.86,
+  "radar_score": 76.22,
+  "impact": 98.71,
+  "velocity": 63.28,
+  "health": 58.35,
+  "global_percentile": 59.86,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "A coding agent for open models like Kimi K3",
   "maturity": "Unknown",
-  "stars_7d": 90,
-  "stars_30d": 262,
-  "stars_90d": 262,
-  "star_growth_rate_7d": 12.857142857142858,
-  "star_growth_rate_30d": 10.48,
-  "star_growth_acceleration": 1.2268266085059978,
-  "forks_7d": 12,
-  "forks_30d": 42,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 269,
+  "stars_7d": 83,
+  "stars_30d": 259,
+  "stars_90d": 259,
+  "star_growth_rate_7d": 11.857142857142858,
+  "star_growth_rate_30d": 10.36,
+  "star_growth_acceleration": 1.1445118587975731,
+  "forks_7d": 10,
+  "forks_30d": 43,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 270,
   "authenticity": {
-    "organic_confidence": 80.8,
+    "organic_confidence": 81.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.1,
         "weight": 0.22,
-        "detail": "5,937 forks for 68,826 stars (8.6%)."
+        "detail": "5,938 forks for 68,825 stars (8.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.2,
+        "score": 86.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (6 forks, 2.2x the daily average)."
       },
@@ -71,23 +79,23 @@
         "label": "Issue engagement",
         "score": 27.9,
         "weight": 0.12,
-        "detail": "20 open issues for 68,826 stars (0.0%)."
+        "detail": "20 open issues for 68,825 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (6 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 5,937 forks for 68,826 stars (8.6%).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Fork-to-star ratio: 5,938 forks for 68,825 stars (8.6%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 20 open issues for 68,826 stars (0.0%)."
+      "Issue engagement: 20 open issues for 68,825 stars (0.0%)."
     ]
   }
 }

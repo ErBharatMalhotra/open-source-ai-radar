@@ -4,7 +4,20 @@
   "description": "Making large AI models cheaper, faster and more accessible",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "deep-learning",
+    "hpc",
+    "large-scale",
+    "data-parallelism",
+    "pipeline-parallelism",
+    "model-parallelism",
+    "ai",
+    "big-model",
+    "distributed-computing",
+    "inference",
+    "heterogeneous-training",
+    "foundation-models"
+  ],
   "stars": 41429,
   "forks": 4486,
   "open_issues": 269,
@@ -13,26 +26,26 @@
   "pushed_at": "2026-11-06T07:11:55Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/hpcaitech.png",
-  "radar_score": 78.1,
-  "impact": 97.9,
+  "radar_score": 78.01,
+  "impact": 97.91,
   "velocity": 65.71,
-  "health": 63.75,
-  "global_percentile": 80.86,
+  "health": 63.38,
+  "global_percentile": 80.57,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "Making large AI models cheaper, faster and more accessible",
   "maturity": "Unknown",
-  "stars_7d": -6,
-  "stars_30d": -12,
-  "stars_90d": -11,
-  "star_growth_rate_7d": -0.8571428571428571,
-  "star_growth_rate_30d": -0.41379310344827586,
+  "stars_7d": -5,
+  "stars_30d": -11,
+  "stars_90d": -12,
+  "star_growth_rate_7d": -0.7142857142857143,
+  "star_growth_rate_30d": -0.36666666666666664,
   "star_growth_acceleration": 1.0,
   "forks_7d": 1,
   "forks_30d": -5,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 159,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 160,
   "authenticity": {
     "organic_confidence": 84.7,
     "verdict": "organic",
@@ -43,7 +56,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "4,486 forks for 41,428 stars (10.8%)."
+        "detail": "4,486 forks for 41,429 stars (10.8%)."
       },
       {
         "key": "burst",
@@ -71,7 +84,7 @@
         "label": "Issue engagement",
         "score": 64.5,
         "weight": 0.12,
-        "detail": "269 open issues for 41,428 stars (0.6%)."
+        "detail": "269 open issues for 41,429 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +97,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (0 forks, 3.0x the daily average).",
       "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 4,486 forks for 41,428 stars (10.8%)."
+      "Fork-to-star ratio: 4,486 forks for 41,429 stars (10.8%)."
     ],
     "red_flags": []
   }

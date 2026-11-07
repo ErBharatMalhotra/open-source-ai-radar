@@ -4,37 +4,57 @@
   "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 78149,
-  "forks": 10408,
-  "open_issues": 118,
+  "topics": [
+    "agent",
+    "agentic-ai",
+    "ai",
+    "claude",
+    "copilot",
+    "cursor",
+    "elevenlabs",
+    "ffmpeg",
+    "flux",
+    "image-generation",
+    "open-source",
+    "openai",
+    "python",
+    "remotion",
+    "stable-diffusion",
+    "text-to-speech",
+    "text-to-video",
+    "video-generation",
+    "video-production"
+  ],
+  "stars": 78194,
+  "forks": 10416,
+  "open_issues": 117,
   "watchers": 398,
   "created_at": "2026-03-29T15:23:22Z",
-  "pushed_at": "2026-11-03T17:42:02Z",
+  "pushed_at": "2026-11-07T19:46:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/calesthio.png",
-  "radar_score": 79.45,
+  "radar_score": 80.25,
   "impact": 99.02,
-  "velocity": 69.09,
-  "health": 62.65,
-  "global_percentile": 93.29,
+  "velocity": 70.59,
+  "health": 63.75,
+  "global_percentile": 97.43,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
   "maturity": "Unknown",
-  "stars_7d": 4841,
-  "stars_30d": 9274,
-  "stars_90d": 9274,
-  "star_growth_rate_7d": 691.5714285714286,
-  "star_growth_rate_30d": 421.54545454545456,
-  "star_growth_acceleration": 1.640561939677747,
-  "forks_7d": 818,
-  "forks_30d": 1575,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 313,
+  "stars_7d": 4856,
+  "stars_30d": 9313,
+  "stars_90d": 9313,
+  "star_growth_rate_7d": 693.7142857142857,
+  "star_growth_rate_30d": 423.3181818181818,
+  "star_growth_acceleration": 1.6387538157107575,
+  "forks_7d": 815,
+  "forks_30d": 1572,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 314,
   "authenticity": {
-    "organic_confidence": 84.6,
+    "organic_confidence": 85.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "10,402 forks for 78,086 stars (13.3%)."
+        "detail": "10,416 forks for 78,194 stars (13.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.9,
+        "score": 88.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 907 stars (141 forks, 2.1x the daily average)."
       },
@@ -69,23 +89,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.1,
+        "score": 40.0,
         "weight": 0.12,
-        "detail": "118 open issues for 78,086 stars (0.2%)."
+        "detail": "117 open issues for 78,194 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 907 stars (141 forks, 2.1x the daily average).",
-      "Maintenance cadence: Last push 3 days ago.",
-      "Fork-to-star ratio: 10,402 forks for 78,086 stars (13.3%)."
+      "Fork-to-star ratio: 10,416 forks for 78,194 stars (13.3%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 117 open issues for 78,194 stars (0.1%)."
+    ]
   }
 }

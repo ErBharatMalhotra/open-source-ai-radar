@@ -4,37 +4,48 @@
   "description": "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 5399,
+  "topics": [
+    "document-parser",
+    "embeddings",
+    "llm",
+    "open-source",
+    "pipeline",
+    "qa",
+    "rag",
+    "retrieval-augmented-generation",
+    "agent",
+    "librarian"
+  ],
+  "stars": 5408,
   "forks": 486,
   "open_issues": 62,
-  "watchers": 33,
+  "watchers": 34,
   "created_at": "2024-01-10T12:25:00Z",
-  "pushed_at": "2026-11-06T13:00:25Z",
+  "pushed_at": "2026-11-08T14:57:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Marker-Inc-Korea.png",
-  "radar_score": 68.27,
-  "impact": 84.73,
-  "velocity": 52.68,
+  "radar_score": 68.57,
+  "impact": 85.26,
+  "velocity": 52.94,
   "health": 63.75,
-  "global_percentile": 19.43,
+  "global_percentile": 15.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "AutoRAG: Now your agent can find anything in your computer. It gets smarter if you are using it frequently.",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 152,
-  "stars_90d": 211,
-  "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 5.241379310344827,
-  "star_growth_acceleration": 1.7171052631578947,
-  "forks_7d": 0,
-  "forks_30d": 21,
+  "stars_7d": 156,
+  "stars_30d": 287,
+  "stars_90d": 358,
+  "star_growth_rate_7d": 26.0,
+  "star_growth_rate_30d": 10.25,
+  "star_growth_acceleration": 2.5365853658536586,
+  "forks_7d": 21,
+  "forks_30d": 40,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 26,
+  "snapshot_count": 27,
   "authenticity": {
-    "organic_confidence": 91.1,
+    "organic_confidence": 91.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +54,7 @@
         "label": "Fork-to-star ratio",
         "score": 96.4,
         "weight": 0.22,
-        "detail": "486 forks for 5,399 stars (9.0%)."
+        "detail": "486 forks for 5,408 stars (9.0%)."
       },
       {
         "key": "burst",
@@ -71,20 +82,20 @@
         "label": "Issue engagement",
         "score": 77.2,
         "weight": 0.12,
-        "detail": "62 open issues for 5,399 stars (1.1%)."
+        "detail": "62 open issues for 5,408 stars (1.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 62 open issues for 5,399 stars (1.1%).",
+      "Issue engagement: 62 open issues for 5,408 stars (1.1%).",
       "Burst pattern: No single-day star surge in the last 30 days.",
-      "Fork-to-star ratio: 486 forks for 5,399 stars (9.0%)."
+      "Fork-to-star ratio: 486 forks for 5,408 stars (9.0%)."
     ],
     "red_flags": []
   }

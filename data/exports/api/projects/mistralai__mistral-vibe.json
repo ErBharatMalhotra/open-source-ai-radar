@@ -5,36 +5,36 @@
   "language": "Python",
   "license": "Apache-2.0",
   "topics": [],
-  "stars": 5332,
-  "forks": 788,
-  "open_issues": 283,
+  "stars": 5338,
+  "forks": 789,
+  "open_issues": 289,
   "watchers": 30,
   "created_at": "2025-12-08T18:56:59Z",
   "pushed_at": "2026-11-05T13:09:11Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mistralai.png",
-  "radar_score": 73.97,
-  "impact": 85.98,
-  "velocity": 67.54,
-  "health": 63.75,
-  "global_percentile": 50.86,
+  "radar_score": 72.31,
+  "impact": 86.05,
+  "velocity": 66.09,
+  "health": 59.05,
+  "global_percentile": 35.14,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Minimal CLI coding agent by Mistral",
   "maturity": "Unknown",
-  "stars_7d": 8,
-  "stars_30d": 238,
-  "stars_90d": 414,
-  "star_growth_rate_7d": 8.0,
-  "star_growth_rate_30d": 8.206896551724139,
-  "star_growth_acceleration": 0.9747899159663864,
-  "forks_7d": 9,
-  "forks_30d": 56,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 27,
+  "stars_7d": 68,
+  "stars_30d": 237,
+  "stars_90d": 474,
+  "star_growth_rate_7d": 11.333333333333334,
+  "star_growth_rate_30d": 8.464285714285714,
+  "star_growth_acceleration": 1.338959212376934,
+  "forks_7d": 21,
+  "forks_30d": 57,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 28,
   "authenticity": {
-    "organic_confidence": 99.4,
+    "organic_confidence": 97.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +43,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.0,
         "weight": 0.22,
-        "detail": "788 forks for 5,332 stars (14.8%)."
+        "detail": "789 forks for 5,338 stars (14.8%)."
       },
       {
         "key": "burst",
@@ -55,23 +55,23 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 95,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+68 stars vs +21 forks this week (expected ~10 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 88.2,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.34x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "283 open issues for 5,332 stars (5.3%)."
+        "detail": "289 open issues for 5,338 stars (5.4%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +82,9 @@
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 3 days ago.",
-      "Fork-to-star ratio: 788 forks for 5,332 stars (14.8%).",
-      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 0.1x the daily average)."
+      "Growth acceleration: Weekly growth is 1.34x the monthly baseline.",
+      "Star/fork velocity alignment: +68 stars vs +21 forks this week (expected ~10 forks).",
+      "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": []
   }

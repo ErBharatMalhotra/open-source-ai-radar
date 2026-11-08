@@ -41,7 +41,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 208,
   "authenticity": {
-    "organic_confidence": 95.3,
+    "organic_confidence": 95.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -55,23 +55,23 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.7,
+        "score": 87.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (3 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (3 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 95,
+        "score": null,
         "weight": 0.18,
-        "detail": "+23 stars vs +12 forks this week (expected ~4 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 96.6,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 0.68x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
@@ -89,9 +89,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 10 stars (3 forks, 2.2x the daily average).",
-      "Star/fork velocity alignment: +23 stars vs +12 forks this week (expected ~4 forks).",
-      "Growth acceleration: Weekly growth is 0.68x the monthly baseline."
+      "Burst pattern: Largest 24h jump was 10 stars (3 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 1,737 forks for 10,077 stars (17.2%).",
+      "Issue engagement: 486 open issues for 10,077 stars (4.8%)."
     ],
     "red_flags": []
   }

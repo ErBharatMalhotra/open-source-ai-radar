@@ -4,53 +4,65 @@
   "description": "Ghidra MCP Server \u2014 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server integration, and Docker deployment.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6151,
+  "topics": [
+    "binary-analysis",
+    "ghidra",
+    "java",
+    "mcp",
+    "model-context-protocol",
+    "python",
+    "reverse-engineering",
+    "static-analysis",
+    "ai",
+    "ghidra-extension",
+    "mcp-server"
+  ],
+  "stars": 6161,
   "forks": 382,
-  "open_issues": 12,
+  "open_issues": 11,
   "watchers": 25,
   "created_at": "2025-08-30T06:40:03Z",
-  "pushed_at": "2026-11-06T02:50:34Z",
+  "pushed_at": "2026-11-08T08:31:41Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bethington.png",
-  "radar_score": 69.48,
-  "impact": 84.21,
-  "velocity": 56.99,
-  "health": 63.38,
-  "global_percentile": 22.71,
+  "radar_score": 69.4,
+  "impact": 84.33,
+  "velocity": 56.38,
+  "health": 63.75,
+  "global_percentile": 18.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Ghidra MCP Server \u2014 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server integration, and Docker deployment.",
   "maturity": "Unknown",
-  "stars_7d": 44,
-  "stars_30d": 1953,
-  "stars_90d": 2649,
-  "star_growth_rate_7d": 44.0,
-  "star_growth_rate_30d": 67.34482758620689,
-  "star_growth_acceleration": 0.6533538146441373,
-  "forks_7d": 5,
-  "forks_30d": 208,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 26,
+  "stars_7d": 124,
+  "stars_30d": 742,
+  "stars_90d": 2729,
+  "star_growth_rate_7d": 17.714285714285715,
+  "star_growth_rate_30d": 27.48148148148148,
+  "star_growth_acceleration": 0.6445899114362726,
+  "forks_7d": 12,
+  "forks_30d": 96,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 27,
   "authenticity": {
-    "organic_confidence": 85.5,
+    "organic_confidence": 84.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 86.4,
+        "score": 86.3,
         "weight": 0.22,
-        "detail": "382 forks for 6,151 stars (6.2%)."
+        "detail": "382 forks for 6,161 stars (6.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.4,
+        "score": 98.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 31 stars (6 forks, 1.1x the daily average)."
+        "detail": "Largest 24h jump was 31 stars (6 forks, 1.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +81,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 44.5,
+        "score": 42.9,
         "weight": 0.12,
-        "detail": "12 open issues for 6,151 stars (0.2%)."
+        "detail": "11 open issues for 6,161 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 382 forks for 6,151 stars (6.2%).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Burst pattern: Largest 24h jump was 31 stars (6 forks, 1.1x the daily average)."
+      "Fork-to-star ratio: 382 forks for 6,161 stars (6.2%).",
+      "Burst pattern: Largest 24h jump was 31 stars (6 forks, 1.2x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

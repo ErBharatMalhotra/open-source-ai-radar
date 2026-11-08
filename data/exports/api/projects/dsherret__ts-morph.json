@@ -4,8 +4,14 @@
   "description": "TypeScript Compiler API wrapper for static analysis and programmatic code changes.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 6224,
+  "topics": [
+    "typescript",
+    "ast",
+    "code-generation",
+    "javascript",
+    "static-analysis"
+  ],
+  "stars": 6223,
   "forks": 249,
   "open_issues": 282,
   "watchers": 19,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-09-29T02:59:35Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dsherret.png",
-  "radar_score": 57.58,
-  "impact": 82.22,
-  "velocity": 35.54,
-  "health": 48.99,
-  "global_percentile": 0.71,
+  "radar_score": 57.31,
+  "impact": 82.24,
+  "velocity": 35.53,
+  "health": 47.92,
+  "global_percentile": 0.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "TypeScript Compiler API wrapper for static analysis and programmatic code changes.",
   "maturity": "Unknown",
-  "stars_7d": 1,
-  "stars_30d": 24,
-  "stars_90d": 62,
-  "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 0.8,
-  "star_growth_acceleration": 1.25,
+  "stars_7d": 2,
+  "stars_30d": 23,
+  "stars_90d": 63,
+  "star_growth_rate_7d": 0.2857142857142857,
+  "star_growth_rate_30d": 0.7931034482758621,
+  "star_growth_acceleration": 0.3602484472049689,
   "forks_7d": 0,
-  "forks_30d": 9,
-  "days_since_last_push": 35,
-  "freshness_score": 0.7046880897187134,
-  "snapshot_count": 42,
+  "forks_30d": 6,
+  "days_since_last_push": 40,
+  "freshness_score": 0.6703200460356393,
+  "snapshot_count": 43,
   "authenticity": {
-    "organic_confidence": 85.7,
+    "organic_confidence": 85.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +49,7 @@
         "label": "Fork-to-star ratio",
         "score": 75.3,
         "weight": 0.22,
-        "detail": "249 forks for 6,224 stars (4.0%)."
+        "detail": "249 forks for 6,223 stars (4.0%)."
       },
       {
         "key": "burst",
@@ -71,19 +77,19 @@
         "label": "Issue engagement",
         "score": 98.4,
         "weight": 0.12,
-        "detail": "282 open issues for 6,224 stars (4.5%)."
+        "detail": "282 open issues for 6,223 stars (4.5%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 82.8,
+        "score": 82.5,
         "weight": 0.1,
-        "detail": "Last push 39 days ago."
+        "detail": "Last push 40 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 249 forks for 6,224 stars (4.0%).",
-      "Maintenance cadence: Last push 39 days ago.",
+      "Fork-to-star ratio: 249 forks for 6,223 stars (4.0%).",
+      "Maintenance cadence: Last push 40 days ago.",
       "Burst pattern: No single-day star surge in the last 30 days."
     ],
     "red_flags": []

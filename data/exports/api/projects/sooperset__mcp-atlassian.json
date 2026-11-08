@@ -4,37 +4,42 @@
   "description": "MCP server for Atlassian tools (Confluence, Jira)",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 6095,
-  "forks": 1445,
-  "open_issues": 195,
+  "topics": [
+    "atlassian",
+    "confluence",
+    "jira",
+    "mcp"
+  ],
+  "stars": 6097,
+  "forks": 1448,
+  "open_issues": 194,
   "watchers": 23,
   "created_at": "2024-12-03T09:25:20Z",
-  "pushed_at": "2026-09-19T10:20:14Z",
+  "pushed_at": "2026-11-08T10:05:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/sooperset.png",
-  "radar_score": 65.38,
-  "impact": 86.85,
-  "velocity": 50.62,
-  "health": 51.67,
-  "global_percentile": 8.14,
+  "radar_score": 72.34,
+  "impact": 86.87,
+  "velocity": 61.88,
+  "health": 63.75,
+  "global_percentile": 35.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP server for Atlassian tools (Confluence, Jira)",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 115,
-  "stars_90d": 297,
-  "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 3.8333333333333335,
-  "star_growth_acceleration": 2.3478260869565215,
-  "forks_7d": 3,
-  "forks_30d": 52,
-  "days_since_last_push": 44,
-  "freshness_score": 0.6440364210831414,
-  "snapshot_count": 48,
+  "stars_7d": 26,
+  "stars_30d": 113,
+  "stars_90d": 314,
+  "star_growth_rate_7d": 3.7142857142857144,
+  "star_growth_rate_30d": 3.896551724137931,
+  "star_growth_acceleration": 0.9532237673830595,
+  "forks_7d": 18,
+  "forks_30d": 57,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 49,
   "authenticity": {
-    "organic_confidence": 95.1,
+    "organic_confidence": 98.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.3,
         "weight": 0.22,
-        "detail": "1,445 forks for 6,095 stars (23.7%)."
+        "detail": "1,448 forks for 6,097 stars (23.7%)."
       },
       {
         "key": "burst",
@@ -69,22 +74,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 94.0,
+        "score": 93.9,
         "weight": 0.12,
-        "detail": "195 open issues for 6,095 stars (3.2%)."
+        "detail": "194 open issues for 6,097 stars (3.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 80.2,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 49 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 49 days ago.",
-      "Issue engagement: 195 open issues for 6,095 stars (3.2%).",
-      "Fork-to-star ratio: 1,445 forks for 6,095 stars (23.7%)."
+      "Issue engagement: 194 open issues for 6,097 stars (3.2%).",
+      "Fork-to-star ratio: 1,448 forks for 6,097 stars (23.7%).",
+      "Burst pattern: Largest 24h jump was 2 stars (0 forks, 0.5x the daily average)."
     ],
     "red_flags": []
   }

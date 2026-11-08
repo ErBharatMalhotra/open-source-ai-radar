@@ -4,37 +4,49 @@
   "description": "Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 5790,
-  "forks": 453,
-  "open_issues": 43,
+  "topics": [
+    "claude",
+    "mcp",
+    "zotero",
+    "semantic-search",
+    "ai-agent",
+    "chatgpt",
+    "claude-code",
+    "mcp-server",
+    "model-context-protocol",
+    "research-tools",
+    "zotero-plugin"
+  ],
+  "stars": 5811,
+  "forks": 456,
+  "open_issues": 45,
   "watchers": 12,
   "created_at": "2025-03-22T14:47:42Z",
   "pushed_at": "2026-11-06T17:28:47Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/54yyyu.png",
-  "radar_score": 67.8,
-  "impact": 82.16,
-  "velocity": 54.8,
-  "health": 63.01,
-  "global_percentile": 16.86,
+  "radar_score": 68.56,
+  "impact": 82.29,
+  "velocity": 56.56,
+  "health": 63.38,
+  "global_percentile": 14.43,
   "category": "MCP",
   "sub_category": "",
   "summary": "Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.",
   "maturity": "Unknown",
-  "stars_7d": 30,
-  "stars_30d": 477,
-  "stars_90d": 958,
-  "star_growth_rate_7d": 30.0,
-  "star_growth_rate_30d": 16.448275862068964,
-  "star_growth_acceleration": 1.8238993710691824,
-  "forks_7d": 1,
-  "forks_30d": 41,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 37,
+  "stars_7d": 131,
+  "stars_30d": 488,
+  "stars_90d": 1059,
+  "star_growth_rate_7d": 21.833333333333332,
+  "star_growth_rate_30d": 17.428571428571427,
+  "star_growth_acceleration": 1.2527322404371586,
+  "forks_7d": 4,
+  "forks_30d": 37,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 38,
   "authenticity": {
-    "organic_confidence": 91.6,
+    "organic_confidence": 84.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 92.2,
         "weight": 0.22,
-        "detail": "453 forks for 5,790 stars (7.8%)."
+        "detail": "456 forks for 5,811 stars (7.8%)."
       },
       {
         "key": "burst",
@@ -55,23 +67,23 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 53.9,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+131 stars vs +4 forks this week (expected ~10 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 89.9,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.25x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 67.3,
+        "score": 68.2,
         "weight": 0.12,
-        "detail": "43 open issues for 5,790 stars (0.7%)."
+        "detail": "45 open issues for 5,811 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +94,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 453 forks for 5,790 stars (7.8%).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Burst pattern: Largest 24h jump was 2 stars (0 forks, 0.1x the daily average)."
+      "Growth acceleration: Weekly growth is 1.25x the monthly baseline.",
+      "Fork-to-star ratio: 456 forks for 5,811 stars (7.8%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

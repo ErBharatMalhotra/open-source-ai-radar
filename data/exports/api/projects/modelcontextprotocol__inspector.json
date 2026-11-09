@@ -12,7 +12,7 @@
     "tui",
     "web"
   ],
-  "stars": 11259,
+  "stars": 11262,
   "forks": 1563,
   "open_issues": 18,
   "watchers": 67,
@@ -24,24 +24,24 @@
   "impact": 91.79,
   "velocity": 58.51,
   "health": 59.65,
-  "global_percentile": 30.0,
+  "global_percentile": 29.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Visual testing tool for MCP servers",
   "maturity": "Unknown",
-  "stars_7d": 54,
-  "stars_30d": 211,
-  "stars_90d": 219,
-  "star_growth_rate_7d": 7.714285714285714,
-  "star_growth_rate_30d": 7.033333333333333,
-  "star_growth_acceleration": 1.0968178740690588,
+  "stars_7d": 55,
+  "stars_30d": 216,
+  "stars_90d": 221,
+  "star_growth_rate_7d": 7.857142857142857,
+  "star_growth_rate_30d": 7.2,
+  "star_growth_acceleration": 1.0912698412698412,
   "forks_7d": 11,
-  "forks_30d": 20,
+  "forks_30d": 21,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 253,
+  "snapshot_count": 254,
   "authenticity": {
-    "organic_confidence": 89.4,
+    "organic_confidence": 86.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -50,35 +50,35 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "1,563 forks for 11,259 stars (13.9%)."
+        "detail": "1,563 forks for 11,262 stars (13.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.9,
+        "score": 93.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (0 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 97.7,
+        "score": null,
         "weight": 0.18,
-        "detail": "+54 stars vs +11 forks this week (expected ~7 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 93.1,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 1.10x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 41.0,
         "weight": 0.12,
-        "detail": "18 open issues for 11,259 stars (0.2%)."
+        "detail": "18 open issues for 11,262 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -90,8 +90,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.7x the daily average).",
-      "Growth acceleration: Weekly growth is 1.10x the monthly baseline.",
-      "Star/fork velocity alignment: +54 stars vs +11 forks this week (expected ~7 forks)."
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 1,563 forks for 11,262 stars (13.9%)."
     ],
     "red_flags": []
   }

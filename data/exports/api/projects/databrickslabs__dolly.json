@@ -4,8 +4,13 @@
   "description": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10808,
+  "topics": [
+    "databricks",
+    "gpt",
+    "chatbot",
+    "dolly"
+  ],
+  "stars": 10806,
   "forks": 1128,
   "open_issues": 5,
   "watchers": 132,
@@ -14,43 +19,43 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/databrickslabs.png",
   "radar_score": 58.41,
-  "impact": 92.1,
-  "velocity": 37.8,
+  "impact": 92.12,
+  "velocity": 37.79,
   "health": 33.35,
-  "global_percentile": 1.43,
+  "global_percentile": 0.29,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 4,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": -3,
+  "stars_30d": -3,
+  "stars_90d": 1,
+  "star_growth_rate_7d": -1.5,
+  "star_growth_rate_30d": -1.5,
   "star_growth_acceleration": 1.0,
   "forks_7d": 0,
   "forks_30d": 0,
-  "days_since_last_push": 1225,
-  "freshness_score": 4.785117392129009e-06,
-  "snapshot_count": 27,
+  "days_since_last_push": 1228,
+  "freshness_score": 4.643695800696877e-06,
+  "snapshot_count": 28,
   "authenticity": {
-    "organic_confidence": 63.7,
-    "verdict": "mixed",
-    "label": "Mixed Signals",
+    "organic_confidence": 73.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "1,128 forks for 10,808 stars (10.4%)."
+        "detail": "1,128 forks for 10,806 stars (10.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "Not enough snapshots yet."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -71,22 +76,23 @@
         "label": "Issue engagement",
         "score": 29.6,
         "weight": 0.12,
-        "detail": "5 open issues for 10,808 stars (0.0%)."
+        "detail": "5 open issues for 10,806 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 1227 days ago."
+        "detail": "Last push 1228 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,128 forks for 10,808 stars (10.4%)."
+      "Burst pattern: No single-day star surge in the last 30 days.",
+      "Fork-to-star ratio: 1,128 forks for 10,806 stars (10.4%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 1227 days ago.",
-      "Issue engagement: 5 open issues for 10,808 stars (0.0%)."
+      "Maintenance cadence: Last push 1228 days ago.",
+      "Issue engagement: 5 open issues for 10,806 stars (0.0%)."
     ]
   }
 }

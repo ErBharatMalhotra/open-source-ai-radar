@@ -5,36 +5,36 @@
   "language": "Jupyter Notebook",
   "license": null,
   "topics": [],
-  "stars": 9632,
-  "forks": 2257,
+  "stars": 9637,
+  "forks": 2259,
   "open_issues": 26,
   "watchers": 69,
   "created_at": "2024-01-31T01:23:48Z",
   "pushed_at": "2025-06-26T03:16:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/langchain-ai.png",
-  "radar_score": 61.06,
-  "impact": 91.74,
-  "velocity": 46.21,
+  "radar_score": 61.07,
+  "impact": 91.76,
+  "velocity": 46.22,
   "health": 32.76,
-  "global_percentile": 2.14,
+  "global_percentile": 1.43,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "",
   "maturity": "Unknown",
-  "stars_7d": 57,
-  "stars_30d": 157,
-  "stars_90d": 246,
-  "star_growth_rate_7d": 8.142857142857142,
-  "star_growth_rate_30d": 5.233333333333333,
-  "star_growth_acceleration": 1.5559599636032755,
+  "stars_7d": 50,
+  "stars_30d": 156,
+  "stars_90d": 251,
+  "star_growth_rate_7d": 8.333333333333334,
+  "star_growth_rate_30d": 5.2,
+  "star_growth_acceleration": 1.6025641025641026,
   "forks_7d": 1,
-  "forks_30d": 15,
-  "days_since_last_push": 500,
-  "freshness_score": 0.006737946999085467,
-  "snapshot_count": 174,
+  "forks_30d": 17,
+  "days_since_last_push": 501,
+  "freshness_score": 0.006670903306255274,
+  "snapshot_count": 175,
   "authenticity": {
-    "organic_confidence": 75.5,
+    "organic_confidence": 66.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +43,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.3,
         "weight": 0.22,
-        "detail": "2,257 forks for 9,632 stars (23.4%)."
+        "detail": "2,259 forks for 9,637 stars (23.4%)."
       },
       {
         "key": "burst",
@@ -55,23 +55,23 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 17.8,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+50 stars vs +1 forks this week (expected ~12 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 81.9,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.60x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 48.5,
         "weight": 0.12,
-        "detail": "26 open issues for 9,632 stars (0.3%)."
+        "detail": "26 open issues for 9,637 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +82,12 @@
       }
     ],
     "reasons": [
+      "Growth acceleration: Weekly growth is 1.60x the monthly baseline.",
       "Burst pattern: Largest 24h jump was 10 stars (0 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 2,257 forks for 9,632 stars (23.4%)."
+      "Fork-to-star ratio: 2,259 forks for 9,637 stars (23.4%)."
     ],
     "red_flags": [
+      "Star/fork velocity alignment: +50 stars vs +1 forks this week (expected ~12 forks).",
       "Maintenance cadence: Last push 501 days ago."
     ]
   }

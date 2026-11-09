@@ -53,9 +53,9 @@
   "snapshot_count": 265,
   "why_trending": "Strong momentum with 355 new stars this week. Above-average growth velocity. High developer adoption with 20 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 78.3,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.5,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -67,9 +67,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.0,
+        "score": 79.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 30 stars (4 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 25 stars (9 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -101,6 +101,7 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 25 stars (9 forks, 2.7x the daily average).",
       "Maintenance cadence: Last push 1 days ago.",
       "Fork-to-star ratio: 1,577 forks for 11,717 stars (13.5%)."
     ],

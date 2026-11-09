@@ -38,9 +38,9 @@
   "freshness_score": 0.1686381472685955,
   "snapshot_count": 28,
   "authenticity": {
-    "organic_confidence": 70.1,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 53.8,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
@@ -52,9 +52,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 100.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
+        "detail": "Not enough snapshots yet."
       },
       {
         "key": "alignment",
@@ -85,9 +85,7 @@
         "detail": "Last push 207 days ago."
       }
     ],
-    "reasons": [
-      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
-    ],
+    "reasons": [],
     "red_flags": [
       "Issue engagement: 0 open issues for 21,111 stars (0.0%)."
     ]

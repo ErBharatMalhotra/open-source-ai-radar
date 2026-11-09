@@ -4,35 +4,45 @@
   "description": "State of the art inference performance with modern accelerators on Kubernetes",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 5166,
-  "forks": 918,
-  "open_issues": 75,
+  "topics": [
+    "ai",
+    "cncf",
+    "distributed-inference",
+    "gpu",
+    "inference",
+    "intelligent-routing",
+    "kubernetes",
+    "llm",
+    "model-server"
+  ],
+  "stars": 5177,
+  "forks": 919,
+  "open_issues": 74,
   "watchers": 67,
   "created_at": "2025-04-29T18:28:17Z",
-  "pushed_at": "2026-11-07T14:57:56Z",
+  "pushed_at": "2026-11-08T12:15:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/llm-d.png",
-  "radar_score": 71.89,
-  "impact": 87.68,
-  "velocity": 59.65,
+  "radar_score": 71.95,
+  "impact": 87.75,
+  "velocity": 59.76,
   "health": 63.75,
-  "global_percentile": 34.71,
+  "global_percentile": 34.43,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Achieve state of the art inference performance with modern accelerators on Kubernetes",
   "maturity": "Unknown",
-  "stars_7d": 8,
-  "stars_30d": 409,
-  "stars_90d": 1023,
+  "stars_7d": 56,
+  "stars_30d": 385,
+  "stars_90d": 1071,
   "star_growth_rate_7d": 8.0,
-  "star_growth_rate_30d": 14.10344827586207,
-  "star_growth_acceleration": 0.5672371638141809,
-  "forks_7d": 2,
-  "forks_30d": 90,
+  "star_growth_rate_30d": 13.75,
+  "star_growth_acceleration": 0.5818181818181818,
+  "forks_7d": 14,
+  "forks_30d": 84,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 25,
+  "snapshot_count": 26,
   "authenticity": {
     "organic_confidence": 96.2,
     "verdict": "organic",
@@ -43,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.4,
         "weight": 0.22,
-        "detail": "918 forks for 5,166 stars (17.8%)."
+        "detail": "919 forks for 5,177 stars (17.8%)."
       },
       {
         "key": "burst",
@@ -69,22 +79,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 81.8,
+        "score": 81.4,
         "weight": 0.12,
-        "detail": "75 open issues for 5,166 stars (1.5%)."
+        "detail": "74 open issues for 5,177 stars (1.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 75 open issues for 5,166 stars (1.5%).",
-      "Fork-to-star ratio: 918 forks for 5,166 stars (17.8%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Issue engagement: 74 open issues for 5,177 stars (1.4%).",
+      "Fork-to-star ratio: 919 forks for 5,177 stars (17.8%).",
+      "Burst pattern: Largest 24h jump was 2 stars (2 forks, 0.1x the daily average)."
     ],
     "red_flags": []
   }

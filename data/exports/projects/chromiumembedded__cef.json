@@ -4,37 +4,42 @@
   "description": "Chromium Embedded Framework (CEF). A simple framework for embedding Chromium-based browsers in other applications.",
   "language": "C++",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 4869,
-  "forks": 683,
-  "open_issues": 181,
+  "topics": [
+    "cef",
+    "chromium",
+    "framework",
+    "browser"
+  ],
+  "stars": 4870,
+  "forks": 681,
+  "open_issues": 182,
   "watchers": 111,
   "created_at": "2017-04-02T18:19:23Z",
   "pushed_at": "2026-11-06T23:23:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/chromiumembedded.png",
-  "radar_score": 67.28,
-  "impact": 87.68,
-  "velocity": 48.63,
-  "health": 60.75,
-  "global_percentile": 14.14,
+  "radar_score": 66.55,
+  "impact": 87.65,
+  "velocity": 47.1,
+  "health": 60.01,
+  "global_percentile": 10.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Chromium Embedded Framework (CEF). A simple framework for embedding Chromium-based browsers in other applications.",
   "maturity": "Unknown",
-  "stars_7d": 2,
-  "stars_30d": 41,
-  "stars_90d": 93,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 1.4137931034482758,
-  "star_growth_acceleration": 1.4146341463414636,
-  "forks_7d": 2,
-  "forks_30d": 16,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 15,
+  "stars_7d": 12,
+  "stars_30d": 46,
+  "stars_90d": 103,
+  "star_growth_rate_7d": 1.7142857142857142,
+  "star_growth_rate_30d": 1.6428571428571428,
+  "star_growth_acceleration": 1.0434782608695652,
+  "forks_7d": -1,
+  "forks_30d": 14,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 16,
   "authenticity": {
-    "organic_confidence": 95.4,
+    "organic_confidence": 95.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "683 forks for 4,869 stars (14.0%)."
+        "detail": "681 forks for 4,870 stars (14.0%)."
       },
       {
         "key": "burst",
@@ -69,22 +74,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 95.7,
+        "score": 95.8,
         "weight": 0.12,
-        "detail": "181 open issues for 4,869 stars (3.7%)."
+        "detail": "182 open issues for 4,870 stars (3.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: No single-day star surge in the last 30 days.",
-      "Issue engagement: 181 open issues for 4,869 stars (3.7%).",
-      "Fork-to-star ratio: 683 forks for 4,869 stars (14.0%)."
+      "Issue engagement: 182 open issues for 4,870 stars (3.7%).",
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": []
   }

@@ -4,27 +4,52 @@
   "description": "A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile.",
   "language": "TypeScript",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 4793,
-  "forks": 1003,
-  "open_issues": 8,
-  "watchers": 24,
+  "topics": [
+    "caprover",
+    "cover-letter",
+    "docker",
+    "job-application-tracker",
+    "job-search",
+    "llm",
+    "local-llm",
+    "nextjs",
+    "ollama",
+    "postgresql",
+    "resume",
+    "self-hosted",
+    "typescript"
+  ],
+  "stars": 4858,
+  "forks": 1013,
+  "open_issues": 7,
+  "watchers": 23,
   "created_at": "2026-10-03T21:26:15Z",
-  "pushed_at": "2026-11-06T15:47:00Z",
+  "pushed_at": "2026-11-08T13:29:38Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/AienTech.png",
-  "radar_score": 0,
-  "impact": 0,
-  "velocity": 0,
-  "health": 0,
-  "global_percentile": 0,
+  "radar_score": 75.95,
+  "impact": 85.38,
+  "velocity": 73.89,
+  "health": 63.75,
+  "global_percentile": 64.0,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "A self-hosted job search app that writes tailored resumes and cover letters from your profile.",
   "maturity": "Unknown",
-  "snapshot_count": 0,
+  "stars_7d": 0,
+  "stars_30d": 0,
+  "stars_90d": 0,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 0.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 0,
+  "forks_30d": 0,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 1,
+  "why_trending": "Above-average growth velocity. Active in the Local AI category.",
   "authenticity": {
-    "organic_confidence": 82.7,
+    "organic_confidence": 85.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -33,7 +58,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.8,
         "weight": 0.22,
-        "detail": "1,003 forks for 4,793 stars (20.9%)."
+        "detail": "1,013 forks for 4,858 stars (20.9%)."
       },
       {
         "key": "burst",
@@ -52,29 +77,32 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 95.0,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.00x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 41.7,
+        "score": 39.4,
         "weight": 0.12,
-        "detail": "8 open issues for 4,793 stars (0.2%)."
+        "detail": "7 open issues for 4,858 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,003 forks for 4,793 stars (20.9%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Growth acceleration: Weekly growth is 1.00x the monthly baseline.",
+      "Fork-to-star ratio: 1,013 forks for 4,858 stars (20.9%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 7 open issues for 4,858 stars (0.1%)."
+    ]
   }
 }

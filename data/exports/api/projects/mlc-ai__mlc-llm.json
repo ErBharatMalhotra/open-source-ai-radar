@@ -4,7 +4,12 @@
   "description": "Universal LLM Deployment Engine with ML Compilation",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "llm",
+    "machine-learning-compilation",
+    "language-model",
+    "tvm"
+  ],
   "stars": 23314,
   "forks": 2166,
   "open_issues": 308,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-10-30T09:07:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mlc-ai.png",
-  "radar_score": 73.56,
+  "radar_score": 73.39,
   "impact": 95.5,
-  "velocity": 57.5,
-  "health": 60.92,
-  "global_percentile": 37.71,
+  "velocity": 57.49,
+  "health": 60.27,
+  "global_percentile": 38.86,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Universal LLM Deployment Engine with ML Compilation",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 99,
-  "stars_90d": 110,
-  "star_growth_rate_7d": 3.5714285714285716,
-  "star_growth_rate_30d": 3.3,
-  "star_growth_acceleration": 1.0822510822510825,
-  "forks_7d": 0,
-  "forks_30d": 17,
-  "days_since_last_push": 8,
-  "freshness_score": 0.9231163463866358,
-  "snapshot_count": 186,
+  "stars_7d": 20,
+  "stars_30d": 89,
+  "stars_90d": 113,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 2.966666666666667,
+  "star_growth_acceleration": 0.9630818619582664,
+  "forks_7d": 1,
+  "forks_30d": 9,
+  "days_since_last_push": 10,
+  "freshness_score": 0.9048374180359595,
+  "snapshot_count": 187,
   "authenticity": {
-    "organic_confidence": 77.5,
+    "organic_confidence": 77.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.4,
         "weight": 0.22,
-        "detail": "2,164 forks for 23,309 stars (9.3%)."
+        "detail": "2,166 forks for 23,314 stars (9.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 51.2,
+        "score": 50.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 15 stars (10 forks, 5.1x the daily average)."
+        "detail": "Largest 24h jump was 15 stars (10 forks, 5.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +76,20 @@
         "label": "Issue engagement",
         "score": 79.8,
         "weight": 0.12,
-        "detail": "307 open issues for 23,309 stars (1.3%)."
+        "detail": "308 open issues for 23,314 stars (1.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 94.1,
+        "score": 93.7,
         "weight": 0.1,
-        "detail": "Last push 9 days ago."
+        "detail": "Last push 10 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 307 open issues for 23,309 stars (1.3%).",
-      "Maintenance cadence: Last push 9 days ago.",
-      "Fork-to-star ratio: 2,164 forks for 23,309 stars (9.3%)."
+      "Issue engagement: 308 open issues for 23,314 stars (1.3%).",
+      "Maintenance cadence: Last push 10 days ago.",
+      "Fork-to-star ratio: 2,166 forks for 23,314 stars (9.3%)."
     ],
     "red_flags": []
   }

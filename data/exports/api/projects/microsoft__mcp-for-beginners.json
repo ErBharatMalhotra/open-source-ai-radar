@@ -4,8 +4,23 @@
   "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
   "language": "Jupyter Notebook",
   "license": "MIT",
-  "topics": [],
-  "stars": 17628,
+  "topics": [
+    "csharp",
+    "java",
+    "javascript",
+    "mcp",
+    "mcp-client",
+    "mcp-security",
+    "mcp-server",
+    "model",
+    "modelcontextprotocol",
+    "python",
+    "javascript-applications",
+    "model-context-protocol",
+    "typescript",
+    "rust"
+  ],
+  "stars": 17630,
   "forks": 5684,
   "open_issues": 4,
   "watchers": 135,
@@ -13,28 +28,28 @@
   "pushed_at": "2026-11-02T03:13:47Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/microsoft.png",
-  "radar_score": 73.73,
+  "radar_score": 73.56,
   "impact": 95.36,
-  "velocity": 63.13,
-  "health": 53.94,
-  "global_percentile": 39.86,
+  "velocity": 63.14,
+  "health": 53.26,
+  "global_percentile": 39.43,
   "category": "MCP",
   "sub_category": "",
   "summary": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workfl",
   "maturity": "Unknown",
-  "stars_7d": 70,
-  "stars_30d": 198,
-  "stars_90d": 198,
-  "star_growth_rate_7d": 10.0,
-  "star_growth_rate_30d": 7.071428571428571,
-  "star_growth_acceleration": 1.4141414141414141,
-  "forks_7d": 10,
-  "forks_30d": 35,
-  "days_since_last_push": 5,
-  "freshness_score": 0.951229424500714,
-  "snapshot_count": 238,
+  "stars_7d": 51,
+  "stars_30d": 207,
+  "stars_90d": 207,
+  "star_growth_rate_7d": 7.285714285714286,
+  "star_growth_rate_30d": 7.137931034482759,
+  "star_growth_acceleration": 1.020703933747412,
+  "forks_7d": 9,
+  "forks_30d": 37,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 239,
   "authenticity": {
-    "organic_confidence": 75.6,
+    "organic_confidence": 75.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +58,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.6,
         "weight": 0.22,
-        "detail": "5,682 forks for 17,621 stars (32.2%)."
+        "detail": "5,684 forks for 17,630 stars (32.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.2,
+        "score": 73.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (6 forks, 3.2x the daily average)."
       },
@@ -71,22 +86,22 @@
         "label": "Issue engagement",
         "score": 27.3,
         "weight": 0.12,
-        "detail": "4 open issues for 17,621 stars (0.0%)."
+        "detail": "4 open issues for 17,630 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 95.0,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 7 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 5,682 forks for 17,621 stars (32.2%).",
-      "Maintenance cadence: Last push 6 days ago."
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 5,684 forks for 17,630 stars (32.2%)."
     ],
     "red_flags": [
-      "Issue engagement: 4 open issues for 17,621 stars (0.0%)."
+      "Issue engagement: 4 open issues for 17,630 stars (0.0%)."
     ]
   }
 }

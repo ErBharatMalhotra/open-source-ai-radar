@@ -4,17 +4,26 @@
   "description": "Warp is an agentic development environment, born out of the terminal.",
   "language": "Rust",
   "license": "AGPL-3.0",
-  "topics": [],
+  "topics": [
+    "rust",
+    "linux",
+    "macos",
+    "terminal",
+    "bash",
+    "zsh",
+    "wasm",
+    "shell"
+  ],
   "stars": 65934,
-  "forks": 5772,
+  "forks": 5773,
   "open_issues": 4018,
   "watchers": 341,
   "created_at": "2021-07-08T18:48:08Z",
   "pushed_at": "2026-11-08T20:23:49Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/warpdotdev.png",
-  "radar_score": 77.81,
-  "impact": 98.51,
+  "radar_score": 77.8,
+  "impact": 98.5,
   "velocity": 66.76,
   "health": 60.15,
   "global_percentile": 78.57,
@@ -22,19 +31,19 @@
   "sub_category": "",
   "summary": "Warp is an agentic development environment, born out of the terminal.",
   "maturity": "Unknown",
-  "stars_7d": 120,
-  "stars_30d": 457,
-  "stars_90d": 457,
-  "star_growth_rate_7d": 17.142857142857142,
-  "star_growth_rate_30d": 19.041666666666668,
-  "star_growth_acceleration": 0.9002813379180993,
-  "forks_7d": 21,
-  "forks_30d": 117,
+  "stars_7d": 117,
+  "stars_30d": 473,
+  "stars_90d": 473,
+  "star_growth_rate_7d": 16.714285714285715,
+  "star_growth_rate_30d": 18.92,
+  "star_growth_acceleration": 0.8834189066747206,
+  "forks_7d": 24,
+  "forks_30d": 126,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 289,
+  "snapshot_count": 290,
   "authenticity": {
-    "organic_confidence": 90.3,
+    "organic_confidence": 90.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +52,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.5,
         "weight": 0.22,
-        "detail": "5,763 forks for 65,913 stars (8.7%)."
+        "detail": "5,773 forks for 65,934 stars (8.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.8,
+        "score": 76.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 51 stars (16 forks, 2.9x the daily average)."
       },
@@ -71,20 +80,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "4,016 open issues for 65,913 stars (6.1%)."
+        "detail": "4,018 open issues for 65,934 stars (6.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 51 stars (16 forks, 2.9x the daily average).",
-      "Fork-to-star ratio: 5,763 forks for 65,913 stars (8.7%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Fork-to-star ratio: 5,773 forks for 65,934 stars (8.8%).",
+      "Issue engagement: 4,018 open issues for 65,934 stars (6.1%)."
     ],
     "red_flags": []
   }

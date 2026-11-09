@@ -22,5 +22,59 @@
   "sub_category": "",
   "summary": "\u6570\u636e\u5206\u6790\u4e0e Excel \u5168\u6d41\u7a0b skill\uff1a\u4f53\u68c0\u810f\u8868\u3001\u6e05\u6d17\u3001\u5bf9\u9f50\u9700\u6c42\u3001\u5206\u6790\u3001\u5bf9\u8d26\u3001\u4ea4\u4ed8\u3002\u8ba9 AI \u7b97\u51fa\u6765\u7684\u6570\u5b57\u7ecf\u5f97\u8d77\u8ffd\u95ee\u3002\u8de8 agent \u901a\u7528\uff0c\u4f9d\u8d56\u4ec5 openpyxl\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 83.9,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 98.9,
+        "weight": 0.22,
+        "detail": "71 forks for 457 stars (15.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 45.9,
+        "weight": 0.12,
+        "detail": "1 open issues for 457 stars (0.2%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 96.4,
+        "weight": 0.1,
+        "detail": "Last push 5 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 5 days ago.",
+      "Fork-to-star ratio: 71 forks for 457 stars (15.5%)."
+    ],
+    "red_flags": []
+  }
 }

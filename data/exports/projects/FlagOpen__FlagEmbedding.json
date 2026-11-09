@@ -4,8 +4,15 @@
   "description": "Retrieval and Retrieval-augmented LLMs",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 12304,
+  "topics": [
+    "embeddings",
+    "information-retrieval",
+    "llm",
+    "sentence-embeddings",
+    "text-semantic-similarity",
+    "retrieval-augmented-generation"
+  ],
+  "stars": 12306,
   "forks": 948,
   "open_issues": 886,
   "watchers": 58,
@@ -13,28 +20,28 @@
   "pushed_at": "2026-10-27T09:50:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/FlagOpen.png",
-  "radar_score": 69.02,
-  "impact": 91.0,
-  "velocity": 52.94,
-  "health": 56.35,
-  "global_percentile": 16.29,
+  "radar_score": 68.86,
+  "impact": 91.02,
+  "velocity": 52.93,
+  "health": 55.72,
+  "global_percentile": 16.57,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Retrieval and Retrieval-augmented LLMs",
   "maturity": "Unknown",
-  "stars_7d": 13,
-  "stars_30d": 80,
-  "stars_90d": 99,
-  "star_growth_rate_7d": 1.8571428571428572,
-  "star_growth_rate_30d": 2.6666666666666665,
-  "star_growth_acceleration": 0.6964285714285715,
-  "forks_7d": 2,
-  "forks_30d": 19,
-  "days_since_last_push": 11,
-  "freshness_score": 0.8958341352965282,
-  "snapshot_count": 166,
+  "stars_7d": 15,
+  "stars_30d": 77,
+  "stars_90d": 101,
+  "star_growth_rate_7d": 2.142857142857143,
+  "star_growth_rate_30d": 2.566666666666667,
+  "star_growth_acceleration": 0.8348794063079776,
+  "forks_7d": 3,
+  "forks_30d": 20,
+  "days_since_last_push": 13,
+  "freshness_score": 0.8780954309205613,
+  "snapshot_count": 167,
   "authenticity": {
-    "organic_confidence": 83.3,
+    "organic_confidence": 84.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 91.7,
         "weight": 0.22,
-        "detail": "947 forks for 12,302 stars (7.7%)."
+        "detail": "948 forks for 12,306 stars (7.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 63.2,
+        "score": 67.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (2 forks, 4.0x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (2 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +78,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "886 open issues for 12,302 stars (7.2%)."
+        "detail": "886 open issues for 12,306 stars (7.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 92.8,
+        "score": 92.4,
         "weight": 0.1,
-        "detail": "Last push 12 days ago."
+        "detail": "Last push 13 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 947 forks for 12,302 stars (7.7%).",
-      "Maintenance cadence: Last push 12 days ago.",
-      "Issue engagement: 886 open issues for 12,302 stars (7.2%)."
+      "Fork-to-star ratio: 948 forks for 12,306 stars (7.7%).",
+      "Maintenance cadence: Last push 13 days ago.",
+      "Issue engagement: 886 open issues for 12,306 stars (7.2%)."
     ],
     "red_flags": []
   }

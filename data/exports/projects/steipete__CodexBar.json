@@ -4,37 +4,42 @@
   "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
   "language": "Swift",
   "license": "MIT",
-  "topics": [],
-  "stars": 23070,
+  "topics": [
+    "ai",
+    "codex",
+    "swift",
+    "claude-code"
+  ],
+  "stars": 23078,
   "forks": 2211,
-  "open_issues": 15,
+  "open_issues": 21,
   "watchers": 56,
   "created_at": "2025-11-16T17:00:44Z",
   "pushed_at": "2026-11-08T03:49:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/steipete.png",
-  "radar_score": 75.32,
-  "impact": 93.76,
-  "velocity": 66.36,
-  "health": 58.35,
-  "global_percentile": 59.43,
+  "radar_score": 75.51,
+  "impact": 93.77,
+  "velocity": 67.16,
+  "health": 57.98,
+  "global_percentile": 55.29,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
   "maturity": "Unknown",
-  "stars_7d": 137,
-  "stars_30d": 485,
-  "stars_90d": 485,
-  "star_growth_rate_7d": 19.571428571428573,
-  "star_growth_rate_30d": 21.08695652173913,
-  "star_growth_acceleration": 0.9281296023564066,
-  "forks_7d": 30,
-  "forks_30d": 86,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 301,
+  "stars_7d": 147,
+  "stars_30d": 501,
+  "stars_90d": 501,
+  "star_growth_rate_7d": 21.0,
+  "star_growth_rate_30d": 21.782608695652176,
+  "star_growth_acceleration": 0.9640718562874251,
+  "forks_7d": 29,
+  "forks_30d": 85,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 302,
   "authenticity": {
-    "organic_confidence": 83.7,
+    "organic_confidence": 84.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.5,
         "weight": 0.22,
-        "detail": "2,211 forks for 23,061 stars (9.6%)."
+        "detail": "2,211 forks for 23,078 stars (9.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.7,
+        "score": 90.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 48 stars (4 forks, 2.0x the daily average)."
       },
@@ -69,25 +74,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 31.1,
+        "score": 34.1,
         "weight": 0.12,
-        "detail": "14 open issues for 23,061 stars (0.1%)."
+        "detail": "21 open issues for 23,078 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 48 stars (4 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 2,211 forks for 23,061 stars (9.6%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Fork-to-star ratio: 2,211 forks for 23,078 stars (9.6%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 14 open issues for 23,061 stars (0.1%)."
+      "Issue engagement: 21 open issues for 23,078 stars (0.1%)."
     ]
   }
 }

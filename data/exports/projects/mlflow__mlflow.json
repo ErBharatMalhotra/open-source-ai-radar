@@ -4,37 +4,56 @@
   "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 28730,
-  "forks": 6597,
-  "open_issues": 1514,
+  "topics": [
+    "machine-learning",
+    "ai",
+    "ml",
+    "mlflow",
+    "apache-spark",
+    "model-management",
+    "agentops",
+    "agents",
+    "evaluation",
+    "langchain",
+    "llm-evaluation",
+    "llmops",
+    "observability",
+    "open-source",
+    "openai",
+    "prompt-engineering",
+    "ai-governance",
+    "mlops"
+  ],
+  "stars": 28731,
+  "forks": 6598,
+  "open_issues": 1515,
   "watchers": 324,
   "created_at": "2018-06-05T16:05:58Z",
-  "pushed_at": "2026-11-09T08:46:46Z",
+  "pushed_at": "2026-11-09T12:41:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mlflow.png",
   "radar_score": 75.91,
   "impact": 97.21,
   "velocity": 62.84,
   "health": 60.15,
-  "global_percentile": 56.57,
+  "global_percentile": 58.14,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
   "maturity": "Unknown",
-  "stars_7d": 115,
-  "stars_30d": 318,
-  "stars_90d": 318,
-  "star_growth_rate_7d": 16.428571428571427,
-  "star_growth_rate_30d": 13.826086956521738,
-  "star_growth_acceleration": 1.188230008984726,
-  "forks_7d": 40,
-  "forks_30d": 139,
+  "stars_7d": 114,
+  "stars_30d": 331,
+  "stars_90d": 331,
+  "star_growth_rate_7d": 16.285714285714285,
+  "star_growth_rate_30d": 13.791666666666666,
+  "star_growth_acceleration": 1.1808372895986188,
+  "forks_7d": 37,
+  "forks_30d": 142,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 304,
+  "snapshot_count": 305,
   "authenticity": {
-    "organic_confidence": 93.6,
+    "organic_confidence": 93.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +62,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.4,
         "weight": 0.22,
-        "detail": "6,594 forks for 28,717 stars (23.0%)."
+        "detail": "6,598 forks for 28,731 stars (23.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 84.4,
+        "score": 83.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 32 stars (6 forks, 2.4x the daily average)."
       },
@@ -71,20 +90,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "1,509 open issues for 28,717 stars (5.3%)."
+        "detail": "1,515 open issues for 28,731 stars (5.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 32 stars (6 forks, 2.4x the daily average).",
-      "Fork-to-star ratio: 6,594 forks for 28,717 stars (23.0%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Fork-to-star ratio: 6,598 forks for 28,731 stars (23.0%).",
+      "Issue engagement: 1,515 open issues for 28,731 stars (5.3%)."
     ],
     "red_flags": []
   }

@@ -4,37 +4,58 @@
   "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 44241,
+  "topics": [
+    "ray",
+    "distributed",
+    "parallel",
+    "machine-learning",
+    "reinforcement-learning",
+    "deep-learning",
+    "python",
+    "rllib",
+    "hyperparameter-search",
+    "optimization",
+    "data-science",
+    "hyperparameter-optimization",
+    "serving",
+    "deployment",
+    "pytorch",
+    "tensorflow",
+    "llm-serving",
+    "large-language-models",
+    "llm",
+    "llm-inference"
+  ],
+  "stars": 44240,
   "forks": 8259,
   "open_issues": 2827,
   "watchers": 481,
   "created_at": "2016-10-25T19:38:30Z",
-  "pushed_at": "2026-11-09T08:50:03Z",
+  "pushed_at": "2026-11-09T10:17:51Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ray-project.png",
   "radar_score": 76.64,
   "impact": 98.42,
   "velocity": 63.52,
   "health": 60.15,
-  "global_percentile": 65.43,
+  "global_percentile": 67.0,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
   "maturity": "Unknown",
-  "stars_7d": 68,
-  "stars_30d": 201,
-  "stars_90d": 201,
-  "star_growth_rate_7d": 9.714285714285714,
-  "star_growth_rate_30d": 8.73913043478261,
-  "star_growth_acceleration": 1.1115849324804548,
-  "forks_7d": 24,
-  "forks_30d": 102,
+  "stars_7d": 66,
+  "stars_30d": 208,
+  "stars_90d": 208,
+  "star_growth_rate_7d": 9.428571428571429,
+  "star_growth_rate_30d": 8.666666666666666,
+  "star_growth_acceleration": 1.087912087912088,
+  "forks_7d": 26,
+  "forks_30d": 108,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 295,
+  "snapshot_count": 296,
   "authenticity": {
-    "organic_confidence": 92.6,
+    "organic_confidence": 92.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.3,
         "weight": 0.22,
-        "detail": "8,252 forks for 44,232 stars (18.7%)."
+        "detail": "8,259 forks for 44,240 stars (18.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 80.9,
+        "score": 80.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 21 stars (2 forks, 2.6x the daily average)."
       },
@@ -71,20 +92,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "2,823 open issues for 44,232 stars (6.4%)."
+        "detail": "2,827 open issues for 44,240 stars (6.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 21 stars (2 forks, 2.6x the daily average).",
-      "Fork-to-star ratio: 8,252 forks for 44,232 stars (18.7%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Fork-to-star ratio: 8,259 forks for 44,240 stars (18.7%).",
+      "Issue engagement: 2,827 open issues for 44,240 stars (6.4%)."
     ],
     "red_flags": []
   }

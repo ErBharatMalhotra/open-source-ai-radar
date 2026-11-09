@@ -4,8 +4,16 @@
   "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
   "language": "Shell",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 26460,
+  "topics": [
+    "a2a",
+    "a2a-mcp",
+    "a2a-protocol",
+    "a2a-server",
+    "agents",
+    "generative-ai",
+    "linux-foundation"
+  ],
+  "stars": 26461,
   "forks": 2692,
   "open_issues": 233,
   "watchers": 238,
@@ -13,28 +21,28 @@
   "pushed_at": "2026-11-05T14:47:57Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/a2aproject.png",
-  "radar_score": 76.99,
-  "impact": 96.1,
+  "radar_score": 76.89,
+  "impact": 96.08,
   "velocity": 65.13,
-  "health": 63.01,
-  "global_percentile": 69.57,
+  "health": 62.65,
+  "global_percentile": 68.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.",
   "maturity": "Unknown",
-  "stars_7d": 81,
-  "stars_30d": 353,
-  "stars_90d": 353,
-  "star_growth_rate_7d": 11.571428571428571,
-  "star_growth_rate_30d": 12.607142857142858,
-  "star_growth_acceleration": 0.9178470254957507,
-  "forks_7d": 6,
-  "forks_30d": 35,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 246,
+  "stars_7d": 69,
+  "stars_30d": 363,
+  "stars_90d": 363,
+  "star_growth_rate_7d": 9.857142857142858,
+  "star_growth_rate_30d": 12.1,
+  "star_growth_acceleration": 0.8146399055489966,
+  "forks_7d": 4,
+  "forks_30d": 34,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 247,
   "authenticity": {
-    "organic_confidence": 92.2,
+    "organic_confidence": 92.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "2,693 forks for 26,439 stars (10.2%)."
+        "detail": "2,692 forks for 26,461 stars (10.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.3,
+        "score": 93.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 20 stars (2 forks, 1.7x the daily average)."
       },
@@ -69,9 +77,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 71.1,
+        "score": 71.4,
         "weight": 0.12,
-        "detail": "230 open issues for 26,439 stars (0.9%)."
+        "detail": "233 open issues for 26,461 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +92,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 20 stars (2 forks, 1.7x the daily average).",
       "Maintenance cadence: Last push 3 days ago.",
-      "Fork-to-star ratio: 2,693 forks for 26,439 stars (10.2%)."
+      "Fork-to-star ratio: 2,692 forks for 26,461 stars (10.2%)."
     ],
     "red_flags": []
   }

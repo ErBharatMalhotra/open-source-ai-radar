@@ -24,7 +24,7 @@
   "maturity": "Unknown",
   "snapshot_count": 0,
   "authenticity": {
-    "organic_confidence": 83.1,
+    "organic_confidence": 80.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -59,9 +59,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 45.5,
+        "score": 35.5,
         "weight": 0.12,
-        "detail": "2 open issues for 948 stars (0.2%)."
+        "detail": "1 open issues for 948 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -75,6 +75,8 @@
       "Fork-to-star ratio: 85 forks for 948 stars (9.0%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 1 open issues for 948 stars (0.1%)."
+    ]
   }
 }

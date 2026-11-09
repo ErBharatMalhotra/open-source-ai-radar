@@ -4,8 +4,19 @@
   "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16598,
+  "topics": [
+    "ci-cd",
+    "containers",
+    "continuous-deployment",
+    "continuous-integration",
+    "devops",
+    "docker",
+    "agents",
+    "caching",
+    "graphql",
+    "workflows"
+  ],
+  "stars": 16599,
   "forks": 953,
   "open_issues": 139,
   "watchers": 223,
@@ -13,26 +24,26 @@
   "pushed_at": "2026-11-09T07:18:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dagger.png",
-  "radar_score": 72.37,
-  "impact": 93.62,
-  "velocity": 54.24,
+  "radar_score": 72.38,
+  "impact": 93.63,
+  "velocity": 54.25,
   "health": 63.75,
-  "global_percentile": 37.57,
+  "global_percentile": 31.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "maturity": "Unknown",
-  "stars_7d": 27,
+  "stars_7d": 28,
   "stars_30d": 255,
   "stars_90d": 255,
-  "star_growth_rate_7d": 4.5,
+  "star_growth_rate_7d": 4.0,
   "star_growth_rate_30d": 10.625,
-  "star_growth_acceleration": 0.4235294117647059,
+  "star_growth_acceleration": 0.3764705882352941,
   "forks_7d": 7,
   "forks_30d": 17,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 261,
+  "snapshot_count": 262,
   "authenticity": {
     "organic_confidence": 65.2,
     "verdict": "likely_organic",
@@ -43,7 +54,7 @@
         "label": "Fork-to-star ratio",
         "score": 84.7,
         "weight": 0.22,
-        "detail": "953 forks for 16,598 stars (5.7%)."
+        "detail": "953 forks for 16,599 stars (5.7%)."
       },
       {
         "key": "burst",
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 69.9,
+        "score": 70.1,
         "weight": 0.12,
-        "detail": "138 open issues for 16,598 stars (0.8%)."
+        "detail": "139 open issues for 16,599 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +93,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 953 forks for 16,598 stars (5.7%).",
+      "Fork-to-star ratio: 953 forks for 16,599 stars (5.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

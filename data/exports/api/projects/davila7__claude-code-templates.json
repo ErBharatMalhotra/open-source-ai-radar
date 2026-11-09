@@ -4,11 +4,22 @@
   "description": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 33223,
-  "forks": 3897,
+  "topics": [
+    "anthropic",
+    "anthropic-claude",
+    "claude",
+    "claude-code",
+    "agent-skills",
+    "ai-agents",
+    "claude-code-plugins",
+    "cli",
+    "mcp",
+    "registry"
+  ],
+  "stars": 33224,
+  "forks": 3895,
   "open_issues": 100,
-  "watchers": 192,
+  "watchers": 191,
   "created_at": "2025-07-04T01:26:26Z",
   "pushed_at": "2026-11-09T04:20:42Z",
   "owner_login": "",
@@ -17,24 +28,24 @@
   "impact": 96.89,
   "velocity": 66.45,
   "health": 63.75,
-  "global_percentile": 80.71,
+  "global_percentile": 80.29,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "CLI tool for configuring and monitoring Claude Code",
   "maturity": "Unknown",
-  "stars_7d": 190,
-  "stars_30d": 515,
-  "stars_90d": 515,
-  "star_growth_rate_7d": 27.142857142857142,
-  "star_growth_rate_30d": 23.40909090909091,
-  "star_growth_acceleration": 1.159500693481276,
+  "stars_7d": 192,
+  "stars_30d": 519,
+  "stars_90d": 519,
+  "star_growth_rate_7d": 27.428571428571427,
+  "star_growth_rate_30d": 23.59090909090909,
+  "star_growth_acceleration": 1.1626754748142032,
   "forks_7d": 53,
-  "forks_30d": 112,
+  "forks_30d": 114,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 298,
+  "snapshot_count": 299,
   "authenticity": {
-    "organic_confidence": 89.5,
+    "organic_confidence": 89.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +54,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "3,893 forks for 33,217 stars (11.7%)."
+        "detail": "3,895 forks for 33,224 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.5,
+        "score": 95.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 34 stars (3 forks, 1.4x the daily average)."
+        "detail": "Largest 24h jump was 34 stars (3 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 50.1,
+        "score": 50.0,
         "weight": 0.12,
-        "detail": "100 open issues for 33,217 stars (0.3%)."
+        "detail": "100 open issues for 33,224 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +93,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 34 stars (3 forks, 1.4x the daily average).",
-      "Fork-to-star ratio: 3,893 forks for 33,217 stars (11.7%).",
+      "Burst pattern: Largest 24h jump was 34 stars (3 forks, 1.5x the daily average).",
+      "Fork-to-star ratio: 3,895 forks for 33,224 stars (11.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

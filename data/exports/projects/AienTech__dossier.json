@@ -35,7 +35,7 @@
   "snapshot_count": 1,
   "why_trending": "Above-average growth velocity. Active in the Local AI category.",
   "authenticity": {
-    "organic_confidence": 85.4,
+    "organic_confidence": 82.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,7 +44,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.8,
         "weight": 0.22,
-        "detail": "1,013 forks for 4,858 stars (20.9%)."
+        "detail": "1,014 forks for 4,874 stars (20.8%)."
       },
       {
         "key": "burst",
@@ -63,16 +63,16 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 95.0,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 1.00x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 39.4,
+        "score": 41.4,
         "weight": 0.12,
-        "detail": "7 open issues for 4,858 stars (0.1%)."
+        "detail": "8 open issues for 4,874 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -83,12 +83,9 @@
       }
     ],
     "reasons": [
-      "Growth acceleration: Weekly growth is 1.00x the monthly baseline.",
-      "Fork-to-star ratio: 1,013 forks for 4,858 stars (20.9%).",
+      "Fork-to-star ratio: 1,014 forks for 4,874 stars (20.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Issue engagement: 7 open issues for 4,858 stars (0.1%)."
-    ]
+    "red_flags": []
   }
 }

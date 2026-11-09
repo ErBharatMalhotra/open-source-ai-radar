@@ -4,7 +4,13 @@
   "description": "IronClaw is an Agent OS focused on privacy, security and extensibility",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "codeact",
+    "openclaw",
+    "rlm",
+    "rust",
+    "wasm"
+  ],
   "stars": 12716,
   "forks": 1488,
   "open_issues": 1370,
@@ -13,29 +19,29 @@
   "pushed_at": "2026-11-08T20:50:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nearai.png",
-  "radar_score": 76.02,
-  "impact": 92.23,
-  "velocity": 69.6,
-  "health": 59.05,
-  "global_percentile": 62.29,
+  "radar_score": 76.81,
+  "impact": 92.21,
+  "velocity": 71.1,
+  "health": 60.15,
+  "global_percentile": 68.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "IronClaw is an Agent OS focused on privacy, security and extensibility",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 72,
+  "stars_7d": 11,
+  "stars_30d": 71,
   "stars_90d": 79,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 2.4,
-  "star_growth_acceleration": 0.8928571428571429,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 2.3666666666666667,
+  "star_growth_acceleration": 0.6639839034205232,
   "forks_7d": 0,
   "forks_30d": 8,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 195,
-  "why_trending": "Rapidly gaining stars \u2014 36 new stars in the last 7 days (2.1x the usual pace). Above-average growth velocity. Active in the Uncategorized category.",
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 196,
+  "why_trending": "Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 86.0,
+    "organic_confidence": 85.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "1,488 forks for 12,715 stars (11.7%)."
+        "detail": "1,488 forks for 12,716 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 61.8,
+        "score": 60.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (-2 forks, 4.1x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (-2 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,20 +78,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "1,370 open issues for 12,715 stars (10.8%)."
+        "detail": "1,370 open issues for 12,716 stars (10.8%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.1,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 4 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 4 days ago.",
-      "Fork-to-star ratio: 1,488 forks for 12,715 stars (11.7%).",
-      "Issue engagement: 1,370 open issues for 12,715 stars (10.8%)."
+      "Fork-to-star ratio: 1,488 forks for 12,716 stars (11.7%).",
+      "Issue engagement: 1,370 open issues for 12,716 stars (10.8%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

@@ -4,37 +4,46 @@
   "description": "Gorilla: Training and Evaluating LLMs for Function Calls (Tool Calls)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "api",
+    "llm",
+    "api-documentation",
+    "chatgpt",
+    "gpt-4-api",
+    "claude-api",
+    "openai-api",
+    "openai-functions"
+  ],
   "stars": 13065,
-  "forks": 1420,
+  "forks": 1422,
   "open_issues": 169,
   "watchers": 90,
   "created_at": "2023-05-19T00:46:45Z",
   "pushed_at": "2026-10-17T06:06:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ShishirPatil.png",
-  "radar_score": 69.15,
-  "impact": 92.46,
-  "velocity": 50.98,
-  "health": 57.27,
-  "global_percentile": 15.86,
+  "radar_score": 68.94,
+  "impact": 92.47,
+  "velocity": 50.97,
+  "health": 56.46,
+  "global_percentile": 16.71,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "Gorilla: Training and Evaluating LLMs for Function Calls (Tool Calls)",
   "maturity": "Unknown",
-  "stars_7d": 1,
-  "stars_30d": 11,
-  "stars_90d": 11,
-  "star_growth_rate_7d": 0.14285714285714285,
-  "star_growth_rate_30d": 0.6111111111111112,
-  "star_growth_acceleration": 0.23376623376623373,
+  "stars_7d": 3,
+  "stars_30d": 12,
+  "stars_90d": 12,
+  "star_growth_rate_7d": 0.42857142857142855,
+  "star_growth_rate_30d": 0.5714285714285714,
+  "star_growth_acceleration": 0.75,
   "forks_7d": 3,
-  "forks_30d": 5,
-  "days_since_last_push": 20,
-  "freshness_score": 0.8187307530779818,
-  "snapshot_count": 30,
+  "forks_30d": 8,
+  "days_since_last_push": 23,
+  "freshness_score": 0.794533602503334,
+  "snapshot_count": 31,
   "authenticity": {
-    "organic_confidence": 91.1,
+    "organic_confidence": 91.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +52,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "1,419 forks for 13,064 stars (10.9%)."
+        "detail": "1,422 forks for 13,065 stars (10.9%)."
       },
       {
         "key": "burst",
@@ -71,19 +80,19 @@
         "label": "Issue engagement",
         "score": 79.4,
         "weight": 0.12,
-        "detail": "169 open issues for 13,064 stars (1.3%)."
+        "detail": "169 open issues for 13,065 stars (1.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 88.5,
+        "score": 88.0,
         "weight": 0.1,
-        "detail": "Last push 22 days ago."
+        "detail": "Last push 23 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 169 open issues for 13,064 stars (1.3%).",
-      "Maintenance cadence: Last push 22 days ago.",
+      "Issue engagement: 169 open issues for 13,065 stars (1.3%).",
+      "Maintenance cadence: Last push 23 days ago.",
       "Burst pattern: Largest 24h jump was 2 stars (0 forks, 2.0x the daily average)."
     ],
     "red_flags": []

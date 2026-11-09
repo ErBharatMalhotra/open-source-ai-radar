@@ -4,7 +4,10 @@
   "description": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "language": "C++",
   "license": "GPL-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "storage-engine"
+  ],
   "stars": 32254,
   "forks": 7015,
   "open_issues": 982,
@@ -13,28 +16,28 @@
   "pushed_at": "2026-11-07T00:27:15Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/meta.png",
-  "radar_score": 75.96,
-  "impact": 97.86,
-  "velocity": 59.67,
-  "health": 63.75,
-  "global_percentile": 57.86,
+  "radar_score": 75.25,
+  "impact": 97.85,
+  "velocity": 58.17,
+  "health": 63.01,
+  "global_percentile": 52.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 19,
-  "stars_90d": 19,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 2.111111111111111,
-  "star_growth_acceleration": 0.9473684210526315,
-  "forks_7d": 11,
-  "forks_30d": 22,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 34,
+  "stars_7d": 13,
+  "stars_30d": 21,
+  "stars_90d": 21,
+  "star_growth_rate_7d": 1.8571428571428572,
+  "star_growth_rate_30d": 1.9090909090909092,
+  "star_growth_acceleration": 0.9727891156462585,
+  "forks_7d": 13,
+  "forks_30d": 27,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 35,
   "authenticity": {
-    "organic_confidence": 88.9,
+    "organic_confidence": 87.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +46,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.7,
         "weight": 0.22,
-        "detail": "7,010 forks for 32,252 stars (21.7%)."
+        "detail": "7,015 forks for 32,254 stars (21.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.7,
+        "score": 71.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +74,7 @@
         "label": "Issue engagement",
         "score": 93.5,
         "weight": 0.12,
-        "detail": "981 open issues for 32,252 stars (3.0%)."
+        "detail": "982 open issues for 32,254 stars (3.0%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +85,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 981 open issues for 32,252 stars (3.0%).",
-      "Fork-to-star ratio: 7,010 forks for 32,252 stars (21.7%).",
+      "Issue engagement: 982 open issues for 32,254 stars (3.0%).",
+      "Fork-to-star ratio: 7,015 forks for 32,254 stars (21.7%).",
       "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": []

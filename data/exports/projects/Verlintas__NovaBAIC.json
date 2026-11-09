@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "BetterAIChat2 (BAIC2) \u2014 \u672c\u5730\u4f18\u5148\u7684 Android AI \u667a\u80fd\u4f53\uff1a57 \u4e2a\u771f\u5b9e\u8bbe\u5907\u5de5\u5177\uff08\u65e0 GMS\uff1a\u622a\u5c4f OCR / UI \u81ea\u52a8\u5316 / \u79bb\u7ebf\u5b9a\u4f4d / \u6587\u4ef6 / \u7f51\u9875 / \u63d0\u9192 / \u901a\u77e5\u89e6\u53d1\u81ea\u52a8\u5316 / \u6280\u80fd\u4e0e\u5b50\u4ee3\u7406\uff09\u3001\u4eff\u751f\u8bb0\u5fc6\uff08\u522b\u540d\u3001\u65f6\u95f4\u7ebf\u3001\u81ea\u7701\u5de9\u56fa\u3001\u51fa\u5904\u3001\u65f6\u95f4\u65c5\u884c\u3001\u5bfc\u51fa/\u5bfc\u5165\uff09\u3001\u4e2d\u9014\u63d0\u95ee\u3001MCP\u3002Local-first Android AI agent with real device control. GPL-3.0-or-later.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 67.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 75.3,
+        "weight": 0.22,
+        "detail": "4 forks for 100 stars (4.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 100 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 4 forks for 100 stars (4.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 100 stars (0.0%)."
+    ]
+  }
 }

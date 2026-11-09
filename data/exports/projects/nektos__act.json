@@ -4,10 +4,15 @@
   "description": "Run your GitHub Actions locally \ud83d\ude80",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 72597,
+  "topics": [
+    "github-actions",
+    "golang",
+    "ci",
+    "devops"
+  ],
+  "stars": 72603,
   "forks": 2116,
-  "open_issues": 267,
+  "open_issues": 268,
   "watchers": 202,
   "created_at": "2019-01-02T19:53:43Z",
   "pushed_at": "2026-11-04T16:29:16Z",
@@ -15,26 +20,26 @@
   "owner_avatar": "https://github.com/nektos.png",
   "radar_score": 74.55,
   "impact": 97.32,
-  "velocity": 60.53,
+  "velocity": 60.54,
   "health": 57.74,
-  "global_percentile": 54.14,
+  "global_percentile": 45.86,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Run your GitHub Actions locally \ud83d\ude80",
   "maturity": "Unknown",
-  "stars_7d": 87,
-  "stars_30d": 275,
-  "stars_90d": 275,
-  "star_growth_rate_7d": 12.428571428571429,
-  "star_growth_rate_30d": 10.576923076923077,
-  "star_growth_acceleration": 1.1750649350649351,
+  "stars_7d": 91,
+  "stars_30d": 278,
+  "stars_90d": 278,
+  "star_growth_rate_7d": 13.0,
+  "star_growth_rate_30d": 10.692307692307692,
+  "star_growth_acceleration": 1.2158273381294964,
   "forks_7d": 21,
   "forks_30d": 54,
   "days_since_last_push": 4,
   "freshness_score": 0.9607894391523232,
-  "snapshot_count": 259,
+  "snapshot_count": 260,
   "authenticity": {
-    "organic_confidence": 73.4,
+    "organic_confidence": 73.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 68.1,
         "weight": 0.22,
-        "detail": "2,116 forks for 72,596 stars (2.9%)."
+        "detail": "2,116 forks for 72,603 stars (2.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 78.3,
+        "score": 78.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 32 stars (1 forks, 2.8x the daily average)."
       },
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 53.4,
+        "score": 53.5,
         "weight": 0.12,
-        "detail": "267 open issues for 72,596 stars (0.4%)."
+        "detail": "268 open issues for 72,603 stars (0.4%)."
       },
       {
         "key": "maintenance",

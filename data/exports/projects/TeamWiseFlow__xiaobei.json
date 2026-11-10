@@ -4,7 +4,15 @@
   "description": "\u4e3aOPC/\u4e2d\u5c0f\u5fae\u4f01\u4e1a\u91cf\u8eab\u6253\u9020\u7684\u81ea\u5a92\u4f53\u83b7\u5ba2\u667a\u80fd\u4f53",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "mas",
+    "multi-agent",
+    "multi-agent-systems",
+    "makemoney",
+    "crawler",
+    "digital-employee",
+    "rpa"
+  ],
   "stars": 8705,
   "forks": 1479,
   "open_issues": 0,
@@ -13,28 +21,28 @@
   "pushed_at": "2026-10-30T02:00:28Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/TeamWiseFlow.png",
-  "radar_score": 63.52,
-  "impact": 91.06,
+  "radar_score": 63.36,
+  "impact": 91.07,
   "velocity": 40.13,
-  "health": 52.19,
-  "global_percentile": 4.43,
+  "health": 51.55,
+  "global_percentile": 7.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\u4e3aOPC/\u4e2d\u5c0f\u5fae\u4f01\u4e1a\u91cf\u8eab\u6253\u9020\u7684\u81ea\u5a92\u4f53\u83b7\u5ba2\u667a\u80fd\u4f53",
   "maturity": "Unknown",
-  "stars_7d": 24,
-  "stars_30d": 111,
-  "stars_90d": 212,
-  "star_growth_rate_7d": 3.4285714285714284,
-  "star_growth_rate_30d": 3.7,
-  "star_growth_acceleration": 0.9266409266409266,
-  "forks_7d": 5,
-  "forks_30d": 22,
-  "days_since_last_push": 9,
-  "freshness_score": 0.9139311852712282,
-  "snapshot_count": 113,
+  "stars_7d": 23,
+  "stars_30d": 112,
+  "stars_90d": 217,
+  "star_growth_rate_7d": 3.2857142857142856,
+  "star_growth_rate_30d": 3.7333333333333334,
+  "star_growth_acceleration": 0.8801020408163265,
+  "forks_7d": 4,
+  "forks_30d": 19,
+  "days_since_last_push": 11,
+  "freshness_score": 0.8958341352965282,
+  "snapshot_count": 114,
   "authenticity": {
-    "organic_confidence": 76.5,
+    "organic_confidence": 76.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +56,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.8,
+        "score": 75.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (1 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (1 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,13 +84,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 93.7,
+        "score": 93.3,
         "weight": 0.1,
-        "detail": "Last push 10 days ago."
+        "detail": "Last push 11 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 10 days ago.",
+      "Burst pattern: Largest 24h jump was 11 stars (1 forks, 2.9x the daily average).",
+      "Maintenance cadence: Last push 11 days ago.",
       "Fork-to-star ratio: 1,479 forks for 8,705 stars (17.0%)."
     ],
     "red_flags": [

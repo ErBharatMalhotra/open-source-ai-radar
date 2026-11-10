@@ -4,37 +4,48 @@
   "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 7011,
-  "forks": 1458,
+  "topics": [
+    "inference",
+    "kvcache",
+    "llm",
+    "rdma",
+    "sglang",
+    "vllm",
+    "disaggregation",
+    "tokenspeed",
+    "reinforcement-learning",
+    "trt-llm"
+  ],
+  "stars": 7012,
+  "forks": 1459,
   "open_issues": 388,
   "watchers": 47,
   "created_at": "2024-06-25T05:21:05Z",
-  "pushed_at": "2026-11-09T14:21:49Z",
+  "pushed_at": "2026-11-10T04:04:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/kvcache-ai.png",
-  "radar_score": 72.03,
-  "impact": 89.25,
-  "velocity": 60.85,
+  "radar_score": 72.06,
+  "impact": 89.3,
+  "velocity": 60.87,
   "health": 60.15,
-  "global_percentile": 35.0,
+  "global_percentile": 38.43,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
   "maturity": "Unknown",
-  "stars_7d": 62,
-  "stars_30d": 267,
-  "stars_90d": 507,
-  "star_growth_rate_7d": 8.857142857142858,
-  "star_growth_rate_30d": 8.9,
-  "star_growth_acceleration": 0.9951845906902087,
-  "forks_7d": 39,
+  "stars_7d": 54,
+  "stars_30d": 255,
+  "stars_90d": 513,
+  "star_growth_rate_7d": 7.714285714285714,
+  "star_growth_rate_30d": 8.5,
+  "star_growth_acceleration": 0.907563025210084,
+  "forks_7d": 35,
   "forks_30d": 153,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 115,
+  "snapshot_count": 116,
   "authenticity": {
-    "organic_confidence": 98.3,
+    "organic_confidence": 98.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.8,
         "weight": 0.22,
-        "detail": "1,458 forks for 7,011 stars (20.8%)."
+        "detail": "1,459 forks for 7,012 stars (20.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 97.1,
+        "score": 96.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 11 stars (5 forks, 1.3x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "388 open issues for 7,011 stars (5.5%)."
+        "detail": "388 open issues for 7,012 stars (5.5%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +94,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 11 stars (5 forks, 1.3x the daily average).",
-      "Fork-to-star ratio: 1,458 forks for 7,011 stars (20.8%).",
-      "Issue engagement: 388 open issues for 7,011 stars (5.5%)."
+      "Fork-to-star ratio: 1,459 forks for 7,012 stars (20.8%).",
+      "Issue engagement: 388 open issues for 7,012 stars (5.5%)."
     ],
     "red_flags": []
   }

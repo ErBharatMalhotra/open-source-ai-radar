@@ -4,7 +4,16 @@
   "description": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "transformers",
+    "vllm",
+    "large-language-models",
+    "raylib",
+    "reinforcement-learning-from-human-feedback",
+    "reinforcement-learning",
+    "proximal-policy-optimization",
+    "visual-language-models"
+  ],
   "stars": 10147,
   "forks": 1059,
   "open_issues": 317,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-03T03:17:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OpenRLHF.png",
-  "radar_score": 70.54,
-  "impact": 90.38,
+  "radar_score": 70.45,
+  "impact": 90.39,
   "velocity": 54.24,
-  "health": 61.6,
-  "global_percentile": 21.57,
+  "health": 61.26,
+  "global_percentile": 28.86,
   "category": "Multimodal AI",
   "sub_category": "vision-language",
   "summary": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "maturity": "Unknown",
-  "stars_7d": 10,
-  "stars_30d": 68,
-  "stars_90d": 106,
-  "star_growth_rate_7d": 1.4285714285714286,
-  "star_growth_rate_30d": 2.2666666666666666,
-  "star_growth_acceleration": 0.6302521008403361,
+  "stars_7d": 11,
+  "stars_30d": 69,
+  "stars_90d": 107,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 2.3,
+  "star_growth_acceleration": 0.6832298136645963,
   "forks_7d": 5,
-  "forks_30d": 21,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 165,
+  "forks_30d": 22,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 166,
   "authenticity": {
-    "organic_confidence": 95.6,
+    "organic_confidence": 95.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -76,15 +85,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 95.0,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 7 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 4 stars (2 forks, 1.7x the daily average).",
       "Issue engagement: 317 open issues for 10,147 stars (3.1%).",
-      "Maintenance cadence: Last push 6 days ago."
+      "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": []
   }

@@ -4,7 +4,13 @@
   "description": "Using Low-rank adaptation to quickly fine-tune diffusion models.",
   "language": "Jupyter Notebook",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "diffusion",
+    "lora",
+    "stable-diffusion",
+    "dreambooth",
+    "fine-tuning"
+  ],
   "stars": 7557,
   "forks": 497,
   "open_issues": 79,
@@ -13,26 +19,26 @@
   "pushed_at": "2024-03-22T03:48:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/cloneofsimo.png",
-  "radar_score": 58.28,
+  "radar_score": 58.27,
   "impact": 87.7,
-  "velocity": 38.6,
+  "velocity": 38.59,
   "health": 38.75,
-  "global_percentile": 1.29,
+  "global_percentile": 1.0,
   "category": "Generative AI",
   "sub_category": "image",
   "summary": "Using Low-rank adaptation to quickly fine-tune diffusion models.",
   "maturity": "Unknown",
-  "stars_7d": 1,
+  "stars_7d": -2,
   "stars_30d": 1,
-  "stars_90d": 8,
-  "star_growth_rate_7d": 0.14285714285714285,
-  "star_growth_rate_30d": 0.03333333333333333,
-  "star_growth_acceleration": 4.285714285714286,
+  "stars_90d": 7,
+  "star_growth_rate_7d": -0.3333333333333333,
+  "star_growth_rate_30d": 0.03571428571428571,
+  "star_growth_acceleration": -9.333333333333334,
   "forks_7d": 0,
-  "forks_30d": 0,
-  "days_since_last_push": 959,
-  "freshness_score": 6.840942160898655e-05,
-  "snapshot_count": 32,
+  "forks_30d": 1,
+  "days_since_last_push": 963,
+  "freshness_score": 6.572704982043295e-05,
+  "snapshot_count": 33,
   "authenticity": {
     "organic_confidence": 80.7,
     "verdict": "organic",
@@ -78,7 +84,7 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 962 days ago."
+        "detail": "Last push 963 days ago."
       }
     ],
     "reasons": [
@@ -87,7 +93,7 @@
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 962 days ago."
+      "Maintenance cadence: Last push 963 days ago."
     ]
   }
 }

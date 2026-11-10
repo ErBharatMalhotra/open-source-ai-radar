@@ -4,35 +4,47 @@
   "description": "An open, programmable decision layer for models and compute.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6434,
-  "forks": 1112,
-  "open_issues": 358,
+  "topics": [
+    "mixture-of-models",
+    "semantic-router",
+    "vllm",
+    "ai-gateway",
+    "kubernetes",
+    "llmrouter",
+    "llm",
+    "guardrails",
+    "inference",
+    "pytorch",
+    "transformer"
+  ],
+  "stars": 6436,
+  "forks": 1113,
+  "open_issues": 366,
   "watchers": 61,
   "created_at": "2025-08-26T21:49:50Z",
-  "pushed_at": "2026-11-09T21:18:38Z",
+  "pushed_at": "2026-11-10T03:04:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vllm-project.png",
   "radar_score": 73.15,
   "impact": 89.02,
-  "velocity": 64.3,
+  "velocity": 64.28,
   "health": 60.15,
-  "global_percentile": 43.0,
+  "global_percentile": 46.0,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "A programmable Mixture-of-Models router for heterogeneous LLM inference",
   "maturity": "Unknown",
-  "stars_7d": 64,
-  "stars_30d": 354,
-  "stars_90d": 1197,
-  "star_growth_rate_7d": 9.142857142857142,
-  "star_growth_rate_30d": 12.206896551724139,
-  "star_growth_acceleration": 0.7489911218724777,
-  "forks_7d": 13,
+  "stars_7d": 51,
+  "stars_30d": 357,
+  "stars_90d": 1210,
+  "star_growth_rate_7d": 7.285714285714286,
+  "star_growth_rate_30d": 12.310344827586206,
+  "star_growth_acceleration": 0.5918367346938775,
+  "forks_7d": 14,
   "forks_30d": 89,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 70,
+  "snapshot_count": 71,
   "authenticity": {
     "organic_confidence": 99.2,
     "verdict": "organic",
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.5,
         "weight": 0.22,
-        "detail": "1,112 forks for 6,434 stars (17.3%)."
+        "detail": "1,113 forks for 6,436 stars (17.3%)."
       },
       {
         "key": "burst",
@@ -71,7 +83,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "358 open issues for 6,434 stars (5.6%)."
+        "detail": "366 open issues for 6,436 stars (5.7%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +94,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,112 forks for 6,434 stars (17.3%).",
+      "Fork-to-star ratio: 1,113 forks for 6,436 stars (17.3%).",
       "Burst pattern: Largest 24h jump was 13 stars (1 forks, 1.1x the daily average).",
-      "Issue engagement: 358 open issues for 6,434 stars (5.6%)."
+      "Issue engagement: 366 open issues for 6,436 stars (5.7%)."
     ],
     "red_flags": []
   }

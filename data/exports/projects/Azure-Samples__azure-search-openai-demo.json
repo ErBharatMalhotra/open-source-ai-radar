@@ -4,38 +4,47 @@
   "description": "A sample app for the Retrieval-Augmented Generation pattern running in Azure, using Azure AI Search for retrieval and Azure OpenAI large language models  to power ChatGPT-style and Q&A experiences.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "azure",
+    "azurecognitivesearch",
+    "chatgpt",
+    "openai",
+    "azureopenai",
+    "azd-templates",
+    "azure-ai-search",
+    "ai-azd-templates"
+  ],
   "stars": 7804,
-  "forks": 5472,
-  "open_issues": 484,
+  "forks": 5471,
+  "open_issues": 485,
   "watchers": 223,
   "created_at": "2023-02-08T21:00:54Z",
-  "pushed_at": "2026-11-06T09:28:39Z",
+  "pushed_at": "2026-11-09T23:50:20Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Azure-Samples.png",
-  "radar_score": 76.29,
-  "impact": 93.29,
-  "velocity": 70.78,
-  "health": 56.81,
-  "global_percentile": 65.43,
+  "radar_score": 77.0,
+  "impact": 93.3,
+  "velocity": 72.27,
+  "health": 57.55,
+  "global_percentile": 74.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A sample app for the Retrieval-Augmented Generation pattern running in Azure, using Azure AI Search for retrieval and Azure OpenAI large language models  to power ChatGPT-style and Q&A experiences.",
   "maturity": "Unknown",
-  "stars_7d": 6,
-  "stars_30d": 28,
+  "stars_7d": 3,
+  "stars_30d": 26,
   "stars_90d": 59,
-  "star_growth_rate_7d": 0.8571428571428571,
-  "star_growth_rate_30d": 0.9333333333333333,
-  "star_growth_acceleration": 0.9183673469387754,
-  "forks_7d": 1,
-  "forks_30d": 0,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 94,
+  "star_growth_rate_7d": 0.42857142857142855,
+  "star_growth_rate_30d": 0.8666666666666667,
+  "star_growth_acceleration": 0.49450549450549447,
+  "forks_7d": -3,
+  "forks_30d": -3,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 95,
   "why_trending": "Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 94.5,
+    "organic_confidence": 94.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "5,472 forks for 7,804 stars (70.1%)."
+        "detail": "5,471 forks for 7,804 stars (70.1%)."
       },
       {
         "key": "burst",
@@ -72,20 +81,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "484 open issues for 7,804 stars (6.2%)."
+        "detail": "485 open issues for 7,804 stars (6.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 2 stars (-1 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 5,472 forks for 7,804 stars (70.1%).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Fork-to-star ratio: 5,471 forks for 7,804 stars (70.1%).",
+      "Issue engagement: 485 open issues for 7,804 stars (6.2%)."
     ],
     "red_flags": []
   }

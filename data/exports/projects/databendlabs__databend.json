@@ -4,20 +4,35 @@
   "description": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  \u2014 rebuilt from scratch. Unified architecture on your S3.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "rust",
+    "database",
+    "serverless",
+    "bigdata",
+    "snowflake",
+    "ai",
+    "lakehouse",
+    "olap",
+    "sql",
+    "vector-database",
+    "cloud-native",
+    "elasticsearch",
+    "geospatial",
+    "vector-search"
+  ],
   "stars": 9492,
   "forks": 901,
-  "open_issues": 339,
+  "open_issues": 335,
   "watchers": 92,
   "created_at": "2020-10-10T06:04:42Z",
-  "pushed_at": "2026-11-10T09:00:42Z",
+  "pushed_at": "2026-11-10T16:35:32Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/databendlabs.png",
   "radar_score": 70.84,
   "impact": 90.77,
   "velocity": 53.13,
   "health": 63.75,
-  "global_percentile": 31.29,
+  "global_percentile": 20.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  \u2014 rebuilt from scratch. Unified architecture on your S3.",
@@ -32,9 +47,9 @@
   "forks_30d": 1,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 222,
+  "snapshot_count": 223,
   "authenticity": {
-    "organic_confidence": 87.0,
+    "organic_confidence": 86.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +63,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 67.1,
+        "score": 66.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 4 stars (0 forks, 3.7x the daily average)."
       },
@@ -69,9 +84,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 95.2,
+        "score": 95.1,
         "weight": 0.12,
-        "detail": "339 open issues for 9,492 stars (3.6%)."
+        "detail": "335 open issues for 9,492 stars (3.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +97,7 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 339 open issues for 9,492 stars (3.6%).",
+      "Issue engagement: 335 open issues for 9,492 stars (3.5%).",
       "Fork-to-star ratio: 901 forks for 9,492 stars (9.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

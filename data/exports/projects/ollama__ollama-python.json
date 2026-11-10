@@ -20,24 +20,24 @@
   "impact": 91.48,
   "velocity": 50.65,
   "health": 56.19,
-  "global_percentile": 14.14,
+  "global_percentile": 11.57,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Ollama Python library",
   "maturity": "Unknown",
   "stars_7d": 28,
-  "stars_30d": 105,
-  "stars_90d": 130,
+  "stars_30d": 102,
+  "stars_90d": 129,
   "star_growth_rate_7d": 4.0,
-  "star_growth_rate_30d": 3.5,
-  "star_growth_acceleration": 1.1428571428571428,
+  "star_growth_rate_30d": 3.4,
+  "star_growth_acceleration": 1.1764705882352942,
   "forks_7d": 6,
   "forks_30d": 41,
   "days_since_last_push": 24,
   "freshness_score": 0.7866278610665535,
-  "snapshot_count": 174,
+  "snapshot_count": 175,
   "authenticity": {
-    "organic_confidence": 88.3,
+    "organic_confidence": 85.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -51,23 +51,23 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.5,
+        "score": 76.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 10 stars (2 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 95.7,
+        "score": null,
         "weight": 0.18,
-        "detail": "+28 stars vs +6 forks this week (expected ~3 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 92.1,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 1.14x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",

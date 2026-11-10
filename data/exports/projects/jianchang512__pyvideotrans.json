@@ -4,8 +4,15 @@
   "description": "Translate the video from one language to another and embed dubbing & subtitles.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 19693,
+  "topics": [
+    "text-to-speech",
+    "video-transition",
+    "speech-to-text",
+    "stt",
+    "subtitle-translation",
+    "tts"
+  ],
+  "stars": 19694,
   "forks": 2443,
   "open_issues": 10,
   "watchers": 105,
@@ -13,28 +20,28 @@
   "pushed_at": "2026-11-10T07:58:35Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jianchang512.png",
-  "radar_score": 73.12,
+  "radar_score": 73.29,
   "impact": 94.51,
-  "velocity": 59.24,
+  "velocity": 59.7,
   "health": 58.35,
-  "global_percentile": 45.43,
+  "global_percentile": 37.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Translate the video from one language to another and embed dubbing & subtitles.",
   "maturity": "Unknown",
-  "stars_7d": 72,
-  "stars_30d": 349,
-  "stars_90d": 349,
-  "star_growth_rate_7d": 10.285714285714286,
-  "star_growth_rate_30d": 12.464285714285714,
-  "star_growth_acceleration": 0.8252148997134672,
-  "forks_7d": 13,
+  "stars_7d": 71,
+  "stars_30d": 351,
+  "stars_90d": 351,
+  "star_growth_rate_7d": 10.142857142857142,
+  "star_growth_rate_30d": 12.535714285714286,
+  "star_growth_acceleration": 0.809116809116809,
+  "forks_7d": 14,
   "forks_30d": 50,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 233,
+  "snapshot_count": 234,
   "authenticity": {
-    "organic_confidence": 81.6,
+    "organic_confidence": 81.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "2,443 forks for 19,691 stars (12.4%)."
+        "detail": "2,443 forks for 19,694 stars (12.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.9,
+        "score": 83.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 30 stars (2 forks, 2.4x the daily average)."
       },
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.1,
+        "score": 30.1,
         "weight": 0.12,
-        "detail": "8 open issues for 19,691 stars (0.0%)."
+        "detail": "10 open issues for 19,694 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +90,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 30 stars (2 forks, 2.4x the daily average).",
-      "Fork-to-star ratio: 2,443 forks for 19,691 stars (12.4%).",
+      "Fork-to-star ratio: 2,443 forks for 19,694 stars (12.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 19,691 stars (0.0%)."
+      "Issue engagement: 10 open issues for 19,694 stars (0.1%)."
     ]
   }
 }

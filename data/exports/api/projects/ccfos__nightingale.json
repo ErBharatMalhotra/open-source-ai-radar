@@ -4,8 +4,29 @@
   "description": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 13473,
+  "topics": [
+    "monitoring",
+    "time-series",
+    "nightingale",
+    "tsdb",
+    "alerting",
+    "metrics",
+    "observability",
+    "logs",
+    "sre",
+    "sre-agent",
+    "alertmanager",
+    "clickhouse",
+    "golang",
+    "loki",
+    "mcp-server",
+    "prometheus",
+    "self-hosted",
+    "victoriametrics",
+    "on-call",
+    "aiops"
+  ],
+  "stars": 13472,
   "forks": 1798,
   "open_issues": 233,
   "watchers": 168,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-10T05:35:40Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ccfos.png",
-  "radar_score": 72.15,
+  "radar_score": 72.95,
   "impact": 93.76,
-  "velocity": 54.24,
-  "health": 62.65,
-  "global_percentile": 29.86,
+  "velocity": 55.73,
+  "health": 63.75,
+  "global_percentile": 35.0,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
   "maturity": "Unknown",
-  "stars_7d": 42,
-  "stars_30d": 133,
-  "stars_90d": 133,
-  "star_growth_rate_7d": 6.0,
-  "star_growth_rate_30d": 4.925925925925926,
-  "star_growth_acceleration": 1.218045112781955,
+  "stars_7d": 44,
+  "stars_30d": 135,
+  "stars_90d": 135,
+  "star_growth_rate_7d": 6.285714285714286,
+  "star_growth_rate_30d": 5.0,
+  "star_growth_acceleration": 1.2571428571428571,
   "forks_7d": 2,
   "forks_30d": 14,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 66,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 67,
   "authenticity": {
-    "organic_confidence": 88.9,
+    "organic_confidence": 89.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "1,798 forks for 13,470 stars (13.3%)."
+        "detail": "1,798 forks for 13,472 stars (13.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 77.2,
+        "score": 77.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 14 stars (1 forks, 2.9x the daily average)."
       },
@@ -71,20 +92,20 @@
         "label": "Issue engagement",
         "score": 85.9,
         "weight": 0.12,
-        "detail": "233 open issues for 13,470 stars (1.7%)."
+        "detail": "233 open issues for 13,472 stars (1.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 14 stars (1 forks, 2.9x the daily average).",
-      "Issue engagement: 233 open issues for 13,470 stars (1.7%).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Issue engagement: 233 open issues for 13,472 stars (1.7%).",
+      "Fork-to-star ratio: 1,798 forks for 13,472 stars (13.3%)."
     ],
     "red_flags": []
   }

@@ -4,37 +4,58 @@
   "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "search-engine",
+    "semantic-search",
+    "semantic-search-engine",
+    "vector-search",
+    "vector-search-engine",
+    "vector-database",
+    "approximate-nearest-neighbor-search",
+    "image-search",
+    "hnsw",
+    "information-retrieval",
+    "mlops",
+    "nearest-neighbor-search",
+    "neural-search",
+    "recommender-system",
+    "similarity-search",
+    "vectors",
+    "generative-search",
+    "hybrid-search",
+    "weaviate",
+    "grpc"
+  ],
   "stars": 16945,
   "forks": 1434,
   "open_issues": 510,
   "watchers": 138,
   "created_at": "2016-03-30T15:03:17Z",
-  "pushed_at": "2026-11-10T08:55:49Z",
+  "pushed_at": "2026-11-10T12:18:11Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/weaviate.png",
   "radar_score": 71.32,
-  "impact": 93.85,
+  "impact": 93.84,
   "velocity": 53.13,
   "health": 60.75,
-  "global_percentile": 23.71,
+  "global_percentile": 24.0,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
   "maturity": "Unknown",
-  "stars_7d": 10,
-  "stars_30d": 67,
+  "stars_7d": 11,
+  "stars_30d": 69,
   "stars_90d": 70,
-  "star_growth_rate_7d": 1.4285714285714286,
-  "star_growth_rate_30d": 2.2333333333333334,
-  "star_growth_acceleration": 0.6396588486140725,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 2.3,
+  "star_growth_acceleration": 0.6832298136645963,
   "forks_7d": 1,
-  "forks_30d": 12,
+  "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 242,
+  "snapshot_count": 243,
   "authenticity": {
-    "organic_confidence": 88.2,
+    "organic_confidence": 88.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 94.5,
         "weight": 0.22,
-        "detail": "1,434 forks for 16,944 stars (8.5%)."
+        "detail": "1,434 forks for 16,945 stars (8.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.0,
+        "score": 76.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (0 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (0 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 93.3,
+        "score": 93.4,
         "weight": 0.12,
-        "detail": "508 open issues for 16,944 stars (3.0%)."
+        "detail": "510 open issues for 16,945 stars (3.0%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 7 stars (0 forks, 3.0x the daily average).",
-      "Issue engagement: 508 open issues for 16,944 stars (3.0%).",
-      "Fork-to-star ratio: 1,434 forks for 16,944 stars (8.5%)."
+      "Burst pattern: Largest 24h jump was 7 stars (0 forks, 2.9x the daily average).",
+      "Issue engagement: 510 open issues for 16,945 stars (3.0%).",
+      "Fork-to-star ratio: 1,434 forks for 16,945 stars (8.5%)."
     ],
     "red_flags": []
   }

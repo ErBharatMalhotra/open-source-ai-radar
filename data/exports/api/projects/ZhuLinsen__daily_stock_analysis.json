@@ -4,54 +4,62 @@
   "description": "LLM \u9a71\u52a8\u7684\u591a\u5e02\u573a\u80a1\u7968\u667a\u80fd\u5206\u6790\u7cfb\u7edf\uff1a\u591a\u6e90\u884c\u60c5\u3001\u5b9e\u65f6\u65b0\u95fb\u3001\u51b3\u7b56\u770b\u677f\u4e0e\u81ea\u52a8\u63a8\u9001\uff0c\u652f\u6301\u96f6\u6210\u672c\u5b9a\u65f6\u8fd0\u884c\u3002  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 69348,
-  "forks": 56524,
+  "topics": [
+    "aigc",
+    "llm",
+    "quant",
+    "quantitative-trading",
+    "a-stock",
+    "ai-agent",
+    "quantitative-finance"
+  ],
+  "stars": 69463,
+  "forks": 56596,
   "open_issues": 26,
-  "watchers": 276,
+  "watchers": 277,
   "created_at": "2026-01-10T06:43:20Z",
-  "pushed_at": "2026-11-09T14:14:52Z",
+  "pushed_at": "2026-11-10T11:51:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ZhuLinsen.png",
-  "radar_score": 83.1,
+  "radar_score": 83.12,
   "impact": 98.9,
-  "velocity": 84.58,
+  "velocity": 84.65,
   "health": 55.75,
   "global_percentile": 99.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "LLM \u9a71\u52a8\u7684\u591a\u5e02\u573a\u80a1\u7968\u667a\u80fd\u5206\u6790\u7cfb\u7edf\uff1a\u591a\u6e90\u884c\u60c5\u3001\u5b9e\u65f6\u65b0\u95fb\u3001\u51b3\u7b56\u770b\u677f\u4e0e\u81ea\u52a8\u63a8\u9001\uff0c\u652f\u6301\u96f6\u6210\u672c\u5b9a\u65f6\u8fd0\u884c\u3002  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
   "maturity": "Unknown",
-  "stars_7d": 1637,
-  "stars_30d": 2469,
-  "stars_90d": 2469,
-  "star_growth_rate_7d": 233.85714285714286,
-  "star_growth_rate_30d": 107.34782608695652,
-  "star_growth_acceleration": 2.17849910316496,
-  "forks_7d": 600,
-  "forks_30d": 1076,
+  "stars_7d": 2009,
+  "stars_30d": 2797,
+  "stars_90d": 2797,
+  "star_growth_rate_7d": 287.0,
+  "star_growth_rate_30d": 121.6086956521739,
+  "star_growth_acceleration": 2.3600286020736503,
+  "forks_7d": 738,
+  "forks_30d": 1209,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 308,
-  "why_trending": "Rapidly gaining stars \u2014 1637 new stars in the last 7 days (2.2x the usual pace). Among the fastest-growing projects in its category. High developer adoption with 600 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 309,
+  "why_trending": "Rapidly gaining stars \u2014 2009 new stars in the last 7 days (2.4x the usual pace). Among the fastest-growing projects in its category. High developer adoption with 738 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 66.0,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 60.7,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "56,442 forks for 69,076 stars (81.7%)."
+        "detail": "56,596 forks for 69,463 stars (81.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 44.0,
+        "score": 29.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 610 stars (131 forks, 6.2x the daily average)."
+        "detail": "Largest 24h jump was 997 stars (285 forks, 9.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 28.6,
+        "score": 28.7,
         "weight": 0.12,
-        "detail": "25 open issues for 69,076 stars (0.0%)."
+        "detail": "26 open issues for 69,463 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +91,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 56,442 forks for 69,076 stars (81.7%).",
+      "Fork-to-star ratio: 56,596 forks for 69,463 stars (81.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 25 open issues for 69,076 stars (0.0%)."
+      "Issue engagement: 26 open issues for 69,463 stars (0.0%).",
+      "Burst pattern: Largest 24h jump was 997 stars (285 forks, 9.1x the daily average)."
     ]
   }
 }

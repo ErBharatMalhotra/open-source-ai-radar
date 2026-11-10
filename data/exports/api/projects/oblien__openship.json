@@ -4,53 +4,58 @@
   "description": "Self-hosted deployment platform",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 15249,
+  "topics": [
+    "agents",
+    "ai",
+    "deployments",
+    "self-hosted"
+  ],
+  "stars": 15250,
   "forks": 1400,
   "open_issues": 113,
   "watchers": 38,
   "created_at": "2026-03-05T20:16:56Z",
-  "pushed_at": "2026-11-10T04:44:36Z",
+  "pushed_at": "2026-11-10T11:27:17Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/oblien.png",
   "radar_score": 76.77,
-  "impact": 91.47,
-  "velocity": 69.27,
+  "impact": 91.44,
+  "velocity": 69.3,
   "health": 63.75,
-  "global_percentile": 67.57,
+  "global_percentile": 67.0,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Self-hosted deployment platform",
   "maturity": "Unknown",
-  "stars_7d": 199,
-  "stars_30d": 464,
-  "stars_90d": 464,
-  "star_growth_rate_7d": 28.428571428571427,
-  "star_growth_rate_30d": 19.333333333333332,
-  "star_growth_acceleration": 1.4704433497536946,
-  "forks_7d": 33,
+  "stars_7d": 154,
+  "stars_30d": 468,
+  "stars_90d": 468,
+  "star_growth_rate_7d": 22.0,
+  "star_growth_rate_30d": 19.5,
+  "star_growth_acceleration": 1.1282051282051282,
+  "forks_7d": 28,
   "forks_30d": 78,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 296,
+  "snapshot_count": 297,
   "authenticity": {
-    "organic_confidence": 74.0,
+    "organic_confidence": 73.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 97.1,
+        "score": 97.0,
         "weight": 0.22,
-        "detail": "1,400 forks for 15,246 stars (9.2%)."
+        "detail": "1,400 forks for 15,250 stars (9.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 45.8,
+        "score": 45.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 115 stars (16 forks, 5.9x the daily average)."
+        "detail": "Largest 24h jump was 115 stars (16 forks, 6.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 66.6,
+        "score": 67.2,
         "weight": 0.12,
-        "detail": "110 open issues for 15,246 stars (0.7%)."
+        "detail": "113 open issues for 15,250 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,400 forks for 15,246 stars (9.2%).",
+      "Fork-to-star ratio: 1,400 forks for 15,250 stars (9.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

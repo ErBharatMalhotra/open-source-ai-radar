@@ -34,16 +34,16 @@
   "freshness_score": 0.794533602503334,
   "snapshot_count": 23,
   "authenticity": {
-    "organic_confidence": 89.8,
+    "organic_confidence": 91.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 97.7,
+        "score": 97.6,
         "weight": 0.22,
-        "detail": "1,297 forks for 5,971 stars (21.7%)."
+        "detail": "1,301 forks for 5,971 stars (21.8%)."
       },
       {
         "key": "burst",
@@ -76,15 +76,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 87.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 24 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 24 days ago.",
-      "Fork-to-star ratio: 1,297 forks for 5,971 stars (21.7%).",
-      "Burst pattern: Largest 24h jump was 1 stars (2 forks, 1.0x the daily average)."
+      "Fork-to-star ratio: 1,301 forks for 5,971 stars (21.8%).",
+      "Burst pattern: Largest 24h jump was 1 stars (2 forks, 1.0x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

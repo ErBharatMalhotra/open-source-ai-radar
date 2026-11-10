@@ -34,23 +34,23 @@
   "freshness_score": 1.0,
   "snapshot_count": 41,
   "authenticity": {
-    "organic_confidence": 79.4,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 85.2,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "751 forks for 5,797 stars (13.0%)."
+        "detail": "754 forks for 5,797 stars (13.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 42.0,
+        "score": 58.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 64 stars (4 forks, 6.5x the daily average)."
+        "detail": "Largest 24h jump was 40 stars (4 forks, 4.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,15 +76,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 751 forks for 5,797 stars (13.0%).",
-      "Issue engagement: 1,162 open issues for 5,797 stars (20.0%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 754 forks for 5,797 stars (13.0%).",
+      "Issue engagement: 1,162 open issues for 5,797 stars (20.0%)."
     ],
     "red_flags": []
   }

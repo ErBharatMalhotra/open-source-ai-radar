@@ -4,7 +4,18 @@
   "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ci-cd",
+    "containers",
+    "continuous-deployment",
+    "continuous-integration",
+    "devops",
+    "docker",
+    "agents",
+    "caching",
+    "graphql",
+    "workflows"
+  ],
   "stars": 16603,
   "forks": 952,
   "open_issues": 141,
@@ -17,24 +28,24 @@
   "impact": 93.63,
   "velocity": 54.26,
   "health": 63.75,
-  "global_percentile": 40.86,
+  "global_percentile": 31.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "maturity": "Unknown",
-  "stars_7d": 31,
-  "stars_30d": 257,
-  "stars_90d": 257,
-  "star_growth_rate_7d": 4.428571428571429,
-  "star_growth_rate_30d": 10.708333333333334,
-  "star_growth_acceleration": 0.41356309060589214,
+  "stars_7d": 30,
+  "stars_30d": 258,
+  "stars_90d": 258,
+  "star_growth_rate_7d": 4.285714285714286,
+  "star_growth_rate_30d": 10.75,
+  "star_growth_acceleration": 0.39867109634551495,
   "forks_7d": 6,
-  "forks_30d": 16,
+  "forks_30d": 17,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 265,
+  "snapshot_count": 266,
   "authenticity": {
-    "organic_confidence": 65.7,
+    "organic_confidence": 65.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 84.6,
         "weight": 0.22,
-        "detail": "952 forks for 16,602 stars (5.7%)."
+        "detail": "952 forks for 16,603 stars (5.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 31.5,
+        "score": 31.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 76 stars (1 forks, 8.2x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 70.5,
         "weight": 0.12,
-        "detail": "141 open issues for 16,602 stars (0.8%)."
+        "detail": "141 open issues for 16,603 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +93,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 952 forks for 16,602 stars (5.7%).",
+      "Fork-to-star ratio: 952 forks for 16,603 stars (5.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

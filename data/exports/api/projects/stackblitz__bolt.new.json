@@ -4,7 +4,12 @@
   "description": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "anthropic",
+    "chatbot",
+    "webcontainers-api",
+    "ai-playground"
+  ],
   "stars": 16590,
   "forks": 14840,
   "open_issues": 0,
@@ -17,22 +22,22 @@
   "impact": 95.84,
   "velocity": 53.57,
   "health": 30.75,
-  "global_percentile": 10.0,
+  "global_percentile": 5.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": 14,
-  "stars_90d": 14,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": 0.5,
-  "star_growth_acceleration": 0.8571428571428571,
-  "forks_7d": 6,
-  "forks_30d": 5,
-  "days_since_last_push": 692,
-  "freshness_score": 0.0009878299405312295,
-  "snapshot_count": 223,
+  "stars_7d": 5,
+  "stars_30d": 15,
+  "stars_90d": 15,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": 0.5357142857142857,
+  "star_growth_acceleration": 1.3333333333333335,
+  "forks_7d": 8,
+  "forks_30d": 4,
+  "days_since_last_push": 693,
+  "freshness_score": 0.0009780008683953946,
+  "snapshot_count": 224,
   "authenticity": {
     "organic_confidence": 54.8,
     "verdict": "mixed",
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "14,840 forks for 16,589 stars (89.5%)."
+        "detail": "14,840 forks for 16,590 stars (89.5%)."
       },
       {
         "key": "burst",
@@ -71,22 +76,22 @@
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 16,589 stars (0.0%)."
+        "detail": "0 open issues for 16,590 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 692 days ago."
+        "detail": "Last push 693 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 14,840 forks for 16,589 stars (89.5%)."
+      "Fork-to-star ratio: 14,840 forks for 16,590 stars (89.5%)."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 16,589 stars (0.0%).",
-      "Maintenance cadence: Last push 692 days ago."
+      "Issue engagement: 0 open issues for 16,590 stars (0.0%).",
+      "Maintenance cadence: Last push 693 days ago."
     ]
   }
 }

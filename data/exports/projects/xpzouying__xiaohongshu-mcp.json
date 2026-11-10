@@ -4,8 +4,12 @@
   "description": "MCP for xiaohongshu.com",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 17054,
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "xiaohongshu-mcp"
+  ],
+  "stars": 17057,
   "forks": 2508,
   "open_issues": 58,
   "watchers": 37,
@@ -13,42 +17,42 @@
   "pushed_at": "2026-11-09T04:35:53Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/xpzouying.png",
-  "radar_score": 76.29,
-  "impact": 92.48,
-  "velocity": 66.74,
-  "health": 63.75,
-  "global_percentile": 61.14,
+  "radar_score": 76.2,
+  "impact": 92.49,
+  "velocity": 66.75,
+  "health": 63.38,
+  "global_percentile": 60.57,
   "category": "MCP",
   "sub_category": "",
   "summary": "MCP for xiaohongshu.com",
   "maturity": "Unknown",
-  "stars_7d": 306,
-  "stars_30d": 816,
-  "stars_90d": 816,
-  "star_growth_rate_7d": 43.714285714285715,
-  "star_growth_rate_30d": 29.142857142857142,
-  "star_growth_acceleration": 1.5,
-  "forks_7d": 42,
-  "forks_30d": 116,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 254,
+  "stars_7d": 297,
+  "stars_30d": 806,
+  "stars_90d": 806,
+  "star_growth_rate_7d": 42.42857142857143,
+  "star_growth_rate_30d": 28.785714285714285,
+  "star_growth_acceleration": 1.4739454094292805,
+  "forks_7d": 47,
+  "forks_30d": 122,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 255,
   "authenticity": {
-    "organic_confidence": 80.1,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "2,502 forks for 17,047 stars (14.7%)."
+        "detail": "2,508 forks for 17,057 stars (14.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.6,
+        "score": 68.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 102 stars (7 forks, 3.6x the daily average)."
       },
@@ -71,19 +75,19 @@
         "label": "Issue engagement",
         "score": 52.0,
         "weight": 0.12,
-        "detail": "58 open issues for 17,047 stars (0.3%)."
+        "detail": "58 open issues for 17,057 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,502 forks for 17,047 stars (14.7%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Fork-to-star ratio: 2,508 forks for 17,057 stars (14.7%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

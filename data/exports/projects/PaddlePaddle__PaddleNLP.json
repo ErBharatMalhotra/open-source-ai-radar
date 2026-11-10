@@ -4,7 +4,27 @@
   "description": "Easy-to-use and powerful LLM and SLM library with awesome model zoo.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "nlp",
+    "embedding",
+    "bert",
+    "ernie",
+    "paddlenlp",
+    "pretrained-models",
+    "transformers",
+    "information-extraction",
+    "question-answering",
+    "search-engine",
+    "semantic-analysis",
+    "sentiment-analysis",
+    "neural-search",
+    "uie",
+    "document-intelligence",
+    "compression",
+    "llm",
+    "distributed-training",
+    "llama"
+  ],
   "stars": 12986,
   "forks": 3018,
   "open_issues": 111,
@@ -13,28 +33,28 @@
   "pushed_at": "2026-05-23T02:54:28Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/PaddlePaddle.png",
-  "radar_score": 63.63,
-  "impact": 93.49,
-  "velocity": 45.88,
-  "health": 40.7,
-  "global_percentile": 4.0,
+  "radar_score": 63.62,
+  "impact": 93.5,
+  "velocity": 45.87,
+  "health": 40.67,
+  "global_percentile": 3.43,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Easy-to-use and powerful LLM and SLM library with awesome model zoo.",
   "maturity": "Unknown",
-  "stars_7d": 3,
+  "stars_7d": 1,
   "stars_30d": 7,
-  "stars_90d": 18,
-  "star_growth_rate_7d": 0.42857142857142855,
+  "stars_90d": 19,
+  "star_growth_rate_7d": 0.14285714285714285,
   "star_growth_rate_30d": 0.23333333333333334,
-  "star_growth_acceleration": 1.8367346938775508,
-  "forks_7d": 0,
+  "star_growth_acceleration": 0.6122448979591836,
+  "forks_7d": -1,
   "forks_30d": -5,
-  "days_since_last_push": 170,
-  "freshness_score": 0.18268352405273466,
-  "snapshot_count": 95,
+  "days_since_last_push": 171,
+  "freshness_score": 0.1808657926171221,
+  "snapshot_count": 96,
   "authenticity": {
-    "organic_confidence": 77.5,
+    "organic_confidence": 77.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +63,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.4,
         "weight": 0.22,
-        "detail": "3,019 forks for 12,987 stars (23.2%)."
+        "detail": "3,018 forks for 12,986 stars (23.2%)."
       },
       {
         "key": "burst",
@@ -69,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 70.9,
+        "score": 70.6,
         "weight": 0.12,
-        "detail": "112 open issues for 12,987 stars (0.9%)."
+        "detail": "111 open issues for 12,986 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +103,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (-1 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 3,019 forks for 12,987 stars (23.2%)."
+      "Fork-to-star ratio: 3,018 forks for 12,986 stars (23.2%)."
     ],
     "red_flags": []
   }

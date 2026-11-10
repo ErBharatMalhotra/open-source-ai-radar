@@ -22,5 +22,59 @@
   "sub_category": "code completion",
   "summary": "Learn how to get started using the GitHub Copilot app!",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 88.0,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95,
+        "weight": 0.22,
+        "detail": "180 forks for 144 stars (125.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 65.8,
+        "weight": 0.12,
+        "detail": "1 open issues for 144 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 180 forks for 144 stars (125.0%).",
+      "Maintenance cadence: Last push 1 days ago."
+    ],
+    "red_flags": []
+  }
 }

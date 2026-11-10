@@ -35,7 +35,7 @@
   "snapshot_count": 109,
   "why_trending": "Steady growth with 61 new stars this week. Above-average growth velocity. Active in the RAG category.",
   "authenticity": {
-    "organic_confidence": 80.9,
+    "organic_confidence": 84.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -49,9 +49,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 49.1,
+        "score": 58.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 95 stars (5 forks, 5.4x the daily average)."
+        "detail": "Largest 24h jump was 75 stars (3 forks, 4.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -77,14 +77,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
       "Issue engagement: 301 open issues for 7,805 stars (3.9%).",
-      "Maintenance cadence: Last push 2 days ago.",
+      "Maintenance cadence: Last push 3 days ago.",
       "Fork-to-star ratio: 1,109 forks for 7,805 stars (14.2%)."
     ],
     "red_flags": []

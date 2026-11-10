@@ -4,7 +4,14 @@
   "description": "The official repo of Qwen (\u901a\u4e49\u5343\u95ee) chat & pretrained large language model proposed by Alibaba Cloud.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "chinese",
+    "large-language-models",
+    "natural-language-processing",
+    "flash-attention",
+    "llm",
+    "pretrained-models"
+  ],
   "stars": 22021,
   "forks": 2008,
   "open_issues": 17,
@@ -23,18 +30,18 @@
   "summary": "The official repo of Qwen (\u901a\u4e49\u5343\u95ee) chat & pretrained large language model proposed by Alibaba Cloud.",
   "maturity": "Unknown",
   "stars_7d": 32,
-  "stars_30d": 122,
+  "stars_30d": 123,
   "stars_90d": 129,
   "star_growth_rate_7d": 4.571428571428571,
-  "star_growth_rate_30d": 4.066666666666666,
-  "star_growth_acceleration": 1.1241217798594847,
-  "forks_7d": 10,
-  "forks_30d": 22,
+  "star_growth_rate_30d": 4.1,
+  "star_growth_acceleration": 1.1149825783972125,
+  "forks_7d": 12,
+  "forks_30d": 24,
   "days_since_last_push": 249,
   "freshness_score": 0.08290996657517266,
-  "snapshot_count": 202,
+  "snapshot_count": 203,
   "authenticity": {
-    "organic_confidence": 71.8,
+    "organic_confidence": 71.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "2,006 forks for 22,019 stars (9.1%)."
+        "detail": "2,008 forks for 22,021 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.7,
+        "score": 83.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 10 stars (5 forks, 2.5x the daily average)."
       },
@@ -71,7 +78,7 @@
         "label": "Issue engagement",
         "score": 32.7,
         "weight": 0.12,
-        "detail": "17 open issues for 22,019 stars (0.1%)."
+        "detail": "17 open issues for 22,021 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,10 +90,10 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 10 stars (5 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 2,006 forks for 22,019 stars (9.1%)."
+      "Fork-to-star ratio: 2,008 forks for 22,021 stars (9.1%)."
     ],
     "red_flags": [
-      "Issue engagement: 17 open issues for 22,019 stars (0.1%).",
+      "Issue engagement: 17 open issues for 22,021 stars (0.1%).",
       "Maintenance cadence: Last push 249 days ago."
     ]
   }

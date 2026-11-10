@@ -4,7 +4,10 @@
   "description": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "language": "C++",
   "license": "GPL-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "storage-engine"
+  ],
   "stars": 32258,
   "forks": 7016,
   "open_issues": 982,
@@ -17,40 +20,40 @@
   "impact": 97.85,
   "velocity": 59.67,
   "health": 63.75,
-  "global_percentile": 58.0,
+  "global_percentile": 58.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 22,
-  "stars_90d": 22,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 1.8333333333333333,
-  "star_growth_acceleration": 1.090909090909091,
-  "forks_7d": 12,
+  "stars_7d": 17,
+  "stars_30d": 25,
+  "stars_90d": 25,
+  "star_growth_rate_7d": 2.4285714285714284,
+  "star_growth_rate_30d": 2.0833333333333335,
+  "star_growth_acceleration": 1.1657142857142855,
+  "forks_7d": 10,
   "forks_30d": 28,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 36,
+  "snapshot_count": 37,
   "authenticity": {
-    "organic_confidence": 88.0,
+    "organic_confidence": 89.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 97.6,
+        "score": 97.7,
         "weight": 0.22,
-        "detail": "7,016 forks for 32,255 stars (21.8%)."
+        "detail": "7,016 forks for 32,258 stars (21.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 71.5,
+        "score": 74.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 3.3x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +74,7 @@
         "label": "Issue engagement",
         "score": 93.5,
         "weight": 0.12,
-        "detail": "982 open issues for 32,255 stars (3.0%)."
+        "detail": "982 open issues for 32,258 stars (3.0%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +85,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 982 open issues for 32,255 stars (3.0%).",
-      "Fork-to-star ratio: 7,016 forks for 32,255 stars (21.8%).",
+      "Issue engagement: 982 open issues for 32,258 stars (3.0%).",
+      "Fork-to-star ratio: 7,016 forks for 32,258 stars (21.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

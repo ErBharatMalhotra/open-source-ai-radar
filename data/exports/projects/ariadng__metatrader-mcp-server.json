@@ -31,9 +31,9 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 95.6,
+        "score": 95.5,
         "weight": 0.22,
-        "detail": "273 forks for 847 stars (32.2%)."
+        "detail": "274 forks for 847 stars (32.3%)."
       },
       {
         "key": "burst",
@@ -66,15 +66,17 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 40.0,
+        "score": 39.9,
         "weight": 0.1,
-        "detail": "Last push 226 days ago."
+        "detail": "Last push 227 days ago."
       }
     ],
     "reasons": [
       "Issue engagement: 18 open issues for 847 stars (2.1%).",
-      "Fork-to-star ratio: 273 forks for 847 stars (32.2%)."
+      "Fork-to-star ratio: 274 forks for 847 stars (32.3%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Maintenance cadence: Last push 227 days ago."
+    ]
   }
 }

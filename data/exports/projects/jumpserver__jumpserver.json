@@ -4,7 +4,19 @@
   "description": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "python",
+    "ssh-server",
+    "django",
+    "terminal",
+    "bastion-host",
+    "cyberark",
+    "teleport",
+    "pam",
+    "jumpserver",
+    "ai",
+    "codex"
+  ],
   "stars": 31941,
   "forks": 5819,
   "open_issues": 35,
@@ -14,25 +26,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/jumpserver.png",
   "radar_score": 74.94,
-  "impact": 97.66,
-  "velocity": 56.97,
+  "impact": 97.65,
+  "velocity": 56.98,
   "health": 63.75,
-  "global_percentile": 48.86,
+  "global_percentile": 49.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "maturity": "Unknown",
-  "stars_7d": 54,
-  "stars_30d": 195,
+  "stars_7d": 51,
+  "stars_30d": 186,
   "stars_90d": 222,
-  "star_growth_rate_7d": 7.714285714285714,
-  "star_growth_rate_30d": 6.5,
-  "star_growth_acceleration": 1.1868131868131868,
+  "star_growth_rate_7d": 7.285714285714286,
+  "star_growth_rate_30d": 6.413793103448276,
+  "star_growth_acceleration": 1.1359447004608294,
   "forks_7d": 10,
-  "forks_30d": 18,
+  "forks_30d": 14,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 141,
+  "snapshot_count": 142,
   "authenticity": {
     "organic_confidence": 85.6,
     "verdict": "organic",
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.4,
         "weight": 0.22,
-        "detail": "5,819 forks for 31,940 stars (18.2%)."
+        "detail": "5,819 forks for 31,941 stars (18.2%)."
       },
       {
         "key": "burst",
@@ -71,7 +83,7 @@
         "label": "Issue engagement",
         "score": 36.0,
         "weight": 0.12,
-        "detail": "35 open issues for 31,940 stars (0.1%)."
+        "detail": "35 open issues for 31,941 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +95,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 11 stars (0 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 5,819 forks for 31,940 stars (18.2%).",
+      "Fork-to-star ratio: 5,819 forks for 31,941 stars (18.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 35 open issues for 31,940 stars (0.1%)."
+      "Issue engagement: 35 open issues for 31,941 stars (0.1%)."
     ]
   }
 }

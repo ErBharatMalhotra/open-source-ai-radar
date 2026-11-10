@@ -4,8 +4,29 @@
   "description": "\ud83d\ude80 \u81ea\u6258\u7ba1\u7684\u6296\u97f3\u3001TikTok\u3001B \u7ad9\u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u652f\u6301 AI agent \u901a\u8fc7 MCP \u8c03\u7528\u4e0e\u79bb\u7ebf\u8bed\u97f3\u8f6c\u6587\u5b57\uff0cDocker \u4e00\u952e\u90e8\u7f72\u3002| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader \u2014 async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 21335,
+  "topics": [
+    "tiktok",
+    "douyin",
+    "scraper",
+    "crawler",
+    "web-scraping",
+    "tiktok-scraper",
+    "douyin-api",
+    "tiktok-api",
+    "data-collection",
+    "downloader",
+    "fastapi",
+    "mcp-server",
+    "model-context-protocol",
+    "openapi",
+    "rest-api",
+    "social-media",
+    "tiktok-downloader",
+    "video-downloader",
+    "speech-to-text",
+    "bilibili"
+  ],
+  "stars": 21334,
   "forks": 2961,
   "open_issues": 3,
   "watchers": 107,
@@ -13,26 +34,26 @@
   "pushed_at": "2026-11-09T13:39:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Evil0ctal.png",
-  "radar_score": 71.47,
+  "radar_score": 71.46,
   "impact": 94.93,
-  "velocity": 54.28,
+  "velocity": 54.27,
   "health": 57.98,
-  "global_percentile": 23.43,
+  "global_percentile": 25.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "\ud83d\ude80 Self-hosted TikTok & Douyin scraper and no-watermark video downloader \u2014 async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. \u6296\u97f3\u3001TikTok \u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u81ea\u6258\u7ba1\uff0c\u652f\u6301 MCP \u8c03\u7528\u4e0e Docker \u4e00\u952e\u90e8\u7f72\u3002",
   "maturity": "Unknown",
-  "stars_7d": 220,
-  "stars_30d": 633,
-  "stars_90d": 633,
-  "star_growth_rate_7d": 31.428571428571427,
-  "star_growth_rate_30d": 26.375,
-  "star_growth_acceleration": 1.1916046039268788,
+  "stars_7d": 222,
+  "stars_30d": 617,
+  "stars_90d": 617,
+  "star_growth_rate_7d": 31.714285714285715,
+  "star_growth_rate_30d": 25.708333333333332,
+  "star_growth_acceleration": 1.2336188932623293,
   "forks_7d": 23,
-  "forks_30d": 24,
+  "forks_30d": 9,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 200,
+  "snapshot_count": 201,
   "authenticity": {
     "organic_confidence": 83.1,
     "verdict": "organic",
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "2,961 forks for 21,332 stars (13.9%)."
+        "detail": "2,961 forks for 21,334 stars (13.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": 89.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 50 stars (36 forks, 2.0x the daily average)."
       },
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 26.4,
         "weight": 0.12,
-        "detail": "3 open issues for 21,332 stars (0.0%)."
+        "detail": "3 open issues for 21,334 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +104,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 50 stars (36 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 2,961 forks for 21,332 stars (13.9%).",
+      "Fork-to-star ratio: 2,961 forks for 21,334 stars (13.9%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 21,332 stars (0.0%)."
+      "Issue engagement: 3 open issues for 21,334 stars (0.0%)."
     ]
   }
 }

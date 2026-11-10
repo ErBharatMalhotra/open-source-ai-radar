@@ -4,7 +4,25 @@
   "description": "One shared memory for every coding agent on your team. Claude Code, Cursor and Codex get a map of your code and your team's past decisions, so they pick up where you left off.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai-agents",
+    "claude-code",
+    "code-graph",
+    "context-engineering",
+    "developer-tools",
+    "knowledge-graph",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "tree-sitter",
+    "anthropic",
+    "cli",
+    "codex",
+    "cursor",
+    "gemini",
+    "open-source",
+    "openai"
+  ],
   "stars": 11185,
   "forks": 997,
   "open_issues": 138,
@@ -14,27 +32,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/trailhq.png",
   "radar_score": 76.11,
-  "impact": 89.71,
-  "velocity": 69.4,
+  "impact": 89.7,
+  "velocity": 69.41,
   "health": 63.75,
-  "global_percentile": 59.14,
+  "global_percentile": 59.0,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
   "maturity": "Unknown",
-  "stars_7d": 149,
-  "stars_30d": 907,
-  "stars_90d": 907,
-  "star_growth_rate_7d": 21.285714285714285,
-  "star_growth_rate_30d": 37.791666666666664,
-  "star_growth_acceleration": 0.5632383052449205,
+  "stars_7d": 150,
+  "stars_30d": 890,
+  "stars_90d": 890,
+  "star_growth_rate_7d": 21.428571428571427,
+  "star_growth_rate_30d": 37.083333333333336,
+  "star_growth_acceleration": 0.5778491171749598,
   "forks_7d": 16,
-  "forks_30d": 98,
+  "forks_30d": 96,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 100,
+  "snapshot_count": 101,
   "authenticity": {
-    "organic_confidence": 81.5,
+    "organic_confidence": 86.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,35 +61,35 @@
         "label": "Fork-to-star ratio",
         "score": 96.1,
         "weight": 0.22,
-        "detail": "997 forks for 11,181 stars (8.9%)."
+        "detail": "997 forks for 11,185 stars (8.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 61.8,
+        "score": 61.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 182 stars (11 forks, 4.1x the daily average)."
+        "detail": "Largest 24h jump was 182 stars (11 forks, 4.2x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 99.0,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+150 stars vs +16 forks this week (expected ~13 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 97.1,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.58x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 78.4,
+        "score": 78.5,
         "weight": 0.12,
-        "detail": "137 open issues for 11,181 stars (1.2%)."
+        "detail": "138 open issues for 11,185 stars (1.2%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +100,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 137 open issues for 11,181 stars (1.2%).",
-      "Fork-to-star ratio: 997 forks for 11,181 stars (8.9%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Issue engagement: 138 open issues for 11,185 stars (1.2%).",
+      "Fork-to-star ratio: 997 forks for 11,185 stars (8.9%).",
+      "Growth acceleration: Weekly growth is 0.58x the monthly baseline."
     ],
     "red_flags": []
   }

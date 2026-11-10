@@ -4,8 +4,29 @@
   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 79305,
+  "topics": [
+    "agent",
+    "ai",
+    "anthropic",
+    "compression",
+    "context-engineering",
+    "context-window",
+    "fastapi",
+    "langchain",
+    "llm",
+    "mcp",
+    "openai",
+    "proxy",
+    "python",
+    "rag",
+    "token-optimization",
+    "claude-code",
+    "cursor",
+    "prompt-engineering",
+    "tokens",
+    "typescript"
+  ],
+  "stars": 79310,
   "forks": 6199,
   "open_issues": 129,
   "watchers": 212,
@@ -17,22 +38,22 @@
   "impact": 98.41,
   "velocity": 69.02,
   "health": 63.75,
-  "global_percentile": 93.86,
+  "global_percentile": 93.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
   "maturity": "Unknown",
-  "stars_7d": 641,
-  "stars_30d": 3348,
-  "stars_90d": 3348,
-  "star_growth_rate_7d": 91.57142857142857,
-  "star_growth_rate_30d": 152.1818181818182,
-  "star_growth_acceleration": 0.6017238436593275,
-  "forks_7d": 58,
-  "forks_30d": 290,
+  "stars_7d": 642,
+  "stars_30d": 3206,
+  "stars_90d": 3206,
+  "star_growth_rate_7d": 91.71428571428571,
+  "star_growth_rate_30d": 145.72727272727272,
+  "star_growth_acceleration": 0.6293556723999644,
+  "forks_7d": 59,
+  "forks_30d": 284,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 322,
+  "snapshot_count": 323,
   "authenticity": {
     "organic_confidence": 75.9,
     "verdict": "likely_organic",
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 92.1,
         "weight": 0.22,
-        "detail": "6,199 forks for 79,298 stars (7.8%)."
+        "detail": "6,199 forks for 79,310 stars (7.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.4,
+        "score": 68.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 507 stars (35 forks, 3.6x the daily average)."
       },
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 41.3,
         "weight": 0.12,
-        "detail": "129 open issues for 79,298 stars (0.2%)."
+        "detail": "129 open issues for 79,310 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +103,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,199 forks for 79,298 stars (7.8%).",
+      "Fork-to-star ratio: 6,199 forks for 79,310 stars (7.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

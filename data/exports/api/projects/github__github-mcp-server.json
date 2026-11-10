@@ -4,9 +4,13 @@
   "description": "GitHub's official MCP Server",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 34366,
-  "forks": 5324,
+  "topics": [
+    "github",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 34368,
+  "forks": 5325,
   "open_issues": 228,
   "watchers": 413,
   "created_at": "2025-03-04T16:42:04Z",
@@ -17,22 +21,22 @@
   "impact": 97.68,
   "velocity": 68.21,
   "health": 63.75,
-  "global_percentile": 88.0,
+  "global_percentile": 87.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "GitHub's official MCP Server",
   "maturity": "Unknown",
-  "stars_7d": 193,
-  "stars_30d": 629,
-  "stars_90d": 629,
-  "star_growth_rate_7d": 27.571428571428573,
-  "star_growth_rate_30d": 28.59090909090909,
-  "star_growth_acceleration": 0.9643424937542585,
-  "forks_7d": 47,
-  "forks_30d": -8,
+  "stars_7d": 195,
+  "stars_30d": 618,
+  "stars_90d": 618,
+  "star_growth_rate_7d": 27.857142857142858,
+  "star_growth_rate_30d": 28.09090909090909,
+  "star_growth_acceleration": 0.9916782246879334,
+  "forks_7d": 48,
+  "forks_30d": -27,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 317,
+  "snapshot_count": 318,
   "authenticity": {
     "organic_confidence": 91.9,
     "verdict": "organic",
@@ -43,7 +47,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "5,322 forks for 34,363 stars (15.5%)."
+        "detail": "5,325 forks for 34,368 stars (15.5%)."
       },
       {
         "key": "burst",
@@ -71,7 +75,7 @@
         "label": "Issue engagement",
         "score": 64.9,
         "weight": 0.12,
-        "detail": "228 open issues for 34,363 stars (0.7%)."
+        "detail": "228 open issues for 34,368 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +87,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 41 stars (13 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 5,322 forks for 34,363 stars (15.5%).",
+      "Fork-to-star ratio: 5,325 forks for 34,368 stars (15.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

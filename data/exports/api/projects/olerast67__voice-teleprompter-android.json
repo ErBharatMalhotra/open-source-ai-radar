@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "Suflyor (\u0421\u0443\u0444\u043b\u0451\u0440) \u2014 free voice-following teleprompter app for Android. Scrolls as you speak, floats over Instagram, TikTok and the camera. English and Russian speech recognized on the phone, offline, no internet permission. \u0422\u0435\u043b\u0435\u0441\u0443\u0444\u043b\u0451\u0440 \u043f\u043e \u0433\u043e\u043b\u043e\u0441\u0443 \u0434\u043b\u044f Android.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 72.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 85.2,
+        "weight": 0.22,
+        "detail": "6 forks for 102 stars (5.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 102 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 6 forks for 102 stars (5.9%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 102 stars (0.0%)."
+    ]
+  }
 }

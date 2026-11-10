@@ -35,23 +35,23 @@
   "snapshot_count": 113,
   "why_trending": "Steady growth with 43 new stars this week. Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 79.5,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 81.1,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 87.5,
         "weight": 0.22,
-        "detail": "478 forks for 7,328 stars (6.5%)."
+        "detail": "478 forks for 7,329 stars (6.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.7,
+        "score": 83.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 39 stars (7 forks, 2.6x the daily average)."
+        "detail": "Largest 24h jump was 39 stars (7 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,20 +72,20 @@
         "label": "Issue engagement",
         "score": 50.0,
         "weight": 0.12,
-        "detail": "22 open issues for 7,328 stars (0.3%)."
+        "detail": "22 open issues for 7,329 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 92.0,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 14 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 39 stars (7 forks, 2.6x the daily average).",
-      "Fork-to-star ratio: 478 forks for 7,328 stars (6.5%).",
-      "Maintenance cadence: Last push 14 days ago."
+      "Burst pattern: Largest 24h jump was 39 stars (7 forks, 2.5x the daily average).",
+      "Fork-to-star ratio: 478 forks for 7,329 stars (6.5%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

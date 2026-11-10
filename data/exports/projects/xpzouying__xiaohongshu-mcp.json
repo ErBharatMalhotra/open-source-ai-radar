@@ -4,7 +4,11 @@
   "description": "MCP for xiaohongshu.com",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "xiaohongshu-mcp"
+  ],
   "stars": 17047,
   "forks": 2502,
   "open_issues": 58,
@@ -17,7 +21,7 @@
   "impact": 92.48,
   "velocity": 66.74,
   "health": 63.75,
-  "global_percentile": 62.0,
+  "global_percentile": 61.14,
   "category": "MCP",
   "sub_category": "",
   "summary": "MCP for xiaohongshu.com",
@@ -32,9 +36,9 @@
   "forks_30d": 116,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 253,
+  "snapshot_count": 254,
   "authenticity": {
-    "organic_confidence": 80.1,
+    "organic_confidence": 80.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +52,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.5,
+        "score": 68.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 102 stars (7 forks, 3.6x the daily average)."
       },

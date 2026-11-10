@@ -4,8 +4,20 @@
   "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 25079,
+  "topics": [
+    "agent-security",
+    "agent-skills",
+    "agentic-ai",
+    "ai-security",
+    "claude-code",
+    "mcp",
+    "prompt-injection",
+    "security-scanner",
+    "security-tools",
+    "security-workflow",
+    "supply-chain-security"
+  ],
+  "stars": 25085,
   "forks": 2195,
   "open_issues": 74,
   "watchers": 87,
@@ -14,25 +26,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
   "radar_score": 77.85,
-  "impact": 94.6,
-  "velocity": 68.77,
+  "impact": 94.61,
+  "velocity": 68.75,
   "health": 63.75,
-  "global_percentile": 78.57,
+  "global_percentile": 78.29,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
   "maturity": "Unknown",
-  "stars_7d": 1217,
-  "stars_30d": 4592,
-  "stars_90d": 4592,
-  "star_growth_rate_7d": 173.85714285714286,
-  "star_growth_rate_30d": 208.72727272727272,
-  "star_growth_acceleration": 0.8329392732702837,
+  "stars_7d": 1216,
+  "stars_30d": 4596,
+  "stars_90d": 4596,
+  "star_growth_rate_7d": 173.71428571428572,
+  "star_growth_rate_30d": 208.9090909090909,
+  "star_growth_acceleration": 0.8315305234365287,
   "forks_7d": 136,
-  "forks_30d": 388,
+  "forks_30d": 391,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 319,
+  "snapshot_count": 320,
   "authenticity": {
     "organic_confidence": 72.2,
     "verdict": "likely_organic",
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 95.5,
         "weight": 0.22,
-        "detail": "2,191 forks for 25,058 stars (8.7%)."
+        "detail": "2,195 forks for 25,085 stars (8.8%)."
       },
       {
         "key": "burst",
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 50.0,
+        "score": 49.7,
         "weight": 0.12,
-        "detail": "75 open issues for 25,058 stars (0.3%)."
+        "detail": "74 open issues for 25,085 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +94,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,191 forks for 25,058 stars (8.7%).",
+      "Fork-to-star ratio: 2,195 forks for 25,085 stars (8.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

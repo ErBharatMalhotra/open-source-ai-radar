@@ -4,7 +4,28 @@
   "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "model-context-protocol",
+    "apps-sdk",
+    "mcp-apps",
+    "mcp-inspector",
+    "mcp-servers",
+    "mcp-ui",
+    "agentic-framework",
+    "ai",
+    "mcp-client",
+    "mcp-server",
+    "modelcontextprotocol",
+    "mcp-gateway",
+    "mcp-tools",
+    "llms",
+    "chatgpt",
+    "claude-code",
+    "skills",
+    "claude-connectors",
+    "agent-plugins"
+  ],
   "stars": 10862,
   "forks": 1547,
   "open_issues": 43,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-09T21:53:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mcp-use.png",
-  "radar_score": 74.19,
-  "impact": 91.98,
-  "velocity": 61.85,
-  "health": 63.01,
-  "global_percentile": 42.71,
+  "radar_score": 74.91,
+  "impact": 91.99,
+  "velocity": 63.36,
+  "health": 63.75,
+  "global_percentile": 49.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
   "maturity": "Unknown",
   "stars_7d": 21,
-  "stars_30d": 125,
-  "stars_90d": 134,
+  "stars_30d": 124,
+  "stars_90d": 133,
   "star_growth_rate_7d": 3.0,
-  "star_growth_rate_30d": 4.166666666666667,
-  "star_growth_acceleration": 0.72,
-  "forks_7d": 11,
+  "star_growth_rate_30d": 4.133333333333334,
+  "star_growth_acceleration": 0.7258064516129031,
+  "forks_7d": 12,
   "forks_30d": 45,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 244,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 245,
   "authenticity": {
-    "organic_confidence": 82.9,
+    "organic_confidence": 87.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,28 +64,28 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "1,546 forks for 10,862 stars (14.2%)."
+        "detail": "1,547 forks for 10,862 stars (14.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.6,
+        "score": 75.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (0 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 95,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+21 stars vs +12 forks this week (expected ~3 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 96.4,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.73x the monthly baseline."
       },
       {
         "key": "engagement",
@@ -76,15 +97,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (0 forks, 3.0x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 1,546 forks for 10,862 stars (14.2%)."
+      "Star/fork velocity alignment: +21 stars vs +12 forks this week (expected ~3 forks).",
+      "Growth acceleration: Weekly growth is 0.73x the monthly baseline."
     ],
     "red_flags": []
   }

@@ -4,9 +4,16 @@
   "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16905,
-  "forks": 1590,
+  "topics": [
+    "ai",
+    "ai-infra",
+    "kubernetes",
+    "sandbox",
+    "ai-agent",
+    "aaif"
+  ],
+  "stars": 16915,
+  "forks": 1592,
   "open_issues": 86,
   "watchers": 61,
   "created_at": "2025-12-17T08:41:09Z",
@@ -14,7 +21,7 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/opensandbox-group.png",
   "radar_score": 77.26,
-  "impact": 92.83,
+  "impact": 92.85,
   "velocity": 69.1,
   "health": 63.75,
   "global_percentile": 72.0,
@@ -22,19 +29,19 @@
   "sub_category": "",
   "summary": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
   "maturity": "Unknown",
-  "stars_7d": 496,
-  "stars_30d": 935,
-  "stars_90d": 935,
-  "star_growth_rate_7d": 70.85714285714286,
-  "star_growth_rate_30d": 40.65217391304348,
-  "star_growth_acceleration": 1.7430099312452256,
-  "forks_7d": 54,
-  "forks_30d": 109,
+  "stars_7d": 553,
+  "stars_30d": 990,
+  "stars_90d": 990,
+  "star_growth_rate_7d": 79.0,
+  "star_growth_rate_30d": 43.04347826086956,
+  "star_growth_acceleration": 1.8353535353535355,
+  "forks_7d": 60,
+  "forks_30d": 115,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 292,
+  "snapshot_count": 293,
   "authenticity": {
-    "organic_confidence": 75.2,
+    "organic_confidence": 73.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.9,
         "weight": 0.22,
-        "detail": "1,585 forks for 16,855 stars (9.4%)."
+        "detail": "1,592 forks for 16,915 stars (9.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 51.6,
+        "score": 45.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 183 stars (10 forks, 5.1x the daily average)."
+        "detail": "Largest 24h jump was 225 stars (16 forks, 5.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +78,7 @@
         "label": "Issue engagement",
         "score": 60.3,
         "weight": 0.12,
-        "detail": "86 open issues for 16,855 stars (0.5%)."
+        "detail": "86 open issues for 16,915 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,585 forks for 16,855 stars (9.4%).",
+      "Fork-to-star ratio: 1,592 forks for 16,915 stars (9.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

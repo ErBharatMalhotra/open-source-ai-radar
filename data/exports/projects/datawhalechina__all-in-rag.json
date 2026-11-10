@@ -4,7 +4,20 @@
   "description": "\ud83d\udd0d\u5927\u6a21\u578b\u5e94\u7528\u5f00\u53d1\u5b9e\u6218\u4e00\uff1aRAG \u6280\u672f\u5168\u6808\u6307\u5357\uff0c\u5728\u7ebf\u9605\u8bfb\u5730\u5740\uff1ahttps://datawhalechina.github.io/all-in-rag/",
   "language": "Python",
   "license": null,
-  "topics": [],
+  "topics": [
+    "embedding",
+    "kimi-k2",
+    "langchain",
+    "llama-index",
+    "llm",
+    "milvus",
+    "multimodal",
+    "rag",
+    "ai",
+    "neo4j",
+    "python",
+    "deepseek"
+  ],
   "stars": 12997,
   "forks": 6624,
   "open_issues": 21,
@@ -13,29 +26,29 @@
   "pushed_at": "2026-09-30T21:49:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/datawhalechina.png",
-  "radar_score": 70.33,
-  "impact": 91.87,
-  "velocity": 64.46,
-  "health": 44.08,
-  "global_percentile": 20.29,
+  "radar_score": 70.28,
+  "impact": 91.88,
+  "velocity": 64.45,
+  "health": 43.87,
+  "global_percentile": 19.43,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "\ud83d\udd0d\u5927\u6a21\u578b\u5e94\u7528\u5f00\u53d1\u5b9e\u6218\u4e00\uff1aRAG \u6280\u672f\u5168\u6808\u6307\u5357\uff0c\u5728\u7ebf\u9605\u8bfb\u5730\u5740\uff1ahttps://datawhalechina.github.io/all-in-rag/",
   "maturity": "Unknown",
   "stars_7d": 194,
-  "stars_30d": 997,
-  "stars_90d": 997,
+  "stars_30d": 984,
+  "stars_90d": 984,
   "star_growth_rate_7d": 27.714285714285715,
-  "star_growth_rate_30d": 35.607142857142854,
-  "star_growth_acceleration": 0.7783350050150453,
+  "star_growth_rate_30d": 35.142857142857146,
+  "star_growth_acceleration": 0.7886178861788617,
   "forks_7d": 144,
-  "forks_30d": 656,
-  "days_since_last_push": 39,
-  "freshness_score": 0.6770568744981647,
-  "snapshot_count": 257,
+  "forks_30d": 653,
+  "days_since_last_push": 40,
+  "freshness_score": 0.6703200460356393,
+  "snapshot_count": 258,
   "why_trending": "Strong momentum with 233 new stars this week. Above-average growth velocity. High developer adoption with 121 new forks this week. Active in the RAG category.",
   "authenticity": {
-    "organic_confidence": 83.2,
+    "organic_confidence": 83.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -49,9 +62,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.5,
+        "score": 93.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 58 stars (-105 forks, 1.6x the daily average)."
+        "detail": "Largest 24h jump was 58 stars (-105 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -77,14 +90,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 82.8,
+        "score": 82.5,
         "weight": 0.1,
-        "detail": "Last push 39 days ago."
+        "detail": "Last push 40 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 39 days ago.",
-      "Burst pattern: Largest 24h jump was 58 stars (-105 forks, 1.6x the daily average).",
+      "Maintenance cadence: Last push 40 days ago.",
+      "Burst pattern: Largest 24h jump was 58 stars (-105 forks, 1.7x the daily average).",
       "Fork-to-star ratio: 6,624 forks for 12,997 stars (51.0%)."
     ],
     "red_flags": []

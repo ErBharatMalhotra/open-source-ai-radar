@@ -4,7 +4,14 @@
   "description": "Port of OpenAI's Whisper model in C/C++",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "openai",
+    "speech-to-text",
+    "transformer",
+    "whisper",
+    "inference",
+    "speech-recognition"
+  ],
   "stars": 55050,
   "forks": 6293,
   "open_issues": 177,
@@ -14,25 +21,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/ggml-org.png",
   "radar_score": 78.71,
-  "impact": 98.44,
+  "impact": 98.45,
   "velocity": 66.83,
   "health": 63.75,
-  "global_percentile": 87.29,
+  "global_percentile": 86.71,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Port of OpenAI's Whisper model in C/C++",
   "maturity": "Unknown",
-  "stars_7d": 203,
-  "stars_30d": 595,
-  "stars_90d": 595,
-  "star_growth_rate_7d": 29.0,
-  "star_growth_rate_30d": 25.869565217391305,
-  "star_growth_acceleration": 1.1210084033613446,
-  "forks_7d": 30,
-  "forks_30d": 29,
+  "stars_7d": 202,
+  "stars_30d": 594,
+  "stars_90d": 594,
+  "star_growth_rate_7d": 28.857142857142858,
+  "star_growth_rate_30d": 25.82608695652174,
+  "star_growth_acceleration": 1.1173641173641173,
+  "forks_7d": 29,
+  "forks_30d": 28,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 301,
+  "snapshot_count": 302,
   "authenticity": {
     "organic_confidence": 89.2,
     "verdict": "organic",
@@ -43,7 +50,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "6,293 forks for 55,046 stars (11.4%)."
+        "detail": "6,293 forks for 55,050 stars (11.4%)."
       },
       {
         "key": "burst",
@@ -71,7 +78,7 @@
         "label": "Issue engagement",
         "score": 51.1,
         "weight": 0.12,
-        "detail": "177 open issues for 55,046 stars (0.3%)."
+        "detail": "177 open issues for 55,050 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +90,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 41 stars (0 forks, 1.6x the daily average).",
-      "Fork-to-star ratio: 6,293 forks for 55,046 stars (11.4%).",
+      "Fork-to-star ratio: 6,293 forks for 55,050 stars (11.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

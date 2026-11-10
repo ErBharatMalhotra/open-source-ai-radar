@@ -4,7 +4,13 @@
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai",
+    "cursor",
+    "figma",
+    "mcp",
+    "typescript"
+  ],
   "stars": 16180,
   "forks": 1282,
   "open_issues": 8,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-10-27T05:37:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/GLips.png",
-  "radar_score": 69.66,
-  "impact": 92.3,
-  "velocity": 55.03,
+  "radar_score": 69.67,
+  "impact": 92.31,
+  "velocity": 55.05,
   "health": 53.92,
-  "global_percentile": 17.71,
+  "global_percentile": 17.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "maturity": "Unknown",
   "stars_7d": 46,
-  "stars_30d": 216,
+  "stars_30d": 214,
   "stars_90d": 216,
   "star_growth_rate_7d": 6.571428571428571,
-  "star_growth_rate_30d": 7.2,
-  "star_growth_acceleration": 0.9126984126984127,
-  "forks_7d": 6,
-  "forks_30d": 17,
+  "star_growth_rate_30d": 7.133333333333334,
+  "star_growth_acceleration": 0.9212283044058744,
+  "forks_7d": 8,
+  "forks_30d": 19,
   "days_since_last_push": 13,
   "freshness_score": 0.8780954309205613,
-  "snapshot_count": 208,
+  "snapshot_count": 209,
   "authenticity": {
-    "organic_confidence": 75.3,
+    "organic_confidence": 75.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +49,12 @@
         "label": "Fork-to-star ratio",
         "score": 92.5,
         "weight": 0.22,
-        "detail": "1,280 forks for 16,180 stars (7.9%)."
+        "detail": "1,282 forks for 16,180 stars (7.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.0,
+        "score": 74.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (2 forks, 3.0x the daily average)."
       },
@@ -82,9 +88,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 22 stars (2 forks, 3.0x the daily average).",
       "Maintenance cadence: Last push 13 days ago.",
-      "Fork-to-star ratio: 1,280 forks for 16,180 stars (7.9%)."
+      "Fork-to-star ratio: 1,282 forks for 16,180 stars (7.9%)."
     ],
     "red_flags": [
       "Issue engagement: 8 open issues for 16,180 stars (0.0%)."

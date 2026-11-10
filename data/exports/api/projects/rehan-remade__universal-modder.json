@@ -35,7 +35,7 @@
   "snapshot_count": 62,
   "why_trending": "Strong momentum with 502 new stars this week. Above-average growth velocity. High developer adoption with 72 new forks this week. Active in the MCP category.",
   "authenticity": {
-    "organic_confidence": 79.5,
+    "organic_confidence": 79.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -44,7 +44,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "1,064 forks for 9,542 stars (11.2%)."
+        "detail": "1,064 forks for 9,558 stars (11.1%)."
       },
       {
         "key": "burst",
@@ -70,9 +70,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25,
+        "score": 26.0,
         "weight": 0.12,
-        "detail": "0 open issues for 9,542 stars (0.0%)."
+        "detail": "1 open issues for 9,558 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -84,11 +84,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 292 stars (39 forks, 2.7x the daily average).",
-      "Fork-to-star ratio: 1,064 forks for 9,542 stars (11.2%).",
+      "Fork-to-star ratio: 1,064 forks for 9,558 stars (11.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 9,542 stars (0.0%)."
+      "Issue engagement: 1 open issues for 9,558 stars (0.0%)."
     ]
   }
 }

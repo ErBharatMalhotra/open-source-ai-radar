@@ -1,7 +1,7 @@
 {
   "full_name": "langfuse/langfuse",
   "url": "https://github.com/langfuse/langfuse",
-  "description": "\ud83e\udea2 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+  "description": "\ud83e\udea2 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.",
   "language": "TypeScript",
   "license": "NOASSERTION",
   "topics": [
@@ -23,36 +23,37 @@
     "llm-evaluation",
     "llm-observability",
     "ai-gateway",
-    "gateway"
+    "gateway",
+    "llm-gateway"
   ],
-  "stars": 37295,
-  "forks": 4197,
-  "open_issues": 340,
+  "stars": 37310,
+  "forks": 4198,
+  "open_issues": 341,
   "watchers": 111,
   "created_at": "2023-05-18T17:47:09Z",
-  "pushed_at": "2026-11-11T11:41:47Z",
+  "pushed_at": "2026-11-11T17:33:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/langfuse.png",
   "radar_score": 77.28,
-  "impact": 96.49,
-  "velocity": 67.13,
+  "impact": 96.48,
+  "velocity": 67.14,
   "health": 60.75,
-  "global_percentile": 72.71,
+  "global_percentile": 72.86,
   "category": "Evaluation & Benchmarks",
   "sub_category": "benchmark",
   "summary": "\ud83e\udea2 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. \ud83c\udf4aYC W23 ",
   "maturity": "Unknown",
-  "stars_7d": 337,
-  "stars_30d": 1225,
-  "stars_90d": 1225,
-  "star_growth_rate_7d": 48.142857142857146,
-  "star_growth_rate_30d": 55.68181818181818,
-  "star_growth_acceleration": 0.8646064139941692,
-  "forks_7d": 48,
-  "forks_30d": 171,
+  "stars_7d": 347,
+  "stars_30d": 1223,
+  "stars_90d": 1223,
+  "star_growth_rate_7d": 49.57142857142857,
+  "star_growth_rate_30d": 55.59090909090909,
+  "star_growth_acceleration": 0.8917182572129423,
+  "forks_7d": 46,
+  "forks_30d": 170,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 318,
+  "snapshot_count": 319,
   "authenticity": {
     "organic_confidence": 91.5,
     "verdict": "organic",
@@ -63,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "4,197 forks for 37,295 stars (11.3%)."
+        "detail": "4,198 forks for 37,310 stars (11.3%)."
       },
       {
         "key": "burst",
@@ -89,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 72.3,
+        "score": 72.4,
         "weight": 0.12,
-        "detail": "340 open issues for 37,295 stars (0.9%)."
+        "detail": "341 open issues for 37,310 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -103,7 +104,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 107 stars (6 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 4,197 forks for 37,295 stars (11.3%).",
+      "Fork-to-star ratio: 4,198 forks for 37,310 stars (11.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

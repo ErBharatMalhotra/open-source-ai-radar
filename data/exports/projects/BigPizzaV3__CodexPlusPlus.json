@@ -5,36 +5,36 @@
   "language": "Rust",
   "license": "AGPL-3.0",
   "topics": [],
-  "stars": 33048,
+  "stars": 33054,
   "forks": 2143,
-  "open_issues": 53,
+  "open_issues": 48,
   "watchers": 69,
   "created_at": "2026-05-06T09:32:49Z",
-  "pushed_at": "2026-11-11T11:39:01Z",
+  "pushed_at": "2026-11-11T17:34:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/BigPizzaV3.png",
-  "radar_score": 77.58,
-  "impact": 94.91,
-  "velocity": 67.67,
+  "radar_score": 77.54,
+  "impact": 94.9,
+  "velocity": 67.55,
   "health": 63.75,
-  "global_percentile": 75.29,
+  "global_percentile": 75.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable \u4e00\u4e2aCodexApp\u7684\u589e\u5f3a\u5de5\u5177\uff0c\u52aa\u529b\u8ba9Codex\u53d8\u5f97\u66f4\u597d\u7528\u66f4\u8212\u670d",
   "maturity": "Unknown",
-  "stars_7d": 184,
-  "stars_30d": 735,
-  "stars_90d": 735,
-  "star_growth_rate_7d": 26.285714285714285,
-  "star_growth_rate_30d": 30.625,
-  "star_growth_acceleration": 0.8583090379008746,
+  "stars_7d": 190,
+  "stars_30d": 730,
+  "stars_90d": 730,
+  "star_growth_rate_7d": 27.142857142857142,
+  "star_growth_rate_30d": 30.416666666666668,
+  "star_growth_acceleration": 0.8923679060665362,
   "forks_7d": 22,
   "forks_30d": 65,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 287,
+  "snapshot_count": 288,
   "authenticity": {
-    "organic_confidence": 82.6,
+    "organic_confidence": 82.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +43,7 @@
         "label": "Fork-to-star ratio",
         "score": 87.3,
         "weight": 0.22,
-        "detail": "2,143 forks for 33,048 stars (6.5%)."
+        "detail": "2,143 forks for 33,054 stars (6.5%)."
       },
       {
         "key": "burst",
@@ -69,9 +69,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 41.0,
+        "score": 39.5,
         "weight": 0.12,
-        "detail": "53 open issues for 33,048 stars (0.2%)."
+        "detail": "48 open issues for 33,054 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +82,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,143 forks for 33,048 stars (6.5%).",
+      "Fork-to-star ratio: 2,143 forks for 33,054 stars (6.5%).",
       "Burst pattern: Largest 24h jump was 61 stars (5 forks, 1.8x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 48 open issues for 33,054 stars (0.1%)."
+    ]
   }
 }

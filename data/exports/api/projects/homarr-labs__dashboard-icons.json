@@ -4,8 +4,28 @@
   "description": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9064,
+  "topics": [
+    "icons",
+    "dashboard",
+    "docker",
+    "homer",
+    "selfhosted",
+    "heimdall",
+    "homarr",
+    "dashboard-icons",
+    "dashy",
+    "self-hosted",
+    "homepage",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "logos",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "svg-icons"
+  ],
+  "stars": 9069,
   "forks": 728,
   "open_issues": 22,
   "watchers": 29,
@@ -17,33 +37,33 @@
   "impact": 88.02,
   "velocity": 50.34,
   "health": 63.01,
-  "global_percentile": 18.57,
+  "global_percentile": 12.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
   "maturity": "Unknown",
-  "stars_7d": 72,
-  "stars_30d": 169,
-  "stars_90d": 169,
-  "star_growth_rate_7d": 10.285714285714286,
-  "star_growth_rate_30d": 8.047619047619047,
-  "star_growth_acceleration": 1.2781065088757397,
-  "forks_7d": -1,
+  "stars_7d": 74,
+  "stars_30d": 175,
+  "stars_90d": 175,
+  "star_growth_rate_7d": 10.571428571428571,
+  "star_growth_rate_30d": 8.333333333333334,
+  "star_growth_acceleration": 1.2685714285714285,
+  "forks_7d": 0,
   "forks_30d": 6,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 39,
+  "snapshot_count": 40,
   "authenticity": {
-    "organic_confidence": 86.4,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 72.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 92.9,
         "weight": 0.22,
-        "detail": "728 forks for 9,064 stars (8.0%)."
+        "detail": "728 forks for 9,069 stars (8.0%)."
       },
       {
         "key": "burst",
@@ -55,23 +75,23 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 5,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+74 stars vs +0 forks this week (expected ~6 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 89.6,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.27x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 47.1,
         "weight": 0.12,
-        "detail": "22 open issues for 9,064 stars (0.2%)."
+        "detail": "22 open issues for 9,069 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +102,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 728 forks for 9,064 stars (8.0%).",
-      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.5x the daily average).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Growth acceleration: Weekly growth is 1.27x the monthly baseline.",
+      "Fork-to-star ratio: 728 forks for 9,069 stars (8.0%).",
+      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.5x the daily average)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Star/fork velocity alignment: +74 stars vs +0 forks this week (expected ~6 forks)."
+    ]
   }
 }

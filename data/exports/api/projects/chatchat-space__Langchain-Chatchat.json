@@ -4,7 +4,28 @@
   "description": "Langchain-Chatchat\uff08\u539fLangchain-ChatGLM\uff09\u57fa\u4e8e Langchain \u4e0e ChatGLM, Qwen \u4e0e Llama \u7b49\u8bed\u8a00\u6a21\u578b\u7684 RAG \u4e0e Agent \u5e94\u7528 | Langchain-Chatchat (formerly langchain-ChatGLM), local knowledge based LLM (like ChatGLM, Qwen and Llama) RAG and Agent app with langchain ",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "chatglm",
+    "langchain",
+    "llm",
+    "knowledge-base",
+    "llama",
+    "chatbot",
+    "chatgpt",
+    "embedding",
+    "faiss",
+    "fastchat",
+    "gpt",
+    "milvus",
+    "streamlit",
+    "chatchat",
+    "langchain-chatglm",
+    "qwen",
+    "rag",
+    "retrieval-augmented-generation",
+    "xinference",
+    "ollama"
+  ],
   "stars": 38712,
   "forks": 6254,
   "open_issues": 5,
@@ -15,26 +36,26 @@
   "owner_avatar": "https://github.com/chatchat-space.png",
   "radar_score": 64.51,
   "impact": 97.78,
-  "velocity": 48.67,
+  "velocity": 48.68,
   "health": 33.45,
-  "global_percentile": 5.43,
+  "global_percentile": 4.43,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Langchain-Chatchat\uff08\u539fLangchain-ChatGLM\uff09\u57fa\u4e8e Langchain \u4e0e ChatGLM, Qwen \u4e0e Llama \u7b49\u8bed\u8a00\u6a21\u578b\u7684 RAG \u4e0e Agent \u5e94\u7528 | Langchain-Chatchat (formerly langchain-ChatGLM), local knowledge based LLM (like ChatGLM, Qwen and Llama) RAG and Agent app with langchain ",
   "maturity": "Unknown",
-  "stars_7d": 2,
-  "stars_30d": 34,
-  "stars_90d": 46,
-  "star_growth_rate_7d": 0.2857142857142857,
-  "star_growth_rate_30d": 1.1724137931034482,
-  "star_growth_acceleration": 0.24369747899159663,
+  "stars_7d": 0,
+  "stars_30d": 32,
+  "stars_90d": 47,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 1.0666666666666667,
+  "star_growth_acceleration": 0.0,
   "forks_7d": -1,
   "forks_30d": 0,
-  "days_since_last_push": 365,
-  "freshness_score": 0.025991128778755347,
-  "snapshot_count": 182,
+  "days_since_last_push": 366,
+  "freshness_score": 0.02573251272635994,
+  "snapshot_count": 183,
   "authenticity": {
-    "organic_confidence": 58.2,
+    "organic_confidence": 56.9,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "6,254 forks for 38,714 stars (16.2%)."
+        "detail": "6,254 forks for 38,712 stars (16.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 50.7,
+        "score": 47.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 5.2x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 5.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,22 +92,22 @@
         "label": "Issue engagement",
         "score": 26.3,
         "weight": 0.12,
-        "detail": "5 open issues for 38,714 stars (0.0%)."
+        "detail": "5 open issues for 38,712 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 25.0,
+        "score": 25,
         "weight": 0.1,
-        "detail": "Last push 365 days ago."
+        "detail": "Last push 366 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,254 forks for 38,714 stars (16.2%)."
+      "Fork-to-star ratio: 6,254 forks for 38,712 stars (16.2%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 365 days ago.",
-      "Issue engagement: 5 open issues for 38,714 stars (0.0%)."
+      "Maintenance cadence: Last push 366 days ago.",
+      "Issue engagement: 5 open issues for 38,712 stars (0.0%)."
     ]
   }
 }

@@ -4,9 +4,17 @@
   "description": "\ud83c\udf29 Self-hosted file management and sharing system, supports multiple storage providers",
   "language": "Go",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 28955,
-  "forks": 3928,
+  "topics": [
+    "file-sharing",
+    "file",
+    "cloud",
+    "file-manager",
+    "cloud-storage",
+    "cloudreve",
+    "golang"
+  ],
+  "stars": 28954,
+  "forks": 3929,
   "open_issues": 133,
   "watchers": 237,
   "created_at": "2018-02-04T04:56:38Z",
@@ -14,27 +22,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/cloudreve.png",
   "radar_score": 70.66,
-  "impact": 96.71,
-  "velocity": 50.64,
+  "impact": 96.72,
+  "velocity": 50.63,
   "health": 56.99,
-  "global_percentile": 22.71,
+  "global_percentile": 21.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "\ud83c\udf29 Self-hosted file management and sharing system, supports multiple storage providers",
   "maturity": "Unknown",
-  "stars_7d": 34,
-  "stars_30d": 128,
-  "stars_90d": 144,
-  "star_growth_rate_7d": 4.857142857142857,
-  "star_growth_rate_30d": 4.413793103448276,
-  "star_growth_acceleration": 1.1004464285714286,
+  "stars_7d": 29,
+  "stars_30d": 126,
+  "stars_90d": 140,
+  "star_growth_rate_7d": 4.142857142857143,
+  "star_growth_rate_30d": 4.2,
+  "star_growth_acceleration": 0.9863945578231293,
   "forks_7d": -6,
-  "forks_30d": 9,
+  "forks_30d": 10,
   "days_since_last_push": 21,
   "freshness_score": 0.8105842459701871,
-  "snapshot_count": 226,
+  "snapshot_count": 227,
   "authenticity": {
-    "organic_confidence": 86.8,
+    "organic_confidence": 86.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "3,928 forks for 28,956 stars (13.6%)."
+        "detail": "3,929 forks for 28,954 stars (13.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.0,
+        "score": 87.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (2 forks, 2.1x the daily average)."
       },
@@ -71,7 +79,7 @@
         "label": "Issue engagement",
         "score": 58.0,
         "weight": 0.12,
-        "detail": "133 open issues for 28,956 stars (0.5%)."
+        "detail": "133 open issues for 28,954 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +90,9 @@
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 21 days ago.",
       "Burst pattern: Largest 24h jump was 9 stars (2 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 3,928 forks for 28,956 stars (13.6%)."
+      "Maintenance cadence: Last push 21 days ago.",
+      "Fork-to-star ratio: 3,929 forks for 28,954 stars (13.6%)."
     ],
     "red_flags": []
   }

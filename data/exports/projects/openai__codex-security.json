@@ -4,54 +4,70 @@
   "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 11370,
+  "topics": [
+    "ai-security",
+    "application-security",
+    "cli",
+    "code-scanning",
+    "codex",
+    "codex-security",
+    "cybersecurity",
+    "devsecops",
+    "nodejs",
+    "npm",
+    "openai",
+    "sdk",
+    "security",
+    "typescript",
+    "vulnerability-scanning"
+  ],
+  "stars": 11398,
   "forks": 914,
   "open_issues": 32,
   "watchers": 37,
   "created_at": "2026-07-13T22:00:13Z",
-  "pushed_at": "2026-11-11T08:36:00Z",
+  "pushed_at": "2026-11-11T10:49:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/openai.png",
   "radar_score": 75.5,
-  "impact": 89.89,
-  "velocity": 67.44,
+  "impact": 89.92,
+  "velocity": 67.43,
   "health": 63.75,
-  "global_percentile": 60.71,
+  "global_percentile": 53.71,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
   "maturity": "Unknown",
-  "stars_7d": 80,
-  "stars_30d": 233,
-  "stars_90d": 233,
-  "star_growth_rate_7d": 11.428571428571429,
-  "star_growth_rate_30d": 10.590909090909092,
-  "star_growth_acceleration": 1.079092581238504,
+  "stars_7d": 105,
+  "stars_30d": 259,
+  "stars_90d": 259,
+  "star_growth_rate_7d": 15.0,
+  "star_growth_rate_30d": 11.772727272727273,
+  "star_growth_acceleration": 1.274131274131274,
   "forks_7d": 11,
-  "forks_30d": -49,
+  "forks_30d": -59,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 313,
+  "snapshot_count": 314,
   "why_trending": "Strong momentum with 100 new stars this week. Above-average growth velocity. High developer adoption with 20 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 85.2,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 74.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 93.0,
+        "score": 92.9,
         "weight": 0.22,
-        "detail": "915 forks for 11,367 stars (8.0%)."
+        "detail": "914 forks for 11,398 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.1,
+        "score": 60.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 20 stars (3 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 47 stars (1 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 49.1,
+        "score": 49.0,
         "weight": 0.12,
-        "detail": "32 open issues for 11,367 stars (0.3%)."
+        "detail": "32 open issues for 11,398 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +99,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 20 stars (3 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 915 forks for 11,367 stars (8.0%).",
+      "Fork-to-star ratio: 914 forks for 11,398 stars (8.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

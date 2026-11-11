@@ -4,18 +4,39 @@
   "description": "Production-grade platform for building agentic IM bots - \u751f\u4ea7\u7ea7\u591a\u5e73\u53f0\u667a\u80fd\u673a\u5668\u4eba\u5f00\u53d1\u5e73\u53f0/ Agent\u3001\u77e5\u8bc6\u5e93\u7f16\u6392\u3001\u63d2\u4ef6\u7cfb\u7edf / Bots for Discord / Slack / LINE / Telegram / WeChat(\u4f01\u4e1a\u5fae\u4fe1, \u4f01\u5fae\u667a\u80fd\u673a\u5668\u4eba, \u516c\u4f17\u53f7) / \u98de\u4e66 / \u9489\u9489 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Kimi, openclaw / hermes agent, deerflow",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 18900,
-  "forks": 1701,
-  "open_issues": 104,
+  "topics": [
+    "qq",
+    "openai",
+    "agent",
+    "llm",
+    "wechat",
+    "telegram",
+    "dify",
+    "discord",
+    "deepseek",
+    "dingtalk",
+    "feishu",
+    "lark",
+    "ollama",
+    "langbot",
+    "n8n",
+    "plugins",
+    "rag",
+    "line",
+    "coze",
+    "kook"
+  ],
+  "stars": 18908,
+  "forks": 1702,
+  "open_issues": 105,
   "watchers": 200,
   "created_at": "2022-12-07T08:48:02Z",
-  "pushed_at": "2026-11-11T08:20:39Z",
+  "pushed_at": "2026-11-11T11:35:21Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/langbot-app.png",
-  "radar_score": 74.87,
+  "radar_score": 74.88,
   "impact": 94.71,
-  "velocity": 60.15,
+  "velocity": 60.17,
   "health": 63.75,
   "global_percentile": 48.29,
   "category": "Local AI",
@@ -23,18 +44,18 @@
   "summary": "Production-grade platform for building agentic IM bots - \u751f\u4ea7\u7ea7\u591a\u5e73\u53f0\u667a\u80fd\u673a\u5668\u4eba\u5f00\u53d1\u5e73\u53f0/ Agent\u3001\u77e5\u8bc6\u5e93\u7f16\u6392\u3001\u63d2\u4ef6\u7cfb\u7edf / Bots for Discord / Slack / LINE / Telegram / WeChat(\u4f01\u4e1a\u5fae\u4fe1, \u4f01\u5fae\u667a\u80fd\u673a\u5668\u4eba, \u516c\u4f17\u53f7) / \u98de\u4e66 / \u9489\u9489 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlo",
   "maturity": "Unknown",
   "stars_7d": 194,
-  "stars_30d": 661,
-  "stars_90d": 661,
+  "stars_30d": 682,
+  "stars_90d": 682,
   "star_growth_rate_7d": 27.714285714285715,
-  "star_growth_rate_30d": 27.541666666666668,
-  "star_growth_acceleration": 1.0062675599740654,
-  "forks_7d": 18,
-  "forks_30d": 8,
+  "star_growth_rate_30d": 28.416666666666668,
+  "star_growth_acceleration": 0.9752827817343946,
+  "forks_7d": 21,
+  "forks_30d": 2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 288,
+  "snapshot_count": 289,
   "authenticity": {
-    "organic_confidence": 89.0,
+    "organic_confidence": 89.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 96.4,
         "weight": 0.22,
-        "detail": "1,699 forks for 18,883 stars (9.0%)."
+        "detail": "1,702 forks for 18,908 stars (9.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.5,
+        "score": 91.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 48 stars (-1 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 48 stars (-1 forks, 1.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.5,
+        "score": 61.7,
         "weight": 0.12,
-        "detail": "104 open issues for 18,883 stars (0.6%)."
+        "detail": "105 open issues for 18,908 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +103,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 48 stars (-1 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 1,699 forks for 18,883 stars (9.0%).",
+      "Burst pattern: Largest 24h jump was 48 stars (-1 forks, 1.8x the daily average).",
+      "Fork-to-star ratio: 1,702 forks for 18,908 stars (9.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

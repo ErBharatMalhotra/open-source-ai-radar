@@ -4,8 +4,15 @@
   "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
-  "stars": 38906,
+  "topics": [
+    "llm",
+    "skill",
+    "localai",
+    "gguf",
+    "mlx",
+    "unsloth"
+  ],
+  "stars": 38910,
   "forks": 2516,
   "open_issues": 34,
   "watchers": 114,
@@ -14,27 +21,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/AlexsJones.png",
   "radar_score": 76.52,
-  "impact": 96.12,
-  "velocity": 67.1,
+  "impact": 96.14,
+  "velocity": 67.06,
   "health": 58.35,
   "global_percentile": 64.43,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Hundreds of models & providers. One command to find what runs on your hardware.",
   "maturity": "Unknown",
-  "stars_7d": 315,
+  "stars_7d": 302,
   "stars_30d": 804,
   "stars_90d": 804,
-  "star_growth_rate_7d": 45.0,
-  "star_growth_rate_30d": 36.54545454545455,
-  "star_growth_acceleration": 1.2313432835820894,
+  "star_growth_rate_7d": 43.142857142857146,
+  "star_growth_rate_30d": 34.95652173913044,
+  "star_growth_acceleration": 1.2341862117981521,
   "forks_7d": 20,
   "forks_30d": 63,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 318,
+  "snapshot_count": 319,
   "authenticity": {
-    "organic_confidence": 79.7,
+    "organic_confidence": 79.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 87.3,
         "weight": 0.22,
-        "detail": "2,514 forks for 38,891 stars (6.5%)."
+        "detail": "2,516 forks for 38,910 stars (6.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.1,
+        "score": 86.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 79 stars (8 forks, 2.2x the daily average)."
       },
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 34.0,
+        "score": 33.7,
         "weight": 0.12,
-        "detail": "35 open issues for 38,891 stars (0.1%)."
+        "detail": "34 open issues for 38,910 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +90,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 79 stars (8 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 2,514 forks for 38,891 stars (6.5%).",
+      "Fork-to-star ratio: 2,516 forks for 38,910 stars (6.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 35 open issues for 38,891 stars (0.1%)."
+      "Issue engagement: 34 open issues for 38,910 stars (0.1%)."
     ]
   }
 }

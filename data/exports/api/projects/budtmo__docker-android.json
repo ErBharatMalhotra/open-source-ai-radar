@@ -4,8 +4,29 @@
   "description": "Android in docker solution with noVNC supported, video recording, mcp server and AI-agent",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 16117,
+  "topics": [
+    "docker-android",
+    "android",
+    "android-emulator",
+    "novnc",
+    "mobile-app",
+    "emulator",
+    "docker",
+    "genymotion",
+    "cloud",
+    "aws",
+    "gcp",
+    "azure",
+    "selenium",
+    "kubernetes",
+    "jenkins",
+    "mcp-server",
+    "mcp",
+    "ai-agent",
+    "ollama",
+    "vllm"
+  ],
+  "stars": 16118,
   "forks": 1784,
   "open_issues": 155,
   "watchers": 182,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-10T15:59:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/budtmo.png",
-  "radar_score": 71.61,
+  "radar_score": 71.62,
   "impact": 94.3,
   "velocity": 53.45,
   "health": 60.75,
-  "global_percentile": 26.86,
+  "global_percentile": 25.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Android in docker solution with noVNC supported, video recording and mcp server",
   "maturity": "Unknown",
-  "stars_7d": 32,
-  "stars_30d": 154,
-  "stars_90d": 154,
-  "star_growth_rate_7d": 4.571428571428571,
-  "star_growth_rate_30d": 5.133333333333334,
-  "star_growth_acceleration": 0.8905380333951761,
-  "forks_7d": 1,
+  "stars_7d": 35,
+  "stars_30d": 160,
+  "stars_90d": 160,
+  "star_growth_rate_7d": 5.0,
+  "star_growth_rate_30d": 5.333333333333333,
+  "star_growth_acceleration": 0.9375,
+  "forks_7d": 0,
   "forks_30d": 24,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 178,
+  "snapshot_count": 179,
   "authenticity": {
-    "organic_confidence": 86.5,
+    "organic_confidence": 86.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "1,784 forks for 16,113 stars (11.1%)."
+        "detail": "1,784 forks for 16,118 stars (11.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.0,
+        "score": 75.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 15 stars (2 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 15 stars (2 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 73.9,
+        "score": 73.8,
         "weight": 0.12,
-        "detail": "155 open issues for 16,113 stars (1.0%)."
+        "detail": "155 open issues for 16,118 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +103,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,784 forks for 16,113 stars (11.1%).",
+      "Burst pattern: Largest 24h jump was 15 stars (2 forks, 2.9x the daily average).",
+      "Fork-to-star ratio: 1,784 forks for 16,118 stars (11.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

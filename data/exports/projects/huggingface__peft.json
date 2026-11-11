@@ -4,8 +4,19 @@
   "description": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 21884,
+  "topics": [
+    "adapter",
+    "diffusion",
+    "llm",
+    "parameter-efficient-learning",
+    "python",
+    "pytorch",
+    "transformers",
+    "lora",
+    "fine-tuning",
+    "peft"
+  ],
+  "stars": 21883,
   "forks": 2657,
   "open_issues": 61,
   "watchers": 114,
@@ -13,28 +24,28 @@
   "pushed_at": "2026-11-11T05:59:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/huggingface.png",
-  "radar_score": 75.5,
+  "radar_score": 75.48,
   "impact": 94.94,
-  "velocity": 61.68,
+  "velocity": 61.62,
   "health": 63.75,
-  "global_percentile": 54.0,
+  "global_percentile": 53.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "maturity": "Unknown",
-  "stars_7d": 16,
+  "stars_7d": 11,
   "stars_30d": 103,
   "stars_90d": 110,
-  "star_growth_rate_7d": 2.2857142857142856,
+  "star_growth_rate_7d": 1.5714285714285714,
   "star_growth_rate_30d": 3.433333333333333,
-  "star_growth_acceleration": 0.665742024965326,
-  "forks_7d": 13,
-  "forks_30d": 88,
+  "star_growth_acceleration": 0.4576976421636616,
+  "forks_7d": 12,
+  "forks_30d": 85,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 237,
+  "snapshot_count": 238,
   "authenticity": {
-    "organic_confidence": 78.0,
+    "organic_confidence": 77.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "2,657 forks for 21,881 stars (12.1%)."
+        "detail": "2,657 forks for 21,883 stars (12.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 63.4,
+        "score": 63.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 14 stars (2 forks, 4.0x the daily average)."
       },
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 49.6,
+        "score": 48.9,
         "weight": 0.12,
-        "detail": "64 open issues for 21,881 stars (0.3%)."
+        "detail": "61 open issues for 21,883 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +93,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,657 forks for 21,881 stars (12.1%).",
+      "Fork-to-star ratio: 2,657 forks for 21,883 stars (12.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

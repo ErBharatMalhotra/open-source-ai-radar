@@ -4,7 +4,28 @@
   "description": "Semantic segmentation models with 500+ pretrained convolutional and transformer-based backbones.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "segmentation",
+    "image-processing",
+    "pspnet",
+    "unet",
+    "unet-pytorch",
+    "pytorch",
+    "fpn",
+    "models",
+    "imagenet",
+    "semantic-segmentation",
+    "image-segmentation",
+    "segmentation-models",
+    "unetplusplus",
+    "deeplabv3",
+    "deeplab-v3-plus",
+    "pretrained-weights",
+    "computer-vision",
+    "segformer",
+    "transformers",
+    "dpt"
+  ],
   "stars": 11804,
   "forks": 1853,
   "open_issues": 71,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-09T07:47:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/qubvel-org.png",
-  "radar_score": 71.63,
-  "impact": 92.46,
-  "velocity": 53.72,
-  "health": 63.38,
-  "global_percentile": 27.0,
+  "radar_score": 71.02,
+  "impact": 92.47,
+  "velocity": 52.22,
+  "health": 63.01,
+  "global_percentile": 21.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Semantic segmentation models with 500+ pretrained convolutional and transformer-based backbones.",
   "maturity": "Unknown",
-  "stars_7d": 12,
-  "stars_30d": 46,
-  "stars_90d": 82,
-  "star_growth_rate_7d": 1.7142857142857142,
-  "star_growth_rate_30d": 1.5862068965517242,
-  "star_growth_acceleration": 1.0807453416149067,
+  "stars_7d": 13,
+  "stars_30d": 47,
+  "stars_90d": 76,
+  "star_growth_rate_7d": 1.8571428571428572,
+  "star_growth_rate_30d": 1.6206896551724137,
+  "star_growth_acceleration": 1.1458966565349544,
   "forks_7d": 2,
   "forks_30d": 9,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 106,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 107,
   "authenticity": {
-    "organic_confidence": 83.4,
+    "organic_confidence": 82.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "1,853 forks for 11,803 stars (15.7%)."
+        "detail": "1,853 forks for 11,804 stars (15.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.7,
+        "score": 71.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (2 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (-1 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,19 +92,19 @@
         "label": "Issue engagement",
         "score": 63.0,
         "weight": 0.12,
-        "detail": "71 open issues for 11,803 stars (0.6%)."
+        "detail": "71 open issues for 11,804 stars (0.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,853 forks for 11,803 stars (15.7%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Maintenance cadence: Last push 2 days ago.",
+      "Fork-to-star ratio: 1,853 forks for 11,804 stars (15.7%)."
     ],
     "red_flags": []
   }

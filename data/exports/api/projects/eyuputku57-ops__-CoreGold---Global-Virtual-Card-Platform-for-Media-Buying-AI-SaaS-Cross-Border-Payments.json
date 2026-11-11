@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u4e13\u4e3a\u8de8\u5883\u7535\u5546\u72ec\u7acb\u7ad9\u3001\u6d77\u5916\u5e7f\u544a\u6295\u653e\uff08FB / TikTok / Google\uff09\u53ca AI SaaS \u8ba2\u9605\u91cf\u8eab\u6253\u9020\u7684\u4f01\u4e1a\u7ea7 Visa / Mastercard \u865a\u62df\u4fe1\u7528\u5361\u5e73\u53f0\u3002\u652f\u6301 USDT \u6781\u901f\u5145\u503c\u5f00\u5361\u3001\u591a\u5361\u9694\u79bb\u9632\u5173\u8054\u3001\u5355\u5546\u6237\u9501\u5b9a\u4e0e\u81ea\u5b9a\u4e49\u9650\u989d\uff0c\u89e3\u51b3\u62d2\u4ed8\u3001\u98ce\u63a7\u4e0e\u6d77\u5916\u652f\u4ed8\u96be\u9898\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 30.2,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 101 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 101 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 14 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 101 stars (0.0%).",
+      "Issue engagement: 0 open issues for 101 stars (0.0%)."
+    ]
+  }
 }

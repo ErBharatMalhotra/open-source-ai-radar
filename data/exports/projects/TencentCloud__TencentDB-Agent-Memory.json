@@ -4,8 +4,18 @@
   "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents \u2014 turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 30775,
+  "topics": [
+    "agent",
+    "llm",
+    "memory",
+    "openclaw-plugin",
+    "ai-agent",
+    "embedding",
+    "local-first",
+    "long-term-memory",
+    "vector-search"
+  ],
+  "stars": 30781,
   "forks": 3002,
   "open_issues": 308,
   "watchers": 88,
@@ -13,26 +23,26 @@
   "pushed_at": "2026-11-10T13:27:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/TencentCloud.png",
-  "radar_score": 77.92,
-  "impact": 95.45,
+  "radar_score": 77.91,
+  "impact": 95.44,
   "velocity": 70.14,
   "health": 60.75,
-  "global_percentile": 82.0,
+  "global_percentile": 79.43,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "TencentDB Agent Memory is a team-level memory hub for AI Agents \u2014 turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "maturity": "Unknown",
-  "stars_7d": 393,
-  "stars_30d": 1456,
-  "stars_90d": 1456,
-  "star_growth_rate_7d": 56.142857142857146,
-  "star_growth_rate_30d": 58.24,
-  "star_growth_acceleration": 0.9639913657770801,
+  "stars_7d": 388,
+  "stars_30d": 1445,
+  "stars_90d": 1445,
+  "star_growth_rate_7d": 55.42857142857143,
+  "star_growth_rate_30d": 57.8,
+  "star_growth_acceleration": 0.9589718240237273,
   "forks_7d": 54,
-  "forks_30d": 138,
+  "forks_30d": 134,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 300,
+  "snapshot_count": 301,
   "authenticity": {
     "organic_confidence": 71.2,
     "verdict": "likely_organic",
@@ -43,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "3,000 forks for 30,756 stars (9.8%)."
+        "detail": "3,002 forks for 30,781 stars (9.8%)."
       },
       {
         "key": "burst",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 74.9,
+        "score": 75.0,
         "weight": 0.12,
-        "detail": "307 open issues for 30,756 stars (1.0%)."
+        "detail": "308 open issues for 30,781 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,000 forks for 30,756 stars (9.8%).",
+      "Issue engagement: 308 open issues for 30,781 stars (1.0%).",
+      "Fork-to-star ratio: 3,002 forks for 30,781 stars (9.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

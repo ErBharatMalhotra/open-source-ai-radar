@@ -4,7 +4,17 @@
   "description": "Unified framework for building enterprise RAG pipelines with small, specialized models",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "parsing",
+    "retrieval-augmented-generation",
+    "agents",
+    "generative-ai-tools",
+    "llamacpp",
+    "llm",
+    "small-specialized-models",
+    "onnx",
+    "openvino"
+  ],
   "stars": 14822,
   "forks": 2925,
   "open_issues": 73,
@@ -17,22 +27,22 @@
   "impact": 93.08,
   "velocity": 51.68,
   "health": 52.47,
-  "global_percentile": 15.86,
+  "global_percentile": 14.0,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Unified framework for building enterprise RAG pipelines with small, specialized models",
   "maturity": "Unknown",
-  "stars_7d": 5,
-  "stars_30d": 1,
-  "stars_90d": -25,
-  "star_growth_rate_7d": 0.7142857142857143,
-  "star_growth_rate_30d": 0.034482758620689655,
-  "star_growth_acceleration": 20.714285714285715,
-  "forks_7d": 0,
-  "forks_30d": -4,
+  "stars_7d": 3,
+  "stars_30d": 0,
+  "stars_90d": -26,
+  "star_growth_rate_7d": 0.42857142857142855,
+  "star_growth_rate_30d": 0.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": -2,
+  "forks_30d": -5,
   "days_since_last_push": 40,
   "freshness_score": 0.6703200460356393,
-  "snapshot_count": 119,
+  "snapshot_count": 120,
   "authenticity": {
     "organic_confidence": 76.8,
     "verdict": "likely_organic",
@@ -43,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.1,
         "weight": 0.22,
-        "detail": "2,926 forks for 14,823 stars (19.7%)."
+        "detail": "2,925 forks for 14,822 stars (19.7%)."
       },
       {
         "key": "burst",
@@ -71,7 +81,7 @@
         "label": "Issue engagement",
         "score": 59.6,
         "weight": 0.12,
-        "detail": "73 open issues for 14,823 stars (0.5%)."
+        "detail": "73 open issues for 14,822 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +93,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 40 days ago.",
-      "Fork-to-star ratio: 2,926 forks for 14,823 stars (19.7%)."
+      "Fork-to-star ratio: 2,925 forks for 14,822 stars (19.7%)."
     ],
     "red_flags": []
   }

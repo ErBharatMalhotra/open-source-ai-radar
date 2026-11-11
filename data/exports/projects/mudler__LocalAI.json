@@ -4,8 +4,27 @@
   "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 50310,
+  "topics": [
+    "llama",
+    "ai",
+    "llm",
+    "stable-diffusion",
+    "api",
+    "tts",
+    "musicgen",
+    "mamba",
+    "audio-generation",
+    "image-generation",
+    "text-generation",
+    "rerank",
+    "distributed",
+    "libp2p",
+    "decentralized",
+    "object-detection",
+    "mcp",
+    "agents"
+  ],
+  "stars": 50312,
   "forks": 4592,
   "open_issues": 101,
   "watchers": 298,
@@ -15,26 +34,26 @@
   "owner_avatar": "https://github.com/mudler.png",
   "radar_score": 78.15,
   "impact": 98.05,
-  "velocity": 65.68,
+  "velocity": 65.69,
   "health": 63.75,
-  "global_percentile": 84.0,
+  "global_percentile": 82.14,
   "category": "AI Infrastructure",
   "sub_category": "gpu management",
   "summary": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
   "maturity": "Unknown",
-  "stars_7d": 152,
-  "stars_30d": 635,
-  "stars_90d": 635,
-  "star_growth_rate_7d": 21.714285714285715,
-  "star_growth_rate_30d": 28.863636363636363,
-  "star_growth_acceleration": 0.7523059617547807,
-  "forks_7d": 20,
-  "forks_30d": 81,
+  "stars_7d": 139,
+  "stars_30d": 609,
+  "stars_90d": 609,
+  "star_growth_rate_7d": 19.857142857142858,
+  "star_growth_rate_30d": 27.681818181818183,
+  "star_growth_acceleration": 0.7173352099460474,
+  "forks_7d": 18,
+  "forks_30d": 80,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 315,
+  "snapshot_count": 316,
   "authenticity": {
-    "organic_confidence": 73.2,
+    "organic_confidence": 73.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +62,14 @@
         "label": "Fork-to-star ratio",
         "score": 96.9,
         "weight": 0.22,
-        "detail": "4,590 forks for 50,298 stars (9.1%)."
+        "detail": "4,592 forks for 50,312 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 54.6,
+        "score": 55.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 131 stars (14 forks, 4.8x the daily average)."
+        "detail": "Largest 24h jump was 131 stars (14 forks, 4.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +88,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 44.9,
+        "score": 45.0,
         "weight": 0.12,
-        "detail": "100 open issues for 50,298 stars (0.2%)."
+        "detail": "101 open issues for 50,312 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +101,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,590 forks for 50,298 stars (9.1%).",
+      "Fork-to-star ratio: 4,592 forks for 50,312 stars (9.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

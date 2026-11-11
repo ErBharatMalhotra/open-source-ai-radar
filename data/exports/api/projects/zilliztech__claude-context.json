@@ -4,7 +4,28 @@
   "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "agent",
+    "agentic-rag",
+    "ai-coding",
+    "code-search",
+    "cursor",
+    "embedding",
+    "mcp",
+    "nodejs",
+    "openai",
+    "rag",
+    "semantic-search",
+    "typescript",
+    "vector-database",
+    "vibe-coding",
+    "voyage-ai",
+    "vscode-extension",
+    "merkle-tree",
+    "code-generation",
+    "claude-code",
+    "gemini-cli"
+  ],
   "stars": 12687,
   "forks": 939,
   "open_issues": 80,
@@ -13,42 +34,42 @@
   "pushed_at": "2026-11-11T08:05:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/zilliztech.png",
-  "radar_score": 65.09,
-  "impact": 90.96,
-  "velocity": 51.33,
-  "health": 42.94,
-  "global_percentile": 10.71,
+  "radar_score": 74.85,
+  "impact": 90.97,
+  "velocity": 64.36,
+  "health": 63.75,
+  "global_percentile": 47.71,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
   "maturity": "Unknown",
-  "stars_7d": 19,
+  "stars_7d": 20,
   "stars_30d": 87,
-  "stars_90d": 105,
-  "star_growth_rate_7d": 2.7142857142857144,
+  "stars_90d": 103,
+  "star_growth_rate_7d": 2.857142857142857,
   "star_growth_rate_30d": 2.9,
-  "star_growth_acceleration": 0.935960591133005,
+  "star_growth_acceleration": 0.9852216748768473,
   "forks_7d": 0,
   "forks_30d": -4,
-  "days_since_last_push": 119,
-  "freshness_score": 0.3042212640667041,
-  "snapshot_count": 185,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 186,
   "authenticity": {
-    "organic_confidence": 78.9,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 84.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 90.6,
         "weight": 0.22,
-        "detail": "939 forks for 12,686 stars (7.4%)."
+        "detail": "939 forks for 12,687 stars (7.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.6,
+        "score": 82.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 7 stars (1 forks, 2.5x the daily average)."
       },
@@ -69,21 +90,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 64.2,
+        "score": 63.9,
         "weight": 0.12,
-        "detail": "81 open issues for 12,686 stars (0.6%)."
+        "detail": "80 open issues for 12,687 stars (0.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 61.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 119 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 7 stars (1 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 939 forks for 12,686 stars (7.4%)."
+      "Fork-to-star ratio: 939 forks for 12,687 stars (7.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

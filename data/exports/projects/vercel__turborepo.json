@@ -4,7 +4,13 @@
   "description": "The build system for coding agents.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "monorepo",
+    "javascript",
+    "typescript",
+    "build-tool",
+    "build-system"
+  ],
   "stars": 31326,
   "forks": 2491,
   "open_issues": 2,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-11T06:34:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vercel.png",
-  "radar_score": 71.38,
-  "impact": 95.93,
-  "velocity": 52.64,
+  "radar_score": 71.98,
+  "impact": 95.94,
+  "velocity": 54.33,
   "health": 58.35,
-  "global_percentile": 31.0,
+  "global_percentile": 28.29,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "The build system for coding agents.",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 16,
-  "stars_90d": 16,
-  "star_growth_rate_7d": 3.2,
-  "star_growth_rate_30d": 3.2,
+  "stars_7d": 19,
+  "stars_30d": 19,
+  "stars_90d": 19,
+  "star_growth_rate_7d": 3.8,
+  "star_growth_rate_30d": 3.8,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 12,
-  "forks_30d": 12,
+  "forks_7d": 14,
+  "forks_30d": 14,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 15,
+  "snapshot_count": 16,
   "authenticity": {
-    "organic_confidence": 82.3,
+    "organic_confidence": 82.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +49,14 @@
         "label": "Fork-to-star ratio",
         "score": 92.6,
         "weight": 0.22,
-        "detail": "2,489 forks for 31,323 stars (7.9%)."
+        "detail": "2,491 forks for 31,326 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.9,
+        "score": 95.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (3 forks, 1.6x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (3 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25.3,
+        "score": 25.6,
         "weight": 0.12,
-        "detail": "1 open issues for 31,323 stars (0.0%)."
+        "detail": "2 open issues for 31,326 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +88,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,489 forks for 31,323 stars (7.9%).",
-      "Burst pattern: Largest 24h jump was 5 stars (3 forks, 1.6x the daily average).",
+      "Fork-to-star ratio: 2,491 forks for 31,326 stars (8.0%).",
+      "Burst pattern: Largest 24h jump was 5 stars (3 forks, 1.5x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 31,323 stars (0.0%)."
+      "Issue engagement: 2 open issues for 31,326 stars (0.0%)."
     ]
   }
 }

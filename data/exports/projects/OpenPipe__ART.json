@@ -4,37 +4,47 @@
   "description": "Agent Reinforcement Trainer: train multi-step agents for real-world tasks using GRPO. Give your agents on-the-job training. Reinforcement learning for Qwen3.6, GPT-OSS, Llama, and more!",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "llms",
+    "lora",
+    "reinforcement-learning",
+    "agent",
+    "agentic-ai",
+    "grpo",
+    "rl",
+    "qwen",
+    "qwen3"
+  ],
   "stars": 10852,
-  "forks": 1015,
+  "forks": 1016,
   "open_issues": 84,
   "watchers": 65,
   "created_at": "2025-03-10T18:25:47Z",
   "pushed_at": "2026-11-10T22:06:53Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OpenPipe.png",
-  "radar_score": 74.16,
-  "impact": 90.93,
+  "radar_score": 74.17,
+  "impact": 90.94,
   "velocity": 62.44,
   "health": 63.75,
-  "global_percentile": 50.86,
+  "global_percentile": 42.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Agent Reinforcement Trainer: train multi-step agents for real-world tasks using GRPO. Give your agents on-the-job training. Reinforcement learning for Qwen3.6, GPT-OSS, Llama, and more!",
   "maturity": "Unknown",
   "stars_7d": 14,
-  "stars_30d": 59,
-  "stars_90d": 71,
+  "stars_30d": 60,
+  "stars_90d": 70,
   "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 1.9666666666666666,
-  "star_growth_acceleration": 1.0169491525423728,
-  "forks_7d": 5,
-  "forks_30d": 11,
+  "star_growth_rate_30d": 2.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 6,
+  "forks_30d": 12,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 222,
+  "snapshot_count": 223,
   "authenticity": {
-    "organic_confidence": 87.2,
+    "organic_confidence": 88.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.7,
         "weight": 0.22,
-        "detail": "1,015 forks for 10,852 stars (9.4%)."
+        "detail": "1,016 forks for 10,852 stars (9.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.8,
+        "score": 81.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (0 forks, 2.5x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (0 forks, 2.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -62,9 +72,9 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 95.0,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.00x the monthly baseline."
       },
       {
         "key": "engagement",
@@ -82,9 +92,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 5 stars (0 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 1,015 forks for 10,852 stars (9.4%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 5 stars (0 forks, 2.6x the daily average).",
+      "Growth acceleration: Weekly growth is 1.00x the monthly baseline.",
+      "Fork-to-star ratio: 1,016 forks for 10,852 stars (9.4%)."
     ],
     "red_flags": []
   }

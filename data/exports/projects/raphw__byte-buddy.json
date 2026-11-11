@@ -4,7 +4,15 @@
   "description": "Runtime code generation for the Java virtual machine.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "java",
+    "java-agent",
+    "java-virtual-machine",
+    "byte-code",
+    "instrumentation",
+    "dynamic-proxy",
+    "java-library"
+  ],
   "stars": 6901,
   "forks": 852,
   "open_issues": 18,
@@ -13,28 +21,28 @@
   "pushed_at": "2026-11-10T00:10:38Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/raphw.png",
-  "radar_score": 66.23,
-  "impact": 90.21,
-  "velocity": 41.62,
-  "health": 62.29,
-  "global_percentile": 11.86,
+  "radar_score": 67.82,
+  "impact": 90.24,
+  "velocity": 45.38,
+  "health": 63.38,
+  "global_percentile": 16.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "Runtime code generation for the Java virtual machine.",
   "maturity": "Unknown",
-  "stars_7d": -1,
-  "stars_30d": 3,
-  "stars_90d": 19,
-  "star_growth_rate_7d": -0.3333333333333333,
-  "star_growth_rate_30d": 0.10714285714285714,
-  "star_growth_acceleration": -3.111111111111111,
+  "stars_7d": 0,
+  "stars_30d": 5,
+  "stars_90d": 20,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 0.17857142857142858,
+  "star_growth_acceleration": 0.0,
   "forks_7d": -1,
   "forks_30d": 0,
-  "days_since_last_push": 4,
-  "freshness_score": 0.9607894391523232,
-  "snapshot_count": 41,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 42,
   "authenticity": {
-    "organic_confidence": 90.7,
+    "organic_confidence": 90.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -76,15 +84,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
+      "Maintenance cadence: Last push 1 days ago.",
       "Fork-to-star ratio: 852 forks for 6,901 stars (12.3%).",
-      "Burst pattern: Largest 24h jump was 1 stars (1 forks, 1.0x the daily average).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 1 stars (1 forks, 1.0x the daily average)."
     ],
     "red_flags": []
   }

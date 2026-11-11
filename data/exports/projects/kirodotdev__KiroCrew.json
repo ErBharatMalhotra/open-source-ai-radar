@@ -35,7 +35,7 @@
   "snapshot_count": 14,
   "why_trending": "Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 95.8,
+    "organic_confidence": 98.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -49,9 +49,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "No single-day star surge in the last 30 days."
+        "detail": "Not enough snapshots yet."
       },
       {
         "key": "alignment",
@@ -83,9 +83,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: No single-day star surge in the last 30 days.",
       "Fork-to-star ratio: 1,010 forks for 4,878 stars (20.7%).",
-      "Issue engagement: 1,729 open issues for 4,878 stars (35.4%)."
+      "Issue engagement: 1,729 open issues for 4,878 stars (35.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u4e13\u4e3a\u9ad8\u9891\u6295\u653e\u4e0e\u8de8\u5883\u7535\u5546\u8bbe\u8ba1\u7684\u9632\u5c01\u7ea7 Visa / Mastercard \u865a\u62df\u4fe1\u7528\u5361\u8d44\u4ea7\u5e73\u53f0\u3002\u76f4\u8fde\u4e00\u624b\u4e2d\u7ee7\u6e05\u7b97\u7f51\u7edc\uff0c\u4e3b\u6253 0 \u9884\u4ed8\u95e8\u69db\u3001\u5355\u5361\u5373\u65f6\u9500\u6bc1\u3001\u591a\u5361\u6bb5\u4ea4\u53c9\u8f6e\u6362\u4e0e\u8d26\u5355 0 \u6ea2\u6263\uff0c\u4e13\u6cbb FB/TikTok \u62d2\u4ed8\u5c01\u53f7\u4e0e\u5e97\u94fa\u8d44\u91d1\u98ce\u63a7\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 30.2,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 106 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 106 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 14 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 106 stars (0.0%).",
+      "Issue engagement: 0 open issues for 106 stars (0.0%)."
+    ]
+  }
 }

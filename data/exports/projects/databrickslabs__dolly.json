@@ -4,8 +4,13 @@
   "description": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10805,
+  "topics": [
+    "databricks",
+    "gpt",
+    "chatbot",
+    "dolly"
+  ],
+  "stars": 10806,
   "forks": 1128,
   "open_issues": 5,
   "watchers": 132,
@@ -13,11 +18,11 @@
   "pushed_at": "2023-06-30T18:36:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/databrickslabs.png",
-  "radar_score": 58.42,
+  "radar_score": 58.43,
   "impact": 92.13,
-  "velocity": 37.8,
+  "velocity": 37.81,
   "health": 33.35,
-  "global_percentile": 1.86,
+  "global_percentile": 0.0,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
@@ -30,9 +35,9 @@
   "star_growth_acceleration": 1.0,
   "forks_7d": 0,
   "forks_30d": 0,
-  "days_since_last_push": 1229,
-  "freshness_score": 4.597490255461654e-06,
-  "snapshot_count": 31,
+  "days_since_last_push": 1230,
+  "freshness_score": 4.551744463083231e-06,
+  "snapshot_count": 32,
   "authenticity": {
     "organic_confidence": 76.5,
     "verdict": "likely_organic",
@@ -78,7 +83,7 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 1229 days ago."
+        "detail": "Last push 1230 days ago."
       }
     ],
     "reasons": [
@@ -86,7 +91,7 @@
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 1229 days ago.",
+      "Maintenance cadence: Last push 1230 days ago.",
       "Issue engagement: 5 open issues for 10,806 stars (0.0%)."
     ]
   }

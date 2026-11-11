@@ -4,38 +4,59 @@
   "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
   "language": "C",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 11816,
-  "forks": 1825,
+  "topics": [
+    "avx2",
+    "c99",
+    "cpu-inference",
+    "deep-learning",
+    "from-scratch",
+    "inference-engine",
+    "kimi-k3",
+    "linear-attention",
+    "llm",
+    "llm-inference",
+    "machine-learning",
+    "memory-efficient",
+    "mixture-of-experts",
+    "moe",
+    "mxfp4",
+    "quantization",
+    "simd",
+    "systems-programming",
+    "transformer",
+    "zero-dependencies"
+  ],
+  "stars": 11825,
+  "forks": 1827,
   "open_issues": 2,
   "watchers": 103,
   "created_at": "2026-08-01T09:29:38Z",
   "pushed_at": "2026-10-02T04:51:44Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/FareedKhan-dev.png",
-  "radar_score": 67.2,
-  "impact": 92.73,
-  "velocity": 52.41,
+  "radar_score": 67.23,
+  "impact": 92.78,
+  "velocity": 52.42,
   "health": 47.07,
-  "global_percentile": 8.86,
+  "global_percentile": 10.71,
   "category": "AI Infrastructure",
   "sub_category": "model serving",
   "summary": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
   "maturity": "Unknown",
-  "stars_7d": 1896,
-  "stars_30d": 2797,
-  "stars_90d": 2908,
-  "star_growth_rate_7d": 270.85714285714283,
-  "star_growth_rate_30d": 93.23333333333333,
-  "star_growth_acceleration": 2.905153480770213,
-  "forks_7d": 229,
-  "forks_30d": 346,
+  "stars_7d": 1935,
+  "stars_30d": 2829,
+  "stars_90d": 2944,
+  "star_growth_rate_7d": 276.42857142857144,
+  "star_growth_rate_30d": 94.3,
+  "star_growth_acceleration": 2.931374034237237,
+  "forks_7d": 235,
+  "forks_30d": 351,
   "days_since_last_push": 40,
   "freshness_score": 0.6703200460356393,
-  "snapshot_count": 188,
+  "snapshot_count": 189,
   "why_trending": "Strong momentum with 465 new stars this week. Above-average growth velocity. High developer adoption with 65 new forks this week. Active in the AI Infrastructure category.",
   "authenticity": {
-    "organic_confidence": 69.2,
+    "organic_confidence": 69.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -44,12 +65,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "1,821 forks for 11,786 stars (15.5%)."
+        "detail": "1,827 forks for 11,825 stars (15.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 57.7,
+        "score": 58.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 421 stars (57 forks, 4.5x the daily average)."
       },
@@ -72,7 +93,7 @@
         "label": "Issue engagement",
         "score": 26.7,
         "weight": 0.12,
-        "detail": "2 open issues for 11,786 stars (0.0%)."
+        "detail": "2 open issues for 11,825 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -84,10 +105,10 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 40 days ago.",
-      "Fork-to-star ratio: 1,821 forks for 11,786 stars (15.5%)."
+      "Fork-to-star ratio: 1,827 forks for 11,825 stars (15.5%)."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 11,786 stars (0.0%)."
+      "Issue engagement: 2 open issues for 11,825 stars (0.0%)."
     ]
   }
 }

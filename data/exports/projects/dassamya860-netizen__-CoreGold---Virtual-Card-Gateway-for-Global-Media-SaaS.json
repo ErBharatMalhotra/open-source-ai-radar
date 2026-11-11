@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u76f4\u8fde\u6d77\u5916\u4e00\u7ea7\u94f6\u884c\u6e05\u7b97\u7f51\u5173\u7684\u4f01\u4e1a\u7ea7 Visa / Mastercard \u865a\u62df\u4fe1\u7528\u5361\uff08VCC\uff09\u5e73\u53f0\u3002\u652f\u6301 USDT \u6781\u901f\u5145\u503c\u5373\u65f6\u6279\u5361\u3001\u591a\u8d26\u53f7\u7269\u7406\u9694\u79bb\u3001\u5355\u5361\u5546\u6237\u6307\u7eb9\u9501\u5b9a\u4e0e\u4f59\u989d\u79d2\u7ea7\u56de\u6d41\uff0c\u4e13\u6cbb\u6d77\u5916\u5e7f\u544a\u6295\u653e\u62d2\u4ed8\u3001\u5e97\u94fa\u8fde\u5750\u5c01\u7981\u53ca SaaS \u610f\u5916\u6263\u8d39\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 30.2,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 103 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 103 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 14 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 103 stars (0.0%).",
+      "Issue engagement: 0 open issues for 103 stars (0.0%)."
+    ]
+  }
 }

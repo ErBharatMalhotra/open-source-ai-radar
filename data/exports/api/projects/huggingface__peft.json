@@ -4,7 +4,18 @@
   "description": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "adapter",
+    "diffusion",
+    "llm",
+    "parameter-efficient-learning",
+    "python",
+    "pytorch",
+    "transformers",
+    "lora",
+    "fine-tuning",
+    "peft"
+  ],
   "stars": 21886,
   "forks": 2659,
   "open_issues": 63,
@@ -17,24 +28,24 @@
   "impact": 94.93,
   "velocity": 61.67,
   "health": 63.75,
-  "global_percentile": 54.43,
+  "global_percentile": 54.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\ud83e\udd17 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
   "maturity": "Unknown",
-  "stars_7d": 12,
-  "stars_30d": 104,
+  "stars_7d": 11,
+  "stars_30d": 106,
   "stars_90d": 108,
-  "star_growth_rate_7d": 1.7142857142857142,
-  "star_growth_rate_30d": 3.466666666666667,
-  "star_growth_acceleration": 0.49450549450549447,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 3.533333333333333,
+  "star_growth_acceleration": 0.444743935309973,
   "forks_7d": 13,
-  "forks_30d": 86,
+  "forks_30d": 87,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 239,
+  "snapshot_count": 240,
   "authenticity": {
-    "organic_confidence": 77.9,
+    "organic_confidence": 78.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "2,658 forks for 21,884 stars (12.1%)."
+        "detail": "2,659 forks for 21,886 stars (12.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 63.2,
+        "score": 63.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 14 stars (2 forks, 4.0x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 49.4,
         "weight": 0.12,
-        "detail": "63 open issues for 21,884 stars (0.3%)."
+        "detail": "63 open issues for 21,886 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +93,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,658 forks for 21,884 stars (12.1%).",
+      "Fork-to-star ratio: 2,659 forks for 21,886 stars (12.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

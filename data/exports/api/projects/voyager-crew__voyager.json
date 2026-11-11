@@ -4,7 +4,21 @@
   "description": "Enhancement suite for Gemini, AI Studio, Claude, ChatGPT & DeepSeek \u2014 plus a prompt manager for any website, DeepSeek Harness included. / \u9762\u5411 Gemini\u3001AI Studio\u3001Claude\u3001ChatGPT \u4e0e DeepSeek \u7684\u589e\u5f3a\u5957\u4ef6\uff1b\u5176\u4e2d\u7684\u63d0\u793a\u8bcd\u7ba1\u7406\u5668\u53ef\u7528\u4e8e\u4efb\u610f\u7f51\u7ad9\uff0c\u5982 DeepSeek Harness\u3002",
   "language": "TypeScript",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "chat-management",
+    "chrome-extension",
+    "gemini",
+    "ai-studio",
+    "safari-extension",
+    "bun",
+    "edge-addon",
+    "firefox-addons",
+    "browser-extension",
+    "chatgpt",
+    "claude-ai",
+    "deepseek",
+    "dsh"
+  ],
   "stars": 20602,
   "forks": 698,
   "open_issues": 1,
@@ -13,28 +27,28 @@
   "pushed_at": "2026-11-11T19:28:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/voyager-crew.png",
-  "radar_score": 69.21,
-  "impact": 89.92,
-  "velocity": 56.55,
+  "radar_score": 68.62,
+  "impact": 89.91,
+  "velocity": 54.86,
   "health": 53.8,
-  "global_percentile": 16.43,
+  "global_percentile": 15.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Enhancement suite for Gemini, AI Studio, Claude, ChatGPT & DeepSeek \u2014 plus a prompt manager for any website, DeepSeek Harness included. / \u9762\u5411 Gemini\u3001AI Studio\u3001Claude\u3001ChatGPT \u4e0e DeepSeek \u7684\u589e\u5f3a\u5957\u4ef6\uff1b\u5176\u4e2d\u7684\u63d0\u793a\u8bcd\u7ba1\u7406\u5668\u53ef\u7528\u4e8e\u4efb\u610f\u7f51\u7ad9\uff0c\u5982 DeepSeek Harness\u3002",
   "maturity": "Unknown",
-  "stars_7d": 63,
-  "stars_30d": 237,
-  "stars_90d": 263,
-  "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 8.172413793103448,
-  "star_growth_acceleration": 1.10126582278481,
+  "stars_7d": 64,
+  "stars_30d": 243,
+  "stars_90d": 270,
+  "star_growth_rate_7d": 9.142857142857142,
+  "star_growth_rate_30d": 8.1,
+  "star_growth_acceleration": 1.128747795414462,
   "forks_7d": 8,
   "forks_30d": 15,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 128,
+  "snapshot_count": 129,
   "authenticity": {
-    "organic_confidence": 74.4,
+    "organic_confidence": 74.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +57,12 @@
         "label": "Fork-to-star ratio",
         "score": 71.3,
         "weight": 0.22,
-        "detail": "698 forks for 20,596 stars (3.4%)."
+        "detail": "698 forks for 20,602 stars (3.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.1,
+        "score": 91.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 15 stars (0 forks, 1.9x the daily average)."
       },
@@ -69,24 +83,24 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 26.0,
+        "score": 25.5,
         "weight": 0.12,
-        "detail": "2 open issues for 20,596 stars (0.0%)."
+        "detail": "1 open issues for 20,602 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 15 stars (0 forks, 1.9x the daily average).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 20,596 stars (0.0%)."
+      "Issue engagement: 1 open issues for 20,602 stars (0.0%)."
     ]
   }
 }

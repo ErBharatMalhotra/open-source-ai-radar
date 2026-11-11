@@ -4,7 +4,20 @@
   "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "cloudflare-pages",
+    "cloudflare-workers",
+    "drizzle-orm",
+    "tailwindcss",
+    "typescript",
+    "cloudflare-kv",
+    "postgres",
+    "remix",
+    "vite",
+    "agent-memory",
+    "ai-memory",
+    "memory"
+  ],
   "stars": 31595,
   "forks": 2771,
   "open_issues": 20,
@@ -13,28 +26,28 @@
   "pushed_at": "2026-11-11T06:38:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/supermemoryai.png",
-  "radar_score": 75.04,
-  "impact": 95.64,
-  "velocity": 63.41,
+  "radar_score": 75.01,
+  "impact": 95.65,
+  "velocity": 63.33,
   "health": 58.35,
-  "global_percentile": 50.43,
+  "global_percentile": 50.0,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
   "maturity": "Unknown",
-  "stars_7d": 74,
+  "stars_7d": 69,
   "stars_30d": 341,
   "stars_90d": 341,
-  "star_growth_rate_7d": 10.571428571428571,
+  "star_growth_rate_7d": 9.857142857142858,
   "star_growth_rate_30d": 13.64,
-  "star_growth_acceleration": 0.7750314201927104,
+  "star_growth_acceleration": 0.7226644323418517,
   "forks_7d": 5,
   "forks_30d": 22,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 280,
+  "snapshot_count": 281,
   "authenticity": {
-    "organic_confidence": 82.8,
+    "organic_confidence": 82.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +61,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.5,
+        "score": 89.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 27 stars (0 forks, 2.0x the daily average)."
       },
@@ -69,9 +82,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 31.6,
+        "score": 31.3,
         "weight": 0.12,
-        "detail": "21 open issues for 31,595 stars (0.1%)."
+        "detail": "20 open issues for 31,595 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -87,7 +100,7 @@
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 21 open issues for 31,595 stars (0.1%)."
+      "Issue engagement: 20 open issues for 31,595 stars (0.1%)."
     ]
   }
 }

@@ -4,8 +4,19 @@
   "description": "LlamaIndex is the document processing platform for AI",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 52875,
+  "topics": [
+    "agents",
+    "application",
+    "data",
+    "fine-tuning",
+    "framework",
+    "llamaindex",
+    "llm",
+    "rag",
+    "vector-database",
+    "multi-agents"
+  ],
+  "stars": 52876,
   "forks": 8541,
   "open_issues": 397,
   "watchers": 285,
@@ -14,27 +25,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/run-llama.png",
   "radar_score": 79.33,
-  "impact": 98.38,
+  "impact": 98.39,
   "velocity": 68.68,
   "health": 63.75,
-  "global_percentile": 92.0,
+  "global_percentile": 91.71,
   "category": "RAG",
   "sub_category": "",
   "summary": "LlamaIndex is the leading document agent and OCR platform",
   "maturity": "Unknown",
-  "stars_7d": 80,
-  "stars_30d": 305,
-  "stars_90d": 305,
-  "star_growth_rate_7d": 11.428571428571429,
-  "star_growth_rate_30d": 13.863636363636363,
-  "star_growth_acceleration": 0.8243559718969555,
-  "forks_7d": 37,
-  "forks_30d": 159,
+  "stars_7d": 81,
+  "stars_30d": 299,
+  "stars_90d": 299,
+  "star_growth_rate_7d": 11.571428571428571,
+  "star_growth_rate_30d": 13.590909090909092,
+  "star_growth_acceleration": 0.8514094601051122,
+  "forks_7d": 34,
+  "forks_30d": 155,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 303,
+  "snapshot_count": 304,
   "authenticity": {
-    "organic_confidence": 91.1,
+    "organic_confidence": 91.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "8,541 forks for 52,874 stars (16.2%)."
+        "detail": "8,541 forks for 52,876 stars (16.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.3,
+        "score": 92.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 24 stars (10 forks, 1.8x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 67.5,
         "weight": 0.12,
-        "detail": "396 open issues for 52,874 stars (0.7%)."
+        "detail": "397 open issues for 52,876 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +94,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 24 stars (10 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 8,541 forks for 52,874 stars (16.2%).",
+      "Fork-to-star ratio: 8,541 forks for 52,876 stars (16.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

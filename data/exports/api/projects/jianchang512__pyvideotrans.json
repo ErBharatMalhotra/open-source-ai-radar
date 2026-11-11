@@ -4,7 +4,14 @@
   "description": "Translate the video from one language to another and embed dubbing & subtitles.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "text-to-speech",
+    "video-transition",
+    "speech-to-text",
+    "stt",
+    "subtitle-translation",
+    "tts"
+  ],
   "stars": 19710,
   "forks": 2444,
   "open_issues": 10,
@@ -13,11 +20,11 @@
   "pushed_at": "2026-11-11T15:10:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jianchang512.png",
-  "radar_score": 73.28,
+  "radar_score": 73.29,
   "impact": 94.51,
   "velocity": 59.7,
   "health": 58.35,
-  "global_percentile": 36.14,
+  "global_percentile": 36.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Translate the video from one language to another and embed dubbing & subtitles.",
@@ -29,12 +36,12 @@
   "star_growth_rate_30d": 12.035714285714286,
   "star_growth_acceleration": 0.9376854599406528,
   "forks_7d": 15,
-  "forks_30d": 48,
+  "forks_30d": 47,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 238,
+  "snapshot_count": 239,
   "authenticity": {
-    "organic_confidence": 81.7,
+    "organic_confidence": 81.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +55,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.4,
+        "score": 83.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 30 stars (3 forks, 2.4x the daily average)."
+        "detail": "Largest 24h jump was 30 stars (3 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 30 stars (3 forks, 2.4x the daily average).",
+      "Burst pattern: Largest 24h jump was 30 stars (3 forks, 2.5x the daily average).",
       "Fork-to-star ratio: 2,444 forks for 19,710 stars (12.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

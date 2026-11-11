@@ -4,7 +4,26 @@
   "description": "Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. Built for enterprise, Memori works with the data infrastructure you already run, no rip-and-replace, and deploys across managed cloud, single-tenant cloud, VPC, and on-premises.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agent",
+    "ai",
+    "long-short-term-memory",
+    "memory",
+    "python",
+    "rag",
+    "state-management",
+    "memory-management",
+    "llm",
+    "agent-memory",
+    "ai-memory",
+    "stateful",
+    "typescript",
+    "agenticai",
+    "claude-code",
+    "enterprise",
+    "hermes",
+    "openclaw"
+  ],
   "stars": 17556,
   "forks": 3967,
   "open_issues": 26,
@@ -17,24 +36,24 @@
   "impact": 94.28,
   "velocity": 56.67,
   "health": 49.68,
-  "global_percentile": 16.29,
+  "global_percentile": 18.71,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. Built for enterprise, Memori works with the data infrastructure you already run, no rip-and-replace, and deploys across managed clo",
   "maturity": "Unknown",
-  "stars_7d": 180,
-  "stars_30d": 411,
-  "stars_90d": 411,
-  "star_growth_rate_7d": 25.714285714285715,
-  "star_growth_rate_30d": 13.7,
-  "star_growth_acceleration": 1.8769551616266946,
-  "forks_7d": 133,
-  "forks_30d": 258,
+  "stars_7d": 179,
+  "stars_30d": 412,
+  "stars_90d": 412,
+  "star_growth_rate_7d": 25.571428571428573,
+  "star_growth_rate_30d": 13.733333333333333,
+  "star_growth_acceleration": 1.8619972260748963,
+  "forks_7d": 132,
+  "forks_30d": 257,
   "days_since_last_push": 39,
   "freshness_score": 0.6770568744981647,
-  "snapshot_count": 267,
+  "snapshot_count": 268,
   "authenticity": {
-    "organic_confidence": 67.2,
+    "organic_confidence": 67.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +62,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.5,
         "weight": 0.22,
-        "detail": "3,968 forks for 17,556 stars (22.6%)."
+        "detail": "3,967 forks for 17,556 stars (22.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 46.6,
+        "score": 46.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 80 stars (51 forks, 5.8x the daily average)."
       },
@@ -83,7 +102,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 39 days ago.",
-      "Fork-to-star ratio: 3,968 forks for 17,556 stars (22.6%)."
+      "Fork-to-star ratio: 3,967 forks for 17,556 stars (22.6%)."
     ],
     "red_flags": [
       "Issue engagement: 26 open issues for 17,556 stars (0.1%)."

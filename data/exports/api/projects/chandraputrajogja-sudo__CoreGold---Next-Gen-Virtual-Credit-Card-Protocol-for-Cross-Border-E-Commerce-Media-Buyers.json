@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "\u4e13\u4e3a\u9ad8\u5468\u8f6c\u8de8\u5883\u51fa\u6d77\u4e1a\u52a1\u8bbe\u8ba1\u7684\u6781\u901f\u53d1\u5361\u4e0e\u8d44\u91d1\u9694\u79bb\u5de5\u4f5c\u53f0\u3002\u76f4\u8fde\u6d77\u5916\u539f\u751f\u5546\u6237\u6e05\u7b97\u901a\u9053\uff0c\u4e3b\u6253\u96f6\u4e2a\u4eba\u4fe1\u7528\u5ba1\u6838\u3001\u79d2\u7ea7\u9500\u5361\u9000\u989d\u3001\u52a8\u6001\u81ea\u5b9a\u4e49\u6d88\u8d39\u9650\u989d\u4e0e\u591a\u9879\u76ee\u6279\u91cf\u53d1\u5361\uff0c\u4ece\u652f\u4ed8\u6e90\u5934\u6839\u9664\u8d26\u6237\u56e0\u5173\u8054\u6216\u98ce\u63a7\u62d2\u4ed8\u9020\u6210\u7684\u4e1a\u52a1\u505c\u6ede\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 30.2,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 102 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 102 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 92.0,
+        "weight": 0.1,
+        "detail": "Last push 14 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 14 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 102 stars (0.0%).",
+      "Issue engagement: 0 open issues for 102 stars (0.0%)."
+    ]
+  }
 }

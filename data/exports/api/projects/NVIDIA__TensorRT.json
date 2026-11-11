@@ -4,7 +4,13 @@
   "description": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "tensorrt",
+    "nvidia",
+    "deep-learning",
+    "inference",
+    "gpu-acceleration"
+  ],
   "stars": 13449,
   "forks": 2422,
   "open_issues": 619,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-05T18:43:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
-  "radar_score": 71.63,
+  "radar_score": 71.54,
   "impact": 93.99,
   "velocity": 52.99,
-  "health": 61.94,
-  "global_percentile": 24.43,
+  "health": 61.6,
+  "global_percentile": 25.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "maturity": "Unknown",
-  "stars_7d": 18,
+  "stars_7d": 19,
   "stars_30d": 52,
   "stars_90d": 85,
-  "star_growth_rate_7d": 2.5714285714285716,
+  "star_growth_rate_7d": 2.7142857142857144,
   "star_growth_rate_30d": 1.793103448275862,
-  "star_growth_acceleration": 1.434065934065934,
-  "forks_7d": 4,
+  "star_growth_acceleration": 1.5137362637362637,
+  "forks_7d": 3,
   "forks_30d": 8,
-  "days_since_last_push": 5,
-  "freshness_score": 0.951229424500714,
-  "snapshot_count": 155,
+  "days_since_last_push": 6,
+  "freshness_score": 0.9417645335842487,
+  "snapshot_count": 156,
   "authenticity": {
-    "organic_confidence": 81.4,
+    "organic_confidence": 81.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +54,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 51.0,
+        "score": 50.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (-1 forks, 5.2x the daily average)."
       },
@@ -76,13 +82,13 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 96.4,
+        "score": 95.7,
         "weight": 0.1,
-        "detail": "Last push 5 days ago."
+        "detail": "Last push 6 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 5 days ago.",
+      "Maintenance cadence: Last push 6 days ago.",
       "Fork-to-star ratio: 2,422 forks for 13,449 stars (18.0%).",
       "Issue engagement: 619 open issues for 13,449 stars (4.6%)."
     ],

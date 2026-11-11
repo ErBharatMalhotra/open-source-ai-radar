@@ -4,7 +4,18 @@
   "description": "\ud83d\ude80 Fast and lightweight sandboxes for your apps and AI agents",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "webassembly",
+    "wasm",
+    "wasi",
+    "emscripten",
+    "rust",
+    "windows",
+    "macos",
+    "linux",
+    "wasmer",
+    "wasix"
+  ],
   "stars": 21236,
   "forks": 1037,
   "open_issues": 207,
@@ -17,7 +28,7 @@
   "impact": 94.21,
   "velocity": 54.93,
   "health": 59.2,
-  "global_percentile": 25.29,
+  "global_percentile": 27.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "\ud83d\ude80 Fast and lightweight sandboxes for your apps and AI agents",
@@ -32,9 +43,9 @@
   "forks_30d": 10,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 62,
+  "snapshot_count": 63,
   "authenticity": {
-    "organic_confidence": 83.3,
+    "organic_confidence": 83.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +59,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.7,
+        "score": 82.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (2 forks, 2.5x the daily average)."
       },
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 74.1,
+        "score": 74.2,
         "weight": 0.12,
-        "detail": "206 open issues for 21,236 stars (1.0%)."
+        "detail": "207 open issues for 21,236 stars (1.0%)."
       },
       {
         "key": "maintenance",

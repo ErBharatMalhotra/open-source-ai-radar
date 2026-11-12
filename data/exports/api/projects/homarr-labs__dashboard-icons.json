@@ -4,8 +4,28 @@
   "description": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9076,
+  "topics": [
+    "icons",
+    "dashboard",
+    "docker",
+    "homer",
+    "selfhosted",
+    "heimdall",
+    "homarr",
+    "dashboard-icons",
+    "dashy",
+    "self-hosted",
+    "homepage",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "logos",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "svg-icons"
+  ],
+  "stars": 9081,
   "forks": 728,
   "open_issues": 22,
   "watchers": 29,
@@ -13,65 +33,65 @@
   "pushed_at": "2026-11-08T19:50:31Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/homarr-labs.png",
-  "radar_score": 68.49,
-  "impact": 88.02,
-  "velocity": 50.34,
+  "radar_score": 68.5,
+  "impact": 88.04,
+  "velocity": 50.33,
   "health": 62.65,
-  "global_percentile": 15.29,
+  "global_percentile": 13.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
   "maturity": "Unknown",
-  "stars_7d": 69,
-  "stars_30d": 180,
-  "stars_90d": 180,
-  "star_growth_rate_7d": 9.857142857142858,
-  "star_growth_rate_30d": 8.181818181818182,
-  "star_growth_acceleration": 1.204761904761905,
+  "stars_7d": 76,
+  "stars_30d": 187,
+  "stars_90d": 187,
+  "star_growth_rate_7d": 10.857142857142858,
+  "star_growth_rate_30d": 8.5,
+  "star_growth_acceleration": 1.277310924369748,
   "forks_7d": -1,
   "forks_30d": 6,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 42,
+  "snapshot_count": 43,
   "authenticity": {
-    "organic_confidence": 86.3,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 72.2,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 92.9,
         "weight": 0.22,
-        "detail": "728 forks for 9,076 stars (8.0%)."
+        "detail": "728 forks for 9,081 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.1,
+        "score": 95.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (0 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 5,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+76 stars vs +-1 forks this week (expected ~6 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 89.5,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.28x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 47.1,
         "weight": 0.12,
-        "detail": "22 open issues for 9,076 stars (0.2%)."
+        "detail": "22 open issues for 9,081 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +102,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 728 forks for 9,076 stars (8.0%).",
-      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.5x the daily average).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Growth acceleration: Weekly growth is 1.28x the monthly baseline.",
+      "Fork-to-star ratio: 728 forks for 9,081 stars (8.0%).",
+      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.5x the daily average)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Star/fork velocity alignment: +76 stars vs +-1 forks this week (expected ~6 forks)."
+    ]
   }
 }

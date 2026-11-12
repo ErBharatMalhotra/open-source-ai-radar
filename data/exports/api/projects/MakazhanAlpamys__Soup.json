@@ -4,38 +4,59 @@
   "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10485,
-  "forks": 1732,
-  "open_issues": 169,
+  "topics": [
+    "python",
+    "fine-tuning",
+    "gguf",
+    "huggingface",
+    "llm",
+    "lora",
+    "ollama",
+    "peft",
+    "qlora",
+    "cli",
+    "dpo",
+    "llmops",
+    "local-llm",
+    "machine-learning",
+    "sft",
+    "transformers",
+    "pytorch",
+    "consumer-gpu",
+    "local-ai",
+    "low-vram"
+  ],
+  "stars": 10501,
+  "forks": 1736,
+  "open_issues": 167,
   "watchers": 62,
   "created_at": "2026-02-20T11:05:01Z",
-  "pushed_at": "2026-11-12T08:59:10Z",
+  "pushed_at": "2026-11-12T17:04:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/MakazhanAlpamys.png",
-  "radar_score": 77.69,
-  "impact": 91.54,
-  "velocity": 71.83,
+  "radar_score": 77.7,
+  "impact": 91.55,
+  "velocity": 71.84,
   "health": 63.75,
-  "global_percentile": 78.71,
+  "global_percentile": 77.29,
   "category": "AI Infrastructure",
   "sub_category": "gpu management",
   "summary": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
   "maturity": "Unknown",
-  "stars_7d": 342,
-  "stars_30d": 1851,
-  "stars_90d": 2353,
-  "star_growth_rate_7d": 48.857142857142854,
-  "star_growth_rate_30d": 61.7,
-  "star_growth_acceleration": 0.7918499652697383,
-  "forks_7d": 54,
-  "forks_30d": 341,
+  "stars_7d": 336,
+  "stars_30d": 1867,
+  "stars_90d": 2362,
+  "star_growth_rate_7d": 48.0,
+  "star_growth_rate_30d": 62.233333333333334,
+  "star_growth_acceleration": 0.7712908409212641,
+  "forks_7d": 56,
+  "forks_30d": 346,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 141,
-  "why_trending": "Strong momentum with 342 new stars this week. Above-average growth velocity. High developer adoption with 54 new forks this week. Active in the AI Infrastructure category.",
+  "snapshot_count": 142,
+  "why_trending": "Strong momentum with 336 new stars this week. Above-average growth velocity. High developer adoption with 56 new forks this week. Active in the AI Infrastructure category.",
   "authenticity": {
-    "organic_confidence": 85.8,
+    "organic_confidence": 89.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +65,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.7,
         "weight": 0.22,
-        "detail": "1,732 forks for 10,485 stars (16.5%)."
+        "detail": "1,736 forks for 10,501 stars (16.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.9,
+        "score": 78.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 204 stars (38 forks, 3.5x the daily average)."
+        "detail": "Largest 24h jump was 150 stars (34 forks, 2.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +91,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 84.2,
+        "score": 83.9,
         "weight": 0.12,
-        "detail": "169 open issues for 10,485 stars (1.6%)."
+        "detail": "167 open issues for 10,501 stars (1.6%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +104,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 169 open issues for 10,485 stars (1.6%).",
-      "Fork-to-star ratio: 1,732 forks for 10,485 stars (16.5%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 150 stars (34 forks, 2.7x the daily average).",
+      "Issue engagement: 167 open issues for 10,501 stars (1.6%).",
+      "Fork-to-star ratio: 1,736 forks for 10,501 stars (16.5%)."
     ],
     "red_flags": []
   }

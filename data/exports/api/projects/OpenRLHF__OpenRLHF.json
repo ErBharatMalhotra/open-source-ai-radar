@@ -4,9 +4,18 @@
   "description": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "transformers",
+    "vllm",
+    "large-language-models",
+    "raylib",
+    "reinforcement-learning-from-human-feedback",
+    "reinforcement-learning",
+    "proximal-policy-optimization",
+    "visual-language-models"
+  ],
   "stars": 10151,
-  "forks": 1063,
+  "forks": 1064,
   "open_issues": 317,
   "watchers": 52,
   "created_at": "2023-07-30T02:20:13Z",
@@ -17,24 +26,24 @@
   "impact": 90.42,
   "velocity": 51.99,
   "health": 60.59,
-  "global_percentile": 19.0,
+  "global_percentile": 16.57,
   "category": "Multimodal AI",
   "sub_category": "vision-language",
   "summary": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "maturity": "Unknown",
   "stars_7d": 9,
   "stars_30d": 70,
-  "stars_90d": 107,
+  "stars_90d": 106,
   "star_growth_rate_7d": 1.2857142857142858,
   "star_growth_rate_30d": 2.3333333333333335,
   "star_growth_acceleration": 0.5510204081632654,
-  "forks_7d": 8,
-  "forks_30d": 24,
+  "forks_7d": 9,
+  "forks_30d": 25,
   "days_since_last_push": 9,
   "freshness_score": 0.9139311852712282,
-  "snapshot_count": 170,
+  "snapshot_count": 171,
   "authenticity": {
-    "organic_confidence": 95.4,
+    "organic_confidence": 95.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +52,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "1,063 forks for 10,151 stars (10.5%)."
+        "detail": "1,064 forks for 10,151 stars (10.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.6,
+        "score": 92.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (2 forks, 1.7x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (2 forks, 1.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +91,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 4 stars (2 forks, 1.7x the daily average).",
+      "Burst pattern: Largest 24h jump was 4 stars (2 forks, 1.8x the daily average).",
       "Issue engagement: 317 open issues for 10,151 stars (3.1%).",
       "Maintenance cadence: Last push 9 days ago."
     ],

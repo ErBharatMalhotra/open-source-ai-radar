@@ -21,36 +21,36 @@
     "mcp",
     "openapi"
   ],
-  "stars": 158459,
-  "forks": 23041,
-  "open_issues": 256,
-  "watchers": 682,
+  "stars": 158484,
+  "forks": 23042,
+  "open_issues": 231,
+  "watchers": 683,
   "created_at": "2023-10-06T22:08:27Z",
-  "pushed_at": "2026-11-12T04:39:37Z",
+  "pushed_at": "2026-11-12T14:24:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/open-webui.png",
-  "radar_score": 78.87,
+  "radar_score": 78.85,
   "impact": 99.71,
-  "velocity": 67.99,
+  "velocity": 67.94,
   "health": 60.75,
-  "global_percentile": 88.0,
+  "global_percentile": 88.29,
   "category": "Local AI",
   "sub_category": "",
   "summary": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
   "maturity": "Unknown",
-  "stars_7d": 690,
-  "stars_30d": 2155,
-  "stars_90d": 2155,
-  "star_growth_rate_7d": 98.57142857142857,
-  "star_growth_rate_30d": 97.95454545454545,
-  "star_growth_acceleration": 1.0062976466688764,
-  "forks_7d": 97,
-  "forks_30d": 289,
+  "stars_7d": 700,
+  "stars_30d": 2148,
+  "stars_90d": 2148,
+  "star_growth_rate_7d": 100.0,
+  "star_growth_rate_30d": 97.63636363636364,
+  "star_growth_acceleration": 1.0242085661080074,
+  "forks_7d": 98,
+  "forks_30d": 285,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 329,
+  "snapshot_count": 330,
   "authenticity": {
-    "organic_confidence": 87.7,
+    "organic_confidence": 87.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -59,7 +59,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "23,041 forks for 158,459 stars (14.5%)."
+        "detail": "23,042 forks for 158,484 stars (14.5%)."
       },
       {
         "key": "burst",
@@ -85,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 41.2,
+        "score": 39.6,
         "weight": 0.12,
-        "detail": "256 open issues for 158,459 stars (0.2%)."
+        "detail": "231 open issues for 158,484 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -99,9 +99,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 144 stars (17 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 23,041 forks for 158,459 stars (14.5%).",
+      "Fork-to-star ratio: 23,042 forks for 158,484 stars (14.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 231 open issues for 158,484 stars (0.1%)."
+    ]
   }
 }

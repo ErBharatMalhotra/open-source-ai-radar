@@ -4,9 +4,19 @@
   "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents \u2014 turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agent",
+    "llm",
+    "memory",
+    "openclaw-plugin",
+    "ai-agent",
+    "embedding",
+    "local-first",
+    "long-term-memory",
+    "vector-search"
+  ],
   "stars": 30822,
-  "forks": 3008,
+  "forks": 3010,
   "open_issues": 310,
   "watchers": 88,
   "created_at": "2026-04-07T06:34:26Z",
@@ -14,43 +24,43 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/TencentCloud.png",
   "radar_score": 77.2,
-  "impact": 95.43,
+  "impact": 95.42,
   "velocity": 68.65,
   "health": 60.01,
-  "global_percentile": 72.29,
+  "global_percentile": 71.86,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "TencentDB Agent Memory is a team-level memory hub for AI Agents \u2014 turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
   "maturity": "Unknown",
-  "stars_7d": 375,
-  "stars_30d": 1328,
-  "stars_90d": 1328,
-  "star_growth_rate_7d": 53.57142857142857,
-  "star_growth_rate_30d": 53.12,
-  "star_growth_acceleration": 1.0084982788296042,
+  "stars_7d": 365,
+  "stars_30d": 1314,
+  "stars_90d": 1314,
+  "star_growth_rate_7d": 52.142857142857146,
+  "star_growth_rate_30d": 52.56,
+  "star_growth_acceleration": 0.9920634920634921,
   "forks_7d": 45,
-  "forks_30d": 106,
+  "forks_30d": 94,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 305,
+  "snapshot_count": 306,
   "authenticity": {
-    "organic_confidence": 78.6,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.9,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.1,
+        "score": 99.2,
         "weight": 0.22,
-        "detail": "3,008 forks for 30,822 stars (9.8%)."
+        "detail": "3,010 forks for 30,822 stars (9.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 53.2,
+        "score": 59.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 327 stars (39 forks, 4.9x the daily average)."
+        "detail": "Largest 24h jump was 281 stars (33 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -84,7 +94,7 @@
     "reasons": [
       "Issue engagement: 310 open issues for 30,822 stars (1.0%).",
       "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 3,008 forks for 30,822 stars (9.8%)."
+      "Fork-to-star ratio: 3,010 forks for 30,822 stars (9.8%)."
     ],
     "red_flags": []
   }

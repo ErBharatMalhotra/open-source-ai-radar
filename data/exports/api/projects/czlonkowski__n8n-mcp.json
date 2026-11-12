@@ -4,8 +4,13 @@
   "description": "MCP server that lets Claude, ChatGPT, Cursor and other AI assistants operate n8n: debug, edit, validate, test and build workflows on any n8n instance",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 23250,
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "n8n",
+    "workflows"
+  ],
+  "stars": 23252,
   "forks": 3682,
   "open_issues": 19,
   "watchers": 153,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-11T21:15:59Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/czlonkowski.png",
-  "radar_score": 75.78,
-  "impact": 95.79,
-  "velocity": 65.37,
-  "health": 58.35,
-  "global_percentile": 57.0,
+  "radar_score": 75.69,
+  "impact": 95.78,
+  "velocity": 65.36,
+  "health": 57.98,
+  "global_percentile": 55.71,
   "category": "MCP",
   "sub_category": "",
   "summary": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
   "maturity": "Unknown",
-  "stars_7d": 40,
-  "stars_30d": 172,
-  "stars_90d": 172,
-  "star_growth_rate_7d": 5.714285714285714,
-  "star_growth_rate_30d": 6.142857142857143,
-  "star_growth_acceleration": 0.9302325581395349,
-  "forks_7d": 1,
-  "forks_30d": 20,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 247,
+  "stars_7d": 37,
+  "stars_30d": 176,
+  "stars_90d": 176,
+  "star_growth_rate_7d": 5.285714285714286,
+  "star_growth_rate_30d": 6.285714285714286,
+  "star_growth_acceleration": 0.8409090909090909,
+  "forks_7d": 0,
+  "forks_30d": 19,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 248,
   "authenticity": {
-    "organic_confidence": 84.7,
+    "organic_confidence": 84.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.8,
         "weight": 0.22,
-        "detail": "3,682 forks for 23,248 stars (15.8%)."
+        "detail": "3,682 forks for 23,252 stars (15.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.2,
+        "score": 91.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (-1 forks, 1.9x the daily average)."
       },
@@ -71,23 +76,23 @@
         "label": "Issue engagement",
         "score": 33.2,
         "weight": 0.12,
-        "detail": "19 open issues for 23,248 stars (0.1%)."
+        "detail": "19 open issues for 23,252 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (-1 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 3,682 forks for 23,248 stars (15.8%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Fork-to-star ratio: 3,682 forks for 23,252 stars (15.8%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 19 open issues for 23,248 stars (0.1%)."
+      "Issue engagement: 19 open issues for 23,252 stars (0.1%)."
     ]
   }
 }

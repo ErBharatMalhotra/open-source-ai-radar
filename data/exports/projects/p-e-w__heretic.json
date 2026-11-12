@@ -4,11 +4,19 @@
   "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 40411,
+  "topics": [
+    "abliteration",
+    "llm",
+    "transformer",
+    "censorship-resistance",
+    "censorship",
+    "anti-censorship",
+    "anticensorship"
+  ],
+  "stars": 40417,
   "forks": 4631,
   "open_issues": 34,
-  "watchers": 205,
+  "watchers": 206,
   "created_at": "2025-09-21T05:46:16Z",
   "pushed_at": "2026-11-10T10:40:26Z",
   "owner_login": "",
@@ -17,22 +25,22 @@
   "impact": 97.45,
   "velocity": 63.56,
   "health": 57.61,
-  "global_percentile": 55.0,
+  "global_percentile": 55.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Fully automatic censorship removal for language models",
   "maturity": "Unknown",
-  "stars_7d": 1078,
-  "stars_30d": 4298,
-  "stars_90d": 4298,
-  "star_growth_rate_7d": 154.0,
-  "star_growth_rate_30d": 204.66666666666666,
-  "star_growth_acceleration": 0.752442996742671,
-  "forks_7d": 189,
-  "forks_30d": 540,
+  "stars_7d": 1057,
+  "stars_30d": 4307,
+  "stars_90d": 4307,
+  "star_growth_rate_7d": 151.0,
+  "star_growth_rate_30d": 205.0952380952381,
+  "star_growth_acceleration": 0.7362433248200604,
+  "forks_7d": 184,
+  "forks_30d": 543,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 330,
+  "snapshot_count": 331,
   "authenticity": {
     "organic_confidence": 76.0,
     "verdict": "likely_organic",
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "4,627 forks for 40,399 stars (11.5%)."
+        "detail": "4,631 forks for 40,417 stars (11.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 66.2,
+        "score": 66.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 667 stars (42 forks, 3.8x the daily average)."
       },
@@ -71,7 +79,7 @@
         "label": "Issue engagement",
         "score": 33.4,
         "weight": 0.12,
-        "detail": "34 open issues for 40,399 stars (0.1%)."
+        "detail": "34 open issues for 40,417 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,10 +91,10 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 4,627 forks for 40,399 stars (11.5%)."
+      "Fork-to-star ratio: 4,631 forks for 40,417 stars (11.5%)."
     ],
     "red_flags": [
-      "Issue engagement: 34 open issues for 40,399 stars (0.1%)."
+      "Issue engagement: 34 open issues for 40,417 stars (0.1%)."
     ]
   }
 }

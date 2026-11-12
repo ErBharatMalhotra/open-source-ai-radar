@@ -4,37 +4,50 @@
   "description": "An open-source AI coding agent that lives in your terminal.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 29744,
-  "forks": 3390,
+  "topics": [
+    "agentic",
+    "ai",
+    "ai-agent",
+    "ai-coding",
+    "cli",
+    "coding-agent",
+    "developer-tools",
+    "llm",
+    "mcp",
+    "qwen",
+    "terminal",
+    "typescript"
+  ],
+  "stars": 29762,
+  "forks": 3391,
   "open_issues": 1748,
   "watchers": 146,
   "created_at": "2025-06-26T01:37:46Z",
-  "pushed_at": "2026-11-12T20:55:56Z",
+  "pushed_at": "2026-11-12T22:14:56Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/QwenLM.png",
   "radar_score": 77.15,
-  "impact": 96.18,
-  "velocity": 67.53,
+  "impact": 96.19,
+  "velocity": 67.52,
   "health": 60.15,
-  "global_percentile": 71.71,
+  "global_percentile": 71.43,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "An open-source AI coding agent that lives in your terminal.",
   "maturity": "Unknown",
-  "stars_7d": 674,
-  "stars_30d": 1052,
-  "stars_90d": 1052,
-  "star_growth_rate_7d": 96.28571428571429,
-  "star_growth_rate_30d": 50.095238095238095,
-  "star_growth_acceleration": 1.9220532319391637,
-  "forks_7d": 75,
+  "stars_7d": 749,
+  "stars_30d": 1127,
+  "stars_90d": 1127,
+  "star_growth_rate_7d": 107.0,
+  "star_growth_rate_30d": 53.666666666666664,
+  "star_growth_acceleration": 1.9937888198757765,
+  "forks_7d": 76,
   "forks_30d": 147,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 331,
+  "snapshot_count": 332,
   "authenticity": {
-    "organic_confidence": 79.7,
+    "organic_confidence": 76.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +56,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "3,389 forks for 29,683 stars (11.4%)."
+        "detail": "3,391 forks for 29,762 stars (11.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 42.7,
+        "score": 34.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 261 stars (24 forks, 6.4x the daily average)."
+        "detail": "Largest 24h jump was 327 stars (26 forks, 7.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +84,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "1,744 open issues for 29,683 stars (5.9%)."
+        "detail": "1,748 open issues for 29,762 stars (5.9%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +95,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,389 forks for 29,683 stars (11.4%).",
-      "Issue engagement: 1,744 open issues for 29,683 stars (5.9%).",
+      "Fork-to-star ratio: 3,391 forks for 29,762 stars (11.4%).",
+      "Issue engagement: 1,748 open issues for 29,762 stars (5.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 327 stars (26 forks, 7.6x the daily average)."
+    ]
   }
 }

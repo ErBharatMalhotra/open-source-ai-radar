@@ -4,7 +4,27 @@
   "description": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.8, DeepSeek-V4, GLM-5.1, InternLM3, Llama4, ...) and 300+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, GLM5.3, Gemma4, Llava, Phi4, ...) (AAAI 2025).",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "llm",
+    "lora",
+    "sft",
+    "multimodal",
+    "peft",
+    "liger",
+    "embedding",
+    "grpo",
+    "megatron",
+    "qwen3",
+    "reranker",
+    "moe",
+    "qwen3-vl",
+    "qwen3-omni",
+    "deepseek",
+    "glm",
+    "kimi",
+    "qwen",
+    "jev"
+  ],
   "stars": 16095,
   "forks": 1800,
   "open_issues": 435,
@@ -14,27 +34,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/modelscope.png",
   "radar_score": 74.65,
-  "impact": 92.68,
+  "impact": 92.67,
   "velocity": 61.84,
   "health": 63.75,
-  "global_percentile": 45.0,
+  "global_percentile": 45.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.6, DeepSeek-V4, GLM-5.1, InternLM3, Llama4, ...) and 300+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, GLM4.5v, Gemma4, Llava, Phi4, ...) (AAAI 2025).",
   "maturity": "Unknown",
-  "stars_7d": 59,
-  "stars_30d": 269,
-  "stars_90d": 289,
-  "star_growth_rate_7d": 8.428571428571429,
-  "star_growth_rate_30d": 8.966666666666667,
-  "star_growth_acceleration": 0.9399893786510887,
-  "forks_7d": 15,
+  "stars_7d": 44,
+  "stars_30d": 266,
+  "stars_90d": 287,
+  "star_growth_rate_7d": 6.285714285714286,
+  "star_growth_rate_30d": 8.866666666666667,
+  "star_growth_acceleration": 0.7089151450053706,
+  "forks_7d": 12,
   "forks_30d": 64,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 243,
+  "snapshot_count": 244,
   "authenticity": {
-    "organic_confidence": 90.5,
+    "organic_confidence": 90.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "1,800 forks for 16,096 stars (11.2%)."
+        "detail": "1,800 forks for 16,095 stars (11.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 77.0,
+        "score": 76.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 24 stars (5 forks, 2.9x the daily average)."
       },
@@ -71,7 +91,7 @@
         "label": "Issue engagement",
         "score": 92.3,
         "weight": 0.12,
-        "detail": "435 open issues for 16,096 stars (2.7%)."
+        "detail": "435 open issues for 16,095 stars (2.7%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +103,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 24 stars (5 forks, 2.9x the daily average).",
-      "Issue engagement: 435 open issues for 16,096 stars (2.7%).",
-      "Fork-to-star ratio: 1,800 forks for 16,096 stars (11.2%)."
+      "Issue engagement: 435 open issues for 16,095 stars (2.7%).",
+      "Fork-to-star ratio: 1,800 forks for 16,095 stars (11.2%)."
     ],
     "red_flags": []
   }

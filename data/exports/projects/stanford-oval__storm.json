@@ -4,7 +4,17 @@
   "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "large-language-models",
+    "nlp",
+    "knowledge-curation",
+    "naacl",
+    "report-generation",
+    "retrieval-augmented-generation",
+    "emnlp2024",
+    "agentic-rag",
+    "deep-research"
+  ],
   "stars": 31864,
   "forks": 3007,
   "open_issues": 64,
@@ -14,25 +24,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/stanford-oval.png",
   "radar_score": 66.26,
-  "impact": 96.47,
-  "velocity": 51.36,
-  "health": 38.81,
+  "impact": 96.46,
+  "velocity": 51.35,
+  "health": 38.8,
   "global_percentile": 8.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
   "maturity": "Unknown",
-  "stars_7d": 79,
-  "stars_30d": 250,
+  "stars_7d": 75,
+  "stars_30d": 251,
   "stars_90d": 267,
-  "star_growth_rate_7d": 11.285714285714286,
-  "star_growth_rate_30d": 8.333333333333334,
-  "star_growth_acceleration": 1.3542857142857143,
-  "forks_7d": 9,
-  "forks_30d": 27,
-  "days_since_last_push": 407,
-  "freshness_score": 0.017077388507484793,
-  "snapshot_count": 231,
+  "star_growth_rate_7d": 10.714285714285714,
+  "star_growth_rate_30d": 8.366666666666667,
+  "star_growth_acceleration": 1.280591918042117,
+  "forks_7d": 6,
+  "forks_30d": 26,
+  "days_since_last_push": 408,
+  "freshness_score": 0.01690746565270528,
+  "snapshot_count": 232,
   "authenticity": {
     "organic_confidence": 71.2,
     "verdict": "likely_organic",
@@ -43,12 +53,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.0,
         "weight": 0.22,
-        "detail": "3,008 forks for 31,863 stars (9.4%)."
+        "detail": "3,007 forks for 31,864 stars (9.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 79.1,
+        "score": 79.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (0 forks, 2.7x the daily average)."
       },
@@ -71,22 +81,22 @@
         "label": "Issue engagement",
         "score": 45.0,
         "weight": 0.12,
-        "detail": "64 open issues for 31,863 stars (0.2%)."
+        "detail": "64 open issues for 31,864 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 407 days ago."
+        "detail": "Last push 408 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (0 forks, 2.7x the daily average).",
-      "Fork-to-star ratio: 3,008 forks for 31,863 stars (9.4%)."
+      "Fork-to-star ratio: 3,007 forks for 31,864 stars (9.4%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 407 days ago."
+      "Maintenance cadence: Last push 408 days ago."
     ]
   }
 }

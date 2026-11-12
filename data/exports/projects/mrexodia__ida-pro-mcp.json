@@ -4,8 +4,18 @@
   "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 13457,
+  "topics": [
+    "ida-plugin",
+    "ida-pro",
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "reverse-engineering",
+    "ai",
+    "aiagent",
+    "binary-analysis"
+  ],
+  "stars": 13458,
   "forks": 1650,
   "open_issues": 35,
   "watchers": 64,
@@ -17,24 +27,24 @@
   "impact": 92.32,
   "velocity": 64.16,
   "health": 63.75,
-  "global_percentile": 52.0,
+  "global_percentile": 52.71,
   "category": "MCP",
   "sub_category": "integration",
   "summary": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
   "maturity": "Unknown",
-  "stars_7d": 97,
-  "stars_30d": 509,
-  "stars_90d": 509,
-  "star_growth_rate_7d": 13.857142857142858,
-  "star_growth_rate_30d": 19.576923076923077,
-  "star_growth_acceleration": 0.707830479932641,
-  "forks_7d": 22,
+  "stars_7d": 94,
+  "stars_30d": 506,
+  "stars_90d": 506,
+  "star_growth_rate_7d": 13.428571428571429,
+  "star_growth_rate_30d": 19.46153846153846,
+  "star_growth_acceleration": 0.6900056465273857,
+  "forks_7d": 21,
   "forks_30d": 59,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 289,
+  "snapshot_count": 290,
   "authenticity": {
-    "organic_confidence": 81.2,
+    "organic_confidence": 82.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +58,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.2,
+        "score": 78.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 71 stars (29 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 59 stars (7 forks, 2.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,6 +92,7 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 59 stars (7 forks, 2.8x the daily average).",
       "Fork-to-star ratio: 1,650 forks for 13,458 stars (12.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

@@ -4,35 +4,46 @@
   "description": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ci-cd",
+    "containers",
+    "continuous-deployment",
+    "continuous-integration",
+    "devops",
+    "docker",
+    "agents",
+    "caching",
+    "graphql",
+    "workflows"
+  ],
   "stars": 16611,
   "forks": 955,
   "open_issues": 144,
   "watchers": 223,
   "created_at": "2019-11-20T01:31:51Z",
-  "pushed_at": "2026-11-12T21:09:29Z",
+  "pushed_at": "2026-11-12T21:49:53Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dagger.png",
   "radar_score": 72.38,
-  "impact": 93.62,
-  "velocity": 54.27,
+  "impact": 93.61,
+  "velocity": 54.28,
   "health": 63.75,
   "global_percentile": 30.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Automation engine to build, test and ship any codebase. Runs locally, in CI, or directly in the cloud",
   "maturity": "Unknown",
-  "stars_7d": 33,
+  "stars_7d": 27,
   "stars_30d": 259,
   "stars_90d": 259,
-  "star_growth_rate_7d": 4.714285714285714,
+  "star_growth_rate_7d": 3.857142857142857,
   "star_growth_rate_30d": 11.26086956521739,
-  "star_growth_acceleration": 0.41864313292884725,
+  "star_growth_acceleration": 0.34252619966905684,
   "forks_7d": 4,
-  "forks_30d": 19,
+  "forks_30d": 21,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 274,
+  "snapshot_count": 275,
   "authenticity": {
     "organic_confidence": 65.7,
     "verdict": "likely_organic",
@@ -43,14 +54,14 @@
         "label": "Fork-to-star ratio",
         "score": 84.7,
         "weight": 0.22,
-        "detail": "953 forks for 16,611 stars (5.7%)."
+        "detail": "955 forks for 16,611 stars (5.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 31.5,
+        "score": 31.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 76 stars (1 forks, 8.2x the daily average)."
+        "detail": "Largest 24h jump was 76 stars (1 forks, 8.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 70.8,
+        "score": 71.0,
         "weight": 0.12,
-        "detail": "143 open issues for 16,611 stars (0.9%)."
+        "detail": "144 open issues for 16,611 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +93,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 953 forks for 16,611 stars (5.7%).",
+      "Fork-to-star ratio: 955 forks for 16,611 stars (5.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 76 stars (1 forks, 8.2x the daily average)."
+      "Burst pattern: Largest 24h jump was 76 stars (1 forks, 8.3x the daily average)."
     ]
   }
 }

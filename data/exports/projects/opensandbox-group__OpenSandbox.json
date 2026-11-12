@@ -4,10 +4,17 @@
   "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ai",
+    "ai-infra",
+    "kubernetes",
+    "sandbox",
+    "ai-agent",
+    "aaif"
+  ],
   "stars": 17253,
-  "forks": 1637,
-  "open_issues": 92,
+  "forks": 1639,
+  "open_issues": 93,
   "watchers": 62,
   "created_at": "2025-12-17T08:41:09Z",
   "pushed_at": "2026-11-12T14:06:18Z",
@@ -15,26 +22,26 @@
   "owner_avatar": "https://github.com/opensandbox-group.png",
   "radar_score": 77.34,
   "impact": 92.95,
-  "velocity": 69.19,
+  "velocity": 69.21,
   "health": 63.75,
-  "global_percentile": 74.0,
+  "global_percentile": 73.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Secure, Fast, and Extensible Sandbox runtime for AI agents.",
   "maturity": "Unknown",
-  "stars_7d": 797,
-  "stars_30d": 1249,
-  "stars_90d": 1249,
-  "star_growth_rate_7d": 113.85714285714286,
-  "star_growth_rate_30d": 56.77272727272727,
-  "star_growth_acceleration": 2.005490106370811,
-  "forks_7d": 87,
-  "forks_30d": 151,
+  "stars_7d": 791,
+  "stars_30d": 1239,
+  "stars_90d": 1239,
+  "star_growth_rate_7d": 113.0,
+  "star_growth_rate_30d": 56.31818181818182,
+  "star_growth_acceleration": 2.006456820016142,
+  "forks_7d": 89,
+  "forks_30d": 153,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 305,
+  "snapshot_count": 306,
   "authenticity": {
-    "organic_confidence": 71.1,
+    "organic_confidence": 71.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +50,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "1,637 forks for 17,247 stars (9.5%)."
+        "detail": "1,639 forks for 17,253 stars (9.5%)."
       },
       {
         "key": "burst",
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.0,
+        "score": 61.2,
         "weight": 0.12,
-        "detail": "92 open issues for 17,247 stars (0.5%)."
+        "detail": "93 open issues for 17,253 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,637 forks for 17,247 stars (9.5%).",
+      "Fork-to-star ratio: 1,639 forks for 17,253 stars (9.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

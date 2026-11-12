@@ -4,7 +4,19 @@
   "description": "\ud83d\udc19 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
   "language": "MDX",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "deep-learning",
+    "prompt-engineering",
+    "openai",
+    "chatgpt",
+    "language-model",
+    "generative-ai",
+    "agents",
+    "ai-agents",
+    "llms",
+    "agent",
+    "rag"
+  ],
   "stars": 80017,
   "forks": 8783,
   "open_issues": 189,
@@ -15,26 +27,26 @@
   "owner_avatar": "https://github.com/dair-ai.png",
   "radar_score": 67.99,
   "impact": 99.17,
-  "velocity": 52.79,
-  "health": 39.38,
-  "global_percentile": 11.57,
+  "velocity": 52.78,
+  "health": 39.37,
+  "global_percentile": 13.0,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "\ud83d\udc19 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
   "maturity": "Unknown",
-  "stars_7d": 199,
-  "stars_30d": 605,
-  "stars_90d": 605,
-  "star_growth_rate_7d": 28.428571428571427,
-  "star_growth_rate_30d": 27.5,
-  "star_growth_acceleration": 1.0337662337662337,
-  "forks_7d": 19,
+  "stars_7d": 196,
+  "stars_30d": 602,
+  "stars_90d": 602,
+  "star_growth_rate_7d": 28.0,
+  "star_growth_rate_30d": 27.363636363636363,
+  "star_growth_acceleration": 1.0232558139534884,
+  "forks_7d": 20,
   "forks_30d": 69,
-  "days_since_last_push": 245,
-  "freshness_score": 0.0862935864993705,
-  "snapshot_count": 310,
+  "days_since_last_push": 246,
+  "freshness_score": 0.08543495096732123,
+  "snapshot_count": 311,
   "authenticity": {
-    "organic_confidence": 79.6,
+    "organic_confidence": 79.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "8,783 forks for 80,014 stars (11.0%)."
+        "detail": "8,783 forks for 80,017 stars (11.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.9,
+        "score": 94.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 45 stars (7 forks, 1.5x the daily average)."
       },
@@ -71,22 +83,22 @@
         "label": "Issue engagement",
         "score": 46.8,
         "weight": 0.12,
-        "detail": "189 open issues for 80,014 stars (0.2%)."
+        "detail": "189 open issues for 80,017 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 38.0,
+        "score": 37.9,
         "weight": 0.1,
-        "detail": "Last push 245 days ago."
+        "detail": "Last push 246 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 45 stars (7 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 8,783 forks for 80,014 stars (11.0%)."
+      "Fork-to-star ratio: 8,783 forks for 80,017 stars (11.0%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 245 days ago."
+      "Maintenance cadence: Last push 246 days ago."
     ]
   }
 }

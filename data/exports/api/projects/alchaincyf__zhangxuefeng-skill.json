@@ -4,7 +4,28 @@
   "description": "\u5f20\u96ea\u5cf0.skill \u2014 \u5f20\u96ea\u5cf0\u7684\u8ba4\u77e5\u64cd\u4f5c\u7cfb\u7edf\u3002\u9ad8\u8003\u5fd7\u613f/\u8003\u7814/\u804c\u4e1a\u89c4\u5212\u7684\u5b9e\u6218\u601d\u7ef4\u6846\u67b6\u3002\u7531\u5973\u5a32.skill\u751f\u6210\u3002",
   "language": null,
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "agent-skills",
+    "career-planning",
+    "claude-code",
+    "claude-code-skills",
+    "claude-skills",
+    "codex",
+    "cursor",
+    "decision-making",
+    "education",
+    "gaokao",
+    "gemini-cli",
+    "hermes-agent",
+    "huashu-skills",
+    "mental-models",
+    "nuwa-skill",
+    "openclaw",
+    "opencode",
+    "persona",
+    "prompt-engineering",
+    "skills"
+  ],
   "stars": 10755,
   "forks": 2690,
   "open_issues": 1,
@@ -15,26 +36,26 @@
   "owner_avatar": "https://github.com/alchaincyf.png",
   "radar_score": 68.05,
   "impact": 91.41,
-  "velocity": 56.6,
+  "velocity": 56.61,
   "health": 46.69,
-  "global_percentile": 11.71,
+  "global_percentile": 13.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\u5f20\u96ea\u5cf0.skill \u2014 \u5f20\u96ea\u5cf0\u7684\u8ba4\u77e5\u64cd\u4f5c\u7cfb\u7edf\u3002\u9ad8\u8003\u5fd7\u613f/\u8003\u7814/\u804c\u4e1a\u89c4\u5212\u7684\u5b9e\u6218\u601d\u7ef4\u6846\u67b6\u3002\u7531\u5973\u5a32.skill\u751f\u6210\u3002",
   "maturity": "Unknown",
-  "stars_7d": 22,
-  "stars_30d": 22,
-  "stars_90d": 22,
-  "star_growth_rate_7d": 11.0,
-  "star_growth_rate_30d": 11.0,
+  "stars_7d": 23,
+  "stars_30d": 23,
+  "stars_90d": 23,
+  "star_growth_rate_7d": 7.666666666666667,
+  "star_growth_rate_30d": 7.666666666666667,
   "star_growth_acceleration": 1.0,
   "forks_7d": 3,
   "forks_30d": 3,
   "days_since_last_push": 30,
   "freshness_score": 0.7408182206817179,
-  "snapshot_count": 11,
+  "snapshot_count": 12,
   "authenticity": {
-    "organic_confidence": 83.6,
+    "organic_confidence": 82.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,35 +64,35 @@
         "label": "Fork-to-star ratio",
         "score": 97.0,
         "weight": 0.22,
-        "detail": "2,690 forks for 10,754 stars (25.0%)."
+        "detail": "2,690 forks for 10,755 stars (25.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.5,
+        "score": 99.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 8 stars (0 forks, 1.1x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 66.6,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+23 stars vs +3 forks this week (expected ~6 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 95.0,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.00x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 25.9,
         "weight": 0.12,
-        "detail": "1 open issues for 10,754 stars (0.0%)."
+        "detail": "1 open issues for 10,755 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +104,11 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 30 days ago.",
-      "Fork-to-star ratio: 2,690 forks for 10,754 stars (25.0%).",
-      "Burst pattern: Largest 24h jump was 8 stars (0 forks, 1.1x the daily average)."
+      "Growth acceleration: Weekly growth is 1.00x the monthly baseline.",
+      "Fork-to-star ratio: 2,690 forks for 10,755 stars (25.0%)."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 10,754 stars (0.0%)."
+      "Issue engagement: 1 open issues for 10,755 stars (0.0%)."
     ]
   }
 }

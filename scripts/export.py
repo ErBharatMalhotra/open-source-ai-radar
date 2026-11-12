@@ -661,6 +661,53 @@ def export_api(db_path: str = "data/radar.db", out_dir: str = "data/exports/api"
         print(f"Warning: Could not generate API: {e}")
 
 
+def prune_case_variants(out_dir: str = "data/exports") -> None:
+    """Delete export files whose `owner__repo` casing disagrees with project pages.
+
+    GitHub repository names are case-insensitive, so `Foo/Bar` and `Foo/bar`
+    are the same project. Older runs exported both spellings, which produced
+    duplicate pages and -- on case-insensitive filesystems (Windows, macOS) --
+    files git reports as perpetually modified. On Linux CI both files exist, so
+    drop whichever spelling `projects/` no longer uses; that directory is the
+    canonical source because export_project_pages() already resolves collisions.
+    """
+    import shutil
+
+    out = Path(out_dir)
+    projects_dir = out / "projects"
+    if not projects_dir.is_dir():
+        return
+
+    canonical = {path.stem.lower(): path.stem for path in projects_dir.glob("*.json")}
+
+    targets: list[tuple[Path, str | None]] = [
+        (out / "history", ".json"),
+        (out / "api" / "history", ".json"),
+        (out / "api" / "projects", ".json"),
+        (out / "api" / "badges", None),
+    ]
+
+    removed = 0
+    for directory, suffix in targets:
+        if not directory.is_dir():
+            continue
+        for path in directory.iterdir():
+            if suffix is not None and not path.name.endswith(suffix):
+                continue
+            stem = path.name[: -len(suffix)] if suffix is not None else path.name
+            keep = canonical.get(stem.lower())
+            if keep is None or stem == keep:
+                continue
+            if path.is_dir():
+                shutil.rmtree(path)
+            else:
+                path.unlink()
+            removed += 1
+
+    if removed:
+        print(f"Pruned {removed} case-variant export files")
+
+
 def export_badges(db_path: str = "data/radar.db", out_dir: str = "data/exports/api/badges") -> None:
     """Generate developer badges for top repos."""
     try:
@@ -678,3 +725,4 @@ if __name__ == "__main__":
     export_health()
     export_api()
     export_badges()
+    prune_case_variants()

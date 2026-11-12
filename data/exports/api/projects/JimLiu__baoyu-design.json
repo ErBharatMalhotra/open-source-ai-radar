@@ -4,46 +4,60 @@
   "description": "Run Claude Design locally as an Agent Skill \u2014 Cursor, Codex, DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus or Claude.",
   "language": "JavaScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 6368,
+  "topics": [
+    "agent-skills",
+    "claude-code",
+    "claude-design",
+    "dsh-plugin",
+    "dsh-plugins",
+    "claude-whiteboard",
+    "claude-artifacts",
+    "claude-dashboard",
+    "claude-data",
+    "claude-docs",
+    "claude-motion",
+    "claude-slides",
+    "open-artifacts"
+  ],
+  "stars": 6386,
   "forks": 506,
-  "open_issues": 0,
+  "open_issues": 2,
   "watchers": 11,
   "created_at": "2026-06-07T01:16:18Z",
-  "pushed_at": "2026-11-10T20:55:53Z",
+  "pushed_at": "2026-11-12T07:58:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/JimLiu.png",
-  "radar_score": 65.94,
-  "impact": 82.14,
-  "velocity": 55.0,
+  "radar_score": 68.46,
+  "impact": 82.81,
+  "velocity": 61.41,
   "health": 55.35,
-  "global_percentile": 9.29,
+  "global_percentile": 15.0,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Run Claude Design locally as an Agent Skill \u2014 Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4.8.",
   "maturity": "Unknown",
-  "stars_7d": 482,
-  "stars_30d": 1944,
-  "stars_90d": 2279,
-  "star_growth_rate_7d": 68.85714285714286,
-  "star_growth_rate_30d": 69.42857142857143,
-  "star_growth_acceleration": 0.9917695473251029,
-  "forks_7d": 54,
-  "forks_30d": 194,
+  "stars_7d": 165,
+  "stars_30d": 634,
+  "stars_90d": 2431,
+  "star_growth_rate_7d": 55.0,
+  "star_growth_rate_30d": 63.4,
+  "star_growth_acceleration": 0.8675078864353313,
+  "forks_7d": 18,
+  "forks_30d": 72,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 18,
+  "snapshot_count": 19,
   "authenticity": {
-    "organic_confidence": 84.3,
+    "organic_confidence": 84.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 92.6,
+        "score": 92.5,
         "weight": 0.22,
-        "detail": "506 forks for 6,368 stars (7.9%)."
+        "detail": "506 forks for 6,386 stars (7.9%)."
       },
       {
         "key": "burst",
@@ -69,25 +83,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25,
+        "score": 28.1,
         "weight": 0.12,
-        "detail": "0 open issues for 6,368 stars (0.0%)."
+        "detail": "2 open issues for 6,386 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 506 forks for 6,368 stars (7.9%).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Burst pattern: Largest 24h jump was 19 stars (1 forks, 0.3x the daily average)."
+      "Fork-to-star ratio: 506 forks for 6,386 stars (7.9%).",
+      "Burst pattern: Largest 24h jump was 19 stars (1 forks, 0.3x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 6,368 stars (0.0%)."
+      "Issue engagement: 2 open issues for 6,386 stars (0.0%)."
     ]
   }
 }

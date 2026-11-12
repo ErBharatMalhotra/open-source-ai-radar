@@ -51,7 +51,7 @@
   "freshness_score": 0.835270211411272,
   "snapshot_count": 29,
   "authenticity": {
-    "organic_confidence": 78.7,
+    "organic_confidence": 72.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -65,9 +65,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "No single-day star surge in the last 30 days."
+        "detail": "History window too short."
       },
       {
         "key": "alignment",
@@ -100,7 +100,6 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 42 days ago.",
-      "Burst pattern: No single-day star surge in the last 30 days.",
       "Fork-to-star ratio: 470 forks for 5,786 stars (8.1%)."
     ],
     "red_flags": [

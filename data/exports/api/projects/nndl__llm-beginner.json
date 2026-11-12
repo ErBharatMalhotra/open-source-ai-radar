@@ -4,8 +4,14 @@
   "description": "\u300a\u5927\u6a21\u578b\u4e0e\u667a\u80fd\u4f53\u300b\u7535\u5b50\u4e66\u4e0e 6 \u4e2a\u7f16\u7a0b\u4efb\u52a1\uff1aTransformer\u3001mini-GPT\u3001SFT/DPO\u3001RAG\u3001\u5de5\u5177\u8c03\u7528\u4e0e\u7f16\u7a0b\u667a\u80fd\u4f53\u3002",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 6880,
+  "topics": [
+    "fudannlp",
+    "step-by-step",
+    "agent",
+    "llm",
+    "openmoss"
+  ],
+  "stars": 6881,
   "forks": 1378,
   "open_issues": 1,
   "watchers": 99,
@@ -13,44 +19,44 @@
   "pushed_at": "2026-09-06T05:53:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nndl.png",
-  "radar_score": 57.68,
-  "impact": 90.35,
+  "radar_score": 57.58,
+  "impact": 90.28,
   "velocity": 30.98,
-  "health": 42.78,
-  "global_percentile": 1.29,
+  "health": 42.5,
+  "global_percentile": 0.43,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "LLM\u3001Agent\u4e0a\u624b\u6559\u7a0b",
   "maturity": "Unknown",
-  "stars_7d": 20,
-  "stars_30d": 74,
-  "stars_90d": 201,
-  "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 2.642857142857143,
-  "star_growth_acceleration": 1.0810810810810811,
-  "forks_7d": 1,
+  "stars_7d": 22,
+  "stars_30d": 78,
+  "stars_90d": 205,
+  "star_growth_rate_7d": 3.142857142857143,
+  "star_growth_rate_30d": 2.6,
+  "star_growth_acceleration": 1.2087912087912087,
+  "forks_7d": 3,
   "forks_30d": 7,
-  "days_since_last_push": 65,
-  "freshness_score": 0.522045776761016,
-  "snapshot_count": 76,
+  "days_since_last_push": 67,
+  "freshness_score": 0.5117085777865424,
+  "snapshot_count": 77,
   "authenticity": {
-    "organic_confidence": 75.4,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.5,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 98.0,
         "weight": 0.22,
-        "detail": "1,378 forks for 6,880 stars (20.0%)."
+        "detail": "1,378 forks for 6,881 stars (20.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 78.9,
+        "score": 93.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (0 forks, 2.7x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (0 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +77,23 @@
         "label": "Issue engagement",
         "score": 26.5,
         "weight": 0.12,
-        "detail": "1 open issues for 6,880 stars (0.0%)."
+        "detail": "1 open issues for 6,881 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 76.0,
+        "score": 75.8,
         "weight": 0.1,
-        "detail": "Last push 66 days ago."
+        "detail": "Last push 67 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 66 days ago.",
-      "Burst pattern: Largest 24h jump was 7 stars (0 forks, 2.7x the daily average).",
-      "Fork-to-star ratio: 1,378 forks for 6,880 stars (20.0%)."
+      "Maintenance cadence: Last push 67 days ago.",
+      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 1.7x the daily average).",
+      "Fork-to-star ratio: 1,378 forks for 6,881 stars (20.0%)."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 6,880 stars (0.0%)."
+      "Issue engagement: 1 open issues for 6,881 stars (0.0%)."
     ]
   }
 }

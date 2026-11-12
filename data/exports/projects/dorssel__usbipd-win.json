@@ -4,8 +4,17 @@
   "description": "Windows software for sharing locally connected USB devices to other machines, including Hyper-V guests and WSL 2.",
   "language": "C#",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 6301,
+  "topics": [
+    "windows",
+    "usb",
+    "usbip",
+    "usbip-win",
+    "hyper-v",
+    "usbipd",
+    "wsl",
+    "wsl2"
+  ],
+  "stars": 6304,
   "forks": 387,
   "open_issues": 85,
   "watchers": 59,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-11T18:36:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dorssel.png",
-  "radar_score": 67.55,
-  "impact": 86.33,
-  "velocity": 48.8,
+  "radar_score": 67.57,
+  "impact": 86.35,
+  "velocity": 48.82,
   "health": 63.75,
-  "global_percentile": 14.0,
+  "global_percentile": 12.14,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Windows software for sharing locally connected USB devices to other machines, including Hyper-V guests and WSL 2.",
   "maturity": "Unknown",
-  "stars_7d": 18,
-  "stars_30d": 81,
-  "stars_90d": 237,
-  "star_growth_rate_7d": 2.5714285714285716,
-  "star_growth_rate_30d": 2.793103448275862,
-  "star_growth_acceleration": 0.9206349206349207,
-  "forks_7d": 1,
-  "forks_30d": 13,
+  "stars_7d": 14,
+  "stars_30d": 83,
+  "stars_90d": 249,
+  "star_growth_rate_7d": 4.666666666666667,
+  "star_growth_rate_30d": 2.7666666666666666,
+  "star_growth_acceleration": 1.6867469879518073,
+  "forks_7d": 2,
+  "forks_30d": 16,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 59,
+  "snapshot_count": 60,
   "authenticity": {
-    "organic_confidence": 91.5,
+    "organic_confidence": 91.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +52,12 @@
         "label": "Fork-to-star ratio",
         "score": 86.1,
         "weight": 0.22,
-        "detail": "387 forks for 6,301 stars (6.1%)."
+        "detail": "387 forks for 6,304 stars (6.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 98.6,
+        "score": 99.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 3 stars (0 forks, 1.1x the daily average)."
       },
@@ -71,7 +80,7 @@
         "label": "Issue engagement",
         "score": 80.2,
         "weight": 0.12,
-        "detail": "85 open issues for 6,301 stars (1.3%)."
+        "detail": "85 open issues for 6,304 stars (1.3%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +91,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 85 open issues for 6,301 stars (1.3%).",
-      "Fork-to-star ratio: 387 forks for 6,301 stars (6.1%).",
+      "Issue engagement: 85 open issues for 6,304 stars (1.3%).",
+      "Fork-to-star ratio: 387 forks for 6,304 stars (6.1%).",
       "Burst pattern: Largest 24h jump was 3 stars (0 forks, 1.1x the daily average)."
     ],
     "red_flags": []

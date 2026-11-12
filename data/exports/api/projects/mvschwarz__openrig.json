@@ -4,37 +4,49 @@
   "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 8821,
-  "forks": 749,
-  "open_issues": 156,
+  "topics": [
+    "agent-harness",
+    "agent-orchestration",
+    "agent-skills",
+    "ai-coding",
+    "claude-code",
+    "cli",
+    "codex-cli",
+    "multi-agent",
+    "tmux",
+    "typescript",
+    "multi-agent-systems"
+  ],
+  "stars": 8825,
+  "forks": 750,
+  "open_issues": 154,
   "watchers": 27,
   "created_at": "2026-04-01T06:22:40Z",
-  "pushed_at": "2026-11-11T20:46:13Z",
+  "pushed_at": "2026-11-12T02:51:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mvschwarz.png",
-  "radar_score": 75.33,
-  "impact": 87.82,
-  "velocity": 69.34,
+  "radar_score": 75.35,
+  "impact": 87.83,
+  "velocity": 69.37,
   "health": 63.75,
-  "global_percentile": 59.0,
+  "global_percentile": 56.14,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
   "maturity": "Unknown",
-  "stars_7d": 243,
-  "stars_30d": 1988,
-  "stars_90d": 3946,
-  "star_growth_rate_7d": 34.714285714285715,
-  "star_growth_rate_30d": 66.26666666666667,
-  "star_growth_acceleration": 0.5238574302960621,
-  "forks_7d": 38,
-  "forks_30d": 240,
+  "stars_7d": 210,
+  "stars_30d": 1548,
+  "stars_90d": 3965,
+  "star_growth_rate_7d": 30.0,
+  "star_growth_rate_30d": 53.37931034482759,
+  "star_growth_acceleration": 0.562015503875969,
+  "forks_7d": 34,
+  "forks_30d": 199,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 55,
+  "snapshot_count": 56,
   "authenticity": {
-    "organic_confidence": 90.4,
+    "organic_confidence": 90.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 94.6,
         "weight": 0.22,
-        "detail": "749 forks for 8,821 stars (8.5%)."
+        "detail": "750 forks for 8,825 stars (8.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 84.5,
+        "score": 83.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 125 stars (8 forks, 2.4x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 86.5,
+        "score": 86.2,
         "weight": 0.12,
-        "detail": "156 open issues for 8,821 stars (1.8%)."
+        "detail": "154 open issues for 8,825 stars (1.7%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +95,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 125 stars (8 forks, 2.4x the daily average).",
-      "Issue engagement: 156 open issues for 8,821 stars (1.8%).",
-      "Fork-to-star ratio: 749 forks for 8,821 stars (8.5%)."
+      "Issue engagement: 154 open issues for 8,825 stars (1.7%).",
+      "Fork-to-star ratio: 750 forks for 8,825 stars (8.5%)."
     ],
     "red_flags": []
   }

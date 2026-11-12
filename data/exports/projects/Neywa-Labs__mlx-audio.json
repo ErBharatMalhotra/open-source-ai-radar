@@ -4,37 +4,47 @@
   "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "apple-silicon",
+    "audio-processing",
+    "mlx",
+    "multimodal",
+    "speech-recognition",
+    "speech-synthesis",
+    "speech-to-text",
+    "text-to-speech",
+    "transformers"
+  ],
   "stars": 8251,
   "forks": 793,
-  "open_issues": 66,
+  "open_issues": 65,
   "watchers": 51,
   "created_at": "2024-11-27T21:14:34Z",
-  "pushed_at": "2026-11-11T21:04:44Z",
+  "pushed_at": "2026-11-11T22:41:06Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Neywa-Labs.png",
-  "radar_score": 72.1,
+  "radar_score": 72.19,
   "impact": 89.16,
-  "velocity": 58.84,
-  "health": 63.38,
-  "global_percentile": 36.0,
+  "velocity": 58.83,
+  "health": 63.75,
+  "global_percentile": 33.57,
   "category": "Local AI",
   "sub_category": "",
   "summary": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
   "maturity": "Unknown",
-  "stars_7d": 44,
-  "stars_30d": 44,
-  "stars_90d": 44,
-  "star_growth_rate_7d": 7.333333333333333,
-  "star_growth_rate_30d": 7.333333333333333,
-  "star_growth_acceleration": 1.0,
+  "stars_7d": 53,
+  "stars_30d": 59,
+  "stars_90d": 59,
+  "star_growth_rate_7d": 7.571428571428571,
+  "star_growth_rate_30d": 7.375,
+  "star_growth_acceleration": 1.026634382566586,
   "forks_7d": 9,
-  "forks_30d": 9,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 12,
+  "forks_30d": 10,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 13,
   "authenticity": {
-    "organic_confidence": 90.9,
+    "organic_confidence": 91.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +58,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.9,
+        "score": 93.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 12 stars (0 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 12 stars (0 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 69.0,
+        "score": 68.6,
         "weight": 0.12,
-        "detail": "66 open issues for 8,251 stars (0.8%)."
+        "detail": "65 open issues for 8,251 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.9x the daily average).",
+      "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.6x the daily average).",
       "Fork-to-star ratio: 793 forks for 8,251 stars (9.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

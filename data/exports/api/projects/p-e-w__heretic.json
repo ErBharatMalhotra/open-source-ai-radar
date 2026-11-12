@@ -4,37 +4,45 @@
   "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 40351,
-  "forks": 4626,
+  "topics": [
+    "abliteration",
+    "llm",
+    "transformer",
+    "censorship-resistance",
+    "censorship",
+    "anti-censorship",
+    "anticensorship"
+  ],
+  "stars": 40364,
+  "forks": 4627,
   "open_issues": 34,
   "watchers": 205,
   "created_at": "2025-09-21T05:46:16Z",
   "pushed_at": "2026-11-10T10:40:26Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/p-e-w.png",
-  "radar_score": 76.24,
+  "radar_score": 75.63,
   "impact": 97.45,
-  "velocity": 65.06,
-  "health": 57.98,
-  "global_percentile": 65.14,
+  "velocity": 63.56,
+  "health": 57.61,
+  "global_percentile": 55.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Fully automatic censorship removal for language models",
   "maturity": "Unknown",
-  "stars_7d": 1176,
-  "stars_30d": 4308,
-  "stars_90d": 4308,
-  "star_growth_rate_7d": 168.0,
-  "star_growth_rate_30d": 205.14285714285714,
-  "star_growth_acceleration": 0.818941504178273,
-  "forks_7d": 209,
-  "forks_30d": 545,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 328,
+  "stars_7d": 1088,
+  "stars_30d": 4294,
+  "stars_90d": 4294,
+  "star_growth_rate_7d": 155.42857142857142,
+  "star_growth_rate_30d": 204.47619047619048,
+  "star_growth_acceleration": 0.7601304145319049,
+  "forks_7d": 194,
+  "forks_30d": 540,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 329,
   "authenticity": {
-    "organic_confidence": 76.3,
+    "organic_confidence": 76.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +51,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "4,625 forks for 40,349 stars (11.5%)."
+        "detail": "4,627 forks for 40,364 stars (11.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 66.7,
+        "score": 66.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 667 stars (42 forks, 3.7x the daily average)."
+        "detail": "Largest 24h jump was 667 stars (42 forks, 3.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,22 +79,22 @@
         "label": "Issue engagement",
         "score": 33.4,
         "weight": 0.12,
-        "detail": "34 open issues for 40,349 stars (0.1%)."
+        "detail": "34 open issues for 40,364 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 4,625 forks for 40,349 stars (11.5%)."
+      "Maintenance cadence: Last push 2 days ago.",
+      "Fork-to-star ratio: 4,627 forks for 40,364 stars (11.5%)."
     ],
     "red_flags": [
-      "Issue engagement: 34 open issues for 40,349 stars (0.1%)."
+      "Issue engagement: 34 open issues for 40,364 stars (0.1%)."
     ]
   }
 }

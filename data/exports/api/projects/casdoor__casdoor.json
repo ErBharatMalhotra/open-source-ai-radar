@@ -4,8 +4,29 @@
   "description": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 14839,
+  "topics": [
+    "oidc",
+    "sso",
+    "oauth",
+    "iam",
+    "saml",
+    "webauthn",
+    "mfa",
+    "single-sign-on",
+    "radius",
+    "scim",
+    "auth",
+    "authentication",
+    "mcp-gateway",
+    "ai-gateway",
+    "mcp",
+    "agent",
+    "openclaw",
+    "agentic-ai",
+    "agi",
+    "llm"
+  ],
+  "stars": 14841,
   "forks": 1914,
   "open_issues": 88,
   "watchers": 80,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-11T11:37:17Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/casdoor.png",
-  "radar_score": 72.83,
+  "radar_score": 72.74,
   "impact": 93.1,
-  "velocity": 56.15,
-  "health": 63.75,
-  "global_percentile": 39.14,
+  "velocity": 56.16,
+  "health": 63.38,
+  "global_percentile": 32.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
   "maturity": "Unknown",
-  "stars_7d": 84,
-  "stars_30d": 241,
-  "stars_90d": 241,
-  "star_growth_rate_7d": 12.0,
-  "star_growth_rate_30d": 10.041666666666666,
-  "star_growth_acceleration": 1.1950207468879668,
+  "stars_7d": 85,
+  "stars_30d": 243,
+  "stars_90d": 243,
+  "star_growth_rate_7d": 12.142857142857142,
+  "star_growth_rate_30d": 10.125,
+  "star_growth_acceleration": 1.199294532627866,
   "forks_7d": 27,
-  "forks_30d": -20,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 265,
+  "forks_30d": -25,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 266,
   "authenticity": {
-    "organic_confidence": 84.3,
+    "organic_confidence": 84.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "1,913 forks for 14,838 stars (12.9%)."
+        "detail": "1,914 forks for 14,841 stars (12.9%)."
       },
       {
         "key": "burst",
@@ -71,19 +92,19 @@
         "label": "Issue engagement",
         "score": 62.8,
         "weight": 0.12,
-        "detail": "88 open issues for 14,838 stars (0.6%)."
+        "detail": "88 open issues for 14,841 stars (0.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,913 forks for 14,838 stars (12.9%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 1,914 forks for 14,841 stars (12.9%)."
     ],
     "red_flags": []
   }

@@ -22,5 +22,60 @@
   "sub_category": "research agent",
   "summary": "\u540c\u82b1\u987a\u5b98\u65b9 A\u80a1\u91d1\u878d\u6570\u636e\u670d\u52a1\uff0c\u63d0\u4f9b\u80a1\u7968\u5b9e\u65f6\u884c\u60c5\u3001\u5386\u53f2\u884c\u60c5\u3001\u8d22\u52a1\u62a5\u8868\u3001\u6307\u6570\u3001\u677f\u5757\u3001\u6da8\u505c\u7b49\u6570\u636e\uff0c\u9002\u7528\u4e8e AI Agent\u3001\u91cf\u5316\u7814\u7a76\u548c\u5e94\u7528\u5f00\u53d1\uff0c\u652f\u6301 API\u3001MCP\u3001CLI \u548c Python\u3002Official Tonghuashun (HiThink) A-share financial data service providing real-time and historical stock market data, financial statements, indices, sectors and limit-up data for AI agents, quantitative resear",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 92.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 96.5,
+        "weight": 0.22,
+        "detail": "373 forks for 4,126 stars (9.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 79.3,
+        "weight": 0.12,
+        "detail": "53 open issues for 4,126 stars (1.3%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Issue engagement: 53 open issues for 4,126 stars (1.3%).",
+      "Fork-to-star ratio: 373 forks for 4,126 stars (9.0%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": []
+  }
 }

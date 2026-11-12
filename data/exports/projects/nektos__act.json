@@ -4,8 +4,13 @@
   "description": "Run your GitHub Actions locally \ud83d\ude80",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 72658,
+  "topics": [
+    "github-actions",
+    "golang",
+    "ci",
+    "devops"
+  ],
+  "stars": 72664,
   "forks": 2119,
   "open_issues": 270,
   "watchers": 202,
@@ -17,24 +22,24 @@
   "impact": 97.32,
   "velocity": 60.54,
   "health": 56.71,
-  "global_percentile": 48.86,
+  "global_percentile": 42.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Run your GitHub Actions locally \ud83d\ude80",
   "maturity": "Unknown",
-  "stars_7d": 125,
+  "stars_7d": 130,
   "stars_30d": 300,
   "stars_90d": 300,
-  "star_growth_rate_7d": 17.857142857142858,
-  "star_growth_rate_30d": 11.538461538461538,
+  "star_growth_rate_7d": 18.571428571428573,
+  "star_growth_rate_30d": 12.0,
   "star_growth_acceleration": 1.5476190476190477,
-  "forks_7d": 21,
-  "forks_30d": 53,
+  "forks_7d": 20,
+  "forks_30d": 52,
   "days_since_last_push": 7,
   "freshness_score": 0.9323938199059483,
-  "snapshot_count": 271,
+  "snapshot_count": 272,
   "authenticity": {
-    "organic_confidence": 76.7,
+    "organic_confidence": 77.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 68.1,
         "weight": 0.22,
-        "detail": "2,120 forks for 72,655 stars (2.9%)."
+        "detail": "2,119 forks for 72,664 stars (2.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.5,
+        "score": 89.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 24 stars (3 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 24 stars (3 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +76,7 @@
         "label": "Issue engagement",
         "score": 53.6,
         "weight": 0.12,
-        "detail": "270 open issues for 72,655 stars (0.4%)."
+        "detail": "270 open issues for 72,664 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 24 stars (3 forks, 2.1x the daily average).",
+      "Burst pattern: Largest 24h jump was 24 stars (3 forks, 2.0x the daily average).",
       "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": []

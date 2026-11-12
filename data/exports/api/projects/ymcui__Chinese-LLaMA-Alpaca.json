@@ -4,19 +4,31 @@
   "description": "\u4e2d\u6587LLaMA&Alpaca\u5927\u8bed\u8a00\u6a21\u578b+\u672c\u5730CPU/GPU\u8bad\u7ec3\u90e8\u7f72 (Chinese LLaMA & Alpaca LLMs)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "llm",
+    "plm",
+    "pre-trained-language-models",
+    "alpaca",
+    "llama",
+    "nlp",
+    "quantization",
+    "large-language-models",
+    "lora",
+    "alpaca-2",
+    "llama-2"
+  ],
   "stars": 18914,
-  "forks": 1833,
+  "forks": 1832,
   "open_issues": 1,
   "watchers": 182,
   "created_at": "2023-03-15T11:09:39Z",
   "pushed_at": "2026-04-19T00:58:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ymcui.png",
-  "radar_score": 59.77,
-  "impact": 94.76,
-  "velocity": 37.84,
-  "health": 34.49,
+  "radar_score": 59.75,
+  "impact": 94.74,
+  "velocity": 37.83,
+  "health": 34.47,
   "global_percentile": 0.57,
   "category": "LLM Frameworks",
   "sub_category": "",
@@ -24,17 +36,17 @@
   "maturity": "Unknown",
   "stars_7d": -5,
   "stars_30d": -14,
-  "stars_90d": -19,
-  "star_growth_rate_7d": -0.8333333333333334,
+  "stars_90d": -20,
+  "star_growth_rate_7d": -0.7142857142857143,
   "star_growth_rate_30d": -0.4666666666666667,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": -4,
-  "days_since_last_push": 206,
-  "freshness_score": 0.12745396989482075,
-  "snapshot_count": 95,
+  "forks_7d": -1,
+  "forks_30d": -6,
+  "days_since_last_push": 207,
+  "freshness_score": 0.12618578170503877,
+  "snapshot_count": 96,
   "authenticity": {
-    "organic_confidence": 74.5,
+    "organic_confidence": 74.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "1,833 forks for 18,915 stars (9.7%)."
+        "detail": "1,832 forks for 18,914 stars (9.7%)."
       },
       {
         "key": "burst",
@@ -71,7 +83,7 @@
         "label": "Issue engagement",
         "score": 25.5,
         "weight": 0.12,
-        "detail": "1 open issues for 18,915 stars (0.0%)."
+        "detail": "1 open issues for 18,914 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,10 +95,10 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 2 stars (59 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 1,833 forks for 18,915 stars (9.7%)."
+      "Fork-to-star ratio: 1,832 forks for 18,914 stars (9.7%)."
     ],
     "red_flags": [
-      "Issue engagement: 1 open issues for 18,915 stars (0.0%)."
+      "Issue engagement: 1 open issues for 18,914 stars (0.0%)."
     ]
   }
 }

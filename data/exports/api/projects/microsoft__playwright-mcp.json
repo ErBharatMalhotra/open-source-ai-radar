@@ -4,9 +4,12 @@
   "description": "Playwright MCP server",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 39537,
-  "forks": 3424,
+  "topics": [
+    "mcp",
+    "playwright"
+  ],
+  "stars": 39544,
+  "forks": 3425,
   "open_issues": 0,
   "watchers": 148,
   "created_at": "2025-03-21T17:48:36Z",
@@ -17,24 +20,24 @@
   "impact": 96.85,
   "velocity": 51.75,
   "health": 58.35,
-  "global_percentile": 28.14,
+  "global_percentile": 24.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Playwright MCP server",
   "maturity": "Unknown",
-  "stars_7d": 373,
-  "stars_30d": 1098,
-  "stars_90d": 1098,
-  "star_growth_rate_7d": 53.285714285714285,
-  "star_growth_rate_30d": 49.90909090909091,
-  "star_growth_acceleration": 1.067655477491543,
+  "stars_7d": 371,
+  "stars_30d": 1089,
+  "stars_90d": 1089,
+  "star_growth_rate_7d": 53.0,
+  "star_growth_rate_30d": 49.5,
+  "star_growth_acceleration": 1.0707070707070707,
   "forks_7d": 43,
-  "forks_30d": 133,
+  "forks_30d": 130,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 318,
+  "snapshot_count": 319,
   "authenticity": {
-    "organic_confidence": 76.6,
+    "organic_confidence": 76.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +46,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.2,
         "weight": 0.22,
-        "detail": "3,424 forks for 39,536 stars (8.7%)."
+        "detail": "3,425 forks for 39,544 stars (8.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.8,
+        "score": 75.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 143 stars (11 forks, 2.9x the daily average)."
       },
@@ -71,7 +74,7 @@
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 39,536 stars (0.0%)."
+        "detail": "0 open issues for 39,544 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +86,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 143 stars (11 forks, 2.9x the daily average).",
-      "Fork-to-star ratio: 3,424 forks for 39,536 stars (8.7%).",
+      "Fork-to-star ratio: 3,425 forks for 39,544 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 39,536 stars (0.0%)."
+      "Issue engagement: 0 open issues for 39,544 stars (0.0%)."
     ]
   }
 }

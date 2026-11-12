@@ -34,7 +34,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 72,
   "authenticity": {
-    "organic_confidence": 89.2,
+    "organic_confidence": 89.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -76,15 +76,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 14 stars (1 forks, 2.9x the daily average).",
       "Issue engagement: 235 open issues for 13,479 stars (1.7%).",
-      "Fork-to-star ratio: 1,800 forks for 13,479 stars (13.4%)."
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

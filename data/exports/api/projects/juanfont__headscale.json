@@ -4,37 +4,42 @@
   "description": "An open source, self-hosted implementation of the Tailscale control server",
   "language": "Go",
   "license": "BSD-3-Clause",
-  "topics": [],
-  "stars": 45618,
-  "forks": 2640,
+  "topics": [
+    "tailscale",
+    "tailscale-control-server",
+    "wireguard",
+    "tailscale-server"
+  ],
+  "stars": 45625,
+  "forks": 2641,
   "open_issues": 53,
   "watchers": 213,
   "created_at": "2020-06-21T09:21:05Z",
-  "pushed_at": "2026-11-12T06:39:03Z",
+  "pushed_at": "2026-11-12T09:38:06Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/juanfont.png",
-  "radar_score": 76.34,
+  "radar_score": 76.33,
   "impact": 97.09,
-  "velocity": 61.6,
+  "velocity": 61.59,
   "health": 63.75,
-  "global_percentile": 66.14,
+  "global_percentile": 62.0,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "An open source, self-hosted implementation of the Tailscale control server",
   "maturity": "Unknown",
-  "stars_7d": 260,
-  "stars_30d": 794,
-  "stars_90d": 794,
-  "star_growth_rate_7d": 37.142857142857146,
-  "star_growth_rate_30d": 36.09090909090909,
-  "star_growth_acceleration": 1.0291471752428931,
-  "forks_7d": 12,
-  "forks_30d": -5,
+  "stars_7d": 259,
+  "stars_30d": 795,
+  "stars_90d": 795,
+  "star_growth_rate_7d": 37.0,
+  "star_growth_rate_30d": 36.13636363636363,
+  "star_growth_acceleration": 1.0238993710691824,
+  "forks_7d": 14,
+  "forks_30d": -4,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 314,
+  "snapshot_count": 315,
   "authenticity": {
-    "organic_confidence": 82.0,
+    "organic_confidence": 81.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 84.8,
         "weight": 0.22,
-        "detail": "2,640 forks for 45,617 stars (5.8%)."
+        "detail": "2,641 forks for 45,625 stars (5.8%)."
       },
       {
         "key": "burst",
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 36.8,
+        "score": 36.6,
         "weight": 0.12,
-        "detail": "54 open issues for 45,617 stars (0.1%)."
+        "detail": "53 open issues for 45,625 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +87,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,640 forks for 45,617 stars (5.8%).",
+      "Fork-to-star ratio: 2,641 forks for 45,625 stars (5.8%).",
       "Burst pattern: Largest 24h jump was 54 stars (2 forks, 1.6x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 54 open issues for 45,617 stars (0.1%)."
+      "Issue engagement: 53 open issues for 45,625 stars (0.1%)."
     ]
   }
 }

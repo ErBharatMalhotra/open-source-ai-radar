@@ -4,37 +4,47 @@
   "description": "Deploy real projects from GitHub or your AI coding agent, then keep them running with AI-powered operations.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 18392,
-  "forks": 2481,
+  "topics": [
+    "kubernetes",
+    "kubernetes-ha",
+    "ipvs",
+    "kubeadm",
+    "golang",
+    "docker",
+    "cloudos",
+    "container",
+    "install"
+  ],
+  "stars": 18393,
+  "forks": 2480,
   "open_issues": 34,
   "watchers": 259,
   "created_at": "2018-08-15T12:22:50Z",
-  "pushed_at": "2026-11-12T07:16:40Z",
+  "pushed_at": "2026-11-12T09:02:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/labring.png",
-  "radar_score": 72.39,
-  "impact": 95.31,
-  "velocity": 54.51,
+  "radar_score": 72.38,
+  "impact": 95.29,
+  "velocity": 54.5,
   "health": 60.75,
-  "global_percentile": 30.86,
+  "global_percentile": 30.29,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Deploy real projects from GitHub or your AI coding agent, then keep them running with AI-powered operations.",
   "maturity": "Unknown",
   "stars_7d": 3,
-  "stars_30d": 25,
-  "stars_90d": 41,
-  "star_growth_rate_7d": 0.5,
-  "star_growth_rate_30d": 0.8333333333333334,
-  "star_growth_acceleration": 0.6,
-  "forks_7d": -1,
-  "forks_30d": 3,
+  "stars_30d": 24,
+  "stars_90d": 40,
+  "star_growth_rate_7d": 0.42857142857142855,
+  "star_growth_rate_30d": 0.8,
+  "star_growth_acceleration": 0.5357142857142857,
+  "forks_7d": -2,
+  "forks_30d": 2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 142,
+  "snapshot_count": 143,
   "authenticity": {
-    "organic_confidence": 80.9,
+    "organic_confidence": 81.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "2,481 forks for 18,392 stars (13.5%)."
+        "detail": "2,480 forks for 18,393 stars (13.5%)."
       },
       {
         "key": "burst",
@@ -71,20 +81,20 @@
         "label": "Issue engagement",
         "score": 43.5,
         "weight": 0.12,
-        "detail": "34 open issues for 18,392 stars (0.2%)."
+        "detail": "34 open issues for 18,393 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (1 forks, 3.0x the daily average).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 2,481 forks for 18,392 stars (13.5%)."
+      "Fork-to-star ratio: 2,480 forks for 18,393 stars (13.5%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

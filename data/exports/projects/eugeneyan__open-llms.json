@@ -34,7 +34,7 @@
   "freshness_score": 0.0017293667118571557,
   "snapshot_count": 89,
   "authenticity": {
-    "organic_confidence": 70.6,
+    "organic_confidence": 74.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +48,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 2 stars (-1 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,8 +82,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 2 stars (-1 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 985 forks for 12,884 stars (7.6%)."
+      "Fork-to-star ratio: 985 forks for 12,884 stars (7.6%).",
+      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
       "Maintenance cadence: Last push 637 days ago.",

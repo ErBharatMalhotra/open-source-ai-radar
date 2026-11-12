@@ -9,7 +9,7 @@ Badge types:
 - stars: Star count with radar branding
 
 Usage in README.md:
-![Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/{owner}__{repo}/score.svg)
+![Radar Score](https://radar.bharatdn.com/api/badges/{owner}__{repo}/score.svg)
 """
 
 from __future__ import annotations

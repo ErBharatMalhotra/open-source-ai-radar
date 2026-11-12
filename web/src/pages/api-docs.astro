@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { siteRoot } from '../utils/site';
 
-const siteUrl = "https://erbharatmalhotra.github.io/open-source-ai-radar";
+const siteUrl = siteRoot(Astro.site);
+const base = import.meta.env.BASE_URL;
 
 const endpoints = [
   { method: "GET", path: "/api/repos.json", desc: "All tracked repositories" },
@@ -44,11 +46,11 @@ const endpoints = [
         (e.g. <code style="font-family:var(--font-mono);">BerriAI__litellm</code>).
       </p>
       <h3 style="font-size:var(--text-sm); font-weight:600; color:var(--accent); margin-bottom:var(--sp-2);">Score badge</h3>
-      <pre style="padding:var(--sp-4); background:var(--bg); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:var(--text-xs); white-space:pre-wrap; overflow-x:auto; margin-bottom:var(--sp-4);">![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)</pre>
-      <p style="margin-bottom:var(--sp-2);"><img src="/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg" alt="score badge preview" style="height:20px;" /></p>
+      <pre style="padding:var(--sp-4); background:var(--bg); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:var(--text-xs); white-space:pre-wrap; overflow-x:auto; margin-bottom:var(--sp-4);">{`![AI Radar Score](${siteUrl}/api/badges/OWNER__REPO/score.svg)`}</pre>
+      <p style="margin-bottom:var(--sp-2);"><img src={`${base}api/badges/BerriAI__litellm/score.svg`} alt="score badge preview" style="height:20px;" /></p>
       <h3 style="font-size:var(--text-sm); font-weight:600; color:var(--accent); margin-bottom:var(--sp-2);">Velocity badge</h3>
-      <pre style="padding:var(--sp-4); background:var(--bg); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:var(--text-xs); white-space:pre-wrap; overflow-x:auto;">![AI Radar Velocity](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/velocity.svg)</pre>
-      <p style="margin-top:var(--sp-2);"><img src="/open-source-ai-radar/api/badges/BerriAI__litellm/velocity.svg" alt="velocity badge preview" style="height:20px;" /></p>
+      <pre style="padding:var(--sp-4); background:var(--bg); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:var(--text-xs); white-space:pre-wrap; overflow-x:auto;">{`![AI Radar Velocity](${siteUrl}/api/badges/OWNER__REPO/velocity.svg)`}</pre>
+      <p style="margin-top:var(--sp-2);"><img src={`${base}api/badges/BerriAI__litellm/velocity.svg`} alt="velocity badge preview" style="height:20px;" /></p>
     </div>
     <div class="card" style="padding:var(--sp-6);">
       <h3 style="font-size:var(--text-sm); font-weight:600; margin-bottom:var(--sp-2);">Available badges</h3>

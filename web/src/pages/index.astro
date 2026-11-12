@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { siteRoot } from '../utils/site';
 
 const base = import.meta.env.BASE_URL;
+const siteUrl = siteRoot(Astro.site);
 
 let stats = { total_repos: 0, total_stars: 0, top_languages: {} as Record<string, number> };
 let topRepos: any[] = [];
@@ -75,12 +77,12 @@ function ownerInitials(fullName: string): string {
 }
 ---
 
-<Layout title="Home" description={`Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for ${fmt(stats.total_repos || 9000)}+ projects.`} canonical="/open-source-ai-radar/"
+<Layout title="Home" description={`Discover what is becoming important in open-source AI. Velocity scoring, momentum tracking, breakout detection for ${fmt(stats.total_repos || 9000)}+ projects.`} canonical="/"
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Open Source AI Radar",
-    "url": "https://erbharatmalhotra.github.io/open-source-ai-radar/",
+    "url": `${siteUrl}/`,
     "description": "Discover what is becoming important before everyone else does."
   }}>
 

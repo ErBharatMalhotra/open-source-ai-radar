@@ -6,7 +6,7 @@ This document outlines the plan to scale Open Source AI Radar from 5,000 to 500,
 
 | Metric | Value |
 |--------|-------|
-| Repositories | 9,800+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
+| Repositories | 9,800+ (live: [stats.json](https://radar.bharatdn.com/api/stats.json)) |
 | Tracked stars | 42.0M+ |
 | API rate limit | 1,000 points/hour (single GITHUB_TOKEN) |
 | Processing | 4 runs/day x 700 repos = 2,800/day |

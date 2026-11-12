@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { readFileSync, readdirSync } from 'fs';
 import { topProjectSet } from '../../../utils/og';
+import { siteRoot } from '../../../utils/site';
 
 export function getStaticPaths() {
   const projectsDir = join(process.cwd(), '..', 'data', 'exports', 'projects');
@@ -20,6 +21,7 @@ import { join } from 'path';
 
 const { owner, repo } = Astro.params;
 const base = import.meta.env.BASE_URL;
+const siteUrl = siteRoot(Astro.site);
 
 const projectKey = `${owner}__${repo}`;
 const projectPath = join(process.cwd(), '..', 'data', 'exports', 'projects', `${projectKey}.json`);
@@ -387,7 +389,7 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
         </div>
         <div style="display:flex; gap:var(--sp-2);">
           <a
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${owner}/${repo} on Open Source AI Radar — Radar Score: ${project.radar_score?.toFixed(1) || ''} ★`)}&url=${encodeURIComponent(`https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo}`)}`}
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${owner}/${repo} on Open Source AI Radar — Radar Score: ${project.radar_score?.toFixed(1) || ''} ★`)}&url=${encodeURIComponent(`${siteUrl}/project/${owner}/${repo}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             class="filter-pill"
@@ -397,7 +399,7 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
             Share on X
           </a>
           <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo}`)}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${siteUrl}/project/${owner}/${repo}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             class="filter-pill"
@@ -416,7 +418,7 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
             <input
               type="text"
               readonly
-              value={`<iframe src="https://erbharatmalhotra.github.io/open-source-ai-radar/embed/${owner}/${repo}" width="360" height="130" frameborder="0"></iframe>`}
+              value={`<iframe src="${siteUrl}/embed/${owner}/${repo}" width="360" height="130" frameborder="0"></iframe>`}
               style="width:100%; font-family:var(--font-mono); font-size:var(--text-xs); background:var(--bg-surface); color:var(--text-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp-2) var(--sp-3);"
               onclick="this.select()"
             />
@@ -429,7 +431,7 @@ const scoreChart = buildChart(scorePoints, 'var(--accent)');
             <input
               type="text"
               readonly
-              value={`[![Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badge/${owner}__${repo}.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/${owner}/${repo})`}
+              value={`[![Radar Score](${siteUrl}/api/badges/${owner}__${repo}/score.svg)](${siteUrl}/project/${owner}/${repo})`}
               style="width:100%; font-family:var(--font-mono); font-size:var(--text-xs); background:var(--bg-surface); color:var(--text-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:var(--sp-2) var(--sp-3);"
               onclick="this.select()"
             />

@@ -1,6 +1,6 @@
 # Open Source AI Radar — Website
 
-Astro static site for the [Open Source AI Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/).
+Astro static site for the [Open Source AI Radar](https://radar.bharatdn.com/).
 
 ## Data Source
 

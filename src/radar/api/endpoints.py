@@ -23,6 +23,7 @@ import logging
 from datetime import UTC, datetime
 from pathlib import Path
 
+from radar.site import SITE_URL
 from radar.storage.database import Database
 
 logger = logging.getLogger(__name__)
@@ -276,11 +277,11 @@ class PublicAPI:
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source AI Radar — Trending</title>
-    <link>https://erbharatmalhotra.github.io/open-source-ai-radar/</link>
+    <link>{SITE_URL}/</link>
     <description>Trending open-source AI projects ranked by velocity</description>
     <language>en-us</language>
     <lastBuildDate>{datetime.now(tz=UTC).strftime('%a, %d %b %Y %H:%M:%S +0000')}</lastBuildDate>
-    <atom:link href="https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml"
+    <atom:link href="{SITE_URL}/api/feed.xml"
                rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
   </channel>
@@ -298,7 +299,7 @@ class PublicAPI:
         what this project is, which structured datasets exist, and where
         to fetch them. Helps LLM agents cite and use the data correctly.
         """
-        base = "https://erbharatmalhotra.github.io/open-source-ai-radar"
+        base = SITE_URL
         repos = self.db.get_all_repos()
         stats = self.db.get_stats()
         total_stars = int(stats.get("total_stars", 0) or 0)

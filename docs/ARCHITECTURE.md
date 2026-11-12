@@ -369,7 +369,7 @@ See [SCALING.md](SCALING.md) for the roadmap from 5K to 500K repositories.
 
 | Metric | Value |
 |--------|-------|
-| Tracked repositories | 9,800+ (live: [stats.json](https://erbharatmalhotra.github.io/open-source-ai-radar/api/stats.json)) |
+| Tracked repositories | 9,800+ (live: [stats.json](https://radar.bharatdn.com/api/stats.json)) |
 | Tracked stars | 42.0M+ |
 | Website pages | 9,800+ |
 | API endpoints | 12 + badges + per-repo history |

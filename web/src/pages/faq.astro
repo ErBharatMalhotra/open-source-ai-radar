@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { siteRoot } from '../utils/site';
+
+const siteUrl = siteRoot(Astro.site);
 
 const faqs = [
   {
@@ -24,7 +27,7 @@ If a project's star growth slows down relative to the prior week (e.g., from +10
   {
     q: "How can I embed a dynamic badge on my GitHub README?",
     a: `Use the badge endpoint:
-<pre><code>[![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/OWNER/REPO/)</code></pre>
+<pre><code>[![AI Radar Score](${siteUrl}/api/badges/OWNER__REPO/score.svg)](${siteUrl}/project/OWNER/REPO/)</code></pre>
 Replace <code>OWNER__REPO</code> with your repository path separated by two underscores (e.g. <code>BerriAI__litellm</code>).`
   },
   {

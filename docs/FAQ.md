@@ -19,7 +19,7 @@ If a project's star growth slows down relative to the prior week (e.g., from +10
 ### 4. How can I embed a dynamic badge on my GitHub README?
 Use the badge endpoint:
 ```markdown
-[![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/OWNER/REPO/)
+[![AI Radar Score](https://radar.bharatdn.com/api/badges/OWNER__REPO/score.svg)](https://radar.bharatdn.com/project/OWNER/REPO/)
 ```
 Replace `OWNER__REPO` with your repository path separated by two underscores (e.g. `BerriAI__litellm`).
 
@@ -31,4 +31,4 @@ Yes, all radar intelligence is published statically under `/api/`:
 - Anomaly alerts: `/api/anomalies.json`
 - Breakout candidates: `/api/breakouts.json`
 - Machine-readable dataset for LLMs: `/api/llms.txt`
-Full documentation is available at [API Docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
+Full documentation is available at [API Docs](https://radar.bharatdn.com/api-docs/).

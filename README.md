@@ -8,7 +8,7 @@ Open Source AI Radar is a **continuously updated intelligence platform** that di
 
 Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (Impact, Velocity, Health) to find projects that are *becoming* important — not just ones that already are.
 
-**[Live Radar](https://erbharatmalhotra.github.io/open-source-ai-radar/)** | **[API Docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/)** | **[RSS](https://erbharatmalhotra.github.io/open-source-ai-radar/api/feed.xml)**
+**[Live Radar](https://radar.bharatdn.com/)** | **[API Docs](https://radar.bharatdn.com/api-docs/)** | **[RSS](https://radar.bharatdn.com/api/feed.xml)**
 
 <!-- LIVE-STATS:START -->
 **Tracking 10,226 repos · 75% auto-classified into 11 AI categories · 44.0M stars tracked · Updated 2026-11-12 09:07 UTC**
@@ -39,22 +39,22 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 If your repo is tracked, grab a live badge for your README:
 
 ```markdown
-[![AI Radar Score](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/OWNER__REPO/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/OWNER/REPO/)
+[![AI Radar Score](https://radar.bharatdn.com/api/badges/OWNER__REPO/score.svg)](https://radar.bharatdn.com/project/OWNER/REPO/)
 ```
 
 Replace `OWNER__REPO` with your GitHub owner and repo joined by two underscores (e.g. `BerriAI__litellm`), and `OWNER/REPO` with the slash form.
 
-[![score badge example](https://erbharatmalhotra.github.io/open-source-ai-radar/api/badges/BerriAI__litellm/score.svg)](https://erbharatmalhotra.github.io/open-source-ai-radar/project/BerriAI/litellm/)
+[![score badge example](https://radar.bharatdn.com/api/badges/BerriAI__litellm/score.svg)](https://radar.bharatdn.com/project/BerriAI/litellm/)
 
-More badges (velocity, stars) and the full docs: [api-docs page](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
+More badges (velocity, stars) and the full docs: [api-docs page](https://radar.bharatdn.com/api-docs/).
 
 **Want your project tracked?** [Open a submission](https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/new?template=submit-repo.yml) — reviewed within a few days.
 
 ### Explore
 
-- [Weekly Digests](https://erbharatmalhotra.github.io/open-source-ai-radar/digests/) — browsable archive of weekly intelligence
-- [Compare Projects](https://erbharatmalhotra.github.io/open-source-ai-radar/compare/) — side-by-side radar score comparison
-- [llms.txt](https://erbharatmalhotra.github.io/open-source-ai-radar/api/llms.txt) — machine-readable dataset guide for AI agents
+- [Weekly Digests](https://radar.bharatdn.com/digests/) — browsable archive of weekly intelligence
+- [Compare Projects](https://radar.bharatdn.com/compare/) — side-by-side radar score comparison
+- [llms.txt](https://radar.bharatdn.com/api/llms.txt) — machine-readable dataset guide for AI agents
 
 ---
 
@@ -113,7 +113,7 @@ The scheduler automatically distributes workload based on project importance:
 | **T3** | 10-99 | Weekly |
 | **T4** | <10 | Monthly |
 
-Live per-tier counts: `uv run radar scheduler-stats` or the [status page](https://erbharatmalhotra.github.io/open-source-ai-radar/status/). Each workflow run stays within GitHub's 1,000 GraphQL points/hour budget.
+Live per-tier counts: `uv run radar scheduler-stats` or the [status page](https://radar.bharatdn.com/status/). Each workflow run stays within GitHub's 1,000 GraphQL points/hour budget.
 
 ---
 
@@ -318,12 +318,12 @@ SEO: OpenGraph tags, Twitter Cards, JSON-LD structured data, auto-generated site
 | `GET /api/breakouts.json` | Breakout candidates |
 | `GET /api/anomalies.json` | Detected anomalies |
 | `GET /api/categories.json` | Category data |
-| `GET /api/compare-index.json` | Slim dataset powering the [compare tool](https://erbharatmalhotra.github.io/open-source-ai-radar/compare/) |
+| `GET /api/compare-index.json` | Slim dataset powering the [compare tool](https://radar.bharatdn.com/compare/) |
 | `GET /api/llms.txt` | Machine-readable guide for AI agents (llms.txt convention) |
 | `GET /api/stats.json` | Database statistics |
 | `GET /api/feed.xml` | RSS feed |
 
-Full reference: [API docs](https://erbharatmalhotra.github.io/open-source-ai-radar/api-docs/).
+Full reference: [API docs](https://radar.bharatdn.com/api-docs/).
 
 ---
 

@@ -7,8 +7,12 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from radar.scoring.trends import TrendEngine
+from radar.site import SITE_URL
 
 logger = logging.getLogger(__name__)
+
+# Social posts read better without the protocol and trailing slash.
+SITE_DISPLAY = SITE_URL.removeprefix("https://").removeprefix("http://").rstrip("/")
 
 
 def _fmt(n):
@@ -82,7 +86,7 @@ class SocialDraftGenerator:
                 cat_count = c["count"]
                 lines.append(f"  {cat_name}: {cat_count:,} repos ({pct:.0f}%)")
             lines.append("")
-        lines.append("Full radar: erbharatmalhotra.github.io/open-source-ai-radar/")
+        lines.append(f"Full radar: {SITE_DISPLAY}/")
         lines.append("")
         lines.append("Discover what is becoming important before everyone else does.")
         fp = self.reports_dir / ("social-twitter-" + wl + ".txt")
@@ -126,8 +130,7 @@ class SocialDraftGenerator:
         lines.append("The signal is not just star count -")
         lines.append("its velocity, acceleration, and project health.")
         lines.append("")
-        lines.append("Full analysis: erbharatmalhotra.github.io/")
-        lines.append("open-source-ai-radar/")
+        lines.append(f"Full analysis: {SITE_DISPLAY}/")
         lines.append("")
         lines.append("#AI #OpenSource #GitHub")
         lines.append("#MachineLearning #DeepLearning #TechTrends")
@@ -166,8 +169,7 @@ class SocialDraftGenerator:
                 vel = r["velocity"]
                 lines.append(f"- {name} ({stars} stars, vel: {vel:.0f})")
             lines.append("")
-        lines.append("Live: erbharatmalhotra.github.io/")
-        lines.append("open-source-ai-radar/")
+        lines.append(f"Live: {SITE_DISPLAY}/")
         lines.append("GitHub: github.com/ErBharatMalhotra/")
         lines.append("open-source-ai-radar")
         lines.append("")

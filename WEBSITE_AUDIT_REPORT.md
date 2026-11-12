@@ -1,7 +1,7 @@
 # 🔍 Open Source AI Radar — Website Audit Report
 
 **Audit Date:** November 2, 2026  
-**Live URL:** https://erbharatmalhotra.github.io/open-source-ai-radar/  
+**Live URL:** https://radar.bharatdn.com/  
 **Local Repo:** 148 commits behind `origin/main`  
 
 ---
@@ -52,8 +52,8 @@ The **API docs page** lists these endpoints, but they all return **404 Not Found
 
 **Every single page** on the site has:
 ```html
-<link rel="canonical" href="https://erbharatmalhotra.github.io/open-source-ai-radar/" />
-<meta property="og:url" content="https://erbharatmalhotra.github.io/open-source-ai-radar/" />
+<link rel="canonical" href="https://radar.bharatdn.com/" />
+<meta property="og:url" content="https://radar.bharatdn.com/" />
 ```
 
 | Page | canonical Should Be | Actual canonical |
@@ -240,7 +240,7 @@ The `[name].astro` template passes a title that already includes the site name, 
 ### 18. `robots.txt` Points to Wrong Sitemap URL
 
 ```
-Sitemap: https://erbharatmalhotra.github.io/open-source-ai-radar/sitemap.xml
+Sitemap: https://radar.bharatdn.com/sitemap.xml
 ```
 
 But the actual sitemap is at `/sitemap-index.xml`. The URL `/sitemap.xml` returns **404**.

@@ -20,7 +20,7 @@ const {
 const GOATCOUNTER_SITE = import.meta.env.PUBLIC_GOATCOUNTER_SITE || "";
 
 const base = import.meta.env.BASE_URL;
-const siteUrl = "https://erbharatmalhotra.github.io";
+const siteUrl = Astro.site?.origin ?? "";
 const fullUrl = canonical ? `${siteUrl}${canonical}` : `${siteUrl}${Astro.url.pathname}`;
 const socialImage = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}${base}og.png`;
 

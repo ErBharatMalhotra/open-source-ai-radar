@@ -80,7 +80,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    # The build artifact is ~75 MB across ~36k files (one HTML page plus one
+    # JSON payload per tracked project). Pages' sync step occasionally needs
+    # well over ten minutes for that; when it does the action's 10-minute
+    # default timeout cancels a deployment that would otherwise have finished
+    # (see runs 42215050064 and 42815816159). Give it real headroom instead.
+    timeout-minutes: 45
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000      # 30 min, up from the 600000 (10 min) default
+          reporting_interval: 15000
+          error_count: 20

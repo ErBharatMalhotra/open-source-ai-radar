@@ -94,9 +94,9 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 25.0,
+        "score": 25,
         "weight": 0.1,
-        "detail": "Last push 365 days ago."
+        "detail": "Last push 366 days ago."
       }
     ],
     "reasons": [
@@ -104,7 +104,7 @@
       "Fork-to-star ratio: 250 forks for 2,461 stars (10.2%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 365 days ago."
+      "Maintenance cadence: Last push 366 days ago."
     ]
   }
 }

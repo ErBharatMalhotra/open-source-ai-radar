@@ -4,8 +4,28 @@
   "description": "A trilingual (\u7e41\u4e2d / English / \u7b80\u4e2d) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. \u4e2d\u6587 AI agent \u5b78\u7fd2\u5730\u5716\u3002",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 8762,
+  "topics": [
+    "agentic-ai",
+    "ai-agents",
+    "awesome-list",
+    "claude-code",
+    "claude-skills",
+    "learning-roadmap",
+    "llm-agents",
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "tutorial",
+    "trilingual",
+    "agentic-workflows",
+    "ai-agent",
+    "chinese-llm",
+    "llm",
+    "multi-agent-systems",
+    "prompt-engineering",
+    "rag"
+  ],
+  "stars": 8765,
   "forks": 1086,
   "open_issues": 8,
   "watchers": 29,
@@ -17,61 +37,61 @@
   "impact": 88.68,
   "velocity": 64.57,
   "health": 57.61,
-  "global_percentile": 40.14,
+  "global_percentile": 29.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "A trilingual (\u7e41\u4e2d / English / \u7b80\u4e2d) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. \u4e2d\u6587 AI agent \u5b78\u7fd2\u5730\u5716\u3002",
   "maturity": "Unknown",
-  "stars_7d": 182,
-  "stars_30d": 1205,
-  "stars_90d": 1908,
-  "star_growth_rate_7d": 26.0,
-  "star_growth_rate_30d": 40.166666666666664,
-  "star_growth_acceleration": 0.6473029045643154,
+  "stars_7d": 192,
+  "stars_30d": 1196,
+  "stars_90d": 1850,
+  "star_growth_rate_7d": 27.428571428571427,
+  "star_growth_rate_30d": 39.86666666666667,
+  "star_growth_acceleration": 0.6880076445293836,
   "forks_7d": 19,
   "forks_30d": 80,
   "days_since_last_push": 2,
   "freshness_score": 0.9801986733067553,
-  "snapshot_count": 131,
+  "snapshot_count": 132,
   "authenticity": {
-    "organic_confidence": 77.0,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 81.6,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "1,086 forks for 8,762 stars (12.4%)."
+        "detail": "1,086 forks for 8,765 stars (12.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.9,
+        "score": 68.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 139 stars (4 forks, 3.5x the daily average)."
+        "detail": "Largest 24h jump was 139 stars (4 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 87.9,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+192 stars vs +19 forks this week (expected ~24 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 96.6,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.69x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 34.1,
         "weight": 0.12,
-        "detail": "8 open issues for 8,762 stars (0.1%)."
+        "detail": "8 open issues for 8,765 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +102,12 @@
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 1,086 forks for 8,762 stars (12.4%)."
+      "Star/fork velocity alignment: +192 stars vs +19 forks this week (expected ~24 forks).",
+      "Growth acceleration: Weekly growth is 0.69x the monthly baseline.",
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 8,762 stars (0.1%)."
+      "Issue engagement: 8 open issues for 8,765 stars (0.1%)."
     ]
   }
 }

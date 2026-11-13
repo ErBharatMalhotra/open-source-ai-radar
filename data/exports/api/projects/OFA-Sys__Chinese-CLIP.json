@@ -76,9 +76,9 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 40.0,
+        "score": 39.9,
         "weight": 0.1,
-        "detail": "Last push 226 days ago."
+        "detail": "Last push 227 days ago."
       }
     ],
     "reasons": [
@@ -86,6 +86,8 @@
       "Issue engagement: 197 open issues for 6,046 stars (3.3%).",
       "Fork-to-star ratio: 551 forks for 6,046 stars (9.1%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Maintenance cadence: Last push 227 days ago."
+    ]
   }
 }

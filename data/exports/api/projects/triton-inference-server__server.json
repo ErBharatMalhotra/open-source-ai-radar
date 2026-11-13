@@ -4,7 +4,15 @@
   "description": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. ",
   "language": "Python",
   "license": "BSD-3-Clause",
-  "topics": [],
+  "topics": [
+    "inference",
+    "gpu",
+    "machine-learning",
+    "deep-learning",
+    "cloud",
+    "datacenter",
+    "edge"
+  ],
   "stars": 11142,
   "forks": 1869,
   "open_issues": 777,
@@ -14,27 +22,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/triton-inference-server.png",
   "radar_score": 71.44,
-  "impact": 93.04,
+  "impact": 93.05,
   "velocity": 54.81,
   "health": 60.15,
-  "global_percentile": 23.86,
+  "global_percentile": 24.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. ",
   "maturity": "Unknown",
   "stars_7d": 15,
-  "stars_30d": 59,
-  "stars_90d": 98,
+  "stars_30d": 58,
+  "stars_90d": 96,
   "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 1.9666666666666666,
-  "star_growth_acceleration": 1.089588377723971,
-  "forks_7d": 0,
-  "forks_30d": 14,
+  "star_growth_rate_30d": 1.9333333333333333,
+  "star_growth_acceleration": 1.108374384236453,
+  "forks_7d": 1,
+  "forks_30d": 15,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 191,
+  "snapshot_count": 192,
   "authenticity": {
-    "organic_confidence": 89.9,
+    "organic_confidence": 89.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +51,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.6,
         "weight": 0.22,
-        "detail": "1,868 forks for 11,142 stars (16.8%)."
+        "detail": "1,869 forks for 11,142 stars (16.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.7,
+        "score": 72.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +90,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,868 forks for 11,142 stars (16.8%).",
+      "Fork-to-star ratio: 1,869 forks for 11,142 stars (16.8%).",
       "Issue engagement: 777 open issues for 11,142 stars (7.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

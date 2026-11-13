@@ -4,7 +4,10 @@
   "description": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "llm-inference",
+    "ai-chat"
+  ],
   "stars": 77345,
   "forks": 8257,
   "open_issues": 733,
@@ -17,22 +20,22 @@
   "impact": 99.08,
   "velocity": 53.26,
   "health": 38.76,
-  "global_percentile": 11.0,
+  "global_percentile": 12.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
   "maturity": "Unknown",
-  "stars_7d": 7,
+  "stars_7d": 9,
   "stars_30d": -19,
   "stars_90d": -19,
-  "star_growth_rate_7d": 1.0,
+  "star_growth_rate_7d": 1.2857142857142858,
   "star_growth_rate_30d": -0.6551724137931034,
   "star_growth_acceleration": 1.0,
   "forks_7d": 2,
   "forks_30d": -4,
-  "days_since_last_push": 534,
-  "freshness_score": 0.004795870710296421,
-  "snapshot_count": 232,
+  "days_since_last_push": 535,
+  "freshness_score": 0.004748150999411473,
+  "snapshot_count": 233,
   "authenticity": {
     "organic_confidence": 60.2,
     "verdict": "mixed",
@@ -43,7 +46,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "8,257 forks for 77,346 stars (10.7%)."
+        "detail": "8,257 forks for 77,345 stars (10.7%)."
       },
       {
         "key": "burst",
@@ -71,21 +74,21 @@
         "label": "Issue engagement",
         "score": 73.4,
         "weight": 0.12,
-        "detail": "733 open issues for 77,346 stars (0.9%)."
+        "detail": "733 open issues for 77,345 stars (0.9%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 534 days ago."
+        "detail": "Last push 535 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 8,257 forks for 77,346 stars (10.7%)."
+      "Fork-to-star ratio: 8,257 forks for 77,345 stars (10.7%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 534 days ago.",
+      "Maintenance cadence: Last push 535 days ago.",
       "Burst pattern: Largest 24h jump was 8 stars (0 forks, 8.0x the daily average)."
     ]
   }

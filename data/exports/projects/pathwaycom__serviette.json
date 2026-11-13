@@ -4,7 +4,28 @@
   "description": "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "pathway",
+    "vector-database",
+    "retrieval-augmented-generation",
+    "rag",
+    "chromadb",
+    "document-qa",
+    "duckdb",
+    "live-data",
+    "milvus",
+    "mongodb",
+    "no-code",
+    "pgvector",
+    "pinecone",
+    "qdrant",
+    "semantic-search",
+    "weaviate",
+    "document-search",
+    "llm",
+    "real-time",
+    "self-hosted"
+  ],
   "stars": 58710,
   "forks": 1549,
   "open_issues": 5,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-10T17:46:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/pathwaycom.png",
-  "radar_score": 71.52,
+  "radar_score": 71.43,
   "impact": 95.69,
   "velocity": 57.08,
-  "health": 53.06,
-  "global_percentile": 24.0,
+  "health": 52.7,
+  "global_percentile": 24.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. \ud83d\udc33Docker-friendly.\u26a1Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
   "maturity": "Unknown",
-  "stars_7d": -16,
-  "stars_30d": -80,
-  "stars_90d": -80,
-  "star_growth_rate_7d": -2.2857142857142856,
-  "star_growth_rate_30d": -2.7586206896551726,
+  "stars_7d": -17,
+  "stars_30d": -78,
+  "stars_90d": -78,
+  "star_growth_rate_7d": -2.4285714285714284,
+  "star_growth_rate_30d": -2.6,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 7,
+  "forks_7d": 6,
   "forks_30d": 41,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 87,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 88,
   "authenticity": {
-    "organic_confidence": 49.8,
+    "organic_confidence": 49.7,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 66.3,
         "weight": 0.22,
-        "detail": "1,549 forks for 58,708 stars (2.6%)."
+        "detail": "1,549 forks for 58,710 stars (2.6%)."
       },
       {
         "key": "burst",
@@ -71,21 +92,21 @@
         "label": "Issue engagement",
         "score": 25.9,
         "weight": 0.12,
-        "detail": "5 open issues for 58,708 stars (0.0%)."
+        "detail": "5 open issues for 58,710 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 5 open issues for 58,708 stars (0.0%).",
+      "Issue engagement: 5 open issues for 58,710 stars (0.0%).",
       "Burst pattern: Largest 24h jump was 10 stars (2 forks, 10.0x the daily average)."
     ]
   }

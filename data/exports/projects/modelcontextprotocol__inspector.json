@@ -4,7 +4,14 @@
   "description": "Deterministic testing tools for MCP servers",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "tool",
+    "debug",
+    "mcp",
+    "cli",
+    "tui",
+    "web"
+  ],
   "stars": 11289,
   "forks": 1571,
   "open_issues": 17,
@@ -14,27 +21,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/modelcontextprotocol.png",
   "radar_score": 72.78,
-  "impact": 91.81,
-  "velocity": 59.89,
+  "impact": 91.82,
+  "velocity": 59.88,
   "health": 60.38,
-  "global_percentile": 33.0,
+  "global_percentile": 32.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Visual testing tool for MCP servers",
   "maturity": "Unknown",
-  "stars_7d": 50,
-  "stars_30d": 224,
-  "stars_90d": 224,
-  "star_growth_rate_7d": 7.142857142857143,
-  "star_growth_rate_30d": 7.466666666666667,
-  "star_growth_acceleration": 0.9566326530612246,
-  "forks_7d": 14,
-  "forks_30d": 27,
+  "stars_7d": 47,
+  "stars_30d": 218,
+  "stars_90d": 222,
+  "star_growth_rate_7d": 6.714285714285714,
+  "star_growth_rate_30d": 7.266666666666667,
+  "star_growth_acceleration": 0.9239842726081259,
+  "forks_7d": 15,
+  "forks_30d": 23,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 267,
+  "snapshot_count": 268,
   "authenticity": {
-    "organic_confidence": 86.7,
+    "organic_confidence": 86.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "1,570 forks for 11,288 stars (13.9%)."
+        "detail": "1,571 forks for 11,289 stars (13.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.3,
+        "score": 93.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (0 forks, 1.7x the daily average)."
       },
@@ -71,7 +78,7 @@
         "label": "Issue engagement",
         "score": 40.1,
         "weight": 0.12,
-        "detail": "17 open issues for 11,288 stars (0.2%)."
+        "detail": "17 open issues for 11,289 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +90,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (0 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 1,570 forks for 11,288 stars (13.9%).",
+      "Fork-to-star ratio: 1,571 forks for 11,289 stars (13.9%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []

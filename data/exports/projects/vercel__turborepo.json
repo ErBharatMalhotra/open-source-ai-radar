@@ -4,7 +4,13 @@
   "description": "The build system for coding agents.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "monorepo",
+    "javascript",
+    "typescript",
+    "build-tool",
+    "build-system"
+  ],
   "stars": 31333,
   "forks": 2490,
   "open_issues": 4,
@@ -13,11 +19,11 @@
   "pushed_at": "2026-11-13T00:45:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vercel.png",
-  "radar_score": 72.34,
+  "radar_score": 72.57,
   "impact": 95.92,
-  "velocity": 55.38,
+  "velocity": 56.06,
   "health": 58.35,
-  "global_percentile": 39.14,
+  "global_percentile": 31.14,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "The build system for coding agents.",
@@ -32,9 +38,9 @@
   "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 21,
+  "snapshot_count": 22,
   "authenticity": {
-    "organic_confidence": 83.2,
+    "organic_confidence": 83.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 96.2,
+        "score": 95.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (3 forks, 1.4x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (3 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 26.0,
+        "score": 26.3,
         "weight": 0.12,
-        "detail": "3 open issues for 31,333 stars (0.0%)."
+        "detail": "4 open issues for 31,333 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +89,11 @@
     ],
     "reasons": [
       "Fork-to-star ratio: 2,490 forks for 31,333 stars (7.9%).",
-      "Burst pattern: Largest 24h jump was 5 stars (3 forks, 1.4x the daily average).",
+      "Burst pattern: Largest 24h jump was 5 stars (3 forks, 1.5x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 31,333 stars (0.0%)."
+      "Issue engagement: 4 open issues for 31,333 stars (0.0%)."
     ]
   }
 }

@@ -1,16 +1,33 @@
 {
-  "detected_at": "2026-11-13T09:03:38.157980+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-11-13T12:08:43.308405+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
     "fork_spikes": 0,
-    "score_jumps": 0,
+    "score_jumps": 1,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
   "fork_spikes": [],
-  "score_jumps": [],
+  "score_jumps": [
+    {
+      "repo_full_name": "deepseek-ai/awesome-deepseek-integration",
+      "stars": 39804,
+      "language": null,
+      "url": "https://github.com/deepseek-ai/awesome-deepseek-integration",
+      "metric": "radar_score",
+      "previous_score": 66.9,
+      "current_score": 77.9,
+      "change": 11.0,
+      "direction": "up",
+      "cause": "Impact surge, Velocity acceleration, Health improvement",
+      "impact": 97.8,
+      "velocity": 65.2,
+      "health": 63.8,
+      "anomaly_type": "score_jumps"
+    }
+  ],
   "velocity_anomalies": [],
   "health_drops": []
 }

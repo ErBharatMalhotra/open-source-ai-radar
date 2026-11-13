@@ -4,37 +4,40 @@
   "description": "Ollama Python library",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ollama",
+    "python"
+  ],
   "stars": 10700,
-  "forks": 1238,
+  "forks": 1237,
   "open_issues": 114,
   "watchers": 78,
   "created_at": "2023-12-09T09:27:18Z",
   "pushed_at": "2026-10-16T19:45:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ollama.png",
-  "radar_score": 68.18,
+  "radar_score": 68.17,
   "impact": 91.48,
-  "velocity": 50.65,
+  "velocity": 50.64,
   "health": 55.42,
-  "global_percentile": 18.43,
+  "global_percentile": 13.71,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Ollama Python library",
   "maturity": "Unknown",
-  "stars_7d": 29,
+  "stars_7d": 31,
   "stars_30d": 107,
-  "stars_90d": 133,
-  "star_growth_rate_7d": 4.142857142857143,
+  "stars_90d": 135,
+  "star_growth_rate_7d": 4.428571428571429,
   "star_growth_rate_30d": 3.566666666666667,
-  "star_growth_acceleration": 1.1615487316421895,
+  "star_growth_acceleration": 1.2416555407209613,
   "forks_7d": 10,
-  "forks_30d": 43,
+  "forks_30d": 41,
   "days_since_last_push": 27,
   "freshness_score": 0.7633794943368531,
-  "snapshot_count": 181,
+  "snapshot_count": 182,
   "authenticity": {
-    "organic_confidence": 85.7,
+    "organic_confidence": 88.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,35 +46,35 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "1,237 forks for 10,698 stars (11.6%)."
+        "detail": "1,237 forks for 10,700 stars (11.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 77.6,
+        "score": 78.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 10 stars (2 forks, 2.8x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 95,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+31 stars vs +10 forks this week (expected ~4 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 90.2,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.24x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 76.0,
         "weight": 0.12,
-        "detail": "114 open issues for 10,698 stars (1.1%)."
+        "detail": "114 open issues for 10,700 stars (1.1%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +85,7 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 114 open issues for 10,698 stars (1.1%).",
+      "Issue engagement: 114 open issues for 10,700 stars (1.1%).",
       "Burst pattern: Largest 24h jump was 10 stars (2 forks, 2.8x the daily average).",
       "Maintenance cadence: Last push 27 days ago."
     ],

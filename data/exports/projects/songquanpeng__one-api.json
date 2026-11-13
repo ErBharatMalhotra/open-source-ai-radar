@@ -4,7 +4,19 @@
   "description": "LLM API \u7ba1\u7406 & \u5206\u53d1\u7cfb\u7edf\uff0c\u652f\u6301 OpenAI\u3001Azure\u3001Anthropic Claude\u3001Google Gemini\u3001DeepSeek\u3001\u5b57\u8282\u8c46\u5305\u3001ChatGLM\u3001\u6587\u5fc3\u4e00\u8a00\u3001\u8baf\u98de\u661f\u706b\u3001\u901a\u4e49\u5343\u95ee\u3001360 \u667a\u8111\u3001\u817e\u8baf\u6df7\u5143\u7b49\u4e3b\u6d41\u6a21\u578b\uff0c\u7edf\u4e00 API \u9002\u914d\uff0c\u53ef\u7528\u4e8e key \u7ba1\u7406\u4e0e\u4e8c\u6b21\u5206\u53d1\u3002\u5355\u53ef\u6267\u884c\u6587\u4ef6\uff0c\u63d0\u4f9b Docker \u955c\u50cf\uff0c\u4e00\u952e\u90e8\u7f72\uff0c\u5f00\u7bb1\u5373\u7528\u3002LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "openai-api",
+    "proxy",
+    "chatgpt",
+    "gpt",
+    "openai",
+    "api",
+    "api-gateway",
+    "azure-openai-api",
+    "claude",
+    "ernie-bot",
+    "gemini"
+  ],
   "stars": 37419,
   "forks": 6892,
   "open_issues": 942,
@@ -17,24 +29,24 @@
   "impact": 97.39,
   "velocity": 55.63,
   "health": 39.0,
-  "global_percentile": 13.43,
+  "global_percentile": 13.86,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "LLM API \u7ba1\u7406 & \u5206\u53d1\u7cfb\u7edf\uff0c\u652f\u6301 OpenAI\u3001Azure\u3001Anthropic Claude\u3001Google Gemini\u3001DeepSeek\u3001\u5b57\u8282\u8c46\u5305\u3001ChatGLM\u3001\u6587\u5fc3\u4e00\u8a00\u3001\u8baf\u98de\u661f\u706b\u3001\u901a\u4e49\u5343\u95ee\u3001360 \u667a\u8111\u3001\u817e\u8baf\u6df7\u5143\u7b49\u4e3b\u6d41\u6a21\u578b\uff0c\u7edf\u4e00 API \u9002\u914d\uff0c\u53ef\u7528\u4e8e key \u7ba1\u7406\u4e0e\u4e8c\u6b21\u5206\u53d1\u3002\u5355\u53ef\u6267\u884c\u6587\u4ef6\uff0c\u63d0\u4f9b Docker \u955c\u50cf\uff0c\u4e00\u952e\u90e8\u7f72\uff0c\u5f00\u7bb1\u5373\u7528\u3002LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, ",
   "maturity": "Unknown",
-  "stars_7d": 78,
-  "stars_30d": 236,
-  "stars_90d": 236,
-  "star_growth_rate_7d": 11.142857142857142,
-  "star_growth_rate_30d": 8.74074074074074,
-  "star_growth_acceleration": 1.2748184019370459,
-  "forks_7d": 7,
-  "forks_30d": 6,
-  "days_since_last_push": 307,
-  "freshness_score": 0.04642115485743125,
-  "snapshot_count": 260,
+  "stars_7d": 80,
+  "stars_30d": 238,
+  "stars_90d": 238,
+  "star_growth_rate_7d": 11.428571428571429,
+  "star_growth_rate_30d": 8.814814814814815,
+  "star_growth_acceleration": 1.2965186074429773,
+  "forks_7d": 5,
+  "forks_30d": 3,
+  "days_since_last_push": 308,
+  "freshness_score": 0.045959256649044204,
+  "snapshot_count": 261,
   "authenticity": {
-    "organic_confidence": 79.6,
+    "organic_confidence": 79.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.3,
         "weight": 0.22,
-        "detail": "6,894 forks for 37,417 stars (18.4%)."
+        "detail": "6,892 forks for 37,419 stars (18.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.5,
+        "score": 75.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 27 stars (7 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 27 stars (7 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +83,23 @@
         "label": "Issue engagement",
         "score": 91.7,
         "weight": 0.12,
-        "detail": "942 open issues for 37,417 stars (2.5%)."
+        "detail": "942 open issues for 37,419 stars (2.5%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 31.3,
+        "score": 31.2,
         "weight": 0.1,
-        "detail": "Last push 307 days ago."
+        "detail": "Last push 308 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 27 stars (7 forks, 2.9x the daily average).",
-      "Issue engagement: 942 open issues for 37,417 stars (2.5%).",
-      "Fork-to-star ratio: 6,894 forks for 37,417 stars (18.4%)."
+      "Burst pattern: Largest 24h jump was 27 stars (7 forks, 3.0x the daily average).",
+      "Issue engagement: 942 open issues for 37,419 stars (2.5%).",
+      "Fork-to-star ratio: 6,892 forks for 37,419 stars (18.4%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 307 days ago."
+      "Maintenance cadence: Last push 308 days ago."
     ]
   }
 }

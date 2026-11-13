@@ -4,10 +4,31 @@
   "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 37363,
-  "forks": 5182,
-  "open_issues": 529,
+  "topics": [
+    "agent",
+    "agentic",
+    "ai",
+    "golang",
+    "llm",
+    "ollama",
+    "rag",
+    "chatbot",
+    "generative-ai",
+    "embeddings",
+    "knowledge-base",
+    "openai",
+    "question-answering",
+    "reranking",
+    "vector-search",
+    "evaluation",
+    "multi-tenant",
+    "semantic-search",
+    "wiki",
+    "dsh-plugin"
+  ],
+  "stars": 37371,
+  "forks": 5184,
+  "open_issues": 532,
   "watchers": 150,
   "created_at": "2025-07-22T08:01:23Z",
   "pushed_at": "2026-11-09T15:19:50Z",
@@ -17,22 +38,22 @@
   "impact": 97.02,
   "velocity": 66.59,
   "health": 59.65,
-  "global_percentile": 70.14,
+  "global_percentile": 70.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
   "maturity": "Unknown",
-  "stars_7d": 824,
-  "stars_30d": 2505,
-  "stars_90d": 2505,
-  "star_growth_rate_7d": 117.71428571428571,
-  "star_growth_rate_30d": 108.91304347826087,
-  "star_growth_acceleration": 1.0808098089535214,
-  "forks_7d": 185,
-  "forks_30d": 528,
+  "stars_7d": 807,
+  "stars_30d": 2536,
+  "stars_90d": 2536,
+  "star_growth_rate_7d": 115.28571428571429,
+  "star_growth_rate_30d": 110.26086956521739,
+  "star_growth_acceleration": 1.0455723298783237,
+  "forks_7d": 183,
+  "forks_30d": 531,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 318,
+  "snapshot_count": 319,
   "authenticity": {
     "organic_confidence": 92.9,
     "verdict": "organic",
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "5,172 forks for 37,314 stars (13.9%)."
+        "detail": "5,184 forks for 37,371 stars (13.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.1,
+        "score": 90.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 220 stars (39 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 220 stars (34 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 81.0,
+        "score": 81.4,
         "weight": 0.12,
-        "detail": "522 open issues for 37,314 stars (1.4%)."
+        "detail": "532 open issues for 37,371 stars (1.4%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +103,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 522 open issues for 37,314 stars (1.4%).",
-      "Burst pattern: Largest 24h jump was 220 stars (39 forks, 1.9x the daily average).",
+      "Issue engagement: 532 open issues for 37,371 stars (1.4%).",
+      "Burst pattern: Largest 24h jump was 220 stars (34 forks, 1.9x the daily average).",
       "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": []

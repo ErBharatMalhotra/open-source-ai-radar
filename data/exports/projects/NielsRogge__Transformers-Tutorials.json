@@ -4,7 +4,14 @@
   "description": "This repository contains demos I made with the Transformers library by HuggingFace.",
   "language": "Jupyter Notebook",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "vision-transformer",
+    "layoutlm",
+    "gpt-2"
+  ],
   "stars": 11786,
   "forks": 1726,
   "open_issues": 304,
@@ -13,26 +20,26 @@
   "pushed_at": "2026-09-17T08:10:06Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NielsRogge.png",
-  "radar_score": 65.25,
-  "impact": 93.11,
+  "radar_score": 65.2,
+  "impact": 93.1,
   "velocity": 44.62,
-  "health": 49.54,
-  "global_percentile": 6.14,
+  "health": 49.38,
+  "global_percentile": 6.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "This repository contains demos I made with the Transformers library by HuggingFace.",
   "maturity": "Unknown",
-  "stars_7d": 7,
-  "stars_30d": 25,
-  "stars_90d": 39,
-  "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 0.8620689655172413,
-  "star_growth_acceleration": 1.1600000000000001,
+  "stars_7d": 6,
+  "stars_30d": 24,
+  "stars_90d": 38,
+  "star_growth_rate_7d": 0.8571428571428571,
+  "star_growth_rate_30d": 0.8275862068965517,
+  "star_growth_acceleration": 1.0357142857142856,
   "forks_7d": 0,
   "forks_30d": -4,
-  "days_since_last_push": 56,
-  "freshness_score": 0.5712090638488149,
-  "snapshot_count": 84,
+  "days_since_last_push": 57,
+  "freshness_score": 0.5655254386995371,
+  "snapshot_count": 85,
   "authenticity": {
     "organic_confidence": 86.3,
     "verdict": "organic",
@@ -43,7 +50,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "1,726 forks for 11,787 stars (14.6%)."
+        "detail": "1,726 forks for 11,786 stars (14.6%)."
       },
       {
         "key": "burst",
@@ -71,20 +78,20 @@
         "label": "Issue engagement",
         "score": 91.9,
         "weight": 0.12,
-        "detail": "304 open issues for 11,787 stars (2.6%)."
+        "detail": "304 open issues for 11,786 stars (2.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 78.5,
+        "score": 78.2,
         "weight": 0.1,
-        "detail": "Last push 56 days ago."
+        "detail": "Last push 57 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (-1 forks, 3.0x the daily average).",
-      "Maintenance cadence: Last push 56 days ago.",
-      "Issue engagement: 304 open issues for 11,787 stars (2.6%)."
+      "Maintenance cadence: Last push 57 days ago.",
+      "Issue engagement: 304 open issues for 11,786 stars (2.6%)."
     ],
     "red_flags": []
   }

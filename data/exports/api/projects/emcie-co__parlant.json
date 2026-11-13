@@ -4,9 +4,17 @@
   "description": "Parlant is an open platform for building customer-facing chat agents with AI. Describe how the agent should behave, and your coding agent implements it for you.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "llm",
+    "customer-service",
+    "customer-success",
+    "python",
+    "ai-agent",
+    "customer-experience",
+    "lead-generation"
+  ],
   "stars": 18334,
-  "forks": 1556,
+  "forks": 1557,
   "open_issues": 13,
   "watchers": 99,
   "created_at": "2024-02-15T20:16:15Z",
@@ -15,7 +23,7 @@
   "owner_avatar": "https://github.com/emcie-co.png",
   "radar_score": 72.88,
   "impact": 93.66,
-  "velocity": 59.51,
+  "velocity": 59.5,
   "health": 58.35,
   "global_percentile": 34.0,
   "category": "AI Agents",
@@ -23,18 +31,18 @@
   "summary": "Build reliable customer-facing AI agents with Parlant: an interaction control harness optimized for controlled, consistent, and predictable LLM interactions.",
   "maturity": "Unknown",
   "stars_7d": 7,
-  "stars_30d": 34,
-  "stars_90d": 37,
+  "stars_30d": 37,
+  "stars_90d": 36,
   "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 1.1333333333333333,
-  "star_growth_acceleration": 0.8823529411764706,
+  "star_growth_rate_30d": 1.2333333333333334,
+  "star_growth_acceleration": 0.8108108108108107,
   "forks_7d": 2,
-  "forks_30d": 3,
+  "forks_30d": 4,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 164,
+  "snapshot_count": 165,
   "authenticity": {
-    "organic_confidence": 66.8,
+    "organic_confidence": 67.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +51,14 @@
         "label": "Fork-to-star ratio",
         "score": 94.6,
         "weight": 0.22,
-        "detail": "1,556 forks for 18,333 stars (8.5%)."
+        "detail": "1,557 forks for 18,334 stars (8.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 44.8,
+        "score": 45.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (47 forks, 6.1x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (47 forks, 5.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +79,7 @@
         "label": "Issue engagement",
         "score": 32.1,
         "weight": 0.12,
-        "detail": "13 open issues for 18,333 stars (0.1%)."
+        "detail": "13 open issues for 18,334 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +90,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,556 forks for 18,333 stars (8.5%).",
+      "Fork-to-star ratio: 1,557 forks for 18,334 stars (8.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 13 open issues for 18,333 stars (0.1%)."
+      "Issue engagement: 13 open issues for 18,334 stars (0.1%)."
     ]
   }
 }

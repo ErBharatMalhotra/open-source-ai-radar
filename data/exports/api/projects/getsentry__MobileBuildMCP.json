@@ -4,8 +4,16 @@
   "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 6564,
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "model-context-protocol-servers",
+    "xcode",
+    "xcodebuild",
+    "tag-non-production"
+  ],
+  "stars": 6566,
   "forks": 328,
   "open_issues": 18,
   "watchers": 20,
@@ -14,25 +22,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/getsentry.png",
   "radar_score": 65.69,
-  "impact": 83.6,
-  "velocity": 51.15,
+  "impact": 83.61,
+  "velocity": 51.14,
   "health": 57.39,
-  "global_percentile": 7.0,
+  "global_percentile": 11.29,
   "category": "MCP",
   "sub_category": "server",
   "summary": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
   "maturity": "Unknown",
-  "stars_7d": 17,
-  "stars_30d": 89,
-  "stars_90d": 138,
-  "star_growth_rate_7d": 4.25,
-  "star_growth_rate_30d": 3.0689655172413794,
-  "star_growth_acceleration": 1.3848314606741572,
-  "forks_7d": -1,
-  "forks_30d": 4,
+  "stars_7d": 18,
+  "stars_30d": 90,
+  "stars_90d": 139,
+  "star_growth_rate_7d": 3.6,
+  "star_growth_rate_30d": 3.0,
+  "star_growth_acceleration": 1.2,
+  "forks_7d": 0,
+  "forks_30d": 5,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 37,
+  "snapshot_count": 38,
   "authenticity": {
     "organic_confidence": 84.6,
     "verdict": "organic",
@@ -43,7 +51,7 @@
         "label": "Fork-to-star ratio",
         "score": 82.0,
         "weight": 0.22,
-        "detail": "328 forks for 6,564 stars (5.0%)."
+        "detail": "328 forks for 6,566 stars (5.0%)."
       },
       {
         "key": "burst",
@@ -71,7 +79,7 @@
         "label": "Issue engagement",
         "score": 48.7,
         "weight": 0.12,
-        "detail": "18 open issues for 6,564 stars (0.3%)."
+        "detail": "18 open issues for 6,566 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +90,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 328 forks for 6,564 stars (5.0%).",
+      "Fork-to-star ratio: 328 forks for 6,566 stars (5.0%).",
       "Maintenance cadence: Last push 5 days ago.",
       "Burst pattern: Largest 24h jump was 2 stars (0 forks, 0.7x the daily average)."
     ],

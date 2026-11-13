@@ -50,9 +50,9 @@
   "freshness_score": 1.0,
   "snapshot_count": 145,
   "authenticity": {
-    "organic_confidence": 66.3,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 53.3,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
@@ -64,9 +64,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.0,
+        "score": null,
         "weight": 0.24,
-        "detail": "No single-day star surge in the last 30 days."
+        "detail": "History window too short."
       },
       {
         "key": "alignment",
@@ -97,9 +97,7 @@
         "detail": "Last push 130 days ago."
       }
     ],
-    "reasons": [
-      "Burst pattern: No single-day star surge in the last 30 days."
-    ],
+    "reasons": [],
     "red_flags": [
       "Issue engagement: 5 open issues for 58,789 stars (0.0%)."
     ]

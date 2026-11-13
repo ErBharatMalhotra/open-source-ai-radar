@@ -4,8 +4,16 @@
   "description": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 6404,
+  "topics": [
+    "agents",
+    "code-search",
+    "embeddings",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "retrieval"
+  ],
+  "stars": 6409,
   "forks": 290,
   "open_issues": 3,
   "watchers": 17,
@@ -17,22 +25,22 @@
   "impact": 82.6,
   "velocity": 57.69,
   "health": 52.34,
-  "global_percentile": 8.86,
+  "global_percentile": 13.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 207,
-  "stars_90d": 483,
-  "star_growth_rate_7d": 8.333333333333334,
-  "star_growth_rate_30d": 6.9,
-  "star_growth_acceleration": 1.2077294685990339,
+  "stars_7d": 30,
+  "stars_30d": 212,
+  "stars_90d": 488,
+  "star_growth_rate_7d": 7.5,
+  "star_growth_rate_30d": 7.066666666666666,
+  "star_growth_acceleration": 1.0613207547169812,
   "forks_7d": 4,
   "forks_30d": 16,
   "days_since_last_push": 4,
   "freshness_score": 0.9607894391523232,
-  "snapshot_count": 70,
+  "snapshot_count": 71,
   "authenticity": {
     "organic_confidence": 80.3,
     "verdict": "organic",
@@ -41,16 +49,16 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 78.9,
+        "score": 78.8,
         "weight": 0.22,
-        "detail": "290 forks for 6,404 stars (4.5%)."
+        "detail": "290 forks for 6,409 stars (4.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (0 forks, 0.6x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (0 forks, 0.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +79,7 @@
         "label": "Issue engagement",
         "score": 29.7,
         "weight": 0.12,
-        "detail": "3 open issues for 6,404 stars (0.0%)."
+        "detail": "3 open issues for 6,409 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +90,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 290 forks for 6,404 stars (4.5%).",
+      "Fork-to-star ratio: 290 forks for 6,409 stars (4.5%).",
       "Maintenance cadence: Last push 4 days ago.",
-      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 0.6x the daily average)."
+      "Burst pattern: Largest 24h jump was 5 stars (0 forks, 0.7x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 6,404 stars (0.0%)."
+      "Issue engagement: 3 open issues for 6,409 stars (0.0%)."
     ]
   }
 }

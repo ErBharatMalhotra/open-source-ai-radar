@@ -4,7 +4,16 @@
   "description": "Windows software for sharing locally connected USB devices to other machines, including Hyper-V guests and WSL 2.",
   "language": "C#",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "windows",
+    "usb",
+    "usbip",
+    "usbip-win",
+    "hyper-v",
+    "usbipd",
+    "wsl",
+    "wsl2"
+  ],
   "stars": 6307,
   "forks": 388,
   "open_issues": 85,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-11T18:36:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dorssel.png",
-  "radar_score": 67.57,
-  "impact": 86.35,
-  "velocity": 48.82,
-  "health": 63.75,
-  "global_percentile": 12.14,
+  "radar_score": 67.49,
+  "impact": 86.39,
+  "velocity": 48.83,
+  "health": 63.38,
+  "global_percentile": 16.71,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Windows software for sharing locally connected USB devices to other machines, including Hyper-V guests and WSL 2.",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 83,
-  "stars_90d": 249,
-  "star_growth_rate_7d": 4.666666666666667,
-  "star_growth_rate_30d": 2.7666666666666666,
-  "star_growth_acceleration": 1.6867469879518073,
-  "forks_7d": 2,
-  "forks_30d": 16,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 60,
+  "stars_7d": 17,
+  "stars_30d": 86,
+  "stars_90d": 252,
+  "star_growth_rate_7d": 4.25,
+  "star_growth_rate_30d": 2.8666666666666667,
+  "star_growth_acceleration": 1.4825581395348837,
+  "forks_7d": 3,
+  "forks_30d": 17,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 61,
   "authenticity": {
-    "organic_confidence": 91.7,
+    "organic_confidence": 90.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +57,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.3,
+        "score": 99.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 3 stars (0 forks, 1.1x the daily average)."
       },
@@ -62,9 +71,9 @@
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 85.3,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.48x the monthly baseline."
       },
       {
         "key": "engagement",
@@ -83,8 +92,8 @@
     ],
     "reasons": [
       "Issue engagement: 85 open issues for 6,307 stars (1.3%).",
-      "Fork-to-star ratio: 388 forks for 6,307 stars (6.2%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Growth acceleration: Weekly growth is 1.48x the monthly baseline.",
+      "Fork-to-star ratio: 388 forks for 6,307 stars (6.2%)."
     ],
     "red_flags": []
   }

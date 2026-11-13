@@ -4,37 +4,39 @@
   "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 6831,
+  "topics": [
+    "localllm"
+  ],
+  "stars": 6830,
   "forks": 378,
   "open_issues": 6,
   "watchers": 23,
   "created_at": "2026-03-04T13:16:00Z",
-  "pushed_at": "2026-11-12T13:01:55Z",
+  "pushed_at": "2026-11-13T01:24:44Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Andyyyy64.png",
-  "radar_score": 70.65,
-  "impact": 84.7,
+  "radar_score": 70.6,
+  "impact": 84.58,
   "velocity": 63.37,
   "health": 58.35,
-  "global_percentile": 24.0,
+  "global_percentile": 28.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 82,
-  "stars_90d": 321,
-  "star_growth_rate_7d": 1.2857142857142858,
-  "star_growth_rate_30d": 2.7333333333333334,
-  "star_growth_acceleration": 0.47038327526132406,
+  "stars_7d": 3,
+  "stars_30d": 80,
+  "stars_90d": 312,
+  "star_growth_rate_7d": 0.5,
+  "star_growth_rate_30d": 2.6666666666666665,
+  "star_growth_acceleration": 0.1875,
   "forks_7d": 1,
   "forks_30d": 4,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 105,
+  "snapshot_count": 106,
   "authenticity": {
-    "organic_confidence": 78.2,
+    "organic_confidence": 77.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +45,12 @@
         "label": "Fork-to-star ratio",
         "score": 83.9,
         "weight": 0.22,
-        "detail": "378 forks for 6,831 stars (5.5%)."
+        "detail": "378 forks for 6,830 stars (5.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.2,
+        "score": 84.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (0 forks, 2.3x the daily average)."
       },
@@ -71,7 +73,7 @@
         "label": "Issue engagement",
         "score": 33.8,
         "weight": 0.12,
-        "detail": "6 open issues for 6,831 stars (0.1%)."
+        "detail": "6 open issues for 6,830 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +84,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 378 forks for 6,831 stars (5.5%).",
+      "Fork-to-star ratio: 378 forks for 6,830 stars (5.5%).",
       "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.3x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 6 open issues for 6,831 stars (0.1%)."
+      "Issue engagement: 6 open issues for 6,830 stars (0.1%)."
     ]
   }
 }

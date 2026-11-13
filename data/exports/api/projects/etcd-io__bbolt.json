@@ -5,7 +5,7 @@
   "language": "Go",
   "license": "MIT",
   "topics": [],
-  "stars": 9836,
+  "stars": 9840,
   "forks": 775,
   "open_issues": 23,
   "watchers": 115,
@@ -14,27 +14,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/etcd-io.png",
   "radar_score": 68.87,
-  "impact": 90.97,
+  "impact": 90.96,
   "velocity": 47.54,
   "health": 63.38,
-  "global_percentile": 14.86,
+  "global_percentile": 21.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An embedded key/value database for Go.",
   "maturity": "Unknown",
-  "stars_7d": 34,
-  "stars_30d": 55,
-  "stars_90d": 98,
-  "star_growth_rate_7d": 4.857142857142857,
-  "star_growth_rate_30d": 1.8333333333333333,
-  "star_growth_acceleration": 2.6493506493506493,
+  "stars_7d": 39,
+  "stars_30d": 61,
+  "stars_90d": 100,
+  "star_growth_rate_7d": 5.571428571428571,
+  "star_growth_rate_30d": 2.033333333333333,
+  "star_growth_acceleration": 2.740046838407494,
   "forks_7d": 3,
-  "forks_30d": 14,
+  "forks_30d": 13,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 127,
+  "snapshot_count": 128,
   "authenticity": {
-    "organic_confidence": 71.6,
+    "organic_confidence": 66.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +43,14 @@
         "label": "Fork-to-star ratio",
         "score": 92.4,
         "weight": 0.22,
-        "detail": "775 forks for 9,836 stars (7.9%)."
+        "detail": "775 forks for 9,840 stars (7.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 53.6,
+        "score": 37.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 9 stars (0 forks, 4.9x the daily average)."
+        "detail": "Largest 24h jump was 15 stars (0 forks, 7.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +71,7 @@
         "label": "Issue engagement",
         "score": 46.7,
         "weight": 0.12,
-        "detail": "23 open issues for 9,836 stars (0.2%)."
+        "detail": "23 open issues for 9,840 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +82,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 775 forks for 9,836 stars (7.9%).",
+      "Fork-to-star ratio: 775 forks for 9,840 stars (7.9%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 15 stars (0 forks, 7.1x the daily average)."
+    ]
   }
 }

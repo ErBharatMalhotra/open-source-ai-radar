@@ -4,7 +4,11 @@
   "description": "Tools for merging pretrained large language models.",
   "language": "Python",
   "license": "LGPL-3.0",
-  "topics": [],
+  "topics": [
+    "llama",
+    "llm",
+    "model-merging"
+  ],
   "stars": 7453,
   "forks": 805,
   "open_issues": 238,
@@ -13,28 +17,28 @@
   "pushed_at": "2026-10-31T13:28:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/arcee-ai.png",
-  "radar_score": 67.96,
-  "impact": 88.97,
-  "velocity": 49.9,
-  "health": 59.63,
-  "global_percentile": 17.86,
+  "radar_score": 67.89,
+  "impact": 88.99,
+  "velocity": 49.89,
+  "health": 59.32,
+  "global_percentile": 15.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Tools for merging pretrained large language models.",
   "maturity": "Unknown",
-  "stars_7d": 13,
-  "stars_30d": 55,
-  "stars_90d": 144,
-  "star_growth_rate_7d": 1.8571428571428572,
-  "star_growth_rate_30d": 1.8333333333333333,
-  "star_growth_acceleration": 1.012987012987013,
+  "stars_7d": 17,
+  "stars_30d": 51,
+  "stars_90d": 148,
+  "star_growth_rate_7d": 2.4285714285714284,
+  "star_growth_rate_30d": 1.8888888888888888,
+  "star_growth_acceleration": 1.2857142857142856,
   "forks_7d": 3,
-  "forks_30d": 12,
-  "days_since_last_push": 12,
-  "freshness_score": 0.8869204367171575,
-  "snapshot_count": 85,
+  "forks_30d": 1,
+  "days_since_last_push": 13,
+  "freshness_score": 0.8780954309205613,
+  "snapshot_count": 86,
   "authenticity": {
-    "organic_confidence": 93.1,
+    "organic_confidence": 93.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +52,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.7,
+        "score": 88.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (0 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (0 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +86,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 2.2x the daily average).",
+      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 2.1x the daily average).",
       "Maintenance cadence: Last push 13 days ago.",
       "Issue engagement: 238 open issues for 7,453 stars (3.2%)."
     ],

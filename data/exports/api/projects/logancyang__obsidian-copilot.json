@@ -4,53 +4,59 @@
   "description": "Run agents in Obsidian - OpenCode, Codex, Claude Code etc.",
   "language": "TypeScript",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 7986,
+  "topics": [
+    "chatgpt",
+    "copilot",
+    "aiagent",
+    "ai",
+    "obsidian-plugin"
+  ],
+  "stars": 7988,
   "forks": 771,
-  "open_issues": 81,
+  "open_issues": 67,
   "watchers": 36,
   "created_at": "2023-03-31T00:15:29Z",
-  "pushed_at": "2026-11-13T20:18:02Z",
+  "pushed_at": "2026-11-14T02:05:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/logancyang.png",
-  "radar_score": 70.27,
+  "radar_score": 70.21,
   "impact": 88.28,
-  "velocity": 54.36,
+  "velocity": 54.17,
   "health": 63.75,
-  "global_percentile": 26.57,
+  "global_percentile": 24.14,
   "category": "AI Coding Tools",
   "sub_category": "code completion",
   "summary": "THE Copilot in Obsidian",
   "maturity": "Unknown",
-  "stars_7d": 32,
-  "stars_30d": 157,
-  "stars_90d": 231,
-  "star_growth_rate_7d": 4.571428571428571,
-  "star_growth_rate_30d": 5.233333333333333,
-  "star_growth_acceleration": 0.8735213830755232,
+  "stars_7d": 37,
+  "stars_30d": 160,
+  "stars_90d": 234,
+  "star_growth_rate_7d": 5.285714285714286,
+  "star_growth_rate_30d": 5.333333333333333,
+  "star_growth_acceleration": 0.9910714285714286,
   "forks_7d": -1,
-  "forks_30d": 16,
+  "forks_30d": 17,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 163,
+  "snapshot_count": 164,
   "authenticity": {
-    "organic_confidence": 92.1,
+    "organic_confidence": 91.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 98.8,
+        "score": 98.7,
         "weight": 0.22,
-        "detail": "771 forks for 7,986 stars (9.7%)."
+        "detail": "771 forks for 7,988 stars (9.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.2,
+        "score": 90.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (0 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (4 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 75.2,
+        "score": 70.2,
         "weight": 0.12,
-        "detail": "81 open issues for 7,986 stars (1.0%)."
+        "detail": "67 open issues for 7,988 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +88,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 81 open issues for 7,986 stars (1.0%).",
-      "Burst pattern: Largest 24h jump was 10 stars (0 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 771 forks for 7,986 stars (9.7%)."
+      "Burst pattern: Largest 24h jump was 10 stars (4 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 771 forks for 7,988 stars (9.7%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

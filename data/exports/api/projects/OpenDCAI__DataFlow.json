@@ -4,37 +4,51 @@
   "description": "[SIGMOD'27] Easy Data Preparation with latest LLMs-based Operators and Pipelines.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "data",
+    "data-cleaning",
+    "data-pipelines",
+    "data-processing",
+    "data-science",
+    "data-synthesis",
+    "llms",
+    "operators",
+    "data-agent",
+    "sglang-bankend",
+    "vllm-backend",
+    "gradio-interface",
+    "quick-data-processing"
+  ],
   "stars": 8579,
   "forks": 1207,
-  "open_issues": 10,
+  "open_issues": 11,
   "watchers": 583,
   "created_at": "2024-10-13T14:45:45Z",
   "pushed_at": "2026-11-13T04:49:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OpenDCAI.png",
-  "radar_score": 72.79,
+  "radar_score": 72.76,
   "impact": 92.43,
-  "velocity": 56.81,
-  "health": 63.75,
-  "global_percentile": 39.29,
+  "velocity": 56.98,
+  "health": 63.38,
+  "global_percentile": 31.43,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Easy Data Preparation with latest LLMs-based Operators and Pipelines.",
   "maturity": "Unknown",
-  "stars_7d": 111,
-  "stars_30d": 367,
-  "stars_90d": 388,
-  "star_growth_rate_7d": 15.857142857142858,
-  "star_growth_rate_30d": 12.233333333333333,
-  "star_growth_acceleration": 1.2962242117555471,
+  "stars_7d": 100,
+  "stars_30d": 372,
+  "stars_90d": 391,
+  "star_growth_rate_7d": 14.285714285714286,
+  "star_growth_rate_30d": 12.4,
+  "star_growth_acceleration": 1.1520737327188941,
   "forks_7d": -1,
   "forks_30d": 11,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 146,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 147,
   "authenticity": {
-    "organic_confidence": 85.3,
+    "organic_confidence": 85.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +62,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.0,
+        "score": 90.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 24 stars (1 forks, 1.9x the daily average)."
       },
@@ -69,9 +83,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 36.7,
+        "score": 37.8,
         "weight": 0.12,
-        "detail": "10 open issues for 8,579 stars (0.1%)."
+        "detail": "11 open issues for 8,579 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -87,7 +101,7 @@
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 10 open issues for 8,579 stars (0.1%)."
+      "Issue engagement: 11 open issues for 8,579 stars (0.1%)."
     ]
   }
 }

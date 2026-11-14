@@ -4,9 +4,14 @@
   "description": "Self-hosted deployment platform",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 15304,
-  "forks": 1403,
+  "topics": [
+    "agents",
+    "ai",
+    "deployments",
+    "self-hosted"
+  ],
+  "stars": 15312,
+  "forks": 1404,
   "open_issues": 115,
   "watchers": 38,
   "created_at": "2026-03-05T20:16:56Z",
@@ -15,26 +20,26 @@
   "owner_avatar": "https://github.com/oblien.png",
   "radar_score": 76.77,
   "impact": 91.43,
-  "velocity": 69.31,
+  "velocity": 69.32,
   "health": 63.75,
-  "global_percentile": 71.29,
+  "global_percentile": 66.86,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Self-hosted deployment platform",
   "maturity": "Unknown",
-  "stars_7d": 91,
-  "stars_30d": 429,
-  "stars_90d": 429,
-  "star_growth_rate_7d": 13.0,
-  "star_growth_rate_30d": 17.875,
-  "star_growth_acceleration": 0.7272727272727273,
-  "forks_7d": 9,
-  "forks_30d": 67,
+  "stars_7d": 98,
+  "stars_30d": 436,
+  "stars_90d": 436,
+  "star_growth_rate_7d": 14.0,
+  "star_growth_rate_30d": 18.166666666666668,
+  "star_growth_acceleration": 0.7706422018348623,
+  "forks_7d": 10,
+  "forks_30d": 66,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 313,
+  "snapshot_count": 314,
   "authenticity": {
-    "organic_confidence": 73.1,
+    "organic_confidence": 73.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.0,
         "weight": 0.22,
-        "detail": "1,402 forks for 15,298 stars (9.2%)."
+        "detail": "1,404 forks for 15,312 stars (9.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 43.0,
+        "score": 43.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 115 stars (16 forks, 6.4x the daily average)."
+        "detail": "Largest 24h jump was 115 stars (16 forks, 6.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 67.4,
+        "score": 67.5,
         "weight": 0.12,
-        "detail": "114 open issues for 15,298 stars (0.7%)."
+        "detail": "115 open issues for 15,312 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,402 forks for 15,298 stars (9.2%).",
+      "Fork-to-star ratio: 1,404 forks for 15,312 stars (9.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

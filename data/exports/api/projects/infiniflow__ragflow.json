@@ -4,11 +4,28 @@
   "description": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 94133,
-  "forks": 11320,
+  "topics": [
+    "ai",
+    "ai-agents",
+    "rag",
+    "retrieval-augmented-generation",
+    "agentic-ai",
+    "agentic-retrieval",
+    "agentic-search",
+    "context-management",
+    "knowledge-compilation",
+    "agent-harness",
+    "context-engineering",
+    "harness-engineering",
+    "search-harness",
+    "agent-native-database",
+    "context-engine",
+    "retrieval-harness"
+  ],
+  "stars": 94139,
+  "forks": 11321,
   "open_issues": 827,
-  "watchers": 362,
+  "watchers": 361,
   "created_at": "2023-12-12T06:13:13Z",
   "pushed_at": "2026-11-13T13:08:52Z",
   "owner_login": "",
@@ -22,19 +39,19 @@
   "sub_category": "rag framework",
   "summary": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
   "maturity": "Unknown",
-  "stars_7d": 458,
-  "stars_30d": 1474,
-  "stars_90d": 1474,
-  "star_growth_rate_7d": 65.42857142857143,
-  "star_growth_rate_30d": 67.0,
-  "star_growth_acceleration": 0.9765458422174841,
-  "forks_7d": 70,
+  "stars_7d": 471,
+  "stars_30d": 1473,
+  "stars_90d": 1473,
+  "star_growth_rate_7d": 67.28571428571429,
+  "star_growth_rate_30d": 66.95454545454545,
+  "star_growth_acceleration": 1.004946173988944,
+  "forks_7d": 74,
   "forks_30d": 247,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 324,
+  "snapshot_count": 325,
   "authenticity": {
-    "organic_confidence": 91.9,
+    "organic_confidence": 91.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +60,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "11,317 forks for 94,126 stars (12.0%)."
+        "detail": "11,321 forks for 94,139 stars (12.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.8,
+        "score": 91.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 115 stars (21 forks, 1.8x the daily average)."
       },
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 71.3,
+        "score": 71.4,
         "weight": 0.12,
-        "detail": "825 open issues for 94,126 stars (0.9%)."
+        "detail": "827 open issues for 94,139 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +100,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 115 stars (21 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 11,317 forks for 94,126 stars (12.0%).",
+      "Fork-to-star ratio: 11,321 forks for 94,139 stars (12.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

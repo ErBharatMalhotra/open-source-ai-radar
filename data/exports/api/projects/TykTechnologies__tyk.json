@@ -4,7 +4,28 @@
   "description": "Open Source API and AI Gateway supporting REST, GraphQL, TCP, gRPC and MCP (Model Context Protocol)",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "go",
+    "api",
+    "api-management",
+    "api-gateway",
+    "tyk",
+    "microservices",
+    "kubernetes",
+    "k8s",
+    "graphql",
+    "grpc",
+    "cloudnative",
+    "reverse-proxy",
+    "ai",
+    "ai-gateway",
+    "llm",
+    "mcp",
+    "model-context-protocol",
+    "llm-gateway",
+    "llm-ops",
+    "mcp-gateway"
+  ],
   "stars": 10884,
   "forks": 1170,
   "open_issues": 195,
@@ -13,8 +34,8 @@
   "pushed_at": "2026-11-13T23:33:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/TykTechnologies.png",
-  "radar_score": 69.81,
-  "impact": 92.8,
+  "radar_score": 69.8,
+  "impact": 92.79,
   "velocity": 50.0,
   "health": 60.75,
   "global_percentile": 17.14,
@@ -22,17 +43,17 @@
   "sub_category": "",
   "summary": "Open Source API and AI Gateway supporting REST, GraphQL, TCP, gRPC and MCP (Model Context Protocol)",
   "maturity": "Unknown",
-  "stars_7d": 7,
-  "stars_30d": 22,
-  "stars_90d": 29,
-  "star_growth_rate_7d": 1.0,
-  "star_growth_rate_30d": 0.7333333333333333,
-  "star_growth_acceleration": 1.3636363636363638,
-  "forks_7d": -1,
+  "stars_7d": 8,
+  "stars_30d": 23,
+  "stars_90d": 30,
+  "star_growth_rate_7d": 1.1428571428571428,
+  "star_growth_rate_30d": 0.7666666666666667,
+  "star_growth_acceleration": 1.4906832298136645,
+  "forks_7d": 0,
   "forks_30d": 3,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 128,
+  "snapshot_count": 129,
   "authenticity": {
     "organic_confidence": 88.8,
     "verdict": "organic",
@@ -41,9 +62,9 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.8,
+        "score": 99.9,
         "weight": 0.22,
-        "detail": "1,170 forks for 10,883 stars (10.8%)."
+        "detail": "1,170 forks for 10,884 stars (10.7%)."
       },
       {
         "key": "burst",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 86.9,
         "weight": 0.12,
-        "detail": "195 open issues for 10,883 stars (1.8%)."
+        "detail": "195 open issues for 10,884 stars (1.8%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +104,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (0 forks, 3.0x the daily average).",
-      "Issue engagement: 195 open issues for 10,883 stars (1.8%).",
-      "Fork-to-star ratio: 1,170 forks for 10,883 stars (10.8%)."
+      "Issue engagement: 195 open issues for 10,884 stars (1.8%).",
+      "Fork-to-star ratio: 1,170 forks for 10,884 stars (10.7%)."
     ],
     "red_flags": []
   }

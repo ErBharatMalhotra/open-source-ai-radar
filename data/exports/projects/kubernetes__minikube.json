@@ -4,8 +4,15 @@
   "description": "Run Kubernetes locally",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 32244,
+  "topics": [
+    "minikube",
+    "kubernetes",
+    "cluster",
+    "containers",
+    "go",
+    "cncf"
+  ],
+  "stars": 32243,
   "forks": 5386,
   "open_issues": 485,
   "watchers": 470,
@@ -13,28 +20,28 @@
   "pushed_at": "2026-11-14T07:10:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/kubernetes.png",
-  "radar_score": 75.84,
+  "radar_score": 75.93,
   "impact": 97.54,
   "velocity": 59.93,
-  "health": 63.38,
+  "health": 63.75,
   "global_percentile": 57.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Run Kubernetes locally",
   "maturity": "Unknown",
-  "stars_7d": 19,
-  "stars_30d": 52,
-  "stars_90d": 55,
-  "star_growth_rate_7d": 2.7142857142857144,
-  "star_growth_rate_30d": 1.7333333333333334,
-  "star_growth_acceleration": 1.565934065934066,
-  "forks_7d": 3,
-  "forks_30d": 42,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 238,
+  "stars_7d": 18,
+  "stars_30d": 51,
+  "stars_90d": 54,
+  "star_growth_rate_7d": 2.5714285714285716,
+  "star_growth_rate_30d": 1.7,
+  "star_growth_acceleration": 1.512605042016807,
+  "forks_7d": 4,
+  "forks_30d": 41,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 239,
   "authenticity": {
-    "organic_confidence": 85.5,
+    "organic_confidence": 86.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.7,
         "weight": 0.22,
-        "detail": "5,385 forks for 32,244 stars (16.7%)."
+        "detail": "5,386 forks for 32,243 stars (16.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 69.5,
+        "score": 70.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 3.5x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 3.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +78,20 @@
         "label": "Issue engagement",
         "score": 82.6,
         "weight": 0.12,
-        "detail": "485 open issues for 32,244 stars (1.5%)."
+        "detail": "485 open issues for 32,243 stars (1.5%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 485 open issues for 32,244 stars (1.5%).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 5,385 forks for 32,244 stars (16.7%)."
+      "Issue engagement: 485 open issues for 32,243 stars (1.5%).",
+      "Fork-to-star ratio: 5,386 forks for 32,243 stars (16.7%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

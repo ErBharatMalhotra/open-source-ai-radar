@@ -4,7 +4,28 @@
   "description": "\ud83c\udf38 Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "bloom",
+    "deep-learning",
+    "distributed-systems",
+    "language-models",
+    "large-language-models",
+    "machine-learning",
+    "neural-networks",
+    "pytorch",
+    "volunteer-computing",
+    "pipeline-parallelism",
+    "tensor-parallelism",
+    "guanaco",
+    "llama",
+    "chatbot",
+    "gpt",
+    "transformer",
+    "nlp",
+    "pretrained-models",
+    "falcon",
+    "mixtral"
+  ],
   "stars": 10712,
   "forks": 656,
   "open_issues": 94,
@@ -13,44 +34,44 @@
   "pushed_at": "2024-09-07T11:54:28Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/bigscience-workshop.png",
-  "radar_score": 60.06,
+  "radar_score": 60.05,
   "impact": 90.78,
-  "velocity": 40.15,
+  "velocity": 40.14,
   "health": 38.75,
-  "global_percentile": 0.43,
+  "global_percentile": 0.71,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "\ud83c\udf38 Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster than offloading",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 80,
-  "stars_90d": 126,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 2.6666666666666665,
-  "star_growth_acceleration": 0.75,
+  "stars_7d": 16,
+  "stars_30d": 81,
+  "stars_90d": 128,
+  "star_growth_rate_7d": 2.2857142857142856,
+  "star_growth_rate_30d": 2.7,
+  "star_growth_acceleration": 0.8465608465608464,
   "forks_7d": 1,
-  "forks_30d": 4,
+  "forks_30d": 5,
   "days_since_last_push": 797,
   "freshness_score": 0.00034567898589410494,
-  "snapshot_count": 149,
+  "snapshot_count": 150,
   "authenticity": {
-    "organic_confidence": 67.9,
+    "organic_confidence": 68.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 86.1,
+        "score": 86.0,
         "weight": 0.22,
-        "detail": "656 forks for 10,710 stars (6.1%)."
+        "detail": "656 forks for 10,712 stars (6.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 67.4,
+        "score": 67.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (-1 forks, 3.7x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (-1 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 71.3,
         "weight": 0.12,
-        "detail": "94 open issues for 10,710 stars (0.9%)."
+        "detail": "94 open issues for 10,712 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +103,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 656 forks for 10,710 stars (6.1%)."
+      "Fork-to-star ratio: 656 forks for 10,712 stars (6.1%)."
     ],
     "red_flags": [
       "Maintenance cadence: Last push 797 days ago."

@@ -4,8 +4,12 @@
   "description": "Embeddable Postgres with real-time, reactive bindings.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16274,
+  "topics": [
+    "database",
+    "postgres",
+    "wasm"
+  ],
+  "stars": 16275,
   "forks": 475,
   "open_issues": 117,
   "watchers": 64,
@@ -13,14 +17,77 @@
   "pushed_at": "2026-11-10T15:15:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/electric-sql.png",
-  "radar_score": 0,
-  "impact": 0,
-  "velocity": 0,
-  "health": 0,
-  "global_percentile": 0,
+  "radar_score": 71.23,
+  "impact": 90.47,
+  "velocity": 58.62,
+  "health": 58.1,
+  "global_percentile": 22.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embeddable Postgres with real-time, reactive bindings.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "stars_7d": 0,
+  "stars_30d": 0,
+  "stars_90d": 0,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 0.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 0,
+  "forks_30d": 0,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 1,
+  "authenticity": {
+    "organic_confidence": 74.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 68.1,
+        "weight": 0.22,
+        "detail": "475 forks for 16,275 stars (2.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 66.6,
+        "weight": 0.12,
+        "detail": "117 open issues for 16,275 stars (0.7%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 97.9,
+        "weight": 0.1,
+        "detail": "Last push 3 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 3 days ago."
+    ],
+    "red_flags": []
+  }
 }

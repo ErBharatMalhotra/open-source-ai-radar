@@ -4,7 +4,13 @@
   "description": "IM Chat OpenClaw",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "im",
+    "chat",
+    "messaging",
+    "messenger",
+    "openclaw"
+  ],
   "stars": 16771,
   "forks": 2980,
   "open_issues": 100,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-10T08:35:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/openimsdk.png",
-  "radar_score": 73.92,
+  "radar_score": 73.05,
   "impact": 95.04,
-  "velocity": 57.84,
-  "health": 62.65,
-  "global_percentile": 47.57,
+  "velocity": 55.58,
+  "health": 62.29,
+  "global_percentile": 33.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "IM Chat OpenClaw",
   "maturity": "Unknown",
   "stars_7d": 15,
-  "stars_30d": 87,
+  "stars_30d": 83,
   "stars_90d": 93,
   "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 2.9,
-  "star_growth_acceleration": 0.7389162561576355,
-  "forks_7d": 0,
-  "forks_30d": 4,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 156,
+  "star_growth_rate_30d": 2.7666666666666666,
+  "star_growth_acceleration": 0.774526678141136,
+  "forks_7d": 1,
+  "forks_30d": 5,
+  "days_since_last_push": 4,
+  "freshness_score": 0.9607894391523232,
+  "snapshot_count": 157,
   "authenticity": {
-    "organic_confidence": 84.2,
+    "organic_confidence": 83.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +49,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.4,
         "weight": 0.22,
-        "detail": "2,979 forks for 16,771 stars (17.8%)."
+        "detail": "2,980 forks for 16,771 stars (17.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.0,
+        "score": 74.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 8 stars (3 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 8 stars (3 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,15 +82,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 97.1,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 4 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 8 stars (3 forks, 2.9x the daily average).",
-      "Maintenance cadence: Last push 3 days ago.",
-      "Fork-to-star ratio: 2,979 forks for 16,771 stars (17.8%)."
+      "Maintenance cadence: Last push 4 days ago.",
+      "Fork-to-star ratio: 2,980 forks for 16,771 stars (17.8%)."
     ],
     "red_flags": []
   }

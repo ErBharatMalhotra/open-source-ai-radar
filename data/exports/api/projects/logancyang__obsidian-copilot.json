@@ -34,7 +34,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 165,
   "authenticity": {
-    "organic_confidence": 88.2,
+    "organic_confidence": 92.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -55,23 +55,23 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 68.4,
+        "score": null,
         "weight": 0.18,
-        "detail": "+38 stars vs +2 forks this week (expected ~4 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 95.1,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 0.99x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 75.0,
+        "score": 75.2,
         "weight": 0.12,
-        "detail": "80 open issues for 7,993 stars (1.0%)."
+        "detail": "81 open issues for 7,993 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +82,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 80 open issues for 7,993 stars (1.0%).",
+      "Issue engagement: 81 open issues for 7,993 stars (1.0%).",
       "Burst pattern: Largest 24h jump was 10 stars (4 forks, 1.9x the daily average).",
-      "Growth acceleration: Weekly growth is 0.99x the monthly baseline."
+      "Fork-to-star ratio: 773 forks for 7,993 stars (9.7%)."
     ],
     "red_flags": []
   }

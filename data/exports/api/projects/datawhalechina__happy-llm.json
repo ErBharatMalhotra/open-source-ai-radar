@@ -4,7 +4,11 @@
   "description": "\ud83d\udcda \u4ece\u96f6\u5f00\u59cb\u6784\u5efa\u5927\u6a21\u578b",
   "language": "Jupyter Notebook",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agent",
+    "llm",
+    "rag"
+  ],
   "stars": 34919,
   "forks": 3314,
   "open_issues": 56,
@@ -13,28 +17,28 @@
   "pushed_at": "2026-08-08T17:18:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/datawhalechina.png",
-  "radar_score": 67.02,
-  "impact": 95.99,
+  "radar_score": 67.01,
+  "impact": 96.01,
   "velocity": 52.09,
-  "health": 41.59,
-  "global_percentile": 8.14,
+  "health": 41.5,
+  "global_percentile": 10.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\ud83d\udcda \u4ece\u96f6\u5f00\u59cb\u6784\u5efa\u5927\u6a21\u578b",
   "maturity": "Unknown",
-  "stars_7d": 132,
-  "stars_30d": 556,
-  "stars_90d": 587,
-  "star_growth_rate_7d": 18.857142857142858,
-  "star_growth_rate_30d": 18.533333333333335,
-  "star_growth_acceleration": 1.0174717368961972,
+  "stars_7d": 131,
+  "stars_30d": 549,
+  "stars_90d": 573,
+  "star_growth_rate_7d": 18.714285714285715,
+  "star_growth_rate_30d": 18.3,
+  "star_growth_acceleration": 1.0226385636221702,
   "forks_7d": 24,
-  "forks_30d": 68,
-  "days_since_last_push": 97,
-  "freshness_score": 0.37908303810339883,
-  "snapshot_count": 248,
+  "forks_30d": 67,
+  "days_since_last_push": 98,
+  "freshness_score": 0.37531109885139957,
+  "snapshot_count": 249,
   "authenticity": {
-    "organic_confidence": 81.5,
+    "organic_confidence": 81.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +47,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "3,314 forks for 34,920 stars (9.5%)."
+        "detail": "3,314 forks for 34,919 stars (9.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.2,
+        "score": 91.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 32 stars (1 forks, 1.8x the daily average)."
       },
@@ -71,19 +75,19 @@
         "label": "Issue engagement",
         "score": 41.0,
         "weight": 0.12,
-        "detail": "56 open issues for 34,920 stars (0.2%)."
+        "detail": "56 open issues for 34,919 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 68.1,
+        "score": 67.8,
         "weight": 0.1,
-        "detail": "Last push 97 days ago."
+        "detail": "Last push 98 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 32 stars (1 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 3,314 forks for 34,920 stars (9.5%)."
+      "Fork-to-star ratio: 3,314 forks for 34,919 stars (9.5%)."
     ],
     "red_flags": []
   }

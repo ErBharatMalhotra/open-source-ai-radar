@@ -4,17 +4,30 @@
   "description": "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.",
   "language": "Rust",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "ai-agents",
+    "llm",
+    "local-first",
+    "rust",
+    "agent-orchestration",
+    "ai-assistant",
+    "desktop",
+    "mcp",
+    "personal-ai",
+    "privacy",
+    "second-brain",
+    "tauri"
+  ],
   "stars": 42703,
   "forks": 4220,
-  "open_issues": 332,
+  "open_issues": 333,
   "watchers": 192,
   "created_at": "2026-02-18T20:01:27Z",
-  "pushed_at": "2026-11-14T01:44:32Z",
+  "pushed_at": "2026-11-14T20:09:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tinyhumansai.png",
-  "radar_score": 79.49,
-  "impact": 97.45,
+  "radar_score": 79.5,
+  "impact": 97.46,
   "velocity": 70.22,
   "health": 63.75,
   "global_percentile": 93.43,
@@ -23,18 +36,18 @@
   "summary": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
   "maturity": "Unknown",
   "stars_7d": 133,
-  "stars_30d": 491,
-  "stars_90d": 491,
+  "stars_30d": 487,
+  "stars_90d": 487,
   "star_growth_rate_7d": 19.0,
-  "star_growth_rate_30d": 21.347826086956523,
-  "star_growth_acceleration": 0.8900203665987779,
-  "forks_7d": 8,
+  "star_growth_rate_30d": 21.17391304347826,
+  "star_growth_acceleration": 0.8973305954825461,
+  "forks_7d": 9,
   "forks_30d": 50,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 290,
+  "snapshot_count": 291,
   "authenticity": {
-    "organic_confidence": 85.2,
+    "organic_confidence": 89.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +56,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "4,220 forks for 42,700 stars (9.9%)."
+        "detail": "4,220 forks for 42,703 stars (9.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.4,
+        "score": 85.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 67 stars (13 forks, 3.1x the daily average)."
+        "detail": "Largest 24h jump was 50 stars (10 forks, 2.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +82,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 68.3,
+        "score": 68.4,
         "weight": 0.12,
-        "detail": "332 open issues for 42,700 stars (0.8%)."
+        "detail": "333 open issues for 42,703 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +95,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,220 forks for 42,700 stars (9.9%).",
+      "Burst pattern: Largest 24h jump was 50 stars (10 forks, 2.3x the daily average).",
+      "Fork-to-star ratio: 4,220 forks for 42,703 stars (9.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

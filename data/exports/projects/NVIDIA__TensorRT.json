@@ -4,7 +4,13 @@
   "description": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "tensorrt",
+    "nvidia",
+    "deep-learning",
+    "inference",
+    "gpu-acceleration"
+  ],
   "stars": 13455,
   "forks": 2425,
   "open_issues": 631,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-05T18:43:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
-  "radar_score": 70.58,
-  "impact": 93.96,
+  "radar_score": 70.5,
+  "impact": 93.99,
   "velocity": 50.74,
-  "health": 60.92,
-  "global_percentile": 19.14,
+  "health": 60.59,
+  "global_percentile": 21.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "maturity": "Unknown",
-  "stars_7d": 19,
-  "stars_30d": 50,
+  "stars_7d": 18,
+  "stars_30d": 51,
   "stars_90d": 81,
-  "star_growth_rate_7d": 2.7142857142857144,
-  "star_growth_rate_30d": 1.6666666666666667,
-  "star_growth_acceleration": 1.6285714285714286,
+  "star_growth_rate_7d": 2.5714285714285716,
+  "star_growth_rate_30d": 1.7,
+  "star_growth_acceleration": 1.512605042016807,
   "forks_7d": 5,
   "forks_30d": 12,
-  "days_since_last_push": 8,
-  "freshness_score": 0.9231163463866358,
-  "snapshot_count": 162,
+  "days_since_last_push": 9,
+  "freshness_score": 0.9139311852712282,
+  "snapshot_count": 163,
   "authenticity": {
-    "organic_confidence": 87.0,
+    "organic_confidence": 87.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 67.5,
+        "score": 68.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 3.7x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,13 +82,13 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 94.6,
+        "score": 94.1,
         "weight": 0.1,
-        "detail": "Last push 8 days ago."
+        "detail": "Last push 9 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 8 days ago.",
+      "Maintenance cadence: Last push 9 days ago.",
       "Fork-to-star ratio: 2,425 forks for 13,455 stars (18.0%).",
       "Issue engagement: 631 open issues for 13,455 stars (4.7%)."
     ],

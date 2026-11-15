@@ -4,35 +4,54 @@
   "description": "An agent skill that finds where a photo was taken \u2014 OpenStreetMap geometry, elevation skylines, satellite imagery and street view \u2014 and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 7023,
-  "forks": 867,
+  "topics": [
+    "claude-code",
+    "geoguessr",
+    "geolocation",
+    "osint",
+    "agent-skills",
+    "geoint",
+    "openstreetmap",
+    "photo-geolocation",
+    "computer-vision",
+    "image-geolocation",
+    "reverse-image-search",
+    "ai-agents",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "opencode",
+    "satellite-imagery",
+    "codex"
+  ],
+  "stars": 7053,
+  "forks": 871,
   "open_issues": 8,
   "watchers": 18,
   "created_at": "2026-09-18T08:51:34Z",
   "pushed_at": "2026-11-09T13:31:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Oldcircle.png",
-  "radar_score": 73.74,
-  "impact": 85.98,
+  "radar_score": 73.69,
+  "impact": 86.06,
   "velocity": 67.93,
-  "health": 62.29,
-  "global_percentile": 46.0,
+  "health": 61.94,
+  "global_percentile": 45.14,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "An agent skill that finds where a photo was taken \u2014 OpenStreetMap geometry, elevation skylines, satellite imagery and street view \u2014 and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
   "maturity": "Unknown",
-  "stars_7d": 489,
-  "stars_30d": 1680,
-  "stars_90d": 1680,
-  "star_growth_rate_7d": 97.8,
-  "star_growth_rate_30d": 140.0,
-  "star_growth_acceleration": 0.6985714285714285,
-  "forks_7d": 71,
-  "forks_30d": 197,
-  "days_since_last_push": 4,
-  "freshness_score": 0.9607894391523232,
-  "snapshot_count": 12,
+  "stars_7d": 570,
+  "stars_30d": 1761,
+  "stars_90d": 1761,
+  "star_growth_rate_7d": 81.42857142857143,
+  "star_growth_rate_30d": 135.46153846153845,
+  "star_growth_acceleration": 0.6011194937941106,
+  "forks_7d": 76,
+  "forks_30d": 202,
+  "days_since_last_push": 5,
+  "freshness_score": 0.951229424500714,
+  "snapshot_count": 13,
   "why_trending": "Strong momentum with 1142 new stars this week. Above-average growth velocity. High developer adoption with 136 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
     "organic_confidence": 88.1,
@@ -44,7 +63,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "867 forks for 7,023 stars (12.3%)."
+        "detail": "871 forks for 7,053 stars (12.3%)."
       },
       {
         "key": "burst",
@@ -70,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 36.4,
+        "score": 36.3,
         "weight": 0.12,
-        "detail": "8 open issues for 7,023 stars (0.1%)."
+        "detail": "8 open issues for 7,053 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,11 +103,11 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 5 days ago.",
-      "Fork-to-star ratio: 867 forks for 7,023 stars (12.3%).",
+      "Fork-to-star ratio: 871 forks for 7,053 stars (12.3%).",
       "Burst pattern: Largest 24h jump was 79 stars (10 forks, 0.6x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 7,023 stars (0.1%)."
+      "Issue engagement: 8 open issues for 7,053 stars (0.1%)."
     ]
   }
 }

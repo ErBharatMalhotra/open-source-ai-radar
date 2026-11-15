@@ -5,52 +5,52 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "topics": [],
-  "stars": 8841,
-  "forks": 1060,
+  "stars": 8923,
+  "forks": 1066,
   "open_issues": 12,
   "watchers": 84,
   "created_at": "2026-01-16T17:17:17Z",
   "pushed_at": "2026-08-17T20:20:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google-labs-code.png",
-  "radar_score": 67.06,
-  "impact": 90.66,
-  "velocity": 55.53,
-  "health": 45.43,
-  "global_percentile": 8.29,
+  "radar_score": 67.08,
+  "impact": 90.77,
+  "velocity": 55.54,
+  "health": 45.33,
+  "global_percentile": 11.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
   "maturity": "Unknown",
-  "stars_7d": 133,
-  "stars_30d": 313,
-  "stars_90d": 444,
-  "star_growth_rate_7d": 19.0,
-  "star_growth_rate_30d": 10.433333333333334,
-  "star_growth_acceleration": 1.8210862619808306,
-  "forks_7d": 10,
-  "forks_30d": -53,
-  "days_since_last_push": 88,
-  "freshness_score": 0.4147829116815814,
-  "snapshot_count": 159,
+  "stars_7d": 234,
+  "stars_30d": 404,
+  "stars_90d": 544,
+  "star_growth_rate_7d": 33.42857142857143,
+  "star_growth_rate_30d": 13.466666666666667,
+  "star_growth_acceleration": 2.4823196605374824,
+  "forks_7d": 18,
+  "forks_30d": -46,
+  "days_since_last_push": 89,
+  "freshness_score": 0.4106557527523455,
+  "snapshot_count": 160,
   "authenticity": {
-    "organic_confidence": 67.7,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 57.4,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "1,060 forks for 8,841 stars (12.0%)."
+        "detail": "1,066 forks for 8,923 stars (11.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 51.8,
+        "score": 23.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 51 stars (5 forks, 5.0x the daily average)."
+        "detail": "Largest 24h jump was 152 stars (13 forks, 11.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +69,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 38.6,
+        "score": 38.4,
         "weight": 0.12,
-        "detail": "12 open issues for 8,841 stars (0.1%)."
+        "detail": "12 open issues for 8,923 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +82,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,060 forks for 8,841 stars (12.0%)."
+      "Fork-to-star ratio: 1,066 forks for 8,923 stars (11.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 12 open issues for 8,841 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 152 stars (13 forks, 11.2x the daily average).",
+      "Issue engagement: 12 open issues for 8,923 stars (0.1%)."
     ]
   }
 }

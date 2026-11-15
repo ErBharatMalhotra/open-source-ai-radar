@@ -4,8 +4,13 @@
   "description": "An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 7476,
+  "topics": [
+    "deepspeed-library",
+    "gpt-3",
+    "transformers",
+    "language-model"
+  ],
+  "stars": 7477,
   "forks": 1130,
   "open_issues": 81,
   "watchers": 124,
@@ -13,26 +18,26 @@
   "pushed_at": "2026-11-07T18:35:39Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/EleutherAI.png",
-  "radar_score": 68.76,
-  "impact": 90.69,
-  "velocity": 48.81,
-  "health": 61.6,
-  "global_percentile": 19.0,
+  "radar_score": 68.68,
+  "impact": 90.7,
+  "velocity": 48.82,
+  "health": 61.26,
+  "global_percentile": 16.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries",
   "maturity": "Unknown",
-  "stars_7d": 4,
-  "stars_30d": 5,
-  "stars_90d": 21,
-  "star_growth_rate_7d": 0.5714285714285714,
-  "star_growth_rate_30d": 0.18518518518518517,
-  "star_growth_acceleration": 3.085714285714286,
-  "forks_7d": 3,
-  "forks_30d": 2,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 64,
+  "stars_7d": 5,
+  "stars_30d": 6,
+  "stars_90d": 22,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": 0.21428571428571427,
+  "star_growth_acceleration": 3.3333333333333335,
+  "forks_7d": 4,
+  "forks_30d": 3,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 65,
   "authenticity": {
     "organic_confidence": 91.2,
     "verdict": "organic",
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.0,
         "weight": 0.22,
-        "detail": "1,130 forks for 7,476 stars (15.1%)."
+        "detail": "1,130 forks for 7,477 stars (15.1%)."
       },
       {
         "key": "burst",
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 76.3,
+        "score": 76.2,
         "weight": 0.12,
-        "detail": "81 open issues for 7,476 stars (1.1%)."
+        "detail": "81 open issues for 7,477 stars (1.1%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 81 open issues for 7,476 stars (1.1%).",
+      "Issue engagement: 81 open issues for 7,477 stars (1.1%).",
       "Burst pattern: Largest 24h jump was 2 stars (1 forks, 2.0x the daily average).",
       "Maintenance cadence: Last push 7 days ago."
     ],

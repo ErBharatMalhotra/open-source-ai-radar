@@ -4,8 +4,29 @@
   "description": "\u26a1 Pure-Rust WebGPU inference engine \u2014 OpenAI-API compatible, GGUF native, runs on any GPU. No Python. No llama.cpp. Single binary.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6013,
+  "topics": [
+    "llama",
+    "llamacpp",
+    "llm-inference",
+    "ollama-api",
+    "command-line-tool",
+    "gguf",
+    "inference-server",
+    "local-ai",
+    "machine-learning",
+    "api-server",
+    "developer-tools",
+    "huggingface",
+    "huggingface-models",
+    "huggingface-transformers",
+    "openai-compatible",
+    "rust",
+    "rust-crate",
+    "transformers",
+    "webgpu",
+    "webgpu-shaders"
+  ],
+  "stars": 6015,
   "forks": 589,
   "open_issues": 9,
   "watchers": 41,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-12T20:17:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Michael-A-Kuykendall.png",
-  "radar_score": 70.45,
-  "impact": 86.6,
-  "velocity": 56.79,
-  "health": 63.75,
-  "global_percentile": 25.57,
+  "radar_score": 69.74,
+  "impact": 86.62,
+  "velocity": 55.25,
+  "health": 63.01,
+  "global_percentile": 20.29,
   "category": "AI Infrastructure",
   "sub_category": "model serving",
   "summary": "\u26a1 Pure-Rust WebGPU inference engine \u2014 OpenAI-API compatible, GGUF native, runs on any GPU. No Python. No llama.cpp. Single binary.",
   "maturity": "Unknown",
-  "stars_7d": 10,
-  "stars_30d": 57,
-  "stars_90d": 223,
-  "star_growth_rate_7d": 1.4285714285714286,
-  "star_growth_rate_30d": 1.9655172413793103,
-  "star_growth_acceleration": 0.7268170426065164,
-  "forks_7d": 1,
-  "forks_30d": 2,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 45,
+  "stars_7d": 2,
+  "stars_30d": 34,
+  "stars_90d": 224,
+  "star_growth_rate_7d": 0.2857142857142857,
+  "star_growth_rate_30d": 1.2142857142857142,
+  "star_growth_acceleration": 0.23529411764705882,
+  "forks_7d": 2,
+  "forks_30d": 3,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 46,
   "authenticity": {
-    "organic_confidence": 87.9,
+    "organic_confidence": 86.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "589 forks for 6,013 stars (9.8%)."
+        "detail": "589 forks for 6,015 stars (9.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 97.0,
+        "score": 93.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 2 stars (0 forks, 1.3x the daily average)."
+        "detail": "Largest 24h jump was 2 stars (0 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 40.0,
         "weight": 0.12,
-        "detail": "9 open issues for 6,013 stars (0.1%)."
+        "detail": "9 open issues for 6,015 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 2 stars (0 forks, 1.3x the daily average).",
+      "Burst pattern: Largest 24h jump was 2 stars (0 forks, 1.7x the daily average).",
       "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 589 forks for 6,013 stars (9.8%)."
+      "Fork-to-star ratio: 589 forks for 6,015 stars (9.8%)."
     ],
     "red_flags": [
-      "Issue engagement: 9 open issues for 6,013 stars (0.1%)."
+      "Issue engagement: 9 open issues for 6,015 stars (0.1%)."
     ]
   }
 }

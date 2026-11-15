@@ -4,37 +4,51 @@
   "description": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 5846,
-  "forks": 892,
-  "open_issues": 139,
+  "topics": [
+    "llava",
+    "llm",
+    "mlx",
+    "vision-transformer",
+    "apple-silicon",
+    "idefics",
+    "local-ai",
+    "paligemma",
+    "vision-framework",
+    "vision-language-model",
+    "florence2",
+    "molmo",
+    "pixtral"
+  ],
+  "stars": 5848,
+  "forks": 893,
+  "open_issues": 141,
   "watchers": 35,
   "created_at": "2024-04-16T15:10:12Z",
-  "pushed_at": "2026-11-14T18:11:44Z",
+  "pushed_at": "2026-11-15T20:39:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Neywa-Labs.png",
-  "radar_score": 69.88,
-  "impact": 86.99,
-  "velocity": 55.23,
-  "health": 63.01,
-  "global_percentile": 23.0,
+  "radar_score": 70.62,
+  "impact": 87.01,
+  "velocity": 56.78,
+  "health": 63.75,
+  "global_percentile": 24.29,
   "category": "Multimodal AI",
   "sub_category": "vision-language",
   "summary": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX.",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": 3,
-  "stars_90d": 3,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": 26,
+  "stars_30d": 26,
+  "stars_90d": 26,
+  "star_growth_rate_7d": 3.7142857142857144,
+  "star_growth_rate_30d": 3.7142857142857144,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": 0,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 3,
+  "forks_7d": 7,
+  "forks_30d": 7,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 4,
   "authenticity": {
-    "organic_confidence": 97.1,
+    "organic_confidence": 98.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +57,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "892 forks for 5,846 stars (15.3%)."
+        "detail": "893 forks for 5,848 stars (15.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 100.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "Largest 24h jump was 3 stars (0 forks, 0.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +83,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 91.3,
+        "score": 91.4,
         "weight": 0.12,
-        "detail": "139 open issues for 5,846 stars (2.4%)."
+        "detail": "141 open issues for 5,848 stars (2.4%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +96,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 139 open issues for 5,846 stars (2.4%).",
-      "Fork-to-star ratio: 892 forks for 5,846 stars (15.3%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Issue engagement: 141 open issues for 5,848 stars (2.4%).",
+      "Fork-to-star ratio: 893 forks for 5,848 stars (15.3%).",
+      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 0.8x the daily average)."
     ],
     "red_flags": []
   }

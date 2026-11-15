@@ -4,37 +4,57 @@
   "description": "\u26a1\ufe0fnext-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 5743,
+  "topics": [
+    "chatgpt",
+    "gpt",
+    "knowledge-base",
+    "langchain",
+    "openai",
+    "chatbot",
+    "llm",
+    "rag",
+    "multi-agent",
+    "agi",
+    "agent",
+    "mcp",
+    "model-context-protocol",
+    "openclaw",
+    "agentic",
+    "agentic-ai",
+    "harness",
+    "openagent",
+    "hermes-agent"
+  ],
+  "stars": 5745,
   "forks": 673,
-  "open_issues": 47,
+  "open_issues": 0,
   "watchers": 47,
   "created_at": "2020-05-29T02:45:58Z",
   "pushed_at": "2026-11-06T13:17:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/the-open-agent.png",
-  "radar_score": 67.13,
-  "impact": 86.89,
-  "velocity": 47.5,
-  "health": 63.01,
-  "global_percentile": 12.86,
+  "radar_score": 59.09,
+  "impact": 86.91,
+  "velocity": 30.07,
+  "health": 55.19,
+  "global_percentile": 1.14,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "\u26a1\ufe0fnext-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
   "maturity": "Unknown",
-  "stars_7d": 4,
-  "stars_30d": 51,
-  "stars_90d": 184,
-  "star_growth_rate_7d": 0.5714285714285714,
-  "star_growth_rate_30d": 1.8214285714285714,
-  "star_growth_acceleration": 0.3137254901960784,
-  "forks_7d": -2,
-  "forks_30d": 5,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 45,
+  "stars_7d": 13,
+  "stars_30d": 47,
+  "stars_90d": 195,
+  "star_growth_rate_7d": 1.8571428571428572,
+  "star_growth_rate_30d": 1.6785714285714286,
+  "star_growth_acceleration": 1.1063829787234043,
+  "forks_7d": 2,
+  "forks_30d": 7,
+  "days_since_last_push": 9,
+  "freshness_score": 0.9139311852712282,
+  "snapshot_count": 46,
   "authenticity": {
-    "organic_confidence": 93.0,
+    "organic_confidence": 85.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "673 forks for 5,743 stars (11.7%)."
+        "detail": "673 forks for 5,745 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 98.2,
+        "score": 98.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 2 stars (0 forks, 1.2x the daily average)."
       },
@@ -69,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 69.6,
+        "score": 25,
         "weight": 0.12,
-        "detail": "47 open issues for 5,743 stars (0.8%)."
+        "detail": "0 open issues for 5,745 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -84,8 +104,10 @@
     "reasons": [
       "Maintenance cadence: Last push 9 days ago.",
       "Burst pattern: Largest 24h jump was 2 stars (0 forks, 1.2x the daily average).",
-      "Fork-to-star ratio: 673 forks for 5,743 stars (11.7%)."
+      "Fork-to-star ratio: 673 forks for 5,745 stars (11.7%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 0 open issues for 5,745 stars (0.0%)."
+    ]
   }
 }

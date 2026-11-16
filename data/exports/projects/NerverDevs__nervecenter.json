@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "new-api / sub2api \u4e2d\u8f6c\u7ad9\u8d26\u53f7\u7ba1\u7406\u4e2d\u5fc3\uff1a\u4f59\u989d\u3001API Key\u3001\u7528\u91cf\u3001\u500d\u7387\u3001\u6a21\u578b\u6bd4\u4ef7 | https://nvcenter.cc",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 37.3,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 20.7,
+        "weight": 0.22,
+        "detail": "1 forks for 475 stars (0.2%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 475 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 88.5,
+        "weight": 0.1,
+        "detail": "Last push 22 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 22 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 1 forks for 475 stars (0.2%).",
+      "Issue engagement: 0 open issues for 475 stars (0.0%)."
+    ]
+  }
 }

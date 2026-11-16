@@ -4,53 +4,57 @@
   "description": "Embeddable Postgres with real-time, reactive bindings.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16280,
+  "topics": [
+    "database",
+    "postgres",
+    "wasm"
+  ],
+  "stars": 16282,
   "forks": 476,
   "open_issues": 117,
   "watchers": 64,
   "created_at": "2024-02-19T14:37:38Z",
-  "pushed_at": "2026-11-16T08:48:04Z",
+  "pushed_at": "2026-11-16T09:24:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/electric-sql.png",
-  "radar_score": 70.35,
-  "impact": 90.47,
-  "velocity": 56.37,
-  "health": 57.74,
-  "global_percentile": 18.14,
+  "radar_score": 72.05,
+  "impact": 90.52,
+  "velocity": 60.12,
+  "health": 59.2,
+  "global_percentile": 27.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embeddable Postgres with real-time, reactive bindings.",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 0,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": 7,
+  "stars_30d": 7,
+  "stars_90d": 7,
+  "star_growth_rate_7d": 3.5,
+  "star_growth_rate_30d": 3.5,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": 0,
-  "days_since_last_push": 4,
-  "freshness_score": 0.9607894391523232,
-  "snapshot_count": 2,
+  "forks_7d": 1,
+  "forks_30d": 1,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 3,
   "authenticity": {
-    "organic_confidence": 74.1,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 68.1,
+        "score": 68.2,
         "weight": 0.22,
-        "detail": "475 forks for 16,275 stars (2.9%)."
+        "detail": "476 forks for 16,282 stars (2.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -71,18 +75,19 @@
         "label": "Issue engagement",
         "score": 66.6,
         "weight": 0.12,
-        "detail": "117 open issues for 16,275 stars (0.7%)."
+        "detail": "117 open issues for 16,282 stars (0.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 96.4,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 5 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 5 days ago."
+      "Burst pattern: No single-day star surge in the last 30 days.",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

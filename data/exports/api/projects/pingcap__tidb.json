@@ -4,20 +4,40 @@
   "description": "TiDB is built for agentic workloads that grow unpredictably, with ACID guarantees and native support for transactions, analytics, and vector search. No data silos. No noisy neighbors. No infrastructure ceiling.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 40737,
-  "forks": 6294,
-  "open_issues": 5458,
+  "topics": [
+    "distributed-database",
+    "distributed-transactions",
+    "tidb",
+    "database",
+    "scale",
+    "mysql",
+    "htap",
+    "sql",
+    "cloud-native",
+    "serverless",
+    "mysql-compatibility",
+    "go",
+    "hacktoberfest",
+    "agent",
+    "agent-context",
+    "agent-memory",
+    "agentic",
+    "ai",
+    "memory"
+  ],
+  "stars": 40738,
+  "forks": 6295,
+  "open_issues": 5465,
   "watchers": 1206,
   "created_at": "2015-09-06T04:01:52Z",
-  "pushed_at": "2026-11-16T08:44:06Z",
+  "pushed_at": "2026-11-16T11:41:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/pingcap.png",
   "radar_score": 75.75,
-  "impact": 98.31,
+  "impact": 98.32,
   "velocity": 61.11,
   "health": 60.15,
-  "global_percentile": 62.71,
+  "global_percentile": 57.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "TiDB is built for agentic workloads that grow unpredictably, with ACID guarantees and native support for transactions, analytics, and vector search. No data silos. No noisy neighbors. No infrastructure ceiling.",
@@ -28,13 +48,13 @@
   "star_growth_rate_7d": 2.5714285714285716,
   "star_growth_rate_30d": 3.0,
   "star_growth_acceleration": 0.8571428571428572,
-  "forks_7d": 2,
-  "forks_30d": 18,
+  "forks_7d": 5,
+  "forks_30d": 21,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 302,
+  "snapshot_count": 303,
   "authenticity": {
-    "organic_confidence": 94.7,
+    "organic_confidence": 94.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "6,293 forks for 40,737 stars (15.4%)."
+        "detail": "6,295 forks for 40,738 stars (15.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.1,
+        "score": 85.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 7 stars (1 forks, 2.3x the daily average)."
       },
@@ -71,7 +91,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "5,457 open issues for 40,737 stars (13.4%)."
+        "detail": "5,465 open issues for 40,738 stars (13.4%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +103,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 7 stars (1 forks, 2.3x the daily average).",
-      "Fork-to-star ratio: 6,293 forks for 40,737 stars (15.4%).",
-      "Issue engagement: 5,457 open issues for 40,737 stars (13.4%)."
+      "Fork-to-star ratio: 6,295 forks for 40,738 stars (15.5%).",
+      "Issue engagement: 5,465 open issues for 40,738 stars (13.4%)."
     ],
     "red_flags": []
   }

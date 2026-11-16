@@ -4,8 +4,20 @@
   "description": "The Open Runtime for AI Agents",
   "language": "Rust",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 11932,
+  "topics": [
+    "agent-security",
+    "ai",
+    "ai-agents",
+    "cli",
+    "hacktoberfest",
+    "llms",
+    "mcp-gateway",
+    "multi-agent",
+    "rust",
+    "tokenomics",
+    "tokenops"
+  ],
+  "stars": 11933,
   "forks": 3247,
   "open_issues": 22,
   "watchers": 19,
@@ -15,43 +27,43 @@
   "owner_avatar": "https://github.com/Nasiko-Labs.png",
   "radar_score": 75.93,
   "impact": 90.0,
-  "velocity": 72.56,
+  "velocity": 72.55,
   "health": 58.15,
   "global_percentile": 58.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Developer Control Plane for your AI Agents",
   "maturity": "Unknown",
-  "stars_7d": 71,
-  "stars_30d": 2454,
-  "stars_90d": 2433,
-  "star_growth_rate_7d": 10.142857142857142,
-  "star_growth_rate_30d": 81.8,
-  "star_growth_acceleration": 0.12399580859238561,
-  "forks_7d": 15,
-  "forks_30d": 1202,
+  "stars_7d": -11,
+  "stars_30d": 2453,
+  "stars_90d": 2435,
+  "star_growth_rate_7d": -1.5714285714285714,
+  "star_growth_rate_30d": 81.76666666666667,
+  "star_growth_acceleration": -0.019218449711723255,
+  "forks_7d": -24,
+  "forks_30d": 1190,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 175,
-  "why_trending": "Steady growth with 71 new stars this week. Above-average growth velocity. High developer adoption with 15 new forks this week. Active in the AI Agents category.",
+  "snapshot_count": 176,
+  "why_trending": "Above-average growth velocity. Active in the AI Agents category.",
   "authenticity": {
-    "organic_confidence": 64.8,
+    "organic_confidence": 64.4,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 96.5,
+        "score": 96.6,
         "weight": 0.22,
-        "detail": "3,255 forks for 11,942 stars (27.3%)."
+        "detail": "3,247 forks for 11,933 stars (27.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 32.0,
+        "score": 30.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 708 stars (391 forks, 8.0x the daily average)."
+        "detail": "Largest 24h jump was 708 stars (391 forks, 8.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,22 +84,22 @@
         "label": "Issue engagement",
         "score": 43.4,
         "weight": 0.12,
-        "detail": "22 open issues for 11,942 stars (0.2%)."
+        "detail": "22 open issues for 11,933 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,255 forks for 11,942 stars (27.3%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Fork-to-star ratio: 3,247 forks for 11,933 stars (27.2%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 708 stars (391 forks, 8.0x the daily average)."
+      "Burst pattern: Largest 24h jump was 708 stars (391 forks, 8.5x the daily average)."
     ]
   }
 }

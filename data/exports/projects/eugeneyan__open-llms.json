@@ -4,7 +4,12 @@
   "description": "\ud83d\udccb A list of open LLMs available for commercial use.",
   "language": null,
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "commercial",
+    "large-language-models",
+    "llm",
+    "llms"
+  ],
   "stars": 12883,
   "forks": 985,
   "open_issues": 8,
@@ -13,26 +18,26 @@
   "pushed_at": "2025-02-13T06:37:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/eugeneyan.png",
-  "radar_score": 59.42,
+  "radar_score": 59.43,
   "impact": 93.08,
-  "velocity": 39.58,
+  "velocity": 39.59,
   "health": 33.35,
-  "global_percentile": 1.14,
+  "global_percentile": 0.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\ud83d\udccb A list of open LLMs available for commercial use.",
   "maturity": "Unknown",
-  "stars_7d": -1,
-  "stars_30d": -7,
-  "stars_90d": 26,
-  "star_growth_rate_7d": -0.14285714285714285,
-  "star_growth_rate_30d": -0.23333333333333334,
+  "stars_7d": 0,
+  "stars_30d": -6,
+  "stars_90d": 27,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": -0.21428571428571427,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": -1,
-  "days_since_last_push": 639,
-  "freshness_score": 0.0016782562013892464,
-  "snapshot_count": 94,
+  "forks_7d": -1,
+  "forks_30d": -2,
+  "days_since_last_push": 641,
+  "freshness_score": 0.0016450245020705747,
+  "snapshot_count": 95,
   "authenticity": {
     "organic_confidence": 74.1,
     "verdict": "likely_organic",
@@ -41,9 +46,9 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 91.6,
+        "score": 91.5,
         "weight": 0.22,
-        "detail": "986 forks for 12,883 stars (7.7%)."
+        "detail": "985 forks for 12,883 stars (7.6%)."
       },
       {
         "key": "burst",
@@ -78,15 +83,15 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 640 days ago."
+        "detail": "Last push 641 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 986 forks for 12,883 stars (7.7%).",
+      "Fork-to-star ratio: 985 forks for 12,883 stars (7.6%).",
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 640 days ago.",
+      "Maintenance cadence: Last push 641 days ago.",
       "Issue engagement: 8 open issues for 12,883 stars (0.1%)."
     ]
   }

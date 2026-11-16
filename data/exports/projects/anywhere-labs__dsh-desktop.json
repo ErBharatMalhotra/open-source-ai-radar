@@ -4,52 +4,61 @@
   "description": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 36126,
-  "forks": 1641,
-  "open_issues": 322,
+  "topics": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop",
+    "dsh",
+    "dsh-plugin-desktop",
+    "cordis",
+    "cordis-plugin"
+  ],
+  "stars": 36142,
+  "forks": 1642,
+  "open_issues": 320,
   "watchers": 80,
   "created_at": "2026-08-13T16:30:50Z",
-  "pushed_at": "2026-11-16T08:14:13Z",
+  "pushed_at": "2026-11-16T10:15:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/anywhere-labs.png",
-  "radar_score": 76.08,
-  "impact": 94.93,
-  "velocity": 67.11,
-  "health": 58.46,
-  "global_percentile": 65.43,
+  "radar_score": 76.8,
+  "impact": 94.97,
+  "velocity": 68.6,
+  "health": 59.2,
+  "global_percentile": 68.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "maturity": "Unknown",
-  "stars_7d": 735,
-  "stars_30d": 3486,
-  "stars_90d": 3486,
-  "star_growth_rate_7d": 105.0,
-  "star_growth_rate_30d": 151.56521739130434,
-  "star_growth_acceleration": 0.6927710843373495,
-  "forks_7d": 39,
-  "forks_30d": 139,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 324,
+  "stars_7d": 761,
+  "stars_30d": 3490,
+  "stars_90d": 3490,
+  "star_growth_rate_7d": 108.71428571428571,
+  "star_growth_rate_30d": 151.7391304347826,
+  "star_growth_acceleration": 0.7164551780597627,
+  "forks_7d": 43,
+  "forks_30d": 143,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 325,
   "why_trending": "Strong momentum with 1066 new stars this week. Above-average growth velocity. High developer adoption with 47 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 85.6,
+    "organic_confidence": 85.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 78.9,
+        "score": 79.0,
         "weight": 0.22,
-        "detail": "1,635 forks for 36,082 stars (4.5%)."
+        "detail": "1,642 forks for 36,142 stars (4.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.1,
+        "score": 92.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 281 stars (9 forks, 1.7x the daily average)."
       },
@@ -70,22 +79,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 72.4,
+        "score": 71.6,
         "weight": 0.12,
-        "detail": "329 open issues for 36,082 stars (0.9%)."
+        "detail": "320 open issues for 36,142 stars (0.9%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,635 forks for 36,082 stars (4.5%).",
+      "Fork-to-star ratio: 1,642 forks for 36,142 stars (4.5%).",
       "Burst pattern: Largest 24h jump was 281 stars (9 forks, 1.7x the daily average).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

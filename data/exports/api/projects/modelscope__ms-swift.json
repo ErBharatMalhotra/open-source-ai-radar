@@ -4,37 +4,57 @@
   "description": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.8, DeepSeek-V4, GLM-5.1, InternLM3, Llama4, ...) and 300+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, GLM5.3, Gemma4, Llava, Phi4, ...) (AAAI 2025).",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16111,
+  "topics": [
+    "llm",
+    "lora",
+    "sft",
+    "multimodal",
+    "peft",
+    "liger",
+    "embedding",
+    "grpo",
+    "megatron",
+    "qwen3",
+    "reranker",
+    "moe",
+    "qwen3-vl",
+    "qwen3-omni",
+    "deepseek",
+    "glm",
+    "kimi",
+    "qwen",
+    "jev"
+  ],
+  "stars": 16113,
   "forks": 1806,
-  "open_issues": 425,
+  "open_issues": 426,
   "watchers": 55,
   "created_at": "2023-08-01T15:06:39Z",
-  "pushed_at": "2026-11-16T08:01:31Z",
+  "pushed_at": "2026-11-16T09:16:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/modelscope.png",
-  "radar_score": 74.65,
-  "impact": 92.69,
+  "radar_score": 74.66,
+  "impact": 92.7,
   "velocity": 61.83,
   "health": 63.75,
-  "global_percentile": 47.29,
+  "global_percentile": 45.86,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.6, DeepSeek-V4, GLM-5.1, InternLM3, Llama4, ...) and 300+ MLLMs (Qwen3-VL, Qwen3-Omni, InternVL3.5, Ovis2.5, GLM4.5v, Gemma4, Llava, Phi4, ...) (AAAI 2025).",
   "maturity": "Unknown",
-  "stars_7d": 48,
-  "stars_30d": 246,
-  "stars_90d": 262,
-  "star_growth_rate_7d": 6.857142857142857,
-  "star_growth_rate_30d": 8.2,
-  "star_growth_acceleration": 0.8362369337979094,
-  "forks_7d": 16,
-  "forks_30d": 54,
+  "stars_7d": 47,
+  "stars_30d": 249,
+  "stars_90d": 268,
+  "star_growth_rate_7d": 7.833333333333333,
+  "star_growth_rate_30d": 8.3,
+  "star_growth_acceleration": 0.9437751004016063,
+  "forks_7d": 14,
+  "forks_30d": 37,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 250,
+  "snapshot_count": 251,
   "authenticity": {
-    "organic_confidence": 90.2,
+    "organic_confidence": 90.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.8,
         "weight": 0.22,
-        "detail": "1,803 forks for 16,104 stars (11.2%)."
+        "detail": "1,806 forks for 16,113 stars (11.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.7,
+        "score": 76.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 24 stars (5 forks, 2.9x the daily average)."
       },
@@ -69,22 +89,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 92.3,
+        "score": 92.1,
         "weight": 0.12,
-        "detail": "431 open issues for 16,104 stars (2.7%)."
+        "detail": "426 open issues for 16,113 stars (2.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 24 stars (5 forks, 2.9x the daily average).",
-      "Issue engagement: 431 open issues for 16,104 stars (2.7%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Issue engagement: 426 open issues for 16,113 stars (2.6%).",
+      "Fork-to-star ratio: 1,806 forks for 16,113 stars (11.2%)."
     ],
     "red_flags": []
   }

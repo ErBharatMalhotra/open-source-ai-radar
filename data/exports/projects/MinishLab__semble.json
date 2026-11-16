@@ -34,16 +34,16 @@
   "freshness_score": 0.9323938199059483,
   "snapshot_count": 75,
   "authenticity": {
-    "organic_confidence": 80.0,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.9,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 78.8,
         "weight": 0.22,
-        "detail": "291 forks for 6,429 stars (4.5%)."
+        "detail": "291 forks for 6,431 stars (4.5%)."
       },
       {
         "key": "burst",
@@ -71,23 +71,23 @@
         "label": "Issue engagement",
         "score": 29.7,
         "weight": 0.12,
-        "detail": "3 open issues for 6,429 stars (0.0%)."
+        "detail": "3 open issues for 6,431 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.0,
+        "score": 94.6,
         "weight": 0.1,
-        "detail": "Last push 7 days ago."
+        "detail": "Last push 8 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 291 forks for 6,429 stars (4.5%).",
-      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 291 forks for 6,431 stars (4.5%).",
+      "Maintenance cadence: Last push 8 days ago.",
       "Burst pattern: Largest 24h jump was 5 stars (0 forks, 0.7x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 6,429 stars (0.0%)."
+      "Issue engagement: 3 open issues for 6,431 stars (0.0%)."
     ]
   }
 }

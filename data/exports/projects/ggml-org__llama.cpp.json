@@ -4,37 +4,39 @@
   "description": "LLM inference in C/C++",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
-  "stars": 135274,
-  "forks": 25656,
-  "open_issues": 705,
-  "watchers": 926,
+  "topics": [
+    "ggml"
+  ],
+  "stars": 135303,
+  "forks": 25661,
+  "open_issues": 704,
+  "watchers": 925,
   "created_at": "2023-03-10T18:58:00Z",
-  "pushed_at": "2026-11-16T08:09:07Z",
+  "pushed_at": "2026-11-16T12:27:45Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ggml-org.png",
   "radar_score": 80.21,
-  "impact": 99.71,
+  "impact": 99.7,
   "velocity": 69.69,
   "health": 63.75,
-  "global_percentile": 97.29,
+  "global_percentile": 97.0,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "LLM inference in C/C++",
   "maturity": "Unknown",
-  "stars_7d": 1506,
-  "stars_30d": 2931,
-  "stars_90d": 2931,
-  "star_growth_rate_7d": 215.14285714285714,
-  "star_growth_rate_30d": 139.57142857142858,
-  "star_growth_acceleration": 1.5414534288638688,
-  "forks_7d": 400,
-  "forks_30d": 873,
+  "stars_7d": 1572,
+  "stars_30d": 2998,
+  "stars_90d": 2998,
+  "star_growth_rate_7d": 224.57142857142858,
+  "star_growth_rate_30d": 142.76190476190476,
+  "star_growth_acceleration": 1.5730486991327552,
+  "forks_7d": 402,
+  "forks_30d": 869,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 337,
+  "snapshot_count": 338,
   "authenticity": {
-    "organic_confidence": 77.6,
+    "organic_confidence": 77.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +45,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "25,654 forks for 135,210 stars (19.0%)."
+        "detail": "25,661 forks for 135,303 stars (19.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 57.8,
+        "score": 58.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 568 stars (70 forks, 4.5x the daily average)."
+        "detail": "Largest 24h jump was 568 stars (70 forks, 4.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +73,7 @@
         "label": "Issue engagement",
         "score": 60.6,
         "weight": 0.12,
-        "detail": "701 open issues for 135,210 stars (0.5%)."
+        "detail": "704 open issues for 135,303 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +84,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 25,654 forks for 135,210 stars (19.0%).",
+      "Fork-to-star ratio: 25,661 forks for 135,303 stars (19.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

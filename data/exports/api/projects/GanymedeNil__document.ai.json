@@ -22,5 +22,61 @@
   "sub_category": "rag framework",
   "summary": "\u53ef\u6eaf\u6e90\u3001\u5e26\u65f6\u6548\u5224\u65ad\u7684\u4f01\u4e1a\u77e5\u8bc6\u5e93\u95ee\u7b54\uff1a\u6bcf\u6761\u7ed3\u8bba\u6807\u660e\u51fa\u81ea\u54ea\u4efd\u6587\u6863\u7684\u54ea\u4e2a\u7248\u672c\u3001\u54ea\u4e00\u5904\uff0c\u4ee5\u53ca\u5728\u76ee\u6807\u65f6\u95f4\u662f\u5426\u6709\u6548\uff08Traceable, version- and time-aware enterprise RAG\uff09",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 78.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.6,
+        "weight": 0.22,
+        "detail": "321 forks for 3,658 stars (8.8%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 27.7,
+        "weight": 0.12,
+        "detail": "1 open issues for 3,658 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 321 forks for 3,658 stars (8.8%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 3,658 stars (0.0%)."
+    ]
+  }
 }

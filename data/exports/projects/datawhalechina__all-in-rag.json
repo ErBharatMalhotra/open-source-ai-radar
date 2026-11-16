@@ -4,38 +4,51 @@
   "description": "\ud83d\udd0d\u5927\u6a21\u578b\u5e94\u7528\u5f00\u53d1\u5b9e\u6218\u4e00\uff1aRAG \u6280\u672f\u5168\u6808\u6307\u5357\uff0c\u5728\u7ebf\u9605\u8bfb\u5730\u5740\uff1ahttps://datawhalechina.github.io/all-in-rag/",
   "language": "Python",
   "license": null,
-  "topics": [],
-  "stars": 13159,
-  "forks": 6731,
-  "open_issues": 21,
+  "topics": [
+    "embedding",
+    "kimi-k2",
+    "langchain",
+    "llama-index",
+    "llm",
+    "milvus",
+    "multimodal",
+    "rag",
+    "ai",
+    "neo4j",
+    "python",
+    "deepseek"
+  ],
+  "stars": 13166,
+  "forks": 6738,
+  "open_issues": 19,
   "watchers": 29,
   "created_at": "2025-06-05T08:12:35Z",
-  "pushed_at": "2026-09-30T21:49:22Z",
+  "pushed_at": "2026-11-16T11:47:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/datawhalechina.png",
-  "radar_score": 70.07,
-  "impact": 91.92,
-  "velocity": 64.52,
-  "health": 42.88,
-  "global_percentile": 21.43,
+  "radar_score": 77.03,
+  "impact": 91.96,
+  "velocity": 75.61,
+  "health": 55.15,
+  "global_percentile": 70.29,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "\ud83d\udd0d\u5927\u6a21\u578b\u5e94\u7528\u5f00\u53d1\u5b9e\u6218\u4e00\uff1aRAG \u6280\u672f\u5168\u6808\u6307\u5357\uff0c\u5728\u7ebf\u9605\u8bfb\u5730\u5740\uff1ahttps://datawhalechina.github.io/all-in-rag/",
   "maturity": "Unknown",
-  "stars_7d": 155,
-  "stars_30d": 914,
-  "stars_90d": 914,
-  "star_growth_rate_7d": 25.833333333333332,
-  "star_growth_rate_30d": 31.517241379310345,
-  "star_growth_acceleration": 0.8196571845368343,
-  "forks_7d": 98,
-  "forks_30d": 553,
-  "days_since_last_push": 45,
-  "freshness_score": 0.6376281516217733,
-  "snapshot_count": 277,
-  "why_trending": "Strong momentum with 233 new stars this week. Above-average growth velocity. High developer adoption with 121 new forks this week. Active in the RAG category.",
+  "stars_7d": 178,
+  "stars_30d": 936,
+  "stars_90d": 936,
+  "star_growth_rate_7d": 29.666666666666668,
+  "star_growth_rate_30d": 32.275862068965516,
+  "star_growth_acceleration": 0.9191595441595443,
+  "forks_7d": 117,
+  "forks_30d": 558,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 278,
+  "why_trending": "Strong momentum with 178 new stars this week. Above-average growth velocity. High developer adoption with 117 new forks this week. Active in the RAG category.",
   "authenticity": {
-    "organic_confidence": 82.3,
+    "organic_confidence": 84.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,12 +57,12 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "6,719 forks for 13,143 stars (51.1%)."
+        "detail": "6,738 forks for 13,166 stars (51.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.7,
+        "score": 91.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 58 stars (-105 forks, 1.8x the daily average)."
       },
@@ -70,23 +83,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 41.0,
+        "score": 39.4,
         "weight": 0.12,
-        "detail": "21 open issues for 13,143 stars (0.2%)."
+        "detail": "19 open issues for 13,166 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 81.0,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 46 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 46 days ago.",
       "Burst pattern: Largest 24h jump was 58 stars (-105 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 6,719 forks for 13,143 stars (51.1%)."
+      "Fork-to-star ratio: 6,738 forks for 13,166 stars (51.2%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 19 open issues for 13,166 stars (0.1%)."
+    ]
   }
 }

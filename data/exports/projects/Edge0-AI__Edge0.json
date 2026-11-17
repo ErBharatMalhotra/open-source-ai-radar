@@ -4,38 +4,42 @@
   "description": "Device-native foundation models: 145B on a laptop, 35B on a phone. Latent MoE, SSD-streamed weights, a router that predicts loads a step ahead. Mac, iPhone, Android, Windows.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 11965,
+  "topics": [
+    "edge-ai",
+    "foundation-model",
+    "on-device-ai"
+  ],
+  "stars": 11969,
   "forks": 1868,
-  "open_issues": 13,
-  "watchers": 848,
+  "open_issues": 12,
+  "watchers": 847,
   "created_at": "2026-09-08T13:41:47Z",
-  "pushed_at": "2026-11-17T08:16:01Z",
+  "pushed_at": "2026-11-17T11:10:15Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Edge0-AI.png",
-  "radar_score": 79.73,
+  "radar_score": 79.38,
   "impact": 94.29,
-  "velocity": 74.51,
+  "velocity": 73.52,
   "health": 63.75,
-  "global_percentile": 94.86,
+  "global_percentile": 92.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Device-native foundation models: 145B on a laptop, 35B on a phone. Latent MoE, SSD-streamed weights, a router that predicts loads a step ahead. Mac, iPhone, Android, Windows.",
   "maturity": "Unknown",
-  "stars_7d": 1610,
-  "stars_30d": 1610,
-  "stars_90d": 1610,
-  "star_growth_rate_7d": 402.5,
-  "star_growth_rate_30d": 402.5,
+  "stars_7d": 1620,
+  "stars_30d": 1620,
+  "stars_90d": 1620,
+  "star_growth_rate_7d": 405.0,
+  "star_growth_rate_30d": 405.0,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 295,
-  "forks_30d": 295,
+  "forks_7d": 296,
+  "forks_30d": 296,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 16,
-  "why_trending": "Strong momentum with 1610 new stars this week. Above-average growth velocity. High developer adoption with 295 new forks this week. Active in the Uncategorized category.",
+  "snapshot_count": 17,
+  "why_trending": "Strong momentum with 1620 new stars this week. Above-average growth velocity. High developer adoption with 296 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 87.1,
+    "organic_confidence": 85.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "1,867 forks for 11,959 stars (15.6%)."
+        "detail": "1,868 forks for 11,969 stars (15.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.7,
+        "score": 92.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 645 stars (110 forks, 1.6x the daily average)."
+        "detail": "Largest 24h jump was 645 stars (110 forks, 1.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 41.7,
+        "score": 35.0,
         "weight": 0.12,
-        "detail": "20 open issues for 11,959 stars (0.2%)."
+        "detail": "12 open issues for 11,969 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,10 +87,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 645 stars (110 forks, 1.6x the daily average).",
-      "Fork-to-star ratio: 1,867 forks for 11,959 stars (15.6%).",
+      "Burst pattern: Largest 24h jump was 645 stars (110 forks, 1.8x the daily average).",
+      "Fork-to-star ratio: 1,868 forks for 11,969 stars (15.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 12 open issues for 11,969 stars (0.1%)."
+    ]
   }
 }

@@ -4,35 +4,42 @@
   "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface \u2014 from SQLi to shellcode, EDR evasion to exploit development.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 11159,
-  "forks": 1524,
+  "topics": [
+    "claude-ai",
+    "claude-skills",
+    "redteam",
+    "redteam-tools",
+    "skills",
+    "claude-pt"
+  ],
+  "stars": 11165,
+  "forks": 1526,
   "open_issues": 12,
   "watchers": 72,
   "created_at": "2026-03-04T05:52:35Z",
   "pushed_at": "2026-11-11T13:48:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/SnailSploit.png",
-  "radar_score": 74.47,
-  "impact": 91.83,
-  "velocity": 63.57,
+  "radar_score": 74.49,
+  "impact": 91.87,
+  "velocity": 63.58,
   "health": 61.94,
-  "global_percentile": 51.57,
+  "global_percentile": 42.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface \u2014 from SQLi to shellcode, EDR evasion to exploit development.",
   "maturity": "Unknown",
-  "stars_7d": 600,
-  "stars_30d": 1696,
-  "stars_90d": 1696,
-  "star_growth_rate_7d": 85.71428571428571,
-  "star_growth_rate_30d": 80.76190476190476,
-  "star_growth_acceleration": 1.0613207547169812,
-  "forks_7d": 102,
-  "forks_30d": 262,
+  "stars_7d": 626,
+  "stars_30d": 1722,
+  "stars_90d": 1722,
+  "star_growth_rate_7d": 89.42857142857143,
+  "star_growth_rate_30d": 82.0,
+  "star_growth_acceleration": 1.0905923344947734,
+  "forks_7d": 111,
+  "forks_30d": 271,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 59,
+  "snapshot_count": 60,
   "authenticity": {
     "organic_confidence": 82.8,
     "verdict": "organic",
@@ -43,7 +50,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "1,517 forks for 11,139 stars (13.6%)."
+        "detail": "1,526 forks for 11,165 stars (13.7%)."
       },
       {
         "key": "burst",
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 35.8,
+        "score": 35.7,
         "weight": 0.12,
-        "detail": "12 open issues for 11,139 stars (0.1%)."
+        "detail": "12 open issues for 11,165 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,10 +91,10 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 184 stars (43 forks, 2.3x the daily average).",
       "Maintenance cadence: Last push 5 days ago.",
-      "Fork-to-star ratio: 1,517 forks for 11,139 stars (13.6%)."
+      "Fork-to-star ratio: 1,526 forks for 11,165 stars (13.7%)."
     ],
     "red_flags": [
-      "Issue engagement: 12 open issues for 11,139 stars (0.1%)."
+      "Issue engagement: 12 open issues for 11,165 stars (0.1%)."
     ]
   }
 }

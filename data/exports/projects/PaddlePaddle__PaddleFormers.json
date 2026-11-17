@@ -4,7 +4,9 @@
   "description": "PaddleFormers is an easy-to-use library of pre-trained large language model zoo based on PaddlePaddle.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "model"
+  ],
   "stars": 12969,
   "forks": 2180,
   "open_issues": 3,
@@ -13,28 +15,28 @@
   "pushed_at": "2026-11-17T09:03:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/PaddlePaddle.png",
-  "radar_score": 68.34,
-  "impact": 93.93,
-  "velocity": 47.01,
-  "health": 57.25,
-  "global_percentile": 13.43,
+  "radar_score": 69.14,
+  "impact": 93.94,
+  "velocity": 48.51,
+  "health": 58.35,
+  "global_percentile": 15.43,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "PaddleFormers is an easy-to-use library of pre-trained large language model zoo based on PaddlePaddle.",
   "maturity": "Unknown",
-  "stars_7d": 0,
+  "stars_7d": -1,
   "stars_30d": -6,
   "stars_90d": -14,
-  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_7d": -0.16666666666666666,
   "star_growth_rate_30d": -0.2,
   "star_growth_acceleration": 1.0,
   "forks_7d": -3,
   "forks_30d": -6,
-  "days_since_last_push": 3,
-  "freshness_score": 0.9704455335485082,
-  "snapshot_count": 151,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 152,
   "authenticity": {
-    "organic_confidence": 86.4,
+    "organic_confidence": 86.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -76,15 +78,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 3 days ago.",
       "Fork-to-star ratio: 2,180 forks for 12,969 stars (16.8%).",
-      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
+      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
       "Issue engagement: 3 open issues for 12,969 stars (0.0%)."

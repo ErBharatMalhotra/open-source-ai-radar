@@ -4,7 +4,13 @@
   "description": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "tensorrt",
+    "nvidia",
+    "deep-learning",
+    "inference",
+    "gpu-acceleration"
+  ],
   "stars": 13463,
   "forks": 2427,
   "open_issues": 630,
@@ -17,24 +23,24 @@
   "impact": 94.01,
   "velocity": 56.74,
   "health": 63.75,
-  "global_percentile": 34.57,
+  "global_percentile": 35.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 53,
+  "stars_7d": 24,
+  "stars_30d": 52,
   "stars_90d": 88,
-  "star_growth_rate_7d": 3.5714285714285716,
-  "star_growth_rate_30d": 1.7666666666666666,
-  "star_growth_acceleration": 2.0215633423180597,
-  "forks_7d": 6,
+  "star_growth_rate_7d": 3.4285714285714284,
+  "star_growth_rate_30d": 1.7333333333333334,
+  "star_growth_acceleration": 1.9780219780219779,
+  "forks_7d": 7,
   "forks_30d": 14,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 166,
+  "snapshot_count": 167,
   "authenticity": {
-    "organic_confidence": 88.8,
+    "organic_confidence": 89.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +49,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.4,
         "weight": 0.22,
-        "detail": "2,427 forks for 13,462 stars (18.0%)."
+        "detail": "2,427 forks for 13,463 stars (18.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 70.2,
+        "score": 72.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 3.4x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 3.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 99.0,
+        "score": 98.9,
         "weight": 0.12,
-        "detail": "631 open issues for 13,462 stars (4.7%)."
+        "detail": "630 open issues for 13,463 stars (4.7%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +88,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,427 forks for 13,462 stars (18.0%).",
-      "Issue engagement: 631 open issues for 13,462 stars (4.7%).",
+      "Fork-to-star ratio: 2,427 forks for 13,463 stars (18.0%).",
+      "Issue engagement: 630 open issues for 13,463 stars (4.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

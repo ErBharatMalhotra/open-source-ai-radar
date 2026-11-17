@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-11-17T10:04:22.229361+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-11-17T13:03:32.151437+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "kedro-org/kedro",
+      "stars": 11054,
+      "forks": 1105,
+      "language": "Python",
+      "url": "https://github.com/kedro-org/kedro",
+      "radar_score": 70.2,
+      "metric": "forks",
+      "current_rate": 1.3,
+      "normal_rate": 0.3,
+      "deviation": 4.3,
+      "forks_7d": 9,
+      "forks_30d": 9,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

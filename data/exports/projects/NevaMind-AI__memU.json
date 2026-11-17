@@ -4,7 +4,18 @@
   "description": "Personal memory across agents",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "memory",
+    "sandbox",
+    "agent-memory",
+    "claude-skills",
+    "skills",
+    "openclaw",
+    "openclaw-skills",
+    "harness",
+    "loop-engineering"
+  ],
   "stars": 14625,
   "forks": 1104,
   "open_issues": 70,
@@ -13,42 +24,42 @@
   "pushed_at": "2026-11-16T04:25:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NevaMind-AI.png",
-  "radar_score": 74.65,
-  "impact": 91.94,
-  "velocity": 64.83,
-  "health": 60.75,
-  "global_percentile": 45.14,
+  "radar_score": 74.57,
+  "impact": 91.95,
+  "velocity": 64.85,
+  "health": 60.38,
+  "global_percentile": 43.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Personal memory across agents",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 74,
-  "stars_90d": 99,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 2.466666666666667,
-  "star_growth_acceleration": 0.8687258687258687,
-  "forks_7d": 4,
-  "forks_30d": 10,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 194,
+  "stars_7d": 17,
+  "stars_30d": 75,
+  "stars_90d": 100,
+  "star_growth_rate_7d": 2.4285714285714284,
+  "star_growth_rate_30d": 2.5,
+  "star_growth_acceleration": 0.9714285714285713,
+  "forks_7d": 6,
+  "forks_30d": 13,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 195,
   "authenticity": {
-    "organic_confidence": 83.6,
+    "organic_confidence": 83.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 91.1,
+        "score": 91.2,
         "weight": 0.22,
-        "detail": "1,102 forks for 14,623 stars (7.5%)."
+        "detail": "1,104 forks for 14,625 stars (7.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.7,
+        "score": 83.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (0 forks, 2.5x the daily average)."
       },
@@ -69,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 58.6,
+        "score": 58.9,
         "weight": 0.12,
-        "detail": "69 open issues for 14,623 stars (0.5%)."
+        "detail": "70 open issues for 14,625 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +94,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 1,102 forks for 14,623 stars (7.5%).",
+      "Fork-to-star ratio: 1,104 forks for 14,625 stars (7.5%).",
       "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []

@@ -4,53 +4,63 @@
   "description": "\ud83d\ude80 The fast, Pythonic way to build MCP servers and clients.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 28607,
-  "forks": 2618,
-  "open_issues": 159,
+  "topics": [
+    "model-context-protocol",
+    "fastmcp",
+    "mcp",
+    "agents",
+    "llms",
+    "mcp-clients",
+    "mcp-servers",
+    "mcp-tools",
+    "python"
+  ],
+  "stars": 28613,
+  "forks": 2619,
+  "open_issues": 160,
   "watchers": 120,
   "created_at": "2024-11-30T01:47:40Z",
-  "pushed_at": "2026-11-17T09:42:46Z",
+  "pushed_at": "2026-11-17T12:42:57Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/PrefectHQ.png",
-  "radar_score": 77.3,
+  "radar_score": 77.29,
   "impact": 95.56,
   "velocity": 66.1,
   "health": 63.75,
-  "global_percentile": 74.71,
+  "global_percentile": 71.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "\ud83d\ude80 The fast, Pythonic way to build MCP servers and clients.",
   "maturity": "Unknown",
-  "stars_7d": 238,
-  "stars_30d": 391,
-  "stars_90d": 391,
-  "star_growth_rate_7d": 34.0,
-  "star_growth_rate_30d": 18.61904761904762,
-  "star_growth_acceleration": 1.826086956521739,
-  "forks_7d": 45,
+  "stars_7d": 252,
+  "stars_30d": 405,
+  "stars_90d": 405,
+  "star_growth_rate_7d": 36.0,
+  "star_growth_rate_30d": 19.285714285714285,
+  "star_growth_acceleration": 1.8666666666666667,
+  "forks_7d": 46,
   "forks_30d": 97,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 333,
+  "snapshot_count": 334,
   "authenticity": {
-    "organic_confidence": 77.9,
+    "organic_confidence": 78.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 96.9,
+        "score": 97.0,
         "weight": 0.22,
-        "detail": "2,617 forks for 28,596 stars (9.2%)."
+        "detail": "2,619 forks for 28,613 stars (9.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 59.2,
+        "score": 60.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 70 stars (5 forks, 4.4x the daily average)."
+        "detail": "Largest 24h jump was 70 stars (5 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.9,
+        "score": 61.8,
         "weight": 0.12,
-        "detail": "161 open issues for 28,596 stars (0.6%)."
+        "detail": "160 open issues for 28,613 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,617 forks for 28,596 stars (9.2%).",
+      "Fork-to-star ratio: 2,619 forks for 28,613 stars (9.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

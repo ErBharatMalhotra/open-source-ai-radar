@@ -4,35 +4,38 @@
   "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 19114,
+  "topics": [
+    "agent-skills",
+    "self-evolving-agents"
+  ],
+  "stars": 19117,
   "forks": 1832,
-  "open_issues": 32,
+  "open_issues": 33,
   "watchers": 66,
   "created_at": "2026-05-08T06:41:01Z",
-  "pushed_at": "2026-11-17T09:29:12Z",
+  "pushed_at": "2026-11-17T11:51:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/microsoft.png",
-  "radar_score": 75.37,
-  "impact": 93.48,
-  "velocity": 64.5,
-  "health": 61.6,
-  "global_percentile": 59.57,
+  "radar_score": 77.12,
+  "impact": 93.49,
+  "velocity": 67.96,
+  "health": 63.75,
+  "global_percentile": 69.43,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
   "maturity": "Unknown",
   "stars_7d": 157,
-  "stars_30d": 511,
-  "stars_90d": 511,
+  "stars_30d": 510,
+  "stars_90d": 510,
   "star_growth_rate_7d": 22.428571428571427,
-  "star_growth_rate_30d": 19.653846153846153,
-  "star_growth_acceleration": 1.1411797595750628,
-  "forks_7d": 24,
-  "forks_30d": 67,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 312,
+  "star_growth_rate_30d": 19.615384615384617,
+  "star_growth_acceleration": 1.1434173669467786,
+  "forks_7d": 25,
+  "forks_30d": 68,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 313,
   "authenticity": {
     "organic_confidence": 86.6,
     "verdict": "organic",
@@ -43,7 +46,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.5,
         "weight": 0.22,
-        "detail": "1,831 forks for 19,112 stars (9.6%)."
+        "detail": "1,832 forks for 19,117 stars (9.6%)."
       },
       {
         "key": "burst",
@@ -69,22 +72,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 45.5,
+        "score": 42.3,
         "weight": 0.12,
-        "detail": "40 open issues for 19,112 stars (0.2%)."
+        "detail": "33 open issues for 19,117 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 35 stars (4 forks, 1.8x the daily average).",
-      "Maintenance cadence: Last push 6 days ago.",
-      "Fork-to-star ratio: 1,831 forks for 19,112 stars (9.6%)."
+      "Fork-to-star ratio: 1,832 forks for 19,117 stars (9.6%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

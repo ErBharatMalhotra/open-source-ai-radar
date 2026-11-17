@@ -4,37 +4,42 @@
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "acp",
+    "ai",
+    "ai-agents"
+  ],
   "stars": 56726,
   "forks": 6612,
-  "open_issues": 375,
+  "open_issues": 374,
   "watchers": 286,
   "created_at": "2024-08-23T19:03:36Z",
-  "pushed_at": "2026-11-17T21:19:25Z",
+  "pushed_at": "2026-11-17T23:16:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/aaif-goose.png",
   "radar_score": 78.81,
   "impact": 98.29,
   "velocity": 67.31,
   "health": 63.75,
-  "global_percentile": 87.0,
+  "global_percentile": 86.71,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "maturity": "Unknown",
-  "stars_7d": 313,
-  "stars_30d": 958,
-  "stars_90d": 958,
-  "star_growth_rate_7d": 44.714285714285715,
-  "star_growth_rate_30d": 45.61904761904762,
-  "star_growth_acceleration": 0.9801670146137788,
-  "forks_7d": 36,
-  "forks_30d": 148,
+  "stars_7d": 318,
+  "stars_30d": 945,
+  "stars_90d": 945,
+  "star_growth_rate_7d": 45.42857142857143,
+  "star_growth_rate_30d": 45.0,
+  "star_growth_acceleration": 1.0095238095238095,
+  "forks_7d": 41,
+  "forks_30d": 145,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 351,
+  "snapshot_count": 352,
   "authenticity": {
-    "organic_confidence": 91.1,
+    "organic_confidence": 91.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "6,609 forks for 56,719 stars (11.7%)."
+        "detail": "6,612 forks for 56,726 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.4,
+        "score": 92.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 77 stars (17 forks, 1.8x the daily average)."
       },
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 65.4,
+        "score": 64.8,
         "weight": 0.12,
-        "detail": "386 open issues for 56,719 stars (0.7%)."
+        "detail": "374 open issues for 56,726 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +88,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 77 stars (17 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 6,609 forks for 56,719 stars (11.7%).",
+      "Fork-to-star ratio: 6,612 forks for 56,726 stars (11.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

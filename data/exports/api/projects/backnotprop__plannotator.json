@@ -4,37 +4,47 @@
   "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 13030,
+  "topics": [
+    "claude-code",
+    "opencode",
+    "obsidian",
+    "pi-mono",
+    "plan-mode",
+    "codex",
+    "agents",
+    "code-review",
+    "skills"
+  ],
+  "stars": 13054,
   "forks": 1313,
-  "open_issues": 116,
+  "open_issues": 117,
   "watchers": 34,
   "created_at": "2025-12-28T02:09:40Z",
-  "pushed_at": "2026-11-17T21:50:32Z",
+  "pushed_at": "2026-11-17T23:31:41Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/backnotprop.png",
-  "radar_score": 76.59,
-  "impact": 90.7,
+  "radar_score": 76.6,
+  "impact": 90.75,
   "velocity": 69.62,
   "health": 63.75,
-  "global_percentile": 65.0,
+  "global_percentile": 65.57,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
   "maturity": "Unknown",
-  "stars_7d": 3040,
-  "stars_30d": 3508,
-  "stars_90d": 3621,
-  "star_growth_rate_7d": 434.2857142857143,
-  "star_growth_rate_30d": 116.93333333333334,
-  "star_growth_acceleration": 3.713959928327089,
-  "forks_7d": 556,
-  "forks_30d": 597,
+  "stars_7d": 3093,
+  "stars_30d": 3578,
+  "stars_90d": 3673,
+  "star_growth_rate_7d": 441.85714285714283,
+  "star_growth_rate_30d": 119.26666666666667,
+  "star_growth_acceleration": 3.704783198913998,
+  "forks_7d": 561,
+  "forks_30d": 602,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 214,
+  "snapshot_count": 215,
   "authenticity": {
-    "organic_confidence": 75.8,
+    "organic_confidence": 76.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +53,12 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "1,308 forks for 12,984 stars (10.1%)."
+        "detail": "1,313 forks for 13,054 stars (10.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 45.7,
+        "score": 46.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 696 stars (212 forks, 5.9x the daily average)."
       },
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 71.8,
+        "score": 71.9,
         "weight": 0.12,
-        "detail": "116 open issues for 12,984 stars (0.9%)."
+        "detail": "117 open issues for 13,054 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,308 forks for 12,984 stars (10.1%).",
+      "Fork-to-star ratio: 1,313 forks for 13,054 stars (10.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

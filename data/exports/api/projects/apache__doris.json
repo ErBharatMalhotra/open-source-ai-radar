@@ -4,7 +4,26 @@
   "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
   "language": "Java",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "olap",
+    "database",
+    "hudi",
+    "iceberg",
+    "real-time",
+    "sql",
+    "bigquery",
+    "delta-lake",
+    "lakehouse",
+    "query-engine",
+    "redshift",
+    "snowflake",
+    "agent",
+    "ai",
+    "paimon",
+    "observability",
+    "search",
+    "vector"
+  ],
   "stars": 16236,
   "forks": 4026,
   "open_issues": 479,
@@ -13,28 +32,28 @@
   "pushed_at": "2026-11-17T18:04:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/apache.png",
-  "radar_score": 74.65,
-  "impact": 95.55,
-  "velocity": 58.56,
+  "radar_score": 74.66,
+  "impact": 95.56,
+  "velocity": 58.57,
   "health": 63.75,
-  "global_percentile": 46.0,
+  "global_percentile": 44.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
   "maturity": "Unknown",
-  "stars_7d": 26,
-  "stars_30d": 49,
-  "stars_90d": 409,
-  "star_growth_rate_7d": 3.7142857142857144,
-  "star_growth_rate_30d": 4.454545454545454,
-  "star_growth_acceleration": 0.8338192419825073,
-  "forks_7d": 5,
-  "forks_30d": 13,
+  "stars_7d": 36,
+  "stars_30d": 72,
+  "stars_90d": 432,
+  "star_growth_rate_7d": 5.142857142857143,
+  "star_growth_rate_30d": 4.8,
+  "star_growth_acceleration": 1.0714285714285716,
+  "forks_7d": 10,
+  "forks_30d": 19,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 78,
+  "snapshot_count": 79,
   "authenticity": {
-    "organic_confidence": 92.1,
+    "organic_confidence": 93.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +62,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.0,
         "weight": 0.22,
-        "detail": "4,020 forks for 16,213 stars (24.8%)."
+        "detail": "4,026 forks for 16,236 stars (24.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 85.1,
+        "score": 87.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (1 forks, 2.3x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (1 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +88,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 93.0,
+        "score": 93.2,
         "weight": 0.12,
-        "detail": "472 open issues for 16,213 stars (2.9%)."
+        "detail": "479 open issues for 16,236 stars (3.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.1,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 4 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 10 stars (1 forks, 2.3x the daily average).",
-      "Issue engagement: 472 open issues for 16,213 stars (2.9%).",
-      "Fork-to-star ratio: 4,020 forks for 16,213 stars (24.8%)."
+      "Burst pattern: Largest 24h jump was 10 stars (1 forks, 2.1x the daily average).",
+      "Issue engagement: 479 open issues for 16,236 stars (3.0%).",
+      "Fork-to-star ratio: 4,026 forks for 16,236 stars (24.8%)."
     ],
     "red_flags": []
   }

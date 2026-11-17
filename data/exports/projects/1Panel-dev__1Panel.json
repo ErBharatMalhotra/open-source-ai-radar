@@ -4,7 +4,21 @@
   "description": "\ud83d\udd25 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform. 1Panel \u662f\u4e13\u95e8\u4e3a AI \u670d\u52a1\u5668\u6253\u9020\u7684\u7ba1\u7406\u9762\u677f\u3002",
   "language": "Go",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "docker",
+    "lnmp",
+    "docker-ui",
+    "webmin",
+    "linux",
+    "ollama",
+    "agent",
+    "openclaw",
+    "openresty",
+    "hermes",
+    "qwenpaw",
+    "hermes-agent",
+    "deepseek-harness"
+  ],
   "stars": 37462,
   "forks": 3410,
   "open_issues": 333,
@@ -14,27 +28,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/1Panel-dev.png",
   "radar_score": 77.71,
-  "impact": 96.94,
-  "velocity": 65.7,
+  "impact": 96.95,
+  "velocity": 65.71,
   "health": 63.75,
-  "global_percentile": 75.86,
+  "global_percentile": 75.71,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "\ud83d\udd25 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform.",
   "maturity": "Unknown",
-  "stars_7d": 47,
-  "stars_30d": 245,
-  "stars_90d": 245,
-  "star_growth_rate_7d": 6.714285714285714,
-  "star_growth_rate_30d": 9.074074074074074,
-  "star_growth_acceleration": 0.7399416909620992,
+  "stars_7d": 46,
+  "stars_30d": 240,
+  "stars_90d": 240,
+  "star_growth_rate_7d": 6.571428571428571,
+  "star_growth_rate_30d": 8.88888888888889,
+  "star_growth_acceleration": 0.7392857142857142,
   "forks_7d": -1,
-  "forks_30d": 27,
+  "forks_30d": 26,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 287,
+  "snapshot_count": 288,
   "authenticity": {
-    "organic_confidence": 87.7,
+    "organic_confidence": 87.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +57,12 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "3,410 forks for 37,463 stars (9.1%)."
+        "detail": "3,410 forks for 37,462 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.3,
+        "score": 81.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (0 forks, 2.5x the daily average)."
       },
@@ -71,7 +85,7 @@
         "label": "Issue engagement",
         "score": 71.7,
         "weight": 0.12,
-        "detail": "333 open issues for 37,463 stars (0.9%)."
+        "detail": "333 open issues for 37,462 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +97,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (0 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 3,410 forks for 37,463 stars (9.1%).",
+      "Fork-to-star ratio: 3,410 forks for 37,462 stars (9.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

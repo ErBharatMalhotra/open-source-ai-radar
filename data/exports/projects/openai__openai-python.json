@@ -4,16 +4,19 @@
   "description": "The official Python library for the OpenAI API",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "openai",
+    "python"
+  ],
   "stars": 32183,
   "forks": 5886,
   "open_issues": 44,
   "watchers": 381,
   "created_at": "2020-10-25T23:23:54Z",
-  "pushed_at": "2026-11-17T20:19:36Z",
+  "pushed_at": "2026-11-17T22:42:55Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/openai.png",
-  "radar_score": 76.91,
+  "radar_score": 76.9,
   "impact": 97.52,
   "velocity": 62.74,
   "health": 63.75,
@@ -22,19 +25,19 @@
   "sub_category": "",
   "summary": "The official Python library for the OpenAI API",
   "maturity": "Unknown",
-  "stars_7d": 87,
-  "stars_30d": 253,
-  "stars_90d": 253,
-  "star_growth_rate_7d": 12.428571428571429,
-  "star_growth_rate_30d": 10.541666666666666,
-  "star_growth_acceleration": 1.178994918125353,
-  "forks_7d": -18,
-  "forks_30d": -2079,
+  "stars_7d": 80,
+  "stars_30d": 252,
+  "stars_90d": 252,
+  "star_growth_rate_7d": 11.428571428571429,
+  "star_growth_rate_30d": 10.5,
+  "star_growth_acceleration": 1.08843537414966,
+  "forks_7d": 4,
+  "forks_30d": -2002,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 312,
+  "snapshot_count": 313,
   "authenticity": {
-    "organic_confidence": 85.6,
+    "organic_confidence": 85.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +46,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.3,
         "weight": 0.22,
-        "detail": "5,885 forks for 32,183 stars (18.3%)."
+        "detail": "5,886 forks for 32,183 stars (18.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.3,
+        "score": 91.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 19 stars (0 forks, 1.9x the daily average)."
       },
@@ -83,7 +86,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 19 stars (0 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 5,885 forks for 32,183 stars (18.3%).",
+      "Fork-to-star ratio: 5,886 forks for 32,183 stars (18.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

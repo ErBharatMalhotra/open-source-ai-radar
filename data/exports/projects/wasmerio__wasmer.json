@@ -4,37 +4,48 @@
   "description": "\ud83d\ude80 Fast and lightweight sandboxes for your apps and AI agents",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "webassembly",
+    "wasm",
+    "wasi",
+    "emscripten",
+    "rust",
+    "windows",
+    "macos",
+    "linux",
+    "wasmer",
+    "wasix"
+  ],
   "stars": 21253,
   "forks": 1040,
   "open_issues": 217,
   "watchers": 190,
   "created_at": "2018-10-11T10:15:53Z",
-  "pushed_at": "2026-11-17T21:45:22Z",
+  "pushed_at": "2026-11-17T23:11:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/wasmerio.png",
   "radar_score": 71.72,
-  "impact": 94.2,
+  "impact": 94.22,
   "velocity": 54.96,
   "health": 59.2,
-  "global_percentile": 25.57,
+  "global_percentile": 26.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "\ud83d\ude80 Fast and lightweight sandboxes for your apps and AI agents",
   "maturity": "Unknown",
-  "stars_7d": 22,
-  "stars_30d": 53,
-  "stars_90d": 218,
-  "star_growth_rate_7d": 3.142857142857143,
-  "star_growth_rate_30d": 2.5238095238095237,
-  "star_growth_acceleration": 1.2452830188679245,
+  "stars_7d": 23,
+  "stars_30d": 54,
+  "stars_90d": 219,
+  "star_growth_rate_7d": 3.2857142857142856,
+  "star_growth_rate_30d": 2.5714285714285716,
+  "star_growth_acceleration": 1.2777777777777777,
   "forks_7d": 3,
   "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 77,
+  "snapshot_count": 78,
   "authenticity": {
-    "organic_confidence": 83.8,
+    "organic_confidence": 84.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 81.3,
         "weight": 0.22,
-        "detail": "1,040 forks for 21,252 stars (4.9%)."
+        "detail": "1,040 forks for 21,253 stars (4.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.7,
+        "score": 84.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (2 forks, 2.4x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 75.3,
         "weight": 0.12,
-        "detail": "217 open issues for 21,252 stars (1.0%)."
+        "detail": "217 open issues for 21,253 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +93,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 217 open issues for 21,252 stars (1.0%).",
-      "Fork-to-star ratio: 1,040 forks for 21,252 stars (4.9%).",
+      "Issue engagement: 217 open issues for 21,253 stars (1.0%).",
+      "Fork-to-star ratio: 1,040 forks for 21,253 stars (4.9%).",
       "Burst pattern: Largest 24h jump was 6 stars (2 forks, 2.4x the daily average)."
     ],
     "red_flags": []

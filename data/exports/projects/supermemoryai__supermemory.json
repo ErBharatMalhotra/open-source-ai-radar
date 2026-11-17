@@ -4,7 +4,20 @@
   "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "cloudflare-pages",
+    "cloudflare-workers",
+    "drizzle-orm",
+    "tailwindcss",
+    "typescript",
+    "cloudflare-kv",
+    "postgres",
+    "remix",
+    "vite",
+    "agent-memory",
+    "ai-memory",
+    "memory"
+  ],
   "stars": 31639,
   "forks": 2778,
   "open_issues": 18,
@@ -13,28 +26,28 @@
   "pushed_at": "2026-11-16T20:14:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/supermemoryai.png",
-  "radar_score": 75.0,
-  "impact": 95.68,
-  "velocity": 63.26,
+  "radar_score": 74.97,
+  "impact": 95.69,
+  "velocity": 63.16,
   "health": 58.35,
-  "global_percentile": 49.0,
+  "global_percentile": 48.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
   "maturity": "Unknown",
-  "stars_7d": 68,
-  "stars_30d": 295,
-  "stars_90d": 295,
-  "star_growth_rate_7d": 9.714285714285714,
-  "star_growth_rate_30d": 11.346153846153847,
-  "star_growth_acceleration": 0.8561743341404358,
-  "forks_7d": 8,
-  "forks_30d": 27,
+  "stars_7d": 69,
+  "stars_30d": 298,
+  "stars_90d": 298,
+  "star_growth_rate_7d": 9.857142857142858,
+  "star_growth_rate_30d": 11.461538461538462,
+  "star_growth_acceleration": 0.8600191754554171,
+  "forks_7d": 9,
+  "forks_30d": 26,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 296,
+  "snapshot_count": 297,
   "authenticity": {
-    "organic_confidence": 82.0,
+    "organic_confidence": 81.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +56,7 @@
         "label": "Fork-to-star ratio",
         "score": 95.6,
         "weight": 0.22,
-        "detail": "2,777 forks for 31,634 stars (8.8%)."
+        "detail": "2,778 forks for 31,639 stars (8.8%)."
       },
       {
         "key": "burst",
@@ -69,9 +82,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 31.0,
+        "score": 30.7,
         "weight": 0.12,
-        "detail": "19 open issues for 31,634 stars (0.1%)."
+        "detail": "18 open issues for 31,639 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +96,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 27 stars (0 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 2,777 forks for 31,634 stars (8.8%).",
+      "Fork-to-star ratio: 2,778 forks for 31,639 stars (8.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 19 open issues for 31,634 stars (0.1%)."
+      "Issue engagement: 18 open issues for 31,639 stars (0.1%)."
     ]
   }
 }

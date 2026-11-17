@@ -4,7 +4,23 @@
   "description": "A lightweight, lightning-fast, in-process vector database",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "rag",
+    "agent-skills",
+    "embedded",
+    "faiss",
+    "hnsw",
+    "llm-memory",
+    "search-engine",
+    "semantic-search",
+    "similarity-search",
+    "vector-database",
+    "local",
+    "db",
+    "vector-db",
+    "fts",
+    "fulltext-search"
+  ],
   "stars": 16250,
   "forks": 1022,
   "open_issues": 44,
@@ -13,11 +29,11 @@
   "pushed_at": "2026-11-16T06:56:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
-  "radar_score": 76.42,
-  "impact": 92.27,
-  "velocity": 67.35,
+  "radar_score": 76.44,
+  "impact": 92.28,
+  "velocity": 67.39,
   "health": 63.75,
-  "global_percentile": 64.14,
+  "global_percentile": 63.43,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "A lightweight, lightning-fast, in-process vector database",
@@ -32,9 +48,9 @@
   "forks_30d": 9,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 228,
+  "snapshot_count": 229,
   "authenticity": {
-    "organic_confidence": 73.3,
+    "organic_confidence": 73.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,7 +64,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 62.3,
+        "score": 62.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 18 stars (1 forks, 4.1x the daily average)."
       },
@@ -69,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.2,
+        "score": 48.5,
         "weight": 0.12,
-        "detail": "43 open issues for 16,250 stars (0.3%)."
+        "detail": "44 open issues for 16,250 stars (0.3%)."
       },
       {
         "key": "maintenance",

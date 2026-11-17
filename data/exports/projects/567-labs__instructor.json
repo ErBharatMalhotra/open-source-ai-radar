@@ -4,7 +4,14 @@
   "description": "structured outputs for llms ",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "openai",
+    "python",
+    "pydantic-v2",
+    "openai-functions",
+    "validation",
+    "openai-function-calli"
+  ],
   "stars": 14115,
   "forks": 1385,
   "open_issues": 4,
@@ -13,28 +20,28 @@
   "pushed_at": "2026-11-16T21:57:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/567-labs.png",
-  "radar_score": 69.73,
-  "impact": 91.86,
-  "velocity": 52.84,
-  "health": 57.98,
-  "global_percentile": 17.43,
+  "radar_score": 70.07,
+  "impact": 91.87,
+  "velocity": 53.52,
+  "health": 58.35,
+  "global_percentile": 18.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "structured outputs for llms ",
   "maturity": "Unknown",
   "stars_7d": 13,
-  "stars_30d": 90,
-  "stars_90d": 97,
+  "stars_30d": 89,
+  "stars_90d": 94,
   "star_growth_rate_7d": 1.8571428571428572,
-  "star_growth_rate_30d": 3.0,
-  "star_growth_acceleration": 0.6190476190476191,
+  "star_growth_rate_30d": 2.966666666666667,
+  "star_growth_acceleration": 0.6260032102728732,
   "forks_7d": 20,
   "forks_30d": 68,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 243,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 244,
   "authenticity": {
-    "organic_confidence": 77.2,
+    "organic_confidence": 77.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,7 +55,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.7,
+        "score": 72.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (3 forks, 3.2x the daily average)."
       },
@@ -69,24 +76,24 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 27.1,
+        "score": 27.8,
         "weight": 0.12,
-        "detail": "3 open issues for 14,115 stars (0.0%)."
+        "detail": "4 open issues for 14,115 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 1,385 forks for 14,115 stars (9.8%)."
+      "Fork-to-star ratio: 1,385 forks for 14,115 stars (9.8%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 14,115 stars (0.0%)."
+      "Issue engagement: 4 open issues for 14,115 stars (0.0%)."
     ]
   }
 }

@@ -35,23 +35,23 @@
   "snapshot_count": 150,
   "why_trending": "Steady growth with 56 new stars this week. Above-average growth velocity. High developer adoption with 58 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 79.8,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "7,703 forks for 7,981 stars (96.5%)."
+        "detail": "7,708 forks for 7,993 stars (96.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.0,
+        "score": 86.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 22 stars (8 forks, 2.3x the daily average)."
+        "detail": "Largest 24h jump was 22 stars (8 forks, 2.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,23 +72,23 @@
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 7,981 stars (0.0%)."
+        "detail": "0 open issues for 7,993 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.1,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 4 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 22 stars (8 forks, 2.3x the daily average).",
-      "Fork-to-star ratio: 7,703 forks for 7,981 stars (96.5%).",
-      "Maintenance cadence: Last push 4 days ago."
+      "Burst pattern: Largest 24h jump was 22 stars (8 forks, 2.2x the daily average).",
+      "Fork-to-star ratio: 7,708 forks for 7,993 stars (96.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 7,981 stars (0.0%)."
+      "Issue engagement: 0 open issues for 7,993 stars (0.0%)."
     ]
   }
 }

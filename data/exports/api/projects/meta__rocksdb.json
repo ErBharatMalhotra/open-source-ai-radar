@@ -4,7 +4,10 @@
   "description": "A library that provides an embeddable, persistent key-value store for fast storage.",
   "language": "C++",
   "license": "GPL-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "storage-engine"
+  ],
   "stars": 32282,
   "forks": 7032,
   "open_issues": 988,
@@ -17,7 +20,7 @@
   "impact": 97.84,
   "velocity": 59.67,
   "health": 63.75,
-  "global_percentile": 59.0,
+  "global_percentile": 58.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A library that provides an embeddable, persistent key-value store for fast storage.",
@@ -26,15 +29,15 @@
   "stars_30d": 49,
   "stars_90d": 49,
   "star_growth_rate_7d": 4.0,
-  "star_growth_rate_30d": 2.7222222222222223,
-  "star_growth_acceleration": 1.4693877551020407,
-  "forks_7d": 15,
-  "forks_30d": 42,
+  "star_growth_rate_30d": 2.5789473684210527,
+  "star_growth_acceleration": 1.5510204081632653,
+  "forks_7d": 17,
+  "forks_30d": 44,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 55,
+  "snapshot_count": 56,
   "authenticity": {
-    "organic_confidence": 84.2,
+    "organic_confidence": 84.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +46,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.6,
         "weight": 0.22,
-        "detail": "7,030 forks for 32,282 stars (21.8%)."
+        "detail": "7,032 forks for 32,282 stars (21.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 60.6,
+        "score": 60.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 11 stars (4 forks, 4.3x the daily average)."
       },
@@ -83,7 +86,7 @@
     ],
     "reasons": [
       "Issue engagement: 988 open issues for 32,282 stars (3.1%).",
-      "Fork-to-star ratio: 7,030 forks for 32,282 stars (21.8%).",
+      "Fork-to-star ratio: 7,032 forks for 32,282 stars (21.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

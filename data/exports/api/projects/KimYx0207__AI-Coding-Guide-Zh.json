@@ -4,7 +4,16 @@
   "description": "Claude Code + OpenClaw + Codex + WorkBuddy \u4e2d\u6587\u6559\u7a0b | 50\u7bc7\u5b8c\u6574\u6559\u7a0b + 1\u5f20\u901f\u67e5\u5361 | 80\u4e07+\u5185\u5bb9\u91cf | 1500+\u5b9e\u64cd\u793a\u4f8b | AI Coding / Agent \u56db\u7ebf\u5b66\u4e60\u8def\u5f84\uff08\u7f16\u7a0b+\u52a9\u624b+Agent+\u529e\u516c\uff09",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai-agent",
+    "ai-assistant",
+    "ai-tutorial",
+    "anthropic",
+    "chinese",
+    "claude",
+    "claude-code",
+    "openclaw"
+  ],
   "stars": 6521,
   "forks": 1096,
   "open_issues": 3,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-09T18:13:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/KimYx0207.png",
-  "radar_score": 70.59,
-  "impact": 88.38,
+  "radar_score": 70.52,
+  "impact": 88.41,
   "velocity": 60.55,
-  "health": 56.2,
-  "global_percentile": 24.14,
+  "health": 55.86,
+  "global_percentile": 26.14,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Claude Code + OpenClaw + Codex \u4e2d\u6587\u6559\u7a0b | 39\u7bc7\u5b8c\u6574\u6559\u7a0b + 1\u5f20\u901f\u67e5\u5361 | 80\u4e07+\u5185\u5bb9\u91cf | 1500+\u5b9e\u64cd\u793a\u4f8b | AI Coding / Agent \u4e09\u7ebf\u5b66\u4e60\u8def\u5f84",
   "maturity": "Unknown",
-  "stars_7d": 53,
-  "stars_30d": 234,
-  "stars_90d": 739,
-  "star_growth_rate_7d": 7.571428571428571,
-  "star_growth_rate_30d": 8.357142857142858,
-  "star_growth_acceleration": 0.9059829059829059,
+  "stars_7d": 45,
+  "stars_30d": 238,
+  "stars_90d": 743,
+  "star_growth_rate_7d": 6.428571428571429,
+  "star_growth_rate_30d": 8.206896551724139,
+  "star_growth_acceleration": 0.783313325330132,
   "forks_7d": 5,
   "forks_30d": 26,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 68,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 69,
   "authenticity": {
-    "organic_confidence": 84.8,
+    "organic_confidence": 84.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,23 +57,23 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.4,
+        "score": 95.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (2 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 77.4,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+45 stars vs +5 forks this week (expected ~8 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 96.1,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.78x the monthly baseline."
       },
       {
         "key": "engagement",
@@ -82,9 +91,9 @@
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 7 days ago.",
+      "Star/fork velocity alignment: +45 stars vs +5 forks this week (expected ~8 forks).",
       "Burst pattern: Largest 24h jump was 12 stars (2 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 1,096 forks for 6,521 stars (16.8%)."
+      "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": [
       "Issue engagement: 3 open issues for 6,521 stars (0.0%)."

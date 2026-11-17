@@ -4,37 +4,50 @@
   "description": "An embeddable, portable, branchable virtual machine to safely run Agents locally.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 7121,
-  "forks": 370,
-  "open_issues": 35,
+  "topics": [
+    "containers",
+    "crun",
+    "libkrun",
+    "microvm",
+    "rust",
+    "virtual-machine",
+    "agent-sandbox",
+    "ai-agents",
+    "code-execution",
+    "llm",
+    "sandbox",
+    "virtualization"
+  ],
+  "stars": 7125,
+  "forks": 371,
+  "open_issues": 36,
   "watchers": 15,
   "created_at": "2025-12-18T23:25:15Z",
-  "pushed_at": "2026-11-16T21:31:26Z",
+  "pushed_at": "2026-11-17T04:29:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/smol-machines.png",
-  "radar_score": 72.1,
-  "impact": 83.39,
-  "velocity": 65.15,
+  "radar_score": 72.14,
+  "impact": 83.49,
+  "velocity": 65.16,
   "health": 63.75,
-  "global_percentile": 35.0,
+  "global_percentile": 34.29,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "An embeddable, portable, branchable virtual machine to safely run Agents locally.",
   "maturity": "Unknown",
-  "stars_7d": 77,
-  "stars_30d": 349,
-  "stars_90d": 868,
-  "star_growth_rate_7d": 11.0,
-  "star_growth_rate_30d": 12.03448275862069,
-  "star_growth_acceleration": 0.9140401146131805,
-  "forks_7d": 8,
-  "forks_30d": 36,
+  "stars_7d": 72,
+  "stars_30d": 366,
+  "stars_90d": 885,
+  "star_growth_rate_7d": 10.285714285714286,
+  "star_growth_rate_30d": 12.2,
+  "star_growth_acceleration": 0.8430913348946137,
+  "forks_7d": 10,
+  "forks_30d": 39,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 71,
+  "snapshot_count": 72,
   "authenticity": {
-    "organic_confidence": 76.9,
+    "organic_confidence": 77.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +56,14 @@
         "label": "Fork-to-star ratio",
         "score": 82.7,
         "weight": 0.22,
-        "detail": "370 forks for 7,121 stars (5.2%)."
+        "detail": "371 forks for 7,125 stars (5.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 70.7,
+        "score": 71.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 41 stars (2 forks, 3.4x the daily average)."
+        "detail": "Largest 24h jump was 41 stars (2 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +82,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 59.6,
+        "score": 60.2,
         "weight": 0.12,
-        "detail": "35 open issues for 7,121 stars (0.5%)."
+        "detail": "36 open issues for 7,125 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +95,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 370 forks for 7,121 stars (5.2%).",
+      "Fork-to-star ratio: 371 forks for 7,125 stars (5.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

@@ -4,7 +4,16 @@
   "description": "Sentry, feature-complete and packaged up for low-volume deployments and proofs-of-concept",
   "language": "Shell",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "sentry",
+    "docker",
+    "docker-compose",
+    "on-premise",
+    "self-hosted",
+    "hacktoberfest",
+    "tag-production",
+    "fair-source"
+  ],
   "stars": 9655,
   "forks": 1955,
   "open_issues": 123,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-15T18:09:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/getsentry.png",
-  "radar_score": 70.38,
-  "impact": 92.14,
+  "radar_score": 70.39,
+  "impact": 92.16,
   "velocity": 52.67,
   "health": 60.38,
-  "global_percentile": 23.71,
+  "global_percentile": 25.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Sentry, feature-complete and packaged up for low-volume deployments and proofs-of-concept",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 43,
-  "stars_90d": 71,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 1.4333333333333333,
-  "star_growth_acceleration": 1.495016611295681,
-  "forks_7d": -2,
-  "forks_30d": -2,
+  "stars_7d": 11,
+  "stars_30d": 41,
+  "stars_90d": 68,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 1.3666666666666667,
+  "star_growth_acceleration": 1.1498257839721253,
+  "forks_7d": -1,
+  "forks_30d": -1,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 153,
+  "snapshot_count": 154,
   "authenticity": {
-    "organic_confidence": 87.1,
+    "organic_confidence": 86.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +57,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.1,
+        "score": 74.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (1 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (1 forks, 3.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,9 +91,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 4 stars (1 forks, 2.9x the daily average).",
       "Issue engagement: 123 open issues for 9,655 stars (1.3%).",
-      "Fork-to-star ratio: 1,955 forks for 9,655 stars (20.2%)."
+      "Fork-to-star ratio: 1,955 forks for 9,655 stars (20.2%).",
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

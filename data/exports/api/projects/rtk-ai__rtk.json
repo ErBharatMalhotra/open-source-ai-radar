@@ -4,10 +4,24 @@
   "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 87086,
+  "topics": [
+    "agentic-coding",
+    "ai-coding",
+    "anthropic",
+    "claude-code",
+    "cli",
+    "command-line-tool",
+    "cost-reduction",
+    "developer-tools",
+    "llm",
+    "open-source",
+    "productivity",
+    "rust",
+    "token-optimization"
+  ],
+  "stars": 87092,
   "forks": 5593,
-  "open_issues": 938,
+  "open_issues": 939,
   "watchers": 214,
   "created_at": "2026-01-22T16:54:16Z",
   "pushed_at": "2026-11-18T21:17:32Z",
@@ -15,24 +29,24 @@
   "owner_avatar": "https://github.com/rtk-ai.png",
   "radar_score": 79.63,
   "impact": 98.45,
-  "velocity": 69.48,
+  "velocity": 69.47,
   "health": 63.75,
-  "global_percentile": 94.14,
+  "global_percentile": 94.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
   "maturity": "Unknown",
-  "stars_7d": 954,
-  "stars_30d": 2281,
-  "stars_90d": 2281,
-  "star_growth_rate_7d": 136.28571428571428,
-  "star_growth_rate_30d": 108.61904761904762,
-  "star_growth_acceleration": 1.2547128452433143,
-  "forks_7d": 77,
-  "forks_30d": 206,
+  "stars_7d": 965,
+  "stars_30d": 2301,
+  "stars_90d": 2301,
+  "star_growth_rate_7d": 137.85714285714286,
+  "star_growth_rate_30d": 109.57142857142857,
+  "star_growth_acceleration": 1.258148631029987,
+  "forks_7d": 76,
+  "forks_30d": 208,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 356,
+  "snapshot_count": 357,
   "authenticity": {
     "organic_confidence": 89.8,
     "verdict": "organic",
@@ -43,12 +57,12 @@
         "label": "Fork-to-star ratio",
         "score": 87.1,
         "weight": 0.22,
-        "detail": "5,591 forks for 87,061 stars (6.4%)."
+        "detail": "5,593 forks for 87,092 stars (6.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.8,
+        "score": 94.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 157 stars (10 forks, 1.5x the daily average)."
       },
@@ -69,9 +83,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 76.1,
+        "score": 76.2,
         "weight": 0.12,
-        "detail": "937 open issues for 87,061 stars (1.1%)."
+        "detail": "939 open issues for 87,092 stars (1.1%)."
       },
       {
         "key": "maintenance",
@@ -82,8 +96,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 937 open issues for 87,061 stars (1.1%).",
-      "Fork-to-star ratio: 5,591 forks for 87,061 stars (6.4%).",
+      "Issue engagement: 939 open issues for 87,092 stars (1.1%).",
+      "Fork-to-star ratio: 5,593 forks for 87,092 stars (6.4%).",
       "Burst pattern: Largest 24h jump was 157 stars (10 forks, 1.5x the daily average)."
     ],
     "red_flags": []

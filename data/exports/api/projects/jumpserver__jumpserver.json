@@ -4,7 +4,19 @@
   "description": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "python",
+    "ssh-server",
+    "django",
+    "terminal",
+    "bastion-host",
+    "cyberark",
+    "teleport",
+    "pam",
+    "jumpserver",
+    "ai",
+    "codex"
+  ],
   "stars": 31988,
   "forks": 5824,
   "open_issues": 27,
@@ -13,26 +25,26 @@
   "pushed_at": "2026-11-18T08:57:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jumpserver.png",
-  "radar_score": 73.43,
-  "impact": 97.69,
-  "velocity": 56.48,
+  "radar_score": 73.45,
+  "impact": 97.68,
+  "velocity": 56.55,
   "health": 58.35,
-  "global_percentile": 35.86,
+  "global_percentile": 36.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "maturity": "Unknown",
-  "stars_7d": 47,
+  "stars_7d": 40,
   "stars_30d": 192,
-  "stars_90d": 209,
-  "star_growth_rate_7d": 6.714285714285714,
+  "stars_90d": 207,
+  "star_growth_rate_7d": 5.714285714285714,
   "star_growth_rate_30d": 6.4,
-  "star_growth_acceleration": 1.0491071428571428,
-  "forks_7d": 5,
+  "star_growth_acceleration": 0.8928571428571428,
+  "forks_7d": 4,
   "forks_30d": 14,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 163,
+  "snapshot_count": 164,
   "authenticity": {
     "organic_confidence": 85.0,
     "verdict": "organic",
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 33.1,
+        "score": 33.4,
         "weight": 0.12,
-        "detail": "26 open issues for 31,988 stars (0.1%)."
+        "detail": "27 open issues for 31,988 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -87,7 +99,7 @@
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 26 open issues for 31,988 stars (0.1%)."
+      "Issue engagement: 27 open issues for 31,988 stars (0.1%)."
     ]
   }
 }

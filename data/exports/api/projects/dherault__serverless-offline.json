@@ -34,7 +34,7 @@
   "freshness_score": 0.7633794943368531,
   "snapshot_count": 15,
   "authenticity": {
-    "organic_confidence": 88.2,
+    "organic_confidence": 90.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -69,22 +69,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 67.8,
+        "score": 67.3,
         "weight": 0.12,
-        "detail": "40 open issues for 5,258 stars (0.8%)."
+        "detail": "39 open issues for 5,258 stars (0.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 85.0,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 30 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 30 days ago.",
       "Burst pattern: No single-day star surge in the last 30 days.",
-      "Fork-to-star ratio: 811 forks for 5,258 stars (15.4%)."
+      "Fork-to-star ratio: 811 forks for 5,258 stars (15.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

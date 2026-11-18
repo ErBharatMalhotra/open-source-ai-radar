@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 76.6,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 92.4,
+        "weight": 0.22,
+        "detail": "253 forks for 3,208 stars (7.9%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 28.1,
+        "weight": 0.12,
+        "detail": "1 open issues for 3,208 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 100,
+        "weight": 0.1,
+        "detail": "Last push 0 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 253 forks for 3,208 stars (7.9%).",
+      "Maintenance cadence: Last push 0 days ago."
+    ],
+    "red_flags": [
+      "Issue engagement: 1 open issues for 3,208 stars (0.0%)."
+    ]
+  }
 }

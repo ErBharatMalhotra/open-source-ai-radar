@@ -4,8 +4,15 @@
   "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 61629,
+  "topics": [
+    "adhd",
+    "claude-",
+    "claude-code-plugin",
+    "claude-skills",
+    "developer-tools",
+    "productivity"
+  ],
+  "stars": 61632,
   "forks": 3621,
   "open_issues": 33,
   "watchers": 165,
@@ -13,26 +20,26 @@
   "pushed_at": "2026-10-19T19:46:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ayghri.png",
-  "radar_score": 71.93,
+  "radar_score": 71.87,
   "impact": 97.59,
   "velocity": 58.59,
-  "health": 49.53,
+  "health": 49.29,
   "global_percentile": 26.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
   "maturity": "Unknown",
-  "stars_7d": 849,
-  "stars_30d": 2583,
-  "stars_90d": 2583,
-  "star_growth_rate_7d": 121.28571428571429,
-  "star_growth_rate_30d": 123.0,
-  "star_growth_acceleration": 0.9860627177700348,
-  "forks_7d": 67,
-  "forks_30d": 194,
-  "days_since_last_push": 29,
-  "freshness_score": 0.7482635675785653,
-  "snapshot_count": 355,
+  "stars_7d": 854,
+  "stars_30d": 2575,
+  "stars_90d": 2575,
+  "star_growth_rate_7d": 122.0,
+  "star_growth_rate_30d": 122.61904761904762,
+  "star_growth_acceleration": 0.9949514563106796,
+  "forks_7d": 68,
+  "forks_30d": 192,
+  "days_since_last_push": 30,
+  "freshness_score": 0.7408182206817179,
+  "snapshot_count": 356,
   "authenticity": {
     "organic_confidence": 79.2,
     "verdict": "likely_organic",
@@ -41,9 +48,9 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 85.1,
+        "score": 85.2,
         "weight": 0.22,
-        "detail": "3,619 forks for 61,616 stars (5.9%)."
+        "detail": "3,621 forks for 61,632 stars (5.9%)."
       },
       {
         "key": "burst",
@@ -71,23 +78,23 @@
         "label": "Issue engagement",
         "score": 30.4,
         "weight": 0.12,
-        "detail": "33 open issues for 61,616 stars (0.1%)."
+        "detail": "33 open issues for 61,632 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 85.4,
+        "score": 85.0,
         "weight": 0.1,
-        "detail": "Last push 29 days ago."
+        "detail": "Last push 30 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,619 forks for 61,616 stars (5.9%).",
-      "Maintenance cadence: Last push 29 days ago.",
+      "Maintenance cadence: Last push 30 days ago.",
+      "Fork-to-star ratio: 3,621 forks for 61,632 stars (5.9%).",
       "Burst pattern: Largest 24h jump was 181 stars (16 forks, 1.4x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 33 open issues for 61,616 stars (0.1%)."
+      "Issue engagement: 33 open issues for 61,632 stars (0.1%)."
     ]
   }
 }

@@ -4,51 +4,72 @@
   "description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
   "language": "Shell",
   "license": "MIT",
-  "topics": [],
-  "stars": 28127,
-  "forks": 2316,
+  "topics": [
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "manus",
+    "agent-skills",
+    "planning",
+    "autonomous-agents",
+    "codex",
+    "cursor",
+    "multi-agent-systems",
+    "coding-agent",
+    "context-engineering",
+    "github-copilot",
+    "llm-agents",
+    "long-running-agents",
+    "claude-code-skills",
+    "context-rot",
+    "session-recovery",
+    "hermes-plugin",
+    "hermes-skill"
+  ],
+  "stars": 28128,
+  "forks": 2317,
   "open_issues": 11,
   "watchers": 113,
   "created_at": "2026-01-03T07:37:28Z",
   "pushed_at": "2026-11-11T20:55:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OthmanAdi.png",
-  "radar_score": 73.8,
+  "radar_score": 73.72,
   "impact": 95.33,
   "velocity": 61.77,
-  "health": 56.2,
-  "global_percentile": 38.57,
+  "health": 55.86,
+  "global_percentile": 37.86,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx sk",
   "maturity": "Unknown",
-  "stars_7d": 134,
-  "stars_30d": 489,
-  "stars_90d": 489,
-  "star_growth_rate_7d": 19.142857142857142,
-  "star_growth_rate_30d": 20.375,
-  "star_growth_acceleration": 0.9395267309377738,
-  "forks_7d": 4,
-  "forks_30d": 19,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 317,
+  "stars_7d": 124,
+  "stars_30d": 473,
+  "stars_90d": 473,
+  "star_growth_rate_7d": 17.714285714285715,
+  "star_growth_rate_30d": 20.565217391304348,
+  "star_growth_acceleration": 0.8613711869525824,
+  "forks_7d": 8,
+  "forks_30d": 17,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 318,
   "authenticity": {
-    "organic_confidence": 81.1,
+    "organic_confidence": 81.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 93.6,
+        "score": 93.7,
         "weight": 0.22,
-        "detail": "2,316 forks for 28,123 stars (8.2%)."
+        "detail": "2,317 forks for 28,128 stars (8.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.5,
+        "score": 89.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 40 stars (4 forks, 2.0x the daily average)."
       },
@@ -71,23 +92,23 @@
         "label": "Issue engagement",
         "score": 28.9,
         "weight": 0.12,
-        "detail": "11 open issues for 28,123 stars (0.0%)."
+        "detail": "11 open issues for 28,128 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 95.0,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 7 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 40 stars (4 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 2,316 forks for 28,123 stars (8.2%).",
-      "Maintenance cadence: Last push 6 days ago."
+      "Fork-to-star ratio: 2,317 forks for 28,128 stars (8.2%).",
+      "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 11 open issues for 28,123 stars (0.0%)."
+      "Issue engagement: 11 open issues for 28,128 stars (0.0%)."
     ]
   }
 }

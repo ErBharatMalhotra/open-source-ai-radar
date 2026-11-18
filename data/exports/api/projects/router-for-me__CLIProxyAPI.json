@@ -4,37 +4,46 @@
   "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 58915,
-  "forks": 9024,
-  "open_issues": 49,
+  "topics": [
+    "claude-code",
+    "gemini",
+    "openai",
+    "codex",
+    "antigravity",
+    "devin",
+    "muse",
+    "claude"
+  ],
+  "stars": 58923,
+  "forks": 9027,
+  "open_issues": 51,
   "watchers": 119,
   "created_at": "2025-07-01T19:43:27Z",
-  "pushed_at": "2026-11-18T08:31:13Z",
+  "pushed_at": "2026-11-18T09:47:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/router-for-me.png",
-  "radar_score": 76.99,
+  "radar_score": 77.05,
   "impact": 97.71,
-  "velocity": 66.63,
+  "velocity": 66.8,
   "health": 58.35,
-  "global_percentile": 71.86,
+  "global_percentile": 70.14,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API",
   "maturity": "Unknown",
-  "stars_7d": 794,
-  "stars_30d": 2334,
-  "stars_90d": 2334,
-  "star_growth_rate_7d": 113.42857142857143,
-  "star_growth_rate_30d": 111.14285714285714,
-  "star_growth_acceleration": 1.0205655526992288,
-  "forks_7d": 101,
-  "forks_30d": 372,
+  "stars_7d": 753,
+  "stars_30d": 2311,
+  "stars_90d": 2311,
+  "star_growth_rate_7d": 107.57142857142857,
+  "star_growth_rate_30d": 110.04761904761905,
+  "star_growth_acceleration": 0.9774989182172219,
+  "forks_7d": 99,
+  "forks_30d": 364,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 345,
+  "snapshot_count": 346,
   "authenticity": {
-    "organic_confidence": 80.8,
+    "organic_confidence": 80.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +52,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "9,019 forks for 58,890 stars (15.3%)."
+        "detail": "9,027 forks for 58,923 stars (15.3%)."
       },
       {
         "key": "burst",
@@ -69,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 32.6,
+        "score": 33.7,
         "weight": 0.12,
-        "detail": "45 open issues for 58,890 stars (0.1%)."
+        "detail": "51 open issues for 58,923 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +92,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 288 stars (51 forks, 2.7x the daily average).",
-      "Fork-to-star ratio: 9,019 forks for 58,890 stars (15.3%).",
+      "Fork-to-star ratio: 9,027 forks for 58,923 stars (15.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 45 open issues for 58,890 stars (0.1%)."
+      "Issue engagement: 51 open issues for 58,923 stars (0.1%)."
     ]
   }
 }

@@ -34,7 +34,7 @@
   "freshness_score": 0.8025187979624785,
   "snapshot_count": 85,
   "authenticity": {
-    "organic_confidence": 58.7,
+    "organic_confidence": 65.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,7 +43,7 @@
         "label": "Fork-to-star ratio",
         "score": 59.8,
         "weight": 0.22,
-        "detail": "132 forks for 7,137 stars (1.8%)."
+        "detail": "132 forks for 7,139 stars (1.8%)."
       },
       {
         "key": "burst",
@@ -55,38 +55,35 @@
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 5,
+        "score": null,
         "weight": 0.18,
-        "detail": "+52 stars vs +0 forks this week (expected ~1 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 97.1,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 0.58x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 49.0,
         "weight": 0.12,
-        "detail": "20 open issues for 7,137 stars (0.3%)."
+        "detail": "20 open issues for 7,139 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 88.5,
+        "score": 88.0,
         "weight": 0.1,
-        "detail": "Last push 22 days ago."
+        "detail": "Last push 23 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 22 days ago.",
-      "Growth acceleration: Weekly growth is 0.58x the monthly baseline."
+      "Maintenance cadence: Last push 23 days ago."
     ],
-    "red_flags": [
-      "Star/fork velocity alignment: +52 stars vs +0 forks this week (expected ~1 forks)."
-    ]
+    "red_flags": []
   }
 }

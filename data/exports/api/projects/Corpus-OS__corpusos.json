@@ -24,7 +24,7 @@
   "maturity": "Unknown",
   "snapshot_count": 0,
   "authenticity": {
-    "organic_confidence": 64.9,
+    "organic_confidence": 55.6,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -59,9 +59,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 59.2,
+        "score": 25,
         "weight": 0.12,
-        "detail": "1 open issues for 207 stars (0.5%)."
+        "detail": "0 open issues for 207 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -74,6 +74,8 @@
     "reasons": [
       "Fork-to-star ratio: 9 forks for 207 stars (4.3%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 0 open issues for 207 stars (0.0%)."
+    ]
   }
 }

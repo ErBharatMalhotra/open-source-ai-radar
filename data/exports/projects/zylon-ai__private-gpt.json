@@ -4,37 +4,41 @@
   "description": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 57643,
+  "topics": [
+    "ai",
+    "ai-tools",
+    "on-premise"
+  ],
+  "stars": 57642,
   "forks": 7625,
-  "open_issues": 3,
+  "open_issues": 4,
   "watchers": 448,
   "created_at": "2023-05-02T09:15:31Z",
-  "pushed_at": "2026-11-18T07:18:23Z",
+  "pushed_at": "2026-11-18T11:11:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/zylon-ai.png",
-  "radar_score": 75.24,
+  "radar_score": 75.47,
   "impact": 98.59,
-  "velocity": 60.61,
+  "velocity": 61.27,
   "health": 58.35,
-  "global_percentile": 50.86,
+  "global_percentile": 53.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 47,
-  "stars_90d": 47,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 1.6785714285714286,
-  "star_growth_acceleration": 1.276595744680851,
-  "forks_7d": -2,
-  "forks_30d": 15,
+  "stars_7d": 7,
+  "stars_30d": 41,
+  "stars_90d": 41,
+  "star_growth_rate_7d": 1.0,
+  "star_growth_rate_30d": 1.4642857142857142,
+  "star_growth_acceleration": 0.6829268292682927,
+  "forks_7d": -4,
+  "forks_30d": 12,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 245,
+  "snapshot_count": 246,
   "authenticity": {
-    "organic_confidence": 71.5,
+    "organic_confidence": 69.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +47,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "7,627 forks for 57,645 stars (13.2%)."
+        "detail": "7,625 forks for 57,642 stars (13.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 57.2,
+        "score": 51.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 8 stars (1 forks, 4.5x the daily average)."
+        "detail": "Largest 24h jump was 8 stars (1 forks, 5.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +73,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25.5,
+        "score": 25.7,
         "weight": 0.12,
-        "detail": "3 open issues for 57,645 stars (0.0%)."
+        "detail": "4 open issues for 57,642 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +86,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 7,627 forks for 57,645 stars (13.2%).",
+      "Fork-to-star ratio: 7,625 forks for 57,642 stars (13.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 57,645 stars (0.0%)."
+      "Issue engagement: 4 open issues for 57,642 stars (0.0%)."
     ]
   }
 }

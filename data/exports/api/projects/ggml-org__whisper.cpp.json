@@ -4,37 +4,44 @@
   "description": "Port of OpenAI's Whisper model in C/C++",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
-  "stars": 55281,
+  "topics": [
+    "openai",
+    "speech-to-text",
+    "transformer",
+    "whisper",
+    "inference",
+    "speech-recognition"
+  ],
+  "stars": 55287,
   "forks": 6322,
   "open_issues": 178,
   "watchers": 401,
   "created_at": "2022-09-25T18:26:37Z",
-  "pushed_at": "2026-11-18T05:46:27Z",
+  "pushed_at": "2026-11-18T10:20:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ggml-org.png",
   "radar_score": 78.72,
   "impact": 98.46,
   "velocity": 66.85,
   "health": 63.75,
-  "global_percentile": 87.29,
+  "global_percentile": 86.71,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Port of OpenAI's Whisper model in C/C++",
   "maturity": "Unknown",
-  "stars_7d": 211,
-  "stars_30d": 640,
-  "stars_90d": 640,
-  "star_growth_rate_7d": 30.142857142857142,
-  "star_growth_rate_30d": 26.666666666666668,
-  "star_growth_acceleration": 1.1303571428571428,
-  "forks_7d": 23,
-  "forks_30d": 82,
+  "stars_7d": 216,
+  "stars_30d": 643,
+  "stars_90d": 643,
+  "star_growth_rate_7d": 30.857142857142858,
+  "star_growth_rate_30d": 26.791666666666668,
+  "star_growth_acceleration": 1.1517440568762496,
+  "forks_7d": 26,
+  "forks_30d": 85,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 329,
+  "snapshot_count": 330,
   "authenticity": {
-    "organic_confidence": 89.6,
+    "organic_confidence": 89.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +50,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "6,319 forks for 55,273 stars (11.4%)."
+        "detail": "6,322 forks for 55,287 stars (11.4%)."
       },
       {
         "key": "burst",
@@ -71,7 +78,7 @@
         "label": "Issue engagement",
         "score": 51.1,
         "weight": 0.12,
-        "detail": "178 open issues for 55,273 stars (0.3%)."
+        "detail": "178 open issues for 55,287 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +90,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 39 stars (5 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 6,319 forks for 55,273 stars (11.4%).",
+      "Fork-to-star ratio: 6,322 forks for 55,287 stars (11.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

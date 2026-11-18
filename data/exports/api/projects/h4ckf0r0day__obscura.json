@@ -4,37 +4,47 @@
   "description": "The headless browser for AI agents and web scraping",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 36279,
-  "forks": 2882,
+  "topics": [
+    "antidetect",
+    "antidetect-browser",
+    "browser",
+    "browser-automation",
+    "cdp",
+    "headless",
+    "playwright",
+    "puppeteer",
+    "rust"
+  ],
+  "stars": 36311,
+  "forks": 2883,
   "open_issues": 141,
   "watchers": 98,
   "created_at": "2026-04-13T10:31:41Z",
-  "pushed_at": "2026-11-18T03:13:35Z",
+  "pushed_at": "2026-11-18T12:24:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/h4ckf0r0day.png",
-  "radar_score": 78.49,
-  "impact": 95.87,
+  "radar_score": 78.5,
+  "impact": 95.9,
   "velocity": 69.15,
   "health": 63.75,
-  "global_percentile": 85.43,
+  "global_percentile": 84.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "The headless browser for AI agents and web scraping",
   "maturity": "Unknown",
-  "stars_7d": 4451,
-  "stars_30d": 6765,
-  "stars_90d": 6765,
-  "star_growth_rate_7d": 635.8571428571429,
-  "star_growth_rate_30d": 322.14285714285717,
-  "star_growth_acceleration": 1.9738359201773836,
-  "forks_7d": 458,
-  "forks_30d": 657,
+  "stars_7d": 4237,
+  "stars_30d": 6832,
+  "stars_90d": 6832,
+  "star_growth_rate_7d": 605.2857142857143,
+  "star_growth_rate_30d": 325.3333333333333,
+  "star_growth_acceleration": 1.860509367681499,
+  "forks_7d": 422,
+  "forks_30d": 662,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 341,
+  "snapshot_count": 342,
   "authenticity": {
-    "organic_confidence": 69.9,
+    "organic_confidence": 70.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +53,12 @@
         "label": "Fork-to-star ratio",
         "score": 92.6,
         "weight": 0.22,
-        "detail": "2,877 forks for 36,227 stars (7.9%)."
+        "detail": "2,883 forks for 36,311 stars (7.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 44.4,
+        "score": 44.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 1,483 stars (104 forks, 6.1x the daily average)."
       },
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 54.3,
+        "score": 54.4,
         "weight": 0.12,
-        "detail": "140 open issues for 36,227 stars (0.4%)."
+        "detail": "141 open issues for 36,311 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,877 forks for 36,227 stars (7.9%).",
+      "Fork-to-star ratio: 2,883 forks for 36,311 stars (7.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

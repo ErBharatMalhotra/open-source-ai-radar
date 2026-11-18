@@ -4,37 +4,42 @@
   "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "typescript",
+    "mcp",
+    "mcp-server",
+    "mcp-client"
+  ],
   "stars": 13781,
   "forks": 2400,
-  "open_issues": 302,
+  "open_issues": 304,
   "watchers": 105,
   "created_at": "2024-09-24T20:45:31Z",
   "pushed_at": "2026-11-10T14:38:41Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/modelcontextprotocol.png",
-  "radar_score": 73.68,
-  "impact": 93.59,
-  "velocity": 61.94,
+  "radar_score": 73.69,
+  "impact": 93.6,
+  "velocity": 61.96,
   "health": 58.26,
-  "global_percentile": 43.71,
+  "global_percentile": 37.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "The official TypeScript SDK for Model Context Protocol servers and clients",
   "maturity": "Unknown",
-  "stars_7d": 43,
-  "stars_30d": 158,
-  "stars_90d": 158,
-  "star_growth_rate_7d": 6.142857142857143,
-  "star_growth_rate_30d": 5.642857142857143,
-  "star_growth_acceleration": 1.0886075949367089,
-  "forks_7d": 21,
-  "forks_30d": -147,
+  "stars_7d": 39,
+  "stars_30d": 153,
+  "stars_90d": 153,
+  "star_growth_rate_7d": 5.571428571428571,
+  "star_growth_rate_30d": 5.464285714285714,
+  "star_growth_acceleration": 1.0196078431372548,
+  "forks_7d": 23,
+  "forks_30d": 20,
   "days_since_last_push": 7,
   "freshness_score": 0.9323938199059483,
-  "snapshot_count": 275,
+  "snapshot_count": 276,
   "authenticity": {
-    "organic_confidence": 92.0,
+    "organic_confidence": 91.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.5,
         "weight": 0.22,
-        "detail": "2,397 forks for 13,780 stars (17.4%)."
+        "detail": "2,400 forks for 13,781 stars (17.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 85.5,
+        "score": 85.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 13 stars (0 forks, 2.3x the daily average)."
       },
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 90.6,
+        "score": 90.7,
         "weight": 0.12,
-        "detail": "302 open issues for 13,780 stars (2.2%)."
+        "detail": "304 open issues for 13,781 stars (2.2%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +88,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 13 stars (0 forks, 2.3x the daily average).",
-      "Issue engagement: 302 open issues for 13,780 stars (2.2%).",
+      "Issue engagement: 304 open issues for 13,781 stars (2.2%).",
       "Maintenance cadence: Last push 7 days ago."
     ],
     "red_flags": []

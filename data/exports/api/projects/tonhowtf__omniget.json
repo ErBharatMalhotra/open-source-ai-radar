@@ -4,53 +4,74 @@
   "description": "A local MCP server that gives your coding agent a desktop toolbox: downloads from YouTube, torrents and every site yt-dlp supports, media conversion, files, chats and system cleanup. One line connects Claude Code, Codex, Cursor or Gemini CLI, and sensitive actions wait for your click. Free and open source for Windows, macOS and Linux.",
   "language": "Rust",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 14491,
-  "forks": 1250,
+  "topics": [
+    "download-manager",
+    "instagram-downloader",
+    "media-downloader",
+    "tiktok-downloader",
+    "video-downloader",
+    "youtube-downloader",
+    "yt-dlp",
+    "downloader",
+    "yt-dlp-gui",
+    "agent-client-protocol",
+    "claude-code",
+    "codex-cli",
+    "coding-agent",
+    "local-llm",
+    "mcp-server",
+    "gallery-dl",
+    "model-context-protocol",
+    "torrent",
+    "twitter-downloader",
+    "omniget"
+  ],
+  "stars": 14494,
+  "forks": 1249,
   "open_issues": 2,
   "watchers": 48,
   "created_at": "2026-02-11T22:44:56Z",
-  "pushed_at": "2026-11-13T20:37:43Z",
+  "pushed_at": "2026-11-18T12:47:52Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tonhowtf.png",
-  "radar_score": 71.16,
-  "impact": 91.62,
-  "velocity": 57.96,
-  "health": 56.89,
-  "global_percentile": 27.86,
+  "radar_score": 72.83,
+  "impact": 91.61,
+  "velocity": 61.71,
+  "health": 58.35,
+  "global_percentile": 32.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Udemy & Hotmart course downloader, YouTube downloader (yt-dlp GUI, 1,800+ sites) + desktop app for AI agents: Claude Code, Codex, Gemini CLI, Ollama. Permissions, undo, jobs, loops until tests pass, MCP server, 156 tools, course player. Free and open source for Windows, macOS and Linux. No terminal.",
   "maturity": "Unknown",
-  "stars_7d": 123,
-  "stars_30d": 123,
-  "stars_90d": 583,
-  "star_growth_rate_7d": 24.6,
-  "star_growth_rate_30d": 24.6,
+  "stars_7d": 127,
+  "stars_30d": 127,
+  "stars_90d": 587,
+  "star_growth_rate_7d": 25.4,
+  "star_growth_rate_30d": 25.4,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 7,
-  "forks_30d": 7,
-  "days_since_last_push": 4,
-  "freshness_score": 0.9607894391523232,
-  "snapshot_count": 52,
+  "forks_7d": 6,
+  "forks_30d": 6,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 53,
   "authenticity": {
-    "organic_confidence": 83.1,
+    "organic_confidence": 83.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 95.1,
+        "score": 95.0,
         "weight": 0.22,
-        "detail": "1,250 forks for 14,490 stars (8.6%)."
+        "detail": "1,249 forks for 14,494 stars (8.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.7,
+        "score": 94.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 36 stars (1 forks, 1.5x the daily average)."
+        "detail": "Largest 24h jump was 36 stars (1 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +92,23 @@
         "label": "Issue engagement",
         "score": 26.4,
         "weight": 0.12,
-        "detail": "2 open issues for 14,490 stars (0.0%)."
+        "detail": "2 open issues for 14,494 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.1,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 4 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 36 stars (1 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 1,250 forks for 14,490 stars (8.6%).",
-      "Maintenance cadence: Last push 4 days ago."
+      "Burst pattern: Largest 24h jump was 36 stars (1 forks, 1.6x the daily average).",
+      "Fork-to-star ratio: 1,249 forks for 14,494 stars (8.6%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 14,490 stars (0.0%)."
+      "Issue engagement: 2 open issues for 14,494 stars (0.0%)."
     ]
   }
 }

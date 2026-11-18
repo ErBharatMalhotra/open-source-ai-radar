@@ -4,7 +4,12 @@
   "description": "ChatGLM2-6B: An Open Bilingual Chat LLM | \u5f00\u6e90\u53cc\u8bed\u5bf9\u8bdd\u8bed\u8a00\u6a21\u578b",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "chatglm",
+    "chatglm-6b",
+    "large-language-models",
+    "llm"
+  ],
   "stars": 15474,
   "forks": 1775,
   "open_issues": 428,
@@ -13,28 +18,28 @@
   "pushed_at": "2024-06-27T04:05:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/zai-org.png",
-  "radar_score": 63.06,
-  "impact": 93.84,
+  "radar_score": 63.07,
+  "impact": 93.86,
   "velocity": 47.39,
   "health": 35.75,
-  "global_percentile": 2.14,
+  "global_percentile": 3.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "ChatGLM2-6B: An Open Bilingual Chat LLM | \u5f00\u6e90\u53cc\u8bed\u5bf9\u8bdd\u8bed\u8a00\u6a21\u578b",
   "maturity": "Unknown",
-  "stars_7d": -6,
-  "stars_30d": -22,
-  "stars_90d": -56,
-  "star_growth_rate_7d": -0.8571428571428571,
-  "star_growth_rate_30d": -0.7333333333333333,
+  "stars_7d": -5,
+  "stars_30d": -18,
+  "stars_90d": -54,
+  "star_growth_rate_7d": -0.7142857142857143,
+  "star_growth_rate_30d": -0.6,
   "star_growth_acceleration": 1.0,
   "forks_7d": -1,
   "forks_30d": -2,
-  "days_since_last_push": 873,
-  "freshness_score": 0.00016166245622550477,
-  "snapshot_count": 89,
+  "days_since_last_push": 874,
+  "freshness_score": 0.00016005388790954318,
+  "snapshot_count": 90,
   "authenticity": {
-    "organic_confidence": 87.6,
+    "organic_confidence": 84.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "1,775 forks for 15,472 stars (11.5%)."
+        "detail": "1,775 forks for 15,474 stars (11.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 100.0,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
+        "detail": "Largest 24h jump was 2 stars (0 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +76,23 @@
         "label": "Issue engagement",
         "score": 92.6,
         "weight": 0.12,
-        "detail": "428 open issues for 15,472 stars (2.8%)."
+        "detail": "428 open issues for 15,474 stars (2.8%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 873 days ago."
+        "detail": "Last push 874 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 428 open issues for 15,472 stars (2.8%).",
-      "Fork-to-star ratio: 1,775 forks for 15,472 stars (11.5%).",
-      "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
+      "Burst pattern: Largest 24h jump was 2 stars (0 forks, 2.0x the daily average).",
+      "Issue engagement: 428 open issues for 15,474 stars (2.8%).",
+      "Fork-to-star ratio: 1,775 forks for 15,474 stars (11.5%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 873 days ago."
+      "Maintenance cadence: Last push 874 days ago."
     ]
   }
 }

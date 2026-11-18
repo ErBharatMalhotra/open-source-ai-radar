@@ -4,8 +4,29 @@
   "description": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 21063,
+  "topics": [
+    "pytorch",
+    "speech-recognition",
+    "paraformer",
+    "punctuation",
+    "speaker-diarization",
+    "voice-activity-detection",
+    "asr",
+    "multilingual-asr",
+    "speech-to-text",
+    "transcription",
+    "whisper-alternative",
+    "audio",
+    "chinese",
+    "emotion-recognition",
+    "mcp-server",
+    "openai-compatible-api",
+    "streaming-asr",
+    "vllm",
+    "funasr",
+    "real-time-asr"
+  ],
+  "stars": 21064,
   "forks": 2135,
   "open_issues": 46,
   "watchers": 113,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-17T05:48:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/modelscope.png",
-  "radar_score": 74.9,
+  "radar_score": 74.81,
   "impact": 94.61,
-  "velocity": 60.34,
-  "health": 63.75,
-  "global_percentile": 47.29,
+  "velocity": 60.33,
+  "health": 63.38,
+  "global_percentile": 46.71,
   "category": "MCP",
   "sub_category": "tool",
   "summary": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
   "maturity": "Unknown",
-  "stars_7d": 84,
-  "stars_30d": 312,
-  "stars_90d": 357,
-  "star_growth_rate_7d": 12.0,
-  "star_growth_rate_30d": 10.758620689655173,
-  "star_growth_acceleration": 1.1153846153846154,
-  "forks_7d": 17,
-  "forks_30d": 47,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 260,
+  "stars_7d": 71,
+  "stars_30d": 315,
+  "stars_90d": 360,
+  "star_growth_rate_7d": 10.142857142857142,
+  "star_growth_rate_30d": 10.5,
+  "star_growth_acceleration": 0.9659863945578231,
+  "forks_7d": 16,
+  "forks_30d": 49,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 261,
   "authenticity": {
-    "organic_confidence": 88.0,
+    "organic_confidence": 87.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "2,133 forks for 21,061 stars (10.1%)."
+        "detail": "2,135 forks for 21,064 stars (10.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.9,
+        "score": 92.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 18 stars (0 forks, 1.7x the daily average)."
       },
@@ -71,20 +92,20 @@
         "label": "Issue engagement",
         "score": 45.9,
         "weight": 0.12,
-        "detail": "46 open issues for 21,061 stars (0.2%)."
+        "detail": "46 open issues for 21,064 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 18 stars (0 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 2,133 forks for 21,061 stars (10.1%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 2,135 forks for 21,064 stars (10.1%)."
     ],
     "red_flags": []
   }

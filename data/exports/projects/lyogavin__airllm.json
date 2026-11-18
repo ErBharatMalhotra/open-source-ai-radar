@@ -4,10 +4,24 @@
   "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
   "language": "Jupyter Notebook",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 42605,
+  "topics": [
+    "chinese-nlp",
+    "finetune",
+    "generative-ai",
+    "instruct-gpt",
+    "instruction-set",
+    "llama",
+    "llm",
+    "lora",
+    "open-models",
+    "open-source",
+    "open-source-models",
+    "qlora",
+    "chinese-llm"
+  ],
+  "stars": 42618,
   "forks": 4418,
-  "open_issues": 113,
+  "open_issues": 114,
   "watchers": 335,
   "created_at": "2023-06-12T16:28:41Z",
   "pushed_at": "2026-11-18T06:14:08Z",
@@ -15,40 +29,40 @@
   "owner_avatar": "https://github.com/lyogavin.png",
   "radar_score": 78.25,
   "impact": 97.88,
-  "velocity": 66.18,
+  "velocity": 66.19,
   "health": 63.75,
-  "global_percentile": 84.14,
+  "global_percentile": 83.29,
   "category": "Generative AI",
   "sub_category": "",
   "summary": "AirLLM 70B inference with single 4GB GPU",
   "maturity": "Unknown",
   "stars_7d": 516,
-  "stars_30d": 1785,
-  "stars_90d": 1785,
+  "stars_30d": 1729,
+  "stars_90d": 1729,
   "star_growth_rate_7d": 73.71428571428571,
-  "star_growth_rate_30d": 81.13636363636364,
-  "star_growth_acceleration": 0.9085234093637454,
+  "star_growth_rate_30d": 78.5909090909091,
+  "star_growth_acceleration": 0.9379492687763363,
   "forks_7d": 80,
-  "forks_30d": 250,
+  "forks_30d": 241,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 332,
+  "snapshot_count": 333,
   "authenticity": {
-    "organic_confidence": 80.2,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 80.0,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "4,414 forks for 42,585 stars (10.4%)."
+        "detail": "4,418 forks for 42,618 stars (10.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 69.7,
+        "score": 69.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 370 stars (33 forks, 3.5x the daily average)."
       },
@@ -69,9 +83,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.3,
+        "score": 48.4,
         "weight": 0.12,
-        "detail": "113 open issues for 42,585 stars (0.3%)."
+        "detail": "114 open issues for 42,618 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +96,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,414 forks for 42,585 stars (10.4%).",
+      "Fork-to-star ratio: 4,418 forks for 42,618 stars (10.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

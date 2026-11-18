@@ -4,8 +4,29 @@
   "description": "The trust layer for agent-to-agent commerce \u2014 natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 7135,
+  "topics": [
+    "a2a",
+    "agent-payments",
+    "agent-skills",
+    "agentic-commerce",
+    "ai-agents",
+    "claude-code",
+    "claude-plugin",
+    "claude-skill",
+    "codex",
+    "dispute-resolution",
+    "erc-7710",
+    "erc-8004",
+    "escrow",
+    "genlayer",
+    "hermes-agent",
+    "openclaw",
+    "opencode",
+    "web3",
+    "x402",
+    "adjudication"
+  ],
+  "stars": 7137,
   "forks": 132,
   "open_issues": 20,
   "watchers": 12,
@@ -13,65 +34,65 @@
   "pushed_at": "2026-10-26T12:55:11Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/internet-court.png",
-  "radar_score": 63.82,
-  "impact": 79.19,
+  "radar_score": 63.77,
+  "impact": 79.22,
   "velocity": 56.53,
-  "health": 49.44,
-  "global_percentile": 7.86,
+  "health": 49.17,
+  "global_percentile": 6.86,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "The trust layer for agent-to-agent commerce \u2014 natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
   "maturity": "Unknown",
-  "stars_7d": 44,
-  "stars_30d": 374,
-  "stars_90d": 2159,
-  "star_growth_rate_7d": 6.285714285714286,
-  "star_growth_rate_30d": 12.466666666666667,
-  "star_growth_acceleration": 0.5042016806722689,
+  "stars_7d": 52,
+  "stars_30d": 381,
+  "stars_90d": 2167,
+  "star_growth_rate_7d": 7.428571428571429,
+  "star_growth_rate_30d": 12.7,
+  "star_growth_acceleration": 0.5849268841394826,
   "forks_7d": 0,
   "forks_30d": 9,
-  "days_since_last_push": 21,
-  "freshness_score": 0.8105842459701871,
-  "snapshot_count": 84,
+  "days_since_last_push": 22,
+  "freshness_score": 0.8025187979624785,
+  "snapshot_count": 85,
   "authenticity": {
-    "organic_confidence": 72.9,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 58.7,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 59.8,
         "weight": 0.22,
-        "detail": "132 forks for 7,135 stars (1.9%)."
+        "detail": "132 forks for 7,137 stars (1.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.4,
+        "score": 68.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 24 stars (3 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 24 stars (3 forks, 3.6x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 5,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+52 stars vs +0 forks this week (expected ~1 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 97.1,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.58x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 49.0,
         "weight": 0.12,
-        "detail": "20 open issues for 7,135 stars (0.3%)."
+        "detail": "20 open issues for 7,137 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +104,10 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 22 days ago.",
-      "Burst pattern: Largest 24h jump was 24 stars (3 forks, 2.0x the daily average)."
+      "Growth acceleration: Weekly growth is 0.58x the monthly baseline."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Star/fork velocity alignment: +52 stars vs +0 forks this week (expected ~1 forks)."
+    ]
   }
 }

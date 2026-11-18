@@ -4,7 +4,13 @@
   "description": "KAG is a logical form-guided reasoning and retrieval framework based on OpenSPG engine and LLMs.  It is used to build logical reasoning and factual Q&A solutions for professional domain knowledge bases. It can effectively overcome the shortcomings of the traditional RAG vector similarity calculation model.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "knowledge-graph",
+    "large-language-model",
+    "logical-reasoning",
+    "multi-hop-question-answering",
+    "trustfulness"
+  ],
   "stars": 9175,
   "forks": 722,
   "open_issues": 164,
@@ -14,29 +20,29 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/OpenSPG.png",
   "radar_score": 61.61,
-  "impact": 89.93,
-  "velocity": 45.33,
-  "health": 39.07,
-  "global_percentile": 3.0,
+  "impact": 89.97,
+  "velocity": 45.31,
+  "health": 39.06,
+  "global_percentile": 4.0,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "KAG is a logical form-guided reasoning and retrieval framework based on OpenSPG engine and LLMs.  It is used to build logical reasoning and factual Q&A solutions for professional domain knowledge bases. It can effectively overcome the shortcomings of the traditional RAG vector similarity calculation",
   "maturity": "Unknown",
-  "stars_7d": 20,
-  "stars_30d": 70,
-  "stars_90d": 127,
-  "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 2.3333333333333335,
-  "star_growth_acceleration": 1.2244897959183674,
-  "forks_7d": 4,
+  "stars_7d": 12,
+  "stars_30d": 66,
+  "stars_90d": 129,
+  "star_growth_rate_7d": 1.7142857142857142,
+  "star_growth_rate_30d": 2.2,
+  "star_growth_acceleration": 0.7792207792207791,
+  "forks_7d": 3,
   "forks_30d": -1,
-  "days_since_last_push": 290,
-  "freshness_score": 0.05502322005640723,
-  "snapshot_count": 125,
+  "days_since_last_push": 293,
+  "freshness_score": 0.053397038145197084,
+  "snapshot_count": 126,
   "authenticity": {
-    "organic_confidence": 80.7,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.0,
+        "score": 84.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (-2 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (-2 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,8 +88,8 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 5 stars (-2 forks, 2.4x the daily average).",
       "Issue engagement: 164 open issues for 9,175 stars (1.8%).",
-      "Burst pattern: Largest 24h jump was 5 stars (-2 forks, 2.2x the daily average).",
       "Fork-to-star ratio: 722 forks for 9,175 stars (7.9%)."
     ],
     "red_flags": [

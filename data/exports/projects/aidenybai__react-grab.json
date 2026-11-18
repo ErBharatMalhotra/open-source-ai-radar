@@ -4,53 +4,58 @@
   "description": "Copy any UI element for your agent",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 7724,
+  "topics": [
+    "ai",
+    "coding",
+    "react",
+    "react-grab"
+  ],
+  "stars": 7726,
   "forks": 343,
   "open_issues": 52,
   "watchers": 8,
   "created_at": "2025-10-17T10:08:55Z",
-  "pushed_at": "2026-08-22T11:34:22Z",
+  "pushed_at": "2026-11-17T23:57:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/aidenybai.png",
-  "radar_score": 60.26,
-  "impact": 81.28,
-  "velocity": 49.93,
-  "health": 41.08,
-  "global_percentile": 3.57,
+  "radar_score": 68.73,
+  "impact": 81.31,
+  "velocity": 61.17,
+  "health": 59.2,
+  "global_percentile": 18.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Copy any UI element for your agent",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 56,
-  "stars_90d": 131,
-  "star_growth_rate_7d": 2.2857142857142856,
-  "star_growth_rate_30d": 1.8666666666666667,
-  "star_growth_acceleration": 1.2244897959183672,
-  "forks_7d": 0,
-  "forks_30d": 1,
-  "days_since_last_push": 86,
-  "freshness_score": 0.4231620823177488,
-  "snapshot_count": 102,
+  "stars_7d": 20,
+  "stars_30d": 53,
+  "stars_90d": 134,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 1.8275862068965518,
+  "star_growth_acceleration": 1.5633423180592991,
+  "forks_7d": 1,
+  "forks_30d": 2,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 103,
   "authenticity": {
-    "organic_confidence": 77.4,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 82.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 78.3,
         "weight": 0.22,
-        "detail": "343 forks for 7,724 stars (4.4%)."
+        "detail": "343 forks for 7,726 stars (4.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 85.5,
+        "score": 87.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (0 forks, 2.3x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (0 forks, 2.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,19 +76,20 @@
         "label": "Issue engagement",
         "score": 65.2,
         "weight": 0.12,
-        "detail": "52 open issues for 7,724 stars (0.7%)."
+        "detail": "52 open issues for 7,726 stars (0.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 70.8,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 87 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 343 forks for 7,724 stars (4.4%).",
-      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 2.3x the daily average)."
+      "Fork-to-star ratio: 343 forks for 7,726 stars (4.4%).",
+      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 2.2x the daily average).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

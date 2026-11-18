@@ -4,37 +4,58 @@
   "description": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
   "language": "Rust",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 9537,
+  "topics": [
+    "sparse-vector",
+    "hybrid-search",
+    "bm25",
+    "full-text-search",
+    "analytics",
+    "olap",
+    "htap",
+    "real-time-analytics",
+    "aggregations",
+    "similarity-search",
+    "postgresql",
+    "vector-database",
+    "vector-search",
+    "postgresql-extension",
+    "search-engine",
+    "mpp",
+    "columnar-storage",
+    "semantic-search",
+    "distributed-search",
+    "rust"
+  ],
+  "stars": 9538,
   "forks": 515,
-  "open_issues": 222,
+  "open_issues": 216,
   "watchers": 43,
   "created_at": "2023-06-30T20:21:47Z",
-  "pushed_at": "2026-11-17T22:00:04Z",
+  "pushed_at": "2026-11-18T03:09:21Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/paradedb.png",
   "radar_score": 70.76,
-  "impact": 88.38,
-  "velocity": 55.64,
+  "impact": 88.4,
+  "velocity": 55.62,
   "health": 63.75,
-  "global_percentile": 21.43,
+  "global_percentile": 26.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
   "maturity": "Unknown",
-  "stars_7d": 34,
-  "stars_30d": 131,
-  "stars_90d": 151,
-  "star_growth_rate_7d": 4.857142857142857,
-  "star_growth_rate_30d": 4.366666666666666,
-  "star_growth_acceleration": 1.1123227917121048,
+  "stars_7d": 37,
+  "stars_30d": 133,
+  "stars_90d": 150,
+  "star_growth_rate_7d": 5.285714285714286,
+  "star_growth_rate_30d": 4.433333333333334,
+  "star_growth_acceleration": 1.192266380236305,
   "forks_7d": 8,
-  "forks_30d": 35,
+  "forks_30d": 34,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 250,
+  "snapshot_count": 251,
   "authenticity": {
-    "organic_confidence": 89.9,
+    "organic_confidence": 89.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +64,7 @@
         "label": "Fork-to-star ratio",
         "score": 83.4,
         "weight": 0.22,
-        "detail": "515 forks for 9,537 stars (5.4%)."
+        "detail": "515 forks for 9,538 stars (5.4%)."
       },
       {
         "key": "burst",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 91.1,
+        "score": 90.9,
         "weight": 0.12,
-        "detail": "222 open issues for 9,537 stars (2.3%)."
+        "detail": "216 open issues for 9,538 stars (2.3%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 515 forks for 9,537 stars (5.4%).",
+      "Fork-to-star ratio: 515 forks for 9,538 stars (5.4%).",
       "Burst pattern: Largest 24h jump was 8 stars (0 forks, 1.9x the daily average).",
-      "Issue engagement: 222 open issues for 9,537 stars (2.3%)."
+      "Issue engagement: 216 open issues for 9,538 stars (2.3%)."
     ],
     "red_flags": []
   }

@@ -4,7 +4,22 @@
   "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "claude",
+    "gemini",
+    "ollama",
+    "openai",
+    "function-calling",
+    "cli",
+    "llm",
+    "rag",
+    "ai",
+    "rust",
+    "ai-agents",
+    "chatbot",
+    "shell",
+    "webui"
+  ],
   "stars": 10588,
   "forks": 757,
   "open_issues": 55,
@@ -13,28 +28,28 @@
   "pushed_at": "2026-02-23T11:16:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/sigoden.png",
-  "radar_score": 60.51,
-  "impact": 90.88,
+  "radar_score": 60.5,
+  "impact": 90.87,
   "velocity": 41.02,
   "health": 39.2,
-  "global_percentile": 0.57,
+  "global_percentile": 3.14,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
   "maturity": "Unknown",
   "stars_7d": 26,
-  "stars_30d": 85,
-  "stars_90d": 100,
+  "stars_30d": 82,
+  "stars_90d": 99,
   "star_growth_rate_7d": 3.7142857142857144,
-  "star_growth_rate_30d": 2.8333333333333335,
-  "star_growth_acceleration": 1.3109243697478992,
+  "star_growth_rate_30d": 2.7333333333333334,
+  "star_growth_acceleration": 1.3588850174216027,
   "forks_7d": 4,
-  "forks_30d": -66,
+  "forks_30d": -74,
   "days_since_last_push": 268,
   "freshness_score": 0.06856315415427791,
-  "snapshot_count": 187,
+  "snapshot_count": 188,
   "authenticity": {
-    "organic_confidence": 76.1,
+    "organic_confidence": 75.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +63,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 88.1,
+        "score": 87.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (1 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (1 forks, 2.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +97,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 6 stars (1 forks, 2.1x the daily average).",
+      "Burst pattern: Largest 24h jump was 6 stars (1 forks, 2.2x the daily average).",
       "Fork-to-star ratio: 757 forks for 10,588 stars (7.1%)."
     ],
     "red_flags": [

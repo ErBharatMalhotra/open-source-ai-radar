@@ -4,7 +4,11 @@
   "description": "Fast, flexible LLM inference",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "llm",
+    "rust",
+    "uqff"
+  ],
   "stars": 7849,
   "forks": 769,
   "open_issues": 259,
@@ -13,28 +17,28 @@
   "pushed_at": "2026-11-09T02:43:20Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/EricLBuehler.png",
-  "radar_score": 68.56,
-  "impact": 88.73,
-  "velocity": 51.2,
-  "health": 60.59,
-  "global_percentile": 17.14,
+  "radar_score": 68.47,
+  "impact": 88.71,
+  "velocity": 51.19,
+  "health": 60.27,
+  "global_percentile": 18.14,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Fast, flexible LLM inference",
   "maturity": "Unknown",
-  "stars_7d": 26,
-  "stars_30d": 91,
-  "stars_90d": 167,
-  "star_growth_rate_7d": 3.7142857142857144,
-  "star_growth_rate_30d": 3.033333333333333,
-  "star_growth_acceleration": 1.2244897959183674,
-  "forks_7d": 5,
-  "forks_30d": 33,
-  "days_since_last_push": 9,
-  "freshness_score": 0.9139311852712282,
-  "snapshot_count": 125,
+  "stars_7d": 19,
+  "stars_30d": 89,
+  "stars_90d": 166,
+  "star_growth_rate_7d": 2.7142857142857144,
+  "star_growth_rate_30d": 2.966666666666667,
+  "star_growth_acceleration": 0.9149277688603531,
+  "forks_7d": 1,
+  "forks_30d": 30,
+  "days_since_last_push": 10,
+  "freshness_score": 0.9048374180359595,
+  "snapshot_count": 126,
   "authenticity": {
-    "organic_confidence": 89.2,
+    "organic_confidence": 89.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +52,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.4,
+        "score": 75.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (0 forks, 3.0x the daily average)."
       },
@@ -76,14 +80,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 94.1,
+        "score": 93.7,
         "weight": 0.1,
-        "detail": "Last push 9 days ago."
+        "detail": "Last push 10 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 9 stars (0 forks, 3.0x the daily average).",
-      "Maintenance cadence: Last push 9 days ago.",
+      "Maintenance cadence: Last push 10 days ago.",
       "Issue engagement: 259 open issues for 7,849 stars (3.3%)."
     ],
     "red_flags": []

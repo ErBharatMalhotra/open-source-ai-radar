@@ -4,53 +4,69 @@
   "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9452,
-  "forks": 377,
+  "topics": [
+    "ai",
+    "ai-coding-assistant",
+    "claude-code",
+    "codex",
+    "coding-agents",
+    "git",
+    "gitops",
+    "kilo-code",
+    "mcp",
+    "mcp-client",
+    "opencode",
+    "opencode-ai",
+    "opencode-skills",
+    "self-hosted",
+    "skills"
+  ],
+  "stars": 9247,
+  "forks": 367,
   "open_issues": 18,
-  "watchers": 56,
+  "watchers": 53,
   "created_at": "2026-05-14T16:48:52Z",
-  "pushed_at": "2026-11-18T23:37:24Z",
+  "pushed_at": "2026-11-19T18:13:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tryatlas.png",
-  "radar_score": 72.79,
-  "impact": 87.9,
+  "radar_score": 72.7,
+  "impact": 87.68,
   "velocity": 65.23,
   "health": 59.2,
-  "global_percentile": 39.0,
+  "global_percentile": 31.0,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
   "maturity": "Unknown",
-  "stars_7d": 63,
-  "stars_30d": 67,
-  "stars_90d": 67,
-  "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 5.583333333333333,
-  "star_growth_acceleration": 1.6119402985074627,
-  "forks_7d": 14,
-  "forks_30d": 15,
+  "stars_7d": -146,
+  "stars_30d": -136,
+  "stars_90d": -136,
+  "star_growth_rate_7d": -20.857142857142858,
+  "star_growth_rate_30d": -11.333333333333334,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 3,
+  "forks_30d": 5,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 27,
+  "snapshot_count": 28,
   "authenticity": {
-    "organic_confidence": 65.8,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 51.1,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 75.3,
+        "score": 75.1,
         "weight": 0.22,
-        "detail": "377 forks for 9,452 stars (4.0%)."
+        "detail": "367 forks for 9,247 stars (4.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 53.6,
+        "score": 12,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 27 stars (4 forks, 4.9x the daily average)."
+        "detail": "Largest 24h jump was 27 stars (4 forks, 27.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 44.0,
+        "score": 44.5,
         "weight": 0.12,
-        "detail": "18 open issues for 9,452 stars (0.2%)."
+        "detail": "18 open issues for 9,247 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +98,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 377 forks for 9,452 stars (4.0%).",
+      "Fork-to-star ratio: 367 forks for 9,247 stars (4.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Burst pattern: Largest 24h jump was 27 stars (4 forks, 27.0x the daily average)."
+    ]
   }
 }

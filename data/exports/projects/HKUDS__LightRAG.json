@@ -4,7 +4,19 @@
   "description": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "knowledge-graph",
+    "large-language-models",
+    "retrieval-augmented-generation",
+    "genai",
+    "graphrag",
+    "llm",
+    "rag",
+    "gpt",
+    "docling",
+    "mineru",
+    "ragas"
+  ],
   "stars": 40777,
   "forks": 5789,
   "open_issues": 204,
@@ -17,24 +29,24 @@
   "impact": 97.87,
   "velocity": 67.76,
   "health": 63.75,
-  "global_percentile": 87.57,
+  "global_percentile": 86.57,
   "category": "RAG",
   "sub_category": "",
   "summary": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
   "maturity": "Unknown",
-  "stars_7d": 114,
-  "stars_30d": 485,
-  "stars_90d": 485,
-  "star_growth_rate_7d": 16.285714285714285,
-  "star_growth_rate_30d": 17.962962962962962,
-  "star_growth_acceleration": 0.9066273932253314,
+  "stars_7d": 116,
+  "stars_30d": 482,
+  "stars_90d": 482,
+  "star_growth_rate_7d": 16.571428571428573,
+  "star_growth_rate_30d": 17.85185185185185,
+  "star_growth_acceleration": 0.9282750444576172,
   "forks_7d": 16,
   "forks_30d": 70,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 323,
+  "snapshot_count": 324,
   "authenticity": {
-    "organic_confidence": 89.3,
+    "organic_confidence": 89.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "5,789 forks for 40,776 stars (14.2%)."
+        "detail": "5,789 forks for 40,777 stars (14.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.4,
+        "score": 90.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 35 stars (-3 forks, 2.0x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 60.1,
+        "score": 60.0,
         "weight": 0.12,
-        "detail": "205 open issues for 40,776 stars (0.5%)."
+        "detail": "204 open issues for 40,777 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +95,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 35 stars (-3 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 5,789 forks for 40,776 stars (14.2%).",
+      "Fork-to-star ratio: 5,789 forks for 40,777 stars (14.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

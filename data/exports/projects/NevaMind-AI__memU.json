@@ -4,7 +4,18 @@
   "description": "Personal memory across agents",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "mcp",
+    "memory",
+    "sandbox",
+    "agent-memory",
+    "claude-skills",
+    "skills",
+    "openclaw",
+    "openclaw-skills",
+    "harness",
+    "loop-engineering"
+  ],
   "stars": 14629,
   "forks": 1103,
   "open_issues": 68,
@@ -13,28 +24,28 @@
   "pushed_at": "2026-11-19T07:57:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NevaMind-AI.png",
-  "radar_score": 74.65,
+  "radar_score": 74.66,
   "impact": 91.96,
   "velocity": 64.81,
   "health": 60.75,
-  "global_percentile": 44.71,
+  "global_percentile": 44.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Personal memory across agents",
   "maturity": "Unknown",
-  "stars_7d": 12,
-  "stars_30d": 72,
-  "stars_90d": 94,
-  "star_growth_rate_7d": 1.7142857142857142,
-  "star_growth_rate_30d": 2.4,
-  "star_growth_acceleration": 0.7142857142857143,
+  "stars_7d": 11,
+  "stars_30d": 74,
+  "stars_90d": 95,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 2.466666666666667,
+  "star_growth_acceleration": 0.637065637065637,
   "forks_7d": 4,
-  "forks_30d": 12,
+  "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 200,
+  "snapshot_count": 201,
   "authenticity": {
-    "organic_confidence": 84.4,
+    "organic_confidence": 84.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +54,12 @@
         "label": "Fork-to-star ratio",
         "score": 91.1,
         "weight": 0.22,
-        "detail": "1,103 forks for 14,627 stars (7.5%)."
+        "detail": "1,103 forks for 14,629 stars (7.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 84.8,
+        "score": 85.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (0 forks, 2.3x the daily average)."
       },
@@ -71,7 +82,7 @@
         "label": "Issue engagement",
         "score": 58.2,
         "weight": 0.12,
-        "detail": "68 open issues for 14,627 stars (0.5%)."
+        "detail": "68 open issues for 14,629 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +94,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.3x the daily average).",
-      "Fork-to-star ratio: 1,103 forks for 14,627 stars (7.5%).",
+      "Fork-to-star ratio: 1,103 forks for 14,629 stars (7.5%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

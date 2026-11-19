@@ -4,37 +4,58 @@
   "description": "A local MCP server that gives your coding agent a desktop toolbox: downloads from YouTube, torrents and every site yt-dlp supports, media conversion, files, chats and system cleanup. One line connects Claude Code, Codex, Cursor or Gemini CLI, and sensitive actions wait for your click. Free and open source for Windows, macOS and Linux.",
   "language": "Rust",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "download-manager",
+    "instagram-downloader",
+    "media-downloader",
+    "tiktok-downloader",
+    "video-downloader",
+    "youtube-downloader",
+    "yt-dlp",
+    "downloader",
+    "yt-dlp-gui",
+    "agent-client-protocol",
+    "claude-code",
+    "codex-cli",
+    "coding-agent",
+    "local-llm",
+    "mcp-server",
+    "gallery-dl",
+    "model-context-protocol",
+    "torrent",
+    "omniget",
+    "mcp"
+  ],
   "stars": 14505,
   "forks": 1253,
   "open_issues": 5,
   "watchers": 47,
   "created_at": "2026-02-11T22:44:56Z",
-  "pushed_at": "2026-11-19T21:11:22Z",
+  "pushed_at": "2026-11-19T22:58:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tonhowtf.png",
-  "radar_score": 73.86,
-  "impact": 91.57,
-  "velocity": 64.7,
+  "radar_score": 73.61,
+  "impact": 91.6,
+  "velocity": 63.94,
   "health": 58.35,
-  "global_percentile": 39.14,
+  "global_percentile": 36.0,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Udemy & Hotmart course downloader, YouTube downloader (yt-dlp GUI, 1,800+ sites) + desktop app for AI agents: Claude Code, Codex, Gemini CLI, Ollama. Permissions, undo, jobs, loops until tests pass, MCP server, 156 tools, course player. Free and open source for Windows, macOS and Linux. No terminal.",
   "maturity": "Unknown",
-  "stars_7d": 136,
-  "stars_30d": 136,
-  "stars_90d": 596,
-  "star_growth_rate_7d": 22.666666666666668,
-  "star_growth_rate_30d": 22.666666666666668,
+  "stars_7d": 138,
+  "stars_30d": 138,
+  "stars_90d": 598,
+  "star_growth_rate_7d": 19.714285714285715,
+  "star_growth_rate_30d": 19.714285714285715,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 9,
-  "forks_30d": 9,
+  "forks_7d": 10,
+  "forks_30d": 10,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 58,
+  "snapshot_count": 59,
   "authenticity": {
-    "organic_confidence": 83.1,
+    "organic_confidence": 82.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.1,
         "weight": 0.22,
-        "detail": "1,252 forks for 14,503 stars (8.6%)."
+        "detail": "1,253 forks for 14,505 stars (8.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.9,
+        "score": 91.7,
         "weight": 0.24,
         "detail": "Largest 24h jump was 36 stars (1 forks, 1.8x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.8,
+        "score": 28.4,
         "weight": 0.12,
-        "detail": "7 open issues for 14,503 stars (0.0%)."
+        "detail": "5 open issues for 14,505 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +104,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 36 stars (1 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 1,252 forks for 14,503 stars (8.6%).",
+      "Fork-to-star ratio: 1,253 forks for 14,505 stars (8.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 14,503 stars (0.0%)."
+      "Issue engagement: 5 open issues for 14,505 stars (0.0%)."
     ]
   }
 }

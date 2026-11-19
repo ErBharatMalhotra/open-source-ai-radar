@@ -4,37 +4,54 @@
   "description": "[MLsys2026 Best Paper]: https://arxiv.org/abs/2506.08276. RAG on Everything with LEANN. Enjoy 97% storage savings while running a fast, accurate, and 100% private RAG application on your personal device.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai",
+    "faiss",
+    "langchain",
+    "llama-index",
+    "llm",
+    "localstorage",
+    "offline-first",
+    "ollama",
+    "privacy",
+    "python",
+    "rag",
+    "retrieval-augmented-generation",
+    "vector-database",
+    "vector-search",
+    "vectors",
+    "gpt-oss"
+  ],
   "stars": 13806,
   "forks": 1288,
   "open_issues": 37,
   "watchers": 78,
   "created_at": "2025-06-09T06:52:59Z",
-  "pushed_at": "2026-11-19T20:56:47Z",
+  "pushed_at": "2026-11-19T22:17:23Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/StarTrail-org.png",
-  "radar_score": 74.77,
-  "impact": 92.37,
-  "velocity": 63.06,
-  "health": 63.01,
-  "global_percentile": 45.86,
+  "radar_score": 75.49,
+  "impact": 92.39,
+  "velocity": 64.56,
+  "health": 63.75,
+  "global_percentile": 52.71,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "[MLsys2026 Best Paper]: https://arxiv.org/abs/2506.08276. RAG on Everything with LEANN. Enjoy 97% storage savings while running a fast, accurate, and 100% private RAG application on your personal device.",
   "maturity": "Unknown",
-  "stars_7d": 14,
-  "stars_30d": 771,
-  "stars_90d": 777,
-  "star_growth_rate_7d": 2.0,
-  "star_growth_rate_30d": 25.7,
-  "star_growth_acceleration": 0.07782101167315175,
+  "stars_7d": 12,
+  "stars_30d": 769,
+  "stars_90d": 775,
+  "star_growth_rate_7d": 1.7142857142857142,
+  "star_growth_rate_30d": 25.633333333333333,
+  "star_growth_acceleration": 0.06687720601894855,
   "forks_7d": 2,
-  "forks_30d": -24,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 206,
+  "forks_30d": -37,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 207,
   "authenticity": {
-    "organic_confidence": 60.7,
+    "organic_confidence": 60.8,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +60,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.6,
         "weight": 0.22,
-        "detail": "1,288 forks for 13,807 stars (9.3%)."
+        "detail": "1,288 forks for 13,806 stars (9.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 17.3,
+        "score": 16.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 340 stars (39 forks, 13.1x the daily average)."
+        "detail": "Largest 24h jump was 340 stars (39 forks, 13.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,22 +88,22 @@
         "label": "Issue engagement",
         "score": 48.4,
         "weight": 0.12,
-        "detail": "37 open issues for 13,807 stars (0.3%)."
+        "detail": "37 open issues for 13,806 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,288 forks for 13,807 stars (9.3%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Fork-to-star ratio: 1,288 forks for 13,806 stars (9.3%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 340 stars (39 forks, 13.1x the daily average)."
+      "Burst pattern: Largest 24h jump was 340 stars (39 forks, 13.3x the daily average)."
     ]
   }
 }

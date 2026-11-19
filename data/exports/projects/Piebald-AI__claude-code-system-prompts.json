@@ -4,8 +4,12 @@
   "description": "All parts of Claude Code's system prompt, builtin tool descriptions, subagent prompts (Plan/Explore/Task), and utility prompts.  Updated for each Claude Code version.",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 13190,
+  "topics": [
+    "claude-code",
+    "claude-code-system-prompts",
+    "system-prompts"
+  ],
+  "stars": 13191,
   "forks": 2040,
   "open_issues": 6,
   "watchers": 128,
@@ -13,26 +17,26 @@
   "pushed_at": "2026-11-18T23:43:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Piebald-AI.png",
-  "radar_score": 74.01,
-  "impact": 93.54,
-  "velocity": 62.89,
+  "radar_score": 74.03,
+  "impact": 93.56,
+  "velocity": 62.9,
   "health": 58.35,
-  "global_percentile": 39.86,
+  "global_percentile": 40.14,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "All parts of Claude Code's system prompt, 27 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact,  statusline, magic docs, WebFetch, Bash cmd, security review, agent creation).  Updated for each Claude Code version.",
   "maturity": "Unknown",
-  "stars_7d": 59,
-  "stars_30d": 248,
-  "stars_90d": 248,
-  "star_growth_rate_7d": 8.428571428571429,
-  "star_growth_rate_30d": 8.266666666666667,
-  "star_growth_acceleration": 1.019585253456221,
+  "stars_7d": 55,
+  "stars_30d": 245,
+  "stars_90d": 245,
+  "star_growth_rate_7d": 7.857142857142857,
+  "star_growth_rate_30d": 8.166666666666666,
+  "star_growth_acceleration": 0.9620991253644315,
   "forks_7d": -1,
-  "forks_30d": -1,
+  "forks_30d": -2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 262,
+  "snapshot_count": 263,
   "authenticity": {
     "organic_confidence": 83.8,
     "verdict": "organic",
@@ -43,14 +47,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "2,041 forks for 13,190 stars (15.5%)."
+        "detail": "2,040 forks for 13,191 stars (15.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.5,
+        "score": 90.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 16 stars (0 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 16 stars (0 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +75,23 @@
         "label": "Issue engagement",
         "score": 29.5,
         "weight": 0.12,
-        "detail": "6 open issues for 13,190 stars (0.0%)."
+        "detail": "6 open issues for 13,191 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 16 stars (0 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 2,041 forks for 13,190 stars (15.5%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Burst pattern: Largest 24h jump was 16 stars (0 forks, 2.0x the daily average).",
+      "Fork-to-star ratio: 2,040 forks for 13,191 stars (15.5%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 6 open issues for 13,190 stars (0.0%)."
+      "Issue engagement: 6 open issues for 13,191 stars (0.0%)."
     ]
   }
 }

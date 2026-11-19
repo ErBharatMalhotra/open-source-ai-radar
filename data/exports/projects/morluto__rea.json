@@ -4,38 +4,59 @@
   "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 468972,
-  "forks": 114618,
-  "open_issues": 675,
-  "watchers": 1763,
+  "topics": [
+    "cli",
+    "mcp",
+    "agent-skills",
+    "dsh-plugin",
+    "claude-code",
+    "rea",
+    "touhou",
+    "android",
+    "javascript",
+    "python",
+    "typescript",
+    "nodejs",
+    "linux",
+    "ai",
+    "security",
+    "java",
+    "cpp",
+    "rust",
+    "react",
+    "html"
+  ],
+  "stars": 469226,
+  "forks": 114664,
+  "open_issues": 672,
+  "watchers": 1765,
   "created_at": "2026-04-14T00:51:32Z",
-  "pushed_at": "2026-11-19T09:02:12Z",
+  "pushed_at": "2026-11-19T12:33:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/morluto.png",
-  "radar_score": 82.12,
+  "radar_score": 82.11,
   "impact": 99.98,
-  "velocity": 74.83,
+  "velocity": 74.81,
   "health": 63.75,
   "global_percentile": 99.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
   "maturity": "Unknown",
-  "stars_7d": 17059,
-  "stars_30d": 68828,
-  "stars_90d": 68828,
-  "star_growth_rate_7d": 2437.0,
-  "star_growth_rate_30d": 3277.5238095238096,
-  "star_growth_acceleration": 0.7435491369791364,
-  "forks_7d": 3444,
-  "forks_30d": 14255,
+  "stars_7d": 17102,
+  "stars_30d": 68106,
+  "stars_90d": 68106,
+  "star_growth_rate_7d": 2443.1428571428573,
+  "star_growth_rate_30d": 3243.1428571428573,
+  "star_growth_acceleration": 0.7533256981763722,
+  "forks_7d": 3469,
+  "forks_30d": 14069,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 176,
-  "why_trending": "Strong momentum with 17059 new stars this week. Above-average growth velocity. High developer adoption with 3444 new forks this week. Active in the Uncategorized category.",
+  "snapshot_count": 177,
+  "why_trending": "Strong momentum with 17102 new stars this week. Above-average growth velocity. High developer adoption with 3469 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 82.3,
+    "organic_confidence": 84.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +65,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "114,506 forks for 468,447 stars (24.4%)."
+        "detail": "114,664 forks for 469,226 stars (24.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.5,
+        "score": 88.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10,671 stars (2,347 forks, 2.5x the daily average)."
+        "detail": "Largest 24h jump was 8,733 stars (2,023 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +91,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.0,
+        "score": 39.3,
         "weight": 0.12,
-        "detail": "705 open issues for 468,447 stars (0.2%)."
+        "detail": "672 open issues for 469,226 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,10 +104,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 10,671 stars (2,347 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 114,506 forks for 468,447 stars (24.4%).",
+      "Burst pattern: Largest 24h jump was 8,733 stars (2,023 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 114,664 forks for 469,226 stars (24.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 672 open issues for 469,226 stars (0.1%)."
+    ]
   }
 }

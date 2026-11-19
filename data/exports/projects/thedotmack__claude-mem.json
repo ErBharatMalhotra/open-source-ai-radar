@@ -4,37 +4,58 @@
   "description": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 118303,
-  "forks": 10290,
-  "open_issues": 59,
+  "topics": [
+    "ai",
+    "ai-agents",
+    "ai-memory",
+    "anthropic",
+    "artificial-intelligence",
+    "claude",
+    "claude-agent-sdk",
+    "claude-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-skills",
+    "long-term-memory",
+    "mem0",
+    "openmemory",
+    "supermemory",
+    "chromadb",
+    "sqlite",
+    "embeddings",
+    "memory-engine",
+    "rag"
+  ],
+  "stars": 118329,
+  "forks": 10292,
+  "open_issues": 55,
   "watchers": 365,
   "created_at": "2025-08-31T20:50:03Z",
-  "pushed_at": "2026-11-19T07:27:56Z",
+  "pushed_at": "2026-11-19T12:28:28Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/thedotmack.png",
-  "radar_score": 77.0,
+  "radar_score": 76.98,
   "impact": 99.2,
-  "velocity": 64.96,
+  "velocity": 64.89,
   "health": 58.35,
-  "global_percentile": 73.71,
+  "global_percentile": 69.57,
   "category": "AI Coding Tools",
   "sub_category": "code completion",
   "summary": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
   "maturity": "Unknown",
-  "stars_7d": 2242,
-  "stars_30d": 14426,
-  "stars_90d": 14426,
-  "star_growth_rate_7d": 320.2857142857143,
-  "star_growth_rate_30d": 686.952380952381,
-  "star_growth_acceleration": 0.4662415083876334,
-  "forks_7d": 219,
-  "forks_30d": 1116,
+  "stars_7d": 2206,
+  "stars_30d": 14397,
+  "stars_90d": 14397,
+  "star_growth_rate_7d": 315.14285714285717,
+  "star_growth_rate_30d": 685.5714285714286,
+  "star_growth_acceleration": 0.45967909981246097,
+  "forks_7d": 214,
+  "forks_30d": 1118,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 358,
+  "snapshot_count": 359,
   "authenticity": {
-    "organic_confidence": 77.4,
+    "organic_confidence": 77.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 95.3,
         "weight": 0.22,
-        "detail": "10,282 forks for 118,271 stars (8.7%)."
+        "detail": "10,292 forks for 118,329 stars (8.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.2,
+        "score": 75.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 1,647 stars (128 forks, 3.0x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.9,
+        "score": 29.6,
         "weight": 0.12,
-        "detail": "58 open issues for 118,271 stars (0.0%)."
+        "detail": "55 open issues for 118,329 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,11 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 1,647 stars (128 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 10,282 forks for 118,271 stars (8.7%).",
+      "Fork-to-star ratio: 10,292 forks for 118,329 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 58 open issues for 118,271 stars (0.0%)."
+      "Issue engagement: 55 open issues for 118,329 stars (0.0%)."
     ]
   }
 }

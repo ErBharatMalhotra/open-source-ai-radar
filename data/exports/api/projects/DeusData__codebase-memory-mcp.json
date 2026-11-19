@@ -4,8 +4,29 @@
   "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
   "language": "C",
   "license": "MIT",
-  "topics": [],
-  "stars": 48849,
+  "topics": [
+    "claude-code",
+    "code-analysis",
+    "code-intelligence",
+    "developer-tools",
+    "knowledge-graph",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "sqlite",
+    "tree-sitter",
+    "codex",
+    "cursor",
+    "windsurf",
+    "aider",
+    "gemini-cli",
+    "graph-visualization",
+    "kilocode",
+    "opencode",
+    "ast",
+    "cypher"
+  ],
+  "stars": 48858,
   "forks": 4061,
   "open_issues": 506,
   "watchers": 167,
@@ -17,24 +38,24 @@
   "impact": 97.47,
   "velocity": 69.91,
   "health": 63.75,
-  "global_percentile": 92.86,
+  "global_percentile": 92.14,
   "category": "MCP",
   "sub_category": "server",
   "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph \u2014 average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
   "maturity": "Unknown",
-  "stars_7d": 355,
-  "stars_30d": 1141,
-  "stars_90d": 1141,
-  "star_growth_rate_7d": 50.714285714285715,
-  "star_growth_rate_30d": 54.333333333333336,
-  "star_growth_acceleration": 0.9333917616126205,
-  "forks_7d": 44,
-  "forks_30d": 135,
+  "stars_7d": 358,
+  "stars_30d": 1145,
+  "stars_90d": 1145,
+  "star_growth_rate_7d": 51.142857142857146,
+  "star_growth_rate_30d": 54.523809523809526,
+  "star_growth_acceleration": 0.9379912663755459,
+  "forks_7d": 47,
+  "forks_30d": 137,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 359,
+  "snapshot_count": 360,
   "authenticity": {
-    "organic_confidence": 89.9,
+    "organic_confidence": 89.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 93.9,
         "weight": 0.22,
-        "detail": "4,057 forks for 48,835 stars (8.3%)."
+        "detail": "4,061 forks for 48,858 stars (8.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.1,
+        "score": 88.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 128 stars (11 forks, 2.1x the daily average)."
       },
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 75.5,
         "weight": 0.12,
-        "detail": "504 open issues for 48,835 stars (1.0%)."
+        "detail": "506 open issues for 48,858 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 504 open issues for 48,835 stars (1.0%).",
+      "Issue engagement: 506 open issues for 48,858 stars (1.0%).",
       "Burst pattern: Largest 24h jump was 128 stars (11 forks, 2.1x the daily average).",
-      "Fork-to-star ratio: 4,057 forks for 48,835 stars (8.3%)."
+      "Fork-to-star ratio: 4,061 forks for 48,858 stars (8.3%)."
     ],
     "red_flags": []
   }

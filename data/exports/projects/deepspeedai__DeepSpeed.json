@@ -4,10 +4,24 @@
   "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 43338,
+  "topics": [
+    "deep-learning",
+    "pytorch",
+    "gpu",
+    "machine-learning",
+    "billion-parameters",
+    "data-parallelism",
+    "model-parallelism",
+    "inference",
+    "pipeline-parallelism",
+    "compression",
+    "mixture-of-experts",
+    "trillion-parameters",
+    "zero"
+  ],
+  "stars": 43337,
   "forks": 5078,
-  "open_issues": 1224,
+  "open_issues": 1225,
   "watchers": 351,
   "created_at": "2020-01-23T18:35:18Z",
   "pushed_at": "2026-11-19T05:11:38Z",
@@ -17,24 +31,24 @@
   "impact": 98.03,
   "velocity": 64.28,
   "health": 63.75,
-  "global_percentile": 79.43,
+  "global_percentile": 75.86,
   "category": "AI Infrastructure",
   "sub_category": "model serving",
   "summary": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
   "maturity": "Unknown",
-  "stars_7d": 20,
-  "stars_30d": 77,
-  "stars_90d": 77,
-  "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 3.08,
-  "star_growth_acceleration": 0.9276437847866419,
-  "forks_7d": 2,
-  "forks_30d": 17,
+  "stars_7d": 16,
+  "stars_30d": 74,
+  "stars_90d": 74,
+  "star_growth_rate_7d": 2.2857142857142856,
+  "star_growth_rate_30d": 2.96,
+  "star_growth_acceleration": 0.7722007722007722,
+  "forks_7d": 4,
+  "forks_30d": 20,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 289,
+  "snapshot_count": 290,
   "authenticity": {
-    "organic_confidence": 90.4,
+    "organic_confidence": 89.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +57,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "5,075 forks for 43,339 stars (11.7%)."
+        "detail": "5,078 forks for 43,337 stars (11.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.8,
+        "score": 75.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 9 stars (3 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 9 stars (3 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +83,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 92.7,
+        "score": 92.8,
         "weight": 0.12,
-        "detail": "1,224 open issues for 43,339 stars (2.8%)."
+        "detail": "1,225 open issues for 43,337 stars (2.8%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +96,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 9 stars (3 forks, 2.9x the daily average).",
-      "Issue engagement: 1,224 open issues for 43,339 stars (2.8%).",
-      "Fork-to-star ratio: 5,075 forks for 43,339 stars (11.7%)."
+      "Burst pattern: Largest 24h jump was 9 stars (3 forks, 3.0x the daily average).",
+      "Issue engagement: 1,225 open issues for 43,337 stars (2.8%).",
+      "Fork-to-star ratio: 5,078 forks for 43,337 stars (11.7%)."
     ],
     "red_flags": []
   }

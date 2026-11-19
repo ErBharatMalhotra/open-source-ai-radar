@@ -4,8 +4,13 @@
   "description": "Run your GitHub Actions locally \ud83d\ude80",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 72742,
+  "topics": [
+    "github-actions",
+    "golang",
+    "ci",
+    "devops"
+  ],
+  "stars": 72743,
   "forks": 2128,
   "open_issues": 175,
   "watchers": 201,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-16T04:16:49Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nektos.png",
-  "radar_score": 75.44,
-  "impact": 97.31,
-  "velocity": 62.56,
-  "health": 58.46,
-  "global_percentile": 58.57,
+  "radar_score": 75.34,
+  "impact": 97.32,
+  "velocity": 62.54,
+  "health": 58.1,
+  "global_percentile": 52.71,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Run your GitHub Actions locally \ud83d\ude80",
   "maturity": "Unknown",
-  "stars_7d": 96,
+  "stars_7d": 97,
   "stars_30d": 323,
   "stars_90d": 323,
-  "star_growth_rate_7d": 13.714285714285714,
+  "star_growth_rate_7d": 13.857142857142858,
   "star_growth_rate_30d": 11.962962962962964,
-  "star_growth_acceleration": 1.1463954002653691,
+  "star_growth_acceleration": 1.1583370190181335,
   "forks_7d": 9,
   "forks_30d": 58,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 290,
+  "days_since_last_push": 3,
+  "freshness_score": 0.9704455335485082,
+  "snapshot_count": 291,
   "authenticity": {
-    "organic_confidence": 76.6,
+    "organic_confidence": 76.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 68.2,
         "weight": 0.22,
-        "detail": "2,128 forks for 72,739 stars (2.9%)."
+        "detail": "2,128 forks for 72,743 stars (2.9%)."
       },
       {
         "key": "burst",
@@ -69,21 +74,21 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 47.3,
+        "score": 47.0,
         "weight": 0.12,
-        "detail": "179 open issues for 72,739 stars (0.2%)."
+        "detail": "175 open issues for 72,743 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 24 stars (3 forks, 2.0x the daily average).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 3 days ago."
     ],
     "red_flags": []
   }

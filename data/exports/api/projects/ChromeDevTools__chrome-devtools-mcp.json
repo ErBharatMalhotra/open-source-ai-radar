@@ -4,35 +4,44 @@
   "description": "Chrome DevTools for coding agents",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 58278,
-  "forks": 4879,
-  "open_issues": 89,
+  "topics": [
+    "mcp-server",
+    "puppeteer",
+    "chrome-devtools",
+    "browser",
+    "chrome",
+    "debugging",
+    "devtools",
+    "mcp"
+  ],
+  "stars": 58300,
+  "forks": 4882,
+  "open_issues": 87,
   "watchers": 254,
   "created_at": "2025-09-11T10:39:55Z",
-  "pushed_at": "2026-11-19T09:17:31Z",
+  "pushed_at": "2026-11-19T11:53:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ChromeDevTools.png",
   "radar_score": 78.04,
-  "impact": 98.08,
-  "velocity": 65.34,
+  "impact": 98.09,
+  "velocity": 65.32,
   "health": 63.75,
-  "global_percentile": 82.86,
+  "global_percentile": 80.29,
   "category": "MCP",
   "sub_category": "tool",
   "summary": "Chrome DevTools for coding agents",
   "maturity": "Unknown",
-  "stars_7d": 3141,
-  "stars_30d": 4029,
-  "stars_90d": 4029,
-  "star_growth_rate_7d": 448.7142857142857,
-  "star_growth_rate_30d": 175.17391304347825,
-  "star_growth_acceleration": 2.5615360068077866,
-  "forks_7d": 295,
-  "forks_30d": -1005,
+  "stars_7d": 3200,
+  "stars_30d": 4089,
+  "stars_90d": 4089,
+  "star_growth_rate_7d": 457.14285714285717,
+  "star_growth_rate_30d": 177.7826086956522,
+  "star_growth_acceleration": 2.5713586975509206,
+  "forks_7d": 296,
+  "forks_30d": -1004,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 350,
+  "snapshot_count": 351,
   "authenticity": {
     "organic_confidence": 68.8,
     "verdict": "likely_organic",
@@ -41,14 +50,14 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 94.2,
+        "score": 94.1,
         "weight": 0.22,
-        "detail": "4,878 forks for 58,233 stars (8.4%)."
+        "detail": "4,882 forks for 58,300 stars (8.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 46.8,
+        "score": 47.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 845 stars (155 forks, 5.8x the daily average)."
       },
@@ -69,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.3,
+        "score": 39.9,
         "weight": 0.12,
-        "detail": "89 open issues for 58,233 stars (0.2%)."
+        "detail": "87 open issues for 58,300 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +91,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,878 forks for 58,233 stars (8.4%).",
+      "Fork-to-star ratio: 4,882 forks for 58,300 stars (8.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 87 open issues for 58,300 stars (0.1%)."
+    ]
   }
 }

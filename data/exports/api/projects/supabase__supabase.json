@@ -4,53 +4,73 @@
   "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 115146,
-  "forks": 15134,
-  "open_issues": 307,
+  "topics": [
+    "firebase",
+    "supabase",
+    "realtime",
+    "postgrest",
+    "postgres",
+    "postgresql",
+    "websockets",
+    "deno",
+    "embeddings",
+    "vectors",
+    "alternative",
+    "auth",
+    "database",
+    "example",
+    "nextjs",
+    "oauth2",
+    "pgvector",
+    "postgis",
+    "ai"
+  ],
+  "stars": 115154,
+  "forks": 15138,
+  "open_issues": 306,
   "watchers": 794,
   "created_at": "2019-10-12T05:56:49Z",
-  "pushed_at": "2026-11-19T09:30:07Z",
+  "pushed_at": "2026-11-19T12:30:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/supabase.png",
   "radar_score": 79.43,
   "impact": 99.53,
   "velocity": 67.66,
   "health": 63.75,
-  "global_percentile": 93.14,
+  "global_percentile": 92.43,
   "category": "AI Infrastructure",
   "sub_category": "",
   "summary": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
   "maturity": "Unknown",
-  "stars_7d": 288,
-  "stars_30d": 876,
-  "stars_90d": 876,
-  "star_growth_rate_7d": 41.142857142857146,
-  "star_growth_rate_30d": 41.714285714285715,
-  "star_growth_acceleration": 0.9863013698630138,
-  "forks_7d": 41,
-  "forks_30d": -1191,
+  "stars_7d": 322,
+  "stars_30d": 903,
+  "stars_90d": 903,
+  "star_growth_rate_7d": 46.0,
+  "star_growth_rate_30d": 43.0,
+  "star_growth_acceleration": 1.069767441860465,
+  "forks_7d": 45,
+  "forks_30d": -1189,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 349,
+  "snapshot_count": 350,
   "authenticity": {
-    "organic_confidence": 64.3,
-    "verdict": "mixed",
-    "label": "Mixed Signals",
+    "organic_confidence": 72.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "15,130 forks for 115,114 stars (13.1%)."
+        "detail": "15,138 forks for 115,154 stars (13.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 25.4,
+        "score": 48.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 545 stars (-401 forks, 5.2x the daily average). Forks did not move at all."
+        "detail": "Largest 24h jump was 543 stars (103 forks, 5.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +91,7 @@
         "label": "Issue engagement",
         "score": 48.3,
         "weight": 0.12,
-        "detail": "306 open issues for 115,114 stars (0.3%)."
+        "detail": "306 open issues for 115,154 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +102,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 15,130 forks for 115,114 stars (13.1%).",
+      "Fork-to-star ratio: 15,138 forks for 115,154 stars (13.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Burst pattern: Largest 24h jump was 545 stars (-401 forks, 5.2x the daily average). Forks did not move at all."
-    ]
+    "red_flags": []
   }
 }

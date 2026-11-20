@@ -4,37 +4,46 @@
   "description": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10170,
+  "topics": [
+    "transformers",
+    "vllm",
+    "large-language-models",
+    "raylib",
+    "reinforcement-learning-from-human-feedback",
+    "reinforcement-learning",
+    "proximal-policy-optimization",
+    "visual-language-models"
+  ],
+  "stars": 10169,
   "forks": 1065,
-  "open_issues": 317,
+  "open_issues": 320,
   "watchers": 52,
   "created_at": "2023-07-30T02:20:13Z",
   "pushed_at": "2026-11-03T03:17:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OpenRLHF.png",
-  "radar_score": 68.19,
-  "impact": 90.45,
-  "velocity": 49.73,
+  "radar_score": 68.2,
+  "impact": 90.47,
+  "velocity": 49.72,
   "health": 58.42,
-  "global_percentile": 12.0,
+  "global_percentile": 17.0,
   "category": "Multimodal AI",
   "sub_category": "vision-language",
   "summary": "An Easy-to-use, Scalable and High-performance Agentic RL Framework based on Ray (PPO & DAPO & REINFORCE++ &  VLM & TIS & vLLM & Ray & Async  RL)",
   "maturity": "Unknown",
-  "stars_7d": 20,
-  "stars_30d": 71,
-  "stars_90d": 109,
-  "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 2.3666666666666667,
-  "star_growth_acceleration": 1.2072434607645874,
+  "stars_7d": 18,
+  "stars_30d": 69,
+  "stars_90d": 107,
+  "star_growth_rate_7d": 2.5714285714285716,
+  "star_growth_rate_30d": 2.3,
+  "star_growth_acceleration": 1.1180124223602486,
   "forks_7d": 2,
-  "forks_30d": 18,
+  "forks_30d": 17,
   "days_since_last_push": 16,
   "freshness_score": 0.8521437889662113,
-  "snapshot_count": 183,
+  "snapshot_count": 184,
   "authenticity": {
-    "organic_confidence": 90.7,
+    "organic_confidence": 89.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +52,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "1,065 forks for 10,170 stars (10.5%)."
+        "detail": "1,065 forks for 10,169 stars (10.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 80.6,
+        "score": 77.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 2.6x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 2.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 93.7,
+        "score": 93.8,
         "weight": 0.12,
-        "detail": "317 open issues for 10,170 stars (3.1%)."
+        "detail": "320 open issues for 10,169 stars (3.1%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +91,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.6x the daily average).",
+      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.8x the daily average).",
       "Maintenance cadence: Last push 16 days ago.",
-      "Issue engagement: 317 open issues for 10,170 stars (3.1%)."
+      "Issue engagement: 320 open issues for 10,169 stars (3.1%)."
     ],
     "red_flags": []
   }

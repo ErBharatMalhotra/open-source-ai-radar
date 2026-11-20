@@ -11,7 +11,7 @@ Unlike traditional star-count leaderboards, Radar uses **three-axis scoring** (I
 **[Live Radar](https://radar.bharatdn.com/)** | **[API Docs](https://radar.bharatdn.com/api-docs/)** | **[RSS](https://radar.bharatdn.com/api/feed.xml)**
 
 <!-- LIVE-STATS:START -->
-**Tracking 10,504 repos · 75% auto-classified into 11 AI categories · 44.9M stars tracked · Updated 2026-11-19 23:12 UTC**
+**Tracking 10,504 repos · 75% auto-classified into 11 AI categories · 44.9M stars tracked · Updated 2026-11-20 03:03 UTC**
 <!-- LIVE-STATS:END -->
 
 ---

@@ -3,8 +3,7 @@ name: Discover Repos
 
 on:
   schedule:
-    - cron: "0 2 * * *"
-    - cron: "0 14 * * *"
+    - cron: "0 2,8,14,20 * * *"
   workflow_dispatch:
     inputs:
       force_classify:

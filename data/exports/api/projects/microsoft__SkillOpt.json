@@ -4,12 +4,9 @@
   "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
   "language": "Python",
   "license": "MIT",
-  "topics": [
-    "agent-skills",
-    "self-evolving-agents"
-  ],
-  "stars": 19163,
-  "forks": 1835,
+  "topics": [],
+  "stars": 19167,
+  "forks": 1834,
   "open_issues": 33,
   "watchers": 66,
   "created_at": "2026-05-08T06:41:01Z",
@@ -37,7 +34,7 @@
   "freshness_score": 0.9801986733067553,
   "snapshot_count": 322,
   "authenticity": {
-    "organic_confidence": 86.1,
+    "organic_confidence": 86.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -51,7 +48,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.6,
+        "score": 91.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 35 stars (4 forks, 1.8x the daily average)."
       },
@@ -79,15 +76,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 35 stars (4 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 1,835 forks for 19,163 stars (9.6%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 1,835 forks for 19,163 stars (9.6%)."
     ],
     "red_flags": []
   }

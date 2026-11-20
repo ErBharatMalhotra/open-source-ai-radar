@@ -1,61 +1,40 @@
 {
   "full_name": "tonhowtf/omniget",
   "url": "https://github.com/tonhowtf/omniget",
-  "description": "A local MCP server that gives your coding agent a desktop toolbox: downloads from YouTube, torrents and every site yt-dlp supports, media conversion, files, chats and system cleanup. One line connects Claude Code, Codex, Cursor or Gemini CLI, and sensitive actions wait for your click. Free and open source for Windows, macOS and Linux.",
+  "description": "Local MCP server that lets Claude Code, Codex, Cursor and Gemini CLI use your own computer and your own logged-in accounts: chats, feeds, browser, files and downloads. Also a downloader for video, music and the courses you bought. Everything stays on your machine. Windows, macOS, Linux.",
   "language": "Rust",
   "license": "GPL-3.0",
-  "topics": [
-    "download-manager",
-    "instagram-downloader",
-    "media-downloader",
-    "tiktok-downloader",
-    "video-downloader",
-    "youtube-downloader",
-    "yt-dlp",
-    "downloader",
-    "yt-dlp-gui",
-    "agent-client-protocol",
-    "claude-code",
-    "codex-cli",
-    "coding-agent",
-    "local-llm",
-    "mcp-server",
-    "gallery-dl",
-    "model-context-protocol",
-    "torrent",
-    "omniget",
-    "mcp"
-  ],
-  "stars": 14507,
-  "forks": 1252,
+  "topics": [],
+  "stars": 14513,
+  "forks": 1254,
   "open_issues": 14,
   "watchers": 47,
   "created_at": "2026-02-11T22:44:56Z",
-  "pushed_at": "2026-11-20T00:27:06Z",
+  "pushed_at": "2026-11-20T12:44:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tonhowtf.png",
   "radar_score": 74.37,
   "impact": 91.59,
   "velocity": 66.14,
   "health": 58.35,
-  "global_percentile": 49.71,
+  "global_percentile": 51.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Udemy & Hotmart course downloader, YouTube downloader (yt-dlp GUI, 1,800+ sites) + desktop app for AI agents: Claude Code, Codex, Gemini CLI, Ollama. Permissions, undo, jobs, loops until tests pass, MCP server, 156 tools, course player. Free and open source for Windows, macOS and Linux. No terminal.",
   "maturity": "Unknown",
-  "stars_7d": 140,
-  "stars_30d": 140,
-  "stars_90d": 600,
-  "star_growth_rate_7d": 20.0,
-  "star_growth_rate_30d": 20.0,
+  "stars_7d": 142,
+  "stars_30d": 142,
+  "stars_90d": 602,
+  "star_growth_rate_7d": 20.285714285714285,
+  "star_growth_rate_30d": 20.285714285714285,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 9,
-  "forks_30d": 9,
+  "forks_7d": 11,
+  "forks_30d": 11,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 60,
+  "snapshot_count": 62,
   "authenticity": {
-    "organic_confidence": 83.9,
+    "organic_confidence": 83.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -64,14 +43,14 @@
         "label": "Fork-to-star ratio",
         "score": 95.1,
         "weight": 0.22,
-        "detail": "1,252 forks for 14,507 stars (8.6%)."
+        "detail": "1,254 forks for 14,509 stars (8.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.5,
+        "score": 90.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 36 stars (1 forks, 1.8x the daily average)."
+        "detail": "Largest 24h jump was 36 stars (1 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -90,9 +69,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 34.7,
+        "score": 34.6,
         "weight": 0.12,
-        "detail": "14 open issues for 14,507 stars (0.1%)."
+        "detail": "14 open issues for 14,509 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -103,12 +82,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 36 stars (1 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 1,252 forks for 14,507 stars (8.6%).",
+      "Burst pattern: Largest 24h jump was 36 stars (1 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 1,254 forks for 14,509 stars (8.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 14 open issues for 14,507 stars (0.1%)."
+      "Issue engagement: 14 open issues for 14,509 stars (0.1%)."
     ]
   }
 }

@@ -4,7 +4,22 @@
   "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "claude",
+    "gemini",
+    "ollama",
+    "openai",
+    "function-calling",
+    "cli",
+    "llm",
+    "rag",
+    "ai",
+    "rust",
+    "ai-agents",
+    "chatbot",
+    "shell",
+    "webui"
+  ],
   "stars": 10591,
   "forks": 758,
   "open_issues": 55,
@@ -13,26 +28,26 @@
   "pushed_at": "2026-02-23T11:16:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/sigoden.png",
-  "radar_score": 60.51,
+  "radar_score": 60.5,
   "impact": 90.89,
-  "velocity": 41.02,
-  "health": 39.19,
-  "global_percentile": 2.14,
+  "velocity": 41.01,
+  "health": 39.18,
+  "global_percentile": 0.71,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
   "maturity": "Unknown",
-  "stars_7d": 21,
-  "stars_30d": 84,
-  "stars_90d": 98,
-  "star_growth_rate_7d": 3.0,
-  "star_growth_rate_30d": 2.8,
-  "star_growth_acceleration": 1.0714285714285714,
-  "forks_7d": 5,
-  "forks_30d": -93,
-  "days_since_last_push": 270,
-  "freshness_score": 0.06720551273974976,
-  "snapshot_count": 192,
+  "stars_7d": 20,
+  "stars_30d": 85,
+  "stars_90d": 99,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 2.8333333333333335,
+  "star_growth_acceleration": 1.0084033613445378,
+  "forks_7d": 4,
+  "forks_30d": 11,
+  "days_since_last_push": 271,
+  "freshness_score": 0.06653680671501686,
+  "snapshot_count": 193,
   "authenticity": {
     "organic_confidence": 75.6,
     "verdict": "likely_organic",
@@ -43,12 +58,12 @@
         "label": "Fork-to-star ratio",
         "score": 89.8,
         "weight": 0.22,
-        "detail": "758 forks for 10,588 stars (7.2%)."
+        "detail": "758 forks for 10,591 stars (7.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.8,
+        "score": 87.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 6 stars (1 forks, 2.2x the daily average)."
       },
@@ -71,22 +86,22 @@
         "label": "Issue engagement",
         "score": 60.6,
         "weight": 0.12,
-        "detail": "55 open issues for 10,588 stars (0.5%)."
+        "detail": "55 open issues for 10,591 stars (0.5%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 35.3,
+        "score": 35.2,
         "weight": 0.1,
-        "detail": "Last push 270 days ago."
+        "detail": "Last push 271 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 6 stars (1 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 758 forks for 10,588 stars (7.2%)."
+      "Fork-to-star ratio: 758 forks for 10,591 stars (7.2%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 270 days ago."
+      "Maintenance cadence: Last push 271 days ago."
     ]
   }
 }

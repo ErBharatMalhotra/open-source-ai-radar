@@ -24,16 +24,16 @@
   "maturity": "Unknown",
   "snapshot_count": 0,
   "authenticity": {
-    "organic_confidence": 78.2,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 87.2,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "98 forks for 804 stars (12.2%)."
+        "detail": "97 forks for 804 stars (12.1%)."
       },
       {
         "key": "burst",
@@ -66,13 +66,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 60.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 124 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 98 forks for 804 stars (12.2%)."
+      "Fork-to-star ratio: 97 forks for 804 stars (12.1%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

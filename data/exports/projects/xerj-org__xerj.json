@@ -4,37 +4,58 @@
   "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 19145,
-  "forks": 1206,
+  "topics": [
+    "elasticsearch",
+    "hybrid-search",
+    "search-engine",
+    "vector-search",
+    "agent-memory",
+    "ai-agents",
+    "bm25",
+    "claude-code",
+    "cli",
+    "code-search",
+    "cursor",
+    "full-text-search",
+    "jsonl",
+    "local-first",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "rag",
+    "rust",
+    "database"
+  ],
+  "stars": 19179,
+  "forks": 1207,
   "open_issues": 89,
   "watchers": 183,
   "created_at": "2026-06-30T04:32:45Z",
-  "pushed_at": "2026-11-21T08:27:29Z",
+  "pushed_at": "2026-11-21T10:27:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/xerj-org.png",
-  "radar_score": 77.51,
+  "radar_score": 77.49,
   "impact": 94.19,
-  "velocity": 68.27,
+  "velocity": 68.21,
   "health": 63.75,
-  "global_percentile": 74.71,
+  "global_percentile": 73.57,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible,",
   "maturity": "Unknown",
-  "stars_7d": 105,
-  "stars_30d": 1492,
-  "stars_90d": 1492,
-  "star_growth_rate_7d": 15.0,
-  "star_growth_rate_30d": 71.04761904761905,
-  "star_growth_acceleration": 0.2111260053619303,
+  "stars_7d": 157,
+  "stars_30d": 1517,
+  "stars_90d": 1517,
+  "star_growth_rate_7d": 22.428571428571427,
+  "star_growth_rate_30d": 72.23809523809524,
+  "star_growth_acceleration": 0.3104812129202373,
   "forks_7d": -200,
-  "forks_30d": -152,
+  "forks_30d": -154,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 138,
+  "snapshot_count": 139,
   "authenticity": {
-    "organic_confidence": 65.0,
+    "organic_confidence": 64.6,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 86.7,
         "weight": 0.22,
-        "detail": "1,204 forks for 19,113 stars (6.3%)."
+        "detail": "1,207 forks for 19,179 stars (6.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 33.0,
+        "score": 32.9,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1,619 stars (66 forks, 7.8x the daily average)."
+        "detail": "Largest 24h jump was 1,619 stars (66 forks, 7.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 59.9,
+        "score": 58.2,
         "weight": 0.12,
-        "detail": "95 open issues for 19,113 stars (0.5%)."
+        "detail": "89 open issues for 19,179 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +103,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,204 forks for 19,113 stars (6.3%).",
+      "Fork-to-star ratio: 1,207 forks for 19,179 stars (6.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 1,619 stars (66 forks, 7.8x the daily average)."
+      "Burst pattern: Largest 24h jump was 1,619 stars (66 forks, 7.9x the daily average)."
     ]
   }
 }

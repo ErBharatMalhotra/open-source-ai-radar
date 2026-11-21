@@ -4,10 +4,21 @@
   "description": "Your own always-on AI assistant: self-hosted, open source, lightweight. Each agent runs in its own container on your machine, on the harness you choose (Claude Code, Codex, Cursor, OpenCode). Talk to it from Slack, WhatsApp, Telegram, Discord and more.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 31132,
-  "forks": 12637,
-  "open_issues": 315,
+  "topics": [
+    "ai-agents",
+    "ai-assistant",
+    "claude-code",
+    "claude-skills",
+    "openclaw",
+    "codex",
+    "cursor",
+    "docker",
+    "opencode",
+    "self-hosted"
+  ],
+  "stars": 31133,
+  "forks": 12638,
+  "open_issues": 316,
   "watchers": 124,
   "created_at": "2026-01-31T15:47:22Z",
   "pushed_at": "2026-11-21T08:25:34Z",
@@ -15,7 +26,7 @@
   "owner_avatar": "https://github.com/nanocoai.png",
   "radar_score": 81.82,
   "impact": 96.84,
-  "velocity": 79.41,
+  "velocity": 79.42,
   "health": 61.15,
   "global_percentile": 99.57,
   "category": "AI Agents",
@@ -23,19 +34,19 @@
   "summary": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
   "maturity": "Unknown",
   "stars_7d": 20,
-  "stars_30d": 99,
-  "stars_90d": 99,
+  "stars_30d": 97,
+  "stars_90d": 97,
   "star_growth_rate_7d": 2.857142857142857,
-  "star_growth_rate_30d": 4.125,
-  "star_growth_acceleration": 0.6926406926406926,
-  "forks_7d": -4,
-  "forks_30d": -70,
+  "star_growth_rate_30d": 4.041666666666667,
+  "star_growth_acceleration": 0.706921944035346,
+  "forks_7d": -3,
+  "forks_30d": -68,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 322,
+  "snapshot_count": 323,
   "why_trending": "Steady growth with 20 new stars this week. Above-average growth velocity. Active in the AI Agents category.",
   "authenticity": {
-    "organic_confidence": 83.8,
+    "organic_confidence": 83.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "12,637 forks for 31,132 stars (40.6%)."
+        "detail": "12,638 forks for 31,133 stars (40.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 71.2,
+        "score": 70.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 17 stars (0 forks, 3.3x the daily average)."
+        "detail": "Largest 24h jump was 17 stars (0 forks, 3.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 75.1,
+        "score": 75.2,
         "weight": 0.12,
-        "detail": "314 open issues for 31,132 stars (1.0%)."
+        "detail": "316 open issues for 31,133 stars (1.0%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +94,8 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 314 open issues for 31,132 stars (1.0%).",
-      "Fork-to-star ratio: 12,637 forks for 31,132 stars (40.6%).",
+      "Issue engagement: 316 open issues for 31,133 stars (1.0%).",
+      "Fork-to-star ratio: 12,638 forks for 31,133 stars (40.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

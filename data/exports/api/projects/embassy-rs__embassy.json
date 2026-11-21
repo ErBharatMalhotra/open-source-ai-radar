@@ -4,7 +4,14 @@
   "description": "Modern embedded framework, using Rust and async.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "async",
+    "embedded",
+    "executor",
+    "rust",
+    "hal",
+    "drivers"
+  ],
   "stars": 10136,
   "forks": 1756,
   "open_issues": 390,
@@ -17,7 +24,7 @@
   "impact": 91.13,
   "velocity": 55.88,
   "health": 63.75,
-  "global_percentile": 27.0,
+  "global_percentile": 24.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Modern embedded framework, using Rust and async.",
@@ -32,9 +39,9 @@
   "forks_30d": 53,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 236,
+  "snapshot_count": 237,
   "authenticity": {
-    "organic_confidence": 95.1,
+    "organic_confidence": 95.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +55,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.4,
+        "score": 89.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 10 stars (3 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 10 stars (3 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 10 stars (3 forks, 2.0x the daily average).",
+      "Burst pattern: Largest 24h jump was 10 stars (3 forks, 2.1x the daily average).",
       "Issue engagement: 390 open issues for 10,136 stars (3.8%).",
       "Fork-to-star ratio: 1,756 forks for 10,136 stars (17.3%)."
     ],

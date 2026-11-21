@@ -4,9 +4,13 @@
   "description": "Embeddable Postgres with real-time, reactive bindings.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "database",
+    "postgres",
+    "wasm"
+  ],
   "stars": 16353,
-  "forks": 481,
+  "forks": 480,
   "open_issues": 118,
   "watchers": 64,
   "created_at": "2024-02-19T14:37:38Z",
@@ -14,25 +18,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/electric-sql.png",
   "radar_score": 72.07,
-  "impact": 90.56,
-  "velocity": 60.13,
+  "impact": 90.57,
+  "velocity": 60.12,
   "health": 59.2,
-  "global_percentile": 26.57,
+  "global_percentile": 28.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Embeddable Postgres with real-time, reactive bindings.",
   "maturity": "Unknown",
   "stars_7d": 5,
   "stars_30d": 178,
-  "stars_90d": 214,
+  "stars_90d": 211,
   "star_growth_rate_7d": 5.0,
   "star_growth_rate_30d": 5.933333333333334,
   "star_growth_acceleration": 0.8426966292134831,
-  "forks_7d": -1,
-  "forks_30d": 20,
+  "forks_7d": -2,
+  "forks_30d": 19,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 199,
+  "snapshot_count": 201,
   "authenticity": {
     "organic_confidence": 82.6,
     "verdict": "organic",
@@ -41,16 +45,16 @@
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 68.3,
+        "score": 68.2,
         "weight": 0.22,
-        "detail": "481 forks for 16,353 stars (2.9%)."
+        "detail": "480 forks for 16,353 stars (2.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 96.6,
+        "score": 96.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 8 stars (1 forks, 1.3x the daily average)."
+        "detail": "Largest 24h jump was 8 stars (1 forks, 1.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +86,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 8 stars (1 forks, 1.3x the daily average).",
+      "Burst pattern: Largest 24h jump was 8 stars (1 forks, 1.4x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

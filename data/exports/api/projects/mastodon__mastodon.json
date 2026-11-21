@@ -4,35 +4,45 @@
   "description": "Your self-hosted, globally interconnected microblogging community",
   "language": "Ruby",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 50601,
-  "forks": 7579,
+  "topics": [
+    "mastodon",
+    "docker",
+    "microblog",
+    "activity-stream",
+    "webfinger",
+    "social-network",
+    "activitypub",
+    "fediverse",
+    "social-web"
+  ],
+  "stars": 50603,
+  "forks": 7578,
   "open_issues": 4398,
   "watchers": 736,
   "created_at": "2016-02-22T15:01:25Z",
-  "pushed_at": "2026-11-20T16:49:16Z",
+  "pushed_at": "2026-11-21T04:22:32Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mastodon.png",
   "radar_score": 76.51,
   "impact": 98.63,
   "velocity": 62.93,
   "health": 60.15,
-  "global_percentile": 64.43,
+  "global_percentile": 65.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Your self-hosted, globally interconnected microblogging community",
   "maturity": "Unknown",
-  "stars_7d": 5,
-  "stars_30d": 156,
-  "stars_90d": 156,
-  "star_growth_rate_7d": 0.7142857142857143,
-  "star_growth_rate_30d": 5.777777777777778,
-  "star_growth_acceleration": 0.12362637362637363,
-  "forks_7d": -4,
-  "forks_30d": 54,
+  "stars_7d": 6,
+  "stars_30d": 153,
+  "stars_90d": 153,
+  "star_growth_rate_7d": 0.8571428571428571,
+  "star_growth_rate_30d": 5.884615384615385,
+  "star_growth_acceleration": 0.1456582633053221,
+  "forks_7d": -5,
+  "forks_30d": 55,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 296,
+  "snapshot_count": 298,
   "authenticity": {
     "organic_confidence": 68.6,
     "verdict": "likely_organic",
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.0,
         "weight": 0.22,
-        "detail": "7,579 forks for 50,601 stars (15.0%)."
+        "detail": "7,578 forks for 50,603 stars (15.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 12,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 197 stars (91 forks, 34.0x the daily average)."
+        "detail": "Largest 24h jump was 197 stars (91 forks, 33.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +81,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "4,397 open issues for 50,601 stars (8.7%)."
+        "detail": "4,398 open issues for 50,603 stars (8.7%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +92,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 7,579 forks for 50,601 stars (15.0%).",
-      "Issue engagement: 4,397 open issues for 50,601 stars (8.7%).",
+      "Fork-to-star ratio: 7,578 forks for 50,603 stars (15.0%).",
+      "Issue engagement: 4,398 open issues for 50,603 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 197 stars (91 forks, 34.0x the daily average)."
+      "Burst pattern: Largest 24h jump was 197 stars (91 forks, 33.6x the daily average)."
     ]
   }
 }

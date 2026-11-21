@@ -4,54 +4,75 @@
   "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
   "language": "Go",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 13764,
-  "forks": 5390,
+  "topics": [
+    "rea",
+    "ai",
+    "ai-agents",
+    "autonomous-agents",
+    "bug-bounty",
+    "docker",
+    "golang",
+    "linux",
+    "llm",
+    "mcp",
+    "nextjs",
+    "penetration-testing",
+    "pentest",
+    "postgresql",
+    "react",
+    "red-team",
+    "security",
+    "security-automation",
+    "sqlite",
+    "typescript"
+  ],
+  "stars": 13963,
+  "forks": 5453,
   "open_issues": 14,
-  "watchers": 91,
+  "watchers": 97,
   "created_at": "2026-10-08T21:14:39Z",
   "pushed_at": "2026-11-21T00:34:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/BaaRai.png",
-  "radar_score": 81.51,
-  "impact": 94.03,
-  "velocity": 81.73,
+  "radar_score": 81.3,
+  "impact": 94.28,
+  "velocity": 80.86,
   "health": 61.15,
-  "global_percentile": 99.29,
+  "global_percentile": 99.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 0,
+  "stars_7d": 370,
+  "stars_30d": 370,
+  "stars_90d": 370,
   "star_growth_rate_7d": 0.0,
   "star_growth_rate_30d": 0.0,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": 0,
+  "forks_7d": 100,
+  "forks_30d": 100,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 1,
-  "why_trending": "Among the fastest-growing projects in its category. Active in the Uncategorized category.",
+  "snapshot_count": 3,
+  "why_trending": "Strong momentum with 370 new stars this week. Among the fastest-growing projects in its category. High developer adoption with 100 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 81.3,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.8,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "5,353 forks for 13,593 stars (39.4%)."
+        "detail": "5,453 forks for 13,963 stars (39.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": null,
         "weight": 0.24,
-        "detail": "Not enough snapshots yet."
+        "detail": "History window too short."
       },
       {
         "key": "alignment",
@@ -70,9 +91,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.4,
+        "score": 35.0,
         "weight": 0.12,
-        "detail": "21 open issues for 13,593 stars (0.2%)."
+        "detail": "14 open issues for 13,963 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +104,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 5,353 forks for 13,593 stars (39.4%).",
+      "Fork-to-star ratio: 5,453 forks for 13,963 stars (39.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 14 open issues for 13,963 stars (0.1%)."
+    ]
   }
 }

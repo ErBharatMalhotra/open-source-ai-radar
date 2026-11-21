@@ -4,9 +4,30 @@
   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 80219,
-  "forks": 6278,
+  "topics": [
+    "agent",
+    "ai",
+    "anthropic",
+    "compression",
+    "context-engineering",
+    "context-window",
+    "fastapi",
+    "langchain",
+    "llm",
+    "mcp",
+    "openai",
+    "proxy",
+    "python",
+    "rag",
+    "token-optimization",
+    "claude-code",
+    "cursor",
+    "prompt-engineering",
+    "tokens",
+    "typescript"
+  ],
+  "stars": 80224,
+  "forks": 6277,
   "open_issues": 144,
   "watchers": 213,
   "created_at": "2026-01-07T19:58:51Z",
@@ -17,40 +38,40 @@
   "impact": 98.43,
   "velocity": 69.12,
   "health": 63.75,
-  "global_percentile": 93.14,
+  "global_percentile": 93.57,
   "category": "MCP",
   "sub_category": "server",
   "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
   "maturity": "Unknown",
-  "stars_7d": 735,
-  "stars_30d": 1955,
-  "stars_90d": 1955,
-  "star_growth_rate_7d": 105.0,
-  "star_growth_rate_30d": 88.86363636363636,
-  "star_growth_acceleration": 1.1815856777493607,
-  "forks_7d": 68,
-  "forks_30d": 188,
+  "stars_7d": 688,
+  "stars_30d": 1908,
+  "stars_90d": 1908,
+  "star_growth_rate_7d": 98.28571428571429,
+  "star_growth_rate_30d": 90.85714285714286,
+  "star_growth_acceleration": 1.0817610062893082,
+  "forks_7d": 51,
+  "forks_30d": 170,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 364,
+  "snapshot_count": 366,
   "authenticity": {
-    "organic_confidence": 78.2,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 84.0,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 92.2,
         "weight": 0.22,
-        "detail": "6,287 forks for 80,212 stars (7.8%)."
+        "detail": "6,277 forks for 80,224 stars (7.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.8,
+        "score": 90.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 308 stars (30 forks, 3.1x the daily average)."
+        "detail": "Largest 24h jump was 183 stars (15 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 43.0,
+        "score": 42.9,
         "weight": 0.12,
-        "detail": "144 open issues for 80,212 stars (0.2%)."
+        "detail": "144 open issues for 80,224 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +103,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,287 forks for 80,212 stars (7.8%).",
+      "Burst pattern: Largest 24h jump was 183 stars (15 forks, 2.0x the daily average).",
+      "Fork-to-star ratio: 6,277 forks for 80,224 stars (7.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

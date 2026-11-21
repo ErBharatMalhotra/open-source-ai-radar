@@ -4,37 +4,58 @@
   "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 9487,
-  "forks": 563,
-  "open_issues": 10,
+  "topics": [
+    "agent-collaboration",
+    "agent-orchestration",
+    "agent-team",
+    "ai-assistant",
+    "ai-team",
+    "ai-workflow",
+    "autonomous-agents",
+    "local-first",
+    "multi-agent",
+    "multi-agent-system",
+    "self-evolving-agents",
+    "agent-harness",
+    "claude-code-gui",
+    "claude-cowork",
+    "desktop-agent",
+    "agent-workflow",
+    "ai-automation",
+    "ai-employee",
+    "ai-productivity",
+    "task-automation"
+  ],
+  "stars": 9488,
+  "forks": 564,
+  "open_issues": 11,
   "watchers": 221,
   "created_at": "2026-04-29T12:19:08Z",
   "pushed_at": "2026-11-20T22:27:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Orkas-AI.png",
-  "radar_score": 74.91,
+  "radar_score": 74.97,
   "impact": 90.86,
-  "velocity": 64.65,
+  "velocity": 64.83,
   "health": 63.75,
-  "global_percentile": 54.43,
+  "global_percentile": 49.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Open-source multi-agent AI desktop client \u2014 build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection and skill crystallization. Local-first, BYO LLM keys (Claude \u00b7 OpenAI \u00b7 Gemini \u00b7 DeepSeek \u00b7 Kimi \u00b7 ",
   "maturity": "Unknown",
-  "stars_7d": 183,
-  "stars_30d": 2416,
-  "stars_90d": 2416,
-  "star_growth_rate_7d": 26.142857142857142,
-  "star_growth_rate_30d": 127.15789473684211,
-  "star_growth_acceleration": 0.20559366130558182,
-  "forks_7d": 14,
-  "forks_30d": 108,
+  "stars_7d": 155,
+  "stars_30d": 2429,
+  "stars_90d": 2429,
+  "star_growth_rate_7d": 22.142857142857142,
+  "star_growth_rate_30d": 127.84210526315789,
+  "star_growth_acceleration": 0.1732047285773099,
+  "forks_7d": 10,
+  "forks_30d": 109,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 43,
+  "snapshot_count": 44,
   "authenticity": {
-    "organic_confidence": 58.3,
+    "organic_confidence": 58.2,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 85.4,
         "weight": 0.22,
-        "detail": "563 forks for 9,479 stars (5.9%)."
+        "detail": "564 forks for 9,488 stars (5.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 27.5,
+        "score": 26.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1,212 stars (16 forks, 9.6x the daily average)."
+        "detail": "Largest 24h jump was 1,212 stars (16 forks, 9.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 35.5,
+        "score": 36.6,
         "weight": 0.12,
-        "detail": "10 open issues for 9,479 stars (0.1%)."
+        "detail": "11 open issues for 9,488 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 563 forks for 9,479 stars (5.9%).",
+      "Fork-to-star ratio: 564 forks for 9,488 stars (5.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 1,212 stars (16 forks, 9.6x the daily average).",
-      "Issue engagement: 10 open issues for 9,479 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 1,212 stars (16 forks, 9.9x the daily average).",
+      "Issue engagement: 11 open issues for 9,488 stars (0.1%)."
     ]
   }
 }

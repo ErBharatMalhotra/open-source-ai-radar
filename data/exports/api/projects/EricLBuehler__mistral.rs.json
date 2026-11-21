@@ -4,7 +4,11 @@
   "description": "Fast, flexible LLM inference",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "llm",
+    "rust",
+    "uqff"
+  ],
   "stars": 7852,
   "forks": 770,
   "open_issues": 259,
@@ -14,27 +18,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/EricLBuehler.png",
   "radar_score": 71.43,
-  "impact": 88.71,
+  "impact": 88.7,
   "velocity": 57.18,
   "health": 63.75,
-  "global_percentile": 30.57,
+  "global_percentile": 25.29,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "Fast, flexible LLM inference",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 89,
-  "stars_90d": 161,
-  "star_growth_rate_7d": 2.2857142857142856,
-  "star_growth_rate_30d": 2.966666666666667,
-  "star_growth_acceleration": 0.7704654895666131,
+  "stars_7d": 15,
+  "stars_30d": 92,
+  "stars_90d": 157,
+  "star_growth_rate_7d": 2.142857142857143,
+  "star_growth_rate_30d": 3.066666666666667,
+  "star_growth_acceleration": 0.6987577639751552,
   "forks_7d": 2,
-  "forks_30d": 28,
+  "forks_30d": 25,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 128,
+  "snapshot_count": 129,
   "authenticity": {
-    "organic_confidence": 90.1,
+    "organic_confidence": 90.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +47,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "770 forks for 7,851 stars (9.8%)."
+        "detail": "770 forks for 7,852 stars (9.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.7,
+        "score": 75.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 9 stars (0 forks, 3.0x the daily average)."
       },
@@ -71,20 +75,20 @@
         "label": "Issue engagement",
         "score": 94.3,
         "weight": 0.12,
-        "detail": "259 open issues for 7,851 stars (3.3%)."
+        "detail": "259 open issues for 7,852 stars (3.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 9 stars (0 forks, 3.0x the daily average).",
-      "Issue engagement: 259 open issues for 7,851 stars (3.3%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Issue engagement: 259 open issues for 7,852 stars (3.3%).",
+      "Fork-to-star ratio: 770 forks for 7,852 stars (9.8%)."
     ],
     "red_flags": []
   }

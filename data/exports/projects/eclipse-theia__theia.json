@@ -4,7 +4,24 @@
   "description": "Eclipse Theia is an open-source platform for building custom IDEs and tools for browser and desktop. It includes Theia AI, the vendor-neutral AI harness platform, and powers the AI-native Theia IDE.",
   "language": "TypeScript",
   "license": "EPL-2.0",
-  "topics": [],
+  "topics": [
+    "ide",
+    "editor",
+    "language-server-protocol",
+    "electron",
+    "typescript",
+    "cloud-ide",
+    "agent-skills",
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "ai-harness",
+    "ai-native",
+    "ide-framework",
+    "llm",
+    "mcp",
+    "model-context-protocol"
+  ],
   "stars": 21779,
   "forks": 2948,
   "open_issues": 1439,
@@ -17,7 +34,7 @@
   "impact": 95.89,
   "velocity": 57.01,
   "health": 60.15,
-  "global_percentile": 34.43,
+  "global_percentile": 34.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Eclipse Theia is an open-source platform for building custom IDEs and tools for browser and desktop. It includes Theia AI, the vendor-neutral AI harness platform, and powers the AI-native Theia IDE.",
@@ -25,16 +42,16 @@
   "stars_7d": 11,
   "stars_30d": 11,
   "stars_90d": 11,
-  "star_growth_rate_7d": 11.0,
-  "star_growth_rate_30d": 11.0,
+  "star_growth_rate_7d": 5.5,
+  "star_growth_rate_30d": 5.5,
   "star_growth_acceleration": 1.0,
   "forks_7d": 1,
   "forks_30d": 1,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 8,
+  "snapshot_count": 9,
   "authenticity": {
-    "organic_confidence": 99.5,
+    "organic_confidence": 99.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +65,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.4,
+        "score": 98.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 1.1x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 1.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,8 +99,8 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 1.2x the daily average).",
       "Fork-to-star ratio: 2,948 forks for 21,779 stars (13.5%).",
-      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 1.1x the daily average).",
       "Issue engagement: 1,439 open issues for 21,779 stars (6.6%)."
     ],
     "red_flags": []

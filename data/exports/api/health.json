@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-20T16:58:31.910281+00:00",
+  "generated_at": "2026-11-21T01:19:32.303251+00:00",
   "overall_status": "warning",
   "checks": [
     {
       "name": "Data Freshness",
       "status": "healthy",
-      "last_snapshot": "2026-11-20T12:57:22.352594+00:00",
-      "last_score": "2026-11-20T12:57:22.857877+00:00",
-      "last_discovery": "2026-11-20T16:58:09.245305+00:00",
+      "last_snapshot": "2026-11-20T21:54:27.217186+00:00",
+      "last_score": "2026-11-20T21:54:27.723661+00:00",
+      "last_discovery": "2026-11-21T01:19:15.595800+00:00",
       "issues": []
     },
     {
       "name": "Snapshot Coverage",
       "status": "warning",
-      "total_repos": 10526,
-      "snapshotted": 2139,
+      "total_repos": 10543,
+      "snapshotted": 2142,
       "coverage_pct": 20.3,
       "issues": [
         "Only 20.3% of repos have snapshots"
@@ -23,18 +23,18 @@
     {
       "name": "Scoring Coverage",
       "status": "warning",
-      "total_repos": 10526,
+      "total_repos": 10543,
       "scored": 700,
-      "coverage_pct": 6.7,
+      "coverage_pct": 6.6,
       "issues": [
-        "Only 6.7% of repos have scores"
+        "Only 6.6% of repos have scores"
       ]
     },
     {
       "name": "Category Coverage",
       "status": "healthy",
-      "total_repos": 10526,
-      "classified": 10526,
+      "total_repos": 10543,
+      "classified": 10543,
       "coverage_pct": 100.0,
       "issues": []
     },
@@ -42,21 +42,21 @@
       "name": "Database Health",
       "status": "healthy",
       "table_sizes": {
-        "repositories": 10526,
-        "snapshots": 254385,
-        "scores": 277163,
-        "growth_metrics": 254387,
-        "ai_analysis": 10526
+        "repositories": 10543,
+        "snapshots": 255084,
+        "scores": 277863,
+        "growth_metrics": 255087,
+        "ai_analysis": 10543
       },
       "issues": []
     },
     {
       "name": "Processing Stats",
       "status": "warning",
-      "total_repos": 10526,
-      "processed": 2140,
-      "unprocessed": 8386,
-      "last_run": "2026-11-20T12:57:23.548055+00:00",
+      "total_repos": 10543,
+      "processed": 2143,
+      "unprocessed": 8400,
+      "last_run": "2026-11-20T21:54:28.225359+00:00",
       "issues": [
         "Only 20.3% of repos have processing signatures"
       ]

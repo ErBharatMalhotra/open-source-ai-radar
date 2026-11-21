@@ -108,29 +108,17 @@ jobs:
           # would silently skip every save after the first one.
           key: radar-db-${{ github.run_id }}
 
-      - name: Commit core data snapshot
+      - name: Commit updated data & leaderboard
         run: |
           git config user.name "Bharat Malhotra"
           git config user.email "mr.bharatmalhotra@gmail.com"
-          git add data/exports/projects/ data/exports/history/ data/exports/api/ -f
+          git add data/exports/ -f
+          git add README.md web/src/layouts/Layout.astro web/src/pages/index.astro -f
           if git diff --staged --quiet; then
-            echo "::notice::No core data snapshot changes to commit"
+            echo "::notice::No data changes to commit — skipping push"
           else
             STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
             git commit -m "chore(data): refresh AI radar scoring & metrics snapshot [$STAMP]"
-            git pull --rebase origin main
-            git push
-          fi
-
-      - name: Commit public leaderboard & documentation
-        run: |
-          git config user.name "Bharat Malhotra"
-          git config user.email "mr.bharatmalhotra@gmail.com"
-          git add data/exports/ README.md web/src/layouts/Layout.astro web/src/pages/index.astro -f
-          if git diff --staged --quiet; then
-            echo "::notice::No leaderboard/documentation changes to commit"
-          else
-            git commit -m "docs(leaderboard): update trending top 50 in README and SVG badges"
             git pull --rebase origin main
             git push
           fi

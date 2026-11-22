@@ -35,9 +35,9 @@
   "snapshot_count": 254,
   "why_trending": "Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 67.7,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.4,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -49,9 +49,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 48.9,
+        "score": 85.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 19 stars (0 forks, 5.5x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (0 forks, 2.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -83,6 +83,7 @@
       }
     ],
     "reasons": [
+      "Burst pattern: Largest 24h jump was 7 stars (0 forks, 2.3x the daily average).",
       "Fork-to-star ratio: 17,430 forks for 58,290 stars (29.9%).",
       "Maintenance cadence: Last push 5 days ago."
     ],

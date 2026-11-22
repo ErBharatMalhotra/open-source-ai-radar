@@ -4,36 +4,67 @@
   "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
-  "stars": 6931,
-  "forks": 549,
-  "open_issues": 12,
-  "watchers": 22,
+  "topics": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "ffi",
+    "mcp",
+    "migration",
+    "napi",
+    "performance",
+    "pyo3",
+    "rust",
+    "code-migration",
+    "porting",
+    "rewrite",
+    "cli",
+    "golang",
+    "java",
+    "javascript",
+    "python",
+    "ruby",
+    "typescript"
+  ],
+  "stars": 7633,
+  "forks": 610,
+  "open_issues": 1,
+  "watchers": 25,
   "created_at": "2026-11-16T12:10:36Z",
-  "pushed_at": "2026-11-21T03:19:03Z",
+  "pushed_at": "2026-11-22T08:24:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/erkamyaman.png",
-  "radar_score": 0,
-  "impact": 0,
-  "velocity": 0,
-  "health": 0,
-  "global_percentile": 0,
+  "radar_score": 74.26,
+  "impact": 86.65,
+  "velocity": 71.47,
+  "health": 58.35,
+  "global_percentile": 44.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
   "maturity": "Unknown",
-  "snapshot_count": 0,
+  "stars_7d": 0,
+  "stars_30d": 0,
+  "stars_90d": 0,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 0.0,
+  "star_growth_acceleration": 1.0,
+  "forks_7d": 0,
+  "forks_30d": 0,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 1,
   "authenticity": {
-    "organic_confidence": 80.5,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 76.3,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 92.5,
+        "score": 92.8,
         "weight": 0.22,
-        "detail": "549 forks for 6,931 stars (7.9%)."
+        "detail": "610 forks for 7,633 stars (8.0%)."
       },
       {
         "key": "burst",
@@ -59,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 42.3,
+        "score": 26.3,
         "weight": 0.12,
-        "detail": "12 open issues for 6,931 stars (0.2%)."
+        "detail": "1 open issues for 7,633 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -72,9 +103,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 549 forks for 6,931 stars (7.9%).",
+      "Fork-to-star ratio: 610 forks for 7,633 stars (8.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 1 open issues for 7,633 stars (0.0%)."
+    ]
   }
 }

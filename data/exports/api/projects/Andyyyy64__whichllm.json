@@ -4,53 +4,55 @@
   "description": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 6850,
-  "forks": 379,
+  "topics": [
+    "localllm"
+  ],
+  "stars": 6849,
+  "forks": 380,
   "open_issues": 5,
   "watchers": 23,
   "created_at": "2026-03-04T13:16:00Z",
   "pushed_at": "2026-11-19T13:47:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Andyyyy64.png",
-  "radar_score": 70.53,
-  "impact": 84.72,
-  "velocity": 63.01,
-  "health": 58.35,
-  "global_percentile": 26.14,
+  "radar_score": 69.81,
+  "impact": 84.7,
+  "velocity": 61.5,
+  "health": 57.61,
+  "global_percentile": 17.57,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Find the local LLM that actually runs and performs best on your hardware. Ranked by real, recency-aware benchmarks, not parameter count. One command, run it instantly.",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 66,
-  "stars_90d": 305,
-  "star_growth_rate_7d": 2.2857142857142856,
-  "star_growth_rate_30d": 2.4444444444444446,
-  "star_growth_acceleration": 0.9350649350649349,
+  "stars_7d": 11,
+  "stars_30d": 69,
+  "stars_90d": 299,
+  "star_growth_rate_7d": 1.8333333333333333,
+  "star_growth_rate_30d": 2.3793103448275863,
+  "star_growth_acceleration": 0.7705314009661836,
   "forks_7d": 1,
-  "forks_30d": 7,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 111,
+  "forks_30d": 8,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 112,
   "authenticity": {
-    "organic_confidence": 76.5,
+    "organic_confidence": 76.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 83.9,
+        "score": 84.0,
         "weight": 0.22,
-        "detail": "379 forks for 6,850 stars (5.5%)."
+        "detail": "380 forks for 6,849 stars (5.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.5,
+        "score": 81.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 6 stars (0 forks, 2.5x the daily average)."
+        "detail": "Largest 24h jump was 6 stars (0 forks, 2.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +73,7 @@
         "label": "Issue engagement",
         "score": 32.3,
         "weight": 0.12,
-        "detail": "5 open issues for 6,850 stars (0.1%)."
+        "detail": "5 open issues for 6,849 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +84,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 379 forks for 6,850 stars (5.5%).",
+      "Burst pattern: Largest 24h jump was 6 stars (0 forks, 2.6x the daily average).",
+      "Fork-to-star ratio: 380 forks for 6,849 stars (5.5%).",
       "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 5 open issues for 6,850 stars (0.1%)."
+      "Issue engagement: 5 open issues for 6,849 stars (0.1%)."
     ]
   }
 }

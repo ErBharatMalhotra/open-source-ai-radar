@@ -41,7 +41,7 @@
   "snapshot_count": 289,
   "why_trending": "Above-average growth velocity. High developer adoption with 16 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 87.2,
+    "organic_confidence": 87.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -55,7 +55,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 63.8,
+        "score": 63.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (4 forks, 4.0x the daily average)."
       },
@@ -83,15 +83,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
+      "Maintenance cadence: Last push 1 days ago.",
       "Fork-to-star ratio: 1,478 forks for 13,797 stars (10.7%).",
-      "Issue engagement: 863 open issues for 13,797 stars (6.3%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Issue engagement: 863 open issues for 13,797 stars (6.3%)."
     ],
     "red_flags": []
   }

@@ -4,8 +4,29 @@
   "description": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi, written once in Markdown and adapted to each tool by generators with validation and evals.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 42778,
+  "topics": [
+    "anthropic",
+    "agent-skills",
+    "agentic-ai",
+    "ai-agents",
+    "cursor",
+    "cursor-rules",
+    "mcp",
+    "multi-agent",
+    "opencode",
+    "claude-code",
+    "antigravity",
+    "claude",
+    "claude-skills",
+    "subagents",
+    "codex",
+    "claude-code-marketplace",
+    "claude-code-plugin",
+    "github-copilot",
+    "pi-coding-agent",
+    "coding-agents"
+  ],
+  "stars": 42779,
   "forks": 4521,
   "open_issues": 1,
   "watchers": 315,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-21T18:59:37Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/wshobson.png",
-  "radar_score": 73.97,
+  "radar_score": 73.74,
   "impact": 97.89,
-  "velocity": 58.31,
-  "health": 57.61,
-  "global_percentile": 39.0,
+  "velocity": 57.14,
+  "health": 58.35,
+  "global_percentile": 38.29,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, and Google Antigravity",
   "maturity": "Unknown",
-  "stars_7d": 282,
+  "stars_7d": 279,
   "stars_30d": 794,
   "stars_90d": 794,
-  "star_growth_rate_7d": 40.285714285714285,
+  "star_growth_rate_7d": 39.857142857142854,
   "star_growth_rate_30d": 34.52173913043478,
-  "star_growth_acceleration": 1.1669665347247211,
+  "star_growth_acceleration": 1.1545519971212665,
   "forks_7d": 31,
-  "forks_30d": 76,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 354,
+  "forks_30d": 79,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 356,
   "authenticity": {
-    "organic_confidence": 78.7,
+    "organic_confidence": 78.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "4,518 forks for 42,763 stars (10.6%)."
+        "detail": "4,521 forks for 42,779 stars (10.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 77.4,
+        "score": 76.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 116 stars (8 forks, 2.8x the daily average)."
+        "detail": "Largest 24h jump was 116 stars (8 forks, 2.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,25 +90,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 25.7,
+        "score": 25.2,
         "weight": 0.12,
-        "detail": "3 open issues for 42,763 stars (0.0%)."
+        "detail": "1 open issues for 42,779 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 116 stars (8 forks, 2.8x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 4,518 forks for 42,763 stars (10.6%)."
+      "Burst pattern: Largest 24h jump was 116 stars (8 forks, 2.9x the daily average).",
+      "Fork-to-star ratio: 4,521 forks for 42,779 stars (10.6%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 42,763 stars (0.0%)."
+      "Issue engagement: 1 open issues for 42,779 stars (0.0%)."
     ]
   }
 }

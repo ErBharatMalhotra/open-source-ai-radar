@@ -4,7 +4,12 @@
   "description": "An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "deepspeed-library",
+    "gpt-3",
+    "transformers",
+    "language-model"
+  ],
   "stars": 7475,
   "forks": 1134,
   "open_issues": 79,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-21T06:26:09Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/EleutherAI.png",
-  "radar_score": 70.62,
-  "impact": 90.73,
+  "radar_score": 70.61,
+  "impact": 90.71,
   "velocity": 52.54,
   "health": 63.75,
-  "global_percentile": 26.86,
+  "global_percentile": 20.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An implementation of model parallel autoregressive transformers on GPUs, based on the Megatron and DeepSpeed libraries",
   "maturity": "Unknown",
-  "stars_7d": -2,
-  "stars_30d": 1,
-  "stars_90d": 19,
-  "star_growth_rate_7d": -0.2857142857142857,
-  "star_growth_rate_30d": 0.034482758620689655,
-  "star_growth_acceleration": -8.285714285714285,
-  "forks_7d": 4,
-  "forks_30d": 6,
+  "stars_7d": -1,
+  "stars_30d": 3,
+  "stars_90d": 18,
+  "star_growth_rate_7d": -0.14285714285714285,
+  "star_growth_rate_30d": 0.1,
+  "star_growth_acceleration": -1.4285714285714284,
+  "forks_7d": 5,
+  "forks_30d": 8,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 72,
+  "snapshot_count": 73,
   "authenticity": {
-    "organic_confidence": 91.8,
+    "organic_confidence": 91.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 75.7,
+        "score": 75.9,
         "weight": 0.12,
-        "detail": "78 open issues for 7,475 stars (1.0%)."
+        "detail": "79 open issues for 7,475 stars (1.1%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 78 open issues for 7,475 stars (1.0%).",
+      "Issue engagement: 79 open issues for 7,475 stars (1.1%).",
       "Burst pattern: Largest 24h jump was 2 stars (1 forks, 2.0x the daily average).",
       "Fork-to-star ratio: 1,134 forks for 7,475 stars (15.2%)."
     ],

@@ -4,37 +4,54 @@
   "description": "Open Lakehouse Format for Multimodal AI. Convert from Parquet in 2 lines of code for 100x faster random access, vector index, and data versioning. Compatible with Pandas, DuckDB, Polars, Pyarrow, and PyTorch with more integrations coming..",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "machine-learning",
+    "computer-vision",
+    "data-format",
+    "deep-learning",
+    "python",
+    "apache-arrow",
+    "duckdb",
+    "mlops",
+    "data-analysis",
+    "data-analytics",
+    "data-science",
+    "dataops",
+    "data-centric",
+    "embeddings",
+    "rust",
+    "llms"
+  ],
   "stars": 7375,
-  "forks": 959,
-  "open_issues": 804,
+  "forks": 960,
+  "open_issues": 805,
   "watchers": 50,
   "created_at": "2022-07-07T22:29:29Z",
-  "pushed_at": "2026-11-21T18:07:56Z",
+  "pushed_at": "2026-11-22T01:56:30Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/lance-format.png",
   "radar_score": 69.86,
   "impact": 88.99,
   "velocity": 54.93,
   "health": 60.15,
-  "global_percentile": 23.29,
+  "global_percentile": 16.86,
   "category": "Multimodal AI",
   "sub_category": "omni-modal",
   "summary": "Open Lakehouse Format for Multimodal AI. Convert from Parquet in 2 lines of code for 100x faster random access, vector index, and data versioning. Compatible with Pandas, DuckDB, Polars, Pyarrow, and PyTorch with more integrations coming..",
   "maturity": "Unknown",
-  "stars_7d": 86,
-  "stars_30d": 185,
-  "stars_90d": 277,
-  "star_growth_rate_7d": 12.285714285714286,
-  "star_growth_rate_30d": 6.379310344827586,
-  "star_growth_acceleration": 1.925868725868726,
-  "forks_7d": 27,
+  "stars_7d": 82,
+  "stars_30d": 177,
+  "stars_90d": 276,
+  "star_growth_rate_7d": 11.714285714285714,
+  "star_growth_rate_30d": 5.9,
+  "star_growth_acceleration": 1.9854721549636802,
+  "forks_7d": 26,
   "forks_30d": 57,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 133,
+  "snapshot_count": 134,
   "authenticity": {
-    "organic_confidence": 96.4,
+    "organic_confidence": 92.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,35 +60,35 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "959 forks for 7,373 stars (13.0%)."
+        "detail": "960 forks for 7,375 stars (13.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.4,
+        "score": 89.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (3 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 95,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+82 stars vs +26 forks this week (expected ~11 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 70.4,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 1.99x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "805 open issues for 7,373 stars (10.9%)."
+        "detail": "805 open issues for 7,375 stars (10.9%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +100,8 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 12 stars (3 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 959 forks for 7,373 stars (13.0%).",
-      "Issue engagement: 805 open issues for 7,373 stars (10.9%)."
+      "Star/fork velocity alignment: +82 stars vs +26 forks this week (expected ~11 forks).",
+      "Fork-to-star ratio: 960 forks for 7,375 stars (13.0%)."
     ],
     "red_flags": []
   }

@@ -52,7 +52,7 @@
   "freshness_score": 0.3945537103716011,
   "snapshot_count": 153,
   "authenticity": {
-    "organic_confidence": 64.7,
+    "organic_confidence": 64.6,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -68,7 +68,7 @@
         "label": "Burst pattern",
         "score": null,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "Not enough snapshots yet."
       },
       {
         "key": "alignment",
@@ -94,9 +94,9 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 61.1,
+        "score": 60.8,
         "weight": 0.1,
-        "detail": "Last push 122 days ago."
+        "detail": "Last push 123 days ago."
       }
     ],
     "reasons": [

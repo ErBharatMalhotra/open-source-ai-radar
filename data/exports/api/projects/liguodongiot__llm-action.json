@@ -4,8 +4,14 @@
   "description": "\u672c\u9879\u76ee\u65e8\u5728\u5206\u4eab\u5927\u6a21\u578b\u76f8\u5173\u6280\u672f\u539f\u7406\u4ee5\u53ca\u5b9e\u6218\u7ecf\u9a8c\uff08\u5927\u6a21\u578b\u5de5\u7a0b\u5316\u3001\u5927\u6a21\u578b\u5e94\u7528\u843d\u5730\uff09",
   "language": "HTML",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 25298,
+  "topics": [
+    "llm",
+    "llm-inference",
+    "llm-serving",
+    "llm-training",
+    "llmops"
+  ],
+  "stars": 25297,
   "forks": 2858,
   "open_issues": 18,
   "watchers": 200,
@@ -34,7 +40,7 @@
   "freshness_score": 0.6907343306373547,
   "snapshot_count": 211,
   "authenticity": {
-    "organic_confidence": 75.5,
+    "organic_confidence": 79.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 71.7,
+        "score": 82.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (0 forks, 3.3x the daily average)."
+        "detail": "Largest 24h jump was 8 stars (0 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,13 +82,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 83.2,
+        "score": 83.0,
         "weight": 0.1,
-        "detail": "Last push 37 days ago."
+        "detail": "Last push 38 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 37 days ago.",
+      "Burst pattern: Largest 24h jump was 8 stars (0 forks, 2.5x the daily average).",
+      "Maintenance cadence: Last push 38 days ago.",
       "Fork-to-star ratio: 2,858 forks for 25,297 stars (11.3%)."
     ],
     "red_flags": [

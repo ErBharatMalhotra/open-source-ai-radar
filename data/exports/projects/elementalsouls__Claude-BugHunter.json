@@ -4,37 +4,54 @@
   "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 15782,
-  "forks": 1814,
+  "topics": [
+    "ai-security",
+    "anthropic",
+    "application-security",
+    "bug-bounty",
+    "bugbounty",
+    "bugcrowd",
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "ethical-hacking",
+    "hackerone",
+    "offensive-security",
+    "pentesting",
+    "red-team",
+    "security-tools",
+    "web-security"
+  ],
+  "stars": 16128,
+  "forks": 1833,
   "open_issues": 5,
-  "watchers": 73,
+  "watchers": 74,
   "created_at": "2026-05-05T11:22:32Z",
-  "pushed_at": "2026-11-21T04:24:41Z",
+  "pushed_at": "2026-11-22T01:54:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/elementalsouls.png",
-  "radar_score": 74.44,
-  "impact": 92.91,
-  "velocity": 64.82,
+  "radar_score": 74.53,
+  "impact": 93.21,
+  "velocity": 64.74,
   "health": 58.35,
-  "global_percentile": 42.43,
+  "global_percentile": 44.86,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
   "maturity": "Unknown",
-  "stars_7d": 8853,
-  "stars_30d": 9843,
-  "stars_90d": 10820,
-  "star_growth_rate_7d": 1770.6,
-  "star_growth_rate_30d": 378.5769230769231,
-  "star_growth_acceleration": 4.67698872295032,
-  "forks_7d": 794,
-  "forks_30d": 944,
+  "stars_7d": 9841,
+  "stars_30d": 10831,
+  "stars_90d": 11808,
+  "star_growth_rate_7d": 1640.1666666666667,
+  "star_growth_rate_30d": 401.14814814814815,
+  "star_growth_acceleration": 4.088680638906841,
+  "forks_7d": 869,
+  "forks_30d": 1019,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 37,
+  "snapshot_count": 39,
   "authenticity": {
-    "organic_confidence": 71.5,
+    "organic_confidence": 72.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +60,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "1,758 forks for 15,140 stars (11.6%)."
+        "detail": "1,833 forks for 16,128 stars (11.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 55.3,
+        "score": 59.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1,749 stars (114 forks, 4.7x the daily average)."
+        "detail": "Largest 24h jump was 1,749 stars (114 forks, 4.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 28.3,
+        "score": 28.1,
         "weight": 0.12,
-        "detail": "5 open issues for 15,140 stars (0.0%)."
+        "detail": "5 open issues for 16,128 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +99,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,758 forks for 15,140 stars (11.6%).",
+      "Fork-to-star ratio: 1,833 forks for 16,128 stars (11.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 5 open issues for 15,140 stars (0.0%)."
+      "Issue engagement: 5 open issues for 16,128 stars (0.0%)."
     ]
   }
 }

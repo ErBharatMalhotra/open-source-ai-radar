@@ -4,53 +4,55 @@
   "description": "Specification and documentation for Agent Skills",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 27506,
-  "forks": 2056,
+  "topics": [
+    "agent-skills"
+  ],
+  "stars": 27511,
+  "forks": 2058,
   "open_issues": 58,
-  "watchers": 248,
+  "watchers": 249,
   "created_at": "2025-12-16T15:47:19Z",
   "pushed_at": "2026-11-04T19:47:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/agentskills.png",
-  "radar_score": 73.91,
+  "radar_score": 73.84,
   "impact": 95.9,
   "velocity": 59.84,
-  "health": 58.42,
-  "global_percentile": 38.0,
+  "health": 58.12,
+  "global_percentile": 38.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Specification and documentation for Agent Skills",
   "maturity": "Unknown",
-  "stars_7d": 234,
-  "stars_30d": 722,
-  "stars_90d": 722,
-  "star_growth_rate_7d": 33.42857142857143,
-  "star_growth_rate_30d": 32.81818181818182,
-  "star_growth_acceleration": 1.0185991294024535,
-  "forks_7d": 23,
-  "forks_30d": 77,
-  "days_since_last_push": 16,
-  "freshness_score": 0.8521437889662113,
-  "snapshot_count": 341,
+  "stars_7d": 245,
+  "stars_30d": 723,
+  "stars_90d": 723,
+  "star_growth_rate_7d": 35.0,
+  "star_growth_rate_30d": 32.86363636363637,
+  "star_growth_acceleration": 1.0650069156293223,
+  "forks_7d": 33,
+  "forks_30d": 82,
+  "days_since_last_push": 17,
+  "freshness_score": 0.8436648165963837,
+  "snapshot_count": 343,
   "authenticity": {
-    "organic_confidence": 75.6,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 82.0,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 90.9,
         "weight": 0.22,
-        "detail": "2,054 forks for 27,494 stars (7.5%)."
+        "detail": "2,058 forks for 27,511 stars (7.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 70.2,
+        "score": 88.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 128 stars (8 forks, 3.4x the daily average)."
+        "detail": "Largest 24h jump was 74 stars (6 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,19 +73,20 @@
         "label": "Issue engagement",
         "score": 45.5,
         "weight": 0.12,
-        "detail": "58 open issues for 27,494 stars (0.2%)."
+        "detail": "58 open issues for 27,511 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 91.1,
+        "score": 90.7,
         "weight": 0.1,
-        "detail": "Last push 16 days ago."
+        "detail": "Last push 17 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,054 forks for 27,494 stars (7.5%).",
-      "Maintenance cadence: Last push 16 days ago."
+      "Burst pattern: Largest 24h jump was 74 stars (6 forks, 2.1x the daily average).",
+      "Maintenance cadence: Last push 17 days ago.",
+      "Fork-to-star ratio: 2,058 forks for 27,511 stars (7.5%)."
     ],
     "red_flags": []
   }

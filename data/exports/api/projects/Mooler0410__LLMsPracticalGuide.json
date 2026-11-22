@@ -76,9 +76,9 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 40.0,
+        "score": 39.9,
         "weight": 0.1,
-        "detail": "Last push 226 days ago."
+        "detail": "Last push 227 days ago."
       }
     ],
     "reasons": [
@@ -86,7 +86,8 @@
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 9 open issues for 10,214 stars (0.1%)."
+      "Issue engagement: 9 open issues for 10,214 stars (0.1%).",
+      "Maintenance cadence: Last push 227 days ago."
     ]
   }
 }

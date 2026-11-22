@@ -4,8 +4,18 @@
   "description": "DeepSeek Harness\uff08DSH\uff09\u4e00\u53ea\u4f4f\u5728 DSH \u754c\u9762\u53f3\u4e0b\u89d2\u7684\u5c0f\u9cb8\u9c7c\u5a18\uff0c\u5e2e\u4f60\u76ef\u7740DeepSeek\u8d26\u6237\u4f59\u989d\u3002QQ\u5f39\u5f39\uff0c\u652f\u6301\u62d6\u62fd\u5438\u9644\u3001\u5de6\u5438\u9644\u7ffb\u8f6c\u3001\u6570\u5b57\u6eda\u52a8\u52a8\u753b\uff0c\u968f\u754c\u9762\u81ea\u52a8\u542f\u7528\uff0c\u5efa\u8bae\u76f4\u63a5\u558a\u6765\u4f60\u7684dsh\u5b89\u88c5",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 7403,
+  "topics": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "floating-widget",
+    "plugin"
+  ],
+  "stars": 7404,
   "forks": 243,
   "open_issues": 127,
   "watchers": 3,
@@ -13,45 +23,45 @@
   "pushed_at": "2026-10-11T12:25:55Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/MeteorNOX.png",
-  "radar_score": 62.09,
-  "impact": 75.94,
-  "velocity": 56.37,
-  "health": 47.92,
-  "global_percentile": 3.57,
+  "radar_score": 62.05,
+  "impact": 75.97,
+  "velocity": 56.39,
+  "health": 47.72,
+  "global_percentile": 1.86,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "DeepSeek Harness\uff08DSH\uff09\u4e00\u53ea\u4f4f\u5728 DSH \u754c\u9762\u53f3\u4e0b\u89d2\u7684\u5c0f\u9cb8\u9c7c\u5a18\uff0c\u5e2e\u4f60\u76ef\u7740DeepSeek\u8d26\u6237\u4f59\u989d\u3002QQ\u5f39\u5f39\uff0c\u652f\u6301\u62d6\u62fd\u5438\u9644\u3001\u5de6\u5438\u9644\u7ffb\u8f6c\u3001\u6570\u5b57\u6eda\u52a8\u52a8\u753b\uff0c\u968f\u754c\u9762\u81ea\u52a8\u542f\u7528\uff0c\u5efa\u8bae\u76f4\u63a5\u558a\u6765\u4f60\u7684dsh\u5b89\u88c5",
   "maturity": "Unknown",
-  "stars_7d": 204,
-  "stars_30d": 1340,
-  "stars_90d": 3379,
-  "star_growth_rate_7d": 29.142857142857142,
-  "star_growth_rate_30d": 53.6,
-  "star_growth_acceleration": 0.5437100213219616,
-  "forks_7d": 10,
-  "forks_30d": 47,
-  "days_since_last_push": 40,
-  "freshness_score": 0.6703200460356393,
-  "snapshot_count": 37,
+  "stars_7d": 205,
+  "stars_30d": 1367,
+  "stars_90d": 3406,
+  "star_growth_rate_7d": 29.285714285714285,
+  "star_growth_rate_30d": 50.629629629629626,
+  "star_growth_acceleration": 0.5784303479987459,
+  "forks_7d": 9,
+  "forks_30d": 48,
+  "days_since_last_push": 41,
+  "freshness_score": 0.6636502501363194,
+  "snapshot_count": 38,
   "why_trending": "Strong momentum with 503 new stars this week. Above-average growth velocity. High developer adoption with 11 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 85.3,
+    "organic_confidence": 85.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 70.6,
+        "score": 70.5,
         "weight": 0.22,
-        "detail": "243 forks for 7,390 stars (3.3%)."
+        "detail": "243 forks for 7,404 stars (3.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.7,
+        "score": 99.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 53 stars (2 forks, 1.0x the daily average)."
+        "detail": "Largest 24h jump was 53 stars (2 forks, 1.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,22 +80,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 85.8,
+        "score": 85.7,
         "weight": 0.12,
-        "detail": "127 open issues for 7,390 stars (1.7%)."
+        "detail": "127 open issues for 7,404 stars (1.7%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 82.5,
+        "score": 82.2,
         "weight": 0.1,
-        "detail": "Last push 40 days ago."
+        "detail": "Last push 41 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 40 days ago.",
-      "Issue engagement: 127 open issues for 7,390 stars (1.7%).",
-      "Burst pattern: Largest 24h jump was 53 stars (2 forks, 1.0x the daily average)."
+      "Maintenance cadence: Last push 41 days ago.",
+      "Issue engagement: 127 open issues for 7,404 stars (1.7%).",
+      "Burst pattern: Largest 24h jump was 53 stars (2 forks, 1.1x the daily average)."
     ],
     "red_flags": []
   }

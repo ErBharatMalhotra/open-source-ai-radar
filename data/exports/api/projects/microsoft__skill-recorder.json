@@ -4,38 +4,49 @@
   "description": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 5882,
-  "forks": 662,
+  "topics": [
+    "agent-skills",
+    "ai-agents",
+    "automation",
+    "copilot",
+    "copilot-cli",
+    "copilot-cowork",
+    "copilot-studio",
+    "electron",
+    "microsoft-scout",
+    "screen-recording"
+  ],
+  "stars": 5899,
+  "forks": 666,
   "open_issues": 22,
   "watchers": 32,
   "created_at": "2026-07-29T18:16:14Z",
   "pushed_at": "2026-11-19T20:52:01Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/microsoft.png",
-  "radar_score": 73.27,
-  "impact": 86.11,
-  "velocity": 66.2,
+  "radar_score": 73.36,
+  "impact": 86.24,
+  "velocity": 66.29,
   "health": 62.65,
-  "global_percentile": 42.71,
+  "global_percentile": 38.57,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.",
   "maturity": "Unknown",
-  "stars_7d": 108,
-  "stars_30d": 193,
-  "stars_90d": 2462,
-  "star_growth_rate_7d": 15.428571428571429,
-  "star_growth_rate_30d": 13.785714285714286,
-  "star_growth_acceleration": 1.1191709844559585,
-  "forks_7d": 6,
-  "forks_30d": 16,
+  "stars_7d": 80,
+  "stars_30d": 271,
+  "stars_90d": 2524,
+  "star_growth_rate_7d": 11.428571428571429,
+  "star_growth_rate_30d": 12.904761904761905,
+  "star_growth_acceleration": 0.8856088560885609,
+  "forks_7d": 8,
+  "forks_30d": 24,
   "days_since_last_push": 3,
   "freshness_score": 0.9704455335485082,
-  "snapshot_count": 19,
+  "snapshot_count": 20,
   "why_trending": "Steady growth with 60 new stars this week. Above-average growth velocity. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 91.5,
+    "organic_confidence": 91.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "662 forks for 5,882 stars (11.3%)."
+        "detail": "666 forks for 5,899 stars (11.3%)."
       },
       {
         "key": "burst",
@@ -70,21 +81,21 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 53.7,
+        "score": 53.6,
         "weight": 0.12,
-        "detail": "22 open issues for 5,882 stars (0.4%)."
+        "detail": "22 open issues for 5,899 stars (0.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 97.9,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 3 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 662 forks for 5,882 stars (11.3%).",
+      "Maintenance cadence: Last push 3 days ago.",
+      "Fork-to-star ratio: 666 forks for 5,899 stars (11.3%).",
       "Burst pattern: Largest 24h jump was 4 stars (1 forks, 0.3x the daily average)."
     ],
     "red_flags": []

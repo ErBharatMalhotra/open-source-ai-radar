@@ -4,37 +4,51 @@
   "description": "Tuist builds infrastructure for faster, more reliable build and test workflows across developers, CI, and coding agents. Shared cache, tests, and insights that sit alongside your existing CI.",
   "language": "Elixir",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 5868,
+  "topics": [
+    "gradle",
+    "bazel",
+    "cargo",
+    "elixir",
+    "once",
+    "xcodebuild",
+    "build-cache",
+    "build-infrastructure",
+    "ci",
+    "coding-agents",
+    "developer-tools",
+    "remote-cache",
+    "testing"
+  ],
+  "stars": 5870,
   "forks": 786,
   "open_issues": 190,
   "watchers": 53,
   "created_at": "2018-04-16T07:02:54Z",
-  "pushed_at": "2026-11-21T09:13:18Z",
+  "pushed_at": "2026-11-23T05:19:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tuist.png",
-  "radar_score": 67.59,
-  "impact": 87.57,
-  "velocity": 49.63,
+  "radar_score": 67.62,
+  "impact": 87.64,
+  "velocity": 49.65,
   "health": 60.75,
-  "global_percentile": 14.43,
+  "global_percentile": 11.0,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Tuist builds infrastructure for faster, more reliable build and test workflows across developers, CI, and coding agents. Shared cache, tests, and insights that sit alongside your existing CI.",
   "maturity": "Unknown",
-  "stars_7d": 1,
-  "stars_30d": 1,
-  "stars_90d": 1,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": 6,
+  "stars_30d": 6,
+  "stars_90d": 6,
+  "star_growth_rate_7d": 0.8571428571428571,
+  "star_growth_rate_30d": 0.8571428571428571,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 1,
-  "forks_30d": 1,
+  "forks_7d": 2,
+  "forks_30d": 2,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 2,
+  "snapshot_count": 3,
   "authenticity": {
-    "organic_confidence": 97.9,
+    "organic_confidence": 98.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +57,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "786 forks for 5,868 stars (13.4%)."
+        "detail": "786 forks for 5,870 stars (13.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 100.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "Largest 24h jump was 1 stars (1 forks, 1.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +85,20 @@
         "label": "Issue engagement",
         "score": 94.1,
         "weight": 0.12,
-        "detail": "190 open issues for 5,868 stars (3.2%)."
+        "detail": "190 open issues for 5,870 stars (3.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 190 open issues for 5,868 stars (3.2%).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 786 forks for 5,868 stars (13.4%)."
+      "Issue engagement: 190 open issues for 5,870 stars (3.2%).",
+      "Fork-to-star ratio: 786 forks for 5,870 stars (13.4%).",
+      "Burst pattern: Largest 24h jump was 1 stars (1 forks, 1.0x the daily average)."
     ],
     "red_flags": []
   }

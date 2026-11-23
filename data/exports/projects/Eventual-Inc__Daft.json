@@ -4,37 +4,57 @@
   "description": "High-performance data engine for AI and multimodal workloads. Process images, audio, video, and structured data at any scale",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 5857,
-  "forks": 590,
+  "topics": [
+    "machine-learning",
+    "python",
+    "data-engineering",
+    "distributed-computing",
+    "rust",
+    "big-data",
+    "artificial-intelligence",
+    "multimodal",
+    "arrow",
+    "distributed",
+    "distributed-systems",
+    "embeddings",
+    "etl",
+    "huggingface",
+    "iceberg",
+    "parquet",
+    "ray",
+    "ai-engineering",
+    "ai-pipeline"
+  ],
+  "stars": 5858,
+  "forks": 592,
   "open_issues": 312,
   "watchers": 34,
   "created_at": "2022-04-25T22:02:29Z",
   "pushed_at": "2026-11-09T05:24:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Eventual-Inc.png",
-  "radar_score": 65.83,
-  "impact": 86.0,
-  "velocity": 48.36,
-  "health": 58.0,
-  "global_percentile": 9.29,
+  "radar_score": 64.45,
+  "impact": 86.14,
+  "velocity": 46.11,
+  "health": 55.41,
+  "global_percentile": 5.0,
   "category": "Multimodal AI",
   "sub_category": "audio-language",
   "summary": "High-performance data engine for AI and multimodal workloads. Process images, audio, video, and structured data at any scale",
   "maturity": "Unknown",
-  "stars_7d": 16,
-  "stars_30d": 43,
-  "stars_90d": 120,
-  "star_growth_rate_7d": 2.2857142857142856,
-  "star_growth_rate_30d": 1.5357142857142858,
-  "star_growth_acceleration": 1.4883720930232556,
-  "forks_7d": 1,
-  "forks_30d": 14,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 41,
+  "stars_7d": 8,
+  "stars_30d": 46,
+  "stars_90d": 128,
+  "star_growth_rate_7d": 1.1428571428571428,
+  "star_growth_rate_30d": 1.6428571428571428,
+  "star_growth_acceleration": 0.6956521739130435,
+  "forks_7d": 2,
+  "forks_30d": 16,
+  "days_since_last_push": 14,
+  "freshness_score": 0.8693582353988059,
+  "snapshot_count": 42,
   "authenticity": {
-    "organic_confidence": 98.5,
+    "organic_confidence": 98.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +63,14 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "590 forks for 5,857 stars (10.1%)."
+        "detail": "592 forks for 5,858 stars (10.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 98.8,
+        "score": 97.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 2 stars (-1 forks, 1.1x the daily average)."
+        "detail": "Largest 24h jump was 2 stars (-1 forks, 1.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +91,20 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "312 open issues for 5,857 stars (5.3%)."
+        "detail": "312 open issues for 5,858 stars (5.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 92.4,
+        "score": 92.0,
         "weight": 0.1,
-        "detail": "Last push 13 days ago."
+        "detail": "Last push 14 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 13 days ago.",
-      "Burst pattern: Largest 24h jump was 2 stars (-1 forks, 1.1x the daily average).",
-      "Fork-to-star ratio: 590 forks for 5,857 stars (10.1%)."
+      "Maintenance cadence: Last push 14 days ago.",
+      "Burst pattern: Largest 24h jump was 2 stars (-1 forks, 1.2x the daily average).",
+      "Fork-to-star ratio: 592 forks for 5,858 stars (10.1%)."
     ],
     "red_flags": []
   }

@@ -48,7 +48,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.1,
+        "score": 93.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 14 stars (3 forks, 1.7x the daily average)."
       },
@@ -76,14 +76,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 14 stars (3 forks, 1.7x the daily average).",
       "Fork-to-star ratio: 1,350 forks for 16,639 stars (8.1%).",
+      "Burst pattern: Largest 24h jump was 14 stars (3 forks, 1.7x the daily average).",
       "Issue engagement: 572 open issues for 16,639 stars (3.4%)."
     ],
     "red_flags": []

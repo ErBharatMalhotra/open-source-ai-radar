@@ -4,37 +4,46 @@
   "description": "GitHub Agentic Workflows",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 5670,
+  "topics": [
+    "gh-extension",
+    "actions",
+    "cai",
+    "ci",
+    "claude-code",
+    "codex",
+    "copilot",
+    "github-actions"
+  ],
+  "stars": 5676,
   "forks": 639,
-  "open_issues": 272,
-  "watchers": 58,
+  "open_issues": 233,
+  "watchers": 57,
   "created_at": "2025-08-12T17:40:41Z",
-  "pushed_at": "2026-11-21T09:23:10Z",
+  "pushed_at": "2026-11-23T06:19:33Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/github.png",
-  "radar_score": 71.24,
-  "impact": 87.01,
-  "velocity": 61.13,
-  "health": 60.15,
-  "global_percentile": 29.86,
+  "radar_score": 72.09,
+  "impact": 87.18,
+  "velocity": 60.79,
+  "health": 63.75,
+  "global_percentile": 29.71,
   "category": "AI Agents",
   "sub_category": "task agent",
   "summary": "GitHub Agentic Workflows",
   "maturity": "Unknown",
-  "stars_7d": 49,
-  "stars_30d": 223,
-  "stars_90d": 663,
-  "star_growth_rate_7d": 7.0,
-  "star_growth_rate_30d": 7.964285714285714,
-  "star_growth_acceleration": 0.8789237668161435,
-  "forks_7d": 7,
-  "forks_30d": 33,
+  "stars_7d": 37,
+  "stars_30d": 207,
+  "stars_90d": 687,
+  "star_growth_rate_7d": 5.285714285714286,
+  "star_growth_rate_30d": 7.392857142857143,
+  "star_growth_acceleration": 0.714975845410628,
+  "forks_7d": 11,
+  "forks_30d": 37,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 46,
+  "snapshot_count": 47,
   "authenticity": {
-    "organic_confidence": 99.7,
+    "organic_confidence": 99.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +52,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "639 forks for 5,670 stars (11.3%)."
+        "detail": "639 forks for 5,676 stars (11.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (3 forks, 0.6x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (3 forks, 0.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +78,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 99.3,
+        "score": 97.0,
         "weight": 0.12,
-        "detail": "272 open issues for 5,670 stars (4.8%)."
+        "detail": "233 open issues for 5,676 stars (4.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 1 days ago.",
-      "Issue engagement: 272 open issues for 5,670 stars (4.8%).",
-      "Fork-to-star ratio: 639 forks for 5,670 stars (11.3%)."
+      "Issue engagement: 233 open issues for 5,676 stars (4.1%).",
+      "Fork-to-star ratio: 639 forks for 5,676 stars (11.3%).",
+      "Burst pattern: Largest 24h jump was 5 stars (3 forks, 0.7x the daily average)."
     ],
     "red_flags": []
   }

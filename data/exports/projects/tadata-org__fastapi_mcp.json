@@ -4,20 +4,34 @@
   "description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai",
+    "claude",
+    "cursor",
+    "fastapi",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "mcp-servers",
+    "modelcontextprotocol",
+    "openapi",
+    "windsurf",
+    "authentication",
+    "authorization"
+  ],
   "stars": 12031,
   "forks": 965,
-  "open_issues": 99,
+  "open_issues": 100,
   "watchers": 92,
   "created_at": "2025-03-08T11:15:43Z",
   "pushed_at": "2025-11-24T14:51:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tadata-org.png",
-  "radar_score": 63.54,
-  "impact": 91.77,
-  "velocity": 48.92,
+  "radar_score": 63.53,
+  "impact": 91.76,
+  "velocity": 48.9,
   "health": 38.86,
-  "global_percentile": 4.29,
+  "global_percentile": 3.0,
   "category": "MCP",
   "sub_category": "tool",
   "summary": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
@@ -30,11 +44,11 @@
   "star_growth_acceleration": -0.5357142857142857,
   "forks_7d": 0,
   "forks_30d": -4,
-  "days_since_last_push": 361,
-  "freshness_score": 0.027051846866350416,
-  "snapshot_count": 131,
+  "days_since_last_push": 364,
+  "freshness_score": 0.02625234396568796,
+  "snapshot_count": 132,
   "authenticity": {
-    "organic_confidence": 72.5,
+    "organic_confidence": 72.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +57,7 @@
         "label": "Fork-to-star ratio",
         "score": 92.9,
         "weight": 0.22,
-        "detail": "965 forks for 12,030 stars (8.0%)."
+        "detail": "965 forks for 12,031 stars (8.0%)."
       },
       {
         "key": "burst",
@@ -69,24 +83,24 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 69.7,
+        "score": 69.9,
         "weight": 0.12,
-        "detail": "99 open issues for 12,030 stars (0.8%)."
+        "detail": "100 open issues for 12,031 stars (0.8%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 25.2,
+        "score": 25.1,
         "weight": 0.1,
-        "detail": "Last push 363 days ago."
+        "detail": "Last push 364 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (-1 forks, 3.0x the daily average).",
-      "Fork-to-star ratio: 965 forks for 12,030 stars (8.0%)."
+      "Fork-to-star ratio: 965 forks for 12,031 stars (8.0%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 363 days ago."
+      "Maintenance cadence: Last push 364 days ago."
     ]
   }
 }

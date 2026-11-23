@@ -4,8 +4,14 @@
   "description": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 16779,
+  "topics": [
+    "agents",
+    "ai",
+    "llm",
+    "mcp",
+    "hacktoberfest"
+  ],
+  "stars": 16864,
   "forks": 1898,
   "open_issues": 48,
   "watchers": 109,
@@ -13,44 +19,44 @@
   "pushed_at": "2026-11-16T12:20:04Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Arindam200.png",
-  "radar_score": 74.59,
-  "impact": 93.94,
-  "velocity": 61.75,
-  "health": 61.6,
-  "global_percentile": 49.0,
+  "radar_score": 74.51,
+  "impact": 93.98,
+  "velocity": 61.74,
+  "health": 61.26,
+  "global_percentile": 44.43,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
   "maturity": "Unknown",
-  "stars_7d": 25,
-  "stars_30d": 222,
-  "stars_90d": 312,
-  "star_growth_rate_7d": 4.166666666666667,
-  "star_growth_rate_30d": 7.4,
-  "star_growth_acceleration": 0.5630630630630631,
+  "stars_7d": 114,
+  "stars_30d": 237,
+  "stars_90d": 393,
+  "star_growth_rate_7d": 16.285714285714285,
+  "star_growth_rate_30d": 7.9,
+  "star_growth_acceleration": 2.0614828209764915,
   "forks_7d": 2,
   "forks_30d": 38,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 305,
+  "days_since_last_push": 7,
+  "freshness_score": 0.9323938199059483,
+  "snapshot_count": 306,
   "authenticity": {
-    "organic_confidence": 66.2,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 63.3,
+    "verdict": "mixed",
+    "label": "Mixed Signals",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "1,898 forks for 16,775 stars (11.3%)."
+        "detail": "1,898 forks for 16,864 stars (11.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 31.6,
+        "score": 23.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 40 stars (7 forks, 8.1x the daily average)."
+        "detail": "Largest 24h jump was 89 stars (0 forks, 10.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,24 +75,24 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 49.3,
+        "score": 49.2,
         "weight": 0.12,
-        "detail": "48 open issues for 16,775 stars (0.3%)."
+        "detail": "48 open issues for 16,864 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 95.0,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 7 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 6 days ago.",
-      "Fork-to-star ratio: 1,898 forks for 16,775 stars (11.3%)."
+      "Maintenance cadence: Last push 7 days ago.",
+      "Fork-to-star ratio: 1,898 forks for 16,864 stars (11.3%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 40 stars (7 forks, 8.1x the daily average)."
+      "Burst pattern: Largest 24h jump was 89 stars (0 forks, 10.9x the daily average)."
     ]
   }
 }

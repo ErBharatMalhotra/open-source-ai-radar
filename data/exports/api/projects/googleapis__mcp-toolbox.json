@@ -4,37 +4,58 @@
   "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 16939,
+  "topics": [
+    "genai",
+    "mcp",
+    "agent",
+    "ai",
+    "database",
+    "llm",
+    "server",
+    "agents",
+    "bigquery",
+    "elasticsearch",
+    "firestore",
+    "mongodb",
+    "mysql",
+    "oracle",
+    "postgresql",
+    "spanner",
+    "clickhouse",
+    "redis",
+    "tidb",
+    "cockroachdb"
+  ],
+  "stars": 16943,
   "forks": 1808,
   "open_issues": 165,
   "watchers": 90,
   "created_at": "2024-06-07T20:52:54Z",
-  "pushed_at": "2026-11-20T22:05:29Z",
+  "pushed_at": "2026-11-23T20:03:29Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/googleapis.png",
-  "radar_score": 75.76,
+  "radar_score": 75.77,
   "impact": 93.65,
-  "velocity": 63.9,
+  "velocity": 63.91,
   "health": 63.75,
-  "global_percentile": 55.86,
+  "global_percentile": 57.0,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP Toolbox for Databases is an open source MCP server for databases.",
   "maturity": "Unknown",
-  "stars_7d": 64,
-  "stars_30d": 203,
-  "stars_90d": 203,
-  "star_growth_rate_7d": 9.142857142857142,
-  "star_growth_rate_30d": 7.518518518518518,
-  "star_growth_acceleration": 1.2160450387051371,
-  "forks_7d": 7,
-  "forks_30d": 29,
+  "stars_7d": 58,
+  "stars_30d": 225,
+  "stars_90d": 225,
+  "star_growth_rate_7d": 8.285714285714286,
+  "star_growth_rate_30d": 7.758620689655173,
+  "star_growth_acceleration": 1.067936507936508,
+  "forks_7d": 6,
+  "forks_30d": 30,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 296,
+  "snapshot_count": 297,
   "authenticity": {
-    "organic_confidence": 91.2,
+    "organic_confidence": 91.9,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "1,807 forks for 16,921 stars (10.7%)."
+        "detail": "1,808 forks for 16,943 stars (10.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.0,
+        "score": 90.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 15 stars (-1 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 15 stars (-1 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +90,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 73.5,
+        "score": 74.2,
         "weight": 0.12,
-        "detail": "161 open issues for 16,921 stars (1.0%)."
+        "detail": "165 open issues for 16,943 stars (1.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 15 stars (-1 forks, 2.1x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 1,807 forks for 16,921 stars (10.7%)."
+      "Burst pattern: Largest 24h jump was 15 stars (-1 forks, 2.0x the daily average).",
+      "Fork-to-star ratio: 1,808 forks for 16,943 stars (10.7%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

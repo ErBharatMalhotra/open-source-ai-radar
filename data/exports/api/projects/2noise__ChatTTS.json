@@ -4,8 +4,26 @@
   "description": "A generative speech model for daily dialogue.",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
-  "stars": 40036,
+  "topics": [
+    "agent",
+    "text-to-speech",
+    "chat",
+    "chatgpt",
+    "chattts",
+    "chinese",
+    "chinese-language",
+    "english",
+    "english-language",
+    "gpt",
+    "llm",
+    "llm-agent",
+    "natural-language-inference",
+    "python",
+    "torch",
+    "torchaudio",
+    "tts"
+  ],
+  "stars": 40034,
   "forks": 4243,
   "open_issues": 56,
   "watchers": 203,
@@ -15,26 +33,26 @@
   "owner_avatar": "https://github.com/2noise.png",
   "radar_score": 66.88,
   "impact": 97.37,
-  "velocity": 51.53,
-  "health": 39.61,
-  "global_percentile": 8.14,
+  "velocity": 51.54,
+  "health": 39.58,
+  "global_percentile": 10.29,
   "category": "Generative AI",
   "sub_category": "",
   "summary": "A generative speech model for daily dialogue.",
   "maturity": "Unknown",
-  "stars_7d": 31,
-  "stars_30d": 116,
+  "stars_7d": 22,
+  "stars_30d": 103,
   "stars_90d": 127,
-  "star_growth_rate_7d": 4.428571428571429,
-  "star_growth_rate_30d": 3.8666666666666667,
-  "star_growth_acceleration": 1.145320197044335,
+  "star_growth_rate_7d": 3.142857142857143,
+  "star_growth_rate_30d": 3.433333333333333,
+  "star_growth_acceleration": 0.9153952843273232,
   "forks_7d": -3,
-  "forks_30d": -8,
-  "days_since_last_push": 225,
-  "freshness_score": 0.10539922456186433,
-  "snapshot_count": 200,
+  "forks_30d": -10,
+  "days_since_last_push": 227,
+  "freshness_score": 0.1033121800831002,
+  "snapshot_count": 201,
   "authenticity": {
-    "organic_confidence": 71.4,
+    "organic_confidence": 70.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +61,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "4,244 forks for 40,036 stars (10.6%)."
+        "detail": "4,243 forks for 40,034 stars (10.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.6,
+        "score": 70.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (1 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (1 forks, 3.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,21 +89,22 @@
         "label": "Issue engagement",
         "score": 39.0,
         "weight": 0.12,
-        "detail": "56 open issues for 40,036 stars (0.1%)."
+        "detail": "56 open issues for 40,034 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 40.0,
+        "score": 39.9,
         "weight": 0.1,
-        "detail": "Last push 226 days ago."
+        "detail": "Last push 227 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,244 forks for 40,036 stars (10.6%)."
+      "Fork-to-star ratio: 4,243 forks for 40,034 stars (10.6%)."
     ],
     "red_flags": [
-      "Issue engagement: 56 open issues for 40,036 stars (0.1%)."
+      "Issue engagement: 56 open issues for 40,034 stars (0.1%).",
+      "Maintenance cadence: Last push 227 days ago."
     ]
   }
 }

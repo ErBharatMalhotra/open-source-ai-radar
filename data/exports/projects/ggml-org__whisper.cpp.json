@@ -4,37 +4,44 @@
   "description": "Port of OpenAI's Whisper model in C/C++",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
-  "stars": 55447,
+  "topics": [
+    "openai",
+    "speech-to-text",
+    "transformer",
+    "whisper",
+    "inference",
+    "speech-recognition"
+  ],
+  "stars": 55451,
   "forks": 6343,
   "open_issues": 179,
-  "watchers": 408,
+  "watchers": 405,
   "created_at": "2022-09-25T18:26:37Z",
-  "pushed_at": "2026-11-23T10:11:53Z",
+  "pushed_at": "2026-11-23T17:51:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ggml-org.png",
-  "radar_score": 78.01,
-  "impact": 98.46,
-  "velocity": 65.35,
-  "health": 63.01,
-  "global_percentile": 81.14,
+  "radar_score": 78.72,
+  "impact": 98.47,
+  "velocity": 66.85,
+  "health": 63.75,
+  "global_percentile": 87.29,
   "category": "Local AI",
   "sub_category": "",
   "summary": "Port of OpenAI's Whisper model in C/C++",
   "maturity": "Unknown",
-  "stars_7d": 197,
-  "stars_30d": 655,
-  "stars_90d": 655,
-  "star_growth_rate_7d": 32.833333333333336,
-  "star_growth_rate_30d": 27.291666666666668,
-  "star_growth_acceleration": 1.203053435114504,
-  "forks_7d": 31,
-  "forks_30d": 88,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 349,
+  "stars_7d": 211,
+  "stars_30d": 658,
+  "stars_90d": 658,
+  "star_growth_rate_7d": 30.142857142857142,
+  "star_growth_rate_30d": 27.416666666666668,
+  "star_growth_acceleration": 1.0994355188884064,
+  "forks_7d": 32,
+  "forks_30d": 87,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 350,
   "authenticity": {
-    "organic_confidence": 88.5,
+    "organic_confidence": 88.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "6,342 forks for 55,437 stars (11.4%)."
+        "detail": "6,343 forks for 55,451 stars (11.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.7,
+        "score": 92.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 48 stars (12 forks, 1.7x the daily average)."
+        "detail": "Largest 24h jump was 48 stars (12 forks, 1.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +78,20 @@
         "label": "Issue engagement",
         "score": 51.1,
         "weight": 0.12,
-        "detail": "179 open issues for 55,437 stars (0.3%)."
+        "detail": "179 open issues for 55,451 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 48 stars (12 forks, 1.7x the daily average).",
-      "Maintenance cadence: Last push 2 days ago.",
-      "Fork-to-star ratio: 6,342 forks for 55,437 stars (11.4%)."
+      "Burst pattern: Largest 24h jump was 48 stars (12 forks, 1.8x the daily average).",
+      "Fork-to-star ratio: 6,343 forks for 55,451 stars (11.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

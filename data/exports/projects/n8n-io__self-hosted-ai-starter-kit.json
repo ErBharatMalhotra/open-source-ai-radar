@@ -4,8 +4,14 @@
   "description": "The Self-hosted AI Starter Kit is an open-source template that quickly sets up a local AI environment. Curated by n8n, it provides essential tools for creating secure, self-hosted AI workflows.",
   "language": null,
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 15384,
+  "topics": [
+    "ai",
+    "low-code",
+    "self-hosted",
+    "starter-kit",
+    "ai-agents"
+  ],
+  "stars": 15388,
   "forks": 3812,
   "open_issues": 0,
   "watchers": 179,
@@ -13,44 +19,44 @@
   "pushed_at": "2026-11-23T09:53:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/n8n-io.png",
-  "radar_score": 69.04,
-  "impact": 95.02,
-  "velocity": 48.51,
-  "health": 56.2,
-  "global_percentile": 16.14,
+  "radar_score": 70.89,
+  "impact": 95.04,
+  "velocity": 52.25,
+  "health": 58.35,
+  "global_percentile": 22.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "The Self-hosted AI Starter Kit is an open-source template that quickly sets up a local AI environment. Curated by n8n, it provides essential tools for creating secure, self-hosted AI workflows.",
   "maturity": "Unknown",
-  "stars_7d": 21,
-  "stars_30d": 82,
-  "stars_90d": 91,
-  "star_growth_rate_7d": 3.0,
-  "star_growth_rate_30d": 2.7333333333333334,
-  "star_growth_acceleration": 1.0975609756097562,
-  "forks_7d": -2,
-  "forks_30d": -1,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 212,
+  "stars_7d": 20,
+  "stars_30d": 87,
+  "stars_90d": 94,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 2.9,
+  "star_growth_acceleration": 0.9852216748768473,
+  "forks_7d": -4,
+  "forks_30d": 1,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 213,
   "authenticity": {
-    "organic_confidence": 78.9,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.3,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 97.0,
         "weight": 0.22,
-        "detail": "3,812 forks for 15,384 stars (24.8%)."
+        "detail": "3,812 forks for 15,388 stars (24.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.2,
+        "score": 84.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (5 forks, 2.5x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (5 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +77,23 @@
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 15,384 stars (0.0%)."
+        "detail": "0 open issues for 15,388 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.7,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 6 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 7 stars (5 forks, 2.5x the daily average).",
-      "Maintenance cadence: Last push 6 days ago.",
-      "Fork-to-star ratio: 3,812 forks for 15,384 stars (24.8%)."
+      "Burst pattern: Largest 24h jump was 7 stars (5 forks, 2.4x the daily average).",
+      "Fork-to-star ratio: 3,812 forks for 15,388 stars (24.8%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 15,384 stars (0.0%)."
+      "Issue engagement: 0 open issues for 15,388 stars (0.0%)."
     ]
   }
 }

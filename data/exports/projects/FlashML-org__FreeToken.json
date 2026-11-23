@@ -4,54 +4,63 @@
   "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 17685,
-  "forks": 1752,
+  "topics": [
+    "deepseek-v4",
+    "edge",
+    "glm",
+    "inference",
+    "minimax",
+    "moe",
+    "qwen",
+    "transformer"
+  ],
+  "stars": 17714,
+  "forks": 1753,
   "open_issues": 289,
   "watchers": 108,
   "created_at": "2026-07-20T20:44:11Z",
   "pushed_at": "2026-11-22T07:23:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/FlashML-org.png",
-  "radar_score": 78.04,
-  "impact": 93.88,
-  "velocity": 70.16,
-  "health": 63.75,
-  "global_percentile": 81.71,
+  "radar_score": 77.97,
+  "impact": 93.93,
+  "velocity": 70.15,
+  "health": 63.38,
+  "global_percentile": 80.14,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
   "maturity": "Unknown",
-  "stars_7d": 461,
-  "stars_30d": 2824,
-  "stars_90d": 2824,
-  "star_growth_rate_7d": 65.85714285714286,
-  "star_growth_rate_30d": 128.36363636363637,
-  "star_growth_acceleration": 0.5130513961958721,
-  "forks_7d": 47,
+  "stars_7d": 494,
+  "stars_30d": 2849,
+  "stars_90d": 2849,
+  "star_growth_rate_7d": 70.57142857142857,
+  "star_growth_rate_30d": 123.8695652173913,
+  "star_growth_acceleration": 0.5697237125808554,
+  "forks_7d": 46,
   "forks_30d": 249,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 328,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 329,
   "why_trending": "Strong momentum with 234 new stars this week. Above-average growth velocity. High developer adoption with 38 new forks this week. Active in the Local AI category.",
   "authenticity": {
-    "organic_confidence": 76.4,
+    "organic_confidence": 77.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.7,
+        "score": 99.6,
         "weight": 0.22,
-        "detail": "1,752 forks for 17,666 stars (9.9%)."
+        "detail": "1,753 forks for 17,714 stars (9.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 41.0,
+        "score": 43.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 653 stars (35 forks, 6.7x the daily average)."
+        "detail": "Largest 24h jump was 653 stars (35 forks, 6.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,20 +81,20 @@
         "label": "Issue engagement",
         "score": 84.5,
         "weight": 0.12,
-        "detail": "289 open issues for 17,666 stars (1.6%)."
+        "detail": "289 open issues for 17,714 stars (1.6%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 289 open issues for 17,666 stars (1.6%).",
-      "Fork-to-star ratio: 1,752 forks for 17,666 stars (9.9%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Issue engagement: 289 open issues for 17,714 stars (1.6%).",
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 1,753 forks for 17,714 stars (9.9%)."
     ],
     "red_flags": []
   }

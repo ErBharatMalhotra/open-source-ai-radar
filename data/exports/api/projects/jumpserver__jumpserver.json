@@ -4,37 +4,49 @@
   "description": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
-  "stars": 32017,
-  "forks": 5827,
-  "open_issues": 32,
+  "topics": [
+    "python",
+    "ssh-server",
+    "django",
+    "terminal",
+    "bastion-host",
+    "cyberark",
+    "teleport",
+    "pam",
+    "jumpserver",
+    "ai",
+    "codex"
+  ],
+  "stars": 32023,
+  "forks": 5826,
+  "open_issues": 34,
   "watchers": 653,
   "created_at": "2014-07-04T03:54:59Z",
   "pushed_at": "2026-11-23T10:03:47Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jumpserver.png",
-  "radar_score": 74.93,
-  "impact": 97.7,
-  "velocity": 56.89,
+  "radar_score": 74.95,
+  "impact": 97.71,
+  "velocity": 56.94,
   "health": 63.75,
-  "global_percentile": 49.0,
+  "global_percentile": 49.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unified workspace to securely access SSH, RDP, Kubernetes, databases, websites, RemoteApp, VirtualApp, and more.",
   "maturity": "Unknown",
-  "stars_7d": 39,
-  "stars_30d": 188,
-  "stars_90d": 192,
-  "star_growth_rate_7d": 5.571428571428571,
-  "star_growth_rate_30d": 6.266666666666667,
-  "star_growth_acceleration": 0.8890577507598784,
-  "forks_7d": 0,
+  "stars_7d": 54,
+  "stars_30d": 199,
+  "stars_90d": 221,
+  "star_growth_rate_7d": 7.714285714285714,
+  "star_growth_rate_30d": 6.633333333333334,
+  "star_growth_acceleration": 1.1629576453697057,
+  "forks_7d": 2,
   "forks_30d": 12,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 173,
+  "snapshot_count": 174,
   "authenticity": {
-    "organic_confidence": 85.0,
+    "organic_confidence": 85.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.4,
         "weight": 0.22,
-        "detail": "5,823 forks for 31,995 stars (18.2%)."
+        "detail": "5,826 forks for 32,023 stars (18.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.0,
+        "score": 93.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (0 forks, 1.8x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (0 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,25 +81,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 35.3,
+        "score": 35.6,
         "weight": 0.12,
-        "detail": "33 open issues for 31,995 stars (0.1%)."
+        "detail": "34 open issues for 32,023 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 98.6,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 2 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 11 stars (0 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 5,823 forks for 31,995 stars (18.2%).",
-      "Maintenance cadence: Last push 2 days ago."
+      "Burst pattern: Largest 24h jump was 11 stars (0 forks, 1.7x the daily average).",
+      "Fork-to-star ratio: 5,826 forks for 32,023 stars (18.2%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 33 open issues for 31,995 stars (0.1%)."
+      "Issue engagement: 34 open issues for 32,023 stars (0.1%)."
     ]
   }
 }

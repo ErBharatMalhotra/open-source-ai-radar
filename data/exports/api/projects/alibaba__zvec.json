@@ -4,37 +4,53 @@
   "description": "A lightweight, lightning-fast, in-process vector database",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "rag",
+    "agent-skills",
+    "embedded",
+    "faiss",
+    "hnsw",
+    "llm-memory",
+    "search-engine",
+    "semantic-search",
+    "similarity-search",
+    "vector-database",
+    "local",
+    "db",
+    "vector-db",
+    "fts",
+    "fulltext-search"
+  ],
   "stars": 16280,
-  "forks": 1027,
+  "forks": 1026,
   "open_issues": 44,
   "watchers": 71,
   "created_at": "2025-12-05T07:45:38Z",
-  "pushed_at": "2026-11-23T02:44:14Z",
+  "pushed_at": "2026-11-23T13:12:08Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/alibaba.png",
-  "radar_score": 76.37,
+  "radar_score": 76.46,
   "impact": 92.35,
   "velocity": 67.39,
-  "health": 63.38,
-  "global_percentile": 63.14,
+  "health": 63.75,
+  "global_percentile": 63.43,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "A lightweight, lightning-fast, in-process vector database",
   "maturity": "Unknown",
-  "stars_7d": 40,
-  "stars_30d": 141,
-  "stars_90d": 149,
-  "star_growth_rate_7d": 5.714285714285714,
-  "star_growth_rate_30d": 4.7,
-  "star_growth_acceleration": 1.21580547112462,
-  "forks_7d": 6,
-  "forks_30d": 14,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 241,
+  "stars_7d": 31,
+  "stars_30d": 137,
+  "stars_90d": 155,
+  "star_growth_rate_7d": 4.428571428571429,
+  "star_growth_rate_30d": 4.566666666666666,
+  "star_growth_acceleration": 0.969760166840459,
+  "forks_7d": 4,
+  "forks_30d": 12,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 242,
   "authenticity": {
-    "organic_confidence": 73.9,
+    "organic_confidence": 73.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +59,14 @@
         "label": "Fork-to-star ratio",
         "score": 86.7,
         "weight": 0.22,
-        "detail": "1,028 forks for 16,275 stars (6.3%)."
+        "detail": "1,026 forks for 16,280 stars (6.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 64.8,
+        "score": 63.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 18 stars (1 forks, 3.9x the daily average)."
+        "detail": "Largest 24h jump was 18 stars (1 forks, 4.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,19 +87,19 @@
         "label": "Issue engagement",
         "score": 48.5,
         "weight": 0.12,
-        "detail": "44 open issues for 16,275 stars (0.3%)."
+        "detail": "44 open issues for 16,280 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.9,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 3 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,028 forks for 16,275 stars (6.3%).",
-      "Maintenance cadence: Last push 3 days ago."
+      "Fork-to-star ratio: 1,026 forks for 16,280 stars (6.3%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

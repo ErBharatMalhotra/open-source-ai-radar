@@ -4,7 +4,12 @@
   "description": "A code-completion engine for Vim",
   "language": "Python",
   "license": "GPL-3.0",
-  "topics": [],
+  "topics": [
+    "vim",
+    "code-completion",
+    "code-analysis",
+    "semantic-engine"
+  ],
   "stars": 25879,
   "forks": 2738,
   "open_issues": 24,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-17T09:50:56Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ycm-core.png",
-  "radar_score": 70.51,
-  "impact": 96.49,
-  "velocity": 50.04,
-  "health": 57.61,
-  "global_percentile": 20.29,
+  "radar_score": 69.38,
+  "impact": 96.51,
+  "velocity": 47.78,
+  "health": 56.2,
+  "global_percentile": 18.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A code-completion engine for Vim",
   "maturity": "Unknown",
-  "stars_7d": 5,
-  "stars_30d": 8,
+  "stars_7d": 4,
+  "stars_30d": 7,
   "stars_90d": -16,
-  "star_growth_rate_7d": 0.7142857142857143,
-  "star_growth_rate_30d": 0.26666666666666666,
-  "star_growth_acceleration": 2.678571428571429,
-  "forks_7d": -2,
-  "forks_30d": -6,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 89,
+  "star_growth_rate_7d": 0.5714285714285714,
+  "star_growth_rate_30d": 0.23333333333333334,
+  "star_growth_acceleration": 2.4489795918367343,
+  "forks_7d": -1,
+  "forks_30d": -5,
+  "days_since_last_push": 6,
+  "freshness_score": 0.9417645335842487,
+  "snapshot_count": 90,
   "authenticity": {
-    "organic_confidence": 79.0,
+    "organic_confidence": 78.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "2,738 forks for 25,878 stars (10.6%)."
+        "detail": "2,738 forks for 25,879 stars (10.6%)."
       },
       {
         "key": "burst",
@@ -71,23 +76,23 @@
         "label": "Issue engagement",
         "score": 34.3,
         "weight": 0.12,
-        "detail": "24 open issues for 25,878 stars (0.1%)."
+        "detail": "24 open issues for 25,879 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 96.4,
+        "score": 95.7,
         "weight": 0.1,
-        "detail": "Last push 5 days ago."
+        "detail": "Last push 6 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 3 stars (0 forks, 3.0x the daily average).",
-      "Maintenance cadence: Last push 5 days ago.",
-      "Fork-to-star ratio: 2,738 forks for 25,878 stars (10.6%)."
+      "Maintenance cadence: Last push 6 days ago.",
+      "Fork-to-star ratio: 2,738 forks for 25,879 stars (10.6%)."
     ],
     "red_flags": [
-      "Issue engagement: 24 open issues for 25,878 stars (0.1%)."
+      "Issue engagement: 24 open issues for 25,879 stars (0.1%)."
     ]
   }
 }

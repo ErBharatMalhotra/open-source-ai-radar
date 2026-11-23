@@ -4,37 +4,58 @@
   "description": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ai",
+    "context",
+    "embedded",
+    "faiss",
+    "knowledge-base",
+    "knowledge-graph",
+    "llm",
+    "machine-learning",
+    "memory",
+    "nlp",
+    "offline-first",
+    "opencv",
+    "python",
+    "rag",
+    "retrieval-augmented-generation",
+    "semantic-search",
+    "vector-database",
+    "video-processing",
+    "memvid",
+    "mv2"
+  ],
   "stars": 17437,
-  "forks": 1462,
+  "forks": 1461,
   "open_issues": 18,
   "watchers": 124,
   "created_at": "2025-05-27T16:01:08Z",
   "pushed_at": "2026-07-14T14:39:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/memvid.png",
-  "radar_score": 65.64,
-  "impact": 93.84,
+  "radar_score": 65.59,
+  "impact": 93.83,
   "velocity": 50.02,
-  "health": 42.36,
-  "global_percentile": 6.71,
+  "health": 42.2,
+  "global_percentile": 6.43,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
   "maturity": "Unknown",
-  "stars_7d": 26,
-  "stars_30d": 830,
-  "stars_90d": 831,
-  "star_growth_rate_7d": 3.7142857142857144,
-  "star_growth_rate_30d": 27.666666666666668,
-  "star_growth_acceleration": 0.1342512908777969,
+  "stars_7d": 21,
+  "stars_30d": 831,
+  "stars_90d": 833,
+  "star_growth_rate_7d": 3.0,
+  "star_growth_rate_30d": 27.7,
+  "star_growth_acceleration": 0.10830324909747292,
   "forks_7d": -6,
-  "forks_30d": 18,
-  "days_since_last_push": 129,
-  "freshness_score": 0.27527078308975234,
-  "snapshot_count": 221,
+  "forks_30d": 40,
+  "days_since_last_push": 132,
+  "freshness_score": 0.26713530196585034,
+  "snapshot_count": 222,
   "authenticity": {
-    "organic_confidence": 50.2,
+    "organic_confidence": 49.8,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 94.2,
         "weight": 0.22,
-        "detail": "1,462 forks for 17,434 stars (8.4%)."
+        "detail": "1,461 forks for 17,437 stars (8.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 13.7,
+        "score": 12.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 428 stars (26 forks, 14.4x the daily average)."
+        "detail": "Largest 24h jump was 428 stars (26 forks, 14.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,22 +92,22 @@
         "label": "Issue engagement",
         "score": 35.3,
         "weight": 0.12,
-        "detail": "18 open issues for 17,434 stars (0.1%)."
+        "detail": "18 open issues for 17,437 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 58.6,
+        "score": 58.3,
         "weight": 0.1,
-        "detail": "Last push 131 days ago."
+        "detail": "Last push 132 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,462 forks for 17,434 stars (8.4%)."
+      "Fork-to-star ratio: 1,461 forks for 17,437 stars (8.4%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 428 stars (26 forks, 14.4x the daily average).",
-      "Issue engagement: 18 open issues for 17,434 stars (0.1%)."
+      "Burst pattern: Largest 24h jump was 428 stars (26 forks, 14.7x the daily average).",
+      "Issue engagement: 18 open issues for 17,437 stars (0.1%)."
     ]
   }
 }

@@ -4,7 +4,9 @@
   "description": "PaddleFormers is an easy-to-use library of pre-trained large language model zoo based on PaddlePaddle.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "model"
+  ],
   "stars": 12971,
   "forks": 2180,
   "open_issues": 3,
@@ -13,28 +15,28 @@
   "pushed_at": "2026-11-17T09:03:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/PaddlePaddle.png",
-  "radar_score": 68.44,
-  "impact": 93.94,
-  "velocity": 47.03,
-  "health": 57.61,
-  "global_percentile": 14.0,
+  "radar_score": 67.29,
+  "impact": 93.93,
+  "velocity": 44.76,
+  "health": 56.2,
+  "global_percentile": 11.86,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "PaddleFormers is an easy-to-use library of pre-trained large language model zoo based on PaddlePaddle.",
   "maturity": "Unknown",
-  "stars_7d": 3,
-  "stars_30d": -2,
-  "stars_90d": -11,
-  "star_growth_rate_7d": 0.42857142857142855,
-  "star_growth_rate_30d": -0.06666666666666667,
-  "star_growth_acceleration": 1.0,
-  "forks_7d": -3,
-  "forks_30d": -5,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 154,
+  "stars_7d": 2,
+  "stars_30d": 2,
+  "stars_90d": -12,
+  "star_growth_rate_7d": 0.2857142857142857,
+  "star_growth_rate_30d": 0.06666666666666667,
+  "star_growth_acceleration": 4.285714285714286,
+  "forks_7d": -1,
+  "forks_30d": -6,
+  "days_since_last_push": 6,
+  "freshness_score": 0.9417645335842487,
+  "snapshot_count": 155,
   "authenticity": {
-    "organic_confidence": 86.2,
+    "organic_confidence": 86.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +45,7 @@
         "label": "Fork-to-star ratio",
         "score": 98.6,
         "weight": 0.22,
-        "detail": "2,180 forks for 12,972 stars (16.8%)."
+        "detail": "2,180 forks for 12,971 stars (16.8%)."
       },
       {
         "key": "burst",
@@ -71,23 +73,23 @@
         "label": "Issue engagement",
         "score": 27.3,
         "weight": 0.12,
-        "detail": "3 open issues for 12,972 stars (0.0%)."
+        "detail": "3 open issues for 12,971 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 96.4,
+        "score": 95.7,
         "weight": 0.1,
-        "detail": "Last push 5 days ago."
+        "detail": "Last push 6 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 5 days ago.",
-      "Fork-to-star ratio: 2,180 forks for 12,972 stars (16.8%).",
+      "Maintenance cadence: Last push 6 days ago.",
+      "Fork-to-star ratio: 2,180 forks for 12,971 stars (16.8%).",
       "Burst pattern: Largest 24h jump was 1 stars (1 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Issue engagement: 3 open issues for 12,972 stars (0.0%)."
+      "Issue engagement: 3 open issues for 12,971 stars (0.0%)."
     ]
   }
 }

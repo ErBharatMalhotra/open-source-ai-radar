@@ -15,13 +15,20 @@ permissions:
   contents: write
 
 concurrency:
-  group: discover-repos
+  # Shared with Process Repos and Daily Breakout: they all rewrite the same
+  # generated artefacts, so they must never run at the same time.
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    # A normal run takes ~11 min. The Sunday `--force --provider groq` pass
+    # re-classifies every low-confidence repo: ~2,900 repos at 50 per request
+    # with a 45s Groq rate-limit pause is ~45 min of API time on its own, so a
+    # 25 min cap guaranteed cancellation on every Sunday run (runs 43695311588,
+    # 43753093541, 45007708344, 45067463274) and threw away all of that work.
+    timeout-minutes: 90
 
     steps:
       - name: Checkout
@@ -95,13 +102,10 @@ jobs:
       - name: Sync processing scheduler
         run: uv run radar sync-cursor
 
-      - name: Export JSON
-        # Regenerate exports so classification changes (especially the
-        # weekly --force re-classify) reach the website immediately,
-        # instead of waiting for the next Process Repos run.
-        run: uv run python scripts/export.py
-
       - name: Save database
+        # Saved before the export/commit steps on purpose: the weekly --force
+        # pass costs ~45 min of Groq time, and this cache is the only place the
+        # classifications live. A failure later in the job must not discard it.
         uses: actions/cache/save@v4
         with:
           path: data/radar.db
@@ -109,19 +113,17 @@ jobs:
           # would silently skip every save after the first one.
           key: radar-db-${{ github.run_id }}
 
+      - name: Export JSON
+        # Regenerate exports so classification changes (especially the
+        # weekly --force re-classify) reach the website immediately,
+        # instead of waiting for the next Process Repos run.
+        run: uv run python scripts/export.py
+
       - name: Refresh README live stats
         run: uv run python scripts/update_readme_stats.py
 
       - name: Commit updated data
+        # Stages only generated artefacts, rebases onto the newest main and
+        # keeps this run's snapshot when a generated file conflicts.
         run: |
-          git config user.name "Bharat Malhotra"
-          git config user.email "mr.bharatmalhotra@gmail.com"
-          git add data/exports/ -f
-          git add README.md web/src/layouts/Layout.astro web/src/pages/index.astro
-          if git diff --staged --quiet; then
-            echo "::notice::No data changes to commit — skipping push"
-          else
-            git commit -m "chore: discovery + scheduler sync"
-            git pull --rebase origin main
-            git push
-          fi
+          bash scripts/ci_commit_data.sh "chore: discovery + scheduler sync"

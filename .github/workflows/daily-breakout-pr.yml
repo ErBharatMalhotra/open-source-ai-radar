@@ -11,7 +11,10 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: daily-breakout-pr
+  # Shared with Process Repos and Discover Repos: this job branches off main,
+  # rewrites generated exports and merges back, which must not race with another
+  # run publishing the same files.
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:

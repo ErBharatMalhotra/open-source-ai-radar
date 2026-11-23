@@ -9,8 +9,12 @@ on:
 permissions:
   contents: write
 
+# All three data-writing workflows (Process, Discover, Daily Breakout) regenerate
+# the same whole-file artefacts, so they share one concurrency group: a run that
+# starts while another is mid-export would otherwise rebase into a conflict on
+# data/exports/*.json and lose its entire snapshot (see scripts/ci_commit_data.sh).
 concurrency:
-  group: process-repos
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:
@@ -109,16 +113,9 @@ jobs:
           key: radar-db-${{ github.run_id }}
 
       - name: Commit updated data & leaderboard
+        # Stages only generated artefacts, rebases onto the newest main and
+        # keeps this run's snapshot when a generated file conflicts.
         run: |
-          git config user.name "Bharat Malhotra"
-          git config user.email "mr.bharatmalhotra@gmail.com"
-          git add data/exports/ -f
-          git add README.md web/src/layouts/Layout.astro web/src/pages/index.astro -f
-          if git diff --staged --quiet; then
-            echo "::notice::No data changes to commit — skipping push"
-          else
-            STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "chore(data): refresh AI radar scoring & metrics snapshot [$STAMP]"
-            git pull --rebase origin main
-            git push
-          fi
+          STAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          bash scripts/ci_commit_data.sh \
+            "chore(data): refresh AI radar scoring & metrics snapshot [$STAMP]"

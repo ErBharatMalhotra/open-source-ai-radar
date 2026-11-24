@@ -4,37 +4,57 @@
   "description": "BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12414,
-  "forks": 2057,
-  "open_issues": 7,
+  "topics": [
+    "agent",
+    "ai",
+    "chatbot",
+    "rag",
+    "workflow",
+    "enterprise",
+    "genai",
+    "gpt",
+    "langchian",
+    "llm",
+    "llmdevops",
+    "llmops",
+    "ocr",
+    "openai",
+    "orchestration",
+    "python",
+    "finetune",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "stars": 12420,
+  "forks": 2058,
+  "open_issues": 8,
   "watchers": 622,
   "created_at": "2023-08-28T10:00:24Z",
-  "pushed_at": "2026-11-23T14:22:32Z",
+  "pushed_at": "2026-11-24T04:45:10Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dataelement.png",
-  "radar_score": 72.07,
-  "impact": 94.43,
-  "velocity": 56.3,
+  "radar_score": 72.18,
+  "impact": 94.45,
+  "velocity": 56.6,
   "health": 58.35,
   "global_percentile": 27.71,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "BISHENG is an open LLM devops platform for next generation Enterprise AI applications. Powerful and comprehensive features include: GenAI workflow, RAG, Agent, Unified model management, Evaluation, SFT, Dataset Management, Enterprise-level System Management, Observability and more.",
   "maturity": "Unknown",
-  "stars_7d": 86,
-  "stars_30d": 341,
-  "stars_90d": 346,
-  "star_growth_rate_7d": 12.285714285714286,
-  "star_growth_rate_30d": 11.366666666666667,
-  "star_growth_acceleration": 1.080854629241726,
-  "forks_7d": 12,
-  "forks_30d": 73,
+  "stars_7d": 91,
+  "stars_30d": 346,
+  "stars_90d": 351,
+  "star_growth_rate_7d": 13.0,
+  "star_growth_rate_30d": 11.533333333333333,
+  "star_growth_acceleration": 1.1271676300578035,
+  "forks_7d": 13,
+  "forks_30d": 74,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 238,
+  "snapshot_count": 239,
   "authenticity": {
-    "organic_confidence": 78.3,
+    "organic_confidence": 78.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.7,
         "weight": 0.22,
-        "detail": "2,057 forks for 12,415 stars (16.6%)."
+        "detail": "2,058 forks for 12,420 stars (16.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.5,
+        "score": 74.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 36 stars (6 forks, 3.0x the daily average)."
       },
@@ -69,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 30.6,
+        "score": 31.4,
         "weight": 0.12,
-        "detail": "7 open issues for 12,415 stars (0.1%)."
+        "detail": "8 open issues for 12,420 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +102,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,057 forks for 12,415 stars (16.6%).",
+      "Fork-to-star ratio: 2,058 forks for 12,420 stars (16.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 12,415 stars (0.1%)."
+      "Issue engagement: 8 open issues for 12,420 stars (0.1%)."
     ]
   }
 }

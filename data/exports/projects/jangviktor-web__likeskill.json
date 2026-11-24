@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "\u674e\u53ef\u8001\u4e2d\u533bSKILL\uff081930-2013\uff09\u601d\u7ef4\u64cd\u4f5c\u7cfb\u7edf\u3002\u57fa\u4e8e13\u4e2a\u6765\u6e90\uff0811\u672c\u8457\u4f5c+2\u7bc7\u8bbf\u8c08\uff09\u84b8\u998f\uff0c   \u542b423\u4e2a\u533b\u6848\u3001120+\u9996\u65b9\u5242\u300192\u79cd\u75c7\u72b6\u8def\u7531\u300124\u79cd\u5047\u8bc1\u8bc6\u522b\u3002   \u6838\u5fc3\u80fd\u529b\uff1a\u6025\u5371\u91cd\u75c7\u6551\u6cbb\uff08\u5fc3\u8870/\u4e2d\u98ce/\u4f11\u514b\uff09\u3001\u7ecf\u65b9\u5242\u91cf\u4f53\u7cfb\u3001\u516d\u7ecf\u8fa8\u8bc1\u3001\u5047\u8bc1\u8bc6\u522b\u3002   \u89e6\u53d1\u8bcd\uff1a\u300c\u674e\u53ef\u300d\u300c\u7528\u674e\u53ef\u7684\u89c6\u89d2\u300d\u300c\u674e\u53ef\u4f1a\u600e\u4e48\u770b\u300d\u300c\u5fc3\u8870\u600e\u4e48\u6025\u6551\u300d\u300c\u9644\u5b50\u7528\u91cf\u300d\u300c\u7ecf\u65b9\u5242\u91cf\u300d\u300c\u5047\u9633\u8bc1\u300d\u300c\u7834\u683c\u6551\u5fc3\u6c64\u300d\u300c\u516d\u7ecf\u8fa8\u8bc1\u300d\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 70.1,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 95.1,
+        "weight": 0.22,
+        "detail": "51 forks for 148 stars (34.5%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 148 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 69.2,
+        "weight": 0.1,
+        "detail": "Last push 93 days ago."
+      }
+    ],
+    "reasons": [
+      "Fork-to-star ratio: 51 forks for 148 stars (34.5%)."
+    ],
+    "red_flags": [
+      "Issue engagement: 0 open issues for 148 stars (0.0%)."
+    ]
+  }
 }

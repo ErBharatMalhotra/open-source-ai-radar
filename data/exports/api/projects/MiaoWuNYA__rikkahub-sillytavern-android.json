@@ -22,5 +22,60 @@
   "sub_category": "",
   "summary": "\u5b89\u5353AI\u804a\u5929\u7aef:\u5f00\u7bb1\u5373\u804a\uff0c\u65e0\u635f\u5bfc\u5165\u9152\u9986\u5361\uff0c\u4e13\u5c5eRP\u6a21\u5f0f\uff0c\u9ad8\u5b9a\u5236\u4e3b\u9898\uff0c\u521b\u9020\u6a21\u5f0f\uff0cRAG\u8bb0\u5fc6\uff0c\u7f13\u5b58\u5f3a\u7701\u7528\u91cf\uff0c\u9632\u7a7a\u56de\uff0c\u4e3b\u52a8\u4fe1\u606f\uff0c\u524d\u7aef\u5361\u652f\u6301\uff0cQQbot\uff0cAI\u7fa4\u804a\uff0c\u63d2\u4ef6\u7cfb\u7edf\uff0c\u5f3a\u517c\u5bb9\u4e2d\u8f6c\u7ad9\u3002\u624b\u673a\u79fb\u52a8\u7aef\u539f\u751f\u652f\u6301\uff0c\u6c42 Star \u6536\u85cf\u2b50Android AI Chatbox: lossless SillyTavern card import, aggressive cache optimization, Jev decisions, multi-dimensional memory, anti-blank-reply, proactive messages, AI group chat, SillyTavern",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 99.6,
+    "verdict": "organic",
+    "label": "High Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 99.5,
+        "weight": 0.22,
+        "detail": "29 forks for 235 stars (12.3%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 100,
+        "weight": 0.12,
+        "detail": "22 open issues for 235 stars (9.4%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 99.3,
+        "weight": 0.1,
+        "detail": "Last push 1 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 1 days ago.",
+      "Fork-to-star ratio: 29 forks for 235 stars (12.3%).",
+      "Issue engagement: 22 open issues for 235 stars (9.4%)."
+    ],
+    "red_flags": []
+  }
 }

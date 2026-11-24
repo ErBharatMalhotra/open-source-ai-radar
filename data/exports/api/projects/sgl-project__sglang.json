@@ -4,54 +4,73 @@
   "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 38990,
-  "forks": 10796,
-  "open_issues": 1005,
+  "topics": [
+    "cuda",
+    "inference",
+    "llama",
+    "llm",
+    "moe",
+    "transformer",
+    "vlm",
+    "deepseek",
+    "blackwell",
+    "gpt-oss",
+    "diffusion",
+    "attention",
+    "glm",
+    "minimax",
+    "qwen",
+    "qwen-image",
+    "reinforcement-learning",
+    "wan"
+  ],
+  "stars": 38996,
+  "forks": 10800,
+  "open_issues": 1007,
   "watchers": 185,
   "created_at": "2024-01-08T04:15:52Z",
-  "pushed_at": "2026-11-24T01:16:46Z",
+  "pushed_at": "2026-11-24T04:38:45Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/sgl-project.png",
-  "radar_score": 79.69,
-  "impact": 97.69,
+  "radar_score": 79.7,
+  "impact": 97.7,
   "velocity": 72.37,
   "health": 61.15,
-  "global_percentile": 94.57,
+  "global_percentile": 94.43,
   "category": "Multimodal AI",
   "sub_category": "omni-modal",
   "summary": "SGLang is a high-performance serving framework for large language models and multimodal models.",
   "maturity": "Unknown",
-  "stars_7d": 84,
-  "stars_30d": 645,
-  "stars_90d": 645,
-  "star_growth_rate_7d": 12.0,
-  "star_growth_rate_30d": 29.318181818181817,
-  "star_growth_acceleration": 0.4093023255813954,
-  "forks_7d": 281,
-  "forks_30d": 738,
+  "stars_7d": 58,
+  "stars_30d": 653,
+  "stars_90d": 653,
+  "star_growth_rate_7d": 8.285714285714286,
+  "star_growth_rate_30d": 29.681818181818183,
+  "star_growth_acceleration": 0.2791511704222271,
+  "forks_7d": 271,
+  "forks_30d": 744,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 374,
-  "why_trending": "Steady growth with 84 new stars this week. Above-average growth velocity. High developer adoption with 281 new forks this week. Active in the Multimodal AI category.",
+  "snapshot_count": 375,
+  "why_trending": "Steady growth with 58 new stars this week. Above-average growth velocity. High developer adoption with 271 new forks this week. Active in the Multimodal AI category.",
   "authenticity": {
-    "organic_confidence": 72.4,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 91.0,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 96.5,
         "weight": 0.22,
-        "detail": "10,792 forks for 38,987 stars (27.7%)."
+        "detail": "10,800 forks for 38,996 stars (27.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 29.0,
+        "score": 81.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 361 stars (21 forks, 9.0x the daily average)."
+        "detail": "Largest 24h jump was 76 stars (45 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 92.0,
+        "score": 91.9,
         "weight": 0.12,
-        "detail": "1,011 open issues for 38,987 stars (2.6%)."
+        "detail": "1,007 open issues for 38,996 stars (2.6%)."
       },
       {
         "key": "maintenance",
@@ -83,12 +102,10 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 1,011 open issues for 38,987 stars (2.6%).",
-      "Fork-to-star ratio: 10,792 forks for 38,987 stars (27.7%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 76 stars (45 forks, 2.5x the daily average).",
+      "Issue engagement: 1,007 open issues for 38,996 stars (2.6%).",
+      "Fork-to-star ratio: 10,800 forks for 38,996 stars (27.7%)."
     ],
-    "red_flags": [
-      "Burst pattern: Largest 24h jump was 361 stars (21 forks, 9.0x the daily average)."
-    ]
+    "red_flags": []
   }
 }

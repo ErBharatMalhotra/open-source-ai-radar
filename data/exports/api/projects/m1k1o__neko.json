@@ -4,37 +4,47 @@
   "description": "A self hosted virtual browser that runs in docker and uses WebRTC.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 22711,
+  "topics": [
+    "docker",
+    "virtual-browser",
+    "golang",
+    "webrtc",
+    "self-hosted",
+    "remote-control",
+    "remote-desktop",
+    "vue",
+    "media-streaming"
+  ],
+  "stars": 22712,
   "forks": 1663,
-  "open_issues": 128,
+  "open_issues": 129,
   "watchers": 103,
   "created_at": "2020-03-14T20:46:07Z",
   "pushed_at": "2026-11-18T11:05:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/m1k1o.png",
   "radar_score": 71.94,
-  "impact": 94.37,
+  "impact": 94.39,
   "velocity": 53.43,
   "health": 61.94,
-  "global_percentile": 26.86,
+  "global_percentile": 25.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A self hosted virtual browser that runs in docker and uses WebRTC.",
   "maturity": "Unknown",
-  "stars_7d": 23,
-  "stars_30d": 164,
-  "stars_90d": 252,
-  "star_growth_rate_7d": 3.2857142857142856,
-  "star_growth_rate_30d": 5.466666666666667,
-  "star_growth_acceleration": 0.6010452961672473,
+  "stars_7d": 25,
+  "stars_30d": 166,
+  "stars_90d": 256,
+  "star_growth_rate_7d": 3.5714285714285716,
+  "star_growth_rate_30d": 5.533333333333333,
+  "star_growth_acceleration": 0.6454388984509467,
   "forks_7d": 2,
   "forks_30d": 21,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 220,
+  "snapshot_count": 221,
   "authenticity": {
-    "organic_confidence": 71.9,
+    "organic_confidence": 71.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +53,14 @@
         "label": "Fork-to-star ratio",
         "score": 90.4,
         "weight": 0.22,
-        "detail": "1,663 forks for 22,710 stars (7.3%)."
+        "detail": "1,663 forks for 22,712 stars (7.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 49.9,
+        "score": 49.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 28 stars (2 forks, 5.3x the daily average)."
+        "detail": "Largest 24h jump was 28 stars (2 forks, 5.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 61.9,
+        "score": 62.0,
         "weight": 0.12,
-        "detail": "128 open issues for 22,710 stars (0.6%)."
+        "detail": "129 open issues for 22,712 stars (0.6%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +92,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,663 forks for 22,710 stars (7.3%).",
+      "Fork-to-star ratio: 1,663 forks for 22,712 stars (7.3%).",
       "Maintenance cadence: Last push 5 days ago."
     ],
     "red_flags": []

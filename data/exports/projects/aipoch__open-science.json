@@ -35,7 +35,7 @@
   "snapshot_count": 30,
   "why_trending": "Strong momentum with 355 new stars this week. Above-average growth velocity. High developer adoption with 163 new forks this week. Active in the AI Agents category.",
   "authenticity": {
-    "organic_confidence": 89.0,
+    "organic_confidence": 89.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,7 +44,7 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "562 forks for 5,566 stars (10.1%)."
+        "detail": "562 forks for 5,571 stars (10.1%)."
       },
       {
         "key": "burst",
@@ -70,9 +70,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 37.6,
+        "score": 41.2,
         "weight": 0.12,
-        "detail": "7 open issues for 5,566 stars (0.1%)."
+        "detail": "9 open issues for 5,571 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -83,12 +83,10 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 562 forks for 5,566 stars (10.1%).",
+      "Fork-to-star ratio: 562 forks for 5,571 stars (10.1%).",
       "Burst pattern: Largest 24h jump was 3 stars (0 forks, 0.4x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Issue engagement: 7 open issues for 5,566 stars (0.1%)."
-    ]
+    "red_flags": []
   }
 }

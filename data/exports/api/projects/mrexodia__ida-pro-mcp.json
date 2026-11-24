@@ -4,8 +4,18 @@
   "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 13550,
+  "topics": [
+    "ida-plugin",
+    "ida-pro",
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "reverse-engineering",
+    "ai",
+    "aiagent",
+    "binary-analysis"
+  ],
+  "stars": 13554,
   "forks": 1668,
   "open_issues": 37,
   "watchers": 64,
@@ -13,26 +23,26 @@
   "pushed_at": "2026-11-12T11:01:58Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mrexodia.png",
-  "radar_score": 72.31,
-  "impact": 92.4,
+  "radar_score": 72.32,
+  "impact": 92.42,
   "velocity": 58.17,
   "health": 59.95,
-  "global_percentile": 28.86,
+  "global_percentile": 28.57,
   "category": "MCP",
   "sub_category": "integration",
   "summary": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
   "maturity": "Unknown",
-  "stars_7d": 59,
-  "stars_30d": 383,
-  "stars_90d": 383,
-  "star_growth_rate_7d": 8.428571428571429,
-  "star_growth_rate_30d": 13.678571428571429,
-  "star_growth_acceleration": 0.6161879895561357,
-  "forks_7d": 13,
+  "stars_7d": 64,
+  "stars_30d": 387,
+  "stars_90d": 387,
+  "star_growth_rate_7d": 9.142857142857142,
+  "star_growth_rate_30d": 13.821428571428571,
+  "star_growth_acceleration": 0.661498708010336,
+  "forks_7d": 14,
   "forks_30d": 81,
   "days_since_last_push": 11,
   "freshness_score": 0.8958341352965282,
-  "snapshot_count": 322,
+  "snapshot_count": 323,
   "authenticity": {
     "organic_confidence": 83.4,
     "verdict": "organic",
@@ -43,7 +53,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "1,667 forks for 13,549 stars (12.3%)."
+        "detail": "1,668 forks for 13,554 stars (12.3%)."
       },
       {
         "key": "burst",
@@ -69,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.7,
+        "score": 48.6,
         "weight": 0.12,
-        "detail": "37 open issues for 13,549 stars (0.3%)."
+        "detail": "37 open issues for 13,554 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +94,7 @@
     "reasons": [
       "Burst pattern: Largest 24h jump was 35 stars (10 forks, 2.6x the daily average).",
       "Maintenance cadence: Last push 11 days ago.",
-      "Fork-to-star ratio: 1,667 forks for 13,549 stars (12.3%)."
+      "Fork-to-star ratio: 1,668 forks for 13,554 stars (12.3%)."
     ],
     "red_flags": []
   }

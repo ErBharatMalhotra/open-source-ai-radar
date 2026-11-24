@@ -4,13 +4,34 @@
   "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 97424,
-  "forks": 25192,
+  "topics": [
+    "gpt",
+    "llm",
+    "pytorch",
+    "model-serving",
+    "transformer",
+    "llm-serving",
+    "inference",
+    "llama",
+    "amd",
+    "cuda",
+    "tpu",
+    "deepseek",
+    "qwen",
+    "blackwell",
+    "deepseek-v3",
+    "gpt-oss",
+    "kimi",
+    "moe",
+    "openai",
+    "qwen3"
+  ],
+  "stars": 97434,
+  "forks": 25202,
   "open_issues": 3015,
   "watchers": 608,
   "created_at": "2023-02-09T11:23:20Z",
-  "pushed_at": "2026-11-24T01:31:21Z",
+  "pushed_at": "2026-11-24T04:38:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vllm-project.png",
   "radar_score": 80.25,
@@ -22,20 +43,20 @@
   "sub_category": "inference engine",
   "summary": "A high-throughput and memory-efficient inference and serving engine for LLMs",
   "maturity": "Unknown",
-  "stars_7d": 449,
-  "stars_30d": 1362,
-  "stars_90d": 1362,
-  "star_growth_rate_7d": 64.14285714285714,
-  "star_growth_rate_30d": 61.90909090909091,
-  "star_growth_acceleration": 1.0360813929095867,
-  "forks_7d": 326,
-  "forks_30d": 930,
+  "stars_7d": 411,
+  "stars_30d": 1368,
+  "stars_90d": 1368,
+  "star_growth_rate_7d": 58.714285714285715,
+  "star_growth_rate_30d": 62.18181818181818,
+  "star_growth_acceleration": 0.9442355889724311,
+  "forks_7d": 309,
+  "forks_30d": 944,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 375,
-  "why_trending": "Strong momentum with 449 new stars this week. Above-average growth velocity. High developer adoption with 326 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 376,
+  "why_trending": "Strong momentum with 411 new stars this week. Above-average growth velocity. High developer adoption with 309 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 94.0,
+    "organic_confidence": 94.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +65,14 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "25,187 forks for 97,418 stars (25.9%)."
+        "detail": "25,202 forks for 97,434 stars (25.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.2,
+        "score": 90.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 143 stars (47 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 131 stars (54 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,7 +93,7 @@
         "label": "Issue engagement",
         "score": 93.6,
         "weight": 0.12,
-        "detail": "3,015 open issues for 97,418 stars (3.1%)."
+        "detail": "3,015 open issues for 97,434 stars (3.1%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +104,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 143 stars (47 forks, 2.1x the daily average).",
-      "Issue engagement: 3,015 open issues for 97,418 stars (3.1%).",
-      "Fork-to-star ratio: 25,187 forks for 97,418 stars (25.9%)."
+      "Burst pattern: Largest 24h jump was 131 stars (54 forks, 1.9x the daily average).",
+      "Issue engagement: 3,015 open issues for 97,434 stars (3.1%).",
+      "Fork-to-star ratio: 25,202 forks for 97,434 stars (25.9%)."
     ],
     "red_flags": []
   }

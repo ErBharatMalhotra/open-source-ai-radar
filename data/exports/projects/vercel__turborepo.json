@@ -4,7 +4,13 @@
   "description": "The build system for coding agents.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "monorepo",
+    "javascript",
+    "typescript",
+    "build-tool",
+    "build-system"
+  ],
   "stars": 31381,
   "forks": 2504,
   "open_issues": 4,
@@ -13,11 +19,11 @@
   "pushed_at": "2026-11-24T00:53:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vercel.png",
-  "radar_score": 72.63,
-  "impact": 96.05,
-  "velocity": 56.08,
+  "radar_score": 72.64,
+  "impact": 96.06,
+  "velocity": 56.07,
   "health": 58.35,
-  "global_percentile": 31.0,
+  "global_percentile": 30.86,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "The build system for coding agents.",
@@ -26,15 +32,15 @@
   "stars_30d": 74,
   "stars_90d": 74,
   "star_growth_rate_7d": 4.142857142857143,
-  "star_growth_rate_30d": 4.352941176470588,
-  "star_growth_acceleration": 0.951737451737452,
-  "forks_7d": 14,
-  "forks_30d": 28,
+  "star_growth_rate_30d": 4.111111111111111,
+  "star_growth_acceleration": 1.007722007722008,
+  "forks_7d": 13,
+  "forks_30d": 27,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 54,
+  "snapshot_count": 55,
   "authenticity": {
-    "organic_confidence": 75.2,
+    "organic_confidence": 75.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +49,14 @@
         "label": "Fork-to-star ratio",
         "score": 92.7,
         "weight": 0.22,
-        "detail": "2,505 forks for 31,381 stars (8.0%)."
+        "detail": "2,504 forks for 31,381 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.3,
+        "score": 72.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 13 stars (6 forks, 3.1x the daily average)."
+        "detail": "Largest 24h jump was 13 stars (6 forks, 3.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +88,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,505 forks for 31,381 stars (8.0%).",
+      "Fork-to-star ratio: 2,504 forks for 31,381 stars (8.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [

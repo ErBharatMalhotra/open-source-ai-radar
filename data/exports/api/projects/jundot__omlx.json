@@ -4,17 +4,24 @@
   "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon \u2014 managed from the macOS menu bar",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 23883,
-  "forks": 2196,
-  "open_issues": 220,
+  "topics": [
+    "apple-silicon",
+    "inference-server",
+    "llm",
+    "macos",
+    "mlx",
+    "openai-api"
+  ],
+  "stars": 23888,
+  "forks": 2197,
+  "open_issues": 221,
   "watchers": 112,
   "created_at": "2026-02-13T14:13:27Z",
   "pushed_at": "2026-11-23T09:55:32Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/jundot.png",
-  "radar_score": 78.33,
-  "impact": 94.92,
+  "radar_score": 78.35,
+  "impact": 94.94,
   "velocity": 69.8,
   "health": 63.75,
   "global_percentile": 83.57,
@@ -22,19 +29,19 @@
   "sub_category": "inference engine",
   "summary": "LLM inference server with continuous batching & SSD caching for Apple Silicon \u2014 managed from the macOS menu bar",
   "maturity": "Unknown",
-  "stars_7d": 218,
-  "stars_30d": 662,
-  "stars_90d": 662,
-  "star_growth_rate_7d": 31.142857142857142,
-  "star_growth_rate_30d": 28.782608695652176,
-  "star_growth_acceleration": 1.0820025895554595,
-  "forks_7d": 59,
-  "forks_30d": 115,
+  "stars_7d": 225,
+  "stars_30d": 668,
+  "stars_90d": 668,
+  "star_growth_rate_7d": 32.142857142857146,
+  "star_growth_rate_30d": 29.043478260869566,
+  "star_growth_acceleration": 1.106715141146279,
+  "forks_7d": 58,
+  "forks_30d": 117,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 337,
+  "snapshot_count": 338,
   "authenticity": {
-    "organic_confidence": 91.6,
+    "organic_confidence": 91.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.1,
         "weight": 0.22,
-        "detail": "2,195 forks for 23,872 stars (9.2%)."
+        "detail": "2,197 forks for 23,888 stars (9.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.7,
+        "score": 92.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 49 stars (6 forks, 1.7x the daily average)."
       },
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 72.3,
+        "score": 72.8,
         "weight": 0.12,
-        "detail": "217 open issues for 23,872 stars (0.9%)."
+        "detail": "221 open issues for 23,888 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +90,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 49 stars (6 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 2,195 forks for 23,872 stars (9.2%).",
+      "Fork-to-star ratio: 2,197 forks for 23,888 stars (9.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

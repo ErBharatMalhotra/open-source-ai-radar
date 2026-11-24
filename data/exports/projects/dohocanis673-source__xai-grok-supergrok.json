@@ -22,5 +22,61 @@
   "sub_category": "",
   "summary": "xAI Grok 3 / SuperGrok \u8ba2\u9605\u907f\u5751\uff1aCoreGold \u5546\u4e1a\u865a\u62df\u5361\u7834\u89e3 X Premium \u5927\u989d\u62d2\u4ed8\u4e0e\u591a\u8d26\u53f7\u9694\u79bb\u3002",
   "maturity": "Unknown",
-  "snapshot_count": 0
+  "snapshot_count": 0,
+  "authenticity": {
+    "organic_confidence": 29.6,
+    "verdict": "suspicious",
+    "label": "Low Confidence",
+    "signals": [
+      {
+        "key": "fork_ratio",
+        "label": "Fork-to-star ratio",
+        "score": 5,
+        "weight": 0.22,
+        "detail": "0 forks for 108 stars (0.0%)."
+      },
+      {
+        "key": "burst",
+        "label": "Burst pattern",
+        "score": null,
+        "weight": 0.24,
+        "detail": "Not enough snapshots yet."
+      },
+      {
+        "key": "alignment",
+        "label": "Star/fork velocity alignment",
+        "score": null,
+        "weight": 0.18,
+        "detail": "Weekly star growth too small to compare."
+      },
+      {
+        "key": "acceleration",
+        "label": "Growth acceleration",
+        "score": null,
+        "weight": 0.14,
+        "detail": "No acceleration data."
+      },
+      {
+        "key": "engagement",
+        "label": "Issue engagement",
+        "score": 25,
+        "weight": 0.12,
+        "detail": "0 open issues for 108 stars (0.0%)."
+      },
+      {
+        "key": "maintenance",
+        "label": "Maintenance cadence",
+        "score": 89.3,
+        "weight": 0.1,
+        "detail": "Last push 20 days ago."
+      }
+    ],
+    "reasons": [
+      "Maintenance cadence: Last push 20 days ago."
+    ],
+    "red_flags": [
+      "Fork-to-star ratio: 0 forks for 108 stars (0.0%).",
+      "Issue engagement: 0 open issues for 108 stars (0.0%)."
+    ]
+  }
 }

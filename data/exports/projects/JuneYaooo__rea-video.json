@@ -4,38 +4,57 @@
   "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 12883,
-  "forks": 1890,
-  "open_issues": 7,
+  "topics": [
+    "agent-skills",
+    "ai-video",
+    "aigc-detection",
+    "claude-code",
+    "codex",
+    "ffmpeg",
+    "prompt-engineering",
+    "remotion",
+    "reverse-engineering",
+    "short-video",
+    "shot-detection",
+    "subtitles",
+    "video-analysis",
+    "video-breakdown",
+    "video-editing",
+    "video-generation",
+    "vlm",
+    "videomd"
+  ],
+  "stars": 12955,
+  "forks": 1901,
+  "open_issues": 8,
   "watchers": 26,
   "created_at": "2026-10-29T16:15:01Z",
-  "pushed_at": "2026-11-24T08:15:03Z",
+  "pushed_at": "2026-11-24T16:26:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/JuneYaooo.png",
-  "radar_score": 78.13,
-  "impact": 90.52,
-  "velocity": 78.11,
+  "radar_score": 78.26,
+  "impact": 90.58,
+  "velocity": 78.39,
   "health": 58.35,
-  "global_percentile": 81.57,
+  "global_percentile": 82.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "\u9006\u5411\u4e00\u5207\u89c6\u9891\uff1a\u5b9e\u62cd\u53e3\u64ad\u3001\u684c\u62cd\u3001AI \u89c6\u9891\u30013D\u3001\u4ee3\u7801\u52a8\u6548\u3001\u6df7\u526a\uff0c\u9010\u955c\u62c6\u51fa\u753b\u9762\u3001\u82b1\u5b57\u3001\u526a\u8f91\u548c\u58f0\u97f3\u662f\u600e\u4e48\u505a\u7684\uff0c\u5e76\u7ed9\u51fa\u590d\u523b\u65b9\u6848\u3002Reverse-engineer any video, shot by shot.",
   "maturity": "Unknown",
-  "stars_7d": 2964,
-  "stars_30d": 5504,
-  "stars_90d": 5504,
-  "star_growth_rate_7d": 423.42857142857144,
-  "star_growth_rate_30d": 500.3636363636364,
-  "star_growth_acceleration": 0.8462416943521595,
-  "forks_7d": 432,
-  "forks_30d": 811,
+  "stars_7d": 3178,
+  "stars_30d": 5718,
+  "stars_90d": 5718,
+  "star_growth_rate_7d": 454.0,
+  "star_growth_rate_30d": 476.5,
+  "star_growth_acceleration": 0.9527806925498427,
+  "forks_7d": 462,
+  "forks_30d": 841,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 31,
-  "why_trending": "Strong momentum with 2964 new stars this week. Above-average growth velocity. High developer adoption with 432 new forks this week. Active in the Uncategorized category.",
+  "snapshot_count": 32,
+  "why_trending": "Strong momentum with 3178 new stars this week. Above-average growth velocity. High developer adoption with 462 new forks this week. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 86.4,
+    "organic_confidence": 86.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,12 +63,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.1,
         "weight": 0.22,
-        "detail": "1,871 forks for 12,741 stars (14.7%)."
+        "detail": "1,901 forks for 12,955 stars (14.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 97.0,
+        "score": 96.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 606 stars (74 forks, 1.3x the daily average)."
       },
@@ -70,9 +89,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 30.5,
+        "score": 31.2,
         "weight": 0.12,
-        "detail": "7 open issues for 12,741 stars (0.1%)."
+        "detail": "8 open issues for 12,955 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,11 +103,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 606 stars (74 forks, 1.3x the daily average).",
-      "Fork-to-star ratio: 1,871 forks for 12,741 stars (14.7%).",
+      "Fork-to-star ratio: 1,901 forks for 12,955 stars (14.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 12,741 stars (0.1%)."
+      "Issue engagement: 8 open issues for 12,955 stars (0.1%)."
     ]
   }
 }

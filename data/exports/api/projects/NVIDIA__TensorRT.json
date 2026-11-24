@@ -4,7 +4,13 @@
   "description": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "language": "C++",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "tensorrt",
+    "nvidia",
+    "deep-learning",
+    "inference",
+    "gpu-acceleration"
+  ],
   "stars": 13480,
   "forks": 2427,
   "open_issues": 629,
@@ -15,26 +21,26 @@
   "owner_avatar": "https://github.com/NVIDIA.png",
   "radar_score": 71.65,
   "impact": 94.05,
-  "velocity": 52.97,
+  "velocity": 52.98,
   "health": 61.94,
-  "global_percentile": 24.57,
+  "global_percentile": 24.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "NVIDIA\u00ae TensorRT\u2122 is an SDK for high-performance deep learning inference on NVIDIA GPUs. This repository contains the open source components of TensorRT.",
   "maturity": "Unknown",
   "stars_7d": 18,
   "stars_30d": 67,
-  "stars_90d": 90,
+  "stars_90d": 89,
   "star_growth_rate_7d": 2.5714285714285716,
   "star_growth_rate_30d": 2.2333333333333334,
   "star_growth_acceleration": 1.1513859275053306,
-  "forks_7d": -1,
+  "forks_7d": 0,
   "forks_30d": 15,
   "days_since_last_push": 5,
   "freshness_score": 0.951229424500714,
-  "snapshot_count": 179,
+  "snapshot_count": 180,
   "authenticity": {
-    "organic_confidence": 88.9,
+    "organic_confidence": 88.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.1,
+        "score": 71.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (0 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (0 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 99.0,
+        "score": 98.9,
         "weight": 0.12,
-        "detail": "632 open issues for 13,480 stars (4.7%)."
+        "detail": "629 open issues for 13,480 stars (4.7%)."
       },
       {
         "key": "maintenance",
@@ -84,7 +90,7 @@
     "reasons": [
       "Maintenance cadence: Last push 5 days ago.",
       "Fork-to-star ratio: 2,427 forks for 13,480 stars (18.0%).",
-      "Issue engagement: 632 open issues for 13,480 stars (4.7%)."
+      "Issue engagement: 629 open issues for 13,480 stars (4.7%)."
     ],
     "red_flags": []
   }

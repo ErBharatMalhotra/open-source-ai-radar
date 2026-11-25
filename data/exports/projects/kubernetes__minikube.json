@@ -4,7 +4,14 @@
   "description": "Run Kubernetes locally",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "minikube",
+    "kubernetes",
+    "cluster",
+    "containers",
+    "go",
+    "cncf"
+  ],
   "stars": 32274,
   "forks": 5400,
   "open_issues": 494,
@@ -34,7 +41,7 @@
   "freshness_score": 1.0,
   "snapshot_count": 263,
   "authenticity": {
-    "organic_confidence": 84.7,
+    "organic_confidence": 84.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +55,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 66.3,
+        "score": 66.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 8 stars (0 forks, 3.8x the daily average)."
+        "detail": "Largest 24h jump was 8 stars (0 forks, 3.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,15 +83,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Issue engagement: 494 open issues for 32,274 stars (1.5%).",
       "Fork-to-star ratio: 5,400 forks for 32,274 stars (16.7%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

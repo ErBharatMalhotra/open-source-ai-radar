@@ -4,7 +4,12 @@
   "description": "",
   "language": null,
   "license": null,
-  "topics": [],
+  "topics": [
+    "wechat",
+    "pyqt",
+    "chatgpt",
+    "llms"
+  ],
   "stars": 42368,
   "forks": 5432,
   "open_issues": 0,
@@ -34,7 +39,7 @@
   "freshness_score": 0.03725384939621581,
   "snapshot_count": 229,
   "authenticity": {
-    "organic_confidence": 49.1,
+    "organic_confidence": 49.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -48,9 +53,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 23.3,
+        "score": 23.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 90 stars (29 forks, 11.0x the daily average)."
+        "detail": "Largest 24h jump was 90 stars (29 forks, 11.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,18 +81,18 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 28.9,
+        "score": 28.8,
         "weight": 0.1,
-        "detail": "Last push 329 days ago."
+        "detail": "Last push 330 days ago."
       }
     ],
     "reasons": [
       "Fork-to-star ratio: 5,432 forks for 42,368 stars (12.8%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 90 stars (29 forks, 11.0x the daily average).",
+      "Burst pattern: Largest 24h jump was 90 stars (29 forks, 11.1x the daily average).",
       "Issue engagement: 0 open issues for 42,368 stars (0.0%).",
-      "Maintenance cadence: Last push 329 days ago."
+      "Maintenance cadence: Last push 330 days ago."
     ]
   }
 }

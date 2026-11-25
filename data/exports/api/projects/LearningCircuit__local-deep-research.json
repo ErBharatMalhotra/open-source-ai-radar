@@ -4,37 +4,58 @@
   "description": " ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 9650,
-  "forks": 949,
-  "open_issues": 1198,
+  "topics": [
+    "academia",
+    "arxiv",
+    "brave",
+    "deep-research",
+    "local",
+    "local-llm",
+    "mistral",
+    "pubmed",
+    "research",
+    "research-tool",
+    "retrieval-augmented-generation",
+    "searxng",
+    "self-hosted",
+    "local-deep-research",
+    "home-automation",
+    "homeserver",
+    "ollama",
+    "anthropic",
+    "openai",
+    "encryption"
+  ],
+  "stars": 9651,
+  "forks": 950,
+  "open_issues": 1202,
   "watchers": 39,
   "created_at": "2025-02-09T15:41:32Z",
-  "pushed_at": "2026-11-25T08:26:44Z",
+  "pushed_at": "2026-11-25T21:17:41Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/LearningCircuit.png",
-  "radar_score": 72.67,
-  "impact": 89.47,
-  "velocity": 62.41,
+  "radar_score": 72.71,
+  "impact": 89.59,
+  "velocity": 62.4,
   "health": 60.15,
-  "global_percentile": 33.71,
+  "global_percentile": 49.57,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": " ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
   "maturity": "Unknown",
-  "stars_7d": 36,
-  "stars_30d": 228,
-  "stars_90d": 430,
-  "star_growth_rate_7d": 5.142857142857143,
-  "star_growth_rate_30d": 7.6,
-  "star_growth_acceleration": 0.6766917293233083,
-  "forks_7d": 21,
-  "forks_30d": 66,
+  "stars_7d": 52,
+  "stars_30d": 243,
+  "stars_90d": 459,
+  "star_growth_rate_7d": 7.428571428571429,
+  "star_growth_rate_30d": 8.1,
+  "star_growth_acceleration": 0.9171075837742505,
+  "forks_7d": 20,
+  "forks_30d": 64,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 243,
+  "snapshot_count": 244,
   "authenticity": {
-    "organic_confidence": 90.4,
+    "organic_confidence": 91.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "949 forks for 9,650 stars (9.8%)."
+        "detail": "950 forks for 9,651 stars (9.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.4,
+        "score": 75.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 23 stars (4 forks, 3.1x the daily average)."
+        "detail": "Largest 24h jump was 23 stars (4 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "1,198 open issues for 9,650 stars (12.4%)."
+        "detail": "1,202 open issues for 9,651 stars (12.5%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 949 forks for 9,650 stars (9.8%).",
-      "Issue engagement: 1,198 open issues for 9,650 stars (12.4%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 23 stars (4 forks, 3.0x the daily average).",
+      "Fork-to-star ratio: 950 forks for 9,651 stars (9.8%).",
+      "Issue engagement: 1,202 open issues for 9,651 stars (12.5%)."
     ],
     "red_flags": []
   }

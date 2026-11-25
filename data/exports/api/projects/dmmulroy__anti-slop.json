@@ -4,8 +4,13 @@
   "description": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 6419,
+  "topics": [
+    "agent-skills",
+    "linting",
+    "oxlint",
+    "typescript"
+  ],
+  "stars": 6441,
   "forks": 178,
   "open_issues": 16,
   "watchers": 11,
@@ -13,44 +18,44 @@
   "pushed_at": "2026-11-20T13:21:58Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dmmulroy.png",
-  "radar_score": 68.42,
-  "impact": 79.36,
-  "velocity": 63.01,
-  "health": 58.46,
-  "global_percentile": 13.29,
+  "radar_score": 67.57,
+  "impact": 79.75,
+  "velocity": 60.91,
+  "health": 57.39,
+  "global_percentile": 22.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns",
   "maturity": "Unknown",
-  "stars_7d": 178,
-  "stars_30d": 570,
-  "stars_90d": 2125,
-  "star_growth_rate_7d": 25.428571428571427,
-  "star_growth_rate_30d": 20.357142857142858,
-  "star_growth_acceleration": 1.2491228070175437,
-  "forks_7d": 3,
-  "forks_30d": 18,
-  "days_since_last_push": 2,
-  "freshness_score": 0.9801986733067553,
-  "snapshot_count": 37,
+  "stars_7d": 210,
+  "stars_30d": 744,
+  "stars_90d": 2302,
+  "star_growth_rate_7d": 42.0,
+  "star_growth_rate_30d": 24.8,
+  "star_growth_acceleration": 1.6935483870967742,
+  "forks_7d": 6,
+  "forks_30d": 23,
+  "days_since_last_push": 5,
+  "freshness_score": 0.951229424500714,
+  "snapshot_count": 38,
   "authenticity": {
-    "organic_confidence": 79.7,
+    "organic_confidence": 79.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 67.2,
+        "score": 67.1,
         "weight": 0.22,
-        "detail": "178 forks for 6,419 stars (2.8%)."
+        "detail": "178 forks for 6,441 stars (2.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 11 stars (1 forks, 0.5x the daily average)."
+        "detail": "Largest 24h jump was 11 stars (1 forks, 0.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,21 +74,21 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 47.5,
+        "score": 47.4,
         "weight": 0.12,
-        "detail": "16 open issues for 6,419 stars (0.2%)."
+        "detail": "16 open issues for 6,441 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 97.1,
+        "score": 96.4,
         "weight": 0.1,
-        "detail": "Last push 4 days ago."
+        "detail": "Last push 5 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 4 days ago.",
-      "Burst pattern: Largest 24h jump was 11 stars (1 forks, 0.5x the daily average)."
+      "Maintenance cadence: Last push 5 days ago.",
+      "Burst pattern: Largest 24h jump was 11 stars (1 forks, 0.4x the daily average)."
     ],
     "red_flags": []
   }

@@ -4,7 +4,13 @@
   "description": "\u300a\u5927\u6a21\u578b\u4e0e\u667a\u80fd\u4f53\u300b\u7535\u5b50\u4e66\u4e0e 6 \u4e2a\u7f16\u7a0b\u4efb\u52a1\uff1aTransformer\u3001mini-GPT\u3001SFT/DPO\u3001RAG\u3001\u5de5\u5177\u8c03\u7528\u4e0e\u7f16\u7a0b\u667a\u80fd\u4f53\u3002",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "fudannlp",
+    "step-by-step",
+    "agent",
+    "llm",
+    "openmoss"
+  ],
   "stars": 6905,
   "forks": 1381,
   "open_issues": 2,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-09-06T05:53:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nndl.png",
-  "radar_score": 57.33,
-  "impact": 90.35,
-  "velocity": 31.1,
-  "health": 41.23,
-  "global_percentile": 0.43,
+  "radar_score": 57.86,
+  "impact": 90.43,
+  "velocity": 32.76,
+  "health": 40.88,
+  "global_percentile": 1.86,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "LLM\u3001Agent\u4e0a\u624b\u6559\u7a0b",
   "maturity": "Unknown",
-  "stars_7d": 8,
-  "stars_30d": 60,
-  "stars_90d": 219,
-  "star_growth_rate_7d": 1.3333333333333333,
-  "star_growth_rate_30d": 2.0689655172413794,
-  "star_growth_acceleration": 0.6444444444444444,
-  "forks_7d": 2,
-  "forks_30d": 5,
-  "days_since_last_push": 77,
-  "freshness_score": 0.46301306831122807,
-  "snapshot_count": 86,
+  "stars_7d": 10,
+  "stars_30d": 62,
+  "stars_90d": 224,
+  "star_growth_rate_7d": 1.6666666666666667,
+  "star_growth_rate_30d": 2.2142857142857144,
+  "star_growth_acceleration": 0.7526881720430108,
+  "forks_7d": 3,
+  "forks_30d": 6,
+  "days_since_last_push": 80,
+  "freshness_score": 0.44932896411722156,
+  "snapshot_count": 87,
   "authenticity": {
-    "organic_confidence": 79.2,
+    "organic_confidence": 79.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +54,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.5,
+        "score": 91.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (0 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (0 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +88,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 2.0x the daily average).",
+      "Burst pattern: Largest 24h jump was 4 stars (0 forks, 1.9x the daily average).",
       "Fork-to-star ratio: 1,381 forks for 6,905 stars (20.0%)."
     ],
     "red_flags": [

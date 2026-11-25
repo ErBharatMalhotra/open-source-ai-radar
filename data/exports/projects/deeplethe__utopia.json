@@ -4,38 +4,54 @@
   "description": "World's first open-source enterprise world model.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "agent-memory",
+    "knowledge-base",
+    "knowledge-graph",
+    "llm",
+    "pgvector",
+    "postgresql",
+    "rag",
+    "rust",
+    "self-hosted",
+    "semantic-search",
+    "ontology",
+    "world-model",
+    "bitemporal",
+    "graphrag",
+    "temporal-knowledge-graph"
+  ],
   "stars": 8667,
-  "forks": 1197,
-  "open_issues": 50,
+  "forks": 1198,
+  "open_issues": 41,
   "watchers": 386,
   "created_at": "2026-08-07T19:33:17Z",
-  "pushed_at": "2026-11-25T00:19:25Z",
+  "pushed_at": "2026-11-25T16:56:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/deeplethe.png",
-  "radar_score": 77.27,
-  "impact": 92.33,
-  "velocity": 69.73,
+  "radar_score": 77.23,
+  "impact": 92.37,
+  "velocity": 69.56,
   "health": 63.75,
-  "global_percentile": 73.43,
+  "global_percentile": 79.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "World's first open-source enterprise world model.",
   "maturity": "Unknown",
-  "stars_7d": -18,
-  "stars_30d": 214,
-  "stars_90d": 640,
-  "star_growth_rate_7d": -2.5714285714285716,
-  "star_growth_rate_30d": 7.133333333333334,
-  "star_growth_acceleration": -0.3604806408544726,
-  "forks_7d": 4,
+  "stars_7d": -65,
+  "stars_30d": 131,
+  "stars_90d": 610,
+  "star_growth_rate_7d": -9.285714285714286,
+  "star_growth_rate_30d": 4.366666666666666,
+  "star_growth_acceleration": -2.12649945474373,
+  "forks_7d": 6,
   "forks_30d": 30,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 154,
+  "snapshot_count": 155,
   "why_trending": "Steady growth with 76 new stars this week. Above-average growth velocity. Active in the Uncategorized category.",
   "authenticity": {
-    "organic_confidence": 79.7,
+    "organic_confidence": 74.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -44,14 +60,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "1,197 forks for 8,667 stars (13.8%)."
+        "detail": "1,198 forks for 8,667 stars (13.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 62.0,
+        "score": 47.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 21 stars (1 forks, 4.1x the daily average)."
+        "detail": "Largest 24h jump was 21 stars (1 forks, 5.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 62.3,
+        "score": 58.7,
         "weight": 0.12,
-        "detail": "50 open issues for 8,667 stars (0.6%)."
+        "detail": "41 open issues for 8,667 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +99,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,197 forks for 8,667 stars (13.8%).",
+      "Fork-to-star ratio: 1,198 forks for 8,667 stars (13.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

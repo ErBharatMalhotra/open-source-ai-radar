@@ -4,37 +4,53 @@
   "description": "Self-hosted control plane for AI agents: dispatch tasks, review runs, track spend, and operate OpenClaw, Claude Code, Codex, and other runtimes.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 6520,
+  "topics": [
+    "agent-orchestration",
+    "nextjs",
+    "openclaw",
+    "sqlite",
+    "ai-agents",
+    "developer-tools",
+    "mcp",
+    "open-source",
+    "self-hosted",
+    "task-management",
+    "typescript",
+    "agent-observability",
+    "agent-operations",
+    "claude-code",
+    "codex"
+  ],
+  "stars": 6522,
   "forks": 145,
-  "open_issues": 17,
+  "open_issues": 19,
   "watchers": 31,
   "created_at": "2026-02-13T04:06:19Z",
   "pushed_at": "2026-11-23T00:30:13Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/builderz-labs.png",
-  "radar_score": 67.88,
-  "impact": 81.56,
-  "velocity": 59.99,
-  "health": 57.05,
-  "global_percentile": 12.14,
+  "radar_score": 69.27,
+  "impact": 82.15,
+  "velocity": 62.27,
+  "health": 58.46,
+  "global_percentile": 30.57,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "Self-hosted control plane for AI agents: dispatch tasks, review runs, track spend, and operate OpenClaw, Claude Code, Codex, and other runtimes.",
   "maturity": "Unknown",
-  "stars_7d": 38,
-  "stars_30d": 136,
-  "stars_90d": 378,
-  "star_growth_rate_7d": 5.428571428571429,
-  "star_growth_rate_30d": 4.533333333333333,
-  "star_growth_acceleration": 1.1974789915966388,
-  "forks_7d": 6,
+  "stars_7d": 0,
+  "stars_30d": 125,
+  "stars_90d": 401,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": 4.166666666666667,
+  "star_growth_acceleration": 0.0,
+  "forks_7d": 0,
   "forks_30d": 25,
-  "days_since_last_push": 6,
-  "freshness_score": 0.9417645335842487,
-  "snapshot_count": 71,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 72,
   "authenticity": {
-    "organic_confidence": 78.8,
+    "organic_confidence": 79.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +59,14 @@
         "label": "Fork-to-star ratio",
         "score": 63.5,
         "weight": 0.22,
-        "detail": "145 forks for 6,520 stars (2.2%)."
+        "detail": "145 forks for 6,522 stars (2.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
         "score": 100.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 3 stars (1 forks, 0.6x the daily average)."
+        "detail": "Largest 24h jump was 3 stars (1 forks, 0.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +85,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 48.0,
+        "score": 49.6,
         "weight": 0.12,
-        "detail": "17 open issues for 6,520 stars (0.3%)."
+        "detail": "19 open issues for 6,522 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +99,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 2 days ago.",
-      "Burst pattern: Largest 24h jump was 3 stars (1 forks, 0.6x the daily average)."
+      "Burst pattern: Largest 24h jump was 3 stars (1 forks, 0.7x the daily average)."
     ],
     "red_flags": []
   }

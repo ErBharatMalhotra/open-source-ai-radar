@@ -4,35 +4,41 @@
   "description": "the LLM vulnerability scanner",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 10175,
-  "forks": 1519,
-  "open_issues": 325,
+  "topics": [
+    "ai",
+    "llm-evaluation",
+    "llm-security",
+    "security-scanners",
+    "vulnerability-assessment"
+  ],
+  "stars": 10182,
+  "forks": 1522,
+  "open_issues": 329,
   "watchers": 66,
   "created_at": "2023-05-10T18:52:16Z",
   "pushed_at": "2026-11-23T20:48:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/NVIDIA.png",
-  "radar_score": 71.37,
-  "impact": 91.34,
-  "velocity": 55.04,
-  "health": 62.29,
-  "global_percentile": 26.43,
+  "radar_score": 72.4,
+  "impact": 91.44,
+  "velocity": 57.34,
+  "health": 63.01,
+  "global_percentile": 48.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "the LLM vulnerability scanner",
   "maturity": "Unknown",
-  "stars_7d": 104,
-  "stars_30d": 462,
-  "stars_90d": 536,
-  "star_growth_rate_7d": 14.857142857142858,
-  "star_growth_rate_30d": 15.4,
-  "star_growth_acceleration": 0.9647495361781077,
-  "forks_7d": 28,
-  "forks_30d": 102,
-  "days_since_last_push": 4,
-  "freshness_score": 0.9607894391523232,
-  "snapshot_count": 256,
+  "stars_7d": 113,
+  "stars_30d": 483,
+  "stars_90d": 578,
+  "star_growth_rate_7d": 16.142857142857142,
+  "star_growth_rate_30d": 16.1,
+  "star_growth_acceleration": 1.002661934338953,
+  "forks_7d": 30,
+  "forks_30d": 116,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 257,
   "authenticity": {
     "organic_confidence": 94.0,
     "verdict": "organic",
@@ -43,12 +49,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.0,
         "weight": 0.22,
-        "detail": "1,519 forks for 10,175 stars (14.9%)."
+        "detail": "1,522 forks for 10,182 stars (14.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.1,
+        "score": 87.4,
         "weight": 0.24,
         "detail": "Largest 24h jump was 34 stars (4 forks, 2.2x the daily average)."
       },
@@ -69,22 +75,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 94.0,
+        "score": 94.1,
         "weight": 0.12,
-        "detail": "325 open issues for 10,175 stars (3.2%)."
+        "detail": "329 open issues for 10,182 stars (3.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 34 stars (4 forks, 2.2x the daily average).",
-      "Issue engagement: 325 open issues for 10,175 stars (3.2%).",
-      "Fork-to-star ratio: 1,519 forks for 10,175 stars (14.9%)."
+      "Issue engagement: 329 open issues for 10,182 stars (3.2%).",
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": []
   }

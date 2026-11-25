@@ -4,37 +4,46 @@
   "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 8111,
-  "forks": 478,
-  "open_issues": 8,
-  "watchers": 27,
+  "topics": [
+    "ai",
+    "claude",
+    "hacs",
+    "home-assistant",
+    "home-automation",
+    "llm",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "stars": 8122,
+  "forks": 479,
+  "open_issues": 7,
+  "watchers": 28,
   "created_at": "2025-09-14T13:23:45Z",
-  "pushed_at": "2026-11-25T03:41:00Z",
+  "pushed_at": "2026-11-25T19:56:00Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/homeassistant-ai.png",
-  "radar_score": 70.94,
-  "impact": 86.44,
-  "velocity": 58.36,
-  "health": 63.75,
-  "global_percentile": 24.14,
+  "radar_score": 69.42,
+  "impact": 86.68,
+  "velocity": 57.6,
+  "health": 58.35,
+  "global_percentile": 31.43,
   "category": "MCP",
   "sub_category": "server",
   "summary": "The Unofficial and Awesome Home Assistant MCP Server",
   "maturity": "Unknown",
-  "stars_7d": 217,
-  "stars_30d": 2826,
-  "stars_90d": 3576,
-  "star_growth_rate_7d": 31.0,
-  "star_growth_rate_30d": 100.92857142857143,
-  "star_growth_acceleration": 0.3071479122434536,
-  "forks_7d": -3,
-  "forks_30d": 224,
+  "stars_7d": 163,
+  "stars_30d": 2878,
+  "stars_90d": 3579,
+  "star_growth_rate_7d": 23.285714285714285,
+  "star_growth_rate_30d": 95.93333333333334,
+  "star_growth_acceleration": 0.24272808497964854,
+  "forks_7d": 10,
+  "forks_30d": 228,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 56,
+  "snapshot_count": 57,
   "authenticity": {
-    "organic_confidence": 79.3,
+    "organic_confidence": 78.0,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +52,14 @@
         "label": "Fork-to-star ratio",
         "score": 85.2,
         "weight": 0.22,
-        "detail": "478 forks for 8,111 stars (5.9%)."
+        "detail": "479 forks for 8,122 stars (5.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.6,
+        "score": 84.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 270 stars (12 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 270 stars (12 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 34.9,
+        "score": 33.6,
         "weight": 0.12,
-        "detail": "8 open issues for 8,111 stars (0.1%)."
+        "detail": "7 open issues for 8,122 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +91,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 478 forks for 8,111 stars (5.9%).",
-      "Burst pattern: Largest 24h jump was 270 stars (12 forks, 2.2x the daily average).",
+      "Burst pattern: Largest 24h jump was 270 stars (12 forks, 2.4x the daily average).",
+      "Fork-to-star ratio: 479 forks for 8,122 stars (5.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 8,111 stars (0.1%)."
+      "Issue engagement: 7 open issues for 8,122 stars (0.1%)."
     ]
   }
 }

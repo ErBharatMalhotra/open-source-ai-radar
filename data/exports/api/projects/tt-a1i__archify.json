@@ -1,7 +1,7 @@
 {
   "full_name": "tt-a1i/archify",
   "url": "https://github.com/tt-a1i/archify",
-  "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+  "description": "Turn any idea, plan, or codebase into an interactive diagram or one-page answer: 10 diagram types, Architecture Diagnosis, Story video and PR walkthroughs. An Agent Skill for Claude Code, Codex, Cursor and more.",
   "language": "JavaScript",
   "license": "Apache-2.0",
   "topics": [
@@ -11,7 +11,6 @@
     "agent-skills",
     "codex",
     "opencode",
-    "sequence-diagram",
     "deepseek-harness",
     "dsh-plugin",
     "coding-agents",
@@ -24,36 +23,37 @@
     "flowchart",
     "llm",
     "mermaid",
-    "visualization"
+    "visualization",
+    "code-analysis"
   ],
-  "stars": 99737,
-  "forks": 6826,
-  "open_issues": 171,
+  "stars": 99880,
+  "forks": 6831,
+  "open_issues": 172,
   "watchers": 235,
   "created_at": "2026-04-15T05:27:37Z",
-  "pushed_at": "2026-11-25T08:52:37Z",
+  "pushed_at": "2026-11-25T21:11:33Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/tt-a1i.png",
   "radar_score": 79.56,
   "impact": 98.72,
   "velocity": 68.94,
   "health": 63.75,
-  "global_percentile": 93.86,
+  "global_percentile": 95.14,
   "category": "AI Agents",
   "sub_category": "task agent",
   "summary": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams\u2014self-contained HTML with motion and crisp export.",
   "maturity": "Unknown",
-  "stars_7d": 2399,
-  "stars_30d": 7039,
-  "stars_90d": 7039,
-  "star_growth_rate_7d": 342.7142857142857,
-  "star_growth_rate_30d": 319.95454545454544,
-  "star_growth_acceleration": 1.0711342926146166,
-  "forks_7d": 182,
-  "forks_30d": 496,
+  "stars_7d": 2405,
+  "stars_30d": 7158,
+  "stars_90d": 7158,
+  "star_growth_rate_7d": 343.57142857142856,
+  "star_growth_rate_30d": 325.3636363636364,
+  "star_growth_acceleration": 1.0559613619127448,
+  "forks_7d": 176,
+  "forks_30d": 499,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 370,
+  "snapshot_count": 371,
   "authenticity": {
     "organic_confidence": 82.9,
     "verdict": "organic",
@@ -64,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 88.6,
         "weight": 0.22,
-        "detail": "6,826 forks for 99,737 stars (6.8%)."
+        "detail": "6,831 forks for 99,880 stars (6.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.9,
+        "score": 90.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 646 stars (51 forks, 1.9x the daily average)."
       },
@@ -90,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 42.1,
+        "score": 42.2,
         "weight": 0.12,
-        "detail": "171 open issues for 99,737 stars (0.2%)."
+        "detail": "172 open issues for 99,880 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -103,7 +103,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,826 forks for 99,737 stars (6.8%).",
+      "Fork-to-star ratio: 6,831 forks for 99,880 stars (6.8%).",
       "Burst pattern: Largest 24h jump was 646 stars (51 forks, 1.9x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],

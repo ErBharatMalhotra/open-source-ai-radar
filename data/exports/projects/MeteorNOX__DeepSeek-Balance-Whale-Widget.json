@@ -4,7 +4,17 @@
   "description": "DeepSeek Harness\uff08DSH\uff09\u4e00\u53ea\u4f4f\u5728 DSH \u754c\u9762\u53f3\u4e0b\u89d2\u7684\u5c0f\u9cb8\u9c7c\u5a18\uff0c\u5e2e\u4f60\u76ef\u7740DeepSeek\u8d26\u6237\u4f59\u989d\u3002QQ\u5f39\u5f39\uff0c\u652f\u6301\u62d6\u62fd\u5438\u9644\u3001\u5de6\u5438\u9644\u7ffb\u8f6c\u3001\u6570\u5b57\u6eda\u52a8\u52a8\u753b\uff0c\u968f\u754c\u9762\u81ea\u52a8\u542f\u7528\uff0c\u5efa\u8bae\u76f4\u63a5\u558a\u6765\u4f60\u7684dsh\u5b89\u88c5",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "floating-widget",
+    "plugin"
+  ],
   "stars": 7471,
   "forks": 250,
   "open_issues": 128,
@@ -13,29 +23,29 @@
   "pushed_at": "2026-10-11T12:25:55Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/MeteorNOX.png",
-  "radar_score": 62.01,
-  "impact": 75.97,
-  "velocity": 56.41,
-  "health": 47.51,
-  "global_percentile": 2.43,
+  "radar_score": 61.92,
+  "impact": 76.11,
+  "velocity": 56.42,
+  "health": 46.93,
+  "global_percentile": 8.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "DeepSeek Harness\uff08DSH\uff09\u4e00\u53ea\u4f4f\u5728 DSH \u754c\u9762\u53f3\u4e0b\u89d2\u7684\u5c0f\u9cb8\u9c7c\u5a18\uff0c\u5e2e\u4f60\u76ef\u7740DeepSeek\u8d26\u6237\u4f59\u989d\u3002QQ\u5f39\u5f39\uff0c\u652f\u6301\u62d6\u62fd\u5438\u9644\u3001\u5de6\u5438\u9644\u7ffb\u8f6c\u3001\u6570\u5b57\u6eda\u52a8\u52a8\u753b\uff0c\u968f\u754c\u9762\u81ea\u52a8\u542f\u7528\uff0c\u5efa\u8bae\u76f4\u63a5\u558a\u6765\u4f60\u7684dsh\u5b89\u88c5",
   "maturity": "Unknown",
-  "stars_7d": 189,
-  "stars_30d": 1391,
-  "stars_90d": 3430,
-  "star_growth_rate_7d": 27.0,
-  "star_growth_rate_30d": 49.67857142857143,
-  "star_growth_acceleration": 0.5434938892882818,
-  "forks_7d": 11,
-  "forks_30d": 51,
-  "days_since_last_push": 42,
-  "freshness_score": 0.6570468198150567,
-  "snapshot_count": 42,
+  "stars_7d": 167,
+  "stars_30d": 1410,
+  "stars_90d": 3473,
+  "star_growth_rate_7d": 23.857142857142858,
+  "star_growth_rate_30d": 47.0,
+  "star_growth_acceleration": 0.5075987841945289,
+  "forks_7d": 9,
+  "forks_30d": 54,
+  "days_since_last_push": 45,
+  "freshness_score": 0.6376281516217733,
+  "snapshot_count": 43,
   "why_trending": "Strong momentum with 503 new stars this week. Above-average growth velocity. High developer adoption with 11 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 83.5,
+    "organic_confidence": 83.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -49,9 +59,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.7,
+        "score": 93.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 53 stars (2 forks, 1.5x the daily average)."
+        "detail": "Largest 24h jump was 53 stars (2 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -77,15 +87,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 81.5,
+        "score": 81.2,
         "weight": 0.1,
-        "detail": "Last push 44 days ago."
+        "detail": "Last push 45 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 44 days ago.",
+      "Maintenance cadence: Last push 45 days ago.",
       "Issue engagement: 128 open issues for 7,471 stars (1.7%).",
-      "Burst pattern: Largest 24h jump was 53 stars (2 forks, 1.5x the daily average)."
+      "Burst pattern: Largest 24h jump was 53 stars (2 forks, 1.6x the daily average)."
     ],
     "red_flags": []
   }

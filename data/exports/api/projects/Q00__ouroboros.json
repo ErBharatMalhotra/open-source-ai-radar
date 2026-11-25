@@ -4,7 +4,27 @@
   "description": "Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated, staged evaluation, budgeted evolution loop. MCP server, 14 runtimes: Claude Code, Codex CLI, Gemini CLI, OpenCode, Copilot, Kiro and more.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai-agent",
+    "agent-os",
+    "llm-orchestration",
+    "agentic-ai",
+    "claude-code",
+    "cli",
+    "developer-tools",
+    "mcp",
+    "ai-coding-agent",
+    "codex",
+    "opencode",
+    "llm-evaluation",
+    "coding-agent",
+    "loop-engineering",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "skills"
+  ],
   "stars": 6384,
   "forks": 636,
   "open_issues": 99,
@@ -13,28 +33,28 @@
   "pushed_at": "2026-11-23T18:36:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Q00.png",
-  "radar_score": 73.22,
-  "impact": 84.23,
-  "velocity": 67.39,
-  "health": 63.75,
-  "global_percentile": 38.0,
+  "radar_score": 72.52,
+  "impact": 84.32,
+  "velocity": 65.84,
+  "health": 63.01,
+  "global_percentile": 48.86,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged evaluation, budgeted evolution loop. MCP server, 13 runtimes: Claude Code, Codex CLI, Gemini CLI, OpenCode, Copilot,",
   "maturity": "Unknown",
-  "stars_7d": 19,
-  "stars_30d": 114,
-  "stars_90d": 747,
-  "star_growth_rate_7d": 2.7142857142857144,
-  "star_growth_rate_30d": 4.071428571428571,
-  "star_growth_acceleration": 0.6666666666666667,
-  "forks_7d": -1,
+  "stars_7d": -2,
+  "stars_30d": 110,
+  "stars_90d": 669,
+  "star_growth_rate_7d": -0.4,
+  "star_growth_rate_30d": 3.6666666666666665,
+  "star_growth_acceleration": -0.1090909090909091,
+  "forks_7d": 1,
   "forks_30d": 2,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 72,
+  "days_since_last_push": 2,
+  "freshness_score": 0.9801986733067553,
+  "snapshot_count": 73,
   "authenticity": {
-    "organic_confidence": 96.8,
+    "organic_confidence": 96.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +68,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 99.7,
+        "score": 98.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 4 stars (-1 forks, 1.0x the daily average)."
+        "detail": "Largest 24h jump was 4 stars (-1 forks, 1.2x the daily average)."
       },
       {
         "key": "alignment",
@@ -76,15 +96,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
       "Issue engagement: 99 open issues for 6,384 stars (1.6%).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Burst pattern: Largest 24h jump was 4 stars (-1 forks, 1.0x the daily average)."
+      "Burst pattern: Largest 24h jump was 4 stars (-1 forks, 1.2x the daily average).",
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": []
   }

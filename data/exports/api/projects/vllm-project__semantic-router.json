@@ -4,37 +4,49 @@
   "description": "An open, programmable decision layer for models and compute.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 6527,
-  "forks": 1152,
+  "topics": [
+    "mixture-of-models",
+    "semantic-router",
+    "vllm",
+    "ai-gateway",
+    "kubernetes",
+    "llmrouter",
+    "llm",
+    "guardrails",
+    "inference",
+    "pytorch",
+    "transformer"
+  ],
+  "stars": 6531,
+  "forks": 1154,
   "open_issues": 415,
   "watchers": 61,
   "created_at": "2025-08-26T21:49:50Z",
-  "pushed_at": "2026-11-25T09:48:23Z",
+  "pushed_at": "2026-11-25T20:04:12Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/vllm-project.png",
-  "radar_score": 73.2,
-  "impact": 89.16,
-  "velocity": 64.28,
+  "radar_score": 73.24,
+  "impact": 89.25,
+  "velocity": 64.3,
   "health": 60.15,
-  "global_percentile": 37.71,
+  "global_percentile": 53.29,
   "category": "LLM Frameworks",
   "sub_category": "inference engine",
   "summary": "A programmable Mixture-of-Models router for heterogeneous LLM inference",
   "maturity": "Unknown",
-  "stars_7d": 40,
-  "stars_30d": 264,
-  "stars_90d": 1263,
-  "star_growth_rate_7d": 5.714285714285714,
-  "star_growth_rate_30d": 9.428571428571429,
-  "star_growth_acceleration": 0.6060606060606061,
-  "forks_7d": 24,
-  "forks_30d": 74,
+  "stars_7d": 18,
+  "stars_30d": 275,
+  "stars_90d": 1170,
+  "star_growth_rate_7d": 3.6,
+  "star_growth_rate_30d": 9.166666666666666,
+  "star_growth_acceleration": 0.39272727272727276,
+  "forks_7d": 14,
+  "forks_30d": 78,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 83,
+  "snapshot_count": 84,
   "authenticity": {
-    "organic_confidence": 97.2,
+    "organic_confidence": 97.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.5,
         "weight": 0.22,
-        "detail": "1,152 forks for 6,527 stars (17.6%)."
+        "detail": "1,154 forks for 6,531 stars (17.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.6,
+        "score": 93.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 12 stars (3 forks, 1.6x the daily average)."
+        "detail": "Largest 24h jump was 12 stars (3 forks, 1.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +83,7 @@
         "label": "Issue engagement",
         "score": 100,
         "weight": 0.12,
-        "detail": "415 open issues for 6,527 stars (6.4%)."
+        "detail": "415 open issues for 6,531 stars (6.4%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +94,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 12 stars (3 forks, 1.6x the daily average).",
-      "Fork-to-star ratio: 1,152 forks for 6,527 stars (17.6%).",
-      "Issue engagement: 415 open issues for 6,527 stars (6.4%)."
+      "Burst pattern: Largest 24h jump was 12 stars (3 forks, 1.7x the daily average).",
+      "Fork-to-star ratio: 1,154 forks for 6,531 stars (17.7%).",
+      "Issue engagement: 415 open issues for 6,531 stars (6.4%)."
     ],
     "red_flags": []
   }

@@ -4,54 +4,64 @@
   "description": "DeepSeek Harness \u7834\u7532 (mirror of YuJunZhiXue/dsh-purge) \u2014 \u4e0a\u6e38\u5373\u5c06\u5220\u5e93\uff0c\u6b64\u4e3a\u672c\u4ed3\u5e93\u5168\u91cf\u955c\u50cf\uff1a\u542b\u5168\u90e8\u5206\u652f/73 \u4e2a tag/\u5b8c\u6574\u63d0\u4ea4\u5386\u53f2\u3002\u539f\u4f5c\u8005\u7f72\u540d\u4e0e\u4e8c\u5f00\u8981\u6c42\u89c1 README \u7f72\u540d\u7ae0\u8282\u3002",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 5973,
-  "forks": 5114,
+  "topics": [
+    "archive",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness-jailbreak",
+    "jailbreak",
+    "llm-jailbreak",
+    "mirror"
+  ],
+  "stars": 6002,
+  "forks": 5132,
   "open_issues": 9,
   "watchers": 6,
   "created_at": "2026-10-13T05:14:47Z",
   "pushed_at": "2026-10-13T05:50:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/mmparko.png",
-  "radar_score": 72.35,
-  "impact": 82.49,
-  "velocity": 76.97,
-  "health": 49.67,
-  "global_percentile": 31.57,
+  "radar_score": 72.67,
+  "impact": 83.51,
+  "velocity": 77.0,
+  "health": 49.27,
+  "global_percentile": 49.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "DeepSeek Harness \u7834\u7532 (mirror of YuJunZhiXue/dsh-purge) \u2014 \u4e0a\u6e38\u5373\u5c06\u5220\u5e93\uff0c\u6b64\u4e3a\u672c\u4ed3\u5e93\u5168\u91cf\u955c\u50cf\uff1a\u542b\u5168\u90e8\u5206\u652f/73 \u4e2a tag/\u5b8c\u6574\u63d0\u4ea4\u5386\u53f2\u3002\u539f\u4f5c\u8005\u7f72\u540d\u4e0e\u4e8c\u5f00\u8981\u6c42\u89c1 README \u7f72\u540d\u7ae0\u8282\u3002",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 0,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": 187,
+  "stars_30d": 187,
+  "stars_90d": 187,
+  "star_growth_rate_7d": 93.5,
+  "star_growth_rate_30d": 93.5,
   "star_growth_acceleration": 1.0,
-  "forks_7d": 0,
-  "forks_30d": 0,
-  "days_since_last_push": 41,
-  "freshness_score": 0.6636502501363194,
-  "snapshot_count": 1,
-  "why_trending": "Above-average growth velocity. Active in the LLM Frameworks category.",
+  "forks_7d": 80,
+  "forks_30d": 80,
+  "days_since_last_push": 43,
+  "freshness_score": 0.6505090947233165,
+  "snapshot_count": 2,
+  "why_trending": "Strong momentum with 187 new stars this week. Above-average growth velocity. High developer adoption with 80 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 77.0,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 81.6,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "5,114 forks for 5,973 stars (85.6%)."
+        "detail": "5,132 forks for 6,002 stars (85.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "Not enough snapshots yet."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -70,9 +80,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.1,
+        "score": 40.0,
         "weight": 0.12,
-        "detail": "9 open issues for 5,973 stars (0.2%)."
+        "detail": "9 open issues for 6,002 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -84,8 +94,11 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 43 days ago.",
-      "Fork-to-star ratio: 5,114 forks for 5,973 stars (85.6%)."
+      "Burst pattern: No single-day star surge in the last 30 days.",
+      "Fork-to-star ratio: 5,132 forks for 6,002 stars (85.5%)."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 9 open issues for 6,002 stars (0.1%)."
+    ]
   }
 }

@@ -4,37 +4,57 @@
   "description": "The AI workspace for experts. Switch across 800+ models mid-chat, tune 40+ parameters, Beam models side by side. BYO keys, self-hostable. Built on our native-protocol engine: reliable, hyper-configurable, and fast.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 7168,
-  "forks": 1602,
+  "topics": [
+    "ai-workspace",
+    "multi-model",
+    "byok",
+    "llm",
+    "ai-agents",
+    "multi-modal",
+    "openai-responses-api",
+    "anthropic-api",
+    "gemini-api",
+    "xai-api",
+    "deepseek-api",
+    "perplexity-api",
+    "claude",
+    "ollama",
+    "localai",
+    "agi",
+    "gpt",
+    "librechat",
+    "openwebui"
+  ],
+  "stars": 7169,
+  "forks": 1601,
   "open_issues": 162,
   "watchers": 70,
   "created_at": "2023-03-19T04:50:47Z",
   "pushed_at": "2026-11-25T06:55:07Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/enricoros.png",
-  "radar_score": 72.24,
-  "impact": 90.24,
-  "velocity": 58.0,
-  "health": 63.38,
-  "global_percentile": 28.86,
+  "radar_score": 72.35,
+  "impact": 90.3,
+  "velocity": 57.97,
+  "health": 63.75,
+  "global_percentile": 47.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The AI workspace for experts. Switch across 800+ models mid-chat, tune 40+ parameters, Beam models side by side. BYO keys, self-hostable. Built on our native-protocol engine: reliable, hyper-configurable, and fast.",
   "maturity": "Unknown",
-  "stars_7d": 0,
-  "stars_30d": 0,
-  "stars_90d": 0,
-  "star_growth_rate_7d": 0.0,
-  "star_growth_rate_30d": 0.0,
+  "stars_7d": 2,
+  "stars_30d": 2,
+  "stars_90d": 2,
+  "star_growth_rate_7d": 0.6666666666666666,
+  "star_growth_rate_30d": 0.6666666666666666,
   "star_growth_acceleration": 1.0,
   "forks_7d": 0,
   "forks_30d": 0,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 2,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 3,
   "authenticity": {
-    "organic_confidence": 96.3,
+    "organic_confidence": 94.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +63,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.5,
         "weight": 0.22,
-        "detail": "1,602 forks for 7,168 stars (22.3%)."
+        "detail": "1,601 forks for 7,169 stars (22.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": null,
+        "score": 90.0,
         "weight": 0.24,
-        "detail": "History window too short."
+        "detail": "No single-day star surge in the last 30 days."
       },
       {
         "key": "alignment",
@@ -71,7 +91,7 @@
         "label": "Issue engagement",
         "score": 90.9,
         "weight": 0.12,
-        "detail": "162 open issues for 7,168 stars (2.3%)."
+        "detail": "162 open issues for 7,169 stars (2.3%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +102,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 162 open issues for 7,168 stars (2.3%).",
-      "Fork-to-star ratio: 1,602 forks for 7,168 stars (22.3%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: No single-day star surge in the last 30 days.",
+      "Issue engagement: 162 open issues for 7,169 stars (2.3%).",
+      "Fork-to-star ratio: 1,601 forks for 7,169 stars (22.3%)."
     ],
     "red_flags": []
   }

@@ -4,51 +4,60 @@
   "description": "Structured Outputs",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "generative-ai",
+    "llms",
+    "prompt-engineering",
+    "symbolic-ai",
+    "cfg",
+    "json",
+    "regex",
+    "structured-generation"
+  ],
   "stars": 16021,
-  "forks": 920,
+  "forks": 918,
   "open_issues": 104,
   "watchers": 54,
   "created_at": "2023-03-17T16:01:18Z",
   "pushed_at": "2026-09-21T17:58:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/dottxt-ai.png",
-  "radar_score": 65.29,
+  "radar_score": 65.25,
   "impact": 91.69,
   "velocity": 47.12,
-  "health": 48.47,
-  "global_percentile": 5.29,
+  "health": 48.32,
+  "global_percentile": 5.14,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Structured Outputs",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 47,
-  "stars_90d": 110,
-  "star_growth_rate_7d": 1.2857142857142858,
-  "star_growth_rate_30d": 1.5666666666666667,
-  "star_growth_acceleration": 0.8206686930091186,
-  "forks_7d": 2,
-  "forks_30d": 13,
-  "days_since_last_push": 63,
-  "freshness_score": 0.5325918010068972,
-  "snapshot_count": 220,
+  "stars_7d": 10,
+  "stars_30d": 39,
+  "stars_90d": 103,
+  "star_growth_rate_7d": 1.4285714285714286,
+  "star_growth_rate_30d": 1.3448275862068966,
+  "star_growth_acceleration": 1.0622710622710623,
+  "forks_7d": -1,
+  "forks_30d": 9,
+  "days_since_last_push": 64,
+  "freshness_score": 0.5272924240430485,
+  "snapshot_count": 221,
   "authenticity": {
-    "organic_confidence": 76.5,
+    "organic_confidence": 76.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 84.7,
+        "score": 84.6,
         "weight": 0.22,
-        "detail": "920 forks for 16,021 stars (5.7%)."
+        "detail": "918 forks for 16,021 stars (5.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 74.9,
+        "score": 74.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 4 stars (1 forks, 3.0x the daily average)."
       },
@@ -76,14 +85,14 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 76.8,
+        "score": 76.5,
         "weight": 0.1,
-        "detail": "Last push 63 days ago."
+        "detail": "Last push 64 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 63 days ago.",
-      "Fork-to-star ratio: 920 forks for 16,021 stars (5.7%)."
+      "Maintenance cadence: Last push 64 days ago.",
+      "Fork-to-star ratio: 918 forks for 16,021 stars (5.7%)."
     ],
     "red_flags": []
   }

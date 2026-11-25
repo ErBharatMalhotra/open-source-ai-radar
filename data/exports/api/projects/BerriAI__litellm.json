@@ -4,35 +4,52 @@
   "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 63835,
+  "topics": [
+    "anthropic",
+    "langchain",
+    "llm",
+    "llmops",
+    "openai",
+    "ai-gateway",
+    "azure-openai",
+    "bedrock",
+    "gateway",
+    "openai-proxy",
+    "vertex-ai",
+    "llm-gateway",
+    "litellm",
+    "mcp-gateway",
+    "rust",
+    "rust-ai"
+  ],
+  "stars": 63836,
   "forks": 13538,
-  "open_issues": 1438,
+  "open_issues": 1426,
   "watchers": 240,
   "created_at": "2023-07-27T00:09:52Z",
-  "pushed_at": "2026-11-24T23:25:02Z",
+  "pushed_at": "2026-11-25T01:59:40Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/BerriAI.png",
   "radar_score": 79.29,
-  "impact": 98.61,
-  "velocity": 70.45,
+  "impact": 98.62,
+  "velocity": 70.46,
   "health": 60.75,
   "global_percentile": 92.0,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
   "maturity": "Unknown",
-  "stars_7d": 469,
-  "stars_30d": 1323,
-  "stars_90d": 1323,
-  "star_growth_rate_7d": 67.0,
-  "star_growth_rate_30d": 60.13636363636363,
-  "star_growth_acceleration": 1.1141345427059712,
-  "forks_7d": 198,
-  "forks_30d": 618,
+  "stars_7d": 462,
+  "stars_30d": 1289,
+  "stars_90d": 1289,
+  "star_growth_rate_7d": 66.0,
+  "star_growth_rate_30d": 58.59090909090909,
+  "star_growth_acceleration": 1.1264546159813809,
+  "forks_7d": 203,
+  "forks_30d": 619,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 377,
+  "snapshot_count": 378,
   "authenticity": {
     "organic_confidence": 95.3,
     "verdict": "organic",
@@ -43,7 +60,7 @@
         "label": "Fork-to-star ratio",
         "score": 97.8,
         "weight": 0.22,
-        "detail": "13,526 forks for 63,823 stars (21.2%)."
+        "detail": "13,538 forks for 63,836 stars (21.2%)."
       },
       {
         "key": "burst",
@@ -69,9 +86,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 90.9,
+        "score": 90.8,
         "weight": 0.12,
-        "detail": "1,445 open issues for 63,823 stars (2.3%)."
+        "detail": "1,426 open issues for 63,836 stars (2.2%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +99,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 1,445 open issues for 63,823 stars (2.3%).",
+      "Issue engagement: 1,426 open issues for 63,836 stars (2.2%).",
       "Burst pattern: Largest 24h jump was 100 stars (33 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 13,526 forks for 63,823 stars (21.2%)."
+      "Fork-to-star ratio: 13,538 forks for 63,836 stars (21.2%)."
     ],
     "red_flags": []
   }

@@ -4,53 +4,62 @@
   "description": "Developer-friendly OSS embedded retrieval library for multimodal AI. Search More; Manage Less.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "approximate-nearest-neighbor-search",
+    "image-search",
+    "nearest-neighbor-search",
+    "recommender-system",
+    "search-engine",
+    "semantic-search",
+    "similarity-search",
+    "vector-database"
+  ],
   "stars": 11978,
   "forks": 1180,
-  "open_issues": 472,
+  "open_issues": 473,
   "watchers": 55,
   "created_at": "2023-02-28T01:15:17Z",
-  "pushed_at": "2026-11-24T22:35:29Z",
+  "pushed_at": "2026-11-25T01:17:34Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/lancedb.png",
-  "radar_score": 72.84,
-  "impact": 91.31,
+  "radar_score": 72.85,
+  "impact": 91.32,
   "velocity": 58.23,
   "health": 63.75,
-  "global_percentile": 30.71,
+  "global_percentile": 30.57,
   "category": "Multimodal AI",
   "sub_category": "omni-modal",
   "summary": "Developer-friendly OSS embedded retrieval library for multimodal AI. Search More; Manage Less.",
   "maturity": "Unknown",
-  "stars_7d": 66,
-  "stars_30d": 159,
-  "stars_90d": 159,
-  "star_growth_rate_7d": 9.428571428571429,
-  "star_growth_rate_30d": 6.625,
-  "star_growth_acceleration": 1.4231805929919137,
+  "stars_7d": 65,
+  "stars_30d": 158,
+  "stars_90d": 158,
+  "star_growth_rate_7d": 9.285714285714286,
+  "star_growth_rate_30d": 6.32,
+  "star_growth_acceleration": 1.469258589511754,
   "forks_7d": 12,
-  "forks_30d": 34,
+  "forks_30d": 35,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 337,
+  "snapshot_count": 338,
   "authenticity": {
-    "organic_confidence": 90.5,
+    "organic_confidence": 90.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 99.4,
+        "score": 99.5,
         "weight": 0.22,
-        "detail": "1,178 forks for 11,978 stars (9.8%)."
+        "detail": "1,180 forks for 11,978 stars (9.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 75.3,
+        "score": 74.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 21 stars (1 forks, 3.0x the daily average)."
+        "detail": "Largest 24h jump was 21 stars (1 forks, 3.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,9 +91,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 21 stars (1 forks, 3.0x the daily average).",
       "Issue engagement: 473 open issues for 11,978 stars (3.9%).",
-      "Fork-to-star ratio: 1,178 forks for 11,978 stars (9.8%)."
+      "Fork-to-star ratio: 1,180 forks for 11,978 stars (9.9%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

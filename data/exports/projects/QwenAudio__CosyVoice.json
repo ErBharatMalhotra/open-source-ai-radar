@@ -4,10 +4,30 @@
   "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "audio-generation",
+    "gpt-4o",
+    "text-to-speech",
+    "tts",
+    "cantonese",
+    "chatbot",
+    "chatgpt",
+    "chinese",
+    "english",
+    "fine-grained",
+    "fine-tuning",
+    "japanese",
+    "korean",
+    "multi-lingual",
+    "natural-language-generation",
+    "python",
+    "cosyvoice",
+    "cross-lingual",
+    "voice-cloning"
+  ],
   "stars": 24498,
-  "forks": 2794,
-  "open_issues": 586,
+  "forks": 2796,
+  "open_issues": 585,
   "watchers": 134,
   "created_at": "2024-07-03T02:59:22Z",
   "pushed_at": "2026-05-25T18:15:40Z",
@@ -15,26 +35,26 @@
   "owner_avatar": "https://github.com/QwenAudio.png",
   "radar_score": 66.99,
   "impact": 95.5,
-  "velocity": 53.42,
-  "health": 40.38,
-  "global_percentile": 9.43,
+  "velocity": 53.43,
+  "health": 40.36,
+  "global_percentile": 9.29,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
   "maturity": "Unknown",
-  "stars_7d": 75,
-  "stars_30d": 359,
-  "stars_90d": 359,
-  "star_growth_rate_7d": 10.714285714285714,
-  "star_growth_rate_30d": 12.379310344827585,
-  "star_growth_acceleration": 0.86549940310386,
+  "stars_7d": 66,
+  "stars_30d": 358,
+  "stars_90d": 358,
+  "star_growth_rate_7d": 9.428571428571429,
+  "star_growth_rate_30d": 12.344827586206897,
+  "star_growth_acceleration": 0.7637669592976856,
   "forks_7d": 9,
-  "forks_30d": 37,
-  "days_since_last_push": 182,
-  "freshness_score": 0.16202575093388075,
-  "snapshot_count": 288,
+  "forks_30d": 38,
+  "days_since_last_push": 183,
+  "freshness_score": 0.16041356777517274,
+  "snapshot_count": 289,
   "authenticity": {
-    "organic_confidence": 86.5,
+    "organic_confidence": 86.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +63,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "2,794 forks for 24,496 stars (11.4%)."
+        "detail": "2,796 forks for 24,498 stars (11.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.4,
+        "score": 89.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 25 stars (1 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 25 stars (1 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,20 +91,20 @@
         "label": "Issue engagement",
         "score": 91.3,
         "weight": 0.12,
-        "detail": "586 open issues for 24,496 stars (2.4%)."
+        "detail": "585 open issues for 24,498 stars (2.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 44.8,
+        "score": 44.7,
         "weight": 0.1,
-        "detail": "Last push 182 days ago."
+        "detail": "Last push 183 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 25 stars (1 forks, 2.0x the daily average).",
-      "Issue engagement: 586 open issues for 24,496 stars (2.4%).",
-      "Fork-to-star ratio: 2,794 forks for 24,496 stars (11.4%)."
+      "Burst pattern: Largest 24h jump was 25 stars (1 forks, 2.1x the daily average).",
+      "Issue engagement: 585 open issues for 24,498 stars (2.4%).",
+      "Fork-to-star ratio: 2,796 forks for 24,498 stars (11.4%)."
     ],
     "red_flags": []
   }

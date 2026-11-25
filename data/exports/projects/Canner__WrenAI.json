@@ -4,10 +4,31 @@
   "description": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
   "language": "Python",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 18386,
-  "forks": 2126,
-  "open_issues": 166,
+  "topics": [
+    "bigquery",
+    "duckdb",
+    "llm",
+    "postgresql",
+    "rag",
+    "text-to-sql",
+    "sql",
+    "text2sql",
+    "charts",
+    "context-engineering",
+    "genbi",
+    "ai-agents",
+    "business-intelligence",
+    "clickhouse",
+    "dashboard",
+    "databricks",
+    "generative-ai",
+    "mcp",
+    "semantic-layer",
+    "snowflake"
+  ],
+  "stars": 18387,
+  "forks": 2127,
+  "open_issues": 165,
   "watchers": 101,
   "created_at": "2024-03-13T06:18:20Z",
   "pushed_at": "2026-11-23T03:00:32Z",
@@ -17,24 +38,24 @@
   "impact": 94.17,
   "velocity": 64.09,
   "health": 60.38,
-  "global_percentile": 50.71,
+  "global_percentile": 51.0,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
   "maturity": "Unknown",
-  "stars_7d": 84,
-  "stars_30d": 425,
-  "stars_90d": 428,
-  "star_growth_rate_7d": 12.0,
-  "star_growth_rate_30d": 14.166666666666666,
-  "star_growth_acceleration": 0.8470588235294118,
+  "stars_7d": 69,
+  "stars_30d": 411,
+  "stars_90d": 430,
+  "star_growth_rate_7d": 9.857142857142858,
+  "star_growth_rate_30d": 14.172413793103448,
+  "star_growth_acceleration": 0.6955161626694474,
   "forks_7d": 12,
-  "forks_30d": 57,
+  "forks_30d": 59,
   "days_since_last_push": 1,
   "freshness_score": 0.9900498337491681,
-  "snapshot_count": 299,
+  "snapshot_count": 300,
   "authenticity": {
-    "organic_confidence": 79.4,
+    "organic_confidence": 79.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "2,126 forks for 18,386 stars (11.6%)."
+        "detail": "2,127 forks for 18,387 stars (11.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 56.1,
+        "score": 55.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 65 stars (6 forks, 4.6x the daily average)."
+        "detail": "Largest 24h jump was 65 stars (6 forks, 4.7x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 72.1,
+        "score": 71.9,
         "weight": 0.12,
-        "detail": "166 open issues for 18,386 stars (0.9%)."
+        "detail": "165 open issues for 18,387 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +104,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 2,126 forks for 18,386 stars (11.6%)."
+      "Fork-to-star ratio: 2,127 forks for 18,387 stars (11.6%)."
     ],
     "red_flags": []
   }

@@ -4,7 +4,28 @@
   "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "downloader",
+    "facebook",
+    "tiktok",
+    "twitter",
+    "youtube",
+    "ai-summary",
+    "audio-downloader",
+    "cross-platform",
+    "electron",
+    "media-library",
+    "rss",
+    "speaker-diarization",
+    "speech-to-text",
+    "subtitles",
+    "transcription",
+    "video-downloader",
+    "whisper",
+    "yt-dlp",
+    "audio-transcription",
+    "video-transcription"
+  ],
   "stars": 11208,
   "forks": 873,
   "open_issues": 47,
@@ -13,65 +34,65 @@
   "pushed_at": "2026-11-24T15:13:54Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nexmoe.png",
-  "radar_score": 74.54,
-  "impact": 90.14,
+  "radar_score": 74.55,
+  "impact": 90.15,
   "velocity": 64.43,
   "health": 63.75,
-  "global_percentile": 44.0,
+  "global_percentile": 44.43,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
   "maturity": "Unknown",
-  "stars_7d": 49,
-  "stars_30d": 181,
-  "stars_90d": 181,
-  "star_growth_rate_7d": 7.0,
-  "star_growth_rate_30d": 7.869565217391305,
-  "star_growth_acceleration": 0.8895027624309392,
+  "stars_7d": 48,
+  "stars_30d": 183,
+  "stars_90d": 183,
+  "star_growth_rate_7d": 6.857142857142857,
+  "star_growth_rate_30d": 7.625,
+  "star_growth_acceleration": 0.8992974238875878,
   "forks_7d": -3,
   "forks_30d": 10,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 58,
+  "snapshot_count": 59,
   "authenticity": {
-    "organic_confidence": 73.8,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 87.6,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
         "score": 92.0,
         "weight": 0.22,
-        "detail": "873 forks for 11,206 stars (7.8%)."
+        "detail": "873 forks for 11,208 stars (7.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.2,
+        "score": 94.1,
         "weight": 0.24,
         "detail": "Largest 24h jump was 12 stars (2 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": 5,
+        "score": null,
         "weight": 0.18,
-        "detail": "+49 stars vs +-3 forks this week (expected ~4 forks)."
+        "detail": "Weekly star growth too small to compare."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": 95.6,
+        "score": null,
         "weight": 0.14,
-        "detail": "Weekly growth is 0.89x the monthly baseline."
+        "detail": "No acceleration data."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 56.0,
         "weight": 0.12,
-        "detail": "47 open issues for 11,206 stars (0.4%)."
+        "detail": "47 open issues for 11,208 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,10 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 873 forks for 11,206 stars (7.8%).",
+      "Fork-to-star ratio: 873 forks for 11,208 stars (7.8%).",
       "Burst pattern: Largest 24h jump was 12 stars (2 forks, 1.6x the daily average).",
-      "Growth acceleration: Weekly growth is 0.89x the monthly baseline."
+      "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": [
-      "Star/fork velocity alignment: +49 stars vs +-3 forks this week (expected ~4 forks)."
-    ]
+    "red_flags": []
   }
 }

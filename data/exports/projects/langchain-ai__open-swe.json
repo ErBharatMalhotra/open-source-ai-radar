@@ -4,7 +4,16 @@
   "description": "An Open-Source Asynchronous Coding Agent",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "agent",
+    "ai",
+    "anthropic",
+    "claudecode",
+    "llm",
+    "openai",
+    "agents",
+    "llms"
+  ],
   "stars": 11260,
   "forks": 1330,
   "open_issues": 0,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-25T10:20:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/langchain-ai.png",
-  "radar_score": 68.69,
-  "impact": 90.91,
+  "radar_score": 68.7,
+  "impact": 90.93,
   "velocity": 50.67,
   "health": 58.35,
-  "global_percentile": 14.86,
+  "global_percentile": 15.0,
   "category": "AI Coding Tools",
   "sub_category": "",
   "summary": "An Open-Source Asynchronous Coding Agent",
   "maturity": "Unknown",
-  "stars_7d": 31,
+  "stars_7d": 29,
   "stars_30d": 104,
   "stars_90d": 104,
-  "star_growth_rate_7d": 4.428571428571429,
+  "star_growth_rate_7d": 4.142857142857143,
   "star_growth_rate_30d": 4.333333333333333,
-  "star_growth_acceleration": 1.0219780219780221,
+  "star_growth_acceleration": 0.9560439560439562,
   "forks_7d": 10,
   "forks_30d": 16,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 367,
+  "snapshot_count": 368,
   "authenticity": {
-    "organic_confidence": 80.0,
+    "organic_confidence": 85.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,35 +52,35 @@
         "label": "Fork-to-star ratio",
         "score": 99.6,
         "weight": 0.22,
-        "detail": "1,330 forks for 11,258 stars (11.8%)."
+        "detail": "1,330 forks for 11,260 stars (11.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.2,
+        "score": 83.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 13 stars (0 forks, 2.6x the daily average)."
+        "detail": "Largest 24h jump was 12 stars (1 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 95,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+29 stars vs +10 forks this week (expected ~3 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 95.2,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.96x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
         "score": 25,
         "weight": 0.12,
-        "detail": "0 open issues for 11,258 stars (0.0%)."
+        "detail": "0 open issues for 11,260 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +91,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 13 stars (0 forks, 2.6x the daily average).",
-      "Fork-to-star ratio: 1,330 forks for 11,258 stars (11.8%).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Burst pattern: Largest 24h jump was 12 stars (1 forks, 2.4x the daily average).",
+      "Star/fork velocity alignment: +29 stars vs +10 forks this week (expected ~3 forks).",
+      "Growth acceleration: Weekly growth is 0.96x the monthly baseline."
     ],
     "red_flags": [
-      "Issue engagement: 0 open issues for 11,258 stars (0.0%)."
+      "Issue engagement: 0 open issues for 11,260 stars (0.0%)."
     ]
   }
 }

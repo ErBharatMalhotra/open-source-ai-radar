@@ -4,7 +4,12 @@
   "description": "Context7 Platform -- Up-to-date docs for AI agents",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "llm",
+    "mcp",
+    "mcp-server",
+    "vibe-coding"
+  ],
   "stars": 65436,
   "forks": 3271,
   "open_issues": 13,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-25T10:14:18Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/upstash.png",
-  "radar_score": 75.2,
-  "impact": 97.55,
-  "velocity": 61.7,
-  "health": 58.35,
-  "global_percentile": 51.14,
+  "radar_score": 73.97,
+  "impact": 97.56,
+  "velocity": 61.43,
+  "health": 53.8,
+  "global_percentile": 40.0,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
   "maturity": "Unknown",
-  "stars_7d": 467,
-  "stars_30d": 1397,
-  "stars_90d": 1397,
-  "star_growth_rate_7d": 66.71428571428571,
-  "star_growth_rate_30d": 58.208333333333336,
-  "star_growth_acceleration": 1.146129461090091,
-  "forks_7d": 8,
-  "forks_30d": 77,
+  "stars_7d": 460,
+  "stars_30d": 1412,
+  "stars_90d": 1412,
+  "star_growth_rate_7d": 65.71428571428571,
+  "star_growth_rate_30d": 58.833333333333336,
+  "star_growth_acceleration": 1.1169566976932415,
+  "forks_7d": 6,
+  "forks_30d": 75,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 368,
+  "snapshot_count": 369,
   "authenticity": {
-    "organic_confidence": 76.4,
+    "organic_confidence": 76.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 82.0,
         "weight": 0.22,
-        "detail": "3,271 forks for 65,414 stars (5.0%)."
+        "detail": "3,271 forks for 65,436 stars (5.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 86.0,
+        "score": 85.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 131 stars (8 forks, 2.3x the daily average)."
       },
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 27.3,
+        "score": 27.0,
         "weight": 0.12,
-        "detail": "15 open issues for 65,414 stars (0.0%)."
+        "detail": "13 open issues for 65,436 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +87,12 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,271 forks for 65,414 stars (5.0%).",
+      "Fork-to-star ratio: 3,271 forks for 65,436 stars (5.0%).",
       "Burst pattern: Largest 24h jump was 131 stars (8 forks, 2.3x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 15 open issues for 65,414 stars (0.0%)."
+      "Issue engagement: 13 open issues for 65,436 stars (0.0%)."
     ]
   }
 }

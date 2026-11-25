@@ -4,8 +4,15 @@
   "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 56215,
+  "topics": [
+    "agent",
+    "code-review",
+    "code-review-assistant",
+    "harness",
+    "repository-level-context",
+    "agent-skills"
+  ],
+  "stars": 56216,
   "forks": 4639,
   "open_issues": 138,
   "watchers": 160,
@@ -15,26 +22,26 @@
   "owner_avatar": "https://github.com/alibaba.png",
   "radar_score": 79.22,
   "impact": 97.64,
-  "velocity": 69.22,
+  "velocity": 69.21,
   "health": 63.75,
-  "global_percentile": 91.29,
+  "global_percentile": 91.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "maturity": "Unknown",
-  "stars_7d": 2981,
-  "stars_30d": 6820,
-  "stars_90d": 6820,
-  "star_growth_rate_7d": 425.85714285714283,
-  "star_growth_rate_30d": 296.5217391304348,
-  "star_growth_acceleration": 1.436175115207373,
-  "forks_7d": 313,
+  "stars_7d": 2814,
+  "stars_30d": 6936,
+  "stars_90d": 6936,
+  "star_growth_rate_7d": 402.0,
+  "star_growth_rate_30d": 315.27272727272725,
+  "star_growth_acceleration": 1.2750865051903115,
+  "forks_7d": 252,
   "forks_30d": 1024,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 376,
+  "snapshot_count": 377,
   "authenticity": {
-    "organic_confidence": 78.0,
+    "organic_confidence": 78.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 93.7,
         "weight": 0.22,
-        "detail": "4,632 forks for 56,061 stars (8.3%)."
+        "detail": "4,639 forks for 56,216 stars (8.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 69.7,
+        "score": 70.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 904 stars (187 forks, 3.5x the daily average)."
+        "detail": "Largest 24h jump was 904 stars (187 forks, 3.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 47.4,
+        "score": 47.3,
         "weight": 0.12,
-        "detail": "139 open issues for 56,061 stars (0.2%)."
+        "detail": "138 open issues for 56,216 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +89,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 4,632 forks for 56,061 stars (8.3%).",
+      "Fork-to-star ratio: 4,639 forks for 56,216 stars (8.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

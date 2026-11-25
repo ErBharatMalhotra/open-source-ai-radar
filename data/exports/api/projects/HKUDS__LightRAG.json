@@ -4,7 +4,19 @@
   "description": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "knowledge-graph",
+    "large-language-models",
+    "retrieval-augmented-generation",
+    "genai",
+    "graphrag",
+    "llm",
+    "rag",
+    "gpt",
+    "docling",
+    "mineru",
+    "ragas"
+  ],
   "stars": 40859,
   "forks": 5815,
   "open_issues": 206,
@@ -13,28 +25,28 @@
   "pushed_at": "2026-11-24T18:17:21Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/HKUDS.png",
-  "radar_score": 78.81,
+  "radar_score": 78.82,
   "impact": 97.9,
-  "velocity": 67.75,
+  "velocity": 67.78,
   "health": 63.75,
   "global_percentile": 87.86,
   "category": "RAG",
   "sub_category": "",
   "summary": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
   "maturity": "Unknown",
-  "stars_7d": 117,
-  "stars_30d": 488,
-  "stars_90d": 488,
-  "star_growth_rate_7d": 16.714285714285715,
-  "star_growth_rate_30d": 17.428571428571427,
-  "star_growth_acceleration": 0.9590163934426231,
-  "forks_7d": 26,
-  "forks_30d": 78,
+  "stars_7d": 120,
+  "stars_30d": 492,
+  "stars_90d": 492,
+  "star_growth_rate_7d": 17.142857142857142,
+  "star_growth_rate_30d": 17.571428571428573,
+  "star_growth_acceleration": 0.9756097560975608,
+  "forks_7d": 25,
+  "forks_30d": 81,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 338,
+  "snapshot_count": 339,
   "authenticity": {
-    "organic_confidence": 88.7,
+    "organic_confidence": 89.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.2,
         "weight": 0.22,
-        "detail": "5,811 forks for 40,846 stars (14.2%)."
+        "detail": "5,815 forks for 40,859 stars (14.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.3,
+        "score": 89.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 35 stars (-3 forks, 2.0x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 59.1,
+        "score": 60.1,
         "weight": 0.12,
-        "detail": "197 open issues for 40,846 stars (0.5%)."
+        "detail": "206 open issues for 40,859 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +95,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 35 stars (-3 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 5,811 forks for 40,846 stars (14.2%).",
+      "Fork-to-star ratio: 5,815 forks for 40,859 stars (14.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

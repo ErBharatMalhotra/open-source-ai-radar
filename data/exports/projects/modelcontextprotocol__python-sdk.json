@@ -4,7 +4,12 @@
   "description": "The official Python SDK for Model Context Protocol servers and clients",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "python",
+    "mcp",
+    "mcp-server",
+    "mcp-client"
+  ],
   "stars": 24961,
   "forks": 4173,
   "open_issues": 321,
@@ -13,28 +18,28 @@
   "pushed_at": "2026-11-17T09:38:48Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/modelcontextprotocol.png",
-  "radar_score": 76.55,
-  "impact": 96.21,
-  "velocity": 65.01,
-  "health": 61.26,
-  "global_percentile": 63.43,
+  "radar_score": 75.68,
+  "impact": 96.22,
+  "velocity": 62.76,
+  "health": 60.92,
+  "global_percentile": 55.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "The official Python SDK for Model Context Protocol servers and clients",
   "maturity": "Unknown",
-  "stars_7d": 81,
-  "stars_30d": 265,
-  "stars_90d": 265,
-  "star_growth_rate_7d": 11.571428571428571,
-  "star_growth_rate_30d": 9.814814814814815,
-  "star_growth_acceleration": 1.1789757412398922,
-  "forks_7d": 38,
-  "forks_30d": 87,
-  "days_since_last_push": 7,
-  "freshness_score": 0.9323938199059483,
-  "snapshot_count": 330,
+  "stars_7d": 83,
+  "stars_30d": 262,
+  "stars_90d": 262,
+  "star_growth_rate_7d": 11.857142857142858,
+  "star_growth_rate_30d": 9.703703703703704,
+  "star_growth_acceleration": 1.2219193020719739,
+  "forks_7d": 39,
+  "forks_30d": 86,
+  "days_since_last_push": 8,
+  "freshness_score": 0.9231163463866358,
+  "snapshot_count": 331,
   "authenticity": {
-    "organic_confidence": 92.5,
+    "organic_confidence": 92.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.7,
         "weight": 0.22,
-        "detail": "4,172 forks for 24,959 stars (16.7%)."
+        "detail": "4,173 forks for 24,961 stars (16.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.5,
+        "score": 92.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 17 stars (3 forks, 1.8x the daily average)."
       },
@@ -71,20 +76,20 @@
         "label": "Issue engagement",
         "score": 79.3,
         "weight": 0.12,
-        "detail": "321 open issues for 24,959 stars (1.3%)."
+        "detail": "321 open issues for 24,961 stars (1.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 95.0,
+        "score": 94.6,
         "weight": 0.1,
-        "detail": "Last push 7 days ago."
+        "detail": "Last push 8 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 321 open issues for 24,959 stars (1.3%).",
+      "Issue engagement: 321 open issues for 24,961 stars (1.3%).",
       "Burst pattern: Largest 24h jump was 17 stars (3 forks, 1.8x the daily average).",
-      "Maintenance cadence: Last push 7 days ago."
+      "Maintenance cadence: Last push 8 days ago."
     ],
     "red_flags": []
   }

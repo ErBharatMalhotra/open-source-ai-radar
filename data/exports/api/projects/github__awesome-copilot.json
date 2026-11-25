@@ -4,7 +4,16 @@
   "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
   "language": "JavaScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai",
+    "github-copilot",
+    "prompt-engineering",
+    "hacktoberfest",
+    "agent-skills",
+    "agents",
+    "awesome",
+    "custom-agents"
+  ],
   "stars": 41547,
   "forks": 5427,
   "open_issues": 86,
@@ -13,28 +22,28 @@
   "pushed_at": "2026-11-25T00:00:27Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/github.png",
-  "radar_score": 78.48,
-  "impact": 98.01,
-  "velocity": 66.67,
+  "radar_score": 78.5,
+  "impact": 98.02,
+  "velocity": 66.72,
   "health": 63.75,
-  "global_percentile": 84.57,
+  "global_percentile": 84.71,
   "category": "AI Coding Tools",
   "sub_category": "code completion",
   "summary": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
   "maturity": "Unknown",
-  "stars_7d": 295,
-  "stars_30d": 859,
-  "stars_90d": 859,
-  "star_growth_rate_7d": 42.142857142857146,
-  "star_growth_rate_30d": 37.34782608695652,
-  "star_growth_acceleration": 1.12838849160153,
-  "forks_7d": 56,
-  "forks_30d": 166,
+  "stars_7d": 293,
+  "stars_30d": 866,
+  "stars_90d": 866,
+  "star_growth_rate_7d": 41.857142857142854,
+  "star_growth_rate_30d": 37.65217391304348,
+  "star_growth_acceleration": 1.1116793137578356,
+  "forks_7d": 51,
+  "forks_30d": 162,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 359,
+  "snapshot_count": 360,
   "authenticity": {
-    "organic_confidence": 88.3,
+    "organic_confidence": 88.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +52,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "5,427 forks for 41,527 stars (13.1%)."
+        "detail": "5,427 forks for 41,547 stars (13.1%)."
       },
       {
         "key": "burst",
@@ -69,9 +78,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 44.7,
+        "score": 45.3,
         "weight": 0.12,
-        "detail": "82 open issues for 41,527 stars (0.2%)."
+        "detail": "86 open issues for 41,547 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +92,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 56 stars (11 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 5,427 forks for 41,527 stars (13.1%).",
+      "Fork-to-star ratio: 5,427 forks for 41,547 stars (13.1%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

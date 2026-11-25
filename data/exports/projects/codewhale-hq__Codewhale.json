@@ -4,7 +4,26 @@
   "description": "Open-source Rust coding agent for terminal, web, and desktop. Any model, multi-agent fleets, MCP & plugins, OS sandboxing, and session receipts.",
   "language": "Rust",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "cli",
+    "rust",
+    "tui",
+    "ai-agent",
+    "coding-agent",
+    "agent-orchestration",
+    "mcp",
+    "multi-agent",
+    "open-source",
+    "developer-tools",
+    "terminal",
+    "agent-client-protocol",
+    "ai-coding",
+    "deepseek",
+    "llm",
+    "local-llm",
+    "ollama",
+    "openai-compatible"
+  ],
   "stars": 41202,
   "forks": 3579,
   "open_issues": 59,
@@ -13,28 +32,28 @@
   "pushed_at": "2026-11-25T08:07:17Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/codewhale-hq.png",
-  "radar_score": 78.75,
+  "radar_score": 78.74,
   "impact": 97.07,
-  "velocity": 68.51,
+  "velocity": 68.5,
   "health": 63.75,
-  "global_percentile": 87.71,
+  "global_percentile": 87.43,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "Open-source coding agent for your terminal, built in Rust and on a journey of continuous community improvement. Issues and PRs welcome.",
   "maturity": "Unknown",
-  "stars_7d": 13,
+  "stars_7d": 20,
   "stars_30d": 45,
   "stars_90d": 45,
-  "star_growth_rate_7d": 1.8571428571428572,
+  "star_growth_rate_7d": 2.857142857142857,
   "star_growth_rate_30d": 1.8,
-  "star_growth_acceleration": 1.0317460317460319,
-  "forks_7d": 7,
-  "forks_30d": 13,
+  "star_growth_acceleration": 1.5873015873015872,
+  "forks_7d": 6,
+  "forks_30d": 14,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 191,
+  "snapshot_count": 192,
   "authenticity": {
-    "organic_confidence": 67.6,
+    "organic_confidence": 67.9,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +62,14 @@
         "label": "Fork-to-star ratio",
         "score": 95.3,
         "weight": 0.22,
-        "detail": "3,579 forks for 41,198 stars (8.7%)."
+        "detail": "3,579 forks for 41,202 stars (8.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 42.8,
+        "score": 43.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 17 stars (4 forks, 6.4x the daily average)."
+        "detail": "Largest 24h jump was 17 stars (4 forks, 6.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +88,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 39.6,
+        "score": 39.3,
         "weight": 0.12,
-        "detail": "60 open issues for 41,198 stars (0.1%)."
+        "detail": "59 open issues for 41,202 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +101,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 3,579 forks for 41,198 stars (8.7%).",
+      "Fork-to-star ratio: 3,579 forks for 41,202 stars (8.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 60 open issues for 41,198 stars (0.1%)."
+      "Issue engagement: 59 open issues for 41,202 stars (0.1%)."
     ]
   }
 }

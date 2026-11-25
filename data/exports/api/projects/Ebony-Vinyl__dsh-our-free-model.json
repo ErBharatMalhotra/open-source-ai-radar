@@ -4,8 +4,19 @@
   "description": "\u5728 dsh \u91cc\u88c5\u4e0a\u8fd9\u4e2a\u63d2\u4ef6\u5373\u53ef\uff0c\u65e0\u9700\u767b\u5f55\u3001\u6ce8\u518c\u6216\u586b API Key\uff0c\u5c31\u80fd\u4f7f\u7528\u5305\u62ec DeepSeek V4.1 Flash\u3001Kimi K3 \u5728\u5185\u7684\u524d\u6cbf\u6a21\u578b\u2014\u2014\u5b8c\u5168\u514d\u8d39\uff0c\u4e0d\u9650\u91cf\u3002 All you do is install this plugin in dsh: no login, no sign-up, no API key \u2014 the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
   "language": "JavaScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 86696,
+  "topics": [
+    "ai-agents",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "free-model",
+    "llm",
+    "model-provider",
+    "openai-compatible"
+  ],
+  "stars": 86707,
   "forks": 2454,
   "open_issues": 188,
   "watchers": 83,
@@ -13,29 +24,29 @@
   "pushed_at": "2026-11-24T11:19:33Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Ebony-Vinyl.png",
-  "radar_score": 78.37,
-  "impact": 96.58,
-  "velocity": 73.39,
-  "health": 56.2,
-  "global_percentile": 83.71,
+  "radar_score": 78.29,
+  "impact": 96.61,
+  "velocity": 73.4,
+  "health": 55.83,
+  "global_percentile": 83.0,
   "category": "LLM Frameworks",
   "sub_category": "serving",
   "summary": "\u5728 dsh \u91cc\u88c5\u4e0a\u8fd9\u4e2a\u63d2\u4ef6\u5373\u53ef\uff0c\u65e0\u9700\u767b\u5f55\u3001\u6ce8\u518c\u6216\u586b API Key\uff0c\u5c31\u80fd\u4f7f\u7528\u5305\u62ec DeepSeek V4.1 Flash\u3001Kimi K3 \u5728\u5185\u7684\u524d\u6cbf\u6a21\u578b\u2014\u2014\u5b8c\u5168\u514d\u8d39\uff0c\u4e0d\u9650\u91cf\u3002 All you do is install this plugin in dsh: no login, no sign-up, no API key \u2014 the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
   "maturity": "Unknown",
-  "stars_7d": 8552,
-  "stars_30d": 29431,
-  "stars_90d": 29431,
-  "star_growth_rate_7d": 1221.7142857142858,
-  "star_growth_rate_30d": 1337.7727272727273,
-  "star_growth_acceleration": 0.9132450234689371,
-  "forks_7d": 241,
-  "forks_30d": 884,
+  "stars_7d": 8529,
+  "stars_30d": 29481,
+  "stars_90d": 29481,
+  "star_growth_rate_7d": 1218.4285714285713,
+  "star_growth_rate_30d": 1340.0454545454545,
+  "star_growth_acceleration": 0.9092442105569204,
+  "forks_7d": 249,
+  "forks_30d": 895,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 180,
-  "why_trending": "Strong momentum with 8552 new stars this week. Above-average growth velocity. High developer adoption with 241 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 181,
+  "why_trending": "Strong momentum with 8529 new stars this week. Above-average growth velocity. High developer adoption with 249 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 78.5,
+    "organic_confidence": 78.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -44,12 +55,12 @@
         "label": "Fork-to-star ratio",
         "score": 67.5,
         "weight": 0.22,
-        "detail": "2,430 forks for 86,115 stars (2.8%)."
+        "detail": "2,454 forks for 86,707 stars (2.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.9,
+        "score": 95.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 2,009 stars (49 forks, 1.4x the daily average)."
       },
@@ -70,21 +81,21 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 45.9,
+        "score": 45.8,
         "weight": 0.12,
-        "detail": "188 open issues for 86,115 stars (0.2%)."
+        "detail": "188 open issues for 86,707 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 2,009 stars (49 forks, 1.4x the daily average).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

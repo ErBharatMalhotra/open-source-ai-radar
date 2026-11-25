@@ -4,8 +4,14 @@
   "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 116561,
+  "topics": [
+    "agent-skills",
+    "ai",
+    "anti-slop",
+    "design",
+    "slop"
+  ],
+  "stars": 116569,
   "forks": 6966,
   "open_issues": 53,
   "watchers": 219,
@@ -13,26 +19,26 @@
   "pushed_at": "2026-11-25T07:50:46Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/pbakaus.png",
-  "radar_score": 76.48,
-  "impact": 98.71,
-  "velocity": 64.03,
+  "radar_score": 76.49,
+  "impact": 98.72,
+  "velocity": 64.04,
   "health": 58.35,
-  "global_percentile": 62.29,
+  "global_percentile": 63.71,
   "category": "AI Coding Tools",
   "sub_category": "code review",
   "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
   "maturity": "Unknown",
-  "stars_7d": 4835,
-  "stars_30d": 16337,
-  "stars_90d": 16337,
-  "star_growth_rate_7d": 690.7142857142857,
-  "star_growth_rate_30d": 742.5909090909091,
-  "star_growth_acceleration": 0.9301410470535768,
-  "forks_7d": 280,
-  "forks_30d": 1027,
+  "stars_7d": 4761,
+  "stars_30d": 16256,
+  "stars_90d": 16256,
+  "star_growth_rate_7d": 680.1428571428571,
+  "star_growth_rate_30d": 738.9090909090909,
+  "star_growth_acceleration": 0.9204689257592801,
+  "forks_7d": 290,
+  "forks_30d": 1033,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 111,
+  "snapshot_count": 112,
   "authenticity": {
     "organic_confidence": 76.2,
     "verdict": "likely_organic",
@@ -43,12 +49,12 @@
         "label": "Fork-to-star ratio",
         "score": 85.5,
         "weight": 0.22,
-        "detail": "6,942 forks for 116,313 stars (6.0%)."
+        "detail": "6,966 forks for 116,569 stars (6.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.1,
+        "score": 81.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 2,355 stars (133 forks, 2.6x the daily average)."
       },
@@ -69,9 +75,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.6,
+        "score": 29.5,
         "weight": 0.12,
-        "detail": "53 open issues for 116,313 stars (0.0%)."
+        "detail": "53 open issues for 116,569 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -83,11 +89,11 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 2,355 stars (133 forks, 2.6x the daily average).",
-      "Fork-to-star ratio: 6,942 forks for 116,313 stars (6.0%).",
+      "Fork-to-star ratio: 6,966 forks for 116,569 stars (6.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 53 open issues for 116,313 stars (0.0%)."
+      "Issue engagement: 53 open issues for 116,569 stars (0.0%)."
     ]
   }
 }

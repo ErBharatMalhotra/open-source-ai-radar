@@ -4,7 +4,11 @@
   "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "language": "Go",
   "license": "NOASSERTION",
-  "topics": [],
+  "topics": [
+    "agents",
+    "container",
+    "sandbox"
+  ],
   "stars": 13449,
   "forks": 1245,
   "open_issues": 120,
@@ -14,27 +18,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/TencentCloud.png",
   "radar_score": 76.19,
-  "impact": 91.78,
-  "velocity": 69.4,
+  "impact": 91.8,
+  "velocity": 69.38,
   "health": 60.75,
-  "global_percentile": 59.29,
+  "global_percentile": 59.71,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
   "maturity": "Unknown",
-  "stars_7d": 144,
-  "stars_30d": 397,
-  "stars_90d": 397,
-  "star_growth_rate_7d": 20.571428571428573,
-  "star_growth_rate_30d": 13.689655172413794,
-  "star_growth_acceleration": 1.5026988125224903,
-  "forks_7d": 17,
-  "forks_30d": 59,
+  "stars_7d": 152,
+  "stars_30d": 405,
+  "stars_90d": 405,
+  "star_growth_rate_7d": 21.714285714285715,
+  "star_growth_rate_30d": 13.96551724137931,
+  "star_growth_acceleration": 1.5548500881834217,
+  "forks_7d": 20,
+  "forks_30d": 62,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 287,
+  "snapshot_count": 288,
   "authenticity": {
-    "organic_confidence": 80.7,
+    "organic_confidence": 80.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +47,14 @@
         "label": "Fork-to-star ratio",
         "score": 97.3,
         "weight": 0.22,
-        "detail": "1,242 forks for 13,441 stars (9.2%)."
+        "detail": "1,245 forks for 13,449 stars (9.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 61.5,
+        "score": 62.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 56 stars (7 forks, 4.2x the daily average)."
+        "detail": "Largest 24h jump was 56 stars (7 forks, 4.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +73,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 72.5,
+        "score": 71.8,
         "weight": 0.12,
-        "detail": "123 open issues for 13,441 stars (0.9%)."
+        "detail": "120 open issues for 13,449 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +86,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,242 forks for 13,441 stars (9.2%).",
+      "Fork-to-star ratio: 1,245 forks for 13,449 stars (9.3%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

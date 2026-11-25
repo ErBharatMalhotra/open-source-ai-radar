@@ -4,7 +4,28 @@
   "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "neural-network",
+    "search-engine",
+    "knn-algorithm",
+    "hnsw",
+    "vector-search",
+    "nearest-neighbor-search",
+    "image-search",
+    "embeddings-similarity",
+    "recommender-system",
+    "vector-search-engine",
+    "mlops",
+    "search-engines",
+    "neural-search",
+    "similarity-search",
+    "vector-database",
+    "machine-learning",
+    "search",
+    "ai-search",
+    "ai-search-engine",
+    "hybrid-search"
+  ],
   "stars": 35701,
   "forks": 2846,
   "open_issues": 513,
@@ -15,26 +36,26 @@
   "owner_avatar": "https://github.com/qdrant.png",
   "radar_score": 76.2,
   "impact": 96.54,
-  "velocity": 61.84,
+  "velocity": 61.85,
   "health": 63.75,
-  "global_percentile": 59.43,
+  "global_percentile": 59.86,
   "category": "RAG",
   "sub_category": "vector database",
   "summary": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
   "maturity": "Unknown",
-  "stars_7d": 91,
-  "stars_30d": 376,
-  "stars_90d": 376,
-  "star_growth_rate_7d": 13.0,
-  "star_growth_rate_30d": 14.461538461538462,
-  "star_growth_acceleration": 0.898936170212766,
-  "forks_7d": 23,
-  "forks_30d": 59,
+  "stars_7d": 97,
+  "stars_30d": 382,
+  "stars_90d": 382,
+  "star_growth_rate_7d": 13.857142857142858,
+  "star_growth_rate_30d": 14.692307692307692,
+  "star_growth_acceleration": 0.943156320119671,
+  "forks_7d": 25,
+  "forks_30d": 62,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 355,
+  "snapshot_count": 356,
   "authenticity": {
-    "organic_confidence": 91.3,
+    "organic_confidence": 91.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 92.7,
         "weight": 0.22,
-        "detail": "2,843 forks for 35,689 stars (8.0%)."
+        "detail": "2,846 forks for 35,701 stars (8.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.5,
+        "score": 91.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 27 stars (1 forks, 1.8x the daily average)."
       },
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 81.1,
+        "score": 81.6,
         "weight": 0.12,
-        "detail": "503 open issues for 35,689 stars (1.4%)."
+        "detail": "513 open issues for 35,701 stars (1.4%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 503 open issues for 35,689 stars (1.4%).",
+      "Issue engagement: 513 open issues for 35,701 stars (1.4%).",
       "Burst pattern: Largest 24h jump was 27 stars (1 forks, 1.8x the daily average).",
-      "Fork-to-star ratio: 2,843 forks for 35,689 stars (8.0%)."
+      "Fork-to-star ratio: 2,846 forks for 35,701 stars (8.0%)."
     ],
     "red_flags": []
   }

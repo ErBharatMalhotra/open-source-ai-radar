@@ -4,7 +4,16 @@
   "description": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop",
+    "dsh",
+    "dsh-plugin-desktop",
+    "cordis",
+    "cordis-plugin"
+  ],
   "stars": 36813,
   "forks": 1667,
   "open_issues": 307,
@@ -14,44 +23,44 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/anywhere-labs.png",
   "radar_score": 76.81,
-  "impact": 95.02,
-  "velocity": 68.57,
+  "impact": 95.03,
+  "velocity": 68.58,
   "health": 59.2,
-  "global_percentile": 66.57,
+  "global_percentile": 67.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "maturity": "Unknown",
-  "stars_7d": 590,
-  "stars_30d": 2601,
-  "stars_90d": 2601,
-  "star_growth_rate_7d": 84.28571428571429,
-  "star_growth_rate_30d": 104.04,
-  "star_growth_acceleration": 0.8101279727577305,
-  "forks_7d": 20,
-  "forks_30d": 110,
+  "stars_7d": 579,
+  "stars_30d": 2578,
+  "stars_90d": 2578,
+  "star_growth_rate_7d": 82.71428571428571,
+  "star_growth_rate_30d": 103.12,
+  "star_growth_acceleration": 0.8021168125900475,
+  "forks_7d": 23,
+  "forks_30d": 114,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 355,
+  "snapshot_count": 356,
   "why_trending": "Strong momentum with 1066 new stars this week. Above-average growth velocity. High developer adoption with 47 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 83.6,
+    "organic_confidence": 84.1,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 78.8,
+        "score": 78.9,
         "weight": 0.22,
-        "detail": "1,664 forks for 36,777 stars (4.5%)."
+        "detail": "1,667 forks for 36,813 stars (4.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.9,
+        "score": 89.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 254 stars (12 forks, 2.1x the daily average)."
+        "detail": "Largest 24h jump was 237 stars (9 forks, 2.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -72,7 +81,7 @@
         "label": "Issue engagement",
         "score": 70.0,
         "weight": 0.12,
-        "detail": "307 open issues for 36,777 stars (0.8%)."
+        "detail": "307 open issues for 36,813 stars (0.8%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +92,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,664 forks for 36,777 stars (4.5%).",
-      "Burst pattern: Largest 24h jump was 254 stars (12 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 1,667 forks for 36,813 stars (4.5%).",
+      "Burst pattern: Largest 24h jump was 237 stars (9 forks, 2.0x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

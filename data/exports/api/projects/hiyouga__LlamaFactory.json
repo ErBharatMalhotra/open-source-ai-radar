@@ -4,7 +4,28 @@
   "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "fine-tuning",
+    "llama",
+    "llm",
+    "peft",
+    "transformers",
+    "rlhf",
+    "qlora",
+    "quantization",
+    "qwen",
+    "instruction-tuning",
+    "gpt",
+    "lora",
+    "large-language-models",
+    "agent",
+    "ai",
+    "moe",
+    "llama3",
+    "deepseek",
+    "gemma",
+    "nlp"
+  ],
   "stars": 76279,
   "forks": 9412,
   "open_issues": 1023,
@@ -14,27 +35,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/hiyouga.png",
   "radar_score": 79.21,
-  "impact": 98.89,
+  "impact": 98.9,
   "velocity": 67.77,
   "health": 63.75,
-  "global_percentile": 91.14,
+  "global_percentile": 91.0,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
   "maturity": "Unknown",
-  "stars_7d": 180,
-  "stars_30d": 462,
-  "stars_90d": 462,
-  "star_growth_rate_7d": 25.714285714285715,
-  "star_growth_rate_30d": 18.48,
-  "star_growth_acceleration": 1.391465677179963,
-  "forks_7d": 26,
-  "forks_30d": 93,
+  "stars_7d": 197,
+  "stars_30d": 481,
+  "stars_90d": 481,
+  "star_growth_rate_7d": 28.142857142857142,
+  "star_growth_rate_30d": 19.24,
+  "star_growth_acceleration": 1.462726462726463,
+  "forks_7d": 31,
+  "forks_30d": 97,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 328,
+  "snapshot_count": 329,
   "authenticity": {
-    "organic_confidence": 92.0,
+    "organic_confidence": 92.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "9,407 forks for 76,262 stars (12.3%)."
+        "detail": "9,412 forks for 76,279 stars (12.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.7,
+        "score": 88.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 38 stars (2 forks, 2.2x the daily average)."
+        "detail": "Largest 24h jump was 38 stars (2 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 80.0,
+        "score": 80.1,
         "weight": 0.12,
-        "detail": "1,019 open issues for 76,262 stars (1.3%)."
+        "detail": "1,023 open issues for 76,279 stars (1.3%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 1,019 open issues for 76,262 stars (1.3%).",
-      "Burst pattern: Largest 24h jump was 38 stars (2 forks, 2.2x the daily average).",
-      "Fork-to-star ratio: 9,407 forks for 76,262 stars (12.3%)."
+      "Issue engagement: 1,023 open issues for 76,279 stars (1.3%).",
+      "Burst pattern: Largest 24h jump was 38 stars (2 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 9,412 forks for 76,279 stars (12.3%)."
     ],
     "red_flags": []
   }

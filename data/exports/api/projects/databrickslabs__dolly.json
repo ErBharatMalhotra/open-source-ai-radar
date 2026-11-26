@@ -4,7 +4,12 @@
   "description": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "databricks",
+    "gpt",
+    "chatbot",
+    "dolly"
+  ],
   "stars": 10806,
   "forks": 1125,
   "open_issues": 5,
@@ -13,26 +18,26 @@
   "pushed_at": "2023-06-30T18:36:16Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/databrickslabs.png",
-  "radar_score": 58.45,
-  "impact": 92.21,
-  "velocity": 37.79,
+  "radar_score": 58.46,
+  "impact": 92.24,
+  "velocity": 37.8,
   "health": 33.35,
-  "global_percentile": 2.29,
+  "global_percentile": 0.43,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "Databricks\u2019 Dolly, a large language model trained on the Databricks Machine Learning Platform",
   "maturity": "Unknown",
-  "stars_7d": -1,
-  "stars_30d": -4,
-  "stars_90d": 0,
-  "star_growth_rate_7d": -0.14285714285714285,
-  "star_growth_rate_30d": -0.2222222222222222,
+  "stars_7d": 0,
+  "stars_30d": -3,
+  "stars_90d": 2,
+  "star_growth_rate_7d": 0.0,
+  "star_growth_rate_30d": -0.15789473684210525,
   "star_growth_acceleration": 1.0,
-  "forks_7d": -2,
+  "forks_7d": -3,
   "forks_30d": -3,
-  "days_since_last_push": 1244,
-  "freshness_score": 3.957096534412328e-06,
-  "snapshot_count": 42,
+  "days_since_last_push": 1245,
+  "freshness_score": 3.917722766024328e-06,
+  "snapshot_count": 43,
   "authenticity": {
     "organic_confidence": 76.5,
     "verdict": "likely_organic",
@@ -78,7 +83,7 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 1244 days ago."
+        "detail": "Last push 1245 days ago."
       }
     ],
     "reasons": [
@@ -86,7 +91,7 @@
       "Burst pattern: Largest 24h jump was 1 stars (0 forks, 1.0x the daily average)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 1244 days ago.",
+      "Maintenance cadence: Last push 1245 days ago.",
       "Issue engagement: 5 open issues for 10,806 stars (0.0%)."
     ]
   }

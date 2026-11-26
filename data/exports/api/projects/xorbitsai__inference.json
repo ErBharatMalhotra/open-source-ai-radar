@@ -4,37 +4,58 @@
   "description": "Open-source inference platform for language, vision, embedding, reranking, image, audio, and video models. Deploy with multiple engines across heterogeneous hardware, from a laptop to a distributed cluster. Serve models through OpenAI-compatible APIs.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "pytorch",
+    "llm",
+    "artificial-intelligence",
+    "machine-learning",
+    "whisper",
+    "inference",
+    "openai-api",
+    "gemma",
+    "llamacpp",
+    "vllm",
+    "qwen",
+    "diffusers",
+    "glm",
+    "glm-5-3",
+    "kimi",
+    "kimi-k3",
+    "llama-cpp",
+    "sglang",
+    "transformers",
+    "mlx"
+  ],
   "stars": 9674,
   "forks": 906,
-  "open_issues": 15,
+  "open_issues": 12,
   "watchers": 58,
   "created_at": "2023-06-14T07:05:04Z",
-  "pushed_at": "2026-11-26T08:29:12Z",
+  "pushed_at": "2026-11-26T17:33:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/xorbitsai.png",
-  "radar_score": 70.65,
+  "radar_score": 70.59,
   "impact": 90.27,
-  "velocity": 53.17,
+  "velocity": 52.99,
   "health": 63.75,
-  "global_percentile": 37.86,
+  "global_percentile": 20.43,
   "category": "Multimodal AI",
   "sub_category": "audio-language",
   "summary": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop \u2014 all through one unified, production-ready inference API.",
   "maturity": "Unknown",
-  "stars_7d": 6,
-  "stars_30d": 43,
-  "stars_90d": 66,
-  "star_growth_rate_7d": 0.8571428571428571,
-  "star_growth_rate_30d": 1.4333333333333333,
-  "star_growth_acceleration": 0.5980066445182723,
-  "forks_7d": 5,
+  "stars_7d": 9,
+  "stars_30d": 47,
+  "stars_90d": 70,
+  "star_growth_rate_7d": 1.2857142857142858,
+  "star_growth_rate_30d": 1.5666666666666667,
+  "star_growth_acceleration": 0.8206686930091186,
+  "forks_7d": 4,
   "forks_30d": 16,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 220,
+  "snapshot_count": 221,
   "authenticity": {
-    "organic_confidence": 77.6,
+    "organic_confidence": 78.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,9 +69,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.5,
+        "score": 71.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 5 stars (0 forks, 3.6x the daily average)."
+        "detail": "Largest 24h jump was 5 stars (0 forks, 3.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.5,
+        "score": 37.4,
         "weight": 0.12,
-        "detail": "15 open issues for 9,674 stars (0.2%)."
+        "detail": "12 open issues for 9,674 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -85,6 +106,8 @@
       "Fork-to-star ratio: 906 forks for 9,674 stars (9.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 12 open issues for 9,674 stars (0.1%)."
+    ]
   }
 }

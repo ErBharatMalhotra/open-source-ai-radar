@@ -4,75 +4,96 @@
   "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 11301,
-  "forks": 949,
-  "open_issues": 32,
+  "topics": [
+    "audio-processing",
+    "captions",
+    "ffmpeg",
+    "subtitles",
+    "video",
+    "video-editing",
+    "agent-skills",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "coding-agent",
+    "cursor",
+    "loudness-normalization",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "python",
+    "transcoding",
+    "whisper",
+    "gemini-cli-extension"
+  ],
+  "stars": 11361,
+  "forks": 955,
+  "open_issues": 33,
   "watchers": 15,
   "created_at": "2026-09-03T14:33:38Z",
-  "pushed_at": "2026-11-26T10:16:23Z",
+  "pushed_at": "2026-11-26T13:25:39Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/kajisho5.png",
-  "radar_score": 76.61,
-  "impact": 87.53,
-  "velocity": 73.32,
+  "radar_score": 76.6,
+  "impact": 87.6,
+  "velocity": 73.21,
   "health": 63.75,
-  "global_percentile": 65.71,
+  "global_percentile": 65.14,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
   "maturity": "Unknown",
-  "stars_7d": 3134,
-  "stars_30d": 5241,
-  "stars_90d": 5241,
-  "star_growth_rate_7d": 447.7142857142857,
-  "star_growth_rate_30d": 524.1,
-  "star_growth_acceleration": 0.8542535503039224,
-  "forks_7d": 189,
-  "forks_30d": 425,
+  "stars_7d": 3315,
+  "stars_30d": 5422,
+  "stars_90d": 5422,
+  "star_growth_rate_7d": 473.57142857142856,
+  "star_growth_rate_30d": 542.2,
+  "star_growth_acceleration": 0.8734257258786952,
+  "forks_7d": 199,
+  "forks_30d": 435,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 17,
-  "why_trending": "Strong momentum with 3134 new stars this week. Above-average growth velocity. High developer adoption with 189 new forks this week. Active in the AI Coding Tools category.",
+  "snapshot_count": 18,
+  "why_trending": "Strong momentum with 3315 new stars this week. Above-average growth velocity. High developer adoption with 199 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 87.7,
+    "organic_confidence": 87.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 94.4,
+        "score": 94.3,
         "weight": 0.22,
-        "detail": "945 forks for 11,180 stars (8.5%)."
+        "detail": "955 forks for 11,361 stars (8.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.0,
+        "score": 94.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 763 stars (97 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
         "label": "Star/fork velocity alignment",
-        "score": null,
+        "score": 81.4,
         "weight": 0.18,
-        "detail": "Weekly star growth too small to compare."
+        "detail": "+3,315 stars vs +199 forks this week (expected ~279 forks)."
       },
       {
         "key": "acceleration",
         "label": "Growth acceleration",
-        "score": null,
+        "score": 95.6,
         "weight": 0.14,
-        "detail": "No acceleration data."
+        "detail": "Weekly growth is 0.87x the monthly baseline."
       },
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 50.7,
+        "score": 49.5,
         "weight": 0.12,
-        "detail": "35 open issues for 11,180 stars (0.3%)."
+        "detail": "33 open issues for 11,361 stars (0.3%)."
       },
       {
         "key": "maintenance",
@@ -83,9 +104,9 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 945 forks for 11,180 stars (8.5%).",
-      "Burst pattern: Largest 24h jump was 763 stars (97 forks, 1.5x the daily average).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Star/fork velocity alignment: +3,315 stars vs +199 forks this week (expected ~279 forks).",
+      "Fork-to-star ratio: 955 forks for 11,361 stars (8.4%).",
+      "Burst pattern: Largest 24h jump was 763 stars (97 forks, 1.5x the daily average)."
     ],
     "red_flags": []
   }

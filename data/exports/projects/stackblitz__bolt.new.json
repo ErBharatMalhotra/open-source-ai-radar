@@ -4,7 +4,12 @@
   "description": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "anthropic",
+    "chatbot",
+    "webcontainers-api",
+    "ai-playground"
+  ],
   "stars": 16613,
   "forks": 14852,
   "open_issues": 0,
@@ -17,24 +22,24 @@
   "impact": 95.89,
   "velocity": 53.41,
   "health": 30.75,
-  "global_percentile": 3.57,
+  "global_percentile": 4.57,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "Prompt, run, edit, and deploy full-stack web applications. -- bolt.new -- Help Center: https://support.bolt.new/ -- Community Support: https://discord.com/invite/stackblitz",
   "maturity": "Unknown",
-  "stars_7d": 7,
+  "stars_7d": 6,
   "stars_30d": 35,
   "stars_90d": 40,
-  "star_growth_rate_7d": 1.0,
+  "star_growth_rate_7d": 0.8571428571428571,
   "star_growth_rate_30d": 1.1666666666666667,
-  "star_growth_acceleration": 0.8571428571428571,
-  "forks_7d": 13,
-  "forks_30d": 21,
-  "days_since_last_push": 708,
-  "freshness_score": 0.000841773148378549,
-  "snapshot_count": 261,
+  "star_growth_acceleration": 0.7346938775510203,
+  "forks_7d": 10,
+  "forks_30d": 22,
+  "days_since_last_push": 709,
+  "freshness_score": 0.0008333973656066964,
+  "snapshot_count": 262,
   "authenticity": {
-    "organic_confidence": 53.1,
+    "organic_confidence": 53.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -43,14 +48,14 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "14,851 forks for 16,613 stars (89.4%)."
+        "detail": "14,852 forks for 16,613 stars (89.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 40.5,
+        "score": 40.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (2 forks, 6.7x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (2 forks, 6.8x the daily average)."
       },
       {
         "key": "alignment",
@@ -78,15 +83,15 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 708 days ago."
+        "detail": "Last push 709 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 14,851 forks for 16,613 stars (89.4%)."
+      "Fork-to-star ratio: 14,852 forks for 16,613 stars (89.4%)."
     ],
     "red_flags": [
       "Issue engagement: 0 open issues for 16,613 stars (0.0%).",
-      "Maintenance cadence: Last push 708 days ago."
+      "Maintenance cadence: Last push 709 days ago."
     ]
   }
 }

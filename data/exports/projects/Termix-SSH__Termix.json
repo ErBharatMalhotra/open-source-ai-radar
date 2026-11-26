@@ -4,7 +4,20 @@
   "description": "Self-hosted, plugin-based server management.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "docker",
+    "self-hosted",
+    "ssh",
+    "termix",
+    "rdp",
+    "terminal",
+    "vnc",
+    "homelab",
+    "plugins",
+    "remote-desktop",
+    "server-management",
+    "sftp"
+  ],
   "stars": 16125,
   "forks": 781,
   "open_issues": 41,
@@ -13,26 +26,26 @@
   "pushed_at": "2026-11-25T05:44:32Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Termix-SSH.png",
-  "radar_score": 72.96,
+  "radar_score": 72.92,
   "impact": 91.3,
-  "velocity": 61.84,
-  "health": 59.2,
-  "global_percentile": 30.29,
+  "velocity": 61.99,
+  "health": 58.83,
+  "global_percentile": 31.86,
   "category": "Local AI",
   "sub_category": "local runner",
   "summary": "Self-hosted SSH and remote desktop management.",
   "maturity": "Unknown",
-  "stars_7d": 59,
+  "stars_7d": 60,
   "stars_30d": 367,
   "stars_90d": 367,
-  "star_growth_rate_7d": 8.428571428571429,
+  "star_growth_rate_7d": 8.571428571428571,
   "star_growth_rate_30d": 14.68,
-  "star_growth_acceleration": 0.5741533670688984,
+  "star_growth_acceleration": 0.5838847800700662,
   "forks_7d": 6,
   "forks_30d": 22,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 332,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 333,
   "authenticity": {
     "organic_confidence": 80.9,
     "verdict": "organic",
@@ -43,12 +56,12 @@
         "label": "Fork-to-star ratio",
         "score": 81.0,
         "weight": 0.22,
-        "detail": "781 forks for 16,124 stars (4.8%)."
+        "detail": "781 forks for 16,125 stars (4.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.1,
+        "score": 89.8,
         "weight": 0.24,
         "detail": "Largest 24h jump was 29 stars (2 forks, 2.0x the daily average)."
       },
@@ -69,22 +82,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 46.5,
+        "score": 47.7,
         "weight": 0.12,
-        "detail": "37 open issues for 16,124 stars (0.2%)."
+        "detail": "41 open issues for 16,125 stars (0.3%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 781 forks for 16,124 stars (4.8%).",
+      "Fork-to-star ratio: 781 forks for 16,125 stars (4.8%).",
       "Burst pattern: Largest 24h jump was 29 stars (2 forks, 2.0x the daily average).",
-      "Maintenance cadence: Last push 0 days ago."
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

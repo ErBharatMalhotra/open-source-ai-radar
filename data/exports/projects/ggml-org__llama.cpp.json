@@ -4,13 +4,15 @@
   "description": "LLM inference in C/C++",
   "language": "C++",
   "license": "MIT",
-  "topics": [],
-  "stars": 136335,
-  "forks": 26110,
-  "open_issues": 690,
+  "topics": [
+    "ggml"
+  ],
+  "stars": 136341,
+  "forks": 26116,
+  "open_issues": 693,
   "watchers": 901,
   "created_at": "2023-03-10T18:58:00Z",
-  "pushed_at": "2026-11-26T10:31:57Z",
+  "pushed_at": "2026-11-26T13:37:22Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/ggml-org.png",
   "radar_score": 80.22,
@@ -22,17 +24,17 @@
   "sub_category": "inference engine",
   "summary": "LLM inference in C/C++",
   "maturity": "Unknown",
-  "stars_7d": 678,
-  "stars_30d": 3092,
-  "stars_90d": 3092,
-  "star_growth_rate_7d": 96.85714285714286,
-  "star_growth_rate_30d": 134.43478260869566,
-  "star_growth_acceleration": 0.720476806505267,
-  "forks_7d": 357,
-  "forks_30d": 1021,
+  "stars_7d": 705,
+  "stars_30d": 3116,
+  "stars_90d": 3116,
+  "star_growth_rate_7d": 100.71428571428571,
+  "star_growth_rate_30d": 135.47826086956522,
+  "star_growth_acceleration": 0.7433981294700165,
+  "forks_7d": 382,
+  "forks_30d": 1036,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 372,
+  "snapshot_count": 373,
   "authenticity": {
     "organic_confidence": 77.7,
     "verdict": "likely_organic",
@@ -43,14 +45,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.2,
         "weight": 0.22,
-        "detail": "26,094 forks for 136,303 stars (19.1%)."
+        "detail": "26,116 forks for 136,341 stars (19.2%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 58.4,
+        "score": 58.2,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 568 stars (70 forks, 4.4x the daily average)."
+        "detail": "Largest 24h jump was 568 stars (70 forks, 4.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +71,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 60.1,
+        "score": 60.2,
         "weight": 0.12,
-        "detail": "685 open issues for 136,303 stars (0.5%)."
+        "detail": "693 open issues for 136,341 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +84,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 26,094 forks for 136,303 stars (19.1%).",
+      "Fork-to-star ratio: 26,116 forks for 136,341 stars (19.2%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

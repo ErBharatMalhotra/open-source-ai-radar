@@ -4,54 +4,63 @@
   "description": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 36841,
+  "topics": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop",
+    "dsh",
+    "dsh-plugin-desktop",
+    "cordis",
+    "cordis-plugin"
+  ],
+  "stars": 36860,
   "forks": 1667,
-  "open_issues": 311,
+  "open_issues": 315,
   "watchers": 79,
   "created_at": "2026-08-13T16:30:50Z",
   "pushed_at": "2026-11-25T11:55:03Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/anywhere-labs.png",
-  "radar_score": 76.81,
-  "impact": 95.03,
-  "velocity": 68.58,
+  "radar_score": 76.82,
+  "impact": 95.04,
+  "velocity": 68.59,
   "health": 59.2,
-  "global_percentile": 67.14,
+  "global_percentile": 67.29,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "\u4e3a DeepSeek Harness (DSH) \u63d2\u4ef6\u751f\u6001\u6253\u9020\u7684\u73b0\u4ee3\u5316\u684c\u9762\u7aef\u89e3\u51b3\u65b9\u6848\u3002\u4e07\u7269\u7686\u300c\u63d2\u4ef6\u300d\uff0c\u684c\u9762\u672c\u8eab\u4e5f\u662f\u300c\u63d2\u4ef6\u300d\u3002",
   "maturity": "Unknown",
-  "stars_7d": 579,
-  "stars_30d": 2578,
-  "stars_90d": 2578,
-  "star_growth_rate_7d": 82.71428571428571,
-  "star_growth_rate_30d": 103.12,
-  "star_growth_acceleration": 0.8021168125900475,
-  "forks_7d": 23,
+  "stars_7d": 532,
+  "stars_30d": 2597,
+  "stars_90d": 2597,
+  "star_growth_rate_7d": 76.0,
+  "star_growth_rate_30d": 103.88,
+  "star_growth_acceleration": 0.7316134000770119,
+  "forks_7d": 17,
   "forks_30d": 114,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 356,
+  "snapshot_count": 357,
   "why_trending": "Strong momentum with 1066 new stars this week. Above-average growth velocity. High developer adoption with 47 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 84.5,
+    "organic_confidence": 84.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 78.9,
+        "score": 78.8,
         "weight": 0.22,
-        "detail": "1,667 forks for 36,813 stars (4.5%)."
+        "detail": "1,667 forks for 36,860 stars (4.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.6,
+        "score": 90.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 226 stars (10 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 219 stars (11 forks, 1.9x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +79,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 70.0,
+        "score": 70.6,
         "weight": 0.12,
-        "detail": "307 open issues for 36,813 stars (0.8%)."
+        "detail": "315 open issues for 36,860 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +92,8 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,667 forks for 36,813 stars (4.5%).",
-      "Burst pattern: Largest 24h jump was 226 stars (10 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 1,667 forks for 36,860 stars (4.5%).",
+      "Burst pattern: Largest 24h jump was 219 stars (11 forks, 1.9x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

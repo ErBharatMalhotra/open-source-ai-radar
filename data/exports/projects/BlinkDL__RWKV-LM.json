@@ -4,37 +4,52 @@
   "description": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "attention-mechanism",
+    "deep-learning",
+    "gpt",
+    "gpt-2",
+    "gpt-3",
+    "language-model",
+    "linear-attention",
+    "lstm",
+    "pytorch",
+    "rnn",
+    "transformer",
+    "transformers",
+    "rwkv",
+    "chatgpt"
+  ],
   "stars": 14794,
-  "forks": 1028,
+  "forks": 1029,
   "open_issues": 127,
   "watchers": 136,
   "created_at": "2021-08-08T06:05:27Z",
   "pushed_at": "2026-11-04T10:19:05Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/BlinkDL.png",
-  "radar_score": 68.03,
-  "impact": 92.99,
-  "velocity": 47.4,
+  "radar_score": 68.04,
+  "impact": 93.0,
+  "velocity": 47.39,
   "health": 56.99,
-  "global_percentile": 12.71,
+  "global_percentile": 10.71,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infini",
   "maturity": "Unknown",
-  "stars_7d": 15,
-  "stars_30d": 29,
+  "stars_7d": 11,
+  "stars_30d": 30,
   "stars_90d": 77,
-  "star_growth_rate_7d": 2.142857142857143,
-  "star_growth_rate_30d": 0.9666666666666667,
-  "star_growth_acceleration": 2.216748768472906,
-  "forks_7d": 1,
-  "forks_30d": 2,
+  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_30d": 1.0,
+  "star_growth_acceleration": 1.5714285714285714,
+  "forks_7d": 2,
+  "forks_30d": 3,
   "days_since_last_push": 21,
   "freshness_score": 0.8105842459701871,
-  "snapshot_count": 139,
+  "snapshot_count": 140,
   "authenticity": {
-    "organic_confidence": 72.8,
+    "organic_confidence": 72.7,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +58,7 @@
         "label": "Fork-to-star ratio",
         "score": 89.0,
         "weight": 0.22,
-        "detail": "1,028 forks for 14,793 stars (6.9%)."
+        "detail": "1,029 forks for 14,794 stars (7.0%)."
       },
       {
         "key": "burst",
@@ -69,9 +84,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 71.0,
+        "score": 70.8,
         "weight": 0.12,
-        "detail": "128 open issues for 14,793 stars (0.9%)."
+        "detail": "127 open issues for 14,794 stars (0.9%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +98,7 @@
     ],
     "reasons": [
       "Maintenance cadence: Last push 21 days ago.",
-      "Fork-to-star ratio: 1,028 forks for 14,793 stars (6.9%)."
+      "Fork-to-star ratio: 1,029 forks for 14,794 stars (7.0%)."
     ],
     "red_flags": []
   }

@@ -4,37 +4,51 @@
   "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 93210,
-  "forks": 11682,
-  "open_issues": 180,
+  "topics": [
+    "ocr",
+    "chineseocr",
+    "pdf2markdown",
+    "pp-ocr",
+    "pp-structure",
+    "document-parsing",
+    "document-translation",
+    "kie",
+    "ai4science",
+    "pdf-extractor-rag",
+    "pdf-parser",
+    "rag",
+    "paddleocr-vl"
+  ],
+  "stars": 93239,
+  "forks": 11688,
+  "open_issues": 181,
   "watchers": 572,
   "created_at": "2020-05-08T10:38:16Z",
   "pushed_at": "2026-09-16T03:31:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/PaddlePaddle.png",
-  "radar_score": 71.17,
+  "radar_score": 71.15,
   "impact": 99.32,
-  "velocity": 55.92,
-  "health": 47.5,
-  "global_percentile": 22.29,
+  "velocity": 55.93,
+  "health": 47.37,
+  "global_percentile": 20.71,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
   "maturity": "Unknown",
-  "stars_7d": 370,
-  "stars_30d": 1130,
-  "stars_90d": 1130,
-  "star_growth_rate_7d": 52.857142857142854,
-  "star_growth_rate_30d": 47.083333333333336,
-  "star_growth_acceleration": 1.1226295828065738,
-  "forks_7d": 22,
-  "forks_30d": 83,
-  "days_since_last_push": 70,
-  "freshness_score": 0.49658530379140947,
-  "snapshot_count": 368,
+  "stars_7d": 392,
+  "stars_30d": 1196,
+  "stars_90d": 1196,
+  "star_growth_rate_7d": 56.0,
+  "star_growth_rate_30d": 47.84,
+  "star_growth_acceleration": 1.1705685618729096,
+  "forks_7d": 25,
+  "forks_30d": 90,
+  "days_since_last_push": 71,
+  "freshness_score": 0.4916441974609651,
+  "snapshot_count": 369,
   "authenticity": {
-    "organic_confidence": 84.1,
+    "organic_confidence": 84.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +57,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.5,
         "weight": 0.22,
-        "detail": "11,679 forks for 93,170 stars (12.5%)."
+        "detail": "11,688 forks for 93,239 stars (12.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.8,
+        "score": 94.3,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 80 stars (10 forks, 1.6x the daily average)."
+        "detail": "Largest 24h jump was 78 stars (3 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,22 +83,21 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 44.1,
+        "score": 44.4,
         "weight": 0.12,
-        "detail": "178 open issues for 93,170 stars (0.2%)."
+        "detail": "181 open issues for 93,239 stars (0.2%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 75.0,
+        "score": 74.8,
         "weight": 0.1,
-        "detail": "Last push 70 days ago."
+        "detail": "Last push 71 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 70 days ago.",
-      "Burst pattern: Largest 24h jump was 80 stars (10 forks, 1.6x the daily average).",
-      "Fork-to-star ratio: 11,679 forks for 93,170 stars (12.5%)."
+      "Burst pattern: Largest 24h jump was 78 stars (3 forks, 1.6x the daily average).",
+      "Fork-to-star ratio: 11,688 forks for 93,239 stars (12.5%)."
     ],
     "red_flags": []
   }

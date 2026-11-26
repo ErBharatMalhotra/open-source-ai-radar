@@ -4,53 +4,74 @@
   "description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
   "language": "Shell",
   "license": "MIT",
-  "topics": [],
-  "stars": 28233,
-  "forks": 2333,
+  "topics": [
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "manus",
+    "agent-skills",
+    "planning",
+    "autonomous-agents",
+    "codex",
+    "cursor",
+    "multi-agent-systems",
+    "coding-agent",
+    "context-engineering",
+    "github-copilot",
+    "llm-agents",
+    "long-running-agents",
+    "claude-code-skills",
+    "context-rot",
+    "session-recovery",
+    "hermes-plugin",
+    "hermes-skill"
+  ],
+  "stars": 28237,
+  "forks": 2334,
   "open_issues": 12,
   "watchers": 114,
   "created_at": "2026-01-03T07:37:28Z",
   "pushed_at": "2026-11-25T07:04:43Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/OthmanAdi.png",
-  "radar_score": 75.75,
-  "impact": 95.38,
+  "radar_score": 75.76,
+  "impact": 95.41,
   "velocity": 65.74,
   "health": 58.35,
-  "global_percentile": 56.29,
+  "global_percentile": 55.14,
   "category": "AI Coding Tools",
   "sub_category": "ide extension",
   "summary": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx sk",
   "maturity": "Unknown",
-  "stars_7d": 121,
-  "stars_30d": 443,
-  "stars_90d": 443,
-  "star_growth_rate_7d": 17.285714285714285,
-  "star_growth_rate_30d": 17.72,
-  "star_growth_acceleration": 0.9754917768461786,
-  "forks_7d": 16,
-  "forks_30d": 24,
+  "stars_7d": 115,
+  "stars_30d": 450,
+  "stars_90d": 450,
+  "star_growth_rate_7d": 16.428571428571427,
+  "star_growth_rate_30d": 18.0,
+  "star_growth_acceleration": 0.9126984126984126,
+  "forks_7d": 18,
+  "forks_30d": 26,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 336,
+  "snapshot_count": 337,
   "authenticity": {
-    "organic_confidence": 82.0,
+    "organic_confidence": 83.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 93.7,
+        "score": 93.8,
         "weight": 0.22,
-        "detail": "2,332 forks for 28,227 stars (8.3%)."
+        "detail": "2,334 forks for 28,237 stars (8.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 90.2,
+        "score": 94.1,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 37 stars (2 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 29 stars (2 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +90,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 29.3,
+        "score": 29.2,
         "weight": 0.12,
-        "detail": "12 open issues for 28,227 stars (0.0%)."
+        "detail": "12 open issues for 28,237 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,12 +103,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 37 stars (2 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 2,332 forks for 28,227 stars (8.3%).",
+      "Fork-to-star ratio: 2,334 forks for 28,237 stars (8.3%).",
+      "Burst pattern: Largest 24h jump was 29 stars (2 forks, 1.6x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 12 open issues for 28,227 stars (0.0%)."
+      "Issue engagement: 12 open issues for 28,237 stars (0.0%)."
     ]
   }
 }

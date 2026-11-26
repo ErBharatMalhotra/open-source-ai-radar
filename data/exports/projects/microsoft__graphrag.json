@@ -4,8 +4,16 @@
   "description": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 36755,
+  "topics": [
+    "graphrag",
+    "rag",
+    "llm",
+    "llms",
+    "gpt",
+    "gpt-4",
+    "gpt4"
+  ],
+  "stars": 36756,
   "forks": 3890,
   "open_issues": 28,
   "watchers": 203,
@@ -13,28 +21,28 @@
   "pushed_at": "2026-11-25T20:55:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/microsoft.png",
-  "radar_score": 77.42,
+  "radar_score": 76.0,
   "impact": 97.12,
-  "velocity": 64.94,
-  "health": 63.38,
-  "global_percentile": 72.57,
+  "velocity": 64.48,
+  "health": 58.35,
+  "global_percentile": 57.71,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
   "maturity": "Unknown",
-  "stars_7d": 87,
-  "stars_30d": 310,
-  "stars_90d": 325,
-  "star_growth_rate_7d": 12.428571428571429,
-  "star_growth_rate_30d": 10.333333333333334,
-  "star_growth_acceleration": 1.2027649769585254,
-  "forks_7d": 3,
-  "forks_30d": 24,
-  "days_since_last_push": 1,
-  "freshness_score": 0.9900498337491681,
-  "snapshot_count": 283,
+  "stars_7d": 70,
+  "stars_30d": 307,
+  "stars_90d": 327,
+  "star_growth_rate_7d": 10.0,
+  "star_growth_rate_30d": 10.233333333333333,
+  "star_growth_acceleration": 0.977198697068404,
+  "forks_7d": 2,
+  "forks_30d": 23,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 284,
   "authenticity": {
-    "organic_confidence": 83.9,
+    "organic_confidence": 83.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +51,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "3,890 forks for 36,751 stars (10.6%)."
+        "detail": "3,890 forks for 36,756 stars (10.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 87.4,
+        "score": 87.2,
         "weight": 0.24,
         "detail": "Largest 24h jump was 22 stars (1 forks, 2.2x the daily average)."
       },
@@ -69,25 +77,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 35.1,
+        "score": 32.6,
         "weight": 0.12,
-        "detail": "37 open issues for 36,751 stars (0.1%)."
+        "detail": "28 open issues for 36,756 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (1 forks, 2.2x the daily average).",
-      "Maintenance cadence: Last push 1 days ago.",
-      "Fork-to-star ratio: 3,890 forks for 36,751 stars (10.6%)."
+      "Fork-to-star ratio: 3,890 forks for 36,756 stars (10.6%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 37 open issues for 36,751 stars (0.1%)."
+      "Issue engagement: 28 open issues for 36,756 stars (0.1%)."
     ]
   }
 }

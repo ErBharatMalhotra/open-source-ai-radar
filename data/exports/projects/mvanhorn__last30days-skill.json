@@ -4,9 +4,30 @@
   "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 75060,
-  "forks": 6617,
+  "topics": [
+    "reddit",
+    "twitter",
+    "polymarket",
+    "youtube",
+    "instagram",
+    "tiktok",
+    "agent-skills",
+    "artificial-intelligence",
+    "bot",
+    "command-line",
+    "data-science",
+    "dsh-plugin",
+    "golang",
+    "llms",
+    "nlp",
+    "osint",
+    "python3",
+    "dsh",
+    "automation",
+    "terminal"
+  ],
+  "stars": 75211,
+  "forks": 6630,
   "open_issues": 11,
   "watchers": 229,
   "created_at": "2026-01-23T20:37:37Z",
@@ -17,24 +38,24 @@
   "impact": 98.46,
   "velocity": 65.71,
   "health": 58.35,
-  "global_percentile": 78.57,
+  "global_percentile": 69.0,
   "category": "AI Agents",
   "sub_category": "research agent",
   "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "maturity": "Unknown",
-  "stars_7d": 6015,
-  "stars_30d": 8657,
-  "stars_90d": 8657,
-  "star_growth_rate_7d": 859.2857142857143,
-  "star_growth_rate_30d": 393.5,
-  "star_growth_acceleration": 2.183699400980214,
-  "forks_7d": 466,
-  "forks_30d": 803,
+  "stars_7d": 5613,
+  "stars_30d": 8825,
+  "stars_90d": 8825,
+  "star_growth_rate_7d": 801.8571428571429,
+  "star_growth_rate_30d": 383.69565217391306,
+  "star_growth_acceleration": 2.089825981384055,
+  "forks_7d": 432,
+  "forks_30d": 819,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 369,
+  "snapshot_count": 370,
   "authenticity": {
-    "organic_confidence": 76.0,
+    "organic_confidence": 76.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +64,14 @@
         "label": "Fork-to-star ratio",
         "score": 95.7,
         "weight": 0.22,
-        "detail": "6,611 forks for 75,021 stars (8.8%)."
+        "detail": "6,630 forks for 75,211 stars (8.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 72.8,
+        "score": 73.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 1,009 stars (88 forks, 3.2x the daily average)."
+        "detail": "Largest 24h jump was 1,009 stars (88 forks, 3.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 26.5,
         "weight": 0.12,
-        "detail": "11 open issues for 75,021 stars (0.0%)."
+        "detail": "11 open issues for 75,211 stars (0.0%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +103,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 6,611 forks for 75,021 stars (8.8%).",
+      "Fork-to-star ratio: 6,630 forks for 75,211 stars (8.8%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 11 open issues for 75,021 stars (0.0%)."
+      "Issue engagement: 11 open issues for 75,211 stars (0.0%)."
     ]
   }
 }

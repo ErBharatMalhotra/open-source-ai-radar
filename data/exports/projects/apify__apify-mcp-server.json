@@ -4,37 +4,42 @@
   "description": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
-  "stars": 17897,
-  "forks": 486,
-  "open_issues": 232,
+  "topics": [
+    "agents",
+    "ai",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 17915,
+  "forks": 487,
+  "open_issues": 229,
   "watchers": 40,
   "created_at": "2025-01-02T15:43:09Z",
   "pushed_at": "2026-11-25T14:04:58Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/apify.png",
-  "radar_score": 73.31,
-  "impact": 90.0,
-  "velocity": 64.32,
+  "radar_score": 73.32,
+  "impact": 90.02,
+  "velocity": 64.33,
   "health": 59.2,
-  "global_percentile": 54.14,
+  "global_percentile": 32.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
   "maturity": "Unknown",
-  "stars_7d": 1157,
-  "stars_30d": 3469,
-  "stars_90d": 3469,
-  "star_growth_rate_7d": 165.28571428571428,
-  "star_growth_rate_30d": 157.6818181818182,
-  "star_growth_acceleration": 1.0482230366923362,
+  "stars_7d": 1093,
+  "stars_30d": 3477,
+  "stars_90d": 3477,
+  "star_growth_rate_7d": 156.14285714285714,
+  "star_growth_rate_30d": 151.17391304347825,
+  "star_growth_acceleration": 1.0328690578906283,
   "forks_7d": 23,
-  "forks_30d": 67,
+  "forks_30d": 68,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 284,
+  "snapshot_count": 285,
   "authenticity": {
-    "organic_confidence": 84.5,
+    "organic_confidence": 84.4,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +48,12 @@
         "label": "Fork-to-star ratio",
         "score": 66.8,
         "weight": 0.22,
-        "detail": "486 forks for 17,884 stars (2.7%)."
+        "detail": "487 forks for 17,915 stars (2.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 96.7,
+        "score": 96.6,
         "weight": 0.24,
         "detail": "Largest 24h jump was 203 stars (0 forks, 1.3x the daily average)."
       },
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 79.5,
+        "score": 79.2,
         "weight": 0.12,
-        "detail": "232 open issues for 17,884 stars (1.3%)."
+        "detail": "229 open issues for 17,915 stars (1.3%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +87,7 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 232 open issues for 17,884 stars (1.3%).",
+      "Issue engagement: 229 open issues for 17,915 stars (1.3%).",
       "Burst pattern: Largest 24h jump was 203 stars (0 forks, 1.3x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],

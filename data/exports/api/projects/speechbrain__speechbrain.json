@@ -4,7 +4,28 @@
   "description": "A PyTorch-based Speech Toolkit",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "speech-recognition",
+    "speech-toolkit",
+    "speaker-recognition",
+    "speech-to-text",
+    "speech-enhancement",
+    "speech-separation",
+    "audio",
+    "audio-processing",
+    "speech-processing",
+    "speechrecognition",
+    "asr",
+    "voice-recognition",
+    "spoken-language-understanding",
+    "speaker-diarization",
+    "speaker-verification",
+    "pytorch",
+    "huggingface",
+    "transformers",
+    "language-model",
+    "deep-learning"
+  ],
   "stars": 11951,
   "forks": 1766,
   "open_issues": 124,
@@ -13,28 +34,28 @@
   "pushed_at": "2026-11-25T16:24:02Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/speechbrain.png",
-  "radar_score": 65.69,
-  "impact": 93.24,
-  "velocity": 43.81,
-  "health": 52.27,
-  "global_percentile": 6.29,
+  "radar_score": 72.5,
+  "impact": 93.25,
+  "velocity": 55.05,
+  "health": 63.75,
+  "global_percentile": 27.71,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "A PyTorch-based Speech Toolkit",
   "maturity": "Unknown",
-  "stars_7d": 11,
+  "stars_7d": 8,
   "stars_30d": 48,
   "stars_90d": 99,
-  "star_growth_rate_7d": 1.5714285714285714,
+  "star_growth_rate_7d": 1.1428571428571428,
   "star_growth_rate_30d": 1.6,
-  "star_growth_acceleration": 0.9821428571428571,
+  "star_growth_acceleration": 0.7142857142857142,
   "forks_7d": 3,
   "forks_30d": 15,
-  "days_since_last_push": 41,
-  "freshness_score": 0.6636502501363194,
-  "snapshot_count": 169,
+  "days_since_last_push": 0,
+  "freshness_score": 1.0,
+  "snapshot_count": 170,
   "authenticity": {
-    "organic_confidence": 89.8,
+    "organic_confidence": 92.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,7 +69,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.4,
+        "score": 91.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 3 stars (0 forks, 1.9x the daily average)."
       },
@@ -69,22 +90,22 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 75.7,
+        "score": 75.6,
         "weight": 0.12,
-        "detail": "125 open issues for 11,951 stars (1.0%)."
+        "detail": "124 open issues for 11,951 stars (1.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 82.2,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 41 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 125 open issues for 11,951 stars (1.0%).",
-      "Maintenance cadence: Last push 41 days ago.",
-      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 1.9x the daily average)."
+      "Issue engagement: 124 open issues for 11,951 stars (1.0%).",
+      "Burst pattern: Largest 24h jump was 3 stars (0 forks, 1.9x the daily average).",
+      "Fork-to-star ratio: 1,766 forks for 11,951 stars (14.8%)."
     ],
     "red_flags": []
   }

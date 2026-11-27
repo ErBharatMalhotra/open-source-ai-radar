@@ -4,9 +4,17 @@
   "description": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. ",
   "language": "Python",
   "license": "BSD-3-Clause",
-  "topics": [],
+  "topics": [
+    "inference",
+    "gpu",
+    "machine-learning",
+    "deep-learning",
+    "cloud",
+    "datacenter",
+    "edge"
+  ],
   "stars": 11164,
-  "forks": 1877,
+  "forks": 1876,
   "open_issues": 773,
   "watchers": 145,
   "created_at": "2018-10-04T21:10:30Z",
@@ -14,27 +22,27 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/triton-inference-server.png",
   "radar_score": 71.49,
-  "impact": 93.17,
+  "impact": 93.18,
   "velocity": 54.8,
   "health": 60.15,
-  "global_percentile": 24.86,
+  "global_percentile": 24.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The Triton Inference Server provides an optimized cloud and edge inferencing solution. ",
   "maturity": "Unknown",
-  "stars_7d": 11,
-  "stars_30d": 51,
-  "stars_90d": 85,
-  "star_growth_rate_7d": 1.5714285714285714,
-  "star_growth_rate_30d": 1.7,
-  "star_growth_acceleration": 0.9243697478991597,
-  "forks_7d": 3,
-  "forks_30d": 13,
+  "stars_7d": 10,
+  "stars_30d": 49,
+  "stars_90d": 83,
+  "star_growth_rate_7d": 1.4285714285714286,
+  "star_growth_rate_30d": 1.6333333333333333,
+  "star_growth_acceleration": 0.8746355685131195,
+  "forks_7d": 2,
+  "forks_30d": 12,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 214,
+  "snapshot_count": 215,
   "authenticity": {
-    "organic_confidence": 85.8,
+    "organic_confidence": 85.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +51,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.6,
         "weight": 0.22,
-        "detail": "1,877 forks for 11,164 stars (16.8%)."
+        "detail": "1,876 forks for 11,164 stars (16.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 61.0,
+        "score": 60.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 7 stars (1 forks, 4.2x the daily average)."
+        "detail": "Largest 24h jump was 7 stars (1 forks, 4.3x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,7 +90,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 1,877 forks for 11,164 stars (16.8%).",
+      "Fork-to-star ratio: 1,876 forks for 11,164 stars (16.8%).",
       "Issue engagement: 773 open issues for 11,164 stars (6.9%).",
       "Maintenance cadence: Last push 0 days ago."
     ],

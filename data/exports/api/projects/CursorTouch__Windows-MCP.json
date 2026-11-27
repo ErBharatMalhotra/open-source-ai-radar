@@ -4,37 +4,44 @@
   "description": "MCP Server for Computer Use in Windows",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
-  "stars": 12181,
+  "topics": [
+    "desktop",
+    "mcp",
+    "tools",
+    "windows",
+    "ai",
+    "windows-automation"
+  ],
+  "stars": 12195,
   "forks": 1296,
-  "open_issues": 19,
+  "open_issues": 17,
   "watchers": 50,
   "created_at": "2025-05-13T02:27:53Z",
-  "pushed_at": "2026-11-26T19:06:04Z",
+  "pushed_at": "2026-11-27T06:54:17Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/CursorTouch.png",
-  "radar_score": 74.3,
+  "radar_score": 74.23,
   "impact": 91.36,
-  "velocity": 62.34,
+  "velocity": 62.13,
   "health": 63.75,
-  "global_percentile": 43.0,
+  "global_percentile": 41.86,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP Server for Computer Use in Windows",
   "maturity": "Unknown",
-  "stars_7d": 309,
-  "stars_30d": 1331,
-  "stars_90d": 1331,
-  "star_growth_rate_7d": 44.142857142857146,
-  "star_growth_rate_30d": 51.19230769230769,
-  "star_growth_acceleration": 0.8622947300633251,
-  "forks_7d": 24,
-  "forks_30d": 123,
+  "stars_7d": 296,
+  "stars_30d": 1342,
+  "stars_90d": 1342,
+  "star_growth_rate_7d": 42.285714285714285,
+  "star_growth_rate_30d": 51.61538461538461,
+  "star_growth_acceleration": 0.8192463274430488,
+  "forks_7d": 22,
+  "forks_30d": 124,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 237,
+  "snapshot_count": 238,
   "authenticity": {
-    "organic_confidence": 86.4,
+    "organic_confidence": 87.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +50,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "1,296 forks for 12,181 stars (10.6%)."
+        "detail": "1,296 forks for 12,195 stars (10.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 91.3,
+        "score": 95.4,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 103 stars (13 forks, 1.9x the daily average)."
+        "detail": "Largest 24h jump was 79 stars (6 forks, 1.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +76,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 40.6,
+        "score": 38.9,
         "weight": 0.12,
-        "detail": "19 open issues for 12,181 stars (0.2%)."
+        "detail": "17 open issues for 12,195 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,10 +89,12 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 103 stars (13 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 1,296 forks for 12,181 stars (10.6%).",
+      "Burst pattern: Largest 24h jump was 79 stars (6 forks, 1.5x the daily average).",
+      "Fork-to-star ratio: 1,296 forks for 12,195 stars (10.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
-    "red_flags": []
+    "red_flags": [
+      "Issue engagement: 17 open issues for 12,195 stars (0.1%)."
+    ]
   }
 }

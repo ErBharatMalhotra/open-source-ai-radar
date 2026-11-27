@@ -4,37 +4,53 @@
   "description": "The open-source agent for CI/CD reliability.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 15800,
-  "forks": 2060,
+  "topics": [
+    "alerting",
+    "datadog",
+    "grafana",
+    "observability",
+    "remediation",
+    "root-cause-analysis",
+    "site-reliability-engineering",
+    "slack",
+    "incident-management",
+    "ci-cd",
+    "cli",
+    "devops",
+    "gitlab-ci",
+    "llm",
+    "ollama"
+  ],
+  "stars": 15920,
+  "forks": 2077,
   "open_issues": 16,
-  "watchers": 67,
+  "watchers": 66,
   "created_at": "2026-01-13T00:04:47Z",
-  "pushed_at": "2026-11-26T08:18:43Z",
+  "pushed_at": "2026-11-27T00:57:58Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Tracer-Cloud.png",
-  "radar_score": 76.92,
-  "impact": 93.19,
+  "radar_score": 76.93,
+  "impact": 93.2,
   "velocity": 67.75,
   "health": 63.75,
-  "global_percentile": 67.71,
+  "global_percentile": 67.86,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The open-source agent for CI/CD reliability.",
   "maturity": "Unknown",
-  "stars_7d": 2929,
-  "stars_30d": 3132,
-  "stars_90d": 3132,
-  "star_growth_rate_7d": 418.42857142857144,
-  "star_growth_rate_30d": 136.17391304347825,
-  "star_growth_acceleration": 3.0727513227513232,
-  "forks_7d": 172,
-  "forks_30d": 203,
+  "stars_7d": 3011,
+  "stars_30d": 3254,
+  "stars_90d": 3254,
+  "star_growth_rate_7d": 430.14285714285717,
+  "star_growth_rate_30d": 135.58333333333334,
+  "star_growth_acceleration": 3.172534902098516,
+  "forks_7d": 187,
+  "forks_30d": 220,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 78,
+  "snapshot_count": 79,
   "authenticity": {
-    "organic_confidence": 77.3,
+    "organic_confidence": 77.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,14 +59,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.4,
         "weight": 0.22,
-        "detail": "2,060 forks for 15,798 stars (13.0%)."
+        "detail": "2,077 forks for 15,920 stars (13.0%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 68.6,
+        "score": 69.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 465 stars (22 forks, 3.6x the daily average)."
+        "detail": "Largest 24h jump was 465 stars (22 forks, 3.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,7 +87,7 @@
         "label": "Issue engagement",
         "score": 35.1,
         "weight": 0.12,
-        "detail": "16 open issues for 15,798 stars (0.1%)."
+        "detail": "16 open issues for 15,920 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +98,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 2,060 forks for 15,798 stars (13.0%).",
+      "Fork-to-star ratio: 2,077 forks for 15,920 stars (13.0%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 16 open issues for 15,798 stars (0.1%)."
+      "Issue engagement: 16 open issues for 15,920 stars (0.1%)."
     ]
   }
 }

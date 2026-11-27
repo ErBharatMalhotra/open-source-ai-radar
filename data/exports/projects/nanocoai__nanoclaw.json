@@ -4,38 +4,49 @@
   "description": "Your own always-on AI assistant: self-hosted, open source, lightweight. Each agent runs in its own container on your machine, on the harness you choose (Claude Code, Codex, Cursor, OpenCode). Talk to it from Slack, WhatsApp, Telegram, Discord and more.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai-agents",
+    "ai-assistant",
+    "claude-code",
+    "claude-skills",
+    "openclaw",
+    "codex",
+    "cursor",
+    "docker",
+    "opencode",
+    "self-hosted"
+  ],
   "stars": 31171,
-  "forks": 12618,
+  "forks": 12617,
   "open_issues": 323,
   "watchers": 123,
   "created_at": "2026-01-31T15:47:22Z",
-  "pushed_at": "2026-11-26T21:43:10Z",
+  "pushed_at": "2026-11-27T00:41:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/nanocoai.png",
   "radar_score": 81.81,
   "impact": 96.84,
   "velocity": 79.39,
   "health": 61.15,
-  "global_percentile": 99.43,
+  "global_percentile": 99.29,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
   "maturity": "Unknown",
-  "stars_7d": 48,
-  "stars_30d": 109,
-  "stars_90d": 109,
-  "star_growth_rate_7d": 6.857142857142857,
-  "star_growth_rate_30d": 4.1923076923076925,
-  "star_growth_acceleration": 1.6356487549148098,
-  "forks_7d": -24,
-  "forks_30d": -76,
+  "stars_7d": 47,
+  "stars_30d": 108,
+  "stars_90d": 108,
+  "star_growth_rate_7d": 6.714285714285714,
+  "star_growth_rate_30d": 4.153846153846154,
+  "star_growth_acceleration": 1.6164021164021163,
+  "forks_7d": -26,
+  "forks_30d": -74,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 337,
-  "why_trending": "Rapidly gaining stars \u2014 48 new stars in the last 7 days (1.6x the usual pace). Above-average growth velocity. Active in the AI Agents category.",
+  "snapshot_count": 338,
+  "why_trending": "Rapidly gaining stars \u2014 47 new stars in the last 7 days (1.6x the usual pace). Above-average growth velocity. Active in the AI Agents category.",
   "authenticity": {
-    "organic_confidence": 90.4,
+    "organic_confidence": 90.2,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 95,
         "weight": 0.22,
-        "detail": "12,619 forks for 31,171 stars (40.5%)."
+        "detail": "12,617 forks for 31,171 stars (40.5%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 89.6,
+        "score": 89.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 9 stars (-2 forks, 2.0x the daily average)."
+        "detail": "Largest 24h jump was 9 stars (-2 forks, 2.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -84,8 +95,8 @@
     ],
     "reasons": [
       "Issue engagement: 323 open issues for 31,171 stars (1.0%).",
-      "Burst pattern: Largest 24h jump was 9 stars (-2 forks, 2.0x the daily average).",
-      "Fork-to-star ratio: 12,619 forks for 31,171 stars (40.5%)."
+      "Burst pattern: Largest 24h jump was 9 stars (-2 forks, 2.1x the daily average).",
+      "Fork-to-star ratio: 12,617 forks for 31,171 stars (40.5%)."
     ],
     "red_flags": []
   }

@@ -35,9 +35,9 @@
   "snapshot_count": 17,
   "why_trending": "Steady growth with 97 new stars this week. Above-average growth velocity. High developer adoption with 15 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 76.2,
-    "verdict": "likely_organic",
-    "label": "Moderate Confidence",
+    "organic_confidence": 80.7,
+    "verdict": "organic",
+    "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -70,24 +70,24 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 33.3,
+        "score": 31.2,
         "weight": 0.12,
-        "detail": "4 open issues for 4,804 stars (0.1%)."
+        "detail": "3 open issues for 4,804 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 77.5,
+        "score": 100,
         "weight": 0.1,
-        "detail": "Last push 60 days ago."
+        "detail": "Last push 0 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 60 days ago.",
-      "Fork-to-star ratio: 743 forks for 4,804 stars (15.5%)."
+      "Fork-to-star ratio: 743 forks for 4,804 stars (15.5%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 4 open issues for 4,804 stars (0.1%)."
+      "Issue engagement: 3 open issues for 4,804 stars (0.1%)."
     ]
   }
 }

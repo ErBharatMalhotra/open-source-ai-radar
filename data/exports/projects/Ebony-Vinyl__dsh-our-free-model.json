@@ -4,10 +4,21 @@
   "description": "\u5728 dsh \u91cc\u88c5\u4e0a\u8fd9\u4e2a\u63d2\u4ef6\u5373\u53ef\uff0c\u65e0\u9700\u767b\u5f55\u3001\u6ce8\u518c\u6216\u586b API Key\uff0c\u5c31\u80fd\u4f7f\u7528\u5305\u62ec DeepSeek V4.1 Flash\u3001Kimi K3 \u5728\u5185\u7684\u524d\u6cbf\u6a21\u578b\u2014\u2014\u5b8c\u5168\u514d\u8d39\uff0c\u4e0d\u9650\u91cf\u3002 All you do is install this plugin in dsh: no login, no sign-up, no API key \u2014 the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
   "language": "JavaScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 88146,
-  "forks": 2495,
-  "open_issues": 193,
+  "topics": [
+    "ai-agents",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "free-model",
+    "llm",
+    "model-provider",
+    "openai-compatible"
+  ],
+  "stars": 88526,
+  "forks": 2503,
+  "open_issues": 197,
   "watchers": 86,
   "created_at": "2026-09-24T16:17:19Z",
   "pushed_at": "2026-11-26T07:34:12Z",
@@ -22,20 +33,20 @@
   "sub_category": "serving",
   "summary": "\u5728 dsh \u91cc\u88c5\u4e0a\u8fd9\u4e2a\u63d2\u4ef6\u5373\u53ef\uff0c\u65e0\u9700\u767b\u5f55\u3001\u6ce8\u518c\u6216\u586b API Key\uff0c\u5c31\u80fd\u4f7f\u7528\u5305\u62ec DeepSeek V4.1 Flash\u3001Kimi K3 \u5728\u5185\u7684\u524d\u6cbf\u6a21\u578b\u2014\u2014\u5b8c\u5168\u514d\u8d39\uff0c\u4e0d\u9650\u91cf\u3002 All you do is install this plugin in dsh: no login, no sign-up, no API key \u2014 the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
   "maturity": "Unknown",
-  "stars_7d": 8372,
-  "stars_30d": 30207,
-  "stars_90d": 30207,
-  "star_growth_rate_7d": 1196.0,
-  "star_growth_rate_30d": 1313.3478260869565,
-  "star_growth_acceleration": 0.910649849372662,
-  "forks_7d": 248,
-  "forks_30d": 920,
+  "stars_7d": 7936,
+  "stars_30d": 30161,
+  "stars_90d": 30161,
+  "star_growth_rate_7d": 1133.7142857142858,
+  "star_growth_rate_30d": 1311.3478260869565,
+  "star_growth_acceleration": 0.8645412476850427,
+  "forks_7d": 231,
+  "forks_30d": 918,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 185,
-  "why_trending": "Strong momentum with 8372 new stars this week. Above-average growth velocity. High developer adoption with 248 new forks this week. Active in the LLM Frameworks category.",
+  "snapshot_count": 186,
+  "why_trending": "Strong momentum with 7936 new stars this week. Above-average growth velocity. High developer adoption with 231 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 78.4,
+    "organic_confidence": 78.6,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -44,14 +55,14 @@
         "label": "Fork-to-star ratio",
         "score": 67.5,
         "weight": 0.22,
-        "detail": "2,495 forks for 88,144 stars (2.8%)."
+        "detail": "2,503 forks for 88,526 stars (2.8%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 95.5,
+        "score": 96.0,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 2,009 stars (49 forks, 1.5x the daily average)."
+        "detail": "Largest 24h jump was 1,904 stars (50 forks, 1.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 45.9,
+        "score": 46.1,
         "weight": 0.12,
-        "detail": "193 open issues for 88,144 stars (0.2%)."
+        "detail": "197 open issues for 88,526 stars (0.2%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +94,7 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 2,009 stars (49 forks, 1.5x the daily average).",
+      "Burst pattern: Largest 24h jump was 1,904 stars (50 forks, 1.4x the daily average).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

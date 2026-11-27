@@ -4,8 +4,20 @@
   "description": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "topics": [],
-  "stars": 27450,
+  "topics": [
+    "agents",
+    "ai",
+    "context-window",
+    "framework",
+    "llms",
+    "memory",
+    "orchestration",
+    "prompt-engineering",
+    "rag",
+    "12-factor",
+    "12-factor-agents"
+  ],
+  "stars": 27454,
   "forks": 2073,
   "open_issues": 17,
   "watchers": 226,
@@ -14,25 +26,25 @@
   "owner_login": "",
   "owner_avatar": "https://github.com/humanlayer.png",
   "radar_score": 63.02,
-  "impact": 95.87,
+  "impact": 95.88,
   "velocity": 48.78,
   "health": 30.39,
-  "global_percentile": 1.43,
+  "global_percentile": 2.14,
   "category": "LLM Frameworks",
   "sub_category": "",
   "summary": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
   "maturity": "Unknown",
-  "stars_7d": 122,
-  "stars_30d": 503,
-  "stars_90d": 503,
-  "star_growth_rate_7d": 17.428571428571427,
-  "star_growth_rate_30d": 20.12,
-  "star_growth_acceleration": 0.8662311843226355,
-  "forks_7d": 18,
-  "forks_30d": 51,
-  "days_since_last_push": 431,
-  "freshness_score": 0.013433549594245302,
-  "snapshot_count": 345,
+  "stars_7d": 123,
+  "stars_30d": 509,
+  "stars_90d": 509,
+  "star_growth_rate_7d": 17.571428571428573,
+  "star_growth_rate_30d": 20.36,
+  "star_growth_acceleration": 0.8630367667695763,
+  "forks_7d": 19,
+  "forks_30d": 52,
+  "days_since_last_push": 432,
+  "freshness_score": 0.013299883542443767,
+  "snapshot_count": 346,
   "authenticity": {
     "organic_confidence": 66.7,
     "verdict": "likely_organic",
@@ -43,7 +55,7 @@
         "label": "Fork-to-star ratio",
         "score": 91.2,
         "weight": 0.22,
-        "detail": "2,072 forks for 27,447 stars (7.5%)."
+        "detail": "2,073 forks for 27,454 stars (7.6%)."
       },
       {
         "key": "burst",
@@ -71,23 +83,23 @@
         "label": "Issue engagement",
         "score": 31.2,
         "weight": 0.12,
-        "detail": "17 open issues for 27,447 stars (0.1%)."
+        "detail": "17 open issues for 27,454 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 431 days ago."
+        "detail": "Last push 432 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 50 stars (3 forks, 2.7x the daily average).",
-      "Fork-to-star ratio: 2,072 forks for 27,447 stars (7.5%)."
+      "Fork-to-star ratio: 2,073 forks for 27,454 stars (7.6%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 431 days ago.",
-      "Issue engagement: 17 open issues for 27,447 stars (0.1%)."
+      "Maintenance cadence: Last push 432 days ago.",
+      "Issue engagement: 17 open issues for 27,454 stars (0.1%)."
     ]
   }
 }

@@ -4,35 +4,39 @@
   "description": "GitHub's official MCP Server",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 34797,
-  "forks": 5429,
-  "open_issues": 248,
+  "topics": [
+    "github",
+    "mcp",
+    "mcp-server"
+  ],
+  "stars": 34802,
+  "forks": 5432,
+  "open_issues": 249,
   "watchers": 416,
   "created_at": "2025-03-04T16:42:04Z",
-  "pushed_at": "2026-11-27T10:06:04Z",
+  "pushed_at": "2026-11-27T13:10:50Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/github.png",
   "radar_score": 78.93,
-  "impact": 97.72,
-  "velocity": 68.29,
+  "impact": 97.73,
+  "velocity": 68.3,
   "health": 63.75,
-  "global_percentile": 88.57,
+  "global_percentile": 88.71,
   "category": "MCP",
   "sub_category": "server",
   "summary": "GitHub's official MCP Server",
   "maturity": "Unknown",
-  "stars_7d": 209,
-  "stars_30d": 613,
-  "stars_90d": 613,
-  "star_growth_rate_7d": 29.857142857142858,
-  "star_growth_rate_30d": 26.652173913043477,
-  "star_growth_acceleration": 1.1202516895828478,
-  "forks_7d": 55,
-  "forks_30d": 149,
+  "stars_7d": 211,
+  "stars_30d": 623,
+  "stars_90d": 623,
+  "star_growth_rate_7d": 30.142857142857142,
+  "star_growth_rate_30d": 25.958333333333332,
+  "star_growth_acceleration": 1.1612015592753955,
+  "forks_7d": 56,
+  "forks_30d": 154,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 377,
+  "snapshot_count": 378,
   "authenticity": {
     "organic_confidence": 92.3,
     "verdict": "organic",
@@ -43,12 +47,12 @@
         "label": "Fork-to-star ratio",
         "score": 98.9,
         "weight": 0.22,
-        "detail": "5,427 forks for 34,791 stars (15.6%)."
+        "detail": "5,432 forks for 34,802 stars (15.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 96.0,
+        "score": 95.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 36 stars (5 forks, 1.4x the daily average)."
       },
@@ -69,9 +73,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 66.4,
+        "score": 66.5,
         "weight": 0.12,
-        "detail": "248 open issues for 34,791 stars (0.7%)."
+        "detail": "249 open issues for 34,802 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +87,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 36 stars (5 forks, 1.4x the daily average).",
-      "Fork-to-star ratio: 5,427 forks for 34,791 stars (15.6%).",
+      "Fork-to-star ratio: 5,432 forks for 34,802 stars (15.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

@@ -4,37 +4,45 @@
   "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 109222,
-  "forks": 15011,
-  "open_issues": 481,
-  "watchers": 580,
+  "topics": [
+    "gemini",
+    "gemini-api",
+    "ai",
+    "ai-agents",
+    "cli",
+    "mcp-client",
+    "mcp-server"
+  ],
+  "stars": 109244,
+  "forks": 15015,
+  "open_issues": 484,
+  "watchers": 579,
   "created_at": "2025-04-17T17:04:31Z",
   "pushed_at": "2026-11-27T10:00:19Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/google-gemini.png",
-  "radar_score": 79.52,
+  "radar_score": 79.53,
   "impact": 99.46,
-  "velocity": 68.01,
+  "velocity": 68.02,
   "health": 63.75,
-  "global_percentile": 94.29,
+  "global_percentile": 93.86,
   "category": "AI Agents",
   "sub_category": "",
   "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
   "maturity": "Unknown",
-  "stars_7d": 277,
-  "stars_30d": 516,
-  "stars_90d": 516,
-  "star_growth_rate_7d": 39.57142857142857,
-  "star_growth_rate_30d": 22.434782608695652,
-  "star_growth_acceleration": 1.763842746400886,
-  "forks_7d": 46,
-  "forks_30d": 90,
+  "stars_7d": 304,
+  "stars_30d": 545,
+  "stars_90d": 545,
+  "star_growth_rate_7d": 43.42857142857143,
+  "star_growth_rate_30d": 22.708333333333332,
+  "star_growth_acceleration": 1.9124508519003933,
+  "forks_7d": 50,
+  "forks_30d": 93,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 376,
+  "snapshot_count": 377,
   "authenticity": {
-    "organic_confidence": 82.9,
+    "organic_confidence": 83.3,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +51,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.3,
         "weight": 0.22,
-        "detail": "15,008 forks for 109,217 stars (13.7%)."
+        "detail": "15,015 forks for 109,244 stars (13.7%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 73.7,
+        "score": 74.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 65 stars (6 forks, 3.1x the daily average)."
+        "detail": "Largest 24h jump was 65 stars (6 forks, 3.0x the daily average)."
       },
       {
         "key": "alignment",
@@ -69,9 +77,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 56.9,
+        "score": 57.2,
         "weight": 0.12,
-        "detail": "479 open issues for 109,217 stars (0.4%)."
+        "detail": "484 open issues for 109,244 stars (0.4%)."
       },
       {
         "key": "maintenance",
@@ -82,7 +90,7 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 15,008 forks for 109,217 stars (13.7%).",
+      "Fork-to-star ratio: 15,015 forks for 109,244 stars (13.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

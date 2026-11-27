@@ -4,37 +4,44 @@
   "description": "The official repo of Qwen (\u901a\u4e49\u5343\u95ee) chat & pretrained large language model proposed by Alibaba Cloud.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 22086,
-  "forks": 2011,
-  "open_issues": 14,
+  "topics": [
+    "chinese",
+    "large-language-models",
+    "natural-language-processing",
+    "flash-attention",
+    "llm",
+    "pretrained-models"
+  ],
+  "stars": 22087,
+  "forks": 2012,
+  "open_issues": 16,
   "watchers": 159,
   "created_at": "2023-08-03T04:56:38Z",
   "pushed_at": "2026-03-05T13:55:17Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/QwenLM.png",
-  "radar_score": 62.57,
-  "impact": 95.11,
-  "velocity": 45.92,
+  "radar_score": 62.66,
+  "impact": 95.1,
+  "velocity": 46.18,
   "health": 33.81,
-  "global_percentile": 2.14,
+  "global_percentile": 1.86,
   "category": "LLM Frameworks",
   "sub_category": "fine-tuning",
   "summary": "The official repo of Qwen (\u901a\u4e49\u5343\u95ee) chat & pretrained large language model proposed by Alibaba Cloud.",
   "maturity": "Unknown",
-  "stars_7d": 22,
+  "stars_7d": 25,
   "stars_30d": 127,
-  "stars_90d": 160,
-  "star_growth_rate_7d": 3.142857142857143,
+  "stars_90d": 163,
+  "star_growth_rate_7d": 3.5714285714285716,
   "star_growth_rate_30d": 4.233333333333333,
-  "star_growth_acceleration": 0.7424071991001124,
-  "forks_7d": 2,
-  "forks_30d": 22,
-  "days_since_last_push": 266,
-  "freshness_score": 0.06994822174465536,
-  "snapshot_count": 236,
+  "star_growth_acceleration": 0.843644544431946,
+  "forks_7d": 3,
+  "forks_30d": 24,
+  "days_since_last_push": 267,
+  "freshness_score": 0.069252225309346,
+  "snapshot_count": 237,
   "authenticity": {
-    "organic_confidence": 71.2,
+    "organic_confidence": 71.5,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +50,12 @@
         "label": "Fork-to-star ratio",
         "score": 96.8,
         "weight": 0.22,
-        "detail": "2,011 forks for 22,083 stars (9.1%)."
+        "detail": "2,012 forks for 22,087 stars (9.1%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 82.5,
+        "score": 83.0,
         "weight": 0.24,
         "detail": "Largest 24h jump was 10 stars (5 forks, 2.5x the daily average)."
       },
@@ -69,25 +76,25 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 31.3,
+        "score": 32.2,
         "weight": 0.12,
-        "detail": "14 open issues for 22,083 stars (0.1%)."
+        "detail": "16 open issues for 22,087 stars (0.1%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 35.7,
+        "score": 35.6,
         "weight": 0.1,
-        "detail": "Last push 266 days ago."
+        "detail": "Last push 267 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 10 stars (5 forks, 2.5x the daily average).",
-      "Fork-to-star ratio: 2,011 forks for 22,083 stars (9.1%)."
+      "Fork-to-star ratio: 2,012 forks for 22,087 stars (9.1%)."
     ],
     "red_flags": [
-      "Issue engagement: 14 open issues for 22,083 stars (0.1%).",
-      "Maintenance cadence: Last push 266 days ago."
+      "Issue engagement: 16 open issues for 22,087 stars (0.1%).",
+      "Maintenance cadence: Last push 267 days ago."
     ]
   }
 }

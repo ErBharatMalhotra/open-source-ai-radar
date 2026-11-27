@@ -4,16 +4,37 @@
   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 154038,
-  "forks": 14825,
-  "open_issues": 812,
-  "watchers": 438,
+  "topics": [
+    "claude-code",
+    "graphrag",
+    "knowledge-graph",
+    "codex",
+    "openclaw",
+    "skills",
+    "antigravity",
+    "gemini",
+    "leiden",
+    "rag",
+    "tree-sitter",
+    "ai-agents",
+    "ast",
+    "code-analysis",
+    "code-search",
+    "cursor",
+    "developer-tools",
+    "llm",
+    "mcp",
+    "graphify"
+  ],
+  "stars": 154176,
+  "forks": 14839,
+  "open_issues": 815,
+  "watchers": 440,
   "created_at": "2026-04-03T15:49:07Z",
   "pushed_at": "2026-11-27T02:53:36Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/Graphify-Labs.png",
-  "radar_score": 80.38,
+  "radar_score": 80.39,
   "impact": 99.51,
   "velocity": 70.41,
   "health": 63.75,
@@ -22,20 +43,20 @@
   "sub_category": "cli tool",
   "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
   "maturity": "Unknown",
-  "stars_7d": 3556,
-  "stars_30d": 12432,
-  "stars_90d": 12432,
-  "star_growth_rate_7d": 508.0,
-  "star_growth_rate_30d": 540.5217391304348,
-  "star_growth_acceleration": 0.9398326898326899,
-  "forks_7d": 351,
-  "forks_30d": 1277,
+  "stars_7d": 3641,
+  "stars_30d": 12503,
+  "stars_90d": 12503,
+  "star_growth_rate_7d": 520.1428571428571,
+  "star_growth_rate_30d": 520.9583333333334,
+  "star_growth_acceleration": 0.9984346613955506,
+  "forks_7d": 363,
+  "forks_30d": 1291,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 386,
+  "snapshot_count": 387,
   "why_trending": "Strong momentum with 2208 new stars this week. Above-average growth velocity. High developer adoption with 172 new forks this week. Active in the AI Coding Tools category.",
   "authenticity": {
-    "organic_confidence": 90.8,
+    "organic_confidence": 90.7,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -44,14 +65,14 @@
         "label": "Fork-to-star ratio",
         "score": 98.6,
         "weight": 0.22,
-        "detail": "14,814 forks for 153,954 stars (9.6%)."
+        "detail": "14,839 forks for 154,176 stars (9.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 94.7,
+        "score": 94.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 856 stars (90 forks, 1.5x the daily average)."
+        "detail": "Largest 24h jump was 856 stars (90 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -70,9 +91,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 60.8,
+        "score": 60.9,
         "weight": 0.12,
-        "detail": "811 open issues for 153,954 stars (0.5%)."
+        "detail": "815 open issues for 154,176 stars (0.5%)."
       },
       {
         "key": "maintenance",
@@ -83,8 +104,8 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 856 stars (90 forks, 1.5x the daily average).",
-      "Fork-to-star ratio: 14,814 forks for 153,954 stars (9.6%).",
+      "Burst pattern: Largest 24h jump was 856 stars (90 forks, 1.6x the daily average).",
+      "Fork-to-star ratio: 14,839 forks for 154,176 stars (9.6%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

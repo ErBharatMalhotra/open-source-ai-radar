@@ -4,7 +4,28 @@
   "description": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
   "language": "Go",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "monitoring",
+    "time-series",
+    "nightingale",
+    "tsdb",
+    "alerting",
+    "metrics",
+    "observability",
+    "logs",
+    "sre",
+    "sre-agent",
+    "alertmanager",
+    "clickhouse",
+    "golang",
+    "loki",
+    "mcp-server",
+    "prometheus",
+    "self-hosted",
+    "victoriametrics",
+    "on-call",
+    "aiops"
+  ],
   "stars": 13527,
   "forks": 1806,
   "open_issues": 225,
@@ -22,19 +43,19 @@
   "sub_category": "server",
   "summary": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
   "maturity": "Unknown",
-  "stars_7d": 22,
-  "stars_30d": 129,
-  "stars_90d": 165,
-  "star_growth_rate_7d": 3.142857142857143,
-  "star_growth_rate_30d": 4.3,
-  "star_growth_acceleration": 0.7308970099667774,
-  "forks_7d": 5,
-  "forks_30d": 14,
+  "stars_7d": 20,
+  "stars_30d": 126,
+  "stars_90d": 163,
+  "star_growth_rate_7d": 2.857142857142857,
+  "star_growth_rate_30d": 4.2,
+  "star_growth_acceleration": 0.6802721088435374,
+  "forks_7d": 6,
+  "forks_30d": 13,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 99,
+  "snapshot_count": 100,
   "authenticity": {
-    "organic_confidence": 88.8,
+    "organic_confidence": 87.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -48,9 +69,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 76.3,
+        "score": 73.7,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 12 stars (2 forks, 2.9x the daily average)."
+        "detail": "Largest 24h jump was 12 stars (2 forks, 3.1x the daily average)."
       },
       {
         "key": "alignment",
@@ -82,9 +103,9 @@
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 12 stars (2 forks, 2.9x the daily average).",
       "Issue engagement: 225 open issues for 13,527 stars (1.7%).",
-      "Fork-to-star ratio: 1,806 forks for 13,527 stars (13.4%)."
+      "Fork-to-star ratio: 1,806 forks for 13,527 stars (13.4%).",
+      "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []
   }

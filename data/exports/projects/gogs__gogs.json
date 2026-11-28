@@ -4,8 +4,23 @@
   "description": "The painless way to host your own Git service",
   "language": "Go",
   "license": "MIT",
-  "topics": [],
-  "stars": 48008,
+  "topics": [
+    "gogs",
+    "go",
+    "git",
+    "docker",
+    "mysql",
+    "postgresql",
+    "self-hosted",
+    "sqlite3",
+    "version-control",
+    "source-code-management",
+    "agent-orchestration",
+    "agentic-ai",
+    "agentic-workflow",
+    "kubernetes"
+  ],
+  "stars": 48010,
   "forks": 5079,
   "open_issues": 667,
   "watchers": 999,
@@ -13,28 +28,28 @@
   "pushed_at": "2026-11-26T18:22:11Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/gogs.png",
-  "radar_score": 76.21,
+  "radar_score": 76.12,
   "impact": 98.43,
   "velocity": 59.72,
-  "health": 63.75,
-  "global_percentile": 59.86,
+  "health": 63.38,
+  "global_percentile": 59.43,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "The painless way to host your own Git service",
   "maturity": "Unknown",
-  "stars_7d": 56,
-  "stars_30d": 65,
-  "stars_90d": 65,
-  "star_growth_rate_7d": 8.0,
-  "star_growth_rate_30d": 8.125,
-  "star_growth_acceleration": 0.9846153846153847,
-  "forks_7d": -2,
-  "forks_30d": -2,
-  "days_since_last_push": 0,
-  "freshness_score": 1.0,
-  "snapshot_count": 27,
+  "stars_7d": 53,
+  "stars_30d": 67,
+  "stars_90d": 67,
+  "star_growth_rate_7d": 7.571428571428571,
+  "star_growth_rate_30d": 7.444444444444445,
+  "star_growth_acceleration": 1.0170575692963753,
+  "forks_7d": -1,
+  "forks_30d": -1,
+  "days_since_last_push": 1,
+  "freshness_score": 0.9900498337491681,
+  "snapshot_count": 28,
   "authenticity": {
-    "organic_confidence": 90.8,
+    "organic_confidence": 90.6,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,12 +58,12 @@
         "label": "Fork-to-star ratio",
         "score": 99.9,
         "weight": 0.22,
-        "detail": "5,078 forks for 48,008 stars (10.6%)."
+        "detail": "5,079 forks for 48,010 stars (10.6%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 83.5,
+        "score": 83.3,
         "weight": 0.24,
         "detail": "Largest 24h jump was 18 stars (1 forks, 2.4x the daily average)."
       },
@@ -71,20 +86,20 @@
         "label": "Issue engagement",
         "score": 80.8,
         "weight": 0.12,
-        "detail": "667 open issues for 48,008 stars (1.4%)."
+        "detail": "667 open issues for 48,010 stars (1.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 100,
+        "score": 99.3,
         "weight": 0.1,
-        "detail": "Last push 0 days ago."
+        "detail": "Last push 1 days ago."
       }
     ],
     "reasons": [
-      "Issue engagement: 667 open issues for 48,008 stars (1.4%).",
+      "Issue engagement: 667 open issues for 48,010 stars (1.4%).",
       "Burst pattern: Largest 24h jump was 18 stars (1 forks, 2.4x the daily average).",
-      "Fork-to-star ratio: 5,078 forks for 48,008 stars (10.6%)."
+      "Maintenance cadence: Last push 1 days ago."
     ],
     "red_flags": []
   }

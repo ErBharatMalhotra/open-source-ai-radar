@@ -4,7 +4,13 @@
   "description": "An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models.  The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction overtime and deep dive into a topic.",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "agent",
+    "ai",
+    "gpt",
+    "o3-mini",
+    "research"
+  ],
   "stars": 19946,
   "forks": 2009,
   "open_issues": 71,
@@ -16,25 +22,25 @@
   "radar_score": 65.75,
   "impact": 94.42,
   "velocity": 51.69,
-  "health": 39.56,
-  "global_percentile": 5.86,
+  "health": 39.54,
+  "global_percentile": 6.0,
   "category": "Uncategorized",
   "sub_category": "",
   "summary": "An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models.  The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction ",
   "maturity": "Unknown",
-  "stars_7d": 34,
-  "stars_30d": 112,
+  "stars_7d": 36,
+  "stars_30d": 103,
   "stars_90d": 154,
-  "star_growth_rate_7d": 4.857142857142857,
-  "star_growth_rate_30d": 3.7333333333333334,
-  "star_growth_acceleration": 1.3010204081632653,
-  "forks_7d": 0,
-  "forks_30d": -1,
-  "days_since_last_push": 229,
-  "freshness_score": 0.1012664618538834,
-  "snapshot_count": 215,
+  "star_growth_rate_7d": 5.142857142857143,
+  "star_growth_rate_30d": 3.433333333333333,
+  "star_growth_acceleration": 1.4979195561719836,
+  "forks_7d": -2,
+  "forks_30d": -2,
+  "days_since_last_push": 230,
+  "freshness_score": 0.1002588437228037,
+  "snapshot_count": 216,
   "authenticity": {
-    "organic_confidence": 75.2,
+    "organic_confidence": 75.1,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +49,7 @@
         "label": "Fork-to-star ratio",
         "score": 100.0,
         "weight": 0.22,
-        "detail": "2,009 forks for 19,945 stars (10.1%)."
+        "detail": "2,009 forks for 19,946 stars (10.1%)."
       },
       {
         "key": "burst",
@@ -71,22 +77,22 @@
         "label": "Issue engagement",
         "score": 52.8,
         "weight": 0.12,
-        "detail": "71 open issues for 19,945 stars (0.4%)."
+        "detail": "71 open issues for 19,946 stars (0.4%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 39.7,
+        "score": 39.6,
         "weight": 0.1,
-        "detail": "Last push 229 days ago."
+        "detail": "Last push 230 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 9 stars (0 forks, 2.8x the daily average).",
-      "Fork-to-star ratio: 2,009 forks for 19,945 stars (10.1%)."
+      "Fork-to-star ratio: 2,009 forks for 19,946 stars (10.1%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 229 days ago."
+      "Maintenance cadence: Last push 230 days ago."
     ]
   }
 }

@@ -4,10 +4,22 @@
   "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
   "language": "Python",
   "license": "AGPL-3.0",
-  "topics": [],
+  "topics": [
+    "context-database",
+    "agentic-rag",
+    "agent-memory",
+    "self-evolving",
+    "agent-plugins",
+    "dsh-plugin",
+    "agent-context",
+    "memory-management",
+    "knowledge-base",
+    "memory",
+    "vector-database"
+  ],
   "stars": 42940,
-  "forks": 3584,
-  "open_issues": 573,
+  "forks": 3585,
+  "open_issues": 574,
   "watchers": 111,
   "created_at": "2026-01-05T07:11:17Z",
   "pushed_at": "2026-11-27T16:16:05Z",
@@ -17,38 +29,38 @@
   "impact": 96.73,
   "velocity": 69.95,
   "health": 63.75,
-  "global_percentile": 90.43,
+  "global_percentile": 90.57,
   "category": "RAG",
   "sub_category": "rag framework",
   "summary": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
   "maturity": "Unknown",
-  "stars_7d": 461,
-  "stars_30d": 1522,
-  "stars_90d": 1522,
-  "star_growth_rate_7d": 65.85714285714286,
-  "star_growth_rate_30d": 63.416666666666664,
-  "star_growth_acceleration": 1.0384831987985734,
-  "forks_7d": 66,
+  "stars_7d": 453,
+  "stars_30d": 1512,
+  "stars_90d": 1512,
+  "star_growth_rate_7d": 64.71428571428571,
+  "star_growth_rate_30d": 63.0,
+  "star_growth_acceleration": 1.0272108843537413,
+  "forks_7d": 67,
   "forks_30d": 210,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 369,
+  "snapshot_count": 370,
   "authenticity": {
-    "organic_confidence": 92.1,
+    "organic_confidence": 92.0,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 94.0,
+        "score": 94.1,
         "weight": 0.22,
-        "detail": "3,583 forks for 42,937 stars (8.3%)."
+        "detail": "3,585 forks for 42,940 stars (8.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 93.0,
+        "score": 92.9,
         "weight": 0.24,
         "detail": "Largest 24h jump was 107 stars (11 forks, 1.7x the daily average)."
       },
@@ -69,9 +81,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 80.0,
+        "score": 80.1,
         "weight": 0.12,
-        "detail": "573 open issues for 42,937 stars (1.3%)."
+        "detail": "574 open issues for 42,940 stars (1.3%)."
       },
       {
         "key": "maintenance",
@@ -82,9 +94,9 @@
       }
     ],
     "reasons": [
-      "Issue engagement: 573 open issues for 42,937 stars (1.3%).",
+      "Issue engagement: 574 open issues for 42,940 stars (1.3%).",
       "Burst pattern: Largest 24h jump was 107 stars (11 forks, 1.7x the daily average).",
-      "Fork-to-star ratio: 3,583 forks for 42,937 stars (8.3%)."
+      "Fork-to-star ratio: 3,585 forks for 42,940 stars (8.3%)."
     ],
     "red_flags": []
   }

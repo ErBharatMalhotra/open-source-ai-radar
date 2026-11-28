@@ -4,7 +4,17 @@
   "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
   "language": "Python",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "large-language-models",
+    "nlp",
+    "knowledge-curation",
+    "naacl",
+    "report-generation",
+    "retrieval-augmented-generation",
+    "emnlp2024",
+    "agentic-rag",
+    "deep-research"
+  ],
   "stars": 31975,
   "forks": 3026,
   "open_issues": 66,
@@ -23,18 +33,18 @@
   "summary": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
   "maturity": "Unknown",
   "stars_7d": 63,
-  "stars_30d": 257,
-  "stars_90d": 287,
+  "stars_30d": 248,
+  "stars_90d": 286,
   "star_growth_rate_7d": 9.0,
-  "star_growth_rate_30d": 8.566666666666666,
-  "star_growth_acceleration": 1.0505836575875487,
-  "forks_7d": 11,
-  "forks_30d": 32,
-  "days_since_last_push": 422,
-  "freshness_score": 0.014698644504901784,
-  "snapshot_count": 271,
+  "star_growth_rate_30d": 8.266666666666667,
+  "star_growth_acceleration": 1.0887096774193548,
+  "forks_7d": 10,
+  "forks_30d": 31,
+  "days_since_last_push": 423,
+  "freshness_score": 0.014552390548416123,
+  "snapshot_count": 272,
   "authenticity": {
-    "organic_confidence": 72.1,
+    "organic_confidence": 71.8,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -48,7 +58,7 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 81.3,
+        "score": 80.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 21 stars (2 forks, 2.6x the daily average)."
       },
@@ -78,7 +88,7 @@
         "label": "Maintenance cadence",
         "score": 25,
         "weight": 0.1,
-        "detail": "Last push 422 days ago."
+        "detail": "Last push 423 days ago."
       }
     ],
     "reasons": [
@@ -86,7 +96,7 @@
       "Fork-to-star ratio: 3,026 forks for 31,975 stars (9.5%)."
     ],
     "red_flags": [
-      "Maintenance cadence: Last push 422 days ago."
+      "Maintenance cadence: Last push 423 days ago."
     ]
   }
 }

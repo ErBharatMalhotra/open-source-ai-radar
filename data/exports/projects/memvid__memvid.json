@@ -4,7 +4,28 @@
   "description": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
+  "topics": [
+    "ai",
+    "context",
+    "embedded",
+    "faiss",
+    "knowledge-base",
+    "knowledge-graph",
+    "llm",
+    "machine-learning",
+    "memory",
+    "nlp",
+    "offline-first",
+    "opencv",
+    "python",
+    "rag",
+    "retrieval-augmented-generation",
+    "semantic-search",
+    "vector-database",
+    "video-processing",
+    "memvid",
+    "mv2"
+  ],
   "stars": 17438,
   "forks": 1461,
   "open_issues": 18,
@@ -23,18 +44,18 @@
   "summary": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
   "maturity": "Unknown",
   "stars_7d": 5,
-  "stars_30d": 723,
-  "stars_90d": 833,
-  "star_growth_rate_7d": 0.8333333333333334,
-  "star_growth_rate_30d": 24.1,
-  "star_growth_acceleration": 0.034578146611341634,
+  "stars_30d": 459,
+  "stars_90d": 832,
+  "star_growth_rate_7d": 0.7142857142857143,
+  "star_growth_rate_30d": 15.3,
+  "star_growth_acceleration": 0.04668534080298786,
   "forks_7d": -2,
-  "forks_30d": 35,
+  "forks_30d": 21,
   "days_since_last_push": 136,
   "freshness_score": 0.2566607769535559,
-  "snapshot_count": 229,
+  "snapshot_count": 230,
   "authenticity": {
-    "organic_confidence": 49.3,
+    "organic_confidence": 51.0,
     "verdict": "mixed",
     "label": "Mixed Signals",
     "signals": [
@@ -48,9 +69,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 12,
+        "score": 16.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 144 stars (8 forks, 15.3x the daily average)."
+        "detail": "Largest 24h jump was 108 stars (7 forks, 13.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -85,7 +106,7 @@
       "Fork-to-star ratio: 1,461 forks for 17,438 stars (8.4%)."
     ],
     "red_flags": [
-      "Burst pattern: Largest 24h jump was 144 stars (8 forks, 15.3x the daily average).",
+      "Burst pattern: Largest 24h jump was 108 stars (7 forks, 13.4x the daily average).",
       "Issue engagement: 18 open issues for 17,438 stars (0.1%)."
     ]
   }

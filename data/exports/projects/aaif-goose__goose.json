@@ -4,10 +4,15 @@
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "language": "Rust",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 57078,
+  "topics": [
+    "mcp",
+    "acp",
+    "ai",
+    "ai-agents"
+  ],
+  "stars": 57082,
   "forks": 6686,
-  "open_issues": 409,
+  "open_issues": 410,
   "watchers": 285,
   "created_at": "2024-08-23T19:03:36Z",
   "pushed_at": "2026-11-27T17:32:56Z",
@@ -17,24 +22,24 @@
   "impact": 98.32,
   "velocity": 67.36,
   "health": 63.75,
-  "global_percentile": 88.14,
+  "global_percentile": 88.29,
   "category": "AI Agents",
   "sub_category": "coding agent",
   "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "maturity": "Unknown",
-  "stars_7d": 280,
-  "stars_30d": 893,
-  "stars_90d": 893,
-  "star_growth_rate_7d": 40.0,
-  "star_growth_rate_30d": 37.208333333333336,
-  "star_growth_acceleration": 1.0750279955207167,
-  "forks_7d": 61,
-  "forks_30d": 132,
+  "stars_7d": 286,
+  "stars_30d": 896,
+  "stars_90d": 896,
+  "star_growth_rate_7d": 40.857142857142854,
+  "star_growth_rate_30d": 37.333333333333336,
+  "star_growth_acceleration": 1.0943877551020407,
+  "forks_7d": 56,
+  "forks_30d": 129,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 384,
+  "snapshot_count": 385,
   "authenticity": {
-    "organic_confidence": 90.7,
+    "organic_confidence": 90.8,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,7 +48,7 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "6,685 forks for 57,071 stars (11.7%)."
+        "detail": "6,686 forks for 57,082 stars (11.7%)."
       },
       {
         "key": "burst",
@@ -69,9 +74,9 @@
       {
         "key": "engagement",
         "label": "Issue engagement",
-        "score": 66.4,
+        "score": 66.5,
         "weight": 0.12,
-        "detail": "408 open issues for 57,071 stars (0.7%)."
+        "detail": "410 open issues for 57,082 stars (0.7%)."
       },
       {
         "key": "maintenance",
@@ -83,7 +88,7 @@
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 77 stars (17 forks, 1.9x the daily average).",
-      "Fork-to-star ratio: 6,685 forks for 57,071 stars (11.7%).",
+      "Fork-to-star ratio: 6,686 forks for 57,082 stars (11.7%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": []

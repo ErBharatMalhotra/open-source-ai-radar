@@ -4,8 +4,21 @@
   "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
   "language": null,
   "license": "MIT",
-  "topics": [],
-  "stars": 37596,
+  "topics": [
+    "awesome-list",
+    "claude-code",
+    "claude-skills",
+    "ai-agents",
+    "skills",
+    "agent-skills",
+    "claude-code-skills",
+    "codex-skills",
+    "cursor-skills",
+    "gemini-skills",
+    "codex",
+    "cursor"
+  ],
+  "stars": 37597,
   "forks": 4243,
   "open_issues": 2,
   "watchers": 223,
@@ -13,28 +26,28 @@
   "pushed_at": "2026-11-15T18:23:24Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/VoltAgent.png",
-  "radar_score": 71.11,
+  "radar_score": 71.04,
   "impact": 97.3,
-  "velocity": 53.01,
-  "health": 54.55,
-  "global_percentile": 22.29,
+  "velocity": 53.03,
+  "health": 54.23,
+  "global_percentile": 22.14,
   "category": "AI Coding Tools",
   "sub_category": "cli tool",
   "summary": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
   "maturity": "Unknown",
-  "stars_7d": 237,
-  "stars_30d": 807,
-  "stars_90d": 807,
-  "star_growth_rate_7d": 33.857142857142854,
-  "star_growth_rate_30d": 33.625,
-  "star_growth_acceleration": 1.0069038767923526,
-  "forks_7d": 72,
+  "stars_7d": 235,
+  "stars_30d": 812,
+  "stars_90d": 812,
+  "star_growth_rate_7d": 33.57142857142857,
+  "star_growth_rate_30d": 33.833333333333336,
+  "star_growth_acceleration": 0.9922589725545389,
+  "forks_7d": 67,
   "forks_30d": 188,
-  "days_since_last_push": 11,
-  "freshness_score": 0.8958341352965282,
-  "snapshot_count": 372,
+  "days_since_last_push": 12,
+  "freshness_score": 0.8869204367171575,
+  "snapshot_count": 373,
   "authenticity": {
-    "organic_confidence": 83.3,
+    "organic_confidence": 83.5,
     "verdict": "organic",
     "label": "High Confidence",
     "signals": [
@@ -43,14 +56,14 @@
         "label": "Fork-to-star ratio",
         "score": 99.7,
         "weight": 0.22,
-        "detail": "4,243 forks for 37,591 stars (11.3%)."
+        "detail": "4,243 forks for 37,597 stars (11.3%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 92.9,
+        "score": 93.8,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 62 stars (10 forks, 1.7x the daily average)."
+        "detail": "Largest 24h jump was 58 stars (6 forks, 1.6x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +84,23 @@
         "label": "Issue engagement",
         "score": 25.5,
         "weight": 0.12,
-        "detail": "2 open issues for 37,591 stars (0.0%)."
+        "detail": "2 open issues for 37,597 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 93.3,
+        "score": 92.8,
         "weight": 0.1,
-        "detail": "Last push 11 days ago."
+        "detail": "Last push 12 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 62 stars (10 forks, 1.7x the daily average).",
-      "Maintenance cadence: Last push 11 days ago.",
-      "Fork-to-star ratio: 4,243 forks for 37,591 stars (11.3%)."
+      "Maintenance cadence: Last push 12 days ago.",
+      "Burst pattern: Largest 24h jump was 58 stars (6 forks, 1.6x the daily average).",
+      "Fork-to-star ratio: 4,243 forks for 37,597 stars (11.3%)."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 37,591 stars (0.0%)."
+      "Issue engagement: 2 open issues for 37,597 stars (0.0%)."
     ]
   }
 }

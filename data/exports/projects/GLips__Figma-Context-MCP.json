@@ -4,7 +4,13 @@
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "language": "TypeScript",
   "license": "MIT",
-  "topics": [],
+  "topics": [
+    "ai",
+    "cursor",
+    "figma",
+    "mcp",
+    "typescript"
+  ],
   "stars": 16332,
   "forks": 1301,
   "open_issues": 8,
@@ -13,28 +19,28 @@
   "pushed_at": "2026-11-15T22:22:42Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/GLips.png",
-  "radar_score": 69.88,
+  "radar_score": 69.8,
   "impact": 92.51,
-  "velocity": 54.96,
-  "health": 54.55,
-  "global_percentile": 18.14,
+  "velocity": 54.97,
+  "health": 54.23,
+  "global_percentile": 18.29,
   "category": "MCP",
   "sub_category": "server",
   "summary": "MCP server to provide Figma layout information to AI coding agents like Cursor",
   "maturity": "Unknown",
-  "stars_7d": 67,
-  "stars_30d": 252,
-  "stars_90d": 267,
-  "star_growth_rate_7d": 9.571428571428571,
-  "star_growth_rate_30d": 8.4,
-  "star_growth_acceleration": 1.139455782312925,
-  "forks_7d": 8,
-  "forks_30d": 34,
-  "days_since_last_push": 11,
-  "freshness_score": 0.8958341352965282,
-  "snapshot_count": 252,
+  "stars_7d": 66,
+  "stars_30d": 244,
+  "stars_90d": 265,
+  "star_growth_rate_7d": 9.428571428571429,
+  "star_growth_rate_30d": 8.133333333333333,
+  "star_growth_acceleration": 1.1592505854800939,
+  "forks_7d": 6,
+  "forks_30d": 32,
+  "days_since_last_push": 12,
+  "freshness_score": 0.8869204367171575,
+  "snapshot_count": 253,
   "authenticity": {
-    "organic_confidence": 76.5,
+    "organic_confidence": 76.4,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,7 +49,7 @@
         "label": "Fork-to-star ratio",
         "score": 92.7,
         "weight": 0.22,
-        "detail": "1,301 forks for 16,331 stars (8.0%)."
+        "detail": "1,301 forks for 16,332 stars (8.0%)."
       },
       {
         "key": "burst",
@@ -71,23 +77,23 @@
         "label": "Issue engagement",
         "score": 29.9,
         "weight": 0.12,
-        "detail": "8 open issues for 16,331 stars (0.0%)."
+        "detail": "8 open issues for 16,332 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 93.3,
+        "score": 92.8,
         "weight": 0.1,
-        "detail": "Last push 11 days ago."
+        "detail": "Last push 12 days ago."
       }
     ],
     "reasons": [
       "Burst pattern: Largest 24h jump was 22 stars (2 forks, 2.8x the daily average).",
-      "Fork-to-star ratio: 1,301 forks for 16,331 stars (8.0%).",
-      "Maintenance cadence: Last push 11 days ago."
+      "Fork-to-star ratio: 1,301 forks for 16,332 stars (8.0%).",
+      "Maintenance cadence: Last push 12 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 8 open issues for 16,331 stars (0.0%)."
+      "Issue engagement: 8 open issues for 16,332 stars (0.0%)."
     ]
   }
 }

@@ -4,37 +4,58 @@
   "description": "Open-source inference platform for language, vision, embedding, reranking, image, audio, and video models. Deploy with multiple engines across heterogeneous hardware, from a laptop to a distributed cluster. Serve models through OpenAI-compatible APIs.",
   "language": "Python",
   "license": "Apache-2.0",
-  "topics": [],
-  "stars": 9676,
-  "forks": 908,
+  "topics": [
+    "pytorch",
+    "llm",
+    "artificial-intelligence",
+    "machine-learning",
+    "whisper",
+    "inference",
+    "openai-api",
+    "gemma",
+    "llamacpp",
+    "vllm",
+    "qwen",
+    "diffusers",
+    "glm",
+    "glm-5-3",
+    "kimi",
+    "kimi-k3",
+    "llama-cpp",
+    "sglang",
+    "transformers",
+    "mlx"
+  ],
+  "stars": 9678,
+  "forks": 909,
   "open_issues": 7,
   "watchers": 58,
   "created_at": "2023-06-14T07:05:04Z",
-  "pushed_at": "2026-11-27T19:41:26Z",
+  "pushed_at": "2026-11-28T03:42:25Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/xorbitsai.png",
-  "radar_score": 70.59,
+  "radar_score": 68.84,
   "impact": 90.27,
-  "velocity": 52.99,
-  "health": 63.75,
-  "global_percentile": 20.43,
+  "velocity": 51.84,
+  "health": 58.35,
+  "global_percentile": 15.86,
   "category": "Multimodal AI",
   "sub_category": "audio-language",
   "summary": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop \u2014 all through one unified, production-ready inference API.",
   "maturity": "Unknown",
-  "stars_7d": 9,
-  "stars_30d": 47,
-  "stars_90d": 70,
-  "star_growth_rate_7d": 1.2857142857142858,
-  "star_growth_rate_30d": 1.5666666666666667,
-  "star_growth_acceleration": 0.8206686930091186,
-  "forks_7d": 4,
-  "forks_30d": 16,
+  "stars_7d": 12,
+  "stars_30d": 48,
+  "stars_90d": 73,
+  "star_growth_rate_7d": 1.7142857142857142,
+  "star_growth_rate_30d": 1.6,
+  "star_growth_acceleration": 1.0714285714285714,
+  "forks_7d": 8,
+  "forks_30d": 19,
   "days_since_last_push": 0,
   "freshness_score": 1.0,
-  "snapshot_count": 221,
+  "snapshot_count": 222,
   "authenticity": {
-    "organic_confidence": 77.4,
+    "organic_confidence": 77.3,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
@@ -43,12 +64,12 @@
         "label": "Fork-to-star ratio",
         "score": 97.8,
         "weight": 0.22,
-        "detail": "908 forks for 9,676 stars (9.4%)."
+        "detail": "909 forks for 9,678 stars (9.4%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 71.7,
+        "score": 71.5,
         "weight": 0.24,
         "detail": "Largest 24h jump was 5 stars (0 forks, 3.3x the daily average)."
       },
@@ -71,7 +92,7 @@
         "label": "Issue engagement",
         "score": 32.2,
         "weight": 0.12,
-        "detail": "7 open issues for 9,676 stars (0.1%)."
+        "detail": "7 open issues for 9,678 stars (0.1%)."
       },
       {
         "key": "maintenance",
@@ -82,11 +103,11 @@
       }
     ],
     "reasons": [
-      "Fork-to-star ratio: 908 forks for 9,676 stars (9.4%).",
+      "Fork-to-star ratio: 909 forks for 9,678 stars (9.4%).",
       "Maintenance cadence: Last push 0 days ago."
     ],
     "red_flags": [
-      "Issue engagement: 7 open issues for 9,676 stars (0.1%)."
+      "Issue engagement: 7 open issues for 9,678 stars (0.1%)."
     ]
   }
 }

@@ -1,15 +1,31 @@
 {
-  "detected_at": "2026-11-28T01:24:57.327414+00:00",
-  "total_anomalies": 0,
+  "detected_at": "2026-11-28T10:05:06.597714+00:00",
+  "total_anomalies": 1,
   "by_type": {
     "star_spikes": 0,
-    "fork_spikes": 0,
+    "fork_spikes": 1,
     "score_jumps": 0,
     "velocity_anomalies": 0,
     "health_drops": 0
   },
   "star_spikes": [],
-  "fork_spikes": [],
+  "fork_spikes": [
+    {
+      "repo_full_name": "LibrePhotos/librephotos",
+      "stars": 8187,
+      "forks": 416,
+      "language": "Python",
+      "url": "https://github.com/LibrePhotos/librephotos",
+      "radar_score": 68.46,
+      "metric": "forks",
+      "current_rate": 0.1,
+      "normal_rate": 0.0,
+      "deviation": 4.3,
+      "forks_7d": 1,
+      "forks_30d": 1,
+      "anomaly_type": "fork_spikes"
+    }
+  ],
   "score_jumps": [],
   "velocity_anomalies": [],
   "health_drops": []

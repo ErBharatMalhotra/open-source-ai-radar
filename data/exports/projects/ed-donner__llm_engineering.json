@@ -35,9 +35,9 @@
   "snapshot_count": 164,
   "why_trending": "Steady growth with 56 new stars this week. Above-average growth velocity. High developer adoption with 58 new forks this week. Active in the LLM Frameworks category.",
   "authenticity": {
-    "organic_confidence": 80.1,
-    "verdict": "organic",
-    "label": "High Confidence",
+    "organic_confidence": 79.5,
+    "verdict": "likely_organic",
+    "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
@@ -49,9 +49,9 @@
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 85.9,
+        "score": 84.5,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 22 stars (8 forks, 2.3x the daily average)."
+        "detail": "Largest 24h jump was 22 stars (8 forks, 2.4x the daily average)."
       },
       {
         "key": "alignment",
@@ -77,15 +77,15 @@
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 99.3,
+        "score": 98.6,
         "weight": 0.1,
-        "detail": "Last push 1 days ago."
+        "detail": "Last push 2 days ago."
       }
     ],
     "reasons": [
-      "Burst pattern: Largest 24h jump was 22 stars (8 forks, 2.3x the daily average).",
+      "Burst pattern: Largest 24h jump was 22 stars (8 forks, 2.4x the daily average).",
       "Fork-to-star ratio: 7,784 forks for 8,086 stars (96.3%).",
-      "Maintenance cadence: Last push 1 days ago."
+      "Maintenance cadence: Last push 2 days ago."
     ],
     "red_flags": [
       "Issue engagement: 0 open issues for 8,086 stars (0.0%)."

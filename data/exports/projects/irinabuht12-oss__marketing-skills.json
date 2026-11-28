@@ -4,8 +4,27 @@
   "description": "Claude skills for marketing: 49 free marketing skills for Claude Code and claude.ai (Google Ads, Meta Ads, SEO, AI visibility) + the Ryze Google Ads MCP / Meta Ads MCP: claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
   "language": null,
   "license": null,
-  "topics": [],
-  "stars": 8487,
+  "topics": [
+    "ai-visibility",
+    "claude-code",
+    "claude-plugin",
+    "claude-skills",
+    "cursor",
+    "geo",
+    "google-ads",
+    "marketing",
+    "mcp",
+    "mcp-server",
+    "meta-ads",
+    "seo",
+    "claude-desktop",
+    "google-ads-mcp",
+    "marketing-skills",
+    "meta-ads-mcp",
+    "claude-marketing-skills",
+    "claude-skills-for-marketing"
+  ],
+  "stars": 8499,
   "forks": 589,
   "open_issues": 2,
   "watchers": 16,
@@ -13,44 +32,44 @@
   "pushed_at": "2026-10-27T08:57:53Z",
   "owner_login": "",
   "owner_avatar": "https://github.com/irinabuht12-oss.png",
-  "radar_score": 63.75,
-  "impact": 85.82,
-  "velocity": 52.97,
-  "health": 43.53,
-  "global_percentile": 11.57,
+  "radar_score": 62.54,
+  "impact": 85.87,
+  "velocity": 49.97,
+  "health": 42.82,
+  "global_percentile": 4.14,
   "category": "MCP",
   "sub_category": "client",
   "summary": "48 free Claude marketing skills (Google Ads, Meta Ads, SEO, AI visibility) + Ryze MCP: claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
   "maturity": "Unknown",
-  "stars_7d": 267,
-  "stars_30d": 2728,
-  "stars_90d": 2752,
-  "star_growth_rate_7d": 38.142857142857146,
-  "star_growth_rate_30d": 90.93333333333334,
-  "star_growth_acceleration": 0.41945957268537915,
-  "forks_7d": 5,
-  "forks_30d": 23,
-  "days_since_last_push": 29,
-  "freshness_score": 0.7482635675785653,
-  "snapshot_count": 41,
+  "stars_7d": 213,
+  "stars_30d": 1989,
+  "stars_90d": 2803,
+  "star_growth_rate_7d": 30.428571428571427,
+  "star_growth_rate_30d": 76.5,
+  "star_growth_acceleration": 0.39775910364145656,
+  "forks_7d": 10,
+  "forks_30d": 20,
+  "days_since_last_push": 32,
+  "freshness_score": 0.7261490370736909,
+  "snapshot_count": 42,
   "authenticity": {
-    "organic_confidence": 76.2,
+    "organic_confidence": 75.2,
     "verdict": "likely_organic",
     "label": "Moderate Confidence",
     "signals": [
       {
         "key": "fork_ratio",
         "label": "Fork-to-star ratio",
-        "score": 89.0,
+        "score": 88.9,
         "weight": 0.22,
-        "detail": "589 forks for 8,487 stars (6.9%)."
+        "detail": "589 forks for 8,499 stars (6.9%)."
       },
       {
         "key": "burst",
         "label": "Burst pattern",
-        "score": 85.2,
+        "score": 82.6,
         "weight": 0.24,
-        "detail": "Largest 24h jump was 184 stars (0 forks, 2.3x the daily average)."
+        "detail": "Largest 24h jump was 184 stars (0 forks, 2.5x the daily average)."
       },
       {
         "key": "alignment",
@@ -71,23 +90,23 @@
         "label": "Issue engagement",
         "score": 27.4,
         "weight": 0.12,
-        "detail": "2 open issues for 8,487 stars (0.0%)."
+        "detail": "2 open issues for 8,499 stars (0.0%)."
       },
       {
         "key": "maintenance",
         "label": "Maintenance cadence",
-        "score": 84.8,
+        "score": 84.5,
         "weight": 0.1,
-        "detail": "Last push 31 days ago."
+        "detail": "Last push 32 days ago."
       }
     ],
     "reasons": [
-      "Maintenance cadence: Last push 31 days ago.",
-      "Burst pattern: Largest 24h jump was 184 stars (0 forks, 2.3x the daily average).",
-      "Fork-to-star ratio: 589 forks for 8,487 stars (6.9%)."
+      "Burst pattern: Largest 24h jump was 184 stars (0 forks, 2.5x the daily average).",
+      "Maintenance cadence: Last push 32 days ago.",
+      "Fork-to-star ratio: 589 forks for 8,499 stars (6.9%)."
     ],
     "red_flags": [
-      "Issue engagement: 2 open issues for 8,487 stars (0.0%)."
+      "Issue engagement: 2 open issues for 8,499 stars (0.0%)."
     ]
   }
 }
